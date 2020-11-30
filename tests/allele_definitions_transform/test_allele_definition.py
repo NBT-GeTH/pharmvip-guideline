@@ -36,6 +36,22 @@ allele_definition_df_ = pd.DataFrame(
     ]
 )
 
+allele_definition_df__ = pd.DataFrame(
+    [
+        ["GENE: VKORC1", float("NaN"), float("NaN"), float("NaN")],
+        ["NM_", float("NaN"), float("NaN"), float("NaN")],
+        ["Effect on protein (NP_)", float("NaN"), float("NaN"), float("NaN")],
+        ["Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p7)", "g.100000002C>G", float("NaN"), "g.100000001A>T"],
+        ["Position at NG_", float("NaN"), float("NaN"), float("NaN")],
+        ["rsID", "rs100000002", float("NaN"), "rs100000001"],
+        ["Allele", float("NaN"), float("NaN"), float("NaN")],
+        ["*1", "C ", float("NaN"), " A"],
+        ["*2", float("NaN"), float("NaN"), " T"],
+        ["*3", "G ", float("NaN"), "T"],
+        [float("NaN"), float("NaN"), float("NaN"), float("NaN")]
+    ]
+)
+
 def test_manual_customize():
     actual = manual_customize(allele_definition_df, "GENE")
     expect = pd.DataFrame(
@@ -73,6 +89,24 @@ def test_manual_customize():
     )
     assert_frame_equal(actual, expect)
 
+    actual = manual_customize(allele_definition_df__, "VKORC1")
+    expect = pd.DataFrame(
+        [
+            ["GENE: VKORC1", float("NaN"), float("NaN"), float("NaN")],
+            ["NM_", float("NaN"), float("NaN"), float("NaN")],
+            ["Effect on protein (NP_)", float("NaN"), float("NaN"), float("NaN")],
+            ["Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p7)", "g.100000002C>G", float("NaN"), "g.100000001A>T"],
+            ["Position at NG_", float("NaN"), float("NaN"), float("NaN")],
+            ["rsID", "rs100000002", float("NaN"), "rs100000001"],
+            ["Allele", float("NaN"), float("NaN"), float("NaN")],
+            ["-1639A", "C ", float("NaN"), " A"],
+            ["-1639G", float("NaN"), float("NaN"), " T"],
+            ["*3", "G ", float("NaN"), "T"],
+            [float("NaN"), float("NaN"), float("NaN"), float("NaN")]
+        ]
+    )
+    assert_frame_equal(actual, expect)
+
 def test_automatic_customize():
     actual = automatic_customize(allele_definition_df)
     expect = pd.DataFrame(
@@ -104,7 +138,7 @@ def test_sort_hgvs():
             ["Allele", float("NaN"), float("NaN"), float("NaN")],
             ["*1", " A", "C ", float("NaN")],
             ["*2", " T", float("NaN"), float("NaN")],
-             ["*3", "T", "G ", float("NaN")],
+            ["*3", "T", "G ", float("NaN")],
             [float("NaN"), float("NaN"), float("NaN"), float("NaN")]
         ]
     )
