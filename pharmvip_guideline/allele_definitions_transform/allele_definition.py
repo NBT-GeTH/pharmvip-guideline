@@ -12,6 +12,11 @@ def manual_customize(allele_definition_df, gene):
         allele_definition_df.columns = range(allele_definition_df.shape[1])
 
         return allele_definition_df
+    elif gene == "VKORC1":
+        allele_definition_df.iloc[7, 0] = "-1639A"
+        allele_definition_df.iloc[8, 0] = "-1639G"
+        
+        return allele_definition_df
     else:
         return allele_definition_df
 

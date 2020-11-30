@@ -6,12 +6,12 @@ with open("README.md", "r") as fh:
 setuptools.setup(
     name="pharmvip-guideline",
     version="0.0.1",
-    author="Chanathip Sukritha",
-    author_email="s.chanathip16@gmail.com",
-    description="PharmVIP(Pharmacogenomic Variant Analysis and Interpretation Platform) - Guideline Module",
-    long_description=long_description,
-    long_description_content_type="text/markdown",
-    url="https://github.com/cs16golf",
+    author="Chadapohn Chaosrikul, Krittin Phornsiricharoenphant, Chanathip Sukritha",
+	author_email="chadapohn.chaosrikul@gmail.com, oatkrittin@gmail.com, s.chanathip16@gmail.com",
+	description="PharmVIP(Pharmacogenomic Variant Analysis and Interpretation Platform) - Guideline Module",
+	long_description=long_description,
+	long_description_content_type="text/markdown",
+	url="https://bitbucket.org/cs16golf/pharmvip-guideline/src/master/",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
