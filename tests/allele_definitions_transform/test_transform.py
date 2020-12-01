@@ -1,8 +1,6 @@
 import unittest
-
 import pandas as pd
-from pharmvip_guideline.allele_definitions_transform.allele_definition import automatic_customize
-from pharmvip_guideline.allele_definitions_transform.transform import get_allele_definition_haplotypes, get_allele_definition_hgvs_relation_to_name, get_hgvs_relation_to_name, get_allele_definition_name_relation_to_hgvs, get_name_relation_to_hgvs, transform
+from pharmvip_guideline.allele_definitions_transform.transform import *
 
 allele_definition_df = pd.DataFrame(
     [
@@ -22,7 +20,6 @@ allele_definition_df = pd.DataFrame(
 
 def test_get_allele_definition_haplotypes():
     actual = get_allele_definition_haplotypes(automatic_customize(allele_definition_df))
-    print(actual)
     expect = [
         {
             "name": "*1",

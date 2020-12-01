@@ -1,13 +1,7 @@
 import glob
 from pharmvip_guideline.utils.natural_sort import natural_keys
 import pandas as pd
-from pharmvip_guideline.allele_definitions_transform.gene import match_gene
-from pharmvip_guideline.allele_definitions_transform.allele_definition import manual_customize, automatic_customize
-from pharmvip_guideline.allele_definitions_transform.allele import clean_allele_cell
-from pharmvip_guideline.allele_definitions_transform.position import search_chromosome
-from pharmvip_guideline.allele_definitions_transform.hgvs import match_hgvs
-from pharmvip_guideline.allele_definitions_transform.rsid import findall_rsid
-from pharmvip_guideline.allele_definitions_transform.haplotype import extract_allele
+from pharmvip_guideline.allele_definitions_transform.allele_definition import *
 import json
 
 def get_allele_definition_haplotypes(allele_definition_df):

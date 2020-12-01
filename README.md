@@ -1,10 +1,12 @@
-# PharmVIP(Pharmacogenomic Variant Analysis and Interpretation Platform)
+# PharmVIP(Pharmacogenomic Variant Analysis and Interpretation Platform) - Guideline Module
 
 ### Allele Definitions
 
 ```shell
 pharmvip_guideline allele_definitions_transform \
-    --parameter
+    --allele_definitions \
+    --outputs \
+    --dbpmcgenomics
 ```
 
 ### Allele Matcher
