@@ -1,6 +1,5 @@
 import argparse
 import time
-
 from pharmvip_guideline.allele_definitions_transform.transform import transform
 from pharmvip_guideline.allele_definitions_transform.transform_dbpmcgenomics import transform_dbpmcgenomics
 from pharmvip_guideline.allele_matcher.matcher import matcher

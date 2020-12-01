@@ -11,11 +11,10 @@ setuptools.setup(
 	description="PharmVIP(Pharmacogenomic Variant Analysis and Interpretation Platform) - Guideline Module",
 	long_description=long_description,
 	long_description_content_type="text/markdown",
-	url="https://bitbucket.org/cs16golf/pharmvip-guideline/src/master/",
+	url="",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.7.6',
