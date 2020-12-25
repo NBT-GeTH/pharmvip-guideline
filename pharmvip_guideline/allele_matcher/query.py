@@ -23,7 +23,7 @@ def match_genotype(call_genotype):
 
 def extract_genotype(gene, call_genotype):
     if "," not in call_genotype:
-        if gene == "G6PD" and "|" not in call_genotype:
+        if gene == "G6PD" and "/" not in call_genotype and "|" not in call_genotype:
             call_genotype = f"{call_genotype}|{call_genotype}"
         return match_genotype(call_genotype)
     else:
@@ -35,12 +35,8 @@ def extract_genotype_in_rage(gene, genotype_in_range):
     allele2 = "."
     for genotype in genotype_in_range:
         a1, a2 = extract_genotype(gene, genotype)
-        if allele1 == allele2:
-            allele1 += a1
-            allele2 += a2
-        else:
-            print(f"error extract genotype in range with: {genotype} -> {allele1} != {allele2}")
-            exit()
+        allele1 += a1
+        allele2 += a2
     return f"{allele1}|{allele2}"
 
 def convert_ins(ref, allele):
