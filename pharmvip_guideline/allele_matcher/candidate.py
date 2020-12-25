@@ -24,9 +24,11 @@ def find_best_candidate(allele_definition, allele_matcher):
                             if name in print_dip:
                                 print_dip_remove_list.append(print_dip)
     for guide_dip_remove in guide_dip_remove_list:
-        allele_matcher["guide_dip"].remove(guide_dip_remove)
+        if guide_dip_remove in allele_matcher["guide_dip"]:
+            allele_matcher["guide_dip"].remove(guide_dip_remove)
     for print_dip_remove in print_dip_remove_list:
-        allele_matcher["print_dip"].remove(print_dip_remove)
+        if print_dip_remove in allele_matcher["print_dip"]:
+            allele_matcher["print_dip"].remove(print_dip_remove)
 
     assert len(allele_matcher["guide_dip"]) == len(allele_matcher["print_dip"])
     if not allele_matcher["guide_dip"] and not allele_matcher["print_dip"]:

@@ -28,9 +28,8 @@ def manual_customize(allele_definition_df, gene):
 
         return allele_definition_df
     elif gene == "VKORC1":
-        allele_definition_df.iloc[7, 0] = "-1639A"
-        allele_definition_df.iloc[8, 0] = "-1639G"
-        
+        allele_definition_df[allele_definition_df[0] == "rs9923231 reference (C)"] = "-1639G"
+        allele_definition_df[allele_definition_df[0] == "rs9923231 variant (T)"] = "-1639A"
         return allele_definition_df
     else:
         return allele_definition_df
