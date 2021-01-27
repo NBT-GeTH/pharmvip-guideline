@@ -98,7 +98,7 @@ def replace_tags(record, key=None):
     if pd.isnull(record) or record is None:
         return ""
     else:
-        return record.replace("\n", "").replace("<p>", "<text>").replace("</p>", "</text>") + "<br/>"
+        return record.replace("\n", "").replace("<p>", "<text>").replace("</p>", "</text>").replace('<a href="/pmid/', '<a href="https://www.pharmgkb.org/pmid/') + "<br/>"
 
 def parse_annotations(annotations, genes):
     annotations["Implications"] = replace_tags(annotations["Implications"])
@@ -107,6 +107,7 @@ def parse_annotations(annotations, genes):
     if pd.isnull(annotations["MetabolizerStatus"]) or annotations["MetabolizerStatus"] is None:
         annotations["MetabolizerStatus"] = ""
     else:
+        annotations["MetabolizerStatus"] = annotations["MetabolizerStatus"].replace("Indeterminate", "Indeterminate Metabolizer").replace("indeterminate", "Indeterminate Metabolizer")
         if len(genes) == 1:
             if re.match(r".*Metabolizer", annotations["MetabolizerStatus"].replace("<p>", "").replace("</p>", "")) is None:
                 annotations["MetabolizerStatus"] = annotations["MetabolizerStatus"].replace("<p>", "").replace("</p>", "")
@@ -125,6 +126,11 @@ def parse_annotations(annotations, genes):
                 annotations["MetabolizerStatus"] = parsed
             else:
                 annotations["MetabolizerStatus"] = [annotations["MetabolizerStatus"].replace("<p>", "").replace("</p>", "") , ""]
+    if isinstance(annotations["MetabolizerStatus"], list):
+        for i in range(len(annotations["MetabolizerStatus"])):
+            annotations["MetabolizerStatus"][i] = annotations["MetabolizerStatus"][i].replace("Indeterminate Metabolizer", "Indeterminate")
+    else:
+        annotations["MetabolizerStatus"] = annotations["MetabolizerStatus"].replace("Indeterminate Metabolizer", "Indeterminate")
 
     if pd.isnull(annotations["Strength"]) or annotations["Strength"] is None:
         annotations["Strength"] = "N/A"
@@ -133,7 +139,7 @@ def parse_annotations(annotations, genes):
         annotations["Recommendations"] = "N/A"
 
     annotations["SummaryRecommendations"] = annotations["Recommendations"].split("</p>")[0] + "</p>"
-    annotations["SummaryRecommendations"] = annotations["SummaryRecommendations"].replace("\n", "").replace("<p>", "<text>").replace("</p>", "</text>") + "<br/>"
+    annotations["SummaryRecommendations"] = replace_tags(annotations["SummaryRecommendations"])
 
     annotations["Recommendations"] = replace_tags(annotations["Recommendations"])
 
@@ -286,7 +292,7 @@ def annotate(_clinical_guideline_annotations, function_mappings_diplotype, diplo
                         summary_and_full_report['cpi_sum_gene2'].append(gene2)
                         summary_and_full_report['cpi_sum_gene3'].append('')
                         summary_and_full_report['cpi_sum_dip_name1'].append(diplotype_new.loc[gene1, "print_dip"][i])
-                        summary_and_full_report['cpi_sum_dip_name2'].append(diplotype_new.loc[gene2, "print_dip"][i])
+                        summary_and_full_report['cpi_sum_dip_name2'].append(diplotype_new.loc[gene2, "print_dip"][j])
                         summary_and_full_report['cpi_sum_dip_name3'].append('')
                         summary_and_full_report['cpi_sum_drug'].append(str(_clinical_guideline_annotations[guideline_id]['drug_names'].split("_")).replace("[", "").replace("]", "").replace("'", ""))
                         summary_and_full_report['cpi_sum_act_score'].append(annotations.get("ActivityScore") if annotations.get("ActivityScore") != None else "")
@@ -322,7 +328,7 @@ def annotate(_clinical_guideline_annotations, function_mappings_diplotype, diplo
                         summary_and_full_report['cpi_sum_gene2'].append(gene2)
                         summary_and_full_report['cpi_sum_gene3'].append('')
                         summary_and_full_report['cpi_sum_dip_name1'].append(diplotype_new.loc[gene1, "print_dip"][i])
-                        summary_and_full_report['cpi_sum_dip_name2'].append(diplotype_new.loc[gene2, "print_dip"][i])
+                        summary_and_full_report['cpi_sum_dip_name2'].append(diplotype_new.loc[gene2, "print_dip"][j])
                         summary_and_full_report['cpi_sum_dip_name3'].append('')
                         summary_and_full_report['cpi_sum_drug'].append(str(_clinical_guideline_annotations[guideline_id]['drug_names'].split("_")).replace("[", "").replace("]", "").replace("'", ""))
                         summary_and_full_report['cpi_sum_act_score'].append('')
