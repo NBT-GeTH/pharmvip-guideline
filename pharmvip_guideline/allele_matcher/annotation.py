@@ -98,7 +98,7 @@ def replace_tags(record, key=None):
     if pd.isnull(record) or record is None:
         return ""
     else:
-        return record.replace("\n", "").replace("<p>", "<text>").replace("</p>", "</text>").replace('<a href="/pmid/', '<a href="https://www.pharmgkb.org/pmid/') + "<br/>"
+        return record.replace("\n", "").replace("<p>", "<text>").replace("</p>", "</text>").replace('<a href="/pmid/', '<a href="https://www.pharmgkb.org/pmid/').replace('<a href="/variant/', '<a href="https://www.pharmgkb.org/variant/') + "<br/>"
 
 def parse_annotations(annotations, genes):
     annotations["Implications"] = replace_tags(annotations["Implications"])
