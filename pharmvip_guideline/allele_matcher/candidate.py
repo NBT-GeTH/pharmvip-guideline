@@ -1,19 +1,21 @@
 import copy
 import re
 
-def locate_min(a):
-    smallest = min(a)
-    return smallest, [index for index, element in enumerate(a) if smallest == element]
+def locate_max(a):
+    biggest = max(a)
+    return biggest, [index for index, element in enumerate(a) if biggest == element]
 
 def find_best_candidate(allele_definition, allele_matcher):
     raw_count_diplotype = copy.deepcopy(allele_matcher["count_diplotype"])
     raw_guide_dip = copy.deepcopy(allele_matcher["guide_dip"])
     raw_print_dip = copy.deepcopy(allele_matcher["print_dip"])
     
+    missing_position = []
     guide_dip_remove_list = []
     print_dip_remove_list = []
     for variant in allele_matcher["variants"]:
         if re.match(r"^(\.+)(\/|\|)(\.+)$", variant["gt_bases"]):
+            missing_position.append(variant["hgvs"])
             for relation in allele_definition["hgvs_relation_to_name"]:
                 if relation["hgvs"] == variant["hgvs"]:
                     for name in relation["name"]:
@@ -49,10 +51,16 @@ def find_best_candidate(allele_definition, allele_matcher):
         score2 = 0
         for relation in allele_definition["name_relation_to_hgvs"]:
             if name1 == relation["name"]:
+                for missing_pos in missing_position:
+                    if missing_pos in relation["hgvs"]:
+                        relation["hgvs"].remove(missing_pos)
                 score1 = len(relation["hgvs"])
                 break
         for relation in allele_definition["name_relation_to_hgvs"]:
             if name2 == relation["name"]:
+                for missing_pos in missing_position:
+                    if missing_pos in relation["hgvs"]:
+                        relation["hgvs"].remove(missing_pos)
                 score2 = len(relation["hgvs"])
                 break
         guide_dip_score.append(score1 + score2)
@@ -63,19 +71,25 @@ def find_best_candidate(allele_definition, allele_matcher):
         score2 = 0
         for relation in allele_definition["name_relation_to_hgvs"]:
             if name1 == relation["name"]:
+                for missing_pos in missing_position:
+                    if missing_pos in relation["hgvs"]:
+                        relation["hgvs"].remove(missing_pos)
                 score1 = len(relation["hgvs"])
                 break
         for relation in allele_definition["name_relation_to_hgvs"]:
             if name2 == relation["name"]:
+                for missing_pos in missing_position:
+                    if missing_pos in relation["hgvs"]:
+                        relation["hgvs"].remove(missing_pos)
                 score2 = len(relation["hgvs"])
                 break
         print_dip_score.append(score1 + score2)
 
     guide_dip_new = []
     print_dip_new = []
-    for index in locate_min(guide_dip_score)[1]:
+    for index in locate_max(guide_dip_score)[1]:
         guide_dip_new.append(allele_matcher["guide_dip"][index])
-    for index in locate_min(print_dip_score)[1]:
+    for index in locate_max(print_dip_score)[1]:
         print_dip_new.append(allele_matcher["print_dip"][index])
 
     allele_matcher["count_diplotype"] = len(print_dip_new)

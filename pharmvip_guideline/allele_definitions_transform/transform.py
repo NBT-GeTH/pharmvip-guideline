@@ -83,7 +83,7 @@ def get_allele_definition_name_relation_to_hgvs(allele_definition_df):
 def get_name_relation_to_hgvs(allele_definition_df):
     name_relation_to_hgvs = {}
     for row in range(allele_definition_df.shape[0]):
-        if row >= 8:
+        if row >= 7:
             for col in range(allele_definition_df.shape[1]):
                 if col >= 1:
                     if allele_definition_df.iloc[row, 0] not in name_relation_to_hgvs:
