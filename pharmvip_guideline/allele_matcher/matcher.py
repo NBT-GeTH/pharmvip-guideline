@@ -284,15 +284,34 @@ def matcher(allele_definitions, ana_user_id, ana_id, vcf_gz_file, ana_best_candi
                                 elif variant["gt_bases"] == "C/C" or variant["gt_bases"] == "C|C":
                                     allele_matcher["count_diplotype"] = 1
                                     allele_matcher["guide_dip"] = ["*5/*5"]
-                                    allele_matcher["print_dip"] = ["rs4149056C/rs414905C"]
+                                    allele_matcher["print_dip"] = ["rs4149056C/rs4149056C"]
                                 elif variant["gt_bases"] == "T/C" or variant["gt_bases"] == "T|C":
                                     allele_matcher["count_diplotype"] = 1
                                     allele_matcher["guide_dip"] = ["*1A/*5"]
-                                    allele_matcher["print_dip"] = ["rs4149056T/rs414905C"]
+                                    allele_matcher["print_dip"] = ["rs4149056T/rs4149056C"]
                                 elif variant["gt_bases"] == "C/T" or variant["gt_bases"] == "C|T":
                                     allele_matcher["count_diplotype"] = 1
                                     allele_matcher["guide_dip"] = ["*5/*1A"]
-                                    allele_matcher["print_dip"] = ["rs4149056C/rs414905T"]
+                                    allele_matcher["print_dip"] = ["rs4149056C/rs4149056T"]
+                    else:
+                        for variant in allele_matcher["variants"]:
+                            if variant["rsid"] == "rs4149056":
+                                if variant["gt_bases"] == "T/T" or variant["gt_bases"] == "T|T":
+                                    allele_matcher["count_diplotype"] += 1
+                                    allele_matcher["guide_dip"].append("*1A/*1A")
+                                    allele_matcher["print_dip"].append("rs4149056T/rs4149056T")
+                                elif variant["gt_bases"] == "C/C" or variant["gt_bases"] == "C|C":
+                                    allele_matcher["count_diplotype"] += 1
+                                    allele_matcher["guide_dip"].append("*5/*5")
+                                    allele_matcher["print_dip"].append("rs4149056C/rs4149056C")
+                                elif variant["gt_bases"] == "T/C" or variant["gt_bases"] == "T|C":
+                                    allele_matcher["count_diplotype"] += 1
+                                    allele_matcher["guide_dip"].append("*1A/*5")
+                                    allele_matcher["print_dip"].append("rs4149056T/rs4149056C")
+                                elif variant["gt_bases"] == "C/T" or variant["gt_bases"] == "C|T":
+                                    allele_matcher["count_diplotype"] += 1
+                                    allele_matcher["guide_dip"].append("*5/*1A")
+                                    allele_matcher["print_dip"].append("rs4149056C/rs4149056T")
 
                 if ana_best_candidate == "true" and allele_matcher["count_diplotype"] > 1:
                     allele_matcher = find_best_candidate(allele_definition, allele_matcher)
