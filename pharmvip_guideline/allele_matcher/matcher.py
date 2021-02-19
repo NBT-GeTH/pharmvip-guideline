@@ -273,6 +273,9 @@ def matcher(allele_definitions, ana_user_id, ana_id, vcf_gz_file, ana_best_candi
             else:
                 allele_matcher = match_haplotypes(allele_definition, allele_matcher)
 
+                if ana_best_candidate == "true" and allele_matcher["count_diplotype"] > 1:
+                    allele_matcher = find_best_candidate(allele_definition, allele_matcher)
+
                 if allele_definition["gene"] == "SLCO1B1":
                     if allele_matcher["guide_dip"] == ["?/?"] and allele_matcher["print_dip"] == ["?/?"]:
                         for variant in allele_matcher["variants"]:
@@ -312,9 +315,6 @@ def matcher(allele_definitions, ana_user_id, ana_id, vcf_gz_file, ana_best_candi
                                     allele_matcher["count_diplotype"] += 1
                                     allele_matcher["guide_dip"].append("*5/*1A")
                                     allele_matcher["print_dip"].append("rs4149056C/rs4149056T")
-
-                if ana_best_candidate == "true" and allele_matcher["count_diplotype"] > 1:
-                    allele_matcher = find_best_candidate(allele_definition, allele_matcher)
 
             with open(outputs + f"/{allele_definition['gene']}_allele_matcher.json", "w") as outfile:  
                 json.dump(allele_matcher, outfile, indent=2)
