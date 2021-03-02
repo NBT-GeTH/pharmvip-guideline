@@ -111,8 +111,8 @@ def test_manual_customize():
             ["Position at NG_", float("NaN"), float("NaN"), float("NaN")],
             ["rsID", "rs100000002", float("NaN"), "rs100000001"],
             ["Allele", float("NaN"), float("NaN"), float("NaN")],
-            ["-1639A", "C ", float("NaN"), " A"],
-            ["-1639G", float("NaN"), float("NaN"), " T"],
+            ["-1639G", "C ", float("NaN"), " A"],
+            ["-1639A", float("NaN"), float("NaN"), " T"],
             ["*3", "G ", float("NaN"), "T"],
             [float("NaN"), float("NaN"), float("NaN"), float("NaN")]
         ]
