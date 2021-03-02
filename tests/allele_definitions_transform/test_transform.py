@@ -119,6 +119,10 @@ def test_get_allele_definition_name_relation_to_hgvs():
     actual = get_allele_definition_name_relation_to_hgvs(automatic_customize(allele_definition_df))
     expect = [
         {
+            "name": "*1",
+            "hgvs": ["g.100000001A>T", "g.100000002C>G"]
+        },
+        {
             "name": "*2",
             "hgvs": ["g.100000001A>T"]
         },
@@ -132,6 +136,7 @@ def test_get_allele_definition_name_relation_to_hgvs():
 def test_get_name_relation_to_hgvs():
     actual = get_name_relation_to_hgvs(automatic_customize(allele_definition_df))
     expect = {
+        "*1": ["g.100000001A>T", "g.100000002C>G"],
         "*2": ["g.100000001A>T"],
         "*3": ["g.100000001A>T", "g.100000002C>G"]
     }
