@@ -1,17 +1,7 @@
-# PharmVIP(Pharmacogenomic Variant Analysis and Interpretation Platform) - Guideline Module
+# PharmVIP(Pharmacogenomic Variant Analysis and Interpretation Platform) - Guideline Package
 
-### Allele Definitions
-
-```shell
-pharmvip_guideline allele_definitions_transform \
-    --allele_definitions \
-    --outputs \
-    --dbpmcgenomics
-```
-
-### Allele Matcher
+### Install a local project in "editable" mode for develop package.
 
 ```shell
-pharmvip_guideline allele_matcher \
-    --parameter
+conda env create -f=/path/to/environment.yml
 ```
