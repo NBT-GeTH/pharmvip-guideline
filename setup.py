@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="pharmvip-guideline",
-    version="0.0.5",
+    version="0.0.8",
     author="Chadapohn Chaosrikul, Krittin Phornsiricharoenphant, Chanathip Sukritha",
 	author_email="chadapohn.chaosrikul@gmail.com, oatkrittin@gmail.com, s.chanathip16@gmail.com",
 	description="PharmVIP(Pharmacogenomic Variant Analysis and Interpretation Platform) - Guideline Module",

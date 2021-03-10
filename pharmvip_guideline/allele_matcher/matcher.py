@@ -123,43 +123,24 @@ def matcher(allele_definitions, ana_user_id, ana_id, vcf_gz_file, ana_best_candi
                         guide_dip = "*1/*80"
                     ##### transform print dip for phased case
                     print_dip_0 = copy.deepcopy(haplotypes0)
-                    if "*80" in haplotypes0:
-                        if "*28" in haplotypes0 or "*37" in haplotypes0:
-                            if "*28" in haplotypes0:
-                                for i in range(len(haplotypes0)):
-                                    if haplotypes0[i] == "*80":
-                                        print_dip_0[i] = f"({haplotypes0[i]}+*28)"
-                            elif "*37" in haplotypes0:
-                                for i in range(len(haplotypes0)):
-                                    if haplotypes0[i] == "*80":
-                                        print_dip_0[i] = f"({haplotypes0[i]}+*37)"
-                            elif "*28" in haplotypes0 and "*37" in haplotypes0:
-                                for i in range(len(haplotypes0)):
-                                    if haplotypes0[i] == "*80":
-                                        print_dip_0[i] = f"({haplotypes0[i]}+*28+*37)"
-                        else:
-                            haplotypes0.remove("*80")
+                    if "*80" in print_dip_0:
+                        if "*28" not in print_dip_0 and "*37" not in print_dip_0:
+                            while "*80" in print_dip_0:
+                                print_dip_0.remove("*80")
                     print_dip_1 = copy.deepcopy(haplotypes1)
-                    if "*80" in haplotypes1:
-                        if "*28" in haplotypes1 or "*37" in haplotypes1:
-                            if "*28" in haplotypes1:
-                                for i in range(len(haplotypes1)):
-                                    if haplotypes1[i] == "*80":
-                                        print_dip_1[i] = f"({haplotypes1[i]}+*28)"
-                            elif "*37" in haplotypes1:
-                                for i in range(len(haplotypes1)):
-                                    if haplotypes1[i] == "*80":
-                                        print_dip_1[i] = f"({haplotypes1[i]}+*37)"
-                            elif "*28" in haplotypes1 and "*37" in haplotypes1:
-                                for i in range(len(haplotypes1)):
-                                    if haplotypes1[i] == "*80":
-                                        print_dip_1[i] = f"({haplotypes1[i]}+*28+*37)"
-                        else:
-                            haplotypes1.remove("*80")
+                    if "*80" in print_dip_1:
+                        if "*28" not in print_dip_1 and "*37" not in print_dip_1:
+                            while "*80" in print_dip_1:
+                                print_dip_1.remove("*80")
                     ##### summary
-                    allele_matcher["count_diplotype"] = 1
-                    allele_matcher["guide_dip"] = [guide_dip]
-                    allele_matcher["print_dip"] = [f"{'+'.join(sorted(print_dip_0))}/{'+'.join(sorted(print_dip_1))}"]
+                    if not print_dip_0 or not print_dip_1:
+                        allele_matcher["count_diplotype"] = 1
+                        allele_matcher["guide_dip"] = ["?/?"]
+                        allele_matcher["print_dip"] = ["?/?"]
+                    else:
+                        allele_matcher["count_diplotype"] = 1
+                        allele_matcher["guide_dip"] = [guide_dip]
+                        allele_matcher["print_dip"] = [f"{'+'.join(sorted(print_dip_0))}/{'+'.join(sorted(print_dip_1))}"]
                 elif str(allele_matcher["gene_phases"]) == "False" or str(allele_matcher["gene_phases"]) == "combine":
                     ##### match haplotypes
                     haplotypes = []
@@ -243,33 +224,65 @@ def matcher(allele_definitions, ana_user_id, ana_id, vcf_gz_file, ana_best_candi
                         guide_dip = "*1/*1"
                     else:
                         guide_dip = "*1/*80"
-                    ##### transform print dip for unphased case
+                    ##### transform print dip for unphased case and summary
                     print_dip = copy.deepcopy(haplotypes)
-                    if "*80" in haplotypes:
-                        if "*28" in haplotypes or "*37" in haplotypes:
-                            if "*28" in haplotypes:
-                                for i in range(len(haplotypes)):
-                                    if haplotypes[i] == "*80":
-                                        print_dip[i] = f"{haplotypes[i]}+*28"
-                            elif "*37" in haplotypes:
-                                for i in range(len(haplotypes)):
-                                    if haplotypes[i] == "*80":
-                                        print_dip[i] = f"{haplotypes[i]}+*37"
-                            elif "*28" in haplotypes and "*37" in haplotypes:
-                                for i in range(len(haplotypes)):
-                                    if haplotypes[i] == "*80":
-                                        print_dip[i] = f"{haplotypes[i]}+*28+*37"
-                        else:
-                            haplotypes.remove("*80")
-                    for i in range(len(print_dip)):
-                        if f"{print_dip[i]} (heterozygous)" in print_dip:
-                            print_dip[i] = f"{print_dip[i]} (homozygous)"
-                        else:
-                            print_dip[i] = f"{print_dip[i]} (heterozygous)"
-                    ##### summary
-                    allele_matcher["count_diplotype"] = 1
-                    allele_matcher["guide_dip"] = [guide_dip]
-                    allele_matcher["print_dip"] = [", ".join(sorted(print_dip))]
+                    if "*28" in print_dip or "*37" in print_dip:
+                        if "*28" in print_dip and "*37" in print_dip:
+                            if print_dip.count("*80") < 2:
+                                allele_matcher["count_diplotype"] = 1
+                                allele_matcher["guide_dip"] = ["?/?"]
+                                allele_matcher["print_dip"] = ["?/?"]
+                            else:
+                                print_dip.append("*80+*28")
+                                print_dip.append("*80+*37")
+                                while "*80" in print_dip:
+                                    print_dip.remove("*80")
+                                for i in range(len(print_dip)):
+                                    if f"{print_dip[i]} (heterozygous)" in print_dip:
+                                        print_dip[i] = f"{print_dip[i]} (homozygous)"
+                                    else:
+                                        print_dip[i] = f"{print_dip[i]} (heterozygous)"
+                                allele_matcher["count_diplotype"] = 1
+                                allele_matcher["guide_dip"] = [guide_dip]
+                                allele_matcher["print_dip"] = [", ".join(sorted(print_dip))]
+                        elif "*28" in print_dip and "*37" not in print_dip:
+                            if print_dip.count("*80") == 2:
+                                allele_matcher["count_diplotype"] = 1
+                                allele_matcher["guide_dip"] = ["?/?"]
+                                allele_matcher["print_dip"] = ["?/?"]
+                            else:
+                                print_dip.append("*80+*28")
+                                while "*80" in print_dip:
+                                    print_dip.remove("*80")
+                                for i in range(len(print_dip)):
+                                    if f"{print_dip[i]} (heterozygous)" in print_dip:
+                                        print_dip[i] = f"{print_dip[i]} (homozygous)"
+                                    else:
+                                        print_dip[i] = f"{print_dip[i]} (heterozygous)"
+                                allele_matcher["count_diplotype"] = 1
+                                allele_matcher["guide_dip"] = [guide_dip]
+                                allele_matcher["print_dip"] = [", ".join(sorted(print_dip))]
+                        elif "*28" not in print_dip and "*37" in print_dip:
+                            if print_dip.count("*80") == 2:
+                                allele_matcher["count_diplotype"] = 1
+                                allele_matcher["guide_dip"] = ["?/?"]
+                                allele_matcher["print_dip"] = ["?/?"]
+                            else:
+                                print_dip.append("*80+*37")
+                                while "*80" in print_dip:
+                                    print_dip.remove("*80")
+                                for i in range(len(print_dip)):
+                                    if f"{print_dip[i]} (heterozygous)" in print_dip:
+                                        print_dip[i] = f"{print_dip[i]} (homozygous)"
+                                    else:
+                                        print_dip[i] = f"{print_dip[i]} (heterozygous)"
+                                allele_matcher["count_diplotype"] = 1
+                                allele_matcher["guide_dip"] = [guide_dip]
+                                allele_matcher["print_dip"] = [", ".join(sorted(print_dip))]
+                    else:
+                        allele_matcher["count_diplotype"] = 1
+                        allele_matcher["guide_dip"] = ["?/?"]
+                        allele_matcher["print_dip"] = ["?/?"]
             else:
                 allele_matcher = match_haplotypes(allele_definition, allele_matcher)
 
