@@ -246,12 +246,13 @@ def matcher(allele_definitions, ana_user_id, ana_id, vcf_gz_file, ana_best_candi
                                 allele_matcher["guide_dip"] = [guide_dip]
                                 allele_matcher["print_dip"] = [", ".join(sorted(print_dip))]
                         elif "*28" in print_dip and "*37" not in print_dip:
-                            if print_dip.count("*80") == 2:
+                            if all(a == "*28" or a == "*80" for a in print_dip):
                                 allele_matcher["count_diplotype"] = 1
                                 allele_matcher["guide_dip"] = ["?/?"]
                                 allele_matcher["print_dip"] = ["?/?"]
                             else:
-                                print_dip.append("*80+*28")
+                                for i in range(print_dip.count("*28")):
+                                    print_dip.append("*80+*28")
                                 while "*80" in print_dip:
                                     print_dip.remove("*80")
                                 for i in range(len(print_dip)):
@@ -263,12 +264,13 @@ def matcher(allele_definitions, ana_user_id, ana_id, vcf_gz_file, ana_best_candi
                                 allele_matcher["guide_dip"] = [guide_dip]
                                 allele_matcher["print_dip"] = [", ".join(sorted(print_dip))]
                         elif "*28" not in print_dip and "*37" in print_dip:
-                            if print_dip.count("*80") == 2:
+                            if all(a == "*37" or a == "*80" for a in print_dip):
                                 allele_matcher["count_diplotype"] = 1
                                 allele_matcher["guide_dip"] = ["?/?"]
                                 allele_matcher["print_dip"] = ["?/?"]
                             else:
-                                print_dip.append("*80+*37")
+                                for i in range(print_dip.count("*37")):
+                                    print_dip.append("*80+*37")
                                 while "*80" in print_dip:
                                     print_dip.remove("*80")
                                 for i in range(len(print_dip)):
