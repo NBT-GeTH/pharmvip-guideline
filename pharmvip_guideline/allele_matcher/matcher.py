@@ -2,11 +2,11 @@ import glob
 from pharmvip_guideline.utils.natural_sort import natural_keys
 import json
 from pharmvip_guideline.allele_matcher.query import query_region
-import copy
 from pharmvip_guideline.allele_matcher.match import match_haplotypes
 from pharmvip_guideline.allele_matcher.candidate import find_best_candidate
+import copy
 
-def matcher(allele_definitions, ana_user_id, ana_id, vcf_gz_file, ana_best_candidate, outputs):
+def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_file, outputs):
     allele_definitions_list = []
     for allele_definition in glob.glob(allele_definitions + "/*.json"):
         allele_definitions_list.append(allele_definition)
@@ -19,9 +19,68 @@ def matcher(allele_definitions, ana_user_id, ana_id, vcf_gz_file, ana_best_candi
         else:
             allele_matcher = query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file)
             
-            if allele_definition["gene"] == "UGT1A1":
-                # http://pharmcat.org/methods/gene-definition-exceptions/
-                # http://pharmcat.org/methods/calling/UGT1A1/
+            allele_matcher = match_haplotypes(allele_definition, allele_matcher)
+
+            if ana_best_candidate == "true" and allele_matcher["count_diplotype"] > 1:
+                allele_matcher = find_best_candidate(allele_definition, allele_matcher)
+
+            if allele_definition["gene"] == "CFTR":
+                for i in range(len(allele_matcher["print_dip"])):
+                    if allele_matcher["print_dip"][i] != "No info" and allele_matcher["print_dip"][i] != "?/?":
+                        incidental = ["G542X", "N1303K", "W1282X", "R553X", "1717-1G->A", "621+1G->T", "2789+5G->A", "3849+10kbC->T", "R1162X", "G85E", "3120+1G->A", "I507", "1898+1G->A", "3659delC", "R347P", "R560T", "R334W", "A455E", "2184delA", "711+1G->T"]
+                        if allele_matcher["print_dip"][i].split("/")[0] in incidental and allele_matcher["print_dip"][i].split("/")[1] in incidental:
+                                allele_matcher["print_dip"][i] = f"{allele_matcher['print_dip'][i].split('/')[0]} (homozygous)"
+                        if allele_matcher["print_dip"][i] == "Reference/Reference":
+                            allele_matcher["print_dip"][i] = "No CPIC variants found"
+                        elif allele_matcher["print_dip"][i].split("/")[0] == "Reference" or allele_matcher["print_dip"][i].split("/")[1] == "Reference":
+                            if allele_matcher["print_dip"][i].split("/")[0] == "Reference":
+                                allele_matcher["print_dip"][i] = f"{allele_matcher['print_dip'][i].split('/')[1]} (heterozygous)"
+                            elif allele_matcher["print_dip"][i].split("/")[1] == "Reference":
+                                allele_matcher["print_dip"][i] = f"{allele_matcher['print_dip'][i].split('/')[0]} (heterozygous)"
+            elif allele_definition["gene"] == "DPYD":
+                for i in range(len(allele_matcher["print_dip"])):
+                    if allele_matcher["print_dip"][i] == "Reference/Reference":
+                        allele_matcher["print_dip"][i] = "No CPIC decreased or no function variant with strong or moderate evidence found"
+            elif allele_definition["gene"] == "SLCO1B1":
+                if allele_matcher["guide_dip"] == ["?/?"] and allele_matcher["print_dip"] == ["?/?"]:
+                    for variant in allele_matcher["variants"]:
+                        if variant["rsid"] == "rs4149056":
+                            if variant["gt_bases"] == "T/T" or variant["gt_bases"] == "T|T":
+                                allele_matcher["count_diplotype"] = 1
+                                allele_matcher["guide_dip"] = ["*1A/*1A"]
+                                allele_matcher["print_dip"] = ["rs4149056T/rs4149056T"]
+                            elif variant["gt_bases"] == "C/C" or variant["gt_bases"] == "C|C":
+                                allele_matcher["count_diplotype"] = 1
+                                allele_matcher["guide_dip"] = ["*5/*5"]
+                                allele_matcher["print_dip"] = ["rs4149056C/rs4149056C"]
+                            elif variant["gt_bases"] == "T/C" or variant["gt_bases"] == "T|C":
+                                allele_matcher["count_diplotype"] = 1
+                                allele_matcher["guide_dip"] = ["*1A/*5"]
+                                allele_matcher["print_dip"] = ["rs4149056T/rs4149056C"]
+                            elif variant["gt_bases"] == "C/T" or variant["gt_bases"] == "C|T":
+                                allele_matcher["count_diplotype"] = 1
+                                allele_matcher["guide_dip"] = ["*5/*1A"]
+                                allele_matcher["print_dip"] = ["rs4149056C/rs4149056T"]
+                else:
+                    for variant in allele_matcher["variants"]:
+                        if variant["rsid"] == "rs4149056":
+                            if variant["gt_bases"] == "T/T" or variant["gt_bases"] == "T|T":
+                                allele_matcher["count_diplotype"] += 1
+                                allele_matcher["guide_dip"].append("*1A/*1A")
+                                allele_matcher["print_dip"].append("rs4149056T/rs4149056T")
+                            elif variant["gt_bases"] == "C/C" or variant["gt_bases"] == "C|C":
+                                allele_matcher["count_diplotype"] += 1
+                                allele_matcher["guide_dip"].append("*5/*5")
+                                allele_matcher["print_dip"].append("rs4149056C/rs4149056C")
+                            elif variant["gt_bases"] == "T/C" or variant["gt_bases"] == "T|C":
+                                allele_matcher["count_diplotype"] += 1
+                                allele_matcher["guide_dip"].append("*1A/*5")
+                                allele_matcher["print_dip"].append("rs4149056T/rs4149056C")
+                            elif variant["gt_bases"] == "C/T" or variant["gt_bases"] == "C|T":
+                                allele_matcher["count_diplotype"] += 1
+                                allele_matcher["guide_dip"].append("*5/*1A")
+                                allele_matcher["print_dip"].append("rs4149056C/rs4149056T")
+            elif allele_definition["gene"] == "UGT1A1":
                 if allele_matcher["gene_phases"] == ".":
                     allele_matcher["count_diplotype"] = 0
                     allele_matcher["guide_dip"] = ["No info/No info"]
@@ -224,148 +283,29 @@ def matcher(allele_definitions, ana_user_id, ana_id, vcf_gz_file, ana_best_candi
                         guide_dip = "*1/*1"
                     else:
                         guide_dip = "*1/*80"
-                    ##### transform print dip for unphased case and summary
+                    ##### transform print dip for unphased case
                     print_dip = copy.deepcopy(haplotypes)
-                    if "*28" in print_dip or "*37" in print_dip:
-                        if "*28" in print_dip and "*37" in print_dip:
-                            if print_dip.count("*80") < 2:
-                                allele_matcher["count_diplotype"] = 1
-                                allele_matcher["guide_dip"] = ["?/?"]
-                                allele_matcher["print_dip"] = ["?/?"]
-                            else:
-                                print_dip.append("*80+*28")
-                                print_dip.append("*80+*37")
-                                while "*80" in print_dip:
-                                    print_dip.remove("*80")
-                                for i in range(len(print_dip)):
-                                    if f"{print_dip[i]} (heterozygous)" in print_dip:
-                                        print_dip[i] = f"{print_dip[i]} (homozygous)"
-                                    else:
-                                        print_dip[i] = f"{print_dip[i]} (heterozygous)"
-                                allele_matcher["count_diplotype"] = 1
-                                allele_matcher["guide_dip"] = [guide_dip]
-                                allele_matcher["print_dip"] = [", ".join(sorted(print_dip))]
-                        elif "*28" in print_dip and "*37" not in print_dip:
-                            if all(a == "*80" or a == "*28" for a in print_dip):
-                                if print_dip.count("*80") == 1 and print_dip.count("*28") > 1:
-                                    allele_matcher["count_diplotype"] = 1
-                                    allele_matcher["guide_dip"] = ["?/?"]
-                                    allele_matcher["print_dip"] = ["?/?"]
-                                elif print_dip.count("*80") == 2 and print_dip.count("*28") < 2:
-                                    allele_matcher["count_diplotype"] = 1
-                                    allele_matcher["guide_dip"] = ["?/?"]
-                                    allele_matcher["print_dip"] = ["?/?"]
-                                else:
-                                    for i in range(print_dip.count("*28")):
-                                        print_dip.append("*80+*28")
-                                    while "*80" in print_dip:
-                                        print_dip.remove("*80")
-                                    for i in range(len(print_dip)):
-                                        if f"{print_dip[i]} (heterozygous)" in print_dip:
-                                            print_dip[i] = f"{print_dip[i]} (homozygous)"
-                                        else:
-                                            print_dip[i] = f"{print_dip[i]} (heterozygous)"
-                                    allele_matcher["count_diplotype"] = 1
-                                    allele_matcher["guide_dip"] = [guide_dip]
-                                    allele_matcher["print_dip"] = [", ".join(sorted(print_dip))]
-                            else:
-                                for i in range(print_dip.count("*28")):
-                                    print_dip.append("*80+*28")
-                                while "*80" in print_dip:
-                                    print_dip.remove("*80")
-                                for i in range(len(print_dip)):
-                                    if f"{print_dip[i]} (heterozygous)" in print_dip:
-                                        print_dip[i] = f"{print_dip[i]} (homozygous)"
-                                    else:
-                                        print_dip[i] = f"{print_dip[i]} (heterozygous)"
-                                allele_matcher["count_diplotype"] = 1
-                                allele_matcher["guide_dip"] = [guide_dip]
-                                allele_matcher["print_dip"] = [", ".join(sorted(print_dip))]
-                        elif "*28" not in print_dip and "*37" in print_dip:
-                            if all(a == "*80" or a == "*37" for a in print_dip):
-                                if print_dip.count("*80") == 1 and print_dip.count("*37") > 1:
-                                    allele_matcher["count_diplotype"] = 1
-                                    allele_matcher["guide_dip"] = ["?/?"]
-                                    allele_matcher["print_dip"] = ["?/?"]
-                                elif print_dip.count("*80") == 2 and print_dip.count("*37") < 2:
-                                    allele_matcher["count_diplotype"] = 1
-                                    allele_matcher["guide_dip"] = ["?/?"]
-                                    allele_matcher["print_dip"] = ["?/?"]
-                                else:
-                                    for i in range(print_dip.count("*37")):
-                                        print_dip.append("*80+*37")
-                                    while "*80" in print_dip:
-                                        print_dip.remove("*80")
-                                    for i in range(len(print_dip)):
-                                        if f"{print_dip[i]} (heterozygous)" in print_dip:
-                                            print_dip[i] = f"{print_dip[i]} (homozygous)"
-                                        else:
-                                            print_dip[i] = f"{print_dip[i]} (heterozygous)"
-                                    allele_matcher["count_diplotype"] = 1
-                                    allele_matcher["guide_dip"] = [guide_dip]
-                                    allele_matcher["print_dip"] = [", ".join(sorted(print_dip))]
-                            else:
-                                for i in range(print_dip.count("*37")):
-                                    print_dip.append("*80+*37")
-                                while "*80" in print_dip:
-                                    print_dip.remove("*80")
-                                for i in range(len(print_dip)):
-                                    if f"{print_dip[i]} (heterozygous)" in print_dip:
-                                        print_dip[i] = f"{print_dip[i]} (homozygous)"
-                                    else:
-                                        print_dip[i] = f"{print_dip[i]} (heterozygous)"
-                                allele_matcher["count_diplotype"] = 1
-                                allele_matcher["guide_dip"] = [guide_dip]
-                                allele_matcher["print_dip"] = [", ".join(sorted(print_dip))]
-                    else:
+                    if "*80" in print_dip:
+                        for i in range(print_dip.count("*28")):
+                            print_dip.append("*80+*28")
+                        for i in range(print_dip.count("*37")):
+                            print_dip.append("*80+*37")
+                        while "*80" in print_dip:
+                            print_dip.remove("*80")
+                    for i in range(len(print_dip)):
+                        if f"{print_dip[i]} (heterozygous)" in print_dip:
+                            print_dip[i] = f"{print_dip[i]} (homozygous)"
+                        else:
+                            print_dip[i] = f"{print_dip[i]} (heterozygous)"
+                    ##### summary
+                    if not print_dip:
                         allele_matcher["count_diplotype"] = 1
                         allele_matcher["guide_dip"] = ["?/?"]
                         allele_matcher["print_dip"] = ["?/?"]
-            else:
-                allele_matcher = match_haplotypes(allele_definition, allele_matcher)
-
-                if ana_best_candidate == "true" and allele_matcher["count_diplotype"] > 1:
-                    allele_matcher = find_best_candidate(allele_definition, allele_matcher)
-
-                if allele_definition["gene"] == "SLCO1B1":
-                    if allele_matcher["guide_dip"] == ["?/?"] and allele_matcher["print_dip"] == ["?/?"]:
-                        for variant in allele_matcher["variants"]:
-                            if variant["rsid"] == "rs4149056":
-                                if variant["gt_bases"] == "T/T" or variant["gt_bases"] == "T|T":
-                                    allele_matcher["count_diplotype"] = 1
-                                    allele_matcher["guide_dip"] = ["*1A/*1A"]
-                                    allele_matcher["print_dip"] = ["rs4149056T/rs4149056T"]
-                                elif variant["gt_bases"] == "C/C" or variant["gt_bases"] == "C|C":
-                                    allele_matcher["count_diplotype"] = 1
-                                    allele_matcher["guide_dip"] = ["*5/*5"]
-                                    allele_matcher["print_dip"] = ["rs4149056C/rs4149056C"]
-                                elif variant["gt_bases"] == "T/C" or variant["gt_bases"] == "T|C":
-                                    allele_matcher["count_diplotype"] = 1
-                                    allele_matcher["guide_dip"] = ["*1A/*5"]
-                                    allele_matcher["print_dip"] = ["rs4149056T/rs4149056C"]
-                                elif variant["gt_bases"] == "C/T" or variant["gt_bases"] == "C|T":
-                                    allele_matcher["count_diplotype"] = 1
-                                    allele_matcher["guide_dip"] = ["*5/*1A"]
-                                    allele_matcher["print_dip"] = ["rs4149056C/rs4149056T"]
                     else:
-                        for variant in allele_matcher["variants"]:
-                            if variant["rsid"] == "rs4149056":
-                                if variant["gt_bases"] == "T/T" or variant["gt_bases"] == "T|T":
-                                    allele_matcher["count_diplotype"] += 1
-                                    allele_matcher["guide_dip"].append("*1A/*1A")
-                                    allele_matcher["print_dip"].append("rs4149056T/rs4149056T")
-                                elif variant["gt_bases"] == "C/C" or variant["gt_bases"] == "C|C":
-                                    allele_matcher["count_diplotype"] += 1
-                                    allele_matcher["guide_dip"].append("*5/*5")
-                                    allele_matcher["print_dip"].append("rs4149056C/rs4149056C")
-                                elif variant["gt_bases"] == "T/C" or variant["gt_bases"] == "T|C":
-                                    allele_matcher["count_diplotype"] += 1
-                                    allele_matcher["guide_dip"].append("*1A/*5")
-                                    allele_matcher["print_dip"].append("rs4149056T/rs4149056C")
-                                elif variant["gt_bases"] == "C/T" or variant["gt_bases"] == "C|T":
-                                    allele_matcher["count_diplotype"] += 1
-                                    allele_matcher["guide_dip"].append("*5/*1A")
-                                    allele_matcher["print_dip"].append("rs4149056C/rs4149056T")
+                        allele_matcher["count_diplotype"] = 1
+                        allele_matcher["guide_dip"] = [guide_dip]
+                        allele_matcher["print_dip"] = [", ".join(sorted(print_dip))]
 
             with open(outputs + f"/{allele_definition['gene']}_allele_matcher.json", "w") as outfile:  
                 json.dump(allele_matcher, outfile, indent=2)

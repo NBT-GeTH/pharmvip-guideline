@@ -1,31 +1,26 @@
+import os
 import argparse
 import time
 from pharmvip_guideline.allele_definitions_transform.transform import transform
 from pharmvip_guideline.allele_definitions_transform.transform_dbpmcgenomics import transform_dbpmcgenomics
 from pharmvip_guideline.allele_matcher.matcher import matcher
 from pharmvip_guideline.allele_matcher.diplotype import create_diplotype_cpic, read_diplotype
+from cyvcf2 import VCF
 from pharmvip_guideline.allele_matcher.diplotype_dbpmcgenomics import diplotype_dbpmcgenomics
 from pharmvip_guideline.allele_matcher.annotation import *
 
 def main():
+    allele_definitions_table = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", "2020_12_08_edited_dpyd", "table")
+    allele_definitions_output = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", "2020_12_08_edited_dpyd", "transform")
+    allele_definitions_dbpmcgenomics = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", "2020_12_08_edited_dpyd", "dbpmcgenomics")
+
+    function_mappings = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "function_mappings", "2020_05_20")
+    clinical_guideline_annotations = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "clinical_guideline_annotations", "2019_12_03")
+
     parser = argparse.ArgumentParser()
     subparsers = parser.add_subparsers(dest="subparser_name")
 
-    allele_definitions_transform_parser = subparsers.add_parser("allele_definitions_transform")
-    allele_definitions_transform_parser.add_argument(
-        "--allele_definitions",
-        required=True
-    )
-    allele_definitions_transform_parser.add_argument(
-        "--outputs",
-        help="file path to write json version of result files",
-        required=True
-    )
-    allele_definitions_transform_parser.add_argument(
-        "--dbpmcgenomics",
-        help="file path to write text version of result files",
-        required=True
-    )
+    allele_matcher_parser = subparsers.add_parser("allele_definitions_transform")
 
     allele_matcher_parser = subparsers.add_parser("allele_matcher")
     allele_matcher_parser.add_argument(
@@ -53,10 +48,6 @@ def main():
         required=True
     )
     allele_matcher_parser.add_argument(
-        "--vcf_gz_file",
-        required=True
-    )
-    allele_matcher_parser.add_argument(
         "--ana_best_candidate",
         required=True
     )
@@ -65,11 +56,15 @@ def main():
         required=True
     )
     allele_matcher_parser.add_argument(
-        "--diplotype_cyp2d6",
+        "--ana_options_hla",
         required=True
     )
     allele_matcher_parser.add_argument(
-        "--ana_options_hla",
+        "--vcf_gz_file",
+        required=True
+    )
+    allele_matcher_parser.add_argument(
+        "--diplotype_cyp2d6",
         required=True
     )
     allele_matcher_parser.add_argument(
@@ -112,14 +107,15 @@ def main():
                 args.allele_definitions,
                 args.ana_user_id,
                 args.ana_id,
-                args.vcf_gz_file,
                 args.ana_best_candidate,
+                args.vcf_gz_file,
                 args.outputs
             )
             diplotype_cpic = create_diplotype_cpic(args.outputs)
             
             diplotype_cyp2d6 = read_diplotype(args.diplotype_cyp2d6)
-            
+            diplotype_cyp2d6["sample_id"] = VCF(args.vcf_gz_file).samples[0]
+
             diplotype_dbpmcgenomics(args.ana_user_id, args.ana_id, diplotype_cpic, diplotype_cyp2d6, args.dbpmcgenomics)
 
             diplotype_hla = read_diplotype(args.diplotype_hla)

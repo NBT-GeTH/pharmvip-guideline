@@ -133,15 +133,15 @@ def sum_up_gene_phases(variants):
         return "combine"
 
 def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
-    vcf = VCF(vcf_gz_file)
-    allele_matcher = {}
-    allele_matcher["ana_user_id"] = ana_user_id
-    allele_matcher["ana_id"] = ana_id
-    allele_matcher["sample_id"] = vcf.samples[0]
-    allele_matcher["gene"] = allele_definition["gene"]
-    call_variants = 0
-    total_call_variants = 0
     for haplotype in allele_definition["haplotypes"]:
+        vcf = VCF(vcf_gz_file)
+        allele_matcher = {}
+        allele_matcher["ana_user_id"] = ana_user_id
+        allele_matcher["ana_id"] = ana_id
+        allele_matcher["sample_id"] = vcf.samples[0]
+        allele_matcher["gene"] = allele_definition["gene"]
+        call_variants = 0
+        total_call_variants = 0
         allele_matcher["chromosome"] = haplotype["chromosome"]
         allele_matcher["variants"] = []
         for variant in haplotype["variants"]:
@@ -165,7 +165,7 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                     # allele definition 1-based vs cyvcf2 0-based coordinate systems
                     if int(variant["start"]) != int(v.start) + 1:
                         continue
-                    v_vcf["dp"] = check_null_dp(v.format("DP").tolist()[0][0])
+                    v_vcf["dp"] = check_null_dp(v.format("DP").tolist()[0][0]) if "DP" in v.FORMAT else 0
                     v_vcf["gt_bases"] = v.gt_bases[0] if allele_definition["gene"] != "G6PD" else f"{v.gt_bases[0]}|{v.gt_bases[0]}"
                     v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
                     v_vcf["allele1_convert"] = convert_allele(v_vcf["hgvs_type"], v.var_type, v.is_deletion, v.REF, v_vcf["allele1"])
@@ -180,7 +180,7 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                     if int(variant["start"]) - 1 != int(v.start) + 1:
                         continue
                     if v.var_type == "indel" and v.is_deletion == True:
-                        v_vcf["dp"] = check_null_dp(v.format("DP").tolist()[0][0])
+                        v_vcf["dp"] = check_null_dp(v.format("DP").tolist()[0][0]) if "DP" in v.FORMAT else 0
                         v_vcf["gt_bases"] = v.gt_bases[0] if allele_definition["gene"] != "G6PD" else f"{v.gt_bases[0]}|{v.gt_bases[0]}"
                         v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
                         v_vcf["allele1_convert"] = convert_allele(v_vcf["hgvs_type"], v.var_type, v.is_deletion, v.REF, v_vcf["allele1"])
@@ -198,14 +198,14 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                                 if in_range != int(v.start) + 1:
                                     continue
                                 if v.var_type == "snp" or v.var_type == "unknown":
-                                    dp_in_range[index] = check_null_dp(v.format("DP").tolist()[0][0])
+                                    dp_in_range[index] = check_null_dp(v.format("DP").tolist()[0][0]) if "DP" in v.FORMAT else 0
                                     genotype_in_range[index] = v.gt_bases[0]
                                 else:
                                     print(f"error in range with: {v.var_type}, {v.gt_bases[0]}")
                                     exit()
                             index += 1
                         v_vcf["dp"] = int(sum(dp_in_range) / len(dp_in_range))
-                        v_vcf["gt_bases"]= extract_genotype_in_rage(allele_definition["gene"], genotype_in_range)
+                        v_vcf["gt_bases"] = extract_genotype_in_rage(allele_definition["gene"], genotype_in_range)
                         v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
                         v_vcf["allele1_convert"] = v_vcf["allele1"][1:]
                         v_vcf["allele2_convert"] = v_vcf["allele2"][1:]
