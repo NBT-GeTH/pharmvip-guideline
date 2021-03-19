@@ -87,44 +87,15 @@ def match_haplotypes(allele_definition, allele_matcher):
         guide_dip = []
         print_dip = []
         if not hap1_match or not hap2_match:
-            hap1_guide_dip = []
-            hap1_print_dip = []
-            hap2_guide_dip = []
-            hap2_print_dip = []
-            if not hap1_match:
-                if allele_definition["gene"] == "CACNA1S" or allele_definition["gene"] == "CYP2C19" or allele_definition["gene"] == "RYR1":
-                    hap1_guide_dip = ["Unknown"]
-                    hap1_print_dip = ["?"]
-                elif allele_definition["gene"] == "CFTR":
-                    hap1_guide_dip = ["Other"]
-                    hap1_print_dip = ["?"]
-                else:
-                    hap1_guide_dip = ["?"]
-                    hap1_print_dip = ["?"]
+            if allele_definition["gene"] == "CACNA1S" or allele_definition["gene"] == "CYP2C19" or allele_definition["gene"] == "RYR1":
+                guide_dip = ["Unknown/Unknown"]
+                print_dip = ["?/?"]
+            elif allele_definition["gene"] == "CFTR":
+                guide_dip = ["Other/Other"]
+                print_dip = ["?/?"]
             else:
-                hap1_guide_dip = hap1_match
-                hap1_print_dip = hap1_match
-            if not hap2_match:
-                if allele_definition["gene"] == "CACNA1S" or allele_definition["gene"] == "CYP2C19" or allele_definition["gene"] == "RYR1":
-                    hap2_guide_dip = ["Unknown"]
-                    hap2_print_dip = ["?"]
-                elif allele_definition["gene"] == "CFTR":
-                    hap2_guide_dip = ["Other"]
-                    hap2_print_dip = ["?"]
-                else:
-                    hap2_guide_dip = ["?"]
-                    hap2_print_dip = ["?"]
-            else:
-                hap2_guide_dip = hap2_match
-                hap2_print_dip = hap2_match
-            for i in hap1_guide_dip:
-                for j in hap2_guide_dip:
-                    if f"{j}/{i}" not in guide_dip:
-                        guide_dip.append(f"{i}/{j}")
-            for i in hap1_print_dip:
-                for j in hap2_print_dip:
-                    if f"{j}/{i}" not in print_dip:
-                        print_dip.append(f"{i}/{j}")
+                guide_dip = ["?/?"]
+                print_dip = ["?/?"]
         else:
             hap1_guide_dip = hap1_match
             hap1_print_dip = hap1_match
