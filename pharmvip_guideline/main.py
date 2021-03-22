@@ -9,31 +9,51 @@ from cyvcf2 import VCF
 from pharmvip_guideline.allele_matcher.diplotype_dbpmcgenomics import diplotype_dbpmcgenomics
 from pharmvip_guideline.allele_matcher.annotation import *
 
+defaults_allele_definitions_table = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", "2020_12_08_dpyd_edited", "table")
+defaults_allele_definitions_transform = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", "2020_12_08_dpyd_edited", "transform")
+defaults_allele_definitions_dbpmcgenomics = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", "2020_12_08_dpyd_edited", "dbpmcgenomics")
+
+defaults_function_mappings = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "function_mappings", "2020_05_20")
+defaults_clinical_guideline_annotations = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "clinical_guideline_annotations", "2019_12_03")
+
 def main():
-    allele_definitions_table = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", "2020_12_08_edited_dpyd", "table")
-    allele_definitions_output = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", "2020_12_08_edited_dpyd", "transform")
-    allele_definitions_dbpmcgenomics = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", "2020_12_08_edited_dpyd", "dbpmcgenomics")
-
-    function_mappings = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "function_mappings", "2020_05_20")
-    clinical_guideline_annotations = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "clinical_guideline_annotations", "2019_12_03")
-
     parser = argparse.ArgumentParser()
     subparsers = parser.add_subparsers(dest="subparser_name")
 
-    allele_matcher_parser = subparsers.add_parser("allele_definitions_transform")
+    allele_definitions_transform_parser = subparsers.add_parser("allele_definitions_transform")
+    allele_definitions_transform_parser.add_argument(
+        "--allele_definitions",
+        required=False,
+        default=defaults_allele_definitions_table
+    )
+    allele_definitions_transform_parser.add_argument(
+        "--outputs",
+        help="file path to write json version of result files",
+        required=False,
+        default=defaults_allele_definitions_transform
+    )
+    allele_definitions_transform_parser.add_argument(
+        "--dbpmcgenomics",
+        help="file path to write text version of result files",
+        required=False,
+        default=defaults_allele_definitions_dbpmcgenomics
+    )
 
     allele_matcher_parser = subparsers.add_parser("allele_matcher")
     allele_matcher_parser.add_argument(
         "--allele_definitions",
-        required=True
+        required=False,
+        default=defaults_allele_definitions_transform
     )
     allele_matcher_parser.add_argument(
         "--function_mappings",
-        required=True
+        required=False,
+        default=defaults_function_mappings
     )
     allele_matcher_parser.add_argument(
         "--clinical_guideline_annotations",
-        required=True
+        required=False,
+        default=defaults_clinical_guideline_annotations
     )
     allele_matcher_parser.add_argument(
         "--ana_user_id",
