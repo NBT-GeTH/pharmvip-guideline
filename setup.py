@@ -11,8 +11,34 @@ setuptools.setup(
 	description="PharmVIP(Pharmacogenomic Variant Analysis and Interpretation Platform) - Guideline Module",
 	long_description=long_description,
 	long_description_content_type="text/markdown",
-	url="",
+	url="pharmvip.nbt.or.th",
     packages=setuptools.find_packages(),
+    package_data = {
+        "resources": [
+            "*"
+        ],
+        "resources.allele_definitions": [
+            "*"
+        ],
+        "resources.allele_definitions.2020_12_08_dpyd_edited": [
+            "*"
+        ],
+        "resources.allele_definitions.2020_12_08_dpyd_edited.table": [
+            "*"
+        ],
+        "resources.allele_definitions.2020_12_08_dpyd_edited.transform": [
+            "*"
+        ],
+        "resources.allele_definitions.2020_12_08_dpyd_edited.dbpmcgenomics": [
+            "*"
+        ],
+        "resources.function_mappings.2020_05_20": [
+            "*"
+        ],
+        "resources.clinical_guideline_annotations.2019_12_03": [
+            "*"
+        ]
+    },
     classifiers=[
         "Programming Language :: Python :: 3",
         "Operating System :: OS Independent",
