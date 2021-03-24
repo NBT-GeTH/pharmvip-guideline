@@ -1,0 +1,109 @@
+{
+  "gene": "CACNA1S",
+  "haplotypes": [
+    {
+      "name": "Reference",
+      "position": "Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p7)",
+      "chromosome": "chr1",
+      "variants": [
+        {
+          "hgvs": "g.201060815C>T",
+          "hgvs_type": "SNP",
+          "start": "201060815",
+          "end": "201060815",
+          "rsid": "rs1800559",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.201091993G>A",
+          "hgvs_type": "SNP",
+          "start": "201091993",
+          "end": "201091993",
+          "rsid": "rs772226819",
+          "allele": "G"
+        }
+      ]
+    },
+    {
+      "name": "c.520C>T",
+      "position": "Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p7)",
+      "chromosome": "chr1",
+      "variants": [
+        {
+          "hgvs": "g.201060815C>T",
+          "hgvs_type": "SNP",
+          "start": "201060815",
+          "end": "201060815",
+          "rsid": "rs1800559",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.201091993G>A",
+          "hgvs_type": "SNP",
+          "start": "201091993",
+          "end": "201091993",
+          "rsid": "rs772226819",
+          "allele": "A"
+        }
+      ]
+    },
+    {
+      "name": "c.3257G>A",
+      "position": "Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p7)",
+      "chromosome": "chr1",
+      "variants": [
+        {
+          "hgvs": "g.201060815C>T",
+          "hgvs_type": "SNP",
+          "start": "201060815",
+          "end": "201060815",
+          "rsid": "rs1800559",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.201091993G>A",
+          "hgvs_type": "SNP",
+          "start": "201091993",
+          "end": "201091993",
+          "rsid": "rs772226819",
+          "allele": "G"
+        }
+      ]
+    }
+  ],
+  "hgvs_relation_to_name": [
+    {
+      "hgvs": "g.201060815C>T",
+      "name": [
+        "c.3257G>A"
+      ]
+    },
+    {
+      "hgvs": "g.201091993G>A",
+      "name": [
+        "c.520C>T"
+      ]
+    }
+  ],
+  "name_relation_to_hgvs": [
+    {
+      "name": "Reference",
+      "hgvs": [
+        "g.201060815C>T",
+        "g.201091993G>A"
+      ]
+    },
+    {
+      "name": "c.520C>T",
+      "hgvs": [
+        "g.201091993G>A"
+      ]
+    },
+    {
+      "name": "c.3257G>A",
+      "hgvs": [
+        "g.201060815C>T"
+      ]
+    }
+  ]
+}

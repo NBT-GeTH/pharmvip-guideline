@@ -1,4 +1,5 @@
 import setuptools
+from pharmvip_guideline.main import allele_definitions_table_version, function_mappings_version, clinical_guideline_annotations_version
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -20,22 +21,22 @@ setuptools.setup(
         "resources.allele_definitions": [
             "*"
         ],
-        "resources.allele_definitions.2020_12_08_dpyd_edited": [
+        f"resources.allele_definitions.{allele_definitions_table_version}": [
             "*"
         ],
-        "resources.allele_definitions.2020_12_08_dpyd_edited.table": [
+        f"resources.allele_definitions.{allele_definitions_table_version}.table": [
             "*"
         ],
-        "resources.allele_definitions.2020_12_08_dpyd_edited.transform": [
+        f"resources.allele_definitions.{allele_definitions_table_version}.transform": [
             "*"
         ],
-        "resources.allele_definitions.2020_12_08_dpyd_edited.dbpmcgenomics": [
+        f"resources.allele_definitions.{allele_definitions_table_version}.dbpmcgenomics": [
             "*"
         ],
-        "resources.function_mappings.2020_05_20": [
+        f"resources.function_mappings.{function_mappings_version}": [
             "*"
         ],
-        "resources.clinical_guideline_annotations.2019_12_03": [
+        f"resources.clinical_guideline_annotations.{clinical_guideline_annotations_version}": [
             "*"
         ]
     },
