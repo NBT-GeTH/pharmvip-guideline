@@ -9,12 +9,16 @@ from cyvcf2 import VCF
 from pharmvip_guideline.allele_matcher.diplotype_dbpmcgenomics import diplotype_dbpmcgenomics
 from pharmvip_guideline.allele_matcher.annotation import *
 
-defaults_allele_definitions_table = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", "2020_12_08_dpyd_edited", "table")
-defaults_allele_definitions_transform = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", "2020_12_08_dpyd_edited", "transform")
-defaults_allele_definitions_dbpmcgenomics = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", "2020_12_08_dpyd_edited", "dbpmcgenomics")
+allele_definitions_table_version = "2020_12_08_dpyd_edited"
+defaults_allele_definitions_table = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", allele_definitions_table_version, "table")
+defaults_allele_definitions_transform = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", allele_definitions_table_version, "transform")
+defaults_allele_definitions_dbpmcgenomics = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", allele_definitions_table_version, "dbpmcgenomics")
 
-defaults_function_mappings = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "function_mappings", "2020_05_20")
-defaults_clinical_guideline_annotations = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "clinical_guideline_annotations", "2019_12_03")
+function_mappings_version = "2020_05_20_dpyd_edited"
+defaults_function_mappings = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "function_mappings", function_mappings_version)
+
+clinical_guideline_annotations_version = "2019_12_03"
+defaults_clinical_guideline_annotations = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "clinical_guideline_annotations", clinical_guideline_annotations_version)
 
 def main():
     parser = argparse.ArgumentParser()
