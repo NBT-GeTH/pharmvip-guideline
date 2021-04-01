@@ -199,7 +199,8 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                     else:
                         allele_matcher["count_diplotype"] = 1
                         allele_matcher["guide_dip"] = [guide_dip]
-                        allele_matcher["print_dip"] = [f"{'+'.join(sorted(print_dip_0))}/{'+'.join(sorted(print_dip_1))}"]
+                        if  allele_matcher["print_dip"] != ["?/?"]:
+                            allele_matcher["print_dip"] = [f"{'+'.join(sorted(print_dip_0))}/{'+'.join(sorted(print_dip_1))}"]
                 elif str(allele_matcher["gene_phases"]) == "False" or str(allele_matcher["gene_phases"]) == "combine":
                     ##### match haplotypes
                     haplotypes = []
@@ -305,7 +306,8 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                     else:
                         allele_matcher["count_diplotype"] = 1
                         allele_matcher["guide_dip"] = [guide_dip]
-                        allele_matcher["print_dip"] = [", ".join(sorted(print_dip))]
+                        if  allele_matcher["print_dip"] != ["?/?"]:
+                            allele_matcher["print_dip"] = [", ".join(sorted(print_dip))]
 
             with open(outputs + f"/{allele_definition['gene']}_allele_matcher.json", "w") as outfile:  
                 json.dump(allele_matcher, outfile, indent=2)
