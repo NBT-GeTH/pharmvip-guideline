@@ -167,7 +167,7 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                     if int(variant["start"]) != int(v.start) + 1:
                         continue
                     v_vcf["dp"] = check_null_dp(v.format("DP").tolist()[0][0]) if "DP" in v.FORMAT else 0
-                    v_vcf["gt_bases"] = v.gt_bases[0] if allele_definition["gene"] != "G6PD" else f"{v.gt_bases[0]}|{v.gt_bases[0]}"
+                    v_vcf["gt_bases"] = f"{v.gt_bases[0]}|{v.gt_bases[0]}" if allele_definition["gene"] == "G6PD" and "/" not in v.gt_bases[0] and "|" not in v.gt_bases[0] else v.gt_bases[0]
                     v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
                     v_vcf["allele1_convert"] = convert_allele(v_vcf["hgvs_type"], v.var_type, v.is_deletion, v.REF, v_vcf["allele1"])
                     v_vcf["allele2_convert"] = convert_allele(v_vcf["hgvs_type"], v.var_type, v.is_deletion, v.REF, v_vcf["allele2"])
@@ -185,7 +185,7 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                         continue
                     if v.var_type == "indel" and v.is_deletion == True:
                         v_vcf["dp"] = check_null_dp(v.format("DP").tolist()[0][0]) if "DP" in v.FORMAT else 0
-                        v_vcf["gt_bases"] = v.gt_bases[0] if allele_definition["gene"] != "G6PD" else f"{v.gt_bases[0]}|{v.gt_bases[0]}"
+                        v_vcf["gt_bases"] = f"{v.gt_bases[0]}|{v.gt_bases[0]}" if allele_definition["gene"] == "G6PD" and "/" not in v.gt_bases[0] and "|" not in v.gt_bases[0] else v.gt_bases[0]
                         v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
                         v_vcf["allele1_convert"] = convert_allele(v_vcf["hgvs_type"], v.var_type, v.is_deletion, v.REF, v_vcf["allele1"])
                         v_vcf["allele2_convert"] = convert_allele(v_vcf["hgvs_type"], v.var_type, v.is_deletion, v.REF, v_vcf["allele2"])
