@@ -419,7 +419,9 @@
   },
   "IFNL3": {
     "rs12979860 reference (C) ": "IFNL3 rs12979860C",
-    "rs12979860 variant (T)": "IFNL3 rs12979860T"
+    "rs12979860C": "IFNL3 rs12979860C",
+    "rs12979860 variant (T)": "IFNL3 rs12979860T",
+    "rs12979860T": "IFNL3 rs12979860T"
   },
   "CFTR": {
     "CFTRF508del(CTT)": "CFTRF508del(CTT)",
