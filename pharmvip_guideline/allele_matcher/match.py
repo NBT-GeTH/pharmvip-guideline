@@ -4,7 +4,14 @@ def create_hap_regex(variants):
     hap1_regex = []
     hap2_regex = []
     for variant in variants:
-        if variant["gt_phases"] == True or variant["gt_phases"] == ".":
+        if variant["gt_phases"] == ".":
+            if variant["hgvs_type"] != "SNP":
+                hap1_regex.append(f"(.+)")
+                hap2_regex.append(f"(.+)")
+            else:
+                hap1_regex.append(f"(.)")
+                hap2_regex.append(f"(.)")
+        elif variant["gt_phases"] == True:
             hap1_regex.append(f"({variant['allele1_convert']})")
             hap2_regex.append(f"({variant['allele2_convert']})")
         elif variant["gt_phases"] == False:
@@ -108,7 +115,10 @@ def match_haplotypes(allele_definition, allele_matcher):
                     for i in range(len(haplotype["variants"])):
                         if re.match(r"^(\.+)$", allele_matcher["variants"][i]["allele1_convert"]) or re.match(r"^(\.+)$", allele_matcher["variants"][i]["allele2_convert"]):
                             if re.match(r"^(\.+)$", allele_matcher["variants"][i]["allele1_convert"]) and re.match(r"^(\.+)$", allele_matcher["variants"][i]["allele2_convert"]):
-                                hap1_match_name_allele_invert.append("(.)")
+                                if allele_matcher["variants"][i]["hgvs_type"] != "SNP":
+                                    hap1_match_name_allele_invert.append("(.+)")
+                                else:
+                                    hap1_match_name_allele_invert.append("(.)")
                             else:
                                 if allele_matcher["variants"][i]["allele1_convert"] != ".":
                                     hap1_match_name_allele_invert.append(f"({allele_matcher['variants'][i]['allele1_convert']})")

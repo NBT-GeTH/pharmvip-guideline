@@ -80,7 +80,7 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                                 allele_matcher["count_diplotype"] += 1
                                 allele_matcher["guide_dip"].append("*5/*1A")
                                 allele_matcher["print_dip"].append("rs4149056C/rs4149056T")
-            elif allele_definition["gene"] == "UGT1A1":
+            elif allele_definition["gene"] == "UGT1A1" and allele_matcher["guide_dip"] != ["*1/*1"] and allele_matcher["print_dip"] != ["*1/*1"]:
                 if allele_matcher["gene_phases"] == ".":
                     allele_matcher["count_diplotype"] = 0
                     allele_matcher["guide_dip"] = ["No info/No info"]
@@ -199,8 +199,8 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                     else:
                         allele_matcher["count_diplotype"] = 1
                         allele_matcher["guide_dip"] = [guide_dip]
-                        if  allele_matcher["print_dip"] != ["?/?"]:
-                            allele_matcher["print_dip"] = [f"{'+'.join(sorted(print_dip_0))}/{'+'.join(sorted(print_dip_1))}"]
+                        # if  allele_matcher["print_dip"] != ["?/?"]:
+                        allele_matcher["print_dip"] = [f"{'+'.join(sorted(print_dip_0))}/{'+'.join(sorted(print_dip_1))}"]
                 elif str(allele_matcher["gene_phases"]) == "False" or str(allele_matcher["gene_phases"]) == "combine":
                     ##### match haplotypes
                     haplotypes = []
@@ -306,8 +306,8 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                     else:
                         allele_matcher["count_diplotype"] = 1
                         allele_matcher["guide_dip"] = [guide_dip]
-                        if  allele_matcher["print_dip"] != ["?/?"]:
-                            allele_matcher["print_dip"] = [", ".join(sorted(print_dip))]
+                        # if  allele_matcher["print_dip"] != ["?/?"]:
+                        allele_matcher["print_dip"] = [", ".join(sorted(print_dip))]
 
             with open(outputs + f"/{allele_definition['gene']}_allele_matcher.json", "w") as outfile:  
                 json.dump(allele_matcher, outfile, indent=2)
