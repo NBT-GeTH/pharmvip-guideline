@@ -27,9 +27,22 @@ def manual_customize(allele_definition_df, gene):
         allele_definition_df.columns = range(allele_definition_df.shape[1])
 
         return allele_definition_df
+    elif gene == "TPMT":
+        exceptions = None
+        for column in range(allele_definition_df.shape[1]):
+            if allele_definition_df.iloc[3, column] ==  "g.18138983G>A":
+                exceptions = column
+        allele_definition_df.drop(allele_definition_df.columns[[exceptions]], axis=1, inplace=True)
+        allele_definition_df.columns = range(allele_definition_df.shape[1])
+
+        return allele_definition_df
     elif gene == "VKORC1":
-        allele_definition_df.iloc[7, 0] = "-1639G"
-        allele_definition_df.iloc[8, 0] = "-1639A"
+        for row in range(allele_definition_df.shape[0]):
+            if allele_definition_df.iloc[row, 0] ==  "rs9923231 reference (C)":
+                allele_definition_df.iloc[row, 0] = "-1639G"
+            elif allele_definition_df.iloc[row, 0] ==  "rs9923231 variant (T)":
+                allele_definition_df.iloc[row, 0] = "-1639A"
+        
         return allele_definition_df
     else:
         return allele_definition_df

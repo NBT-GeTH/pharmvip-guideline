@@ -1,0 +1,1101 @@
+{
+  "gene": "DPYD",
+  "haplotypes": [
+    {
+      "name": "Reference",
+      "position": "Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p2)",
+      "chromosome": "chr1",
+      "variants": [
+        {
+          "hgvs": "g.97079071C>A",
+          "hgvs_type": "SNP",
+          "start": "97079071",
+          "end": "97079071",
+          "rsid": "rs1801268",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97082391T>A",
+          "hgvs_type": "SNP",
+          "start": "97082391",
+          "end": "97082391",
+          "rsid": "rs67376798",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97450058C>T",
+          "hgvs_type": "SNP",
+          "start": "97450058",
+          "end": "97450058",
+          "rsid": "rs3918290",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97450066delG",
+          "hgvs_type": "DEL",
+          "start": "97450066",
+          "end": "97450066",
+          "rsid": "rs72549303",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97515787A>C",
+          "hgvs_type": "SNP",
+          "start": "97515787",
+          "end": "97515787",
+          "rsid": "rs55886062",
+          "allele": "A"
+        },
+        {
+          "hgvs": "g.97573943C>A",
+          "hgvs_type": "SNP",
+          "start": "97573943",
+          "end": "97573943",
+          "rsid": "rs78060119",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97579893G>C",
+          "hgvs_type": "SNP",
+          "start": "97579893",
+          "end": "97579893",
+          "rsid": "rs75017182",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97691776G>A",
+          "hgvs_type": "SNP",
+          "start": "97691776",
+          "end": "97691776",
+          "rsid": "rs1801266",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97699474T>C",
+          "hgvs_type": "SNP",
+          "start": "97699474",
+          "end": "97699474",
+          "rsid": "rs115232898",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97740415_97740418delATGA",
+          "hgvs_type": "DEL",
+          "start": "97740415",
+          "end": "97740418",
+          "rsid": "rs72549309",
+          "allele": "ATGA"
+        }
+      ]
+    },
+    {
+      "name": "c.295_298delTCAT",
+      "position": "Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p2)",
+      "chromosome": "chr1",
+      "variants": [
+        {
+          "hgvs": "g.97079071C>A",
+          "hgvs_type": "SNP",
+          "start": "97079071",
+          "end": "97079071",
+          "rsid": "rs1801268",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97082391T>A",
+          "hgvs_type": "SNP",
+          "start": "97082391",
+          "end": "97082391",
+          "rsid": "rs67376798",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97450058C>T",
+          "hgvs_type": "SNP",
+          "start": "97450058",
+          "end": "97450058",
+          "rsid": "rs3918290",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97450066delG",
+          "hgvs_type": "DEL",
+          "start": "97450066",
+          "end": "97450066",
+          "rsid": "rs72549303",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97515787A>C",
+          "hgvs_type": "SNP",
+          "start": "97515787",
+          "end": "97515787",
+          "rsid": "rs55886062",
+          "allele": "A"
+        },
+        {
+          "hgvs": "g.97573943C>A",
+          "hgvs_type": "SNP",
+          "start": "97573943",
+          "end": "97573943",
+          "rsid": "rs78060119",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97579893G>C",
+          "hgvs_type": "SNP",
+          "start": "97579893",
+          "end": "97579893",
+          "rsid": "rs75017182",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97691776G>A",
+          "hgvs_type": "SNP",
+          "start": "97691776",
+          "end": "97691776",
+          "rsid": "rs1801266",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97699474T>C",
+          "hgvs_type": "SNP",
+          "start": "97699474",
+          "end": "97699474",
+          "rsid": "rs115232898",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97740415_97740418delATGA",
+          "hgvs_type": "DEL",
+          "start": "97740415",
+          "end": "97740418",
+          "rsid": "rs72549309",
+          "allele": "delATGA"
+        }
+      ]
+    },
+    {
+      "name": "c.557A>G",
+      "position": "Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p2)",
+      "chromosome": "chr1",
+      "variants": [
+        {
+          "hgvs": "g.97079071C>A",
+          "hgvs_type": "SNP",
+          "start": "97079071",
+          "end": "97079071",
+          "rsid": "rs1801268",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97082391T>A",
+          "hgvs_type": "SNP",
+          "start": "97082391",
+          "end": "97082391",
+          "rsid": "rs67376798",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97450058C>T",
+          "hgvs_type": "SNP",
+          "start": "97450058",
+          "end": "97450058",
+          "rsid": "rs3918290",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97450066delG",
+          "hgvs_type": "DEL",
+          "start": "97450066",
+          "end": "97450066",
+          "rsid": "rs72549303",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97515787A>C",
+          "hgvs_type": "SNP",
+          "start": "97515787",
+          "end": "97515787",
+          "rsid": "rs55886062",
+          "allele": "A"
+        },
+        {
+          "hgvs": "g.97573943C>A",
+          "hgvs_type": "SNP",
+          "start": "97573943",
+          "end": "97573943",
+          "rsid": "rs78060119",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97579893G>C",
+          "hgvs_type": "SNP",
+          "start": "97579893",
+          "end": "97579893",
+          "rsid": "rs75017182",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97691776G>A",
+          "hgvs_type": "SNP",
+          "start": "97691776",
+          "end": "97691776",
+          "rsid": "rs1801266",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97699474T>C",
+          "hgvs_type": "SNP",
+          "start": "97699474",
+          "end": "97699474",
+          "rsid": "rs115232898",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97740415_97740418delATGA",
+          "hgvs_type": "DEL",
+          "start": "97740415",
+          "end": "97740418",
+          "rsid": "rs72549309",
+          "allele": "ATGA"
+        }
+      ]
+    },
+    {
+      "name": "c.703C>T",
+      "position": "Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p2)",
+      "chromosome": "chr1",
+      "variants": [
+        {
+          "hgvs": "g.97079071C>A",
+          "hgvs_type": "SNP",
+          "start": "97079071",
+          "end": "97079071",
+          "rsid": "rs1801268",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97082391T>A",
+          "hgvs_type": "SNP",
+          "start": "97082391",
+          "end": "97082391",
+          "rsid": "rs67376798",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97450058C>T",
+          "hgvs_type": "SNP",
+          "start": "97450058",
+          "end": "97450058",
+          "rsid": "rs3918290",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97450066delG",
+          "hgvs_type": "DEL",
+          "start": "97450066",
+          "end": "97450066",
+          "rsid": "rs72549303",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97515787A>C",
+          "hgvs_type": "SNP",
+          "start": "97515787",
+          "end": "97515787",
+          "rsid": "rs55886062",
+          "allele": "A"
+        },
+        {
+          "hgvs": "g.97573943C>A",
+          "hgvs_type": "SNP",
+          "start": "97573943",
+          "end": "97573943",
+          "rsid": "rs78060119",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97579893G>C",
+          "hgvs_type": "SNP",
+          "start": "97579893",
+          "end": "97579893",
+          "rsid": "rs75017182",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97691776G>A",
+          "hgvs_type": "SNP",
+          "start": "97691776",
+          "end": "97691776",
+          "rsid": "rs1801266",
+          "allele": "A"
+        },
+        {
+          "hgvs": "g.97699474T>C",
+          "hgvs_type": "SNP",
+          "start": "97699474",
+          "end": "97699474",
+          "rsid": "rs115232898",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97740415_97740418delATGA",
+          "hgvs_type": "DEL",
+          "start": "97740415",
+          "end": "97740418",
+          "rsid": "rs72549309",
+          "allele": "ATGA"
+        }
+      ]
+    },
+    {
+      "name": "c.1129-5923C>G",
+      "position": "Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p2)",
+      "chromosome": "chr1",
+      "variants": [
+        {
+          "hgvs": "g.97079071C>A",
+          "hgvs_type": "SNP",
+          "start": "97079071",
+          "end": "97079071",
+          "rsid": "rs1801268",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97082391T>A",
+          "hgvs_type": "SNP",
+          "start": "97082391",
+          "end": "97082391",
+          "rsid": "rs67376798",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97450058C>T",
+          "hgvs_type": "SNP",
+          "start": "97450058",
+          "end": "97450058",
+          "rsid": "rs3918290",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97450066delG",
+          "hgvs_type": "DEL",
+          "start": "97450066",
+          "end": "97450066",
+          "rsid": "rs72549303",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97515787A>C",
+          "hgvs_type": "SNP",
+          "start": "97515787",
+          "end": "97515787",
+          "rsid": "rs55886062",
+          "allele": "A"
+        },
+        {
+          "hgvs": "g.97573943C>A",
+          "hgvs_type": "SNP",
+          "start": "97573943",
+          "end": "97573943",
+          "rsid": "rs78060119",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97579893G>C",
+          "hgvs_type": "SNP",
+          "start": "97579893",
+          "end": "97579893",
+          "rsid": "rs75017182",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97691776G>A",
+          "hgvs_type": "SNP",
+          "start": "97691776",
+          "end": "97691776",
+          "rsid": "rs1801266",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97699474T>C",
+          "hgvs_type": "SNP",
+          "start": "97699474",
+          "end": "97699474",
+          "rsid": "rs115232898",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97740415_97740418delATGA",
+          "hgvs_type": "DEL",
+          "start": "97740415",
+          "end": "97740418",
+          "rsid": "rs72549309",
+          "allele": "ATGA"
+        }
+      ]
+    },
+    {
+      "name": "c.1156G>T",
+      "position": "Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p2)",
+      "chromosome": "chr1",
+      "variants": [
+        {
+          "hgvs": "g.97079071C>A",
+          "hgvs_type": "SNP",
+          "start": "97079071",
+          "end": "97079071",
+          "rsid": "rs1801268",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97082391T>A",
+          "hgvs_type": "SNP",
+          "start": "97082391",
+          "end": "97082391",
+          "rsid": "rs67376798",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97450058C>T",
+          "hgvs_type": "SNP",
+          "start": "97450058",
+          "end": "97450058",
+          "rsid": "rs3918290",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97450066delG",
+          "hgvs_type": "DEL",
+          "start": "97450066",
+          "end": "97450066",
+          "rsid": "rs72549303",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97515787A>C",
+          "hgvs_type": "SNP",
+          "start": "97515787",
+          "end": "97515787",
+          "rsid": "rs55886062",
+          "allele": "A"
+        },
+        {
+          "hgvs": "g.97573943C>A",
+          "hgvs_type": "SNP",
+          "start": "97573943",
+          "end": "97573943",
+          "rsid": "rs78060119",
+          "allele": "A"
+        },
+        {
+          "hgvs": "g.97579893G>C",
+          "hgvs_type": "SNP",
+          "start": "97579893",
+          "end": "97579893",
+          "rsid": "rs75017182",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97691776G>A",
+          "hgvs_type": "SNP",
+          "start": "97691776",
+          "end": "97691776",
+          "rsid": "rs1801266",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97699474T>C",
+          "hgvs_type": "SNP",
+          "start": "97699474",
+          "end": "97699474",
+          "rsid": "rs115232898",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97740415_97740418delATGA",
+          "hgvs_type": "DEL",
+          "start": "97740415",
+          "end": "97740418",
+          "rsid": "rs72549309",
+          "allele": "ATGA"
+        }
+      ]
+    },
+    {
+      "name": "c.1679T>G",
+      "position": "Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p2)",
+      "chromosome": "chr1",
+      "variants": [
+        {
+          "hgvs": "g.97079071C>A",
+          "hgvs_type": "SNP",
+          "start": "97079071",
+          "end": "97079071",
+          "rsid": "rs1801268",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97082391T>A",
+          "hgvs_type": "SNP",
+          "start": "97082391",
+          "end": "97082391",
+          "rsid": "rs67376798",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97450058C>T",
+          "hgvs_type": "SNP",
+          "start": "97450058",
+          "end": "97450058",
+          "rsid": "rs3918290",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97450066delG",
+          "hgvs_type": "DEL",
+          "start": "97450066",
+          "end": "97450066",
+          "rsid": "rs72549303",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97515787A>C",
+          "hgvs_type": "SNP",
+          "start": "97515787",
+          "end": "97515787",
+          "rsid": "rs55886062",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97573943C>A",
+          "hgvs_type": "SNP",
+          "start": "97573943",
+          "end": "97573943",
+          "rsid": "rs78060119",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97579893G>C",
+          "hgvs_type": "SNP",
+          "start": "97579893",
+          "end": "97579893",
+          "rsid": "rs75017182",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97691776G>A",
+          "hgvs_type": "SNP",
+          "start": "97691776",
+          "end": "97691776",
+          "rsid": "rs1801266",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97699474T>C",
+          "hgvs_type": "SNP",
+          "start": "97699474",
+          "end": "97699474",
+          "rsid": "rs115232898",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97740415_97740418delATGA",
+          "hgvs_type": "DEL",
+          "start": "97740415",
+          "end": "97740418",
+          "rsid": "rs72549309",
+          "allele": "ATGA"
+        }
+      ]
+    },
+    {
+      "name": "c.1898delC",
+      "position": "Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p2)",
+      "chromosome": "chr1",
+      "variants": [
+        {
+          "hgvs": "g.97079071C>A",
+          "hgvs_type": "SNP",
+          "start": "97079071",
+          "end": "97079071",
+          "rsid": "rs1801268",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97082391T>A",
+          "hgvs_type": "SNP",
+          "start": "97082391",
+          "end": "97082391",
+          "rsid": "rs67376798",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97450058C>T",
+          "hgvs_type": "SNP",
+          "start": "97450058",
+          "end": "97450058",
+          "rsid": "rs3918290",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97450066delG",
+          "hgvs_type": "DEL",
+          "start": "97450066",
+          "end": "97450066",
+          "rsid": "rs72549303",
+          "allele": "delG"
+        },
+        {
+          "hgvs": "g.97515787A>C",
+          "hgvs_type": "SNP",
+          "start": "97515787",
+          "end": "97515787",
+          "rsid": "rs55886062",
+          "allele": "A"
+        },
+        {
+          "hgvs": "g.97573943C>A",
+          "hgvs_type": "SNP",
+          "start": "97573943",
+          "end": "97573943",
+          "rsid": "rs78060119",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97579893G>C",
+          "hgvs_type": "SNP",
+          "start": "97579893",
+          "end": "97579893",
+          "rsid": "rs75017182",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97691776G>A",
+          "hgvs_type": "SNP",
+          "start": "97691776",
+          "end": "97691776",
+          "rsid": "rs1801266",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97699474T>C",
+          "hgvs_type": "SNP",
+          "start": "97699474",
+          "end": "97699474",
+          "rsid": "rs115232898",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97740415_97740418delATGA",
+          "hgvs_type": "DEL",
+          "start": "97740415",
+          "end": "97740418",
+          "rsid": "rs72549309",
+          "allele": "ATGA"
+        }
+      ]
+    },
+    {
+      "name": "c.1905+1G>A",
+      "position": "Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p2)",
+      "chromosome": "chr1",
+      "variants": [
+        {
+          "hgvs": "g.97079071C>A",
+          "hgvs_type": "SNP",
+          "start": "97079071",
+          "end": "97079071",
+          "rsid": "rs1801268",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97082391T>A",
+          "hgvs_type": "SNP",
+          "start": "97082391",
+          "end": "97082391",
+          "rsid": "rs67376798",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97450058C>T",
+          "hgvs_type": "SNP",
+          "start": "97450058",
+          "end": "97450058",
+          "rsid": "rs3918290",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97450066delG",
+          "hgvs_type": "DEL",
+          "start": "97450066",
+          "end": "97450066",
+          "rsid": "rs72549303",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97515787A>C",
+          "hgvs_type": "SNP",
+          "start": "97515787",
+          "end": "97515787",
+          "rsid": "rs55886062",
+          "allele": "A"
+        },
+        {
+          "hgvs": "g.97573943C>A",
+          "hgvs_type": "SNP",
+          "start": "97573943",
+          "end": "97573943",
+          "rsid": "rs78060119",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97579893G>C",
+          "hgvs_type": "SNP",
+          "start": "97579893",
+          "end": "97579893",
+          "rsid": "rs75017182",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97691776G>A",
+          "hgvs_type": "SNP",
+          "start": "97691776",
+          "end": "97691776",
+          "rsid": "rs1801266",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97699474T>C",
+          "hgvs_type": "SNP",
+          "start": "97699474",
+          "end": "97699474",
+          "rsid": "rs115232898",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97740415_97740418delATGA",
+          "hgvs_type": "DEL",
+          "start": "97740415",
+          "end": "97740418",
+          "rsid": "rs72549309",
+          "allele": "ATGA"
+        }
+      ]
+    },
+    {
+      "name": "c.2846A>T",
+      "position": "Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p2)",
+      "chromosome": "chr1",
+      "variants": [
+        {
+          "hgvs": "g.97079071C>A",
+          "hgvs_type": "SNP",
+          "start": "97079071",
+          "end": "97079071",
+          "rsid": "rs1801268",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97082391T>A",
+          "hgvs_type": "SNP",
+          "start": "97082391",
+          "end": "97082391",
+          "rsid": "rs67376798",
+          "allele": "A"
+        },
+        {
+          "hgvs": "g.97450058C>T",
+          "hgvs_type": "SNP",
+          "start": "97450058",
+          "end": "97450058",
+          "rsid": "rs3918290",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97450066delG",
+          "hgvs_type": "DEL",
+          "start": "97450066",
+          "end": "97450066",
+          "rsid": "rs72549303",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97515787A>C",
+          "hgvs_type": "SNP",
+          "start": "97515787",
+          "end": "97515787",
+          "rsid": "rs55886062",
+          "allele": "A"
+        },
+        {
+          "hgvs": "g.97573943C>A",
+          "hgvs_type": "SNP",
+          "start": "97573943",
+          "end": "97573943",
+          "rsid": "rs78060119",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97579893G>C",
+          "hgvs_type": "SNP",
+          "start": "97579893",
+          "end": "97579893",
+          "rsid": "rs75017182",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97691776G>A",
+          "hgvs_type": "SNP",
+          "start": "97691776",
+          "end": "97691776",
+          "rsid": "rs1801266",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97699474T>C",
+          "hgvs_type": "SNP",
+          "start": "97699474",
+          "end": "97699474",
+          "rsid": "rs115232898",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97740415_97740418delATGA",
+          "hgvs_type": "DEL",
+          "start": "97740415",
+          "end": "97740418",
+          "rsid": "rs72549309",
+          "allele": "ATGA"
+        }
+      ]
+    },
+    {
+      "name": "c.2983G>T",
+      "position": "Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p2)",
+      "chromosome": "chr1",
+      "variants": [
+        {
+          "hgvs": "g.97079071C>A",
+          "hgvs_type": "SNP",
+          "start": "97079071",
+          "end": "97079071",
+          "rsid": "rs1801268",
+          "allele": "A"
+        },
+        {
+          "hgvs": "g.97082391T>A",
+          "hgvs_type": "SNP",
+          "start": "97082391",
+          "end": "97082391",
+          "rsid": "rs67376798",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97450058C>T",
+          "hgvs_type": "SNP",
+          "start": "97450058",
+          "end": "97450058",
+          "rsid": "rs3918290",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97450066delG",
+          "hgvs_type": "DEL",
+          "start": "97450066",
+          "end": "97450066",
+          "rsid": "rs72549303",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97515787A>C",
+          "hgvs_type": "SNP",
+          "start": "97515787",
+          "end": "97515787",
+          "rsid": "rs55886062",
+          "allele": "A"
+        },
+        {
+          "hgvs": "g.97573943C>A",
+          "hgvs_type": "SNP",
+          "start": "97573943",
+          "end": "97573943",
+          "rsid": "rs78060119",
+          "allele": "C"
+        },
+        {
+          "hgvs": "g.97579893G>C",
+          "hgvs_type": "SNP",
+          "start": "97579893",
+          "end": "97579893",
+          "rsid": "rs75017182",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97691776G>A",
+          "hgvs_type": "SNP",
+          "start": "97691776",
+          "end": "97691776",
+          "rsid": "rs1801266",
+          "allele": "G"
+        },
+        {
+          "hgvs": "g.97699474T>C",
+          "hgvs_type": "SNP",
+          "start": "97699474",
+          "end": "97699474",
+          "rsid": "rs115232898",
+          "allele": "T"
+        },
+        {
+          "hgvs": "g.97740415_97740418delATGA",
+          "hgvs_type": "DEL",
+          "start": "97740415",
+          "end": "97740418",
+          "rsid": "rs72549309",
+          "allele": "ATGA"
+        }
+      ]
+    }
+  ],
+  "hgvs_relation_to_name": [
+    {
+      "hgvs": "g.97079071C>A",
+      "name": [
+        "c.2983G>T"
+      ]
+    },
+    {
+      "hgvs": "g.97082391T>A",
+      "name": [
+        "c.2846A>T"
+      ]
+    },
+    {
+      "hgvs": "g.97450058C>T",
+      "name": [
+        "c.1905+1G>A"
+      ]
+    },
+    {
+      "hgvs": "g.97450066delG",
+      "name": [
+        "c.1898delC"
+      ]
+    },
+    {
+      "hgvs": "g.97515787A>C",
+      "name": [
+        "c.1679T>G"
+      ]
+    },
+    {
+      "hgvs": "g.97573943C>A",
+      "name": [
+        "c.1156G>T"
+      ]
+    },
+    {
+      "hgvs": "g.97579893G>C",
+      "name": [
+        "c.1129-5923C>G"
+      ]
+    },
+    {
+      "hgvs": "g.97691776G>A",
+      "name": [
+        "c.703C>T"
+      ]
+    },
+    {
+      "hgvs": "g.97699474T>C",
+      "name": [
+        "c.557A>G"
+      ]
+    },
+    {
+      "hgvs": "g.97740415_97740418delATGA",
+      "name": [
+        "c.295_298delTCAT"
+      ]
+    }
+  ],
+  "name_relation_to_hgvs": [
+    {
+      "name": "Reference",
+      "hgvs": [
+        "g.97079071C>A",
+        "g.97082391T>A",
+        "g.97450058C>T",
+        "g.97450066delG",
+        "g.97515787A>C",
+        "g.97573943C>A",
+        "g.97579893G>C",
+        "g.97691776G>A",
+        "g.97699474T>C",
+        "g.97740415_97740418delATGA"
+      ]
+    },
+    {
+      "name": "c.295_298delTCAT",
+      "hgvs": [
+        "g.97740415_97740418delATGA"
+      ]
+    },
+    {
+      "name": "c.557A>G",
+      "hgvs": [
+        "g.97699474T>C"
+      ]
+    },
+    {
+      "name": "c.703C>T",
+      "hgvs": [
+        "g.97691776G>A"
+      ]
+    },
+    {
+      "name": "c.1129-5923C>G",
+      "hgvs": [
+        "g.97579893G>C"
+      ]
+    },
+    {
+      "name": "c.1156G>T",
+      "hgvs": [
+        "g.97573943C>A"
+      ]
+    },
+    {
+      "name": "c.1679T>G",
+      "hgvs": [
+        "g.97515787A>C"
+      ]
+    },
+    {
+      "name": "c.1898delC",
+      "hgvs": [
+        "g.97450066delG"
+      ]
+    },
+    {
+      "name": "c.1905+1G>A",
+      "hgvs": [
+        "g.97450058C>T"
+      ]
+    },
+    {
+      "name": "c.2846A>T",
+      "hgvs": [
+        "g.97082391T>A"
+      ]
+    },
+    {
+      "name": "c.2983G>T",
+      "hgvs": [
+        "g.97079071C>A"
+      ]
+    }
+  ]
+}
