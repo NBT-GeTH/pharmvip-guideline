@@ -130,7 +130,7 @@ def sum_up_gene_phases(variants):
     elif True not in gt_phases and False in gt_phases:
         return False
     elif True in gt_phases and False in gt_phases:
-        return "combine"
+        return "Combine"
 
 def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
     for haplotype in allele_definition["haplotypes"]:

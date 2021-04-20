@@ -201,7 +201,7 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                         allele_matcher["guide_dip"] = [guide_dip]
                         # if  allele_matcher["print_dip"] != ["?/?"]:
                         allele_matcher["print_dip"] = [f"{'+'.join(sorted(print_dip_0))}/{'+'.join(sorted(print_dip_1))}"]
-                elif str(allele_matcher["gene_phases"]) == "False" or str(allele_matcher["gene_phases"]) == "combine":
+                elif str(allele_matcher["gene_phases"]) == "False" or str(allele_matcher["gene_phases"]) == "Combine":
                     ##### match haplotypes
                     haplotypes = []
                     for variant in allele_matcher["variants"]:

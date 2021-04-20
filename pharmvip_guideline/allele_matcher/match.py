@@ -76,7 +76,7 @@ def match_haplotypes(allele_definition, allele_matcher):
         allele_matcher["print_dip"] = print_dip
         
         return allele_matcher
-    elif allele_matcher["gene_phases"] == True or allele_matcher["gene_phases"] == False or allele_matcher["gene_phases"] == "combine":
+    elif allele_matcher["gene_phases"] == True or allele_matcher["gene_phases"] == False or allele_matcher["gene_phases"] == "Combine":
         hap1_regex, hap2_regex = create_hap_regex(allele_matcher["variants"])
 
         hap1_match = []
