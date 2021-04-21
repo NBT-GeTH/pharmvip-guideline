@@ -49,8 +49,8 @@ def read_diplotype(tsv):
                 "gt_phases": [],
                 "gene_phases": ".",
                 "count_diplotype": len(ast.literal_eval(df["guide_diplotype"][row])) if "/" in df["print_diplotype"][row] else 0,
-                "guide_dip": ast.literal_eval(df["guide_diplotype"][row]),
-                "print_dip": ast.literal_eval(df["print_diplotype"][row]),
+                "guide_dip": list(dict.fromkeys(ast.literal_eval(df["guide_diplotype"][row]))),
+                "print_dip": list(dict.fromkeys(ast.literal_eval(df["print_diplotype"][row]))),
                 "tool": ast.literal_eval(df["tool"][df["gene"] == df["gene"][row]].tolist()[0]) if "tool" in df else "N/A"
             },
             ignore_index=True
