@@ -11,26 +11,28 @@ def find_best_candidate(allele_definition, allele_matcher):
     raw_print_dip = copy.deepcopy(allele_matcher["print_dip"])
     
     missing_position = []
-    guide_dip_remove_list = []
-    print_dip_remove_list = []
+    name_relation_to_missing_hgvs = []
     for variant in allele_matcher["variants"]:
         if re.match(r"^(\.+)(\/|\|)(\.+)$", variant["gt_bases"]):
             missing_position.append(variant["hgvs"])
             for relation in allele_definition["hgvs_relation_to_name"]:
                 if relation["hgvs"] == variant["hgvs"]:
                     for name in relation["name"]:
-                        for guide_dip in allele_matcher["guide_dip"]:
-                            if name in guide_dip:
-                                guide_dip_remove_list.append(guide_dip)
-                        for print_dip in allele_matcher["print_dip"]:
-                            if name in print_dip:
-                                print_dip_remove_list.append(print_dip)
-    for guide_dip_remove in guide_dip_remove_list:
-        if guide_dip_remove in allele_matcher["guide_dip"]:
-            allele_matcher["guide_dip"].remove(guide_dip_remove)
-    for print_dip_remove in print_dip_remove_list:
-        if print_dip_remove in allele_matcher["print_dip"]:
-            allele_matcher["print_dip"].remove(print_dip_remove)
+                        name_relation_to_missing_hgvs.append(name)
+
+    for relation in allele_definition["name_relation_to_hgvs"]:
+        for name in name_relation_to_missing_hgvs:
+            if name == relation["name"]:
+                for missing_pos in missing_position:
+                    if missing_pos in relation["hgvs"]:
+                        relation["hgvs"].remove(missing_pos)
+                if not relation["hgvs"]:
+                    for guide_dip in allele_matcher["guide_dip"]:
+                        if name in guide_dip:
+                            allele_matcher["guide_dip"].remove(guide_dip)
+                    for print_dip in allele_matcher["print_dip"]:
+                        if name in print_dip:
+                            allele_matcher["print_dip"].remove(print_dip)
 
     assert len(allele_matcher["guide_dip"]) == len(allele_matcher["print_dip"])
     if not allele_matcher["guide_dip"] and not allele_matcher["print_dip"]:
@@ -51,16 +53,10 @@ def find_best_candidate(allele_definition, allele_matcher):
         score2 = 0
         for relation in allele_definition["name_relation_to_hgvs"]:
             if name1 == relation["name"]:
-                for missing_pos in missing_position:
-                    if missing_pos in relation["hgvs"]:
-                        relation["hgvs"].remove(missing_pos)
                 score1 = len(relation["hgvs"])
                 break
         for relation in allele_definition["name_relation_to_hgvs"]:
             if name2 == relation["name"]:
-                for missing_pos in missing_position:
-                    if missing_pos in relation["hgvs"]:
-                        relation["hgvs"].remove(missing_pos)
                 score2 = len(relation["hgvs"])
                 break
         guide_dip_score.append(score1 + score2)
@@ -71,16 +67,10 @@ def find_best_candidate(allele_definition, allele_matcher):
         score2 = 0
         for relation in allele_definition["name_relation_to_hgvs"]:
             if name1 == relation["name"]:
-                for missing_pos in missing_position:
-                    if missing_pos in relation["hgvs"]:
-                        relation["hgvs"].remove(missing_pos)
                 score1 = len(relation["hgvs"])
                 break
         for relation in allele_definition["name_relation_to_hgvs"]:
             if name2 == relation["name"]:
-                for missing_pos in missing_position:
-                    if missing_pos in relation["hgvs"]:
-                        relation["hgvs"].remove(missing_pos)
                 score2 = len(relation["hgvs"])
                 break
         print_dip_score.append(score1 + score2)
