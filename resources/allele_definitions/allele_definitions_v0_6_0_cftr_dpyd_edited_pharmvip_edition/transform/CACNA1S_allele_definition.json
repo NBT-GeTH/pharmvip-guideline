@@ -12,7 +12,8 @@
           "start": "201060815",
           "end": "201060815",
           "rsid": "rs1800559",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": true
         },
         {
           "hgvs": "g.201091993G>A",
@@ -20,7 +21,8 @@
           "start": "201091993",
           "end": "201091993",
           "rsid": "rs772226819",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": true
         }
       ]
     },
@@ -35,7 +37,8 @@
           "start": "201060815",
           "end": "201060815",
           "rsid": "rs1800559",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.201091993G>A",
@@ -43,7 +46,8 @@
           "start": "201091993",
           "end": "201091993",
           "rsid": "rs772226819",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": true
         }
       ]
     },
@@ -58,7 +62,8 @@
           "start": "201060815",
           "end": "201060815",
           "rsid": "rs1800559",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": true
         },
         {
           "hgvs": "g.201091993G>A",
@@ -66,7 +71,8 @@
           "start": "201091993",
           "end": "201091993",
           "rsid": "rs772226819",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         }
       ]
     }

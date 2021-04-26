@@ -2,9 +2,41 @@ import glob
 from pharmvip_guideline.utils.natural_sort import natural_keys
 import json
 from pharmvip_guideline.allele_matcher.query import query_region
-from pharmvip_guideline.allele_matcher.match import match_haplotypes
+from pharmvip_guideline.allele_matcher.match import match_haplotypes, create_name_haplotype, extract_iupac
 from pharmvip_guideline.allele_matcher.candidate import find_best_candidate
+import re
 import copy
+
+def create_hap_regex_ugt1a1(allele_matcher_variants, haplotype_variants):
+    hap1_regex = []
+    hap2_regex = []
+    for variant in allele_matcher_variants:
+        if variant["gt_phases"] == ".":
+            if variant["hgvs_type"] != "SNP":
+                hap1_regex.append(f"(.+)")
+                hap2_regex.append(f"(.+)")
+            else:
+                hap1_regex.append(f"(.)")
+                hap2_regex.append(f"(.)")
+        elif variant["gt_phases"] == True:
+            hap1_regex.append(f"({variant['allele1_convert']})")
+            hap2_regex.append(f"({variant['allele2_convert']})")
+        elif variant["gt_phases"] == False:
+            hap1_regex.append(f"({variant['allele1_convert']}|{variant['allele2_convert']})")
+            hap2_regex.append(f"({variant['allele1_convert']}|{variant['allele2_convert']})")
+        else:
+            print(f"error create hap regex with: {variant['genotype_phases']}")
+            exit()
+    assert len(hap1_regex) == len(hap2_regex) == (len(haplotype_variants))
+    for i in range(len(haplotype_variants)):
+        if haplotype_variants[i]["is_ref"] == False:
+            if haplotype_variants[i]["hgvs_type"] != "SNP":
+                hap1_regex[i] = "(.+)"
+                hap2_regex[i] = "(.+)"
+            else:
+                hap1_regex[i] = "(.)"
+                hap2_regex[i] = "(.)"
+    return f"^{'_'.join(hap1_regex)}$", f"^{'_'.join(hap2_regex)}$"
 
 def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_file, outputs):
     allele_definitions_list = []
@@ -81,6 +113,68 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                                 allele_matcher["guide_dip"].append("*5/*1A")
                                 allele_matcher["print_dip"].append("rs4149056C/rs4149056T")
             elif allele_definition["gene"] == "UGT1A1" and allele_matcher["guide_dip"] != ["*1/*1"] and allele_matcher["print_dip"] != ["*1/*1"]:
+                hap1_match = []
+                hap2_match = []
+                for haplotype in allele_definition["haplotypes"]:
+                    name_haplotype = create_name_haplotype(haplotype["variants"])
+                    for _name_haplotype in name_haplotype:
+                        hap1_regex, hap2_regex = create_hap_regex_ugt1a1(allele_matcher["variants"], haplotype["variants"])
+                        if re.match(hap1_regex, _name_haplotype):
+                            if haplotype["name"] not in hap1_match:
+                                hap1_match.append(haplotype["name"])
+                        if re.match(hap2_regex, _name_haplotype):
+                            if haplotype["name"] not in hap2_match:
+                                hap2_match.append(haplotype["name"])
+                
+                diplotype_ugt1a1 = []
+                if not hap1_match or not hap2_match:
+                    diplotype_ugt1a1 = ["?/?"]
+                else:
+                    for haplotype in allele_definition["haplotypes"]:
+                        if haplotype["name"] in hap1_match:
+                            hap1_match_name = haplotype["name"]
+                            hap1_match_name_allele_invert = []
+                            for i in range(len(haplotype["variants"])):
+                                if re.match(r"^(\.+)$", allele_matcher["variants"][i]["allele1_convert"]) or re.match(r"^(\.+)$", allele_matcher["variants"][i]["allele2_convert"]):
+                                    if re.match(r"^(\.+)$", allele_matcher["variants"][i]["allele1_convert"]) and re.match(r"^(\.+)$", allele_matcher["variants"][i]["allele2_convert"]):
+                                        if allele_matcher["variants"][i]["hgvs_type"] != "SNP":
+                                            hap1_match_name_allele_invert.append("(.+)")
+                                        else:
+                                            hap1_match_name_allele_invert.append("(.)")
+                                    else:
+                                        if allele_matcher["variants"][i]["allele1_convert"] != ".":
+                                            hap1_match_name_allele_invert.append(f"({allele_matcher['variants'][i]['allele1_convert']})")
+                                        elif allele_matcher["variants"][i]["allele2_convert"] != ".":
+                                            hap1_match_name_allele_invert.append(f"({allele_matcher['variants'][i]['allele2_convert']})")
+                                else:
+                                    if allele_matcher["variants"][i]["allele1_convert"] == allele_matcher["variants"][i]["allele2_convert"]:
+                                        hap1_match_name_allele_invert.append(f"({allele_matcher['variants'][i]['allele1_convert']})")
+                                    else:
+                                        if haplotype["variants"][i]["allele"] != allele_matcher["variants"][i]["allele1_convert"]:
+                                            hap1_match_name_allele_invert.append(f"({allele_matcher['variants'][i]['allele1_convert']})")
+                                        elif haplotype["variants"][i]["allele"] != allele_matcher["variants"][i]["allele2_convert"]:
+                                            hap1_match_name_allele_invert.append(f"({allele_matcher['variants'][i]['allele2_convert']})")
+                            for x in range(len(haplotype["variants"])):
+                                if haplotype["variants"][x]["is_ref"] == False:
+                                    if haplotype["variants"][x]["hgvs_type"] != "SNP":
+                                        hap1_match_name_allele_invert[x] = "(.+)"
+                                    else:
+                                        hap1_match_name_allele_invert[x] = "(.)"
+                            hap1_match_name_haplotype_invert_regex = f"^{'_'.join(hap1_match_name_allele_invert)}$"
+                            for haplotype in allele_definition["haplotypes"]:
+                                if haplotype["name"] in hap2_match:
+                                    hap2_match_name = haplotype["name"]
+                                    hap2_match_name_allele = []
+                                    for variant in haplotype["variants"]:
+                                        hap2_match_name_allele.append(variant["allele"])
+                                    hap2_match_name_haplotype = extract_iupac([f"{'_'.join(hap2_match_name_allele)}"])
+                                    for _hap2_match_name_haplotype in hap2_match_name_haplotype:
+                                        if re.match(hap1_match_name_haplotype_invert_regex, _hap2_match_name_haplotype):
+                                            if f"{hap2_match_name}/{hap1_match_name}" not in diplotype_ugt1a1:
+                                                diplotype_ugt1a1.append(f"{hap1_match_name}/{hap2_match_name}")
+                    if not diplotype_ugt1a1:
+                        diplotype_ugt1a1 = ["?/?"]
+
                 if allele_matcher["gene_phases"] == ".":
                     allele_matcher["count_diplotype"] = 0
                     allele_matcher["guide_dip"] = ["No info/No info"]
@@ -308,6 +402,9 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                         allele_matcher["guide_dip"] = [guide_dip]
                         # if  allele_matcher["print_dip"] != ["?/?"]:
                         allele_matcher["print_dip"] = [", ".join(sorted(print_dip))]
+
+                if diplotype_ugt1a1 == ["?/?"]:
+                    allele_matcher["print_dip"] = ["?/?"]
 
             with open(outputs + f"/{allele_definition['gene']}_allele_matcher.json", "w") as outfile:  
                 json.dump(allele_matcher, outfile, indent=2)

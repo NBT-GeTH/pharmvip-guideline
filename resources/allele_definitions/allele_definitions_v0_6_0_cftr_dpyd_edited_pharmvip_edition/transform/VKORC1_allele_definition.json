@@ -12,7 +12,8 @@
           "start": "31096368",
           "end": "31096368",
           "rsid": "rs9923231",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": true
         }
       ]
     },
@@ -27,7 +28,8 @@
           "start": "31096368",
           "end": "31096368",
           "rsid": "rs9923231",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": true
         }
       ]
     }
