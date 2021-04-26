@@ -4,8 +4,8 @@ import pandas as pd
 from pharmvip_guideline.allele_definitions_transform.allele_definition import *
 import json
 
-def get_allele_definition_haplotypes(allele_definition_df):
-    allele_definition_df = clean_allele_cell(allele_definition_df)
+def get_allele_definition_haplotypes(allele_definition_df_raw):
+    allele_definition_df = clean_allele_cell(allele_definition_df_raw)
 
     position_cell = allele_definition_df.iloc[3, 0]
     position, chromosome = search_chromosome(position_cell)
@@ -17,6 +17,9 @@ def get_allele_definition_haplotypes(allele_definition_df):
     rsid = findall_rsid(rsid_cell)
 
     assert len(hgvs) == len(hgvs_type) == len(start) == len(end) == len(rsid)
+
+    haplotype_cell_raw = allele_definition_df_raw.iloc[7:, 0:]
+    name_raw, allele_raw = extract_allele(haplotype_cell_raw)
 
     haplotype_cell = allele_definition_df.iloc[7:, 0:]
     name, allele = extract_allele(haplotype_cell)
@@ -39,6 +42,10 @@ def get_allele_definition_haplotypes(allele_definition_df):
                 variant["end"] = end[hgvs_index]
                 variant["rsid"] = rsid[hgvs_index]
                 variant["allele"] = allele[name_index][hgvs_index]
+                if str(allele_raw[name_index][hgvs_index]) == "nan":
+                    variant["is_ref"] = False
+                else:
+                    variant["is_ref"] = True
                 haplotype["variants"].append(variant)
             allele_definition_haplotypes.append(haplotype)
     

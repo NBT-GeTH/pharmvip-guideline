@@ -12,7 +12,8 @@
           "start": "39248147",
           "end": "39248147",
           "rsid": "rs12979860",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": true
         }
       ]
     },
@@ -27,7 +28,8 @@
           "start": "39248147",
           "end": "39248147",
           "rsid": "rs12979860",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": true
         }
       ]
     }

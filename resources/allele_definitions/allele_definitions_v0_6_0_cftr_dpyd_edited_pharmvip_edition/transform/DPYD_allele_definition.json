@@ -12,7 +12,8 @@
           "start": "97079071",
           "end": "97079071",
           "rsid": "rs1801268",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": true
         },
         {
           "hgvs": "g.97082391T>A",
@@ -20,7 +21,8 @@
           "start": "97082391",
           "end": "97082391",
           "rsid": "rs67376798",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": true
         },
         {
           "hgvs": "g.97450058C>T",
@@ -28,7 +30,8 @@
           "start": "97450058",
           "end": "97450058",
           "rsid": "rs3918290",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": true
         },
         {
           "hgvs": "g.97450066delG",
@@ -36,7 +39,8 @@
           "start": "97450066",
           "end": "97450066",
           "rsid": "rs72549303",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": true
         },
         {
           "hgvs": "g.97515787A>C",
@@ -44,7 +48,8 @@
           "start": "97515787",
           "end": "97515787",
           "rsid": "rs55886062",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": true
         },
         {
           "hgvs": "g.97573943C>A",
@@ -52,7 +57,8 @@
           "start": "97573943",
           "end": "97573943",
           "rsid": "rs78060119",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": true
         },
         {
           "hgvs": "g.97579893G>C",
@@ -60,7 +66,8 @@
           "start": "97579893",
           "end": "97579893",
           "rsid": "rs75017182",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": true
         },
         {
           "hgvs": "g.97691776G>A",
@@ -68,7 +75,8 @@
           "start": "97691776",
           "end": "97691776",
           "rsid": "rs1801266",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": true
         },
         {
           "hgvs": "g.97699474T>C",
@@ -76,7 +84,8 @@
           "start": "97699474",
           "end": "97699474",
           "rsid": "rs115232898",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": true
         },
         {
           "hgvs": "g.97740415_97740418delATGA",
@@ -84,7 +93,8 @@
           "start": "97740415",
           "end": "97740418",
           "rsid": "rs72549309",
-          "allele": "ATGA"
+          "allele": "ATGA",
+          "is_ref": true
         }
       ]
     },
@@ -99,7 +109,8 @@
           "start": "97079071",
           "end": "97079071",
           "rsid": "rs1801268",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97082391T>A",
@@ -107,7 +118,8 @@
           "start": "97082391",
           "end": "97082391",
           "rsid": "rs67376798",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.97450058C>T",
@@ -115,7 +127,8 @@
           "start": "97450058",
           "end": "97450058",
           "rsid": "rs3918290",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97450066delG",
@@ -123,7 +136,8 @@
           "start": "97450066",
           "end": "97450066",
           "rsid": "rs72549303",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97515787A>C",
@@ -131,7 +145,8 @@
           "start": "97515787",
           "end": "97515787",
           "rsid": "rs55886062",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.97573943C>A",
@@ -139,7 +154,8 @@
           "start": "97573943",
           "end": "97573943",
           "rsid": "rs78060119",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97579893G>C",
@@ -147,7 +163,8 @@
           "start": "97579893",
           "end": "97579893",
           "rsid": "rs75017182",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97691776G>A",
@@ -155,7 +172,8 @@
           "start": "97691776",
           "end": "97691776",
           "rsid": "rs1801266",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97699474T>C",
@@ -163,7 +181,8 @@
           "start": "97699474",
           "end": "97699474",
           "rsid": "rs115232898",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.97740415_97740418delATGA",
@@ -171,7 +190,8 @@
           "start": "97740415",
           "end": "97740418",
           "rsid": "rs72549309",
-          "allele": "delATGA"
+          "allele": "delATGA",
+          "is_ref": true
         }
       ]
     },
@@ -186,7 +206,8 @@
           "start": "97079071",
           "end": "97079071",
           "rsid": "rs1801268",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97082391T>A",
@@ -194,7 +215,8 @@
           "start": "97082391",
           "end": "97082391",
           "rsid": "rs67376798",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.97450058C>T",
@@ -202,7 +224,8 @@
           "start": "97450058",
           "end": "97450058",
           "rsid": "rs3918290",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97450066delG",
@@ -210,7 +233,8 @@
           "start": "97450066",
           "end": "97450066",
           "rsid": "rs72549303",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97515787A>C",
@@ -218,7 +242,8 @@
           "start": "97515787",
           "end": "97515787",
           "rsid": "rs55886062",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.97573943C>A",
@@ -226,7 +251,8 @@
           "start": "97573943",
           "end": "97573943",
           "rsid": "rs78060119",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97579893G>C",
@@ -234,7 +260,8 @@
           "start": "97579893",
           "end": "97579893",
           "rsid": "rs75017182",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97691776G>A",
@@ -242,7 +269,8 @@
           "start": "97691776",
           "end": "97691776",
           "rsid": "rs1801266",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97699474T>C",
@@ -250,7 +278,8 @@
           "start": "97699474",
           "end": "97699474",
           "rsid": "rs115232898",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": true
         },
         {
           "hgvs": "g.97740415_97740418delATGA",
@@ -258,7 +287,8 @@
           "start": "97740415",
           "end": "97740418",
           "rsid": "rs72549309",
-          "allele": "ATGA"
+          "allele": "ATGA",
+          "is_ref": false
         }
       ]
     },
@@ -273,7 +303,8 @@
           "start": "97079071",
           "end": "97079071",
           "rsid": "rs1801268",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97082391T>A",
@@ -281,7 +312,8 @@
           "start": "97082391",
           "end": "97082391",
           "rsid": "rs67376798",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.97450058C>T",
@@ -289,7 +321,8 @@
           "start": "97450058",
           "end": "97450058",
           "rsid": "rs3918290",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97450066delG",
@@ -297,7 +330,8 @@
           "start": "97450066",
           "end": "97450066",
           "rsid": "rs72549303",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97515787A>C",
@@ -305,7 +339,8 @@
           "start": "97515787",
           "end": "97515787",
           "rsid": "rs55886062",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.97573943C>A",
@@ -313,7 +348,8 @@
           "start": "97573943",
           "end": "97573943",
           "rsid": "rs78060119",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97579893G>C",
@@ -321,7 +357,8 @@
           "start": "97579893",
           "end": "97579893",
           "rsid": "rs75017182",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97691776G>A",
@@ -329,7 +366,8 @@
           "start": "97691776",
           "end": "97691776",
           "rsid": "rs1801266",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": true
         },
         {
           "hgvs": "g.97699474T>C",
@@ -337,7 +375,8 @@
           "start": "97699474",
           "end": "97699474",
           "rsid": "rs115232898",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.97740415_97740418delATGA",
@@ -345,7 +384,8 @@
           "start": "97740415",
           "end": "97740418",
           "rsid": "rs72549309",
-          "allele": "ATGA"
+          "allele": "ATGA",
+          "is_ref": false
         }
       ]
     },
@@ -360,7 +400,8 @@
           "start": "97079071",
           "end": "97079071",
           "rsid": "rs1801268",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97082391T>A",
@@ -368,7 +409,8 @@
           "start": "97082391",
           "end": "97082391",
           "rsid": "rs67376798",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.97450058C>T",
@@ -376,7 +418,8 @@
           "start": "97450058",
           "end": "97450058",
           "rsid": "rs3918290",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97450066delG",
@@ -384,7 +427,8 @@
           "start": "97450066",
           "end": "97450066",
           "rsid": "rs72549303",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97515787A>C",
@@ -392,7 +436,8 @@
           "start": "97515787",
           "end": "97515787",
           "rsid": "rs55886062",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.97573943C>A",
@@ -400,7 +445,8 @@
           "start": "97573943",
           "end": "97573943",
           "rsid": "rs78060119",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97579893G>C",
@@ -408,7 +454,8 @@
           "start": "97579893",
           "end": "97579893",
           "rsid": "rs75017182",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": true
         },
         {
           "hgvs": "g.97691776G>A",
@@ -416,7 +463,8 @@
           "start": "97691776",
           "end": "97691776",
           "rsid": "rs1801266",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97699474T>C",
@@ -424,7 +472,8 @@
           "start": "97699474",
           "end": "97699474",
           "rsid": "rs115232898",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.97740415_97740418delATGA",
@@ -432,7 +481,8 @@
           "start": "97740415",
           "end": "97740418",
           "rsid": "rs72549309",
-          "allele": "ATGA"
+          "allele": "ATGA",
+          "is_ref": false
         }
       ]
     },
@@ -447,7 +497,8 @@
           "start": "97079071",
           "end": "97079071",
           "rsid": "rs1801268",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97082391T>A",
@@ -455,7 +506,8 @@
           "start": "97082391",
           "end": "97082391",
           "rsid": "rs67376798",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.97450058C>T",
@@ -463,7 +515,8 @@
           "start": "97450058",
           "end": "97450058",
           "rsid": "rs3918290",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97450066delG",
@@ -471,7 +524,8 @@
           "start": "97450066",
           "end": "97450066",
           "rsid": "rs72549303",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97515787A>C",
@@ -479,7 +533,8 @@
           "start": "97515787",
           "end": "97515787",
           "rsid": "rs55886062",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.97573943C>A",
@@ -487,7 +542,8 @@
           "start": "97573943",
           "end": "97573943",
           "rsid": "rs78060119",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": true
         },
         {
           "hgvs": "g.97579893G>C",
@@ -495,7 +551,8 @@
           "start": "97579893",
           "end": "97579893",
           "rsid": "rs75017182",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97691776G>A",
@@ -503,7 +560,8 @@
           "start": "97691776",
           "end": "97691776",
           "rsid": "rs1801266",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97699474T>C",
@@ -511,7 +569,8 @@
           "start": "97699474",
           "end": "97699474",
           "rsid": "rs115232898",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.97740415_97740418delATGA",
@@ -519,7 +578,8 @@
           "start": "97740415",
           "end": "97740418",
           "rsid": "rs72549309",
-          "allele": "ATGA"
+          "allele": "ATGA",
+          "is_ref": false
         }
       ]
     },
@@ -534,7 +594,8 @@
           "start": "97079071",
           "end": "97079071",
           "rsid": "rs1801268",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97082391T>A",
@@ -542,7 +603,8 @@
           "start": "97082391",
           "end": "97082391",
           "rsid": "rs67376798",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.97450058C>T",
@@ -550,7 +612,8 @@
           "start": "97450058",
           "end": "97450058",
           "rsid": "rs3918290",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97450066delG",
@@ -558,7 +621,8 @@
           "start": "97450066",
           "end": "97450066",
           "rsid": "rs72549303",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97515787A>C",
@@ -566,7 +630,8 @@
           "start": "97515787",
           "end": "97515787",
           "rsid": "rs55886062",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": true
         },
         {
           "hgvs": "g.97573943C>A",
@@ -574,7 +639,8 @@
           "start": "97573943",
           "end": "97573943",
           "rsid": "rs78060119",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97579893G>C",
@@ -582,7 +648,8 @@
           "start": "97579893",
           "end": "97579893",
           "rsid": "rs75017182",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97691776G>A",
@@ -590,7 +657,8 @@
           "start": "97691776",
           "end": "97691776",
           "rsid": "rs1801266",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97699474T>C",
@@ -598,7 +666,8 @@
           "start": "97699474",
           "end": "97699474",
           "rsid": "rs115232898",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.97740415_97740418delATGA",
@@ -606,7 +675,8 @@
           "start": "97740415",
           "end": "97740418",
           "rsid": "rs72549309",
-          "allele": "ATGA"
+          "allele": "ATGA",
+          "is_ref": false
         }
       ]
     },
@@ -621,7 +691,8 @@
           "start": "97079071",
           "end": "97079071",
           "rsid": "rs1801268",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97082391T>A",
@@ -629,7 +700,8 @@
           "start": "97082391",
           "end": "97082391",
           "rsid": "rs67376798",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.97450058C>T",
@@ -637,7 +709,8 @@
           "start": "97450058",
           "end": "97450058",
           "rsid": "rs3918290",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97450066delG",
@@ -645,7 +718,8 @@
           "start": "97450066",
           "end": "97450066",
           "rsid": "rs72549303",
-          "allele": "delG"
+          "allele": "delG",
+          "is_ref": true
         },
         {
           "hgvs": "g.97515787A>C",
@@ -653,7 +727,8 @@
           "start": "97515787",
           "end": "97515787",
           "rsid": "rs55886062",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.97573943C>A",
@@ -661,7 +736,8 @@
           "start": "97573943",
           "end": "97573943",
           "rsid": "rs78060119",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97579893G>C",
@@ -669,7 +745,8 @@
           "start": "97579893",
           "end": "97579893",
           "rsid": "rs75017182",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97691776G>A",
@@ -677,7 +754,8 @@
           "start": "97691776",
           "end": "97691776",
           "rsid": "rs1801266",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97699474T>C",
@@ -685,7 +763,8 @@
           "start": "97699474",
           "end": "97699474",
           "rsid": "rs115232898",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.97740415_97740418delATGA",
@@ -693,7 +772,8 @@
           "start": "97740415",
           "end": "97740418",
           "rsid": "rs72549309",
-          "allele": "ATGA"
+          "allele": "ATGA",
+          "is_ref": false
         }
       ]
     },
@@ -708,7 +788,8 @@
           "start": "97079071",
           "end": "97079071",
           "rsid": "rs1801268",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97082391T>A",
@@ -716,7 +797,8 @@
           "start": "97082391",
           "end": "97082391",
           "rsid": "rs67376798",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.97450058C>T",
@@ -724,7 +806,8 @@
           "start": "97450058",
           "end": "97450058",
           "rsid": "rs3918290",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": true
         },
         {
           "hgvs": "g.97450066delG",
@@ -732,7 +815,8 @@
           "start": "97450066",
           "end": "97450066",
           "rsid": "rs72549303",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97515787A>C",
@@ -740,7 +824,8 @@
           "start": "97515787",
           "end": "97515787",
           "rsid": "rs55886062",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.97573943C>A",
@@ -748,7 +833,8 @@
           "start": "97573943",
           "end": "97573943",
           "rsid": "rs78060119",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97579893G>C",
@@ -756,7 +842,8 @@
           "start": "97579893",
           "end": "97579893",
           "rsid": "rs75017182",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97691776G>A",
@@ -764,7 +851,8 @@
           "start": "97691776",
           "end": "97691776",
           "rsid": "rs1801266",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97699474T>C",
@@ -772,7 +860,8 @@
           "start": "97699474",
           "end": "97699474",
           "rsid": "rs115232898",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.97740415_97740418delATGA",
@@ -780,7 +869,8 @@
           "start": "97740415",
           "end": "97740418",
           "rsid": "rs72549309",
-          "allele": "ATGA"
+          "allele": "ATGA",
+          "is_ref": false
         }
       ]
     },
@@ -795,7 +885,8 @@
           "start": "97079071",
           "end": "97079071",
           "rsid": "rs1801268",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97082391T>A",
@@ -803,7 +894,8 @@
           "start": "97082391",
           "end": "97082391",
           "rsid": "rs67376798",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": true
         },
         {
           "hgvs": "g.97450058C>T",
@@ -811,7 +903,8 @@
           "start": "97450058",
           "end": "97450058",
           "rsid": "rs3918290",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97450066delG",
@@ -819,7 +912,8 @@
           "start": "97450066",
           "end": "97450066",
           "rsid": "rs72549303",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97515787A>C",
@@ -827,7 +921,8 @@
           "start": "97515787",
           "end": "97515787",
           "rsid": "rs55886062",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.97573943C>A",
@@ -835,7 +930,8 @@
           "start": "97573943",
           "end": "97573943",
           "rsid": "rs78060119",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97579893G>C",
@@ -843,7 +939,8 @@
           "start": "97579893",
           "end": "97579893",
           "rsid": "rs75017182",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97691776G>A",
@@ -851,7 +948,8 @@
           "start": "97691776",
           "end": "97691776",
           "rsid": "rs1801266",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97699474T>C",
@@ -859,7 +957,8 @@
           "start": "97699474",
           "end": "97699474",
           "rsid": "rs115232898",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.97740415_97740418delATGA",
@@ -867,7 +966,8 @@
           "start": "97740415",
           "end": "97740418",
           "rsid": "rs72549309",
-          "allele": "ATGA"
+          "allele": "ATGA",
+          "is_ref": false
         }
       ]
     },
@@ -882,7 +982,8 @@
           "start": "97079071",
           "end": "97079071",
           "rsid": "rs1801268",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": true
         },
         {
           "hgvs": "g.97082391T>A",
@@ -890,7 +991,8 @@
           "start": "97082391",
           "end": "97082391",
           "rsid": "rs67376798",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.97450058C>T",
@@ -898,7 +1000,8 @@
           "start": "97450058",
           "end": "97450058",
           "rsid": "rs3918290",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97450066delG",
@@ -906,7 +1009,8 @@
           "start": "97450066",
           "end": "97450066",
           "rsid": "rs72549303",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97515787A>C",
@@ -914,7 +1018,8 @@
           "start": "97515787",
           "end": "97515787",
           "rsid": "rs55886062",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.97573943C>A",
@@ -922,7 +1027,8 @@
           "start": "97573943",
           "end": "97573943",
           "rsid": "rs78060119",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.97579893G>C",
@@ -930,7 +1036,8 @@
           "start": "97579893",
           "end": "97579893",
           "rsid": "rs75017182",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97691776G>A",
@@ -938,7 +1045,8 @@
           "start": "97691776",
           "end": "97691776",
           "rsid": "rs1801266",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.97699474T>C",
@@ -946,7 +1054,8 @@
           "start": "97699474",
           "end": "97699474",
           "rsid": "rs115232898",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.97740415_97740418delATGA",
@@ -954,7 +1063,8 @@
           "start": "97740415",
           "end": "97740418",
           "rsid": "rs72549309",
-          "allele": "ATGA"
+          "allele": "ATGA",
+          "is_ref": false
         }
       ]
     }

@@ -12,7 +12,8 @@
           "start": "48037748",
           "end": "48037748",
           "rsid": "rs769369441",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037749G>C",
@@ -20,7 +21,8 @@
           "start": "48037749",
           "end": "48037749",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037783_48037788delGGAGTC",
@@ -28,7 +30,8 @@
           "start": "48037783",
           "end": "48037788",
           "rsid": "rs746071566",
-          "allele": "GGAGTC"
+          "allele": "GGAGTC",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037798G>A",
@@ -36,7 +39,8 @@
           "start": "48037798",
           "end": "48037798",
           "rsid": "rs186364861",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037801_48037802insGAGTCG",
@@ -44,7 +48,8 @@
           "start": "48037801",
           "end": "48037802",
           "rsid": "rs869320766",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037826_48037827insCGGG",
@@ -52,7 +57,8 @@
           "start": "48037826",
           "end": "48037827",
           "rsid": "rs777311140",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037834C>T",
@@ -60,7 +66,8 @@
           "start": "48037834",
           "end": "48037834",
           "rsid": "",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037847G>C",
@@ -68,7 +75,8 @@
           "start": "48037847",
           "end": "48037847",
           "rsid": "rs766023281",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037849A>G",
@@ -76,7 +84,8 @@
           "start": "48037849",
           "end": "48037849",
           "rsid": "",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037885G>A",
@@ -84,7 +93,8 @@
           "start": "48037885",
           "end": "48037885",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037902C>G",
@@ -92,7 +102,8 @@
           "start": "48037902",
           "end": "48037902",
           "rsid": "rs149436418",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": true
         },
         {
           "hgvs": "g.48040982delA",
@@ -100,7 +111,8 @@
           "start": "48040982",
           "end": "48040982",
           "rsid": "rs1457579126",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": true
         },
         {
           "hgvs": "g.48041103_48041104insG",
@@ -108,7 +120,8 @@
           "start": "48041103",
           "end": "48041104",
           "rsid": "rs761191455",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": true
         },
         {
           "hgvs": "g.48041113G>T",
@@ -116,7 +129,8 @@
           "start": "48041113",
           "end": "48041113",
           "rsid": "rs1368252918",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": true
         },
         {
           "hgvs": "g.48045719C>T",
@@ -124,7 +138,8 @@
           "start": "48045719",
           "end": "48045719",
           "rsid": "rs116855232",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": true
         },
         {
           "hgvs": "g.48045720G>A",
@@ -132,7 +147,8 @@
           "start": "48045720",
           "end": "48045720",
           "rsid": "rs147390019",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": true
         },
         {
           "hgvs": "g.48045771T>A",
@@ -140,7 +156,8 @@
           "start": "48045771",
           "end": "48045771",
           "rsid": "rs139551410",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": true
         }
       ]
     },
@@ -155,7 +172,8 @@
           "start": "48037748",
           "end": "48037748",
           "rsid": "rs769369441",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037749G>C",
@@ -163,7 +181,8 @@
           "start": "48037749",
           "end": "48037749",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037783_48037788delGGAGTC",
@@ -171,7 +190,8 @@
           "start": "48037783",
           "end": "48037788",
           "rsid": "rs746071566",
-          "allele": "GGAGTC"
+          "allele": "GGAGTC",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037798G>A",
@@ -179,7 +199,8 @@
           "start": "48037798",
           "end": "48037798",
           "rsid": "rs186364861",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037801_48037802insGAGTCG",
@@ -187,7 +208,8 @@
           "start": "48037801",
           "end": "48037802",
           "rsid": "rs869320766",
-          "allele": "insGAGTCG"
+          "allele": "insGAGTCG",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037826_48037827insCGGG",
@@ -195,7 +217,8 @@
           "start": "48037826",
           "end": "48037827",
           "rsid": "rs777311140",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037834C>T",
@@ -203,7 +226,8 @@
           "start": "48037834",
           "end": "48037834",
           "rsid": "",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037847G>C",
@@ -211,7 +235,8 @@
           "start": "48037847",
           "end": "48037847",
           "rsid": "rs766023281",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037849A>G",
@@ -219,7 +244,8 @@
           "start": "48037849",
           "end": "48037849",
           "rsid": "",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037885G>A",
@@ -227,7 +253,8 @@
           "start": "48037885",
           "end": "48037885",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037902C>G",
@@ -235,7 +262,8 @@
           "start": "48037902",
           "end": "48037902",
           "rsid": "rs149436418",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48040982delA",
@@ -243,7 +271,8 @@
           "start": "48040982",
           "end": "48040982",
           "rsid": "rs1457579126",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041103_48041104insG",
@@ -251,7 +280,8 @@
           "start": "48041103",
           "end": "48041104",
           "rsid": "rs761191455",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041113G>T",
@@ -259,7 +289,8 @@
           "start": "48041113",
           "end": "48041113",
           "rsid": "rs1368252918",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045719C>T",
@@ -267,7 +298,8 @@
           "start": "48045719",
           "end": "48045719",
           "rsid": "rs116855232",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": true
         },
         {
           "hgvs": "g.48045720G>A",
@@ -275,7 +307,8 @@
           "start": "48045720",
           "end": "48045720",
           "rsid": "rs147390019",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045771T>A",
@@ -283,7 +316,8 @@
           "start": "48045771",
           "end": "48045771",
           "rsid": "rs139551410",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         }
       ]
     },
@@ -298,7 +332,8 @@
           "start": "48037748",
           "end": "48037748",
           "rsid": "rs769369441",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037749G>C",
@@ -306,7 +341,8 @@
           "start": "48037749",
           "end": "48037749",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037783_48037788delGGAGTC",
@@ -314,7 +350,8 @@
           "start": "48037783",
           "end": "48037788",
           "rsid": "rs746071566",
-          "allele": "GGAGTC"
+          "allele": "GGAGTC",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037798G>A",
@@ -322,7 +359,8 @@
           "start": "48037798",
           "end": "48037798",
           "rsid": "rs186364861",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037801_48037802insGAGTCG",
@@ -330,7 +368,8 @@
           "start": "48037801",
           "end": "48037802",
           "rsid": "rs869320766",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037826_48037827insCGGG",
@@ -338,7 +377,8 @@
           "start": "48037826",
           "end": "48037827",
           "rsid": "rs777311140",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037834C>T",
@@ -346,7 +386,8 @@
           "start": "48037834",
           "end": "48037834",
           "rsid": "",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037847G>C",
@@ -354,7 +395,8 @@
           "start": "48037847",
           "end": "48037847",
           "rsid": "rs766023281",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037849A>G",
@@ -362,7 +404,8 @@
           "start": "48037849",
           "end": "48037849",
           "rsid": "",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037885G>A",
@@ -370,7 +413,8 @@
           "start": "48037885",
           "end": "48037885",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037902C>G",
@@ -378,7 +422,8 @@
           "start": "48037902",
           "end": "48037902",
           "rsid": "rs149436418",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48040982delA",
@@ -386,7 +431,8 @@
           "start": "48040982",
           "end": "48040982",
           "rsid": "rs1457579126",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041103_48041104insG",
@@ -394,7 +440,8 @@
           "start": "48041103",
           "end": "48041104",
           "rsid": "rs761191455",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041113G>T",
@@ -402,7 +449,8 @@
           "start": "48041113",
           "end": "48041113",
           "rsid": "rs1368252918",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045719C>T",
@@ -410,7 +458,8 @@
           "start": "48045719",
           "end": "48045719",
           "rsid": "rs116855232",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": true
         },
         {
           "hgvs": "g.48045720G>A",
@@ -418,7 +467,8 @@
           "start": "48045720",
           "end": "48045720",
           "rsid": "rs147390019",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045771T>A",
@@ -426,7 +476,8 @@
           "start": "48045771",
           "end": "48045771",
           "rsid": "rs139551410",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         }
       ]
     },
@@ -441,7 +492,8 @@
           "start": "48037748",
           "end": "48037748",
           "rsid": "rs769369441",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037749G>C",
@@ -449,7 +501,8 @@
           "start": "48037749",
           "end": "48037749",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037783_48037788delGGAGTC",
@@ -457,7 +510,8 @@
           "start": "48037783",
           "end": "48037788",
           "rsid": "rs746071566",
-          "allele": "GGAGTC"
+          "allele": "GGAGTC",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037798G>A",
@@ -465,7 +519,8 @@
           "start": "48037798",
           "end": "48037798",
           "rsid": "rs186364861",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037801_48037802insGAGTCG",
@@ -473,7 +528,8 @@
           "start": "48037801",
           "end": "48037802",
           "rsid": "rs869320766",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037826_48037827insCGGG",
@@ -481,7 +537,8 @@
           "start": "48037826",
           "end": "48037827",
           "rsid": "rs777311140",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037834C>T",
@@ -489,7 +546,8 @@
           "start": "48037834",
           "end": "48037834",
           "rsid": "",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037847G>C",
@@ -497,7 +555,8 @@
           "start": "48037847",
           "end": "48037847",
           "rsid": "rs766023281",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037849A>G",
@@ -505,7 +564,8 @@
           "start": "48037849",
           "end": "48037849",
           "rsid": "",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037885G>A",
@@ -513,7 +573,8 @@
           "start": "48037885",
           "end": "48037885",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037902C>G",
@@ -521,7 +582,8 @@
           "start": "48037902",
           "end": "48037902",
           "rsid": "rs149436418",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48040982delA",
@@ -529,7 +591,8 @@
           "start": "48040982",
           "end": "48040982",
           "rsid": "rs1457579126",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041103_48041104insG",
@@ -537,7 +600,8 @@
           "start": "48041103",
           "end": "48041104",
           "rsid": "rs761191455",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041113G>T",
@@ -545,7 +609,8 @@
           "start": "48041113",
           "end": "48041113",
           "rsid": "rs1368252918",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045719C>T",
@@ -553,7 +618,8 @@
           "start": "48045719",
           "end": "48045719",
           "rsid": "rs116855232",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045720G>A",
@@ -561,7 +627,8 @@
           "start": "48045720",
           "end": "48045720",
           "rsid": "rs147390019",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": true
         },
         {
           "hgvs": "g.48045771T>A",
@@ -569,7 +636,8 @@
           "start": "48045771",
           "end": "48045771",
           "rsid": "rs139551410",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         }
       ]
     },
@@ -584,7 +652,8 @@
           "start": "48037748",
           "end": "48037748",
           "rsid": "rs769369441",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037749G>C",
@@ -592,7 +661,8 @@
           "start": "48037749",
           "end": "48037749",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037783_48037788delGGAGTC",
@@ -600,7 +670,8 @@
           "start": "48037783",
           "end": "48037788",
           "rsid": "rs746071566",
-          "allele": "GGAGTC"
+          "allele": "GGAGTC",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037798G>A",
@@ -608,7 +679,8 @@
           "start": "48037798",
           "end": "48037798",
           "rsid": "rs186364861",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037801_48037802insGAGTCG",
@@ -616,7 +688,8 @@
           "start": "48037801",
           "end": "48037802",
           "rsid": "rs869320766",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037826_48037827insCGGG",
@@ -624,7 +697,8 @@
           "start": "48037826",
           "end": "48037827",
           "rsid": "rs777311140",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037834C>T",
@@ -632,7 +706,8 @@
           "start": "48037834",
           "end": "48037834",
           "rsid": "",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037847G>C",
@@ -640,7 +715,8 @@
           "start": "48037847",
           "end": "48037847",
           "rsid": "rs766023281",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037849A>G",
@@ -648,7 +724,8 @@
           "start": "48037849",
           "end": "48037849",
           "rsid": "",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037885G>A",
@@ -656,7 +733,8 @@
           "start": "48037885",
           "end": "48037885",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037902C>G",
@@ -664,7 +742,8 @@
           "start": "48037902",
           "end": "48037902",
           "rsid": "rs149436418",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48040982delA",
@@ -672,7 +751,8 @@
           "start": "48040982",
           "end": "48040982",
           "rsid": "rs1457579126",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041103_48041104insG",
@@ -680,7 +760,8 @@
           "start": "48041103",
           "end": "48041104",
           "rsid": "rs761191455",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041113G>T",
@@ -688,7 +769,8 @@
           "start": "48041113",
           "end": "48041113",
           "rsid": "rs1368252918",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045719C>T",
@@ -696,7 +778,8 @@
           "start": "48045719",
           "end": "48045719",
           "rsid": "rs116855232",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045720G>A",
@@ -704,7 +787,8 @@
           "start": "48045720",
           "end": "48045720",
           "rsid": "rs147390019",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045771T>A",
@@ -712,7 +796,8 @@
           "start": "48045771",
           "end": "48045771",
           "rsid": "rs139551410",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         }
       ]
     },
@@ -727,7 +812,8 @@
           "start": "48037748",
           "end": "48037748",
           "rsid": "rs769369441",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037749G>C",
@@ -735,7 +821,8 @@
           "start": "48037749",
           "end": "48037749",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037783_48037788delGGAGTC",
@@ -743,7 +830,8 @@
           "start": "48037783",
           "end": "48037788",
           "rsid": "rs746071566",
-          "allele": "GGAGTC"
+          "allele": "GGAGTC",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037798G>A",
@@ -751,7 +839,8 @@
           "start": "48037798",
           "end": "48037798",
           "rsid": "rs186364861",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037801_48037802insGAGTCG",
@@ -759,7 +848,8 @@
           "start": "48037801",
           "end": "48037802",
           "rsid": "rs869320766",
-          "allele": "insGAGTCG"
+          "allele": "insGAGTCG",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037826_48037827insCGGG",
@@ -767,7 +857,8 @@
           "start": "48037826",
           "end": "48037827",
           "rsid": "rs777311140",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037834C>T",
@@ -775,7 +866,8 @@
           "start": "48037834",
           "end": "48037834",
           "rsid": "",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037847G>C",
@@ -783,7 +875,8 @@
           "start": "48037847",
           "end": "48037847",
           "rsid": "rs766023281",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037849A>G",
@@ -791,7 +884,8 @@
           "start": "48037849",
           "end": "48037849",
           "rsid": "",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037885G>A",
@@ -799,7 +893,8 @@
           "start": "48037885",
           "end": "48037885",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037902C>G",
@@ -807,7 +902,8 @@
           "start": "48037902",
           "end": "48037902",
           "rsid": "rs149436418",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48040982delA",
@@ -815,7 +911,8 @@
           "start": "48040982",
           "end": "48040982",
           "rsid": "rs1457579126",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041103_48041104insG",
@@ -823,7 +920,8 @@
           "start": "48041103",
           "end": "48041104",
           "rsid": "rs761191455",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041113G>T",
@@ -831,7 +929,8 @@
           "start": "48041113",
           "end": "48041113",
           "rsid": "rs1368252918",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045719C>T",
@@ -839,7 +938,8 @@
           "start": "48045719",
           "end": "48045719",
           "rsid": "rs116855232",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045720G>A",
@@ -847,7 +947,8 @@
           "start": "48045720",
           "end": "48045720",
           "rsid": "rs147390019",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045771T>A",
@@ -855,7 +956,8 @@
           "start": "48045771",
           "end": "48045771",
           "rsid": "rs139551410",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         }
       ]
     },
@@ -870,7 +972,8 @@
           "start": "48037748",
           "end": "48037748",
           "rsid": "rs769369441",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037749G>C",
@@ -878,7 +981,8 @@
           "start": "48037749",
           "end": "48037749",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037783_48037788delGGAGTC",
@@ -886,7 +990,8 @@
           "start": "48037783",
           "end": "48037788",
           "rsid": "rs746071566",
-          "allele": "GGAGTC"
+          "allele": "GGAGTC",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037798G>A",
@@ -894,7 +999,8 @@
           "start": "48037798",
           "end": "48037798",
           "rsid": "rs186364861",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037801_48037802insGAGTCG",
@@ -902,7 +1008,8 @@
           "start": "48037801",
           "end": "48037802",
           "rsid": "rs869320766",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037826_48037827insCGGG",
@@ -910,7 +1017,8 @@
           "start": "48037826",
           "end": "48037827",
           "rsid": "rs777311140",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037834C>T",
@@ -918,7 +1026,8 @@
           "start": "48037834",
           "end": "48037834",
           "rsid": "",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037847G>C",
@@ -926,7 +1035,8 @@
           "start": "48037847",
           "end": "48037847",
           "rsid": "rs766023281",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037849A>G",
@@ -934,7 +1044,8 @@
           "start": "48037849",
           "end": "48037849",
           "rsid": "",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037885G>A",
@@ -942,7 +1053,8 @@
           "start": "48037885",
           "end": "48037885",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037902C>G",
@@ -950,7 +1062,8 @@
           "start": "48037902",
           "end": "48037902",
           "rsid": "rs149436418",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48040982delA",
@@ -958,7 +1071,8 @@
           "start": "48040982",
           "end": "48040982",
           "rsid": "rs1457579126",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041103_48041104insG",
@@ -966,7 +1080,8 @@
           "start": "48041103",
           "end": "48041104",
           "rsid": "rs761191455",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041113G>T",
@@ -974,7 +1089,8 @@
           "start": "48041113",
           "end": "48041113",
           "rsid": "rs1368252918",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045719C>T",
@@ -982,7 +1098,8 @@
           "start": "48045719",
           "end": "48045719",
           "rsid": "rs116855232",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045720G>A",
@@ -990,7 +1107,8 @@
           "start": "48045720",
           "end": "48045720",
           "rsid": "rs147390019",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045771T>A",
@@ -998,7 +1116,8 @@
           "start": "48045771",
           "end": "48045771",
           "rsid": "rs139551410",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         }
       ]
     },
@@ -1013,7 +1132,8 @@
           "start": "48037748",
           "end": "48037748",
           "rsid": "rs769369441",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037749G>C",
@@ -1021,7 +1141,8 @@
           "start": "48037749",
           "end": "48037749",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037783_48037788delGGAGTC",
@@ -1029,7 +1150,8 @@
           "start": "48037783",
           "end": "48037788",
           "rsid": "rs746071566",
-          "allele": "GGAGTC"
+          "allele": "GGAGTC",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037798G>A",
@@ -1037,7 +1159,8 @@
           "start": "48037798",
           "end": "48037798",
           "rsid": "rs186364861",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037801_48037802insGAGTCG",
@@ -1045,7 +1168,8 @@
           "start": "48037801",
           "end": "48037802",
           "rsid": "rs869320766",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037826_48037827insCGGG",
@@ -1053,7 +1177,8 @@
           "start": "48037826",
           "end": "48037827",
           "rsid": "rs777311140",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037834C>T",
@@ -1061,7 +1186,8 @@
           "start": "48037834",
           "end": "48037834",
           "rsid": "",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037847G>C",
@@ -1069,7 +1195,8 @@
           "start": "48037847",
           "end": "48037847",
           "rsid": "rs766023281",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037849A>G",
@@ -1077,7 +1204,8 @@
           "start": "48037849",
           "end": "48037849",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037885G>A",
@@ -1085,7 +1213,8 @@
           "start": "48037885",
           "end": "48037885",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037902C>G",
@@ -1093,7 +1222,8 @@
           "start": "48037902",
           "end": "48037902",
           "rsid": "rs149436418",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48040982delA",
@@ -1101,7 +1231,8 @@
           "start": "48040982",
           "end": "48040982",
           "rsid": "rs1457579126",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041103_48041104insG",
@@ -1109,7 +1240,8 @@
           "start": "48041103",
           "end": "48041104",
           "rsid": "rs761191455",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041113G>T",
@@ -1117,7 +1249,8 @@
           "start": "48041113",
           "end": "48041113",
           "rsid": "rs1368252918",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045719C>T",
@@ -1125,7 +1258,8 @@
           "start": "48045719",
           "end": "48045719",
           "rsid": "rs116855232",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045720G>A",
@@ -1133,7 +1267,8 @@
           "start": "48045720",
           "end": "48045720",
           "rsid": "rs147390019",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045771T>A",
@@ -1141,7 +1276,8 @@
           "start": "48045771",
           "end": "48045771",
           "rsid": "rs139551410",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         }
       ]
     },
@@ -1156,7 +1292,8 @@
           "start": "48037748",
           "end": "48037748",
           "rsid": "rs769369441",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037749G>C",
@@ -1164,7 +1301,8 @@
           "start": "48037749",
           "end": "48037749",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037783_48037788delGGAGTC",
@@ -1172,7 +1310,8 @@
           "start": "48037783",
           "end": "48037788",
           "rsid": "rs746071566",
-          "allele": "delGGAGTC"
+          "allele": "delGGAGTC",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037798G>A",
@@ -1180,7 +1319,8 @@
           "start": "48037798",
           "end": "48037798",
           "rsid": "rs186364861",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037801_48037802insGAGTCG",
@@ -1188,7 +1328,8 @@
           "start": "48037801",
           "end": "48037802",
           "rsid": "rs869320766",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037826_48037827insCGGG",
@@ -1196,7 +1337,8 @@
           "start": "48037826",
           "end": "48037827",
           "rsid": "rs777311140",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037834C>T",
@@ -1204,7 +1346,8 @@
           "start": "48037834",
           "end": "48037834",
           "rsid": "",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037847G>C",
@@ -1212,7 +1355,8 @@
           "start": "48037847",
           "end": "48037847",
           "rsid": "rs766023281",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037849A>G",
@@ -1220,7 +1364,8 @@
           "start": "48037849",
           "end": "48037849",
           "rsid": "",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037885G>A",
@@ -1228,7 +1373,8 @@
           "start": "48037885",
           "end": "48037885",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037902C>G",
@@ -1236,7 +1382,8 @@
           "start": "48037902",
           "end": "48037902",
           "rsid": "rs149436418",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48040982delA",
@@ -1244,7 +1391,8 @@
           "start": "48040982",
           "end": "48040982",
           "rsid": "rs1457579126",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041103_48041104insG",
@@ -1252,7 +1400,8 @@
           "start": "48041103",
           "end": "48041104",
           "rsid": "rs761191455",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041113G>T",
@@ -1260,7 +1409,8 @@
           "start": "48041113",
           "end": "48041113",
           "rsid": "rs1368252918",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045719C>T",
@@ -1268,7 +1418,8 @@
           "start": "48045719",
           "end": "48045719",
           "rsid": "rs116855232",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045720G>A",
@@ -1276,7 +1427,8 @@
           "start": "48045720",
           "end": "48045720",
           "rsid": "rs147390019",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045771T>A",
@@ -1284,7 +1436,8 @@
           "start": "48045771",
           "end": "48045771",
           "rsid": "rs139551410",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         }
       ]
     },
@@ -1299,7 +1452,8 @@
           "start": "48037748",
           "end": "48037748",
           "rsid": "rs769369441",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037749G>C",
@@ -1307,7 +1461,8 @@
           "start": "48037749",
           "end": "48037749",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037783_48037788delGGAGTC",
@@ -1315,7 +1470,8 @@
           "start": "48037783",
           "end": "48037788",
           "rsid": "rs746071566",
-          "allele": "GGAGTC"
+          "allele": "GGAGTC",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037798G>A",
@@ -1323,7 +1479,8 @@
           "start": "48037798",
           "end": "48037798",
           "rsid": "rs186364861",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037801_48037802insGAGTCG",
@@ -1331,7 +1488,8 @@
           "start": "48037801",
           "end": "48037802",
           "rsid": "rs869320766",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037826_48037827insCGGG",
@@ -1339,7 +1497,8 @@
           "start": "48037826",
           "end": "48037827",
           "rsid": "rs777311140",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037834C>T",
@@ -1347,7 +1506,8 @@
           "start": "48037834",
           "end": "48037834",
           "rsid": "",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037847G>C",
@@ -1355,7 +1515,8 @@
           "start": "48037847",
           "end": "48037847",
           "rsid": "rs766023281",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037849A>G",
@@ -1363,7 +1524,8 @@
           "start": "48037849",
           "end": "48037849",
           "rsid": "",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037885G>A",
@@ -1371,7 +1533,8 @@
           "start": "48037885",
           "end": "48037885",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037902C>G",
@@ -1379,7 +1542,8 @@
           "start": "48037902",
           "end": "48037902",
           "rsid": "rs149436418",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48040982delA",
@@ -1387,7 +1551,8 @@
           "start": "48040982",
           "end": "48040982",
           "rsid": "rs1457579126",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041103_48041104insG",
@@ -1395,7 +1560,8 @@
           "start": "48041103",
           "end": "48041104",
           "rsid": "rs761191455",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041113G>T",
@@ -1403,7 +1569,8 @@
           "start": "48041113",
           "end": "48041113",
           "rsid": "rs1368252918",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045719C>T",
@@ -1411,7 +1578,8 @@
           "start": "48045719",
           "end": "48045719",
           "rsid": "rs116855232",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045720G>A",
@@ -1419,7 +1587,8 @@
           "start": "48045720",
           "end": "48045720",
           "rsid": "rs147390019",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045771T>A",
@@ -1427,7 +1596,8 @@
           "start": "48045771",
           "end": "48045771",
           "rsid": "rs139551410",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         }
       ]
     },
@@ -1442,7 +1612,8 @@
           "start": "48037748",
           "end": "48037748",
           "rsid": "rs769369441",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037749G>C",
@@ -1450,7 +1621,8 @@
           "start": "48037749",
           "end": "48037749",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037783_48037788delGGAGTC",
@@ -1458,7 +1630,8 @@
           "start": "48037783",
           "end": "48037788",
           "rsid": "rs746071566",
-          "allele": "GGAGTC"
+          "allele": "GGAGTC",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037798G>A",
@@ -1466,7 +1639,8 @@
           "start": "48037798",
           "end": "48037798",
           "rsid": "rs186364861",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037801_48037802insGAGTCG",
@@ -1474,7 +1648,8 @@
           "start": "48037801",
           "end": "48037802",
           "rsid": "rs869320766",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037826_48037827insCGGG",
@@ -1482,7 +1657,8 @@
           "start": "48037826",
           "end": "48037827",
           "rsid": "rs777311140",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037834C>T",
@@ -1490,7 +1666,8 @@
           "start": "48037834",
           "end": "48037834",
           "rsid": "",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037847G>C",
@@ -1498,7 +1675,8 @@
           "start": "48037847",
           "end": "48037847",
           "rsid": "rs766023281",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037849A>G",
@@ -1506,7 +1684,8 @@
           "start": "48037849",
           "end": "48037849",
           "rsid": "",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037885G>A",
@@ -1514,7 +1693,8 @@
           "start": "48037885",
           "end": "48037885",
           "rsid": "",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037902C>G",
@@ -1522,7 +1702,8 @@
           "start": "48037902",
           "end": "48037902",
           "rsid": "rs149436418",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48040982delA",
@@ -1530,7 +1711,8 @@
           "start": "48040982",
           "end": "48040982",
           "rsid": "rs1457579126",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041103_48041104insG",
@@ -1538,7 +1720,8 @@
           "start": "48041103",
           "end": "48041104",
           "rsid": "rs761191455",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041113G>T",
@@ -1546,7 +1729,8 @@
           "start": "48041113",
           "end": "48041113",
           "rsid": "rs1368252918",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045719C>T",
@@ -1554,7 +1738,8 @@
           "start": "48045719",
           "end": "48045719",
           "rsid": "rs116855232",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045720G>A",
@@ -1562,7 +1747,8 @@
           "start": "48045720",
           "end": "48045720",
           "rsid": "rs147390019",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045771T>A",
@@ -1570,7 +1756,8 @@
           "start": "48045771",
           "end": "48045771",
           "rsid": "rs139551410",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         }
       ]
     },
@@ -1585,7 +1772,8 @@
           "start": "48037748",
           "end": "48037748",
           "rsid": "rs769369441",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037749G>C",
@@ -1593,7 +1781,8 @@
           "start": "48037749",
           "end": "48037749",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037783_48037788delGGAGTC",
@@ -1601,7 +1790,8 @@
           "start": "48037783",
           "end": "48037788",
           "rsid": "rs746071566",
-          "allele": "GGAGTC"
+          "allele": "GGAGTC",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037798G>A",
@@ -1609,7 +1799,8 @@
           "start": "48037798",
           "end": "48037798",
           "rsid": "rs186364861",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037801_48037802insGAGTCG",
@@ -1617,7 +1808,8 @@
           "start": "48037801",
           "end": "48037802",
           "rsid": "rs869320766",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037826_48037827insCGGG",
@@ -1625,7 +1817,8 @@
           "start": "48037826",
           "end": "48037827",
           "rsid": "rs777311140",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037834C>T",
@@ -1633,7 +1826,8 @@
           "start": "48037834",
           "end": "48037834",
           "rsid": "",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037847G>C",
@@ -1641,7 +1835,8 @@
           "start": "48037847",
           "end": "48037847",
           "rsid": "rs766023281",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037849A>G",
@@ -1649,7 +1844,8 @@
           "start": "48037849",
           "end": "48037849",
           "rsid": "",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037885G>A",
@@ -1657,7 +1853,8 @@
           "start": "48037885",
           "end": "48037885",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037902C>G",
@@ -1665,7 +1862,8 @@
           "start": "48037902",
           "end": "48037902",
           "rsid": "rs149436418",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": true
         },
         {
           "hgvs": "g.48040982delA",
@@ -1673,7 +1871,8 @@
           "start": "48040982",
           "end": "48040982",
           "rsid": "rs1457579126",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041103_48041104insG",
@@ -1681,7 +1880,8 @@
           "start": "48041103",
           "end": "48041104",
           "rsid": "rs761191455",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041113G>T",
@@ -1689,7 +1889,8 @@
           "start": "48041113",
           "end": "48041113",
           "rsid": "rs1368252918",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045719C>T",
@@ -1697,7 +1898,8 @@
           "start": "48045719",
           "end": "48045719",
           "rsid": "rs116855232",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045720G>A",
@@ -1705,7 +1907,8 @@
           "start": "48045720",
           "end": "48045720",
           "rsid": "rs147390019",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045771T>A",
@@ -1713,7 +1916,8 @@
           "start": "48045771",
           "end": "48045771",
           "rsid": "rs139551410",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         }
       ]
     },
@@ -1728,7 +1932,8 @@
           "start": "48037748",
           "end": "48037748",
           "rsid": "rs769369441",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037749G>C",
@@ -1736,7 +1941,8 @@
           "start": "48037749",
           "end": "48037749",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037783_48037788delGGAGTC",
@@ -1744,7 +1950,8 @@
           "start": "48037783",
           "end": "48037788",
           "rsid": "rs746071566",
-          "allele": "GGAGTC"
+          "allele": "GGAGTC",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037798G>A",
@@ -1752,7 +1959,8 @@
           "start": "48037798",
           "end": "48037798",
           "rsid": "rs186364861",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037801_48037802insGAGTCG",
@@ -1760,7 +1968,8 @@
           "start": "48037801",
           "end": "48037802",
           "rsid": "rs869320766",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037826_48037827insCGGG",
@@ -1768,7 +1977,8 @@
           "start": "48037826",
           "end": "48037827",
           "rsid": "rs777311140",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037834C>T",
@@ -1776,7 +1986,8 @@
           "start": "48037834",
           "end": "48037834",
           "rsid": "",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037847G>C",
@@ -1784,7 +1995,8 @@
           "start": "48037847",
           "end": "48037847",
           "rsid": "rs766023281",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037849A>G",
@@ -1792,7 +2004,8 @@
           "start": "48037849",
           "end": "48037849",
           "rsid": "",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037885G>A",
@@ -1800,7 +2013,8 @@
           "start": "48037885",
           "end": "48037885",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037902C>G",
@@ -1808,7 +2022,8 @@
           "start": "48037902",
           "end": "48037902",
           "rsid": "rs149436418",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48040982delA",
@@ -1816,7 +2031,8 @@
           "start": "48040982",
           "end": "48040982",
           "rsid": "rs1457579126",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041103_48041104insG",
@@ -1824,7 +2040,8 @@
           "start": "48041103",
           "end": "48041104",
           "rsid": "rs761191455",
-          "allele": "insG"
+          "allele": "insG",
+          "is_ref": true
         },
         {
           "hgvs": "g.48041113G>T",
@@ -1832,7 +2049,8 @@
           "start": "48041113",
           "end": "48041113",
           "rsid": "rs1368252918",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045719C>T",
@@ -1840,7 +2058,8 @@
           "start": "48045719",
           "end": "48045719",
           "rsid": "rs116855232",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045720G>A",
@@ -1848,7 +2067,8 @@
           "start": "48045720",
           "end": "48045720",
           "rsid": "rs147390019",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045771T>A",
@@ -1856,7 +2076,8 @@
           "start": "48045771",
           "end": "48045771",
           "rsid": "rs139551410",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         }
       ]
     },
@@ -1871,7 +2092,8 @@
           "start": "48037748",
           "end": "48037748",
           "rsid": "rs769369441",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037749G>C",
@@ -1879,7 +2101,8 @@
           "start": "48037749",
           "end": "48037749",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037783_48037788delGGAGTC",
@@ -1887,7 +2110,8 @@
           "start": "48037783",
           "end": "48037788",
           "rsid": "rs746071566",
-          "allele": "GGAGTC"
+          "allele": "GGAGTC",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037798G>A",
@@ -1895,7 +2119,8 @@
           "start": "48037798",
           "end": "48037798",
           "rsid": "rs186364861",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037801_48037802insGAGTCG",
@@ -1903,7 +2128,8 @@
           "start": "48037801",
           "end": "48037802",
           "rsid": "rs869320766",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037826_48037827insCGGG",
@@ -1911,7 +2137,8 @@
           "start": "48037826",
           "end": "48037827",
           "rsid": "rs777311140",
-          "allele": "insCGGG"
+          "allele": "insCGGG",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037834C>T",
@@ -1919,7 +2146,8 @@
           "start": "48037834",
           "end": "48037834",
           "rsid": "",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037847G>C",
@@ -1927,7 +2155,8 @@
           "start": "48037847",
           "end": "48037847",
           "rsid": "rs766023281",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037849A>G",
@@ -1935,7 +2164,8 @@
           "start": "48037849",
           "end": "48037849",
           "rsid": "",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037885G>A",
@@ -1943,7 +2173,8 @@
           "start": "48037885",
           "end": "48037885",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037902C>G",
@@ -1951,7 +2182,8 @@
           "start": "48037902",
           "end": "48037902",
           "rsid": "rs149436418",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48040982delA",
@@ -1959,7 +2191,8 @@
           "start": "48040982",
           "end": "48040982",
           "rsid": "rs1457579126",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041103_48041104insG",
@@ -1967,7 +2200,8 @@
           "start": "48041103",
           "end": "48041104",
           "rsid": "rs761191455",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041113G>T",
@@ -1975,7 +2209,8 @@
           "start": "48041113",
           "end": "48041113",
           "rsid": "rs1368252918",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045719C>T",
@@ -1983,7 +2218,8 @@
           "start": "48045719",
           "end": "48045719",
           "rsid": "rs116855232",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045720G>A",
@@ -1991,7 +2227,8 @@
           "start": "48045720",
           "end": "48045720",
           "rsid": "rs147390019",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045771T>A",
@@ -1999,7 +2236,8 @@
           "start": "48045771",
           "end": "48045771",
           "rsid": "rs139551410",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         }
       ]
     },
@@ -2014,7 +2252,8 @@
           "start": "48037748",
           "end": "48037748",
           "rsid": "rs769369441",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037749G>C",
@@ -2022,7 +2261,8 @@
           "start": "48037749",
           "end": "48037749",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037783_48037788delGGAGTC",
@@ -2030,7 +2270,8 @@
           "start": "48037783",
           "end": "48037788",
           "rsid": "rs746071566",
-          "allele": "GGAGTC"
+          "allele": "GGAGTC",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037798G>A",
@@ -2038,7 +2279,8 @@
           "start": "48037798",
           "end": "48037798",
           "rsid": "rs186364861",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037801_48037802insGAGTCG",
@@ -2046,7 +2288,8 @@
           "start": "48037801",
           "end": "48037802",
           "rsid": "rs869320766",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037826_48037827insCGGG",
@@ -2054,7 +2297,8 @@
           "start": "48037826",
           "end": "48037827",
           "rsid": "rs777311140",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037834C>T",
@@ -2062,7 +2306,8 @@
           "start": "48037834",
           "end": "48037834",
           "rsid": "",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037847G>C",
@@ -2070,7 +2315,8 @@
           "start": "48037847",
           "end": "48037847",
           "rsid": "rs766023281",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037849A>G",
@@ -2078,7 +2324,8 @@
           "start": "48037849",
           "end": "48037849",
           "rsid": "",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037885G>A",
@@ -2086,7 +2333,8 @@
           "start": "48037885",
           "end": "48037885",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037902C>G",
@@ -2094,7 +2342,8 @@
           "start": "48037902",
           "end": "48037902",
           "rsid": "rs149436418",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48040982delA",
@@ -2102,7 +2351,8 @@
           "start": "48040982",
           "end": "48040982",
           "rsid": "rs1457579126",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041103_48041104insG",
@@ -2110,7 +2360,8 @@
           "start": "48041103",
           "end": "48041104",
           "rsid": "rs761191455",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041113G>T",
@@ -2118,7 +2369,8 @@
           "start": "48041113",
           "end": "48041113",
           "rsid": "rs1368252918",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045719C>T",
@@ -2126,7 +2378,8 @@
           "start": "48045719",
           "end": "48045719",
           "rsid": "rs116855232",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045720G>A",
@@ -2134,7 +2387,8 @@
           "start": "48045720",
           "end": "48045720",
           "rsid": "rs147390019",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045771T>A",
@@ -2142,7 +2396,8 @@
           "start": "48045771",
           "end": "48045771",
           "rsid": "rs139551410",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": true
         }
       ]
     },
@@ -2157,7 +2412,8 @@
           "start": "48037748",
           "end": "48037748",
           "rsid": "rs769369441",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037749G>C",
@@ -2165,7 +2421,8 @@
           "start": "48037749",
           "end": "48037749",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037783_48037788delGGAGTC",
@@ -2173,7 +2430,8 @@
           "start": "48037783",
           "end": "48037788",
           "rsid": "rs746071566",
-          "allele": "GGAGTC"
+          "allele": "GGAGTC",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037798G>A",
@@ -2181,7 +2439,8 @@
           "start": "48037798",
           "end": "48037798",
           "rsid": "rs186364861",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037801_48037802insGAGTCG",
@@ -2189,7 +2448,8 @@
           "start": "48037801",
           "end": "48037802",
           "rsid": "rs869320766",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037826_48037827insCGGG",
@@ -2197,7 +2457,8 @@
           "start": "48037826",
           "end": "48037827",
           "rsid": "rs777311140",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037834C>T",
@@ -2205,7 +2466,8 @@
           "start": "48037834",
           "end": "48037834",
           "rsid": "",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037847G>C",
@@ -2213,7 +2475,8 @@
           "start": "48037847",
           "end": "48037847",
           "rsid": "rs766023281",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037849A>G",
@@ -2221,7 +2484,8 @@
           "start": "48037849",
           "end": "48037849",
           "rsid": "",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037885G>A",
@@ -2229,7 +2493,8 @@
           "start": "48037885",
           "end": "48037885",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037902C>G",
@@ -2237,7 +2502,8 @@
           "start": "48037902",
           "end": "48037902",
           "rsid": "rs149436418",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48040982delA",
@@ -2245,7 +2511,8 @@
           "start": "48040982",
           "end": "48040982",
           "rsid": "rs1457579126",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041103_48041104insG",
@@ -2253,7 +2520,8 @@
           "start": "48041103",
           "end": "48041104",
           "rsid": "rs761191455",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041113G>T",
@@ -2261,7 +2529,8 @@
           "start": "48041113",
           "end": "48041113",
           "rsid": "rs1368252918",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045719C>T",
@@ -2269,7 +2538,8 @@
           "start": "48045719",
           "end": "48045719",
           "rsid": "rs116855232",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045720G>A",
@@ -2277,7 +2547,8 @@
           "start": "48045720",
           "end": "48045720",
           "rsid": "rs147390019",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045771T>A",
@@ -2285,7 +2556,8 @@
           "start": "48045771",
           "end": "48045771",
           "rsid": "rs139551410",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         }
       ]
     },
@@ -2300,7 +2572,8 @@
           "start": "48037748",
           "end": "48037748",
           "rsid": "rs769369441",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037749G>C",
@@ -2308,7 +2581,8 @@
           "start": "48037749",
           "end": "48037749",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037783_48037788delGGAGTC",
@@ -2316,7 +2590,8 @@
           "start": "48037783",
           "end": "48037788",
           "rsid": "rs746071566",
-          "allele": "GGAGTC"
+          "allele": "GGAGTC",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037798G>A",
@@ -2324,7 +2599,8 @@
           "start": "48037798",
           "end": "48037798",
           "rsid": "rs186364861",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037801_48037802insGAGTCG",
@@ -2332,7 +2608,8 @@
           "start": "48037801",
           "end": "48037802",
           "rsid": "rs869320766",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037826_48037827insCGGG",
@@ -2340,7 +2617,8 @@
           "start": "48037826",
           "end": "48037827",
           "rsid": "rs777311140",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037834C>T",
@@ -2348,7 +2626,8 @@
           "start": "48037834",
           "end": "48037834",
           "rsid": "",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037847G>C",
@@ -2356,7 +2635,8 @@
           "start": "48037847",
           "end": "48037847",
           "rsid": "rs766023281",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037849A>G",
@@ -2364,7 +2644,8 @@
           "start": "48037849",
           "end": "48037849",
           "rsid": "",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037885G>A",
@@ -2372,7 +2653,8 @@
           "start": "48037885",
           "end": "48037885",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037902C>G",
@@ -2380,7 +2662,8 @@
           "start": "48037902",
           "end": "48037902",
           "rsid": "rs149436418",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48040982delA",
@@ -2388,7 +2671,8 @@
           "start": "48040982",
           "end": "48040982",
           "rsid": "rs1457579126",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041103_48041104insG",
@@ -2396,7 +2680,8 @@
           "start": "48041103",
           "end": "48041104",
           "rsid": "rs761191455",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041113G>T",
@@ -2404,7 +2689,8 @@
           "start": "48041113",
           "end": "48041113",
           "rsid": "rs1368252918",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": true
         },
         {
           "hgvs": "g.48045719C>T",
@@ -2412,7 +2698,8 @@
           "start": "48045719",
           "end": "48045719",
           "rsid": "rs116855232",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045720G>A",
@@ -2420,7 +2707,8 @@
           "start": "48045720",
           "end": "48045720",
           "rsid": "rs147390019",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045771T>A",
@@ -2428,7 +2716,8 @@
           "start": "48045771",
           "end": "48045771",
           "rsid": "rs139551410",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         }
       ]
     },
@@ -2443,7 +2732,8 @@
           "start": "48037748",
           "end": "48037748",
           "rsid": "rs769369441",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037749G>C",
@@ -2451,7 +2741,8 @@
           "start": "48037749",
           "end": "48037749",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037783_48037788delGGAGTC",
@@ -2459,7 +2750,8 @@
           "start": "48037783",
           "end": "48037788",
           "rsid": "rs746071566",
-          "allele": "GGAGTC"
+          "allele": "GGAGTC",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037798G>A",
@@ -2467,7 +2759,8 @@
           "start": "48037798",
           "end": "48037798",
           "rsid": "rs186364861",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037801_48037802insGAGTCG",
@@ -2475,7 +2768,8 @@
           "start": "48037801",
           "end": "48037802",
           "rsid": "rs869320766",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037826_48037827insCGGG",
@@ -2483,7 +2777,8 @@
           "start": "48037826",
           "end": "48037827",
           "rsid": "rs777311140",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037834C>T",
@@ -2491,7 +2786,8 @@
           "start": "48037834",
           "end": "48037834",
           "rsid": "",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037847G>C",
@@ -2499,7 +2795,8 @@
           "start": "48037847",
           "end": "48037847",
           "rsid": "rs766023281",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037849A>G",
@@ -2507,7 +2804,8 @@
           "start": "48037849",
           "end": "48037849",
           "rsid": "",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037885G>A",
@@ -2515,7 +2813,8 @@
           "start": "48037885",
           "end": "48037885",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037902C>G",
@@ -2523,7 +2822,8 @@
           "start": "48037902",
           "end": "48037902",
           "rsid": "rs149436418",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48040982delA",
@@ -2531,7 +2831,8 @@
           "start": "48040982",
           "end": "48040982",
           "rsid": "rs1457579126",
-          "allele": "delA"
+          "allele": "delA",
+          "is_ref": true
         },
         {
           "hgvs": "g.48041103_48041104insG",
@@ -2539,7 +2840,8 @@
           "start": "48041103",
           "end": "48041104",
           "rsid": "rs761191455",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041113G>T",
@@ -2547,7 +2849,8 @@
           "start": "48041113",
           "end": "48041113",
           "rsid": "rs1368252918",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045719C>T",
@@ -2555,7 +2858,8 @@
           "start": "48045719",
           "end": "48045719",
           "rsid": "rs116855232",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045720G>A",
@@ -2563,7 +2867,8 @@
           "start": "48045720",
           "end": "48045720",
           "rsid": "rs147390019",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045771T>A",
@@ -2571,7 +2876,8 @@
           "start": "48045771",
           "end": "48045771",
           "rsid": "rs139551410",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         }
       ]
     },
@@ -2586,7 +2892,8 @@
           "start": "48037748",
           "end": "48037748",
           "rsid": "rs769369441",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037749G>C",
@@ -2594,7 +2901,8 @@
           "start": "48037749",
           "end": "48037749",
           "rsid": "",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": true
         },
         {
           "hgvs": "g.48037783_48037788delGGAGTC",
@@ -2602,7 +2910,8 @@
           "start": "48037783",
           "end": "48037788",
           "rsid": "rs746071566",
-          "allele": "GGAGTC"
+          "allele": "GGAGTC",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037798G>A",
@@ -2610,7 +2919,8 @@
           "start": "48037798",
           "end": "48037798",
           "rsid": "rs186364861",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037801_48037802insGAGTCG",
@@ -2618,7 +2928,8 @@
           "start": "48037801",
           "end": "48037802",
           "rsid": "rs869320766",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037826_48037827insCGGG",
@@ -2626,7 +2937,8 @@
           "start": "48037826",
           "end": "48037827",
           "rsid": "rs777311140",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037834C>T",
@@ -2634,7 +2946,8 @@
           "start": "48037834",
           "end": "48037834",
           "rsid": "",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037847G>C",
@@ -2642,7 +2955,8 @@
           "start": "48037847",
           "end": "48037847",
           "rsid": "rs766023281",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037849A>G",
@@ -2650,7 +2964,8 @@
           "start": "48037849",
           "end": "48037849",
           "rsid": "",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037885G>A",
@@ -2658,7 +2973,8 @@
           "start": "48037885",
           "end": "48037885",
           "rsid": "",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48037902C>G",
@@ -2666,7 +2982,8 @@
           "start": "48037902",
           "end": "48037902",
           "rsid": "rs149436418",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48040982delA",
@@ -2674,7 +2991,8 @@
           "start": "48040982",
           "end": "48040982",
           "rsid": "rs1457579126",
-          "allele": "A"
+          "allele": "A",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041103_48041104insG",
@@ -2682,7 +3000,8 @@
           "start": "48041103",
           "end": "48041104",
           "rsid": "rs761191455",
-          "allele": "del"
+          "allele": "del",
+          "is_ref": false
         },
         {
           "hgvs": "g.48041113G>T",
@@ -2690,7 +3009,8 @@
           "start": "48041113",
           "end": "48041113",
           "rsid": "rs1368252918",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045719C>T",
@@ -2698,7 +3018,8 @@
           "start": "48045719",
           "end": "48045719",
           "rsid": "rs116855232",
-          "allele": "C"
+          "allele": "C",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045720G>A",
@@ -2706,7 +3027,8 @@
           "start": "48045720",
           "end": "48045720",
           "rsid": "rs147390019",
-          "allele": "G"
+          "allele": "G",
+          "is_ref": false
         },
         {
           "hgvs": "g.48045771T>A",
@@ -2714,7 +3036,8 @@
           "start": "48045771",
           "end": "48045771",
           "rsid": "rs139551410",
-          "allele": "T"
+          "allele": "T",
+          "is_ref": false
         }
       ]
     }
