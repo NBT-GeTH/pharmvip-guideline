@@ -154,6 +154,7 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                                             hap1_match_name_allele_invert.append(f"({allele_matcher['variants'][i]['allele1_convert']})")
                                         elif haplotype["variants"][i]["allele"] != allele_matcher["variants"][i]["allele2_convert"]:
                                             hap1_match_name_allele_invert.append(f"({allele_matcher['variants'][i]['allele2_convert']})")
+                            assert len(hap1_match_name_allele_invert) == len(haplotype["variants"])
                             for x in range(len(haplotype["variants"])):
                                 if haplotype["variants"][x]["is_ref"] == False:
                                     if haplotype["variants"][x]["hgvs_type"] != "SNP":
