@@ -113,6 +113,15 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                                 allele_matcher["guide_dip"].append("*5/*1A")
                                 allele_matcher["print_dip"].append("rs4149056C/rs4149056T")
             elif allele_definition["gene"] == "UGT1A1" and allele_matcher["guide_dip"] != ["*1/*1"] and allele_matcher["print_dip"] != ["*1/*1"]:
+                missing_position = []
+                # print(allele_matcher["variants"])
+                for variant in allele_matcher["variants"]:
+                    # print(variant["gt_bases"])
+                    if re.match(r"^(\.+)(\/|\|)(\.+)$", variant["gt_bases"]):
+                        missing_position.append(variant["hgvs"])
+                print(missing_position)
+                print()
+                # exit()
                 hap1_match = []
                 hap2_match = []
                 for haplotype in allele_definition["haplotypes"]:
@@ -125,7 +134,27 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                         if re.match(hap2_regex, _name_haplotype):
                             if haplotype["name"] not in hap2_match:
                                 hap2_match.append(haplotype["name"])
-                
+                print(f"hap1 match {hap1_match}")
+                print(f"hap2 match {hap2_match}")
+                for relation in allele_definition["name_relation_to_hgvs"]:
+                    for name in hap1_match:
+                        if name == relation["name"]:
+                            for missing_pos in missing_position:
+                                if missing_pos in relation["hgvs"]:
+                                    relation["hgvs"].remove(missing_pos)
+                            if not relation["hgvs"]:
+                                hap1_match.remove(name)
+                for relation in allele_definition["name_relation_to_hgvs"]:
+                    for name in hap2_match:
+                        if name == relation["name"]:
+                            for missing_pos in missing_position:
+                                if missing_pos in relation["hgvs"]:
+                                    relation["hgvs"].remove(missing_pos)
+                            if not relation["hgvs"]:
+                                hap2_match.remove(name)
+                print(f"hap1 match {hap1_match}")
+                print(f"hap2 match {hap2_match}")
+                # exit()
                 diplotype_ugt1a1 = []
                 if not hap1_match or not hap2_match:
                     diplotype_ugt1a1 = ["?/?"]
@@ -162,6 +191,7 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                                     else:
                                         hap1_match_name_allele_invert[x] = "(.)"
                             hap1_match_name_haplotype_invert_regex = f"^{'_'.join(hap1_match_name_allele_invert)}$"
+                            print(f"{hap1_match_name} {hap1_match_name_haplotype_invert_regex}")
                             for haplotype in allele_definition["haplotypes"]:
                                 if haplotype["name"] in hap2_match:
                                     hap2_match_name = haplotype["name"]
@@ -171,11 +201,14 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                                     hap2_match_name_haplotype = extract_iupac([f"{'_'.join(hap2_match_name_allele)}"])
                                     for _hap2_match_name_haplotype in hap2_match_name_haplotype:
                                         if re.match(hap1_match_name_haplotype_invert_regex, _hap2_match_name_haplotype):
+                                            print(f"\t{hap2_match_name} {_hap2_match_name_haplotype}\tmatch")
                                             if f"{hap2_match_name}/{hap1_match_name}" not in diplotype_ugt1a1:
                                                 diplotype_ugt1a1.append(f"{hap1_match_name}/{hap2_match_name}")
+                                        else:
+                                            print(f"\t{hap2_match_name} {_hap2_match_name_haplotype}\tnot match")
                     if not diplotype_ugt1a1:
                         diplotype_ugt1a1 = ["?/?"]
-
+                print(diplotype_ugt1a1)
                 if allele_matcher["gene_phases"] == ".":
                     allele_matcher["count_diplotype"] = 0
                     allele_matcher["guide_dip"] = ["No info/No info"]
@@ -403,7 +436,6 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                         allele_matcher["guide_dip"] = [guide_dip]
                         # if  allele_matcher["print_dip"] != ["?/?"]:
                         allele_matcher["print_dip"] = [", ".join(sorted(print_dip))]
-
                 if diplotype_ugt1a1 == ["?/?"]:
                     allele_matcher["print_dip"] = ["?/?"]
 
