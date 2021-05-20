@@ -4,6 +4,10 @@
 .AppleDouble
 .LSOverride
 
+#zz
+.vscode
+znote
+
 # Icon must end with two \r
 Icon
 
