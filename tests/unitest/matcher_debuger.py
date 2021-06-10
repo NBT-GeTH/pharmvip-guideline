@@ -2,8 +2,13 @@
 from pharmvip_guideline.allele_matcher.matcher import matcher
 from pharmvip_guideline import *
 import glob
-# import importlib
+import os
 
+#%%
+# import importlib
+allele_definitions_table_version = "allele_definitions_v0_6_0_cftr_dpyd_edited_pharmvip_edition"
+defaults_allele_definitions_table = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", allele_definitions_table_version, "table")
+defaults_allele_definitions_transform = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", allele_definitions_table_version, "transform")
 class args():
     allele_definitions = defaults_allele_definitions_transform
     ana_user_id = 1
@@ -34,7 +39,7 @@ genomic_th = "/tarafs/biobank/data/home/pkaewpro/popgen/ver38/vcf_CPIC_949/*_fin
 black_list = {"HG01468_CPIC.vcf.gz","HS02011_final.vcf.gz"}
 test = {"HG01468_CPIC.vcf.gz"}
 # print(glob.glob(genomic_th))
-for inx,sample_path in enumerate(glob.glob(bigchunk)):
+for inx,sample_path in enumerate(glob.glob(smallchunk)):
     
     file_name = os.path.basename(sample_path)
     # if inx > 100 :
@@ -48,10 +53,11 @@ for inx,sample_path in enumerate(glob.glob(bigchunk)):
     initer = args()
     initer.vcf_gz_file = sample_path
     initer.outputs = args.outputs + '/' + base
-    try: 
-        os.mkdir(initer.outputs) 
-    except OSError as error: 
-        print(error)  
+    # try: 
+    #     os.mkdir(initer.outputs) 
+    # except OSError as error: 
+    #     print(error)  
+    print("LOL")
     matcher_tester(initer)
     # break
     # print(sample)
