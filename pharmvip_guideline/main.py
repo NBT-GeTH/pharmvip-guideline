@@ -1,6 +1,10 @@
 import os
-import argparse
+import argparse, textwrap
+import sys
+
+
 import time
+from pharmvip_guideline import *
 from pharmvip_guideline.allele_definitions_transform.transform import transform
 from pharmvip_guideline.allele_definitions_transform.transform_dbpmcgenomics import transform_dbpmcgenomics
 from pharmvip_guideline.allele_matcher.matcher import matcher
@@ -9,60 +13,76 @@ from cyvcf2 import VCF
 from pharmvip_guideline.allele_matcher.diplotype_dbpmcgenomics import diplotype_dbpmcgenomics
 from pharmvip_guideline.allele_matcher.annotation import *
 
-allele_definitions_table_version = "allele_definitions_v0_6_0_cftr_dpyd_edited_pharmvip_edition"
-defaults_allele_definitions_table = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", allele_definitions_table_version, "table")
-defaults_allele_definitions_transform = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", allele_definitions_table_version, "transform")
-defaults_allele_definitions_dbpmcgenomics = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", allele_definitions_table_version, "dbpmcgenomics")
-
-function_mappings_version = "2020_05_20_dpyd_edited"
-defaults_function_mappings = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "function_mappings", function_mappings_version)
-
-clinical_guideline_annotations_version = "2019_12_03"
-defaults_clinical_guideline_annotations = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "clinical_guideline_annotations", clinical_guideline_annotations_version)
+class MyParser(argparse.ArgumentParser):
+    def error(self, message):
+        sys.stderr.write('error: %s\n' % message)
+        self.print_help()
+        sys.exit(2)
 
 def main():
-    parser = argparse.ArgumentParser()
-    subparsers = parser.add_subparsers(dest="subparser_name")
+    # begin to setting things up
+    text1 = 'This python script create to process on guide_line module.It have 2 fuctional which is \n'
+    text2 = '#1 allele_definitions_transform will convert those *.xls(those file store allele definitons) in to json file\n'
+    text3 = '#2 allele_matcher will matching genome from VCF with suitable drug guideline '
+    # dest_text = textwrap.dedent(text1+text2+text3)
+    dest_text = text1+text2+text3
+    parser = MyParser(description=dest_text)
 
-    allele_definitions_transform_parser = subparsers.add_parser("allele_definitions_transform")
+    subparsers = parser.add_subparsers(dest="subparser_name")
+ 
+    ## add parser for using transform fucntion (initiate table n stuff)
+    allele_definitions_transform_parser = subparsers.add_parser(name="allele_definitions_transform")
+
+    #add argrument of transform_parser for input path (directory where input stay eg. *.xls file)
     allele_definitions_transform_parser.add_argument(
         "--allele_definitions",
+        # dest='$input_path',
+        help='use this option follow with $path to specific where those *xls which store allele definitions to be use in the process ',
         required=False,
-        default=defaults_allele_definitions_table
+        default=defaults_allele_definitions_table # ~/resource/allele_definitions/$version_name/table
     )
+    #add argrument of transform_parser for output path (directory where we write json file from the process)
     allele_definitions_transform_parser.add_argument(
         "--outputs",
-        help="file path to write json version of result files",
+        # dest='$output_path',
+        help="use this option follow with $path to specific where json of allele definition from the process should be",
         required=False,
-        default=defaults_allele_definitions_transform
+        default=defaults_allele_definitions_transform # ~/resource/allele_definitions/$version_name/transform/.....
     )
     allele_definitions_transform_parser.add_argument(
         "--dbpmcgenomics",
-        help="file path to write text version of result files",
+
+        help="use this option follow with path to specific where the tuple set of text should be write down",
         required=False,
         default=defaults_allele_definitions_dbpmcgenomics
     )
 
+    #add parser to use matcher (which will find guidline)
     allele_matcher_parser = subparsers.add_parser("allele_matcher")
     allele_matcher_parser.add_argument(
         "--allele_definitions",
+        help='define path to directory which store allele json path',
         required=False,
-        default=defaults_allele_definitions_transform
+        default=defaults_allele_definitions_transform # ~/resource/allele_definitions/$version_name/transform/.....
     )
     allele_matcher_parser.add_argument(
         "--function_mappings",
+        help='define path to directory which store allele fucntion',
         required=False,
-        default=defaults_function_mappings
+        default=defaults_function_mappings # ~/resource/fuction_mapping/$version_name/.....
     )
     allele_matcher_parser.add_argument(
         "--clinical_guideline_annotations",
+        help='define path to directory which store guideline annotations',
         required=False,
-        default=defaults_clinical_guideline_annotations
+        default=defaults_clinical_guideline_annotations # ~/resource/clinical_guideline_anotations/$version_name/.....
     )
+    
     allele_matcher_parser.add_argument(
         "--ana_user_id",
         required=True
     )
+
     allele_matcher_parser.add_argument(
         "--ana_id",
         required=True
@@ -73,6 +93,7 @@ def main():
     )
     allele_matcher_parser.add_argument(
         "--ana_best_candidate",
+        type=bool,
         required=True
     )
     allele_matcher_parser.add_argument(
@@ -107,6 +128,8 @@ def main():
     )
 
     args = parser.parse_args()
+    # print(vars(args))
+    # print(args)
 
     if args.subparser_name == "allele_definitions_transform":
         allele_definitions_transform_start_time = time.time()
@@ -122,8 +145,8 @@ def main():
         )
 
         print(f"run pharmvip_guideline allele_definitions_transform successfully in {time.time() - allele_definitions_transform_start_time:.2f} seconds")
-    
-    if args.subparser_name == "allele_matcher":
+        
+    elif args.subparser_name == "allele_matcher":
         allele_matcher_start_time = time.time()
 
         if args.ana_options_cpic == "true":
@@ -135,6 +158,7 @@ def main():
                 args.vcf_gz_file,
                 args.outputs
             )
+
             diplotype_cpic = create_diplotype_cpic(args.outputs)
             
             diplotype_cyp2d6 = read_diplotype(args.diplotype_cyp2d6)
@@ -157,6 +181,7 @@ def main():
             summary_and_full_report = replace_na(summary_and_full_report)
             summary_and_full_report = replace_matabolizer(summary_and_full_report)
             to_txt(summary_and_full_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id)
+       
         elif args.ana_options_cpic == "false" and args.ana_options_hla == "true":
             diplotype_hla = read_diplotype(args.diplotype_hla)
 
@@ -171,3 +196,5 @@ def main():
             exit()
 
         print(f"run pharmvip_guideline allele_matcher successfully in {time.time() - allele_matcher_start_time:.2f} seconds")
+    else :
+        parser.print_help()

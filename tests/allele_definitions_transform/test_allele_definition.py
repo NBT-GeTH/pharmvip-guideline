@@ -1,7 +1,7 @@
 import unittest
 import pandas as pd
 from pandas._testing import assert_frame_equal
-from pharmvip_guideline.allele_definitions_transform.allele_definition import *
+from pharmvip_guideline.allele_definitions_transform.transformer_utils import *
 
 allele_definition_df = pd.DataFrame(
     [

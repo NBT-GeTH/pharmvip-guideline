@@ -39,30 +39,37 @@ def create_hap_regex_ugt1a1(allele_matcher_variants, haplotype_variants):
     return f"^{'_'.join(hap1_regex)}$", f"^{'_'.join(hap2_regex)}$"
 
 def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_file, outputs):
+    print("begin matcher")
+    print(allele_definitions)
+    # grob list name of transformed json format 
     allele_definitions_list = []
     for allele_definition in glob.glob(allele_definitions + "/*.json"):
         allele_definitions_list.append(allele_definition)
     allele_definitions_list.sort(key=natural_keys)
 
-    for allele_definition in allele_definitions_list:
+    for allele_definition in allele_definitions_list: # for each allele definition
         allele_definition = json.load(open(allele_definition))
-        if allele_definition["gene"] == "CYP2D6":
+
+        if allele_definition["gene"] == "CYP2D6": # skip this allele ?
             continue
         else:
+
             allele_matcher = query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file)
-            
-            allele_matcher = match_haplotypes(allele_definition, allele_matcher)
+            match_haplotypes(allele_definition, allele_matcher)
+
 
             if ana_best_candidate == "true" and allele_matcher["count_diplotype"] > 1:
                 allele_matcher = find_best_candidate(allele_definition, allele_matcher)
 
+            
+            # ************ from here on is some exception for some specific gene**************
             if allele_definition["gene"] == "CFTR":
                 for i in range(len(allele_matcher["print_dip"])):
                     if allele_matcher["print_dip"][i] != "No info" and allele_matcher["print_dip"][i] != "?/?":
                         incidental = ["G542X", "N1303K", "W1282X", "R553X", "1717-1G->A", "621+1G->T", "2789+5G->A", "3849+10kbC->T", "R1162X", "G85E", "3120+1G->A", "I507", "1898+1G->A", "3659delC", "R347P", "R560T", "R334W", "A455E", "2184delA", "711+1G->T"]
                         if allele_matcher["print_dip"][i].split("/")[0] in incidental and allele_matcher["print_dip"][i].split("/")[1] in incidental:
                                 allele_matcher["print_dip"][i] = f"{allele_matcher['print_dip'][i].split('/')[0]} (homozygous)"
-                        if allele_matcher["print_dip"][i] == "Reference/Reference":
+                        elif allele_matcher["print_dip"][i] == "Reference/Reference":
                             allele_matcher["print_dip"][i] = "No CPIC variants found"
                         elif allele_matcher["print_dip"][i].split("/")[0] == "Reference" or allele_matcher["print_dip"][i].split("/")[1] == "Reference":
                             if allele_matcher["print_dip"][i].split("/")[0] == "Reference":
@@ -170,7 +177,7 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                                             hap1_match_name_allele_invert.append("(.+)")
                                         else:
                                             hap1_match_name_allele_invert.append("(.)")
-                                    else:
+                                    else: # only one got . 
                                         if allele_matcher["variants"][i]["allele1_convert"] != ".":
                                             hap1_match_name_allele_invert.append(f"({allele_matcher['variants'][i]['allele1_convert']})")
                                         elif allele_matcher["variants"][i]["allele2_convert"] != ".":
@@ -438,6 +445,9 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                         allele_matcher["print_dip"] = [", ".join(sorted(print_dip))]
                 if diplotype_ugt1a1 == ["?/?"]:
                     allele_matcher["print_dip"] = ["?/?"]
+        # ************************* ending exeption editing **********************************
 
             with open(outputs + f"/{allele_definition['gene']}_allele_matcher.json", "w") as outfile:  
                 json.dump(allele_matcher, outfile, indent=2)
+    # end loop each json file
+    print("end matching")

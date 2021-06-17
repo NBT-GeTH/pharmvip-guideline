@@ -1,36 +1,62 @@
 from cyvcf2 import VCF
 import re
 
-def check_null_dp(dp):
+def check_null_dp(dp): 
+    '''
+    return dp else 0
+    '''
     if dp is not None:
         return dp
     else:
         return 0
 
-def match_genotype(call_genotype):
-    match = re.match(r"^(\.+|.+)(\/|\|)(\.+|.+)$", call_genotype)
-    if match:
-        """
-        call_genotype       match
-        'A/T'               1. 'A'
-                            2. '/'
-                            3. 'T'
-        """
-        return match.group(1), match.group(3)
-    else:
-        print(f"error match genotype with: {call_genotype}")
-        exit()
+# def match_genotype(call_genotype):
+#     '''
+#     separate genotype pair and return it back 
+#     '''
+#     match = re.match(r"^(\.+|.+)(\/|\|)(\.+|.+)$", call_genotype)
+#     if match:
+#         """
+#         call_genotype       match
+#         'A/T'               1. 'A'
+#                             2. '/'
+#                             3. 'T'
+#         """
+#         return match.group(1), match.group(3)
+#     else:
+#         print(f"error match genotype with: {call_genotype}")
+#         exit()
 
 def extract_genotype(gene, call_genotype):
+    '''
+    extract genotype pair and return it back 
+    '''
     if "," not in call_genotype:
+        #zero found
         if gene == "G6PD" and "/" not in call_genotype and "|" not in call_genotype:
             call_genotype = f"{call_genotype}|{call_genotype}"
-        return match_genotype(call_genotype)
+   
+        # return match_genotype(call_genotype)
+        match = re.match(r"^(\.+|.+)(\/|\|)(\.+|.+)$", call_genotype)
+        if match:
+            """
+            call_genotype       match
+            'A/T'               1. 'A'
+                                2. '/'
+                                3. 'T'
+            """
+            return match.group(1), match.group(3)
+        else:
+            print(f"error match genotype with: {call_genotype}")
+            exit()
     else:
         print(f"error extract genotype with: {call_genotype}")
         exit()
 
 def extract_genotype_in_rage(gene, genotype_in_range):
+    '''
+    return genotype sequence as \..*
+    '''
     allele1 = "."
     allele2 = "."
     for genotype in genotype_in_range:
@@ -40,13 +66,15 @@ def extract_genotype_in_rage(gene, genotype_in_range):
     return f"{allele1}|{allele2}"
 
 def convert_ins(ref, allele):
-    if ref == allele:
+
+    if ref == allele: # ref case
         """
         ref     allele      allele_convert
         A       A           del
         """
         return "del"
-    elif ref != allele:
+
+    elif ref != allele: #alternative case 
         """
         ref     allele      allele_convert
         A       ATCG        insTCG
@@ -60,6 +88,7 @@ def convert_del(ref, allele):
         ATCG    ATCG        TCG
         """
         return allele[1:]
+        
     elif ref[0] == allele:
         """
         ref     allele      allele_convert
@@ -68,14 +97,19 @@ def convert_del(ref, allele):
         return "del" + ref[1:]
 
 def convert_allele(hgvs_type, variant_type, is_del, ref, allele):
+    '''
+    what wrong with this me thod 
+    '''
+
     if hgvs_type == "SNP":
         if variant_type == "snp" or variant_type == ".":
             return allele
         elif variant_type == "unknown":
             return allele
-        elif variant_type == "indel" and is_del == False:
+        ## useless? rare case
+        elif variant_type == "indel" and is_del == False: ### CNV
             return convert_ins(ref, allele)
-        elif variant_type == "indel" and is_del == True:
+        elif variant_type == "indel" and is_del == True: #### CNV
             return convert_del(ref, allele)
         else:
             print(f"error convert snp, cnv allele with: {variant_type}")
@@ -93,11 +127,11 @@ def convert_allele(hgvs_type, variant_type, is_del, ref, allele):
             print(f"error convert ins allele with: {variant_type}")
             exit()
     elif hgvs_type == "DEL":
-        if variant_type == "snp" or variant_type == ".":
+        if variant_type == "snp" or variant_type == ".":#####
             return allele
-        elif variant_type == "unknown":
+        elif variant_type == "unknown":#####
             return convert_del(ref, allele)
-        elif variant_type == "indel" and is_del == False:
+        elif variant_type == "indel" and is_del == False:####
             return convert_ins(ref, allele)
         elif variant_type == "indel" and is_del == True:
             return convert_del(ref, allele)
@@ -110,122 +144,162 @@ def convert_allele(hgvs_type, variant_type, is_del, ref, allele):
         print(f"error convert allele with: {hgvs_type}")
         exit()
 
-def sum_up_gt_phases(allele1, allele2):
-    if re.match(r"^(\.+)$", allele1) and re.match(r"^(\.+)$", allele2):
+def sum_up_gt_phases(gt_phases, allele1, allele2):
+    '''
+    give if genotype can define either phase or not 
+    . if got . as base pair, true is l = r, false if l != r 
+    '''
+    if re.match(r"^(\.+)$", allele1) or re.match(r"^(\.+)$", allele2): # ./.
         return "."
     elif not re.match(r"^(\.+)$", allele1) and not re.match(r"^(\.+)$", allele2):
-        if allele1 == allele2:
+        if gt_phases == True:
             return True
-        elif allele1 != allele2:
-            return False
+        else:
+            if allele1 == allele2:
+                return True
+            elif allele1 != allele2:
+                return False
 
 def sum_up_gene_phases(variants):
+    '''
+    for those genotype phase tell if which phase thise gene are 
+    for each bases in haplotype got . in all . bases, 
+    got true if all true (meaning dyplotype are symetry)
+    got false if all false 
+    got combine if got both true and false 
+    '''
     gt_phases = []
     for variant in variants:
         gt_phases.append(variant["gt_phases"])
-    if True not in gt_phases and False not in gt_phases:
+    if True not in gt_phases and False not in gt_phases: # all genotype got ..  
         return "."
-    elif True in gt_phases and False not in gt_phases:
+    elif True in gt_phases and False not in gt_phases: 
         return True
     elif True not in gt_phases and False in gt_phases:
         return False
     elif True in gt_phases and False in gt_phases:
         return "Combine"
 
+def phase_checker(vcf_pro,matcer) :
+    if  vcf_pro.gt_phases :
+        iddd = matcer["sample_id"]
+        raise Exception(f"xxxxxxxxxxx{vcf_pro.gt_phases} Phases Detected in {iddd} at poss {vcf_pro.start} xxxxxxxxxxxxxxxxx")
+
+
 def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
-    for haplotype in allele_definition["haplotypes"]:
-        vcf = VCF(vcf_gz_file)
-        allele_matcher = {}
-        allele_matcher["ana_user_id"] = ana_user_id
-        allele_matcher["ana_id"] = ana_id
-        allele_matcher["sample_id"] = vcf.samples[0]
-        allele_matcher["gene"] = allele_definition["gene"]
-        call_variants = 0
-        total_call_variants = 0
-        allele_matcher["chromosome"] = haplotype["chromosome"]
-        allele_matcher["variants"] = []
-        for variant in haplotype["variants"]:
-            v_vcf = {}
-            v_vcf["hgvs"] = variant["hgvs"]
-            v_vcf["hgvs_type"] = variant["hgvs_type"]
-            v_vcf["start"] = variant["start"]
-            v_vcf["end"] = variant["end"]
-            v_vcf["rsid"] = variant["rsid"]
-            v_vcf["dp"] = 0
-            v_vcf["gt_bases"] = "./."
-            v_vcf["allele1"] = "."
-            v_vcf["allele2"] = "."
-            v_vcf["allele1_convert"] = "."
-            v_vcf["allele2_convert"] = "."
-            v_vcf["gt_phases"] = "."
-            total_call_variants += 1
-            if variant["hgvs_type"] == "SNP" or variant["hgvs_type"] == "INS" or variant["hgvs_type"] == "CNV":
-                region = f"{haplotype['chromosome']}:{variant['start']}-{variant['start']}"
-                done_region = []
-                for v in vcf(region):
-                    # allele definition 1-based vs cyvcf2 0-based coordinate systems
-                    if int(variant["start"]) != int(v.start) + 1:
-                        continue
-                    v_vcf["dp"] = check_null_dp(v.format("DP").tolist()[0][0]) if "DP" in v.FORMAT else 0
-                    v_vcf["gt_bases"] = f"{v.gt_bases[0]}|{v.gt_bases[0]}" if allele_definition["gene"] == "G6PD" and "/" not in v.gt_bases[0] and "|" not in v.gt_bases[0] else v.gt_bases[0]
-                    v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
-                    v_vcf["allele1_convert"] = convert_allele(v_vcf["hgvs_type"], v.var_type, v.is_deletion, v.REF, v_vcf["allele1"])
-                    v_vcf["allele2_convert"] = convert_allele(v_vcf["hgvs_type"], v.var_type, v.is_deletion, v.REF, v_vcf["allele2"])
-                    v_vcf["gt_phases"] = sum_up_gt_phases(v_vcf["allele1"], v_vcf["allele2"])
-                    if int(v.start) + 1 not in done_region:
-                        done_region.append(int(v.start) + 1)
+    '''
+    for those allele search for genome in vcf sample and store it int json format
+    '''
+    haplotype_template = allele_definition["haplotypes"][0]
+    vcf = VCF(vcf_gz_file)
+    allele_matcher = {}
+    allele_matcher["ana_user_id"] = ana_user_id
+    allele_matcher["ana_id"] = ana_id
+    allele_matcher["sample_id"] = vcf.samples[0]
+    allele_matcher["gene"] = allele_definition["gene"]
+    call_variants = 0
+    total_call_variants = 0
+    allele_matcher["chromosome"] = haplotype_template["chromosome"]
+    allele_matcher["variants"] = []
+
+    for variant in haplotype_template["variants"]:
+        # init variant json form
+        v_vcf = {}
+        v_vcf["hgvs"] = variant["hgvs"]
+        v_vcf["hgvs_type"] = variant["hgvs_type"]
+        v_vcf["start"] = variant["start"]
+        v_vcf["end"] = variant["end"]
+        v_vcf["rsid"] = variant["rsid"]
+        v_vcf["dp"] = 0
+        v_vcf["gt_bases"] = "./."
+        v_vcf["allele1"] = "."
+        v_vcf["allele2"] = "."
+        v_vcf["allele1_convert"] = "."
+        v_vcf["allele2_convert"] = "."
+        v_vcf["gt_phases"] = "."
+        total_call_variants += 1
+
+        if variant["hgvs_type"] == "SNP" or variant["hgvs_type"] == "INS" or variant["hgvs_type"] == "CNV":
+            region = f"{haplotype_template['chromosome']}:{variant['start']}-{variant['start']}"
+            done_region = []
+            for genome in vcf(region):
+
+                # allele definition 1-based vs cyvcf2 0-based coordinate systems
+                if int(variant["start"]) != int(genome.start) + 1:
+                    continue
+                if int(genome.start) + 1 not in done_region:
+                    done_region.append(int(genome.start) + 1)
+                    call_variants += 1
+                else:
+                    continue
+                
+                # phase_checker(genome, allele_matcher)
+                v_vcf["dp"] = check_null_dp(genome.format("DP").tolist()[0][0]) if "DP" in genome.FORMAT else 0
+                v_vcf["gt_bases"] = f"{genome.gt_bases[0]}|{genome.gt_bases[0]}" if allele_definition["gene"] == "G6PD" and "/" not in genome.gt_bases[0] and "|" not in genome.gt_bases[0] else genome.gt_bases[0] # some case got only one base ?
+                v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
+                v_vcf["allele1_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele1"])
+                v_vcf["allele2_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele2"])
+                v_vcf["gt_phases"] = sum_up_gt_phases(genome.gt_phases[0], v_vcf["allele1"], v_vcf["allele2"])
+            allele_matcher["variants"].append(v_vcf)
+
+        elif variant["hgvs_type"] == "DEL":######***************
+            region = f"{haplotype_template['chromosome']}:{int(variant['start']) - 1}-{int(variant['start']) - 1}"
+            done_region = []
+
+            for genome in vcf(region):
+                # allele definition 1-based vs cyvcf2 0-based coordinate systems
+                if int(variant["start"]) - 1 != int(genome.start) + 1:
+                    continue
+                if int(genome.start) + 1 not in done_region:
+                        done_region.append(int(genome.start) + 1)
                         call_variants += 1
-                allele_matcher["variants"].append(v_vcf)
-            elif variant["hgvs_type"] == "DEL":
-                region = f"{haplotype['chromosome']}:{int(variant['start']) - 1}-{int(variant['start']) - 1}"
-                done_region = []
-                for v in vcf(region):
-                    # allele definition 1-based vs cyvcf2 0-based coordinate systems
-                    if int(variant["start"]) - 1 != int(v.start) + 1:
-                        continue
-                    if v.var_type == "indel" and v.is_deletion == True:
-                        v_vcf["dp"] = check_null_dp(v.format("DP").tolist()[0][0]) if "DP" in v.FORMAT else 0
-                        v_vcf["gt_bases"] = f"{v.gt_bases[0]}|{v.gt_bases[0]}" if allele_definition["gene"] == "G6PD" and "/" not in v.gt_bases[0] and "|" not in v.gt_bases[0] else v.gt_bases[0]
-                        v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
-                        v_vcf["allele1_convert"] = convert_allele(v_vcf["hgvs_type"], v.var_type, v.is_deletion, v.REF, v_vcf["allele1"])
-                        v_vcf["allele2_convert"] = convert_allele(v_vcf["hgvs_type"], v.var_type, v.is_deletion, v.REF, v_vcf["allele2"])
-                        v_vcf["gt_phases"] = sum_up_gt_phases(v_vcf["allele1"], v_vcf["allele2"])
-                        if int(v.start) + 1 not in done_region:
-                            done_region.append(int(v.start) + 1)
-                            call_variants += 1
-                    else:
-                        dp_in_range = [0] * len(range(int(variant['start']), int(variant['end']) + 1))
-                        genotype_in_range = ["./."] * len(range(int(variant['start']), int(variant['end']) + 1))
-                        index = 0
-                        for in_range in range(int(variant['start']), int(variant['end']) + 1):
-                            region = f"{haplotype['chromosome']}:{in_range}-{in_range}"
-                            for v in vcf(region):
-                                # allele definition 1-based vs cyvcf2 0-based coordinate systems
-                                if in_range != int(v.start) + 1:
-                                    continue
-                                if v.var_type == "snp" or v.var_type == "unknown":
-                                    dp_in_range[index] = check_null_dp(v.format("DP").tolist()[0][0]) if "DP" in v.FORMAT else 0
-                                    genotype_in_range[index] = v.gt_bases[0]
-                                else:
-                                    print(f"error in range with: {v.var_type}, {v.gt_bases[0]}")
-                                    exit()
-                            index += 1
-                        v_vcf["dp"] = int(sum(dp_in_range) / len(dp_in_range))
-                        v_vcf["gt_bases"] = extract_genotype_in_rage(allele_definition["gene"], genotype_in_range)
-                        v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
-                        v_vcf["allele1_convert"] = v_vcf["allele1"][1:]
-                        v_vcf["allele2_convert"] = v_vcf["allele2"][1:]
-                        v_vcf["gt_phases"] = sum_up_gt_phases(v_vcf["allele1"], v_vcf["allele2"])
-                        if int(v.start) + 1 not in done_region:
-                            done_region.append(int(v.start) + 1)
-                            call_variants += 1
-                allele_matcher["variants"].append(v_vcf)
-            else:
-                print(f"error query region with: {variant['hgvs_type']}")
-                exit()
-        break
+                else:
+                    continue
+                
+                # phase_checker(genome, allele_matcher)
+                if genome.var_type == "indel" and genome.is_deletion == True:
+                    #CASE in which DEL type and cyvcf found Deletion type in genome we we return as base start from allele which not deleted
+                    v_vcf["dp"] = check_null_dp(genome.format("DP").tolist()[0][0]) if "DP" in genome.FORMAT else 0
+                    v_vcf["gt_bases"] = f"{genome.gt_bases[0]}|{genome.gt_bases[0]}" if allele_definition["gene"] == "G6PD" and "/" not in genome.gt_bases[0] and "|" not in genome.gt_bases[0] else genome.gt_bases[0]
+                    v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
+                    v_vcf["allele1_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(genome.REF, v_vcf["allele1"])
+                    v_vcf["allele2_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(genome.REF, v_vcf["allele2"])
+                    v_vcf["gt_phases"] = sum_up_gt_phases(genome.gt_phases[0], v_vcf["allele1"], v_vcf["allele2"])
+
+                else: # case which allele is del type but sample have no varint
+                    # retrun sequence allele 
+                    len_genome = (int(variant['end']) - int(variant['start']) + 1)
+                    dp_in_range = [0] * len_genome
+                    genotype_in_range = ["./."] * len_genome
+                    for inx, in_range in enumerate(range(int(variant['start']), int(variant['end']) + 1)):
+                        region = f"{haplotype_template['chromosome']}:{in_range}-{in_range}"
+                        for genome in vcf(region):
+                            # allele definition 1-based vs cyvcf2 0-based coordinate systems
+                            if in_range != int(genome.start) + 1:
+                                continue
+                            if genome.var_type == "snp" or genome.var_type == "unknown":
+                                dp_in_range[inx] = check_null_dp(genome.format("DP").tolist()[0][0]) if "DP" in genome.FORMAT else 0
+                                genotype_in_range[inx] = genome.gt_bases[0]
+                            else:
+                                print(f"error in range with: {genome.var_type}, {genome.gt_bases[0]}")
+                                exit()
+                    v_vcf["dp"] = int(sum(dp_in_range) / len(dp_in_range))
+                    v_vcf["gt_bases"] = extract_genotype_in_rage(allele_definition["gene"], genotype_in_range)
+                    v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
+                    v_vcf["allele1_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"][1:]) or re.match(r"^(\.+)$", v_vcf["allele2"][1:]) else v_vcf["allele1"][1:]
+                    v_vcf["allele2_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"][1:]) or re.match(r"^(\.+)$", v_vcf["allele2"][1:]) else v_vcf["allele2"][1:]
+                    v_vcf["gt_phases"] = sum_up_gt_phases(genome.gt_phases[0], v_vcf["allele1"], v_vcf["allele2"])
+                    # if int(genome.start) + 1 not in done_region:
+                    #     done_region.append(int(genome.start) + 1)
+                    #     call_variants += 1
+            allele_matcher["variants"].append(v_vcf)
+        else:
+            print(f"error query region with: {variant['hgvs_type']}")
+            exit()
+
     allele_matcher["call_variants"]= call_variants
     allele_matcher["missing_call_variants"] = total_call_variants - call_variants
     allele_matcher["total_variants"] = total_call_variants
     allele_matcher["gene_phases"] = sum_up_gene_phases(allele_matcher["variants"])
+    
     return allele_matcher
