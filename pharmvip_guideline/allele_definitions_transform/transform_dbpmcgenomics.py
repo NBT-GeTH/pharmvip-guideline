@@ -3,6 +3,12 @@ from pharmvip_guideline.utils.natural_sort import natural_keys
 import json
 
 def allele_definitions_text(allele_definitions_list, dbpmcgenomics):
+    '''
+    writing :
+            allele name gene    genome positions ...
+    def4	Reference	CFTR	Position at NC_000007.14 (Homo sapiens chromosome 7, GRCh38.p2)	chr7
+    '''
+
     f = open(dbpmcgenomics + "/cpic_allele_definitions.txt", "w")
     text = ""
     def_count = 1
@@ -28,6 +34,11 @@ def allele_definitions_detail_text(allele_definitions_list, dbpmcgenomics):
     f.close()
 
 def allele_definitions_hgvs_relation_to_name_text(allele_definitions_list, dbpmcgenomics):
+    '''
+    write : 
+            genome position
+    rel2	g.201091993G>A	c.520C>T
+    '''
     f = open(dbpmcgenomics + "/cpic_allele_definitions_hgvs_relation_to_name.txt", "w")
     text = ""
     rel_count = 1
@@ -40,6 +51,12 @@ def allele_definitions_hgvs_relation_to_name_text(allele_definitions_list, dbpmc
     f.close()
 
 def transform_dbpmcgenomics(outputs, dbpmcgenomics):
+    '''
+    write conver allele definition into tuple of relation 
+    require : Json file that store allele definition
+    (merge all  avilable allele definition into 1 set of database)
+    
+    '''
     allele_definitions_list = []
     for allele_definition in glob.glob(outputs + "/*.json"):
         allele_definitions_list.append(allele_definition)

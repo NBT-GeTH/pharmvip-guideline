@@ -47,32 +47,15 @@ def find_best_candidate(allele_definition, allele_matcher):
     guide_dip_score = []
     print_dip_score = []
     for guide_dip in allele_matcher["guide_dip"]:
-        name1 = guide_dip.split("/")[0]
-        name2 = guide_dip.split("/")[1]
-        score1 = 0
-        score2 = 0
-        for relation in allele_definition["name_relation_to_hgvs"]:
-            if name1 == relation["name"]:
-                score1 = len(relation["hgvs"])
-                break
-        for relation in allele_definition["name_relation_to_hgvs"]:
-            if name2 == relation["name"]:
-                score2 = len(relation["hgvs"])
-                break
+        name1,name2 = guide_dip.split("/")
+        score1 = next(len(relation["hgvs"]) for relation in allele_definition["name_relation_to_hgvs"] if name1 == relation["name"])
+        score2 = next(len(relation["hgvs"]) for relation in allele_definition["name_relation_to_hgvs"] if name2 == relation["name"])
         guide_dip_score.append(score1 + score2)
+
     for print_dip in allele_matcher["print_dip"]:
-        name1 = print_dip.split("/")[0]
-        name2 = print_dip.split("/")[1]
-        score1 = 0
-        score2 = 0
-        for relation in allele_definition["name_relation_to_hgvs"]:
-            if name1 == relation["name"]:
-                score1 = len(relation["hgvs"])
-                break
-        for relation in allele_definition["name_relation_to_hgvs"]:
-            if name2 == relation["name"]:
-                score2 = len(relation["hgvs"])
-                break
+        name1,name2 = print_dip.split("/")
+        score1 = next(len(relation["hgvs"]) for relation in allele_definition["name_relation_to_hgvs"] if name1 == relation["name"])
+        score2 = next(len(relation["hgvs"]) for relation in allele_definition["name_relation_to_hgvs"] if name1 == relation["name"])
         print_dip_score.append(score1 + score2)
 
     guide_dip_new = []
