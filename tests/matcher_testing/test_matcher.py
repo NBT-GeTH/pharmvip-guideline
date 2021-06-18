@@ -28,7 +28,6 @@ class TestMatcher(unittest.TestCase):
                 allele_definition = json.load(open(allele_definition_json))
                 self.allele_definition_set[allele_definition["gene"]] = allele_definition
 
-
     def test_allele_matcher(self):
         generator = Generator(self.allele_definition_set,num_each_gene=20,missing_rate=.1,false_rate_in_combine=60)
         # generator.overall_generation(gene_phase=True,id_prefix="TA")

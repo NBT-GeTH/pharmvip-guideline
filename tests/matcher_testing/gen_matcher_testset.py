@@ -1,17 +1,9 @@
-#%%
 import glob
 import json
-
-# from pickle import NONE
 import random
 from pharmvip_guideline import *
-from tests.matcher_testing.matcher_tester_utils import data_dumper
 from pharmvip_guideline.allele_matcher.query import convert_allele
-#%%
 
-
-
-# def create_object(obj):
 class Generator:
 
     def __init__(self,allele_definition_set=None, num_each_gene=2,missing_rate=0.25,false_rate_in_combine = 0.5,dot_flag=True):
@@ -75,9 +67,7 @@ class Generator:
 
         phase_checker = [var['gt_phases'] for var in  sample_query['variants']]
         if gene_phase == "Combine":
-            # print(phase_checker)
             if (True not in phase_checker) or (False not in phase_checker):
-                # print("lol")
                 return self.sample_query_generator(gene_name=gene_name,gene_phase=gene_phase,sample_id=sample_id)
         elif gene_phase == False:  
             if True in phase_checker : return self.sample_query_generator(gene_name=gene_name,gene_phase=gene_phase,sample_id=sample_id)
