@@ -107,13 +107,14 @@ def test_get_allele_definition_hgvs_relation_to_name():
     ]
     assert actual == expect
 
-def test_get_hgvs_relation_to_name():
-    actual = get_hgvs_relation_to_name(automatic_customize(allele_definition_df))
-    expect = {
-        "g.100000001A>T": ["*2", "*3"],
-        "g.100000002C>G": ["*3"]
-    }
-    assert actual == expect
+#nost exist anymore
+# def test_get_hgvs_relation_to_name():
+#     actual = get_hgvs_relation_to_name(automatic_customize(allele_definition_df))
+#     expect = {
+#         "g.100000001A>T": ["*2", "*3"],
+#         "g.100000002C>G": ["*3"]
+#     }
+#     assert actual == expect
 
 def test_get_allele_definition_name_relation_to_hgvs():
     actual = get_allele_definition_name_relation_to_hgvs(automatic_customize(allele_definition_df))

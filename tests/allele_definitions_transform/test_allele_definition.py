@@ -189,42 +189,6 @@ def test_clean_allele_cell():
     )
     assert_frame_equal(actual, expect)
 
-def test_clean_nan_allele_cell():
-    actual = clean_nan_allele_cell(automatic_customize(allele_definition_df))
-    expect = pd.DataFrame(
-        [
-            ["GENE: GENE", float("NaN"), float("NaN")],
-            ["NM_", float("NaN"), float("NaN")],
-            ["Effect on protein (NP_)", float("NaN"), float("NaN")],
-            ["Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p7)", "g.100000001A>T", "g.100000002C>G"],
-            ["Position at NG_", float("NaN"), float("NaN")],
-            ["rsID", "rs100000001", "rs100000002"],
-            ["Allele", float("NaN"), float("NaN")],
-            ["*1", " A", "C "],
-            ["*2", " T", "C "],
-            ["*3", "T", "G "]
-        ]
-    )
-    assert_frame_equal(actual, expect)
-
-def test_clean_whitespace_allele_cell():
-    actual = clean_whitespace_allele_cell(automatic_customize(allele_definition_df))
-    expect = pd.DataFrame(
-        [
-            ["GENE: GENE", float("NaN"), float("NaN")],
-            ["NM_", float("NaN"), float("NaN")],
-            ["Effect on protein (NP_)", float("NaN"), float("NaN")],
-            ["Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p7)", "g.100000001A>T", "g.100000002C>G"],
-            ["Position at NG_", float("NaN"), float("NaN")],
-            ["rsID", "rs100000001", "rs100000002"],
-            ["Allele", float("NaN"), float("NaN")],
-            ["*1", "A", "C"],
-            ["*2", "T", float("NaN")],
-            ["*3", "T", "G"]
-        ]
-    )
-    assert_frame_equal(actual, expect)
-
 def test_search_chromosome():
     actual_position, actual_chromosome = search_chromosome("Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p7)")
     expect_position = "Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p7)"
