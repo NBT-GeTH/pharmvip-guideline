@@ -1,6 +1,3 @@
-# from pharmvip_guideline.allele_definitions_transform.allele_definition import *
-# print(dir())
-#%%
 #%%
 import importlib
 import glob
