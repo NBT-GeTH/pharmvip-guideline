@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# clear
+clear
 
 # if [[ $(uname) == "Darwin" ]]; then
 #     source "/Users/csukrith/opt/anaconda3/etc/profile.d/conda.sh"
@@ -9,6 +9,12 @@
 # fi
 # conda activate "pharmvip-guideline"
 
+SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
+
+if [ ! -d "$SCRIPTPATH/../../_out" ]; then
+    mkdir "$SCRIPTPATH/../../_out"
+fi
+
 pharmvip_guideline allele_matcher \
     --ana_user_id 1 \
     --ana_id 1 \
@@ -16,8 +22,8 @@ pharmvip_guideline allele_matcher \
     --ana_best_candidate true \
     --ana_genes_cyp2d6 true \
     --ana_options_hla true \
-    --vcf_gz_file "/home/xixe/pharm/pharmvip-guideline/resources/samples/bigchunk/HG01468_CPIC.vcf.gz" \
-    --diplotype_cyp2d6 "/home/xixe/pharm/pharmvip-guideline/resources/samples/mini_chunk/HS01002/HS01002_diplotype_CYP2D6.tsv" \
-    --diplotype_hla "/home/xixe/pharm/pharmvip-guideline/resources/samples/mini_chunk/HS01002/HS01002_diplotype_HLA.tsv" \
-    --outputs "/home/xixe/tmp/optt" \
-    --dbpmcgenomics "/home/xixe/tmp/optt"
+    --vcf_gz_file "$SCRIPTPATH/../samples/HS01011/HS01011.vcf.gz" \
+    --diplotype_cyp2d6 "$SCRIPTPATH/../samples/HS01011/diplotype_CYP2D6.tsv" \
+    --diplotype_hla "$SCRIPTPATH/../samples/HS01011/diplotype_HLA.tsv" \
+    --outputs "$SCRIPTPATH/../../_out" \
+    --dbpmcgenomics "$SCRIPTPATH/../../_out"
