@@ -262,8 +262,8 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                     v_vcf["dp"] = check_null_dp(genome.format("DP").tolist()[0][0]) if "DP" in genome.FORMAT else 0
                     v_vcf["gt_bases"] = f"{genome.gt_bases[0]}|{genome.gt_bases[0]}" if allele_definition["gene"] == "G6PD" and "/" not in genome.gt_bases[0] and "|" not in genome.gt_bases[0] else genome.gt_bases[0]
                     v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
-                    v_vcf["allele1_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(genome.REF, v_vcf["allele1"])
-                    v_vcf["allele2_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(genome.REF, v_vcf["allele2"])
+                    v_vcf["allele1_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele1"])
+                    v_vcf["allele2_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele1"])
                     v_vcf["gt_phases"] = sum_up_gt_phases(genome.gt_phases[0], v_vcf["allele1"], v_vcf["allele2"])
 
                 else: # case which allele is del type but sample have no varint
