@@ -50,6 +50,32 @@ def allele_definitions_hgvs_relation_to_name_text(allele_definitions_list, dbpmc
     f.write(text[:-1])
     f.close()
 
+def allele_definitions_genome_at_POS(allele_definitions_list, dbpmcgenomics):
+    gPOS_collector = {}
+    f = open(dbpmcgenomics + "/allele_definitions_genome_at_POS.txt", "w")
+    for allele_definition in allele_definitions_list:
+        allele_definition = json.load(open(allele_definition))
+
+        for variant in allele_definition["haplotypes"][0]['variants'] :
+            gPOS = variant['start']
+            gPOS_collector[gPOS] = {}
+            gPOS_collector[gPOS]["ref"] = variant['allele']
+            gPOS_collector[gPOS]["alt"] = set()
+
+        for inx in range(1,len(allele_definition["haplotypes"])):
+            for variant in allele_definition["haplotypes"][inx]['variants']:
+                gPOS = variant['start']
+                is_ref = variant['allele'] == gPOS_collector[gPOS]["ref"]
+                is_collected =  variant['allele'] in gPOS_collector[gPOS]["alt"]
+                if  not is_ref and not is_collected:
+                    gPOS_collector[gPOS]["alt"].add(variant['allele'])
+    for gPOS in gPOS_collector:
+        ref = gPOS_collector[gPOS]["ref"]
+        alt = ','.join(gPOS_collector[gPOS]["alt"])
+
+        f.write(f'{gPOS}\t{ref}\t{alt}\n')
+    f.close()
+
 def transform_dbpmcgenomics(outputs, dbpmcgenomics):
     '''
     write conver allele definition into tuple of relation 
@@ -57,6 +83,7 @@ def transform_dbpmcgenomics(outputs, dbpmcgenomics):
     (merge all  avilable allele definition into 1 set of database)
     
     '''
+
     allele_definitions_list = []
     for allele_definition in glob.glob(outputs + "/*.json"):
         allele_definitions_list.append(allele_definition)
@@ -65,3 +92,12 @@ def transform_dbpmcgenomics(outputs, dbpmcgenomics):
     allele_definitions_text(allele_definitions_list, dbpmcgenomics)
     allele_definitions_detail_text(allele_definitions_list, dbpmcgenomics)
     allele_definitions_hgvs_relation_to_name_text(allele_definitions_list, dbpmcgenomics)
+    allele_definitions_genome_at_POS(allele_definitions_list, dbpmcgenomics)
+
+#%%
+
+# %%
+
+# %%
+
+# %%
