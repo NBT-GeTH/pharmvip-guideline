@@ -1,10 +1,6 @@
-import glob
-import json
 import random
-from pharmvip_guideline import *
-from pharmvip_guideline.allele_matcher.query import convert_allele
 
-class Generator:
+class MatcherGenerator:
 
     def __init__(self,allele_definition_set=None, num_each_gene=2,missing_rate=0.25,false_rate_in_combine = 0.5,dot_flag=True):
         self.num_each_gene = num_each_gene
@@ -95,6 +91,7 @@ class Generator:
 ========= Just for test =========
 =================================    
 '''''''''''''''''''''''''''''''''
+
 # # %%
 # allele_definition_set = {}
 # for allele_definition_json in glob.glob(defaults_allele_definitions_transform + "/*.json"):
@@ -105,7 +102,8 @@ class Generator:
 
 # # %%
 # gener.num_each_gene = 20
-# gener.massive_generation(gene_name='CACNA1S',gene_phase="Combine",id_prefix="TA")
+# gener.missing_rate = .7
+# gener.massive_generation(gene_name='CACNA1S',gene_phase="True",id_prefix="TA")
 # # %%
 # gener.get_sample_collector()
 
@@ -114,3 +112,7 @@ class Generator:
 # test = gener.sample_query_generator(gene_name='CACNA1S',gene_phase="combine")
 # test
 # #%%
+# zample = gener.get_sample_collector()
+# #%%
+# res = [sub for sub in zample if sub['gene_phases'] == '.']
+# # %%
