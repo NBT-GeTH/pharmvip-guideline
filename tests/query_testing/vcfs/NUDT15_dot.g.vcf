@@ -1,0 +1,34 @@
+##fileformat=VCFv4.2
+##source=SelectVariants
+##reference=hg38
+##FILTER=<ID=PASS,Description="All filters passed">
+##INFO=<ID=PX,Number=.,Type=String,Description="PGX">
+##FORMAT=<ID=GT,Number=1,Type=String,Description="Genotype">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads with MQ=255 or with bad mates are filtered)">
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE1
+chr13	48037748	.	T	C	.	PASS	PX=;	GT:DP	./.:5
+chr13	48037749	.	G	C	.	PASS	PX=;	GT:DP	./.:5
+chr13	48037782	.	AGGAGTC	A	.	PASS	PX=;	GT:DP	./.:5
+chr13	48037783	.	G	*	.	PASS	PX=;	GT:DP	./.:5
+chr13	48037784	.	G	*	.	PASS	PX=;	GT:DP	./.:5
+chr13	48037785	.	A	*	.	PASS	PX=;	GT:DP	./.:5
+chr13	48037786	.	G	*	.	PASS	PX=;	GT:DP	./.:5
+chr13	48037787	.	T	*	.	PASS	PX=;	GT:DP	./.:5
+chr13	48037788	.	C	*	.	PASS	PX=;	GT:DP	./.:5
+chr13	48037798	.	G	A	.	PASS	PX=;	GT:DP	./.:5
+chr13	48037801	.	G	GAGTCG	.	PASS	PX=;	GT:DP	./.:5
+chr13	48037802	.	T	.	.	PASS	PX=;	GT:DP	./.:5
+chr13	48037826	.	G	GCGGG	.	PASS	PX=;	GT:DP	./.:5
+chr13	48037827	.	T	.	.	PASS	PX=;	GT:DP	./.:5
+chr13	48037834	.	C	T	.	PASS	PX=;	GT:DP	./.:5
+chr13	48037847	.	G	C	.	PASS	PX=;	GT:DP	./.:5
+chr13	48037849	.	A	G	.	PASS	PX=;	GT:DP	./.:5
+chr13	48037885	.	G	A	.	PASS	PX=;	GT:DP	./.:5
+chr13	48037902	.	C	G	.	PASS	PX=;	GT:DP	./.:5
+chr13	48040981	.	AA	A	.	PASS	PX=;	GT:DP	./.:5
+chr13	48040982	.	A	*	.	PASS	PX=;	GT:DP	./.:5
+chr13	48041103	.	T	TG	.	PASS	PX=;	GT:DP	./.:5
+chr13	48041104	.	G	.	.	PASS	PX=;	GT:DP	./.:5
+chr13	48041113	.	G	T	.	PASS	PX=;	GT:DP	./.:5
+chr13	48045720	.	G	A	.	PASS	PX=;	GT:DP	./.:5
+chr13	48045771	.	T	A	.	PASS	PX=;	GT:DP	./.:5

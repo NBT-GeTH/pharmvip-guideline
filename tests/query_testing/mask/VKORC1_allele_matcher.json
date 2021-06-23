@@ -1,0 +1,34 @@
+{
+  "ana_user_id": 1,
+  "ana_id": 1,
+  "sample_id": "HS02011",
+  "gene": "VKORC1",
+  "chromosome": "chr16",
+  "variants": [
+    {
+      "hgvs": "g.31096368C>T",
+      "hgvs_type": "SNP",
+      "start": "31096368",
+      "end": "31096368",
+      "rsid": "rs9923231",
+      "dp": 58,
+      "gt_bases": "T/T",
+      "allele1": "T",
+      "allele2": "T",
+      "allele1_convert": "T",
+      "allele2_convert": "T",
+      "gt_phases": true
+    }
+  ],
+  "call_variants": 1,
+  "missing_call_variants": 0,
+  "total_variants": 1,
+  "gene_phases": true,
+  "count_diplotype": 1,
+  "guide_dip": [
+    "-1639A/-1639A"
+  ],
+  "print_dip": [
+    "-1639A/-1639A"
+  ]
+}
