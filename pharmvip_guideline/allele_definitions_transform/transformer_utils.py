@@ -22,7 +22,7 @@ def manual_customize(allele_definition_df, gene):
         this medthod intent to fix if there is something unapitiate in 
         allele defination table 
     '''
-    #try to drop unnessesary tuple (there is space in cell befor acctual data)
+    # try to drop unnessesary tuple (there is space in cell befor acctual data)
     if gene == "G6PD": 
         allele_definition_df.iloc[1, 0] = allele_definition_df.iloc[1, 1]
         allele_definition_df.iloc[2, 0] = allele_definition_df.iloc[2, 1]
@@ -37,16 +37,15 @@ def manual_customize(allele_definition_df, gene):
         
     # something wrong with g.18138983G>A so we drop its allele defination
     elif gene == "TPMT":
-        exceptions = None
         for column in range(allele_definition_df.shape[1]):
             if allele_definition_df.iloc[3, column] ==  "g.18138983G>A":
-                exceptions = column
-        allele_definition_df.drop(allele_definition_df.columns[[exceptions]], axis=1, inplace=True)
+                allele_definition_df.drop(allele_definition_df.columns[[column]], axis=1, inplace=True)
         allele_definition_df.columns = range(allele_definition_df.shape[1])
 
         return allele_definition_df
 
-    elif gene == "VKORC1": # some version have conflict in allele named 
+    # some version have conflict in allele named 
+    elif gene == "VKORC1":
         for row in range(allele_definition_df.shape[0]):
             if allele_definition_df.iloc[row, 0] ==  "rs9923231 reference (C)":
                 allele_definition_df.iloc[row, 0] = "-1639G"

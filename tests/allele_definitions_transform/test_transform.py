@@ -32,7 +32,8 @@ def test_get_allele_definition_haplotypes():
                     "start": "100000001",
                     "end": "100000001",
                     "rsid": "rs100000001",
-                    "allele": "A"
+                    "allele": "A",
+                    "is_ref": True
                 },
                 {
                     "hgvs": "g.100000002C>G",
@@ -40,7 +41,8 @@ def test_get_allele_definition_haplotypes():
                     "start": "100000002",
                     "end": "100000002",
                     "rsid": "rs100000002",
-                    "allele": "C"
+                    "allele": "C",
+                    "is_ref": True
                 }
             ]
         },
@@ -55,7 +57,8 @@ def test_get_allele_definition_haplotypes():
                     "start": "100000001",
                     "end": "100000001",
                     "rsid": "rs100000001",
-                    "allele": "T"
+                    "allele": "T",
+                    "is_ref": True
                 },
                 {
                     "hgvs": "g.100000002C>G",
@@ -63,7 +66,8 @@ def test_get_allele_definition_haplotypes():
                     "start": "100000002",
                     "end": "100000002",
                     "rsid": "rs100000002",
-                    "allele": "C"
+                    "allele": "C",
+                    "is_ref": False
                 }
             ]
         },
@@ -78,7 +82,8 @@ def test_get_allele_definition_haplotypes():
                     "start": "100000001",
                     "end": "100000001",
                     "rsid": "rs100000001",
-                    "allele": "T"
+                    "allele": "T",
+                    "is_ref": True
                 },
                 {
                     "hgvs": "g.100000002C>G",
@@ -86,7 +91,8 @@ def test_get_allele_definition_haplotypes():
                     "start": "100000002",
                     "end": "100000002",
                     "rsid": "rs100000002",
-                    "allele": "G"
+                    "allele": "G",
+                    "is_ref": True
                 }
             ]
         }

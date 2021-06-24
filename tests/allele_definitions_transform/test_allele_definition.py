@@ -44,8 +44,8 @@ allele_definition_df_VKORC1 = pd.DataFrame(
         ["Position at NG_", float("NaN"), float("NaN"), float("NaN")],
         ["rsID", "rs100000002", float("NaN"), "rs100000001"],
         ["Allele", float("NaN"), float("NaN"), float("NaN")],
-        ["*1", "C ", float("NaN"), " A"],
-        ["*2", float("NaN"), float("NaN"), " T"],
+        ["-1639G", "C ", float("NaN"), " A"],
+        ["-1639A", float("NaN"), float("NaN"), " T"],
         ["*3", "G ", float("NaN"), "T"],
         [float("NaN"), float("NaN"), float("NaN"), float("NaN")]
     ]
