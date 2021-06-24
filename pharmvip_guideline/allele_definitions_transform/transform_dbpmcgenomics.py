@@ -1,6 +1,7 @@
 import glob
-from pharmvip_guideline.utils.natural_sort import natural_keys
 import json
+import pickle
+from pharmvip_guideline.utils.natural_sort import natural_keys
 
 def allele_definitions_text(allele_definitions_list, dbpmcgenomics):
     '''
@@ -69,12 +70,17 @@ def allele_definitions_genome_at_POS(allele_definitions_list, dbpmcgenomics):
                 is_collected =  variant['allele'] in gPOS_collector[gPOS]["alt"]
                 if  not is_ref and not is_collected:
                     gPOS_collector[gPOS]["alt"].add(variant['allele'])
+    gPOS_collector = {gPOS:gPOS_collector[gPOS] for gPOS in sorted(gPOS_collector)}
     for gPOS in gPOS_collector:
         ref = gPOS_collector[gPOS]["ref"]
         alt = ','.join(gPOS_collector[gPOS]["alt"])
 
         f.write(f'{gPOS}\t{ref}\t{alt}\n')
     f.close()
+
+    with open(dbpmcgenomics + '/gPOS_collector.pickle', 'wb') as f:
+    # Pickle the 'data' dictionary using the highest protocol available.
+        pickle.dump(gPOS_collector, f, pickle.HIGHEST_PROTOCOL)
 
 def transform_dbpmcgenomics(outputs, dbpmcgenomics):
     '''
@@ -96,7 +102,7 @@ def transform_dbpmcgenomics(outputs, dbpmcgenomics):
 
 #%%
 
-# %%
+#%%
 
 # %%
 
