@@ -1,14 +1,14 @@
 import random
 
+
 class MatcherGenerator:
 
-    def __init__(self,allele_definition_set=None, num_each_gene=2,missing_rate=0.25,false_rate_in_combine = 0.5,dot_flag=True):
+    def __init__(self,allele_definition_set=None, num_each_gene=2,missing_rate=0.25,false_rate_in_combine = 0.5):
         self.num_each_gene = num_each_gene
         self.allele_definition_set = allele_definition_set
         self.missing_rate = missing_rate
         self.false_rate_in_combine = false_rate_in_combine
         self.__sample_collector = []
-
 
     def random_missing_genome(self,genome):
         return random.choices([genome,'.'],[1 - self.missing_rate,self.missing_rate])[0]
@@ -22,6 +22,17 @@ class MatcherGenerator:
     def random_haplotype_pair(self,gene_name):
        return random.choices(self.allele_definition_set[gene_name]["haplotypes"],k=2)
    
+    def  gen_gene_variant(self,varian_pack,allele1,allele2,gt_phase):
+        haplotype = varian_pack[0]
+        var_inx = varian_pack[1]
+        gene = {
+            "hgvs_type": haplotype["variants"][var_inx]["hgvs_type"],
+            "allele1_convert": allele1,
+            "allele2_convert": allele2,
+            "gt_phases": gt_phase
+        }
+        return gene
+
     def sample_query_generator(self,gene_name,gene_phase, sample_id=0):
         sample_query = {
             "sample_id": sample_id,
@@ -49,15 +60,17 @@ class MatcherGenerator:
                 gt_phase = self.random_gt_phase()
             else:
                 gt_phase = gene_phase
-           
-            gene = {
-            "hgvs_type": haplotype1['variants'][var_inx]["hgvs_type"],
-            "allele1_convert": allele1,
-            "allele2_convert": allele2,
-            "gt_phases": gt_phase
-            }
-            sample_query["variants"].append(gene)
+            varian_pack = (haplotype1,var_inx)
+            gene = self.gen_gene_variant(
+                varian_pack=varian_pack,
+                allele1=allele1,
+                allele2=allele2,gt_phase=gt_phase)
 
+            sample_query["variants"].append(gene)
+        
+        sample_query["call_variants"] = number_of_variant - missing_phase_count
+        sample_query["missing_call_variants"] = missing_phase_count
+        sample_query["total_variants"] = number_of_variant
         if missing_phase_count == number_of_variant:
             sample_query["gene_phases"] = '.'
 
@@ -85,34 +98,3 @@ class MatcherGenerator:
 
     def clear_sample_query_collector(self):
         self.__sample_collector = []
-
-'''''''''''''''''''''''''''''''''
-=================================
-========= Just for test =========
-=================================    
-'''''''''''''''''''''''''''''''''
-
-# # %%
-# allele_definition_set = {}
-# for allele_definition_json in glob.glob(defaults_allele_definitions_transform + "/*.json"):
-#         allele_definition = json.load(open(allele_definition_json))
-#         allele_definition_set[allele_definition["gene"]] = allele_definition
-# #%%
-# gener = Generator(allele_definition_set)
-
-# # %%
-# gener.num_each_gene = 20
-# gener.missing_rate = .7
-# gener.massive_generation(gene_name='CACNA1S',gene_phase="True",id_prefix="TA")
-# # %%
-# gener.get_sample_collector()
-
-# # %%
-# # %%
-# test = gener.sample_query_generator(gene_name='CACNA1S',gene_phase="combine")
-# test
-# #%%
-# zample = gener.get_sample_collector()
-# #%%
-# res = [sub for sub in zample if sub['gene_phases'] == '.']
-# # %%
