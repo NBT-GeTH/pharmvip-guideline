@@ -22,6 +22,8 @@ class  VCFsFileGenerator(QueryGenerator):
             missing_rate=missing_rate, 
             false_rate_in_combine=false_rate_in_combine)
         self.possition_collector = self.load_possition_collector()
+        self.body = ''
+        self.header = ''
 
     def  load_possition_collector(self):
         with open(defaults_allele_definitions_dbpmcgenomics + '/gPOS_collector.pickle', 'rb') as f:
@@ -29,64 +31,64 @@ class  VCFsFileGenerator(QueryGenerator):
         return data
 
     def  from_hgvs_to_possition(self,hgvs):
-        pos_finder = re.match((f'^g\.(\d+)(\_.*|\w.*)$'),gener.get_sample_collector()[0]["variants"][0]['hgvs'])
+        pos_finder = re.match((f'^g\.(\d+)(\_.*|\w.*)$'),hgvs)
         return pos_finder.group(1)
 
+    def  clear_body(self):
+        self.body = ''
+
+    def  write_vcf(self,sample_id):
+        with open(f'./vcfs/{sample_id}.vcf', "w") as f :
+            for key,val in self.header.items():
+                f.write(val)
+            f.write(self.body)
+
     def  from_query_set_to_VCFs(self,query):
-        
-        print(self.get_sample_collector()[0])
+        sample_id = query['sample_id']
+        self.header = self.get_vcfs_header(sample_id)
+        for variant in query['variants']:
+            self.body = self.body + self.variant_to_VCF_body(variant,chrom=query['chromosome'])
+        self.write_vcf(sample_id)
+        # print(self.get_sample_collector()[0])
+
     def  run_vcds_shell_script(self):
         os.system(f'bash {path_tomodule}/script/vcf_handle_withARG.sh {path_tomodule}/vcfs' )
 
-    def  get_vcfs_header(self):
+    def  get_vcfs_header(self,sample_id):
         header = {}
         header['fileformat'] = "##fileformat=VCFv4.2\n"
         header['source'] = '##source=SelectVariants\n'
         header['filter'] = '##FILTER=<ID=PASS,Description="All filters passed">\n'
-        # header['info'] = '##INFO=<ID=PX,Number=.,Type=String,Description="PGX">\n'
-        header['info'] = '##INFO=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth; some reads may have been filtered">\n'
+        header['info'] = '##INFO=<ID=PX,Number=.,Type=String,Description="PGX">\n'
+        # header['info'] = '##INFO=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth; some reads may have been filtered">\n'
         header['format'] = '##FORMAT=<ID=GT,Number=1,Type=String,Description="Phased Genotype">\n'
-        header['table_head'] = '#CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO\tFORMAT\tSAMPLE1\n'
+        header['format2'] = '##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads with MQ=255 or with bad mates are filtered)">'
+        header['table_head'] = f'#CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO\tFORMAT\t{sample_id}\n'
         return header
 
-#%%
+    def  find_genome_inx(self,genome_list,allele) :
+        try:
+            genome_inx = genome_list.index(allele)
+        except:
+            genome_inx = '.'
+        return genome_inx
 
-allele_definition_set = import_allele_definition_set()
+    def  find_phase_pipe(self,gt_bases):
+        phase_pipe = '/' if '/' in gt_bases else '|'
+        return phase_pipe
 
-gener = VCFsFileGenerator(allele_definition_set)
+    def  variant_to_VCF_body(self,variant,chrom):
+        pos = self.from_hgvs_to_possition(variant['hgvs'])
+        dp = variant['dp']
+        hgvs_type = variant['hgvs_type']
+        if hgvs_type == "SNP":
+            ref = self.possition_collector[pos]['ref']
+            alt = self.possition_collector[pos]['alt']
+            alt_fomat =  ','.join(alt)
+            genome_list = [ref] + list(alt)
+            genome1 = self.find_genome_inx(genome_list,variant['allele1'])
+            genome2 = self.find_genome_inx(genome_list,variant['allele2'])
+            phase = self.find_phase_pipe(variant['gt_bases'])
+            body = f'{chrom}\t{pos}\t.\t{ref}\t{alt_fomat}\t.\tPASS\tPX=;\tGT:DP\t{genome1}{phase}{genome2}:{dp}\n'
+        return body
 
-# %%
-gener.num_each_gene = 20
-gener.missing_rate = .2
-gener.massive_generation(gene_name='CACNA1S',gene_phase="True",id_prefix="TA")
-# %%
-# gener.get_sample_collector()[0]
-
-#%%
-
-#%%
-pos_finder = re.match((f'^g\.(\d+)(\_.*|\w.*)$'),gener.get_sample_collector()[0]["variants"][0]['hgvs'])
-
-#%%
-# f = open(dbpmcgenomics + "/allele_definitions_genome_at_POS.txt", "w")
-
-
-from cyvcf2 import VCF
-vcf_path = './vcfs/NUDT15_dot.g.vcf.gz'
-vcf_test = './vcfs/testest.vcf.gz'
-vcf = VCF(vcf_test)
-# 21167081
-#%%
-region = 'chr13:48037748-48037748'
-x = vcf(region)
-
-# %%
-body = 'chr13\t48037748\t.\tT\tC\t.\tPASS\tDP=21284;PX=;\tGT:DP\t./.:5\n'
-
-# %%
-header = gener.get_vcfs_header()
-with open('./vcfs/testest.vcf', "w") as f :
-    for key,val in header.items():
-        f.write(val)
-    f.write(body)
-# %%

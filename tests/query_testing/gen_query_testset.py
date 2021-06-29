@@ -37,9 +37,9 @@ class QueryGenerator(MatcherGenerator):
         basic_base = ['A','T','C','G']
         
         if hgvs_type == 'INS' :
-            
+            new_base = random.choice(basic_base)
             for inx,val in enumerate(allele):
-                new_base = random.choice(basic_base)
+                
                 if val == 'del':
                     allele[inx] = new_base
                 else :
