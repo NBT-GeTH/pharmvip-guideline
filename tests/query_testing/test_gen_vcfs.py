@@ -10,7 +10,7 @@ gener = VCFsFileGenerator(allele_definition_set)
 # %%
 gener.num_each_gene = 10
 gener.missing_rate = .8
-gener.massive_generation(gene_name='CYP3A5',gene_phase="True",id_prefix="TA")
+gener.massive_generation(gene_name='CFTR',gene_phase="True",id_prefix="TA")
 # %%
 # gener.get_sample_collector()[0]
 
@@ -32,9 +32,3 @@ x = vcf(region)
 
 # %%
 
-# %%
-
-# %%
-
-# %%
-x
