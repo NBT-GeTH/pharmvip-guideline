@@ -13,8 +13,8 @@ gener = MatcherGenerator(allele_definition_set)
 
 # %%
 gener.num_each_gene = 20
-gener.missing_rate = .7
-gener.massive_generation(gene_name='CACNA1S',gene_phase="True",id_prefix="TA")
+gener.missing_rate = .2
+gener.massive_generation(gene_name='NUDT15',gene_phase="True",id_prefix="TA")
 # %%
 gener.get_sample_collector()
 

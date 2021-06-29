@@ -1,7 +1,7 @@
 
 #!/bin/bash
 # NOTE : Quote it else use array to avoid problems #
-FILES="./vcfs/*.vcf"
+FILES="../vcfs/*.vcf"
 # FILES2="./data/tester.vcf"
 for f in $FILES
 do

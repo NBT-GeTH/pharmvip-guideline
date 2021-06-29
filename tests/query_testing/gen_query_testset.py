@@ -31,23 +31,36 @@ class QueryGenerator(MatcherGenerator):
             "allele2_convert": allele2,
             "gt_phases": gt_phase
         }
-        allele = allele1,allele2
-        phase = '/'
-        # phase = random.choice(['/','|']) if allele1 == allele2 else '|'
-        # gt_bases = f'{mini_a1}{phase}{mini_a2}'
-        # basic_base = ['A','T','C','G']
+        allele = [allele1,allele2]
+        
+        
+        basic_base = ['A','T','C','G']
         
         if hgvs_type == 'INS' :
-            for i in (allele):
-                if i == 'del' : 
-            # mini_a1 = random.choice(basic_base)
-            # mini_a2 = random.choice(basic_base)
-            # gt_bases = f'{mini_a1}{allele1}{phase}{mini_a2}{allele2}'
+            
+            for inx,val in enumerate(allele):
+                new_base = random.choice(basic_base)
+                if val == 'del':
+                    allele[inx] = new_base
+                else :
+                    allele[inx] = str(allele[inx]).replace('ins',new_base)
+        
+        elif hgvs_type == 'DEL' : 
+            for inx,val in enumerate(allele):
+                if val.__contains__('del'):
+                    allele[inx] = random.choice(basic_base)
+                else :
+                    allele[inx] = '.' + allele[inx] if allele[inx] != '.' else allele[inx]
             
         if gt_phase :
-            gene["gt_bases"] = 
-            gene["allele1"] = allele[1]
-            gene["allele2"] = allele[2]
+            phase = random.choice(['/','|']) if allele1 == allele2 else '|'
+        else :
+            phase = '/'
+
+        gene["gt_bases"] = allele[0] + phase + allele[1]
+        gene["allele1"] = allele[0]
+        gene["allele2"] = allele[1]
+        
         
 
         return gene
@@ -58,3 +71,5 @@ class QueryGenerator(MatcherGenerator):
         del sample["haplotype_allele_name"]
         return sample
 
+#%%
+# %%
