@@ -49,7 +49,6 @@ class  VCFsFileGenerator(QueryGenerator):
         for variant in query['variants']:
             self.body = self.body + self.variant_to_VCF_body(variant,chrom=query['chromosome'])
         self.write_vcf(sample_id)
-        # print(self.get_sample_collector()[0])
 
     def  run_vcds_shell_script(self):
         os.system(f'bash {path_tomodule}/script/vcf_handle_withARG.sh {path_tomodule}/vcfs' )
@@ -81,14 +80,43 @@ class  VCFsFileGenerator(QueryGenerator):
         pos = self.from_hgvs_to_possition(variant['hgvs'])
         dp = variant['dp']
         hgvs_type = variant['hgvs_type']
-        if hgvs_type == "SNP":
+        ref = None
+        alt = self.possition_collector[pos]['alt']
+        if hgvs_type == "SNP" or hgvs_type == "CNV": #test by using CACNA1S
             ref = self.possition_collector[pos]['ref']
-            alt = self.possition_collector[pos]['alt']
             alt_fomat =  ','.join(alt)
             genome_list = [ref] + list(alt)
             genome1 = self.find_genome_inx(genome_list,variant['allele1'])
             genome2 = self.find_genome_inx(genome_list,variant['allele2'])
             phase = self.find_phase_pipe(variant['gt_bases'])
             body = f'{chrom}\t{pos}\t.\t{ref}\t{alt_fomat}\t.\tPASS\tPX=;\tGT:DP\t{genome1}{phase}{genome2}:{dp}\n'
+
+        if hgvs_type == 'INS': #test by using CYP3A5
+            allele_list = []
+            for inx,allele in enumerate([variant['allele1'],variant['allele2']]):
+                if allele != 'del' and allele != '.' :
+                    ref = allele
+                allele_list.append(allele)
+
+            if ref == None:
+                ref = self.random_gt_base()
+
+            allele_list = [ref if allele == 'del' else allele for allele in allele_list ]
+
+            alt = [genome.replace('ins',ref) for genome in alt]
+            alt_fomat =  ','.join(alt)
+            genome_list = [ref] + list(alt)
+            genome1 = self.find_genome_inx(genome_list,allele_list[0])
+            genome2 = self.find_genome_inx(genome_list,allele_list[1])
+            phase = self.find_phase_pipe(variant['gt_bases'])
+            body = f'{chrom}\t{pos}\t.\t{ref}\t{alt_fomat}\t.\tPASS\tPX=;\tGT:DP\t{genome1}{phase}{genome2}:{dp}\n'
+        
         return body
 
+    # def  handle_body(self,chrom,pos,ref,alt,variant):
+    #     alt_fomat =  ','.join(alt)
+    #     genome_list = [ref] + list(alt)
+    #     genome1 = self.find_genome_inx(genome_list,variant['allele1'])
+    #     genome2 = self.find_genome_inx(genome_list,variant['allele2'])
+    #     phase = self.find_phase_pipe(variant['gt_bases'])
+    #     body = f'{chrom}\t{pos}\t.\t{ref}\t{alt_fomat}\t.\tPASS\tPX=;\tGT:DP\t{genome1}{phase}{genome2}:{dp}\n'
