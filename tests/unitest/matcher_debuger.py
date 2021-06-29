@@ -62,3 +62,5 @@ for inx,sample_path in enumerate(glob.glob(smallchunk)):
     matcher_tester(initer)
     # break
     # print(sample)
+
+#%%

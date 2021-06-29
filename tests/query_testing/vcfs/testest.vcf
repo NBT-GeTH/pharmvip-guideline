@@ -4,4 +4,4 @@
 ##INFO=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth; some reads may have been filtered">
 ##FORMAT=<ID=GT,Number=1,Type=String,Description="Phased Genotype">
 #CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	SAMPLE1
-chr13	48037748	.	TCCCA	T	.	PASS	DP=21284;PX=;	GT	0/1
+chr13	48037748	.	T	C	.	PASS	DP=21284;PX=;	GT:DP	./.:5

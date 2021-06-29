@@ -4,6 +4,7 @@ import unittest
 import json
 import pickle
 import os
+from pharmvip_guideline.utils.functional import import_allele_definition_set
 from pharmvip_guideline import pack_path,defaults_allele_definitions_transform
 from pharmvip_guideline.allele_matcher.matcher import match_haplotypes
 from tests.matcher_testing.gen_matcher_testset import MatcherGenerator
@@ -23,10 +24,7 @@ class TestMatcher(unittest.TestCase):
     def __init__(self, methodName: str) -> None:
         super().__init__(methodName=methodName)
 
-        self.allele_definition_set = {}
-        for allele_definition_json in glob.glob(defaults_allele_definitions_transform + "/*.json"):
-                allele_definition = json.load(open(allele_definition_json))
-                self.allele_definition_set[allele_definition["gene"]] = allele_definition
+        self.allele_definition_set = import_allele_definition_set()
 
     def test_allele_matcher(self):
         generator = MatcherGenerator(self.allele_definition_set,num_each_gene=20,missing_rate=.7,false_rate_in_combine=10)
