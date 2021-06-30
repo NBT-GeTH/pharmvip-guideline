@@ -33,6 +33,13 @@ def create_diplotype_cpic(outputs):
     
     return diplotype_cpic
 
+def sort_diplotype(dip):
+    dip_new = []
+    for _dip in dip:
+        _dip_new = sorted(_dip.split("/"))
+        dip_new.append(f"{_dip_new[0]}/{_dip_new[1]}")
+    return dip_new
+
 def read_diplotype(tsv):
     diplotype = pd.DataFrame(columns=["sample_id", "gene", "missing_call_variants", "total_variants", "dp", "gt_bases", "gt_phases", "gene_phases", "count_diplotype", "guide_dip", "print_dip", "tool"])
     df = pd.read_csv(tsv, sep="\t")
@@ -49,8 +56,8 @@ def read_diplotype(tsv):
                 "gt_phases": [],
                 "gene_phases": ".",
                 "count_diplotype": len(ast.literal_eval(df["guide_diplotype"][row])) if "/" in df["print_diplotype"][row] else 0,
-                "guide_dip": list(dict.fromkeys(ast.literal_eval(df["guide_diplotype"][row]))),
-                "print_dip": list(dict.fromkeys(ast.literal_eval(df["print_diplotype"][row]))),
+                "guide_dip": list(dict.fromkeys(sort_diplotype(ast.literal_eval(df["guide_diplotype"][row])))),
+                "print_dip": list(dict.fromkeys(sort_diplotype(ast.literal_eval(df["guide_diplotype"][row])))),
                 "tool": ast.literal_eval(df["tool"][df["gene"] == df["gene"][row]].tolist()[0]) if "tool" in df else "N/A"
             },
             ignore_index=True

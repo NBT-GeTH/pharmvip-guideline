@@ -51,7 +51,6 @@ def main():
     )
     allele_definitions_transform_parser.add_argument(
         "--dbpmcgenomics",
-
         help="use this option follow with path to specific where the tuple set of text should be write down",
         required=False,
         default=defaults_allele_definitions_dbpmcgenomics
@@ -77,12 +76,10 @@ def main():
         required=False,
         default=defaults_clinical_guideline_annotations # ~/resource/clinical_guideline_anotations/$version_name/.....
     )
-    
     allele_matcher_parser.add_argument(
         "--ana_user_id",
         required=True
     )
-
     allele_matcher_parser.add_argument(
         "--ana_id",
         required=True
