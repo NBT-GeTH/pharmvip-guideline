@@ -170,6 +170,7 @@ class  VCFsFileGenerator(QueryGenerator):
                 body = body + f'{chrom}\t{pos_list}\t.\t{ref}\t{extend_alt[inx]}\t.\tPASS\tPX=;\tGT:DP\t{extend_alt_inx1[inx]}{phase}{extend_alt_inx1[inx]}:{dp}\n'
             else:
                 for inx,poss in enumerate(pos_list):
+                    extend_alt[inx] = ','.join(extend_alt[inx])
                     try:
                         body = body + f'{chrom}\t{poss}\t.\t{ref[inx]}\t{extend_alt[inx]}\t.\tPASS\tPX=;\tGT:DP\t{extend_alt_inx1[inx]}{phase}{extend_alt_inx1[inx]}:{dp}\n'
                     except:
