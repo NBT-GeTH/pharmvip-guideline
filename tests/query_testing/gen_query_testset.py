@@ -14,10 +14,8 @@ class QueryGenerator(MatcherGenerator):
         return new_base
 
     def  which_del(self,hgvs):
-        # print(hgvs)
-        find_which_one = re.match((r'^.+del([A-Z]+)$'),hgvs)
-        # print(find_which_one)
-        return find_which_one.group(1)
+        find_which_del = re.match((r'^.+del([A-Z]+)$'),hgvs)
+        return find_which_del.group(1)
 
     def  gen_gene_variant(self, varian_pack, allele1, allele2, gt_phase):
         haplotype = varian_pack[0]
@@ -49,12 +47,12 @@ class QueryGenerator(MatcherGenerator):
                     allele[inx] = str(allele[inx]).replace('ins',new_base)
         
         elif hgvs_type == 'DEL' : 
+            new_base = self.random_gt_base()
             for inx,val in enumerate(allele):
                 if val.__contains__('del'):
-                    allele[inx] = self.random_gt_base()
+                    allele[inx] = new_base
                 elif val == '.' :
                     find_del = self.which_del(hgvs)
-                    print(find_del,len(find_del))
                     allele[inx] = '.' + '.'*len(find_del)
                 else:
                     allele[inx] = '.' + allele[inx] if allele[inx] != '.' else allele[inx]

@@ -149,6 +149,7 @@ def main():
         allele_matcher_start_time = time.time()
 
         if args.ana_options_cpic == "true":
+            
             matcher(
                 args.allele_definitions,
                 args.ana_user_id,
