@@ -10,22 +10,6 @@ def check_null_dp(dp):
     else:
         return 0
 
-# def match_genotype(call_genotype):
-#     '''
-#     separate genotype pair and return it back 
-#     '''
-#     match = re.match(r"^(\.+|.+)(\/|\|)(\.+|.+)$", call_genotype)
-#     if match:
-#         """
-#         call_genotype       match
-#         'A/T'               1. 'A'
-#                             2. '/'
-#                             3. 'T'
-#         """
-#         return match.group(1), match.group(3)
-#     else:
-#         print(f"error match genotype with: {call_genotype}")
-#         exit()
 
 def extract_genotype(gene, call_genotype):
     '''

@@ -1,5 +1,4 @@
-import os
-import argparse, textwrap
+import argparse
 import sys
 
 
@@ -13,8 +12,8 @@ from cyvcf2 import VCF
 from pharmvip_guideline.allele_matcher.diplotype_dbpmcgenomics import diplotype_dbpmcgenomics
 from pharmvip_guideline.allele_matcher.annotation import *
 
-class MyParser(argparse.ArgumentParser):
-    def error(self, message):
+class  MyParser(argparse.ArgumentParser):
+    def  error(self, message):
         sys.stderr.write('error: %s\n' % message)
         self.print_help()
         sys.exit(2)

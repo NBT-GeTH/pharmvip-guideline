@@ -1,0 +1,48 @@
+{
+  "ana_user_id": 1,
+  "ana_id": 1,
+  "sample_id": "HS02011",
+  "gene": "CYP4F2",
+  "chromosome": "chr19",
+  "variants": [
+    {
+      "hgvs": "g.15879621C>T",
+      "hgvs_type": "SNP",
+      "start": "15879621",
+      "end": "15879621",
+      "rsid": "rs2108622",
+      "dp": 42,
+      "gt_bases": "C/C",
+      "allele1": "C",
+      "allele2": "C",
+      "allele1_convert": "C",
+      "allele2_convert": "C",
+      "gt_phases": true
+    },
+    {
+      "hgvs": "g.15897578A>C",
+      "hgvs_type": "SNP",
+      "start": "15897578",
+      "end": "15897578",
+      "rsid": "rs3093105",
+      "dp": 39,
+      "gt_bases": "A/A",
+      "allele1": "A",
+      "allele2": "A",
+      "allele1_convert": "A",
+      "allele2_convert": "A",
+      "gt_phases": true
+    }
+  ],
+  "call_variants": 2,
+  "missing_call_variants": 0,
+  "total_variants": 2,
+  "gene_phases": true,
+  "count_diplotype": 1,
+  "guide_dip": [
+    "*1/*1"
+  ],
+  "print_dip": [
+    "*1/*1"
+  ]
+}
