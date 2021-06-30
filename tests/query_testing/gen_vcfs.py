@@ -27,6 +27,14 @@ class  VCFsFileGenerator(QueryGenerator):
         self.body = ''
         self.header = ''
 
+    def  sample_collector_to_VCFs(self):
+        for inx,sample in enumerate(self.get_sample_collector()):
+            self.from_query_set_to_VCFs(sample)
+
+            # self.get_sample_collector()[inx]['header'] = self.header
+            # self.get_sample_collector()[inx]['body'] = self.body
+            self.clear_body()
+
     def  load_possition_collector(self):
         with open(defaults_allele_definitions_dbpmcgenomics + '/gPOS_collector.pickle', 'rb') as f:
             data = pickle.load(f)
@@ -52,7 +60,7 @@ class  VCFsFileGenerator(QueryGenerator):
             self.body = self.body + self.variant_to_VCF_body(variant,chrom=query['chromosome'])
         self.write_vcf(sample_id)
 
-    def  run_vcds_shell_script(self):
+    def  run_vcfs_shell_script(self):
         os.system(f'bash {path_tomodule}/script/vcf_handle_withARG.sh {path_tomodule}/vcfs' )
 
     def  get_vcfs_header(self,sample_id):
@@ -63,7 +71,7 @@ class  VCFsFileGenerator(QueryGenerator):
         header['info'] = '##INFO=<ID=PX,Number=.,Type=String,Description="PGX">\n'
         # header['info'] = '##INFO=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth; some reads may have been filtered">\n'
         header['format'] = '##FORMAT=<ID=GT,Number=1,Type=String,Description="Phased Genotype">\n'
-        header['format2'] = '##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads with MQ=255 or with bad mates are filtered)">'
+        header['format2'] = '##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Approximate read depth (reads with MQ=255 or with bad mates are filtered)">\n'
         header['table_head'] = f'#CHROM\tPOS\tID\tREF\tALT\tQUAL\tFILTER\tINFO\tFORMAT\t{sample_id}\n'
         return header
 
@@ -175,26 +183,9 @@ class  VCFsFileGenerator(QueryGenerator):
                         body = body + f'{chrom}\t{poss}\t.\t{ref[inx]}\t{extend_alt[inx]}\t.\tPASS\tPX=;\tGT:DP\t{extend_alt_inx1[inx]}{phase}{extend_alt_inx1[inx]}:{dp}\n'
                     except:
                         print(inx,ref,extend_alt,extend_alt_inx1,extend_alt_inx2)
-            # print(genome_list)
-            # print(ref)
-            # print(extend_alt)
-
-
-            # if find_which_del:
-            #     for inx,allele in enumerate([variant['allele1'],variant['allele2']]):
-            #         if not  allele.__contains__('.'):
-            #             raise print('lol:',hgvs, variant)
-            
-            # else:
-            #     find_which_del = re.match((r'^g\.(\d+)del([A-Z]+)$'),hgvs)
-            #     for inx,allele in enumerate([variant['allele1'],variant['allele2']]):
-            #         if not  allele.__contains__('.'):
-            #             raise print('lol:',hgvs, variant)
-                            
-                        # return 0
             
         return body
 
 
 #%%
-# %%
+#%%

@@ -1,9 +1,14 @@
+#%%
 import unittest
+from pharmvip_guideline.allele_matcher.query import query_region
 from pharmvip_guideline.utils.functional import import_allele_definition_set
-from pharmvip_guideline.allele_matcher.matcher import match_haplotypes
-from tests.matcher_testing.gen_matcher_testset import MatcherGenerator
+from tests.query_testing.gen_vcfs import VCFsFileGenerator
+generator = VCFsFileGenerator(import_allele_definition_set(),num_each_gene=20,missing_rate=.4,false_rate_in_combine=10)
+generator.massive_generation(gene_name='CACNA1S',gene_phase="True",id_prefix="TA")
+generator.sample_collector_to_VCFs()
+generator.run_vcfs_shell_script()
 
-
+#%%
 class TestMatcher(unittest.TestCase):
     def __init__(self, methodName: str) -> None:
         super().__init__(methodName=methodName)
@@ -11,7 +16,7 @@ class TestMatcher(unittest.TestCase):
         self.allele_definition_set = import_allele_definition_set()
 
     def test_allele_matcher(self):
-        generator = MatcherGenerator(self.allele_definition_set,num_each_gene=20,missing_rate=.7,false_rate_in_combine=10)
+        generator = VCFsFileGenerator(self.allele_definition_set,num_each_gene=20,missing_rate=.7,false_rate_in_combine=10)
         # generator.overall_generation(gene_phase=True,id_prefix="TA")
         generator.massive_generation(gene_name='CACNA1S',gene_phase="True",id_prefix="TA")
         for sample in generator.get_sample_collector():
