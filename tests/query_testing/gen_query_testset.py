@@ -73,7 +73,12 @@ class QueryGenerator(MatcherGenerator):
     def  sample_query_generator(self, gene_name, gene_phase, sample_id=0):
         sample =  super().sample_query_generator(gene_name, gene_phase, sample_id=sample_id)
         sample["chromosome"] = self.allele_definition_set[gene_name]["haplotypes"][0]["chromosome"]
-        del sample["haplotype_allele_name"]
+        sample["ana_user_id"] = 1
+        sample["ana_id"] = 1
+        try :
+            del sample["haplotype_allele_name"]
+        except:
+            pass
         return sample
 
 #%%

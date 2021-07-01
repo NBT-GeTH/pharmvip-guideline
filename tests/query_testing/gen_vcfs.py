@@ -8,9 +8,10 @@ import re
 import os
 from typing import Type
 from pharmvip_guideline import *
+from tests.query_testing import path_to_pack
 from tests.query_testing.gen_query_testset import QueryGenerator
 from pharmvip_guideline.utils.functional import import_allele_definition_set
-path_tomodule = os.path.join(os.path.dirname(__file__))
+path_to_pack = os.path.join(os.path.dirname(__file__))
 
 #%%
 class  VCFsFileGenerator(QueryGenerator):
@@ -61,7 +62,7 @@ class  VCFsFileGenerator(QueryGenerator):
         self.write_vcf(sample_id)
 
     def  run_vcfs_shell_script(self):
-        os.system(f'bash {path_tomodule}/script/vcf_handle_withARG.sh {path_tomodule}/vcfs' )
+        os.system(f'bash {path_to_pack}/script/vcf_handle_withARG.sh {path_to_pack}/vcfs' )
 
     def  get_vcfs_header(self,sample_id):
         header = {}
