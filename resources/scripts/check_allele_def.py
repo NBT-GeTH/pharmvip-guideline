@@ -138,8 +138,8 @@ class  AnalzeAlleleDef():
         vip_gene = {gene for gene in self.ph_vip_def}
         in_both = cat_conflict = vip_conflict = set()
         if cat_gene == vip_gene :
-            logger = "there is no conflict in allele name\n"
-            logger = logger + "allele_name_list : " + str(cat_gene) + '\n\n'
+            logger = "there is no conflict in GENE list\n"
+            logger = logger + "GENE list : " + str(cat_gene) + '\n\n'
             in_both = cat_gene
         else:
             in_both, cat_conflict, vip_conflict = self.find_conflict(cat_gene,vip_gene)
@@ -152,28 +152,21 @@ class  AnalzeAlleleDef():
         return in_both, cat_conflict, vip_conflict
     
 #%%
-
-
-def  import_pv_cat_def():
-    ph_cat_path = '/home/xixe/phCat/0.8/PharmCAT-0.8.0/build/resources/main/org/pharmgkb/pharmcat/definition/alleles'
-    expection = {'exemptions.json'}
-    ph_cat_def_set = {}
-    for ph_cat_def in glob.glob(ph_cat_path + '/*.json'):
-        file_name = os.path.basename(ph_cat_def)
-
-        if file_name in expection :
-            continue
-
-        json_holder = json.load(open(ph_cat_def))
-        gene_name = json_holder["gene"]
-        ph_cat_def_set[gene_name] = json_holder        
-    return ph_cat_def_set
+ph_cat_path = '/home/xixe/phCat/0.8/PharmCAT-0.8.0/build/resources/main/org/pharmgkb/pharmcat/definition/alleles'
 ph_vip_def_set = import_allele_definition_set()
-ph_cat_def_set = import_pv_cat_def()
+ph_cat_def_set = import_allele_definition_set(ph_cat_path)
 tooler = AnalzeAlleleDef(ph_cat_def=ph_cat_def_set,ph_vip_def=ph_vip_def_set)
 tooler.clear_log()
 in_both, cat_conflict, vip_conflict = tooler.check_gene()
 for gene in in_both:
     tooler.compare_allele_name(gene=gene)
     cat, vip = tooler.compare_position(gene=gene)
+    
 #%%
+ph_cat_path = '/home/xixe/phCat/0.8/PharmCAT-0.8.0/build/resources/main/org/pharmgkb/pharmcat/definition/alleles'
+ph_vip_def_set = import_allele_definition_set()
+ph_cat_def_set = import_allele_definition_set(ph_cat_path)
+#%%
+gene = 'CACNA1S'
+ph_cat_def_set[gene]
+# %%
