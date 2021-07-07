@@ -1,7 +1,6 @@
 #%%
 import glob
 import json
-from logging import log 
 import os
 from sys import path 
 from pharmvip_guideline.utils.functional import import_allele_definition_set
@@ -49,7 +48,9 @@ class  AnalzeAlleleDef():
                 a_set_conflict.append(element)
 
         b_set_conflict = list(b_set)
-        return in_both, a_set_conflict, b_set_conflict 
+        # in_both.sort()
+        # a_set_conflict.sort()
+        return in_both, a_set_conflict, b_set_conflict
 
 
     def  compare_allele_name(self,gene:str):
@@ -160,7 +161,7 @@ tooler.clear_log()
 in_both, cat_conflict, vip_conflict = tooler.check_gene()
 for gene in in_both:
     tooler.compare_allele_name(gene=gene)
-    cat, vip = tooler.compare_position(gene=gene)
+    _, _ = tooler.compare_position(gene=gene)
     
 #%%
 ph_cat_path = '/home/xixe/phCat/0.8/PharmCAT-0.8.0/build/resources/main/org/pharmgkb/pharmcat/definition/alleles'
@@ -169,4 +170,7 @@ ph_cat_def_set = import_allele_definition_set(ph_cat_path)
 #%%
 gene = 'CACNA1S'
 ph_cat_def_set[gene]
+# %%
+ph_cat_def_set[gene]['namedAlleles']
+
 # %%
