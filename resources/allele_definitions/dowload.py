@@ -28,3 +28,4 @@ def update_allele_table():
 
 if __name__ == "__main__":   
     update_allele_table()
+    print("Please check out NUDT15 after the download done.")
