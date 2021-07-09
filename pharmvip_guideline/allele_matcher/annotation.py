@@ -238,8 +238,8 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                         summary_and_full_report["cpi_sum_drug"].append(str(clinical_guideline_annotations[guideline_id]["drug_names"].split("_")).replace("[", "").replace("]", "").replace("'", ""))
                         summary_and_full_report["cpi_sum_act_score"].append("")
                         summary_and_full_report["cpi_sum_strength"].append("N/A")
-                        summary_and_full_report["cpi_sum_recommendations"].append("<text>No CPIC guideline.</text></br>")
-                        summary_and_full_report["cpi_sum_recommendations_full"].append("<text>No CPIC guideline.</text></br>")
+                        summary_and_full_report["cpi_sum_recommendations"].append("<text>No Guideline.</text></br>")
+                        summary_and_full_report["cpi_sum_recommendations_full"].append("<text>No Guideline.</text></br>")
                         summary_and_full_report["cpi_sum_implications"].append("")
                         summary_and_full_report["cpi_sum_phenotype"].append("")
                         summary_and_full_report["cpi_sum_met_status_1"].append("")
@@ -336,8 +336,8 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                         summary_and_full_report["cpi_sum_drug"].append(str(clinical_guideline_annotations[guideline_id]['drug_names'].split("_")).replace("[", "").replace("]", "").replace("'", ""))
                         summary_and_full_report["cpi_sum_act_score"].append("")
                         summary_and_full_report["cpi_sum_strength"].append("N/A")
-                        summary_and_full_report["cpi_sum_recommendations"].append("<text>No CPIC guideline.</text></br>")
-                        summary_and_full_report["cpi_sum_recommendations_full"].append("<text>No CPIC guideline.</text></br>")
+                        summary_and_full_report["cpi_sum_recommendations"].append("<text>No Guideline.</text></br>")
+                        summary_and_full_report["cpi_sum_recommendations_full"].append("<text>No Guideline.</text></br>")
                         summary_and_full_report["cpi_sum_implications"].append("")
                         summary_and_full_report["cpi_sum_phenotype"].append("")
                         summary_and_full_report["cpi_sum_met_status_1"].append("")
@@ -415,8 +415,8 @@ def handle_summary_and_full_report_layout(summary_and_full_report, diplotypes):
             "cpi_sum_drug": warfarin_drug,
             "cpi_sum_act_score": "",
             "cpi_sum_strength": "N/A",
-            "cpi_sum_recommendations": "<text>No CPIC guideline.</text></br>",
-            "cpi_sum_recommendations_full": "<text>No CPIC guideline.</text></br>",
+            "cpi_sum_recommendations": "<text>No Guideline.</text></br>",
+            "cpi_sum_recommendations_full": "<text>No Guideline.</text></br>",
             "cpi_sum_implications": "",
             "cpi_sum_phenotype": "",
             "cpi_sum_met_status_1": "",
@@ -435,8 +435,8 @@ def handle_summary_and_full_report_layout(summary_and_full_report, diplotypes):
 
     azathioprine_mercaptopurine_genes = ["NUDT15", "TPMT"]
     azathioprine_mercaptopurine_drug = "azathioprine, mercaptopurine"
-    azathioprine_mercaptopurine_recommendations = "<text>No CPIC guideline.</text></br>"
-    azathioprine_mercaptopurine_recommendations_full = "<text>No CPIC guideline.</text></br>"
+    azathioprine_mercaptopurine_recommendations = "<text>No Guideline.</text></br>"
+    azathioprine_mercaptopurine_recommendations_full = "<text>No Guideline.</text></br>"
     azathioprine_mercaptopurine = pd.DataFrame({
         "cpi_sum_gene1": azathioprine_mercaptopurine_genes[0],
         "cpi_sum_gene2": azathioprine_mercaptopurine_genes[1],
