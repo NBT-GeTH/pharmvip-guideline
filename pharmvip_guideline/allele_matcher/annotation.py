@@ -3,12 +3,11 @@ from pharmvip_guideline.utils.natural_sort import natural_keys
 from os import path
 import pandas as pd
 import json
-import ast
 import numpy as np
 import re
 
-pd.set_option("display.max_columns", None)
-pd.set_option("display.max_rows", None)
+# pd.set_option("display.max_columns", None)
+# pd.set_option("display.max_rows", None)
 
 def read_clinical_guideline_annotations(clinical_guideline_annotations):
     clinical_guideline_annotations_list = []
@@ -39,10 +38,10 @@ def read_clinical_guideline_annotations(clinical_guideline_annotations):
 
 def function_mappings_diplotype_by_guideline_id(clinical_guideline_annotations, function_mappings, diplotypes):
     diplotype_by_guideline_id = {}
-    for guideline_id, annotations in clinical_guideline_annotations.items():
+    for guideline_id, guideline_annotations in clinical_guideline_annotations.items():
         diplotype_by_guideline_id[guideline_id] = {}
-        
-        queried_diplotypes = diplotypes[diplotypes["gene"].isin(annotations["related_genes"])][["gene", "guide_dip"]]
+
+        queried_diplotypes = diplotypes[diplotypes["gene"].isin(guideline_annotations["related_genes"])][["gene", "guide_dip"]]
         for index, row in queried_diplotypes.iterrows():
             if row["gene"] not in diplotype_by_guideline_id[guideline_id].keys():
                 diplotype_by_guideline_id[guideline_id][row["gene"]] = []
@@ -98,7 +97,12 @@ def replace_tags(record, key=None):
     if pd.isnull(record) or record is None:
         return ""
     else:
-        return record.replace("\n", "").replace("<p>", "<text>").replace("</p>", "</text>").replace('<a href="/pmid/', '<a href="https://www.pharmgkb.org/pmid/').replace('<a href="/variant/', '<a href="https://www.pharmgkb.org/variant/') + "<br/>"
+        record = record.replace("\n", "")
+        record = record.replace("<p>", "<text>")
+        record = record.replace("</p>", "</text>")
+        record = record.replace('<a href="/pmid/', '<a href="https://www.pharmgkb.org/pmid/')
+        record = record.replace('<a href="/variant/', '<a href="https://www.pharmgkb.org/variant/')
+        return record + "<br/>"
 
 def parse_annotations(annotations, genes):
     annotations["Implications"] = replace_tags(annotations["Implications"])
@@ -125,7 +129,7 @@ def parse_annotations(annotations, genes):
                             parsed.append(m.replace(f"{gene}:", ""))
                 annotations["MetabolizerStatus"] = parsed
             else:
-                annotations["MetabolizerStatus"] = [annotations["MetabolizerStatus"].replace("<p>", "").replace("</p>", "") , ""]
+                annotations["MetabolizerStatus"] = [annotations["MetabolizerStatus"].replace("<p>", "").replace("</p>", ""), ""]
     if isinstance(annotations["MetabolizerStatus"], list):
         for i in range(len(annotations["MetabolizerStatus"])):
             annotations["MetabolizerStatus"][i] = annotations["MetabolizerStatus"][i].replace("Indeterminate Metabolizer", "Indeterminate")
@@ -171,22 +175,23 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
         "cpi_sum_hla_tool_2_guide": []
     }
     
-    diplotype_new = diplotype.set_index("gene")
+    _diplotype = diplotype.set_index("gene")
 
     for guideline_id, diplotype_by_gene in function_mappings_diplotype.items():
         if len(diplotype_by_gene) == 0:
             continue
         elif len(diplotype_by_gene.keys()) == 1:
-            for gene, diplotypes in diplotype_by_gene.items():
+            for gene, _diplotype_by_gene in diplotype_by_gene.items():
+                print(gene)
                 i = 0
-                for _diplotype in diplotypes:
-                    allele1 = _diplotype.get("allele1")
-                    allele2 = _diplotype.get("allele2")
+                for __diplotype_by_gene in _diplotype_by_gene:
+                    allele1 = __diplotype_by_gene.get("allele1")
+                    allele2 = __diplotype_by_gene.get("allele2")
 
                     name = allele1.replace(gene, "") + "/" + allele2.replace(gene, "")
 
-                    function1 = _diplotype.get("function1")
-                    function2 = _diplotype.get("function2")
+                    function1 = __diplotype_by_gene.get("function1")
+                    function2 = __diplotype_by_gene.get("function2")
 
                     guideline_id_record = clinical_guideline_annotations[guideline_id]["annotation_by_diplotype"].query("(Function1 == @function1) & (Function2 == @function2)")
                     
@@ -203,7 +208,7 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                         summary_and_full_report["cpi_sum_gene1"].append(gene)
                         summary_and_full_report["cpi_sum_gene2"].append("")
                         summary_and_full_report["cpi_sum_gene3"].append("")
-                        summary_and_full_report["cpi_sum_dip_name1"].append(diplotype_new.loc[gene, "print_dip"][i])
+                        summary_and_full_report["cpi_sum_dip_name1"].append(_diplotype.loc[gene, "print_dip"][i])
                         summary_and_full_report["cpi_sum_dip_name2"].append("")
                         summary_and_full_report["cpi_sum_dip_name3"].append("")
                         summary_and_full_report["cpi_sum_drug"].append(str(clinical_guideline_annotations[guideline_id]["drug_names"].split("_")).replace("[", "").replace("]", "").replace("'", ""))
@@ -223,7 +228,7 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                         summary_and_full_report["cpi_sum_gen_3_missing"].append("")
                         summary_and_full_report["cpi_sum_gen_3_total"].append("")
                         if gene == "HLA-A" or gene == "HLA-B":
-                            summary_and_full_report["cpi_sum_hla_tool_1_guide"].append(diplotype_new.loc[gene, "tool"][i])
+                            summary_and_full_report["cpi_sum_hla_tool_1_guide"].append(_diplotype.loc[gene, "tool"][i])
                             summary_and_full_report["cpi_sum_hla_tool_2_guide"].append("")
                         else:
                             summary_and_full_report["cpi_sum_hla_tool_1_guide"].append("")
@@ -232,7 +237,7 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                         summary_and_full_report["cpi_sum_gene1"].append(gene)
                         summary_and_full_report["cpi_sum_gene2"].append("")
                         summary_and_full_report["cpi_sum_gene3"].append("")
-                        summary_and_full_report["cpi_sum_dip_name1"].append(diplotype_new.loc[gene, "print_dip"][i])
+                        summary_and_full_report["cpi_sum_dip_name1"].append(_diplotype.loc[gene, "print_dip"][i])
                         summary_and_full_report["cpi_sum_dip_name2"].append("")
                         summary_and_full_report["cpi_sum_dip_name3"].append("")
                         summary_and_full_report["cpi_sum_drug"].append(str(clinical_guideline_annotations[guideline_id]["drug_names"].split("_")).replace("[", "").replace("]", "").replace("'", ""))
@@ -252,7 +257,7 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                         summary_and_full_report["cpi_sum_gen_3_missing"].append("")
                         summary_and_full_report["cpi_sum_gen_3_total"].append("")
                         if gene == "HLA-A" or gene == "HLA-B":
-                            summary_and_full_report["cpi_sum_hla_tool_1_guide"].append(diplotype_new.loc[gene, "tool"][i])
+                            summary_and_full_report["cpi_sum_hla_tool_1_guide"].append(_diplotype.loc[gene, "tool"][i])
                             summary_and_full_report["cpi_sum_hla_tool_2_guide"].append("")
                         else:
                             summary_and_full_report["cpi_sum_hla_tool_1_guide"].append("")
@@ -294,8 +299,8 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                         summary_and_full_report["cpi_sum_gene1"].append(gene1)
                         summary_and_full_report["cpi_sum_gene2"].append(gene2)
                         summary_and_full_report["cpi_sum_gene3"].append("")
-                        summary_and_full_report["cpi_sum_dip_name1"].append(diplotype_new.loc[gene1, "print_dip"][i])
-                        summary_and_full_report["cpi_sum_dip_name2"].append(diplotype_new.loc[gene2, "print_dip"][j])
+                        summary_and_full_report["cpi_sum_dip_name1"].append(_diplotype.loc[gene1, "print_dip"][i])
+                        summary_and_full_report["cpi_sum_dip_name2"].append(_diplotype.loc[gene2, "print_dip"][j])
                         summary_and_full_report["cpi_sum_dip_name3"].append("")
                         summary_and_full_report["cpi_sum_drug"].append(str(clinical_guideline_annotations[guideline_id]["drug_names"].split("_")).replace("[", "").replace("]", "").replace("'", ""))
                         summary_and_full_report["cpi_sum_act_score"].append(annotations.get("ActivityScore") if annotations.get("ActivityScore") != None else "")
@@ -319,19 +324,19 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                         summary_and_full_report["cpi_sum_gen_3_missing"].append("")
                         summary_and_full_report["cpi_sum_gen_3_total"].append("")
                         if gene1 == "HLA-A" or gene1 == "HLA-B":
-                            summary_and_full_report["cpi_sum_hla_tool_1_guide"].append(diplotype_new.loc[gene1, "tool"][i])
+                            summary_and_full_report["cpi_sum_hla_tool_1_guide"].append(_diplotype.loc[gene1, "tool"][i])
                         else:
                             summary_and_full_report["cpi_sum_hla_tool_1_guide"].append("")
                         if gene2 == "HLA-A" or gene2 == "HLA-B":
-                            summary_and_full_report["cpi_sum_hla_tool_2_guide"].append(diplotype_new.loc[gene2, "tool"][j])
+                            summary_and_full_report["cpi_sum_hla_tool_2_guide"].append(_diplotype.loc[gene2, "tool"][j])
                         else:
                             summary_and_full_report["cpi_sum_hla_tool_2_guide"].append("")
                     else:
                         summary_and_full_report["cpi_sum_gene1"].append(gene1)
                         summary_and_full_report["cpi_sum_gene2"].append(gene2)
                         summary_and_full_report["cpi_sum_gene3"].append("")
-                        summary_and_full_report["cpi_sum_dip_name1"].append(diplotype_new.loc[gene1, "print_dip"][i])
-                        summary_and_full_report["cpi_sum_dip_name2"].append(diplotype_new.loc[gene2, "print_dip"][j])
+                        summary_and_full_report["cpi_sum_dip_name1"].append(_diplotype.loc[gene1, "print_dip"][i])
+                        summary_and_full_report["cpi_sum_dip_name2"].append(_diplotype.loc[gene2, "print_dip"][j])
                         summary_and_full_report["cpi_sum_dip_name3"].append("")
                         summary_and_full_report["cpi_sum_drug"].append(str(clinical_guideline_annotations[guideline_id]['drug_names'].split("_")).replace("[", "").replace("]", "").replace("'", ""))
                         summary_and_full_report["cpi_sum_act_score"].append("")
@@ -350,11 +355,11 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                         summary_and_full_report["cpi_sum_gen_3_missing"].append("")
                         summary_and_full_report["cpi_sum_gen_3_total"].append("")
                         if gene1 == "HLA-A" or gene1 == "HLA-B":
-                            summary_and_full_report["cpi_sum_hla_tool_1_guide"].append(diplotype_new.loc[gene1, "tool"][i])
+                            summary_and_full_report["cpi_sum_hla_tool_1_guide"].append(_diplotype.loc[gene1, "tool"][i])
                         else:
                             summary_and_full_report["cpi_sum_hla_tool_1_guide"].append("")
                         if gene2 == "HLA-A" or gene2 == "HLA-B":
-                            summary_and_full_report["cpi_sum_hla_tool_2_guide"].append(diplotype_new.loc[gene2, "tool"][j])
+                            summary_and_full_report["cpi_sum_hla_tool_2_guide"].append(_diplotype.loc[gene2, "tool"][j])
                         else:
                             summary_and_full_report["cpi_sum_hla_tool_2_guide"].append("")
 
