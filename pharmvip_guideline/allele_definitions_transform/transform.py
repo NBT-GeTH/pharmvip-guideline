@@ -154,13 +154,15 @@ def transform(allele_definitions, outputs):
     allele_definitions_list.sort(key=natural_keys) 
     
     for allele_definition in allele_definitions_list:
+        # if allele_definition != '/home/xixe/pharm/pharmvip-guideline/pharmvip_guideline/../resources/allele_definitions/2021_7_8/table/G6PD_allele_definition_table.xlsx' :
+        #     continue
         allele_definition_df = pd.read_excel(allele_definition, header=None)
 
         gene_cell =  allele_definition_df.iloc[0, 0]
         gene = match_gene(gene_cell)
 
         # clean table
-        allele_definition_df = manual_customize(allele_definition_df, gene)
+        # allele_definition_df = manual_customize(allele_definition_df, gene)
         allele_definition_df = automatic_customize(allele_definition_df)
 
         # create JSON OBJ
