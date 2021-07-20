@@ -182,7 +182,6 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
             continue
         elif len(diplotype_by_gene.keys()) == 1:
             for gene, _diplotype_by_gene in diplotype_by_gene.items():
-                print(gene)
                 i = 0
                 for __diplotype_by_gene in _diplotype_by_gene:
                     allele1 = __diplotype_by_gene.get("allele1")
@@ -379,7 +378,7 @@ def handle_summary_and_full_report_layout(summary_and_full_report, diplotypes):
     
     warfarin_genes = ["CYP2C9", "CYP4F2", "VKORC1"]
     warfarin_drug = "warfarin"
-    warfarin_recommendations = '<text>See dosing guideline in the CPIC full report.</text></br>'
+    warfarin_recommendations = '<text>See dosing guideline in the Guideline full report.</text></br>'
     warfarin_recommendations_full = '<text>From genotype info, please follow the flow chart to determine the appropriate dosing recommendation for warfarin.<br/><br/><text><strong>Dosing recommendations for Warfarin dosing based on genotype for adult patients</strong></text><br/><br/><center><img src="https://s3.pgkb.org/attachment/CPIC_warfarin_2017_Fig_2.png" width="500px" height="329px"></center><br/><strong>Figure Legend:</strong><br/><sup>a</sup>“Dose clinically” means to dose without genetic information, which may include use of a clinical dosing algorithm or standard dose approach<br/><sup>b</sup>Data strongest for European and East Asian ancestry populations and consistent in other populations.<br/> <sup>c</sup>45-50% of individuals with self-reported African ancestry carry CYP2C9*5,*6,*8,*11, or rs12777823. IF CYP2C9*5, *6, *8, and *11 WERE NOT TESTED, DOSE WARFARIN CLINICALLY. Note: these data derive primarily from African Americans, who are largely from West Africa. It is unknown if the same associations are present for those from other parts of Africa.<br/><sup>d</sup>Most algorithms are developed for the target INR 2-3.<br/><sup>e</sup>Consider an alternative agent in individuals with genotypes associated with CYP2C9 poor metabolism (e.g., CYP2C9*3/*3, *2/*3, *3/*3) or both increased sensitivity (VKORC1 A/G or A/A) and CYP2C9 poor metabolism.<br/><sup>f</sup>See the EU-PACT trial for pharmacogenetics-based warfarin initiation (loading) dose algorithm [Article:<a href="https://www.pharmgkb.org/literature/15066830">24251363</a>] with the caveat that the loading dose PG algorithm has not been specifically tested or validated in populations of African ancestry.<br/><sup>g</sup>Larger dose reduction might be needed in variant homozygotes (i.e. 20-40%).<br/> <sup>h</sup>African American refers to individuals mainly originating from West Africa.<br/>For more information see: <a href="https://www.pharmgkb.org/guidelineAnnotation/PA166104949">https://www.pharmgkb.org/guidelineAnnotation/PA166104949</a></text></br>'
     if str(diplotypes_new.loc[warfarin_genes[0], "print_dip"]).replace("[", "").replace("]", "").replace("'", "") != "No info" and str(diplotypes_new.loc[warfarin_genes[2], "print_dip"]).replace("[", "").replace("]", "").replace("'", "") != "No info":
         warfarin = pd.DataFrame({
