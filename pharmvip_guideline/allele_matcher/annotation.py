@@ -104,7 +104,17 @@ def replace_tags(record, key=None):
         record = record.replace('<a href="/variant/', '<a href="https://www.pharmgkb.org/variant/')
         return record + "<br/>"
 
-def parse_annotations(annotations, genes):
+def get_summary_recommendations(annotations, annotations_short):
+    guideline_annotation_id = annotations["GuidelineAnnotationId"]
+    annotations_short = pd.read_excel(annotations_short)
+    try:
+        summary_recommendations = list(annotations_short[annotations_short["GuidelineAnnotationId"] == guideline_annotation_id]["Recommendations_short"])[0]
+        return summary_recommendations
+    except Exception as e:
+        print(e)
+        exit()
+
+def parse_annotations(annotations, genes, annotations_short):
     annotations["Implications"] = replace_tags(annotations["Implications"])
     annotations["Phenotype"] = replace_tags(annotations["Phenotype"])
 
@@ -142,12 +152,12 @@ def parse_annotations(annotations, genes):
     if pd.isnull(annotations["Recommendations"]) or annotations["Recommendations"] is None:
         annotations["Recommendations"] = "N/A"
 
-    annotations["SummaryRecommendations"] = annotations["Recommendations"].split("</p>")[0] + "</p>"
+    annotations["SummaryRecommendations"] = get_summary_recommendations(annotations, annotations_short)
     annotations["SummaryRecommendations"] = replace_tags(annotations["SummaryRecommendations"])
 
     annotations["Recommendations"] = replace_tags(annotations["Recommendations"])
 
-def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplotype):
+def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplotype, annotations_short):
     summary_and_full_report = {
         "cpi_sum_gene1": [],
         "cpi_sum_gene2": [],
@@ -203,7 +213,7 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                     
                     if not dosing_recommend_record.empty:
                         annotations = dosing_recommend_record.to_dict("records")[0]
-                        parse_annotations(annotations, [gene])
+                        parse_annotations(annotations, [gene], annotations_short)
                         summary_and_full_report["cpi_sum_gene1"].append(gene)
                         summary_and_full_report["cpi_sum_gene2"].append("")
                         summary_and_full_report["cpi_sum_gene3"].append("")
@@ -294,7 +304,7 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                     
                     if not dosing_recommend_record.empty:
                         annotations = dosing_recommend_record.to_dict("records")[0]
-                        parse_annotations(annotations, genes)
+                        parse_annotations(annotations, genes, annotations_short)
                         summary_and_full_report["cpi_sum_gene1"].append(gene1)
                         summary_and_full_report["cpi_sum_gene2"].append(gene2)
                         summary_and_full_report["cpi_sum_gene3"].append("")
@@ -364,12 +374,12 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
 
     return summary_and_full_report
 
-def annotation(clinical_guideline_annotations, function_mappings, diplotype):
+def annotation(clinical_guideline_annotations, function_mappings, diplotype, annotations_short):
     clinical_guideline_annotations = read_clinical_guideline_annotations(clinical_guideline_annotations)
 
     function_mappings_diplotype = function_mappings_diplotype_by_guideline_id(clinical_guideline_annotations, function_mappings, diplotype)
 
-    summary_and_full_report = annotate(clinical_guideline_annotations, function_mappings_diplotype, diplotype)
+    summary_and_full_report = annotate(clinical_guideline_annotations, function_mappings_diplotype, diplotype, annotations_short)
     
     return pd.DataFrame(summary_and_full_report)
 
