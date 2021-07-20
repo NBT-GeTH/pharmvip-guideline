@@ -11,8 +11,8 @@ clear
 
 SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
-if [ ! -d "$SCRIPTPATH/../../_out" ]; then
-    mkdir "$SCRIPTPATH/../../_out"
+if [ ! -d "$SCRIPTPATH/../../.out" ]; then
+    mkdir "$SCRIPTPATH/../../.out"
 fi
 
 pharmvip_guideline allele_matcher \
@@ -25,5 +25,5 @@ pharmvip_guideline allele_matcher \
     --vcf_gz_file "$SCRIPTPATH/../samples/HS01011/HS01011.vcf.gz" \
     --diplotype_cyp2d6 "$SCRIPTPATH/../samples/HS01011/diplotype_CYP2D6.tsv" \
     --diplotype_hla "$SCRIPTPATH/../samples/HS01011/diplotype_HLA.tsv" \
-    --outputs "$SCRIPTPATH/../../_out" \
-    --dbpmcgenomics "$SCRIPTPATH/../../_out"
+    --outputs "$SCRIPTPATH/../../.out" \
+    --dbpmcgenomics "$SCRIPTPATH/../../.out"
