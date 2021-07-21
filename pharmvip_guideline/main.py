@@ -89,7 +89,6 @@ def main():
     )
     allele_matcher_parser.add_argument(
         "--ana_best_candidate",
-        type=bool,
         required=True
     )
     allele_matcher_parser.add_argument(
