@@ -53,6 +53,12 @@ def duplicate_tool(diplotype):
                 row["tool"].append(row["tool"][i])
     return diplotype
 
+def handle_empty_hla_tools(df, row):
+    if not ast.literal_eval(df["tool"][df["gene"] == df["gene"][row]].tolist()[0]):
+        return ["ATHLATES,HLA-HD,KOURAMI"]
+    else:
+        return ast.literal_eval(df["tool"][df["gene"] == df["gene"][row]].tolist()[0])
+
 def read_diplotype(tsv):
     diplotype = pd.DataFrame(columns=["sample_id", "gene", "missing_call_variants", "total_variants", "dp", "gt_bases", "gt_phases", "gene_phases", "count_diplotype", "guide_dip", "print_dip", "tool"])
     df = pd.read_csv(tsv, sep="\t")
@@ -69,9 +75,9 @@ def read_diplotype(tsv):
                 "gt_phases": [],
                 "gene_phases": ".",
                 "count_diplotype": len(ast.literal_eval(df["guide_diplotype"][row])) if "/" in df["print_diplotype"][row] else 0,
-                "guide_dip": list(dict.fromkeys(sort_diplotype(ast.literal_eval(df["guide_diplotype"][row])))),
-                "print_dip": list(dict.fromkeys(sort_diplotype(ast.literal_eval(df["print_diplotype"][row])))),
-                "tool": ast.literal_eval(df["tool"][df["gene"] == df["gene"][row]].tolist()[0]) if "tool" in df else ["N/A"]
+                "guide_dip": ["?/?"] if not ast.literal_eval(df["guide_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(ast.literal_eval(df["guide_diplotype"][row])))),
+                "print_dip": ["?/?"] if not ast.literal_eval(df["guide_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(ast.literal_eval(df["print_diplotype"][row])))),
+                "tool": handle_empty_hla_tools(df, row) if "tool" in df else ["N/A"]
             },
             ignore_index=True
         )
