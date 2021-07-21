@@ -40,7 +40,6 @@ def create_hap_regex_ugt1a1(allele_matcher_variants, haplotype_variants):
 
 def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_file, outputs):
     print("begin matcher")
-    print(allele_definitions)
     # grob list name of transformed json format 
     allele_definitions_list = []
     for allele_definition in glob.glob(allele_definitions + "/*.json"):
