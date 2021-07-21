@@ -261,7 +261,7 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                             # allele definition 1-based vs cyvcf2 0-based coordinate systems
                             if in_range != int(genome.start) + 1:
                                 continue
-                            if genome.var_type == "snp" or genome.var_type == "unknown":
+                            if genome.var_type == "snp" or genome.var_type == "unknown" or re.match("^(.)(\/|\|)(.)$", genome.gt_bases[0]):
                                 dp_in_range[inx] = check_null_dp(genome.format("DP").tolist()[0][0]) if "DP" in genome.FORMAT else 0
                                 genotype_in_range[inx] = genome.gt_bases[0]
                             else:
