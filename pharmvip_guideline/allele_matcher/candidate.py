@@ -55,7 +55,7 @@ def find_best_candidate(allele_definition, allele_matcher):
     for print_dip in allele_matcher["print_dip"]:
         name1,name2 = print_dip.split("/")
         score1 = next(len(relation["hgvs"]) for relation in allele_definition["name_relation_to_hgvs"] if name1 == relation["name"])
-        score2 = next(len(relation["hgvs"]) for relation in allele_definition["name_relation_to_hgvs"] if name1 == relation["name"])
+        score2 = next(len(relation["hgvs"]) for relation in allele_definition["name_relation_to_hgvs"] if name2 == relation["name"])
         print_dip_score.append(score1 + score2)
 
     guide_dip_new = []
@@ -65,6 +65,7 @@ def find_best_candidate(allele_definition, allele_matcher):
     for index in locate_max(print_dip_score)[1]:
         print_dip_new.append(allele_matcher["print_dip"][index])
 
+    assert len(allele_matcher["guide_dip"]) == len(allele_matcher["print_dip"])
     allele_matcher["count_diplotype"] = len(print_dip_new)
     allele_matcher["guide_dip"] = guide_dip_new
     allele_matcher["print_dip"] = print_dip_new

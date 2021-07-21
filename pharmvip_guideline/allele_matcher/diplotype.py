@@ -34,6 +34,9 @@ def create_diplotype_cpic(outputs):
     return diplotype_cpic
 
 def sort_diplotype(dip):
+    if dip == ["No info"]:
+        return dip
+
     dip_new = []
     if len(dip) == 1 and "," in dip[0]:
         for _dip in dip[0].split(","):
@@ -75,8 +78,8 @@ def read_diplotype(tsv):
                 "gt_phases": [],
                 "gene_phases": ".",
                 "count_diplotype": len(ast.literal_eval(df["guide_diplotype"][row])) if "/" in df["print_diplotype"][row] else 0,
-                "guide_dip": ["?/?"] if not ast.literal_eval(df["guide_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(ast.literal_eval(df["guide_diplotype"][row])))),
-                "print_dip": ["?/?"] if not ast.literal_eval(df["guide_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(ast.literal_eval(df["print_diplotype"][row])))),
+                "guide_dip": ["No info/No info"] if not ast.literal_eval(df["guide_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(ast.literal_eval(df["guide_diplotype"][row])))),
+                "print_dip": ["No info"] if not ast.literal_eval(df["print_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(ast.literal_eval(df["print_diplotype"][row])))),
                 "tool": handle_empty_hla_tools(df, row) if "tool" in df else ["N/A"]
             },
             ignore_index=True
