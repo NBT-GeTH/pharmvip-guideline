@@ -125,8 +125,7 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                     # print(variant["gt_bases"])
                     if re.match(r"^(\.+)(\/|\|)(\.+)$", variant["gt_bases"]):
                         missing_position.append(variant["hgvs"])
-                print(missing_position)
-                print()
+                # print(missing_position)
                 # exit()
                 hap1_match = []
                 hap2_match = []
