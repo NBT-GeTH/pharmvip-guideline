@@ -70,6 +70,7 @@
     "c.7007G>A": "RYR1c.7007G>A",
     "c.7039_7041delGAG": "RYR1c.7039_7041delGAG or c.7042_7044delGAG",
     "c.7042_7044delGAG": "RYR1c.7039_7041delGAG or c.7042_7044delGAG",
+    "c.7039_7041delGAG or c.7042_7044delGAG": "RYR1c.7039_7041delGAG or c.7042_7044delGAG",
     "c.7048G>A": "RYR1c.7048G>A",
     "c.7063C>T": "RYR1c.7063C>T",
     "c.7124G>C": "RYR1c.7124G>C",
