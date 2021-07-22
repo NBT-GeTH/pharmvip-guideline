@@ -38,6 +38,9 @@ setuptools.setup(
         ],
         f"resources.clinical_guideline_annotations.{clinical_guideline_annotations_version}": [
             "*"
+        ],
+        f"resources.clinical_guideline_annotations.{clinical_guideline_annotations_version}.annotations_short": [
+            "*"
         ]
     },
     classifiers=[
