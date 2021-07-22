@@ -12,6 +12,7 @@ def find_best_candidate(allele_definition, allele_matcher):
     
     missing_position = []
     name_relation_to_missing_hgvs = []
+    #loop to find allele with missing position
     for variant in allele_matcher["variants"]:
         if re.match(r"^(\.+)(\/|\|)(\.+)$", variant["gt_bases"]):
             missing_position.append(variant["hgvs"])
@@ -20,21 +21,26 @@ def find_best_candidate(allele_definition, allele_matcher):
                     for name in relation["name"]:
                         name_relation_to_missing_hgvs.append(name)
 
+    #loop to remove allele name which is missing in prindip and guidip
+    got_remove = []#for test 
+    looper = []#for test 
     for relation in allele_definition["name_relation_to_hgvs"]:
         for name in name_relation_to_missing_hgvs:
             if name == relation["name"]:
                 for missing_pos in missing_position:
                     if missing_pos in relation["hgvs"]:
+                        #already remove but still looping could we just break
                         relation["hgvs"].remove(missing_pos)
                 if not relation["hgvs"]:
-                    for guide_dip in allele_matcher["guide_dip"]:
-                        if name in guide_dip:
+                    for inx,guide_dip in enumerate(allele_matcher["guide_dip"]):
+                        # if allele_definition["gene"] == "CYP2C9" : print("inx : ",inx," with",guide_dip)
+                        if name in guide_dip.split('/'):
                             allele_matcher["guide_dip"].remove(guide_dip)
                     for print_dip in allele_matcher["print_dip"]:
-                        if name in print_dip:
+                        if name in print_dip.split('/'):
                             allele_matcher["print_dip"].remove(print_dip)
 
-    assert len(allele_matcher["guide_dip"]) == len(allele_matcher["print_dip"])
+    # assert len(allele_matcher["guide_dip"]) == len(allele_matcher["print_dip"])
     if not allele_matcher["guide_dip"] and not allele_matcher["print_dip"]:
         allele_matcher["count_diplotype"] = raw_count_diplotype
         allele_matcher["guide_dip"] = raw_guide_dip
