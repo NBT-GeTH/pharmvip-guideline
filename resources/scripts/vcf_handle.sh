@@ -6,16 +6,22 @@ Help()
    # Display Help
    echo "Add description of the script functions here."
    echo
-   echo "Syntax: scriptTemplate [-g|d] [PATH]"
+   echo "Syntax: scriptTemplate [-g|d] [PATHtoDir|PATHtoFile]"
    echo "options:"
    echo "-h,--help      Print Help."
-   echo "-d,--decompose decompose .vcf.gz."
+   echo "-d             decompose .vcf.gz."
    echo "-i|--indexe    from vcf create vcf.gz and vcf.gz.tbi"
    echo
 }
 
 Ungz() {
-    FILES="${INPP}/*.vcf.gz"
+    extension="${INPP##*.}"
+    if (( $extension  == "gz" ))
+    then 
+        FILES="${INPP}"
+    else
+        FILES="${INPP}/*.vcf.gz"
+    fi
     for f in $FILES
     do
         echo "Processing ${f} file..."
@@ -25,7 +31,14 @@ Ungz() {
 }
 
 IndexManipulate() {
-    FILES="${INPP}/*.vcf"
+    extension="${INPP##*.}"
+    if (( $extension  == "vcf" ))
+    then 
+        FILES="${INPP}"
+    else
+        FILES="${INPP}/*.vcf"
+    fi
+    
     for f in $FILES
     do
         echo "Processing ${f} file..."
