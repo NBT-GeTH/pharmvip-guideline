@@ -29,7 +29,7 @@ IndexManipulate() {
     for f in $FILES
     do
         echo "Processing ${f} file..."
-        gzip -f < ${f} > "${f}.gz"
+        bgzip -f < ${f} > "${f}.gz"
         tabix -p vcf "${f}.gz" 
     done
 }
