@@ -38,6 +38,14 @@ def create_hap_regex_ugt1a1(allele_matcher_variants, haplotype_variants):
                 hap2_regex[i] = "(.)"
     return f"^{'_'.join(hap1_regex)}$", f"^{'_'.join(hap2_regex)}$"
 
+def sort_diplotype(diplotype):
+    for i in range(len(diplotype)):
+        if "/" in diplotype[i]:
+            _diplotype_i = diplotype[i].split('/')
+            _diplotype_i.sort(key=natural_keys)
+            diplotype[i] = f"{_diplotype_i[0]}/{_diplotype_i[1]}"
+    return diplotype
+
 def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_file, outputs):
     print("begin matcher")
     # grob list name of transformed json format 
@@ -60,6 +68,8 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
             if ana_best_candidate == "true" and allele_matcher["count_diplotype"] > 1:
                 allele_matcher = find_best_candidate(allele_definition, allele_matcher)
 
+            allele_matcher["guide_dip"] = sort_diplotype(allele_matcher["guide_dip"])
+            allele_matcher["print_dip"] = sort_diplotype(allele_matcher["print_dip"])
             
             # ************ from here on is some exception for some specific gene**************
             if allele_definition["gene"] == "CFTR":
