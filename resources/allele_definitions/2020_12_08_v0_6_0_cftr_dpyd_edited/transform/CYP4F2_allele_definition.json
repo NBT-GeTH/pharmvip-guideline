@@ -13,7 +13,7 @@
           "end": "15879621",
           "rsid": "rs2108622",
           "allele": "C",
-          "is_ref": true
+          "is_ref": false
         },
         {
           "hgvs": "g.15897578A>C",
@@ -22,7 +22,7 @@
           "end": "15897578",
           "rsid": "rs3093105",
           "allele": "A",
-          "is_ref": true
+          "is_ref": false
         }
       ]
     },
@@ -38,7 +38,7 @@
           "end": "15879621",
           "rsid": "rs2108622",
           "allele": "C",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.15897578A>C",
@@ -47,7 +47,7 @@
           "end": "15897578",
           "rsid": "rs3093105",
           "allele": "C",
-          "is_ref": true
+          "is_ref": false
         }
       ]
     },
@@ -63,7 +63,7 @@
           "end": "15879621",
           "rsid": "rs2108622",
           "allele": "T",
-          "is_ref": true
+          "is_ref": false
         },
         {
           "hgvs": "g.15897578A>C",
@@ -72,7 +72,7 @@
           "end": "15897578",
           "rsid": "rs3093105",
           "allele": "A",
-          "is_ref": false
+          "is_ref": true
         }
       ]
     }

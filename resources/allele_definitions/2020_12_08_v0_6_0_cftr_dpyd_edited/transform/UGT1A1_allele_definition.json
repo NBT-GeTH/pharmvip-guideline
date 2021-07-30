@@ -13,7 +13,7 @@
           "end": "233757013",
           "rsid": "rs4124874",
           "allele": "T",
-          "is_ref": true
+          "is_ref": false
         },
         {
           "hgvs": "g.233759924C>T",
@@ -22,7 +22,7 @@
           "end": "233759924",
           "rsid": "rs887829",
           "allele": "C",
-          "is_ref": true
+          "is_ref": false
         },
         {
           "hgvs": "g.233760233",
@@ -31,7 +31,7 @@
           "end": "233760233",
           "rsid": "",
           "allele": "CAT",
-          "is_ref": true
+          "is_ref": false
         },
         {
           "hgvs": "g.233760498G>A",
@@ -40,7 +40,7 @@
           "end": "233760498",
           "rsid": "rs4148323",
           "allele": "G",
-          "is_ref": true
+          "is_ref": false
         },
         {
           "hgvs": "g.233760973C>A",
@@ -49,7 +49,7 @@
           "end": "233760973",
           "rsid": "rs35350960",
           "allele": "C",
-          "is_ref": true
+          "is_ref": false
         }
       ]
     },
@@ -65,7 +65,7 @@
           "end": "233757013",
           "rsid": "rs4124874",
           "allele": "T",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233759924C>T",
@@ -74,7 +74,7 @@
           "end": "233759924",
           "rsid": "rs887829",
           "allele": "C",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233760233",
@@ -83,7 +83,7 @@
           "end": "233760233",
           "rsid": "",
           "allele": "CAT",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233760498G>A",
@@ -92,7 +92,7 @@
           "end": "233760498",
           "rsid": "rs4148323",
           "allele": "A",
-          "is_ref": true
+          "is_ref": false
         },
         {
           "hgvs": "g.233760973C>A",
@@ -101,7 +101,7 @@
           "end": "233760973",
           "rsid": "rs35350960",
           "allele": "C",
-          "is_ref": false
+          "is_ref": true
         }
       ]
     },
@@ -117,7 +117,7 @@
           "end": "233757013",
           "rsid": "rs4124874",
           "allele": "T",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233759924C>T",
@@ -126,7 +126,7 @@
           "end": "233759924",
           "rsid": "rs887829",
           "allele": "C",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233760233",
@@ -135,7 +135,7 @@
           "end": "233760233",
           "rsid": "",
           "allele": "CAT",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233760498G>A",
@@ -144,7 +144,7 @@
           "end": "233760498",
           "rsid": "rs4148323",
           "allele": "G",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233760973C>A",
@@ -153,7 +153,7 @@
           "end": "233760973",
           "rsid": "rs35350960",
           "allele": "A",
-          "is_ref": true
+          "is_ref": false
         }
       ]
     },
@@ -169,7 +169,7 @@
           "end": "233757013",
           "rsid": "rs4124874",
           "allele": "T",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233759924C>T",
@@ -178,7 +178,7 @@
           "end": "233759924",
           "rsid": "rs887829",
           "allele": "C",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233760233",
@@ -187,7 +187,7 @@
           "end": "233760233",
           "rsid": "",
           "allele": "CATAT",
-          "is_ref": true
+          "is_ref": false
         },
         {
           "hgvs": "g.233760498G>A",
@@ -196,7 +196,7 @@
           "end": "233760498",
           "rsid": "rs4148323",
           "allele": "G",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233760973C>A",
@@ -205,7 +205,7 @@
           "end": "233760973",
           "rsid": "rs35350960",
           "allele": "C",
-          "is_ref": false
+          "is_ref": true
         }
       ]
     },
@@ -221,7 +221,7 @@
           "end": "233757013",
           "rsid": "rs4124874",
           "allele": "T",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233759924C>T",
@@ -230,7 +230,7 @@
           "end": "233759924",
           "rsid": "rs887829",
           "allele": "C",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233760233",
@@ -239,7 +239,7 @@
           "end": "233760233",
           "rsid": "",
           "allele": "C",
-          "is_ref": true
+          "is_ref": false
         },
         {
           "hgvs": "g.233760498G>A",
@@ -248,7 +248,7 @@
           "end": "233760498",
           "rsid": "rs4148323",
           "allele": "G",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233760973C>A",
@@ -257,7 +257,7 @@
           "end": "233760973",
           "rsid": "rs35350960",
           "allele": "C",
-          "is_ref": false
+          "is_ref": true
         }
       ]
     },
@@ -273,7 +273,7 @@
           "end": "233757013",
           "rsid": "rs4124874",
           "allele": "T",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233759924C>T",
@@ -282,7 +282,7 @@
           "end": "233759924",
           "rsid": "rs887829",
           "allele": "C",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233760233",
@@ -291,7 +291,7 @@
           "end": "233760233",
           "rsid": "",
           "allele": "CATATAT",
-          "is_ref": true
+          "is_ref": false
         },
         {
           "hgvs": "g.233760498G>A",
@@ -300,7 +300,7 @@
           "end": "233760498",
           "rsid": "rs4148323",
           "allele": "G",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233760973C>A",
@@ -309,7 +309,7 @@
           "end": "233760973",
           "rsid": "rs35350960",
           "allele": "C",
-          "is_ref": false
+          "is_ref": true
         }
       ]
     },
@@ -325,7 +325,7 @@
           "end": "233757013",
           "rsid": "rs4124874",
           "allele": "G",
-          "is_ref": true
+          "is_ref": false
         },
         {
           "hgvs": "g.233759924C>T",
@@ -334,7 +334,7 @@
           "end": "233759924",
           "rsid": "rs887829",
           "allele": "C",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233760233",
@@ -343,7 +343,7 @@
           "end": "233760233",
           "rsid": "",
           "allele": "CAT",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233760498G>A",
@@ -352,7 +352,7 @@
           "end": "233760498",
           "rsid": "rs4148323",
           "allele": "G",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233760973C>A",
@@ -361,7 +361,7 @@
           "end": "233760973",
           "rsid": "rs35350960",
           "allele": "C",
-          "is_ref": false
+          "is_ref": true
         }
       ]
     },
@@ -377,7 +377,7 @@
           "end": "233757013",
           "rsid": "rs4124874",
           "allele": "T",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233759924C>T",
@@ -386,7 +386,7 @@
           "end": "233759924",
           "rsid": "rs887829",
           "allele": "T",
-          "is_ref": true
+          "is_ref": false
         },
         {
           "hgvs": "g.233760233",
@@ -395,7 +395,7 @@
           "end": "233760233",
           "rsid": "",
           "allele": "CATAT",
-          "is_ref": true
+          "is_ref": false
         },
         {
           "hgvs": "g.233760498G>A",
@@ -404,7 +404,7 @@
           "end": "233760498",
           "rsid": "rs4148323",
           "allele": "G",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233760973C>A",
@@ -413,7 +413,7 @@
           "end": "233760973",
           "rsid": "rs35350960",
           "allele": "C",
-          "is_ref": false
+          "is_ref": true
         }
       ]
     },
@@ -429,7 +429,7 @@
           "end": "233757013",
           "rsid": "rs4124874",
           "allele": "T",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233759924C>T",
@@ -438,7 +438,7 @@
           "end": "233759924",
           "rsid": "rs887829",
           "allele": "T",
-          "is_ref": true
+          "is_ref": false
         },
         {
           "hgvs": "g.233760233",
@@ -447,7 +447,7 @@
           "end": "233760233",
           "rsid": "",
           "allele": "CATATAT",
-          "is_ref": true
+          "is_ref": false
         },
         {
           "hgvs": "g.233760498G>A",
@@ -456,7 +456,7 @@
           "end": "233760498",
           "rsid": "rs4148323",
           "allele": "G",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.233760973C>A",
@@ -465,7 +465,7 @@
           "end": "233760973",
           "rsid": "rs35350960",
           "allele": "C",
-          "is_ref": false
+          "is_ref": true
         }
       ]
     }

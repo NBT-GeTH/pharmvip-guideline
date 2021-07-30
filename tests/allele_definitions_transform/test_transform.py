@@ -33,7 +33,7 @@ def test_get_allele_definition_haplotypes():
                     "end": "100000001",
                     "rsid": "rs100000001",
                     "allele": "A",
-                    "is_ref": True
+                    "is_ref": False
                 },
                 {
                     "hgvs": "g.100000002C>G",
@@ -42,7 +42,7 @@ def test_get_allele_definition_haplotypes():
                     "end": "100000002",
                     "rsid": "rs100000002",
                     "allele": "C",
-                    "is_ref": True
+                    "is_ref": False
                 }
             ]
         },
@@ -58,7 +58,7 @@ def test_get_allele_definition_haplotypes():
                     "end": "100000001",
                     "rsid": "rs100000001",
                     "allele": "T",
-                    "is_ref": True
+                    "is_ref": False
                 },
                 {
                     "hgvs": "g.100000002C>G",
@@ -67,7 +67,7 @@ def test_get_allele_definition_haplotypes():
                     "end": "100000002",
                     "rsid": "rs100000002",
                     "allele": "C",
-                    "is_ref": False
+                    "is_ref": True
                 }
             ]
         },
@@ -83,7 +83,7 @@ def test_get_allele_definition_haplotypes():
                     "end": "100000001",
                     "rsid": "rs100000001",
                     "allele": "T",
-                    "is_ref": True
+                    "is_ref": False
                 },
                 {
                     "hgvs": "g.100000002C>G",
@@ -92,7 +92,7 @@ def test_get_allele_definition_haplotypes():
                     "end": "100000002",
                     "rsid": "rs100000002",
                     "allele": "G",
-                    "is_ref": True
+                    "is_ref": False
                 }
             ]
         }

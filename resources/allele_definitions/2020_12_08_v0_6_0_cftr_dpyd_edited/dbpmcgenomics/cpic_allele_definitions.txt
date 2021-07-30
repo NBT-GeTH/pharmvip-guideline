@@ -353,194 +353,194 @@ def352	c.1898delC	DPYD	Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh
 def353	c.1905+1G>A	DPYD	Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p2)	chr1
 def354	c.2846A>T	DPYD	Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p2)	chr1
 def355	c.2983G>T	DPYD	Position at NC_000001.11 (Homo sapiens chromosome 1, GRCh38.p2)	chr1
-def356	B (wildtype)	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def357	No name	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def358	Sinnai	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def359	Lages	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def360	Gaohe	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def361	Honiara	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def362	Sunderland	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def363	Gidra	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def364	Rignano	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def365	Orissa	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def366	Aures	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def367	Kambos	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def368	Kozukata	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def369	Kamogawa	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def370	Palestrina	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def371	Metaponto	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def372	Costanzo	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def373	Amsterdam	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def374	Amazonia	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def375	Musashino	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def376	Songklanagarind	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def377	Asahi	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def378	Hechi	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def379	A- 202A_376G	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def380	202G>A_376A>G_1264C>G	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def381	Namouru	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def382	Murcia Oristano	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def383	Swansea	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def384	Ube Konan	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def385	Lagosanto	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def386	Guangzhou	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def387	Urayasu	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def388	Sierra Leone	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def389	Vancouver	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def390	Hammersmith	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def391	Sao Borja	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def392	Bao Loc	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def393	Crispim	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def394	Acrokorinthos	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def395	Santa Maria	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def396	Ananindeua	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def397	G6PD A- 680T_376G	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def398	G6PD A- 968C_376G	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def399	A	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def400	Mt Sinai	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def401	Vanua Lava	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def402	Salerno Pyrgos	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def403	Quing Yan	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def404	Cairo	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def405	Valladolid	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def406	Belem	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def407	Liuzhou	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def408	Ilesha	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def409	Shenzen	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def410	Gond	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def411	Mahidol	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def412	Plymouth	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def413	Taipei‚ Chinese-3	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def414	Toledo	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def415	Naone	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def416	Volendam	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def417	Nankang	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def418	Miaoli	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def419	Shinshu	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def420	Chikugo	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def421	Malaga	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def422	Tsukui	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def423	Mediterranean, Dallas, Panama‚ Sassari, Cagliari, Birmingham	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def424	Pedoplis-Ckaro	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def425	Coimbra Shunde	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def426	Santiago	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def427	Nilgiri	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def428	Dagua	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def429	Sibari	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def430	Minnesota, Marion, Gastonia, LeJeune	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def431	Cincinnati	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def432	Harilaou	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def433	Radlowo	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def434	Mexico City	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def435	North Dallas	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def436	Asahikawa	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def437	Nanning	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def438	Durham	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def439	Stonybrook	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def440	Wayne	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def441	Aveiro	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def442	Roubaix	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def443	Cleveland Corum	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def444	Lille	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def445	Bangkok	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def446	Sugao	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def447	La Jolla	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def448	Wexham	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def449	Haikou	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def450	Chinese-1	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def451	Seattle, Lodi, Modena, Ferrara II, Athens-like	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def452	Bajo Maumere	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def453	Mizushima	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def454	Papua	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def455	Piotrkow	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def456	Osaka	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def457	Montalbano	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def458	Viangchan, Jammu	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def459	West Virginia	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def460	Seoul	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def461	Omiya	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def462	Ludhiana	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def463	Kalyan-Kerala, Jamnaga, Rohini	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def464	Nara	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def465	Manhattan	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def466	Rehevot	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def467	Farroupilha	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def468	Insuli	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def469	Villeurbanne	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def470	Chatham	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def471	Fushan	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def472	Torun	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def473	Chinese-5	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def474	Mira d'Aire	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def475	Partenope	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def476	Ierapetra	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def477	Iwatsuki	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def478	Serres	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def479	Tondela	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def480	Loma Linda	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def481	Aachen	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def482	Tenri	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def483	Montpellier	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def484	Calvo Mackenna	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def485	Riley	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def486	Olomouc	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def487	Tomah	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def488	Lynwood	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def489	Madrid	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def490	Iowa, Walter Reed, Springfield	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def491	Guadalajara	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def492	Beverly Hills, Genova, Iwate, Niigata, Yamaguchi	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def493	Hartford	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def494	Praha	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def495	Krakow	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def496	Wisconsin	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def497	Nashville, Anaheim, Portici	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def498	Alhambra	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def499	Bari	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def500	Puerto Limon	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def501	Anadia	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def502	Covao do Lobo	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def503	Clinic	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def504	Abeno	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def505	Utrecht	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def506	Suwalki	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def507	Riverside	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def508	Japan, Shinagawa	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def509	Kawasaki	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def510	Munich	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def511	Tokyo, Fukushima	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def512	Georgia	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def513	Surabaya	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def514	Sumare	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def515	Mediterranean Haplotype	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def516	Pawnee	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def517	Telti/Kobe	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def518	Santiago de Cuba, Morioka	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def519	S. Antioco	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def520	Cassano	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def521	Hermoupolis	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def522	Harima	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def523	Union,Maewo, Chinese-2, Kalo	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def524	Andalus	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def525	Figuera da Foz	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def526	Amiens	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def527	Bangkok Noi	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def528	Cosenza	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def529	Canton, Taiwan-Hakka, Gifu-like, Agrigento-like	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def530	G6PDNice	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def531	Kamiube, Keelung	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def532	Flores	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def533	Yunan	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def534	Kaiping, Anant, Dhon, Sapporo-like, Wosera	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def535	Neapolis	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def536	Laibin	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def537	Split	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def538	Fukaya	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def539	Campinas	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def540	Buenos Aires	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def541	Arakawa	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def542	Brighton	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def543	Hektoen	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def356	IV/Normal	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def357	Not reported/Unknown	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def358	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def359	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def360	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def361	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def362	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def363	Not reported/Unknown	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def364	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def365	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def366	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def367	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def368	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def369	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def370	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def371	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def372	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def373	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def374	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def375	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def376	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def377	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def378	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def379	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def380	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def381	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def382	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def383	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def384	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def385	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def386	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def387	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def388	Not reported/Unknown	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def389	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def390	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def391	IV/Normal	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def392	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def393	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def394	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def395	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def396	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def397	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def398	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def399	IV/Normal	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def400	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def401	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def402	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def403	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def404	Not reported/Unknown	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def405	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def406	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def407	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def408	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def409	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def410	Not reported/Unknown	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def411	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def412	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def413	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def414	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def415	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def416	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def417	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def418	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def419	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def420	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def421	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def422	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def423	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def424	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def425	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def426	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def427	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def428	Not reported/Unknown	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def429	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def430	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def431	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def432	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def433	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def434	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def435	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def436	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def437	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def438	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def439	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def440	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def441	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def442	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def443	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def444	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def445	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def446	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def447	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def448	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def449	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def450	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def451	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def452	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def453	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def454	Not reported/Unknown	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def455	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def456	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def457	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def458	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def459	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def460	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def461	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def462	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def463	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def464	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def465	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def466	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def467	II-III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def468	IV/Normal	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def469	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def470	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def471	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def472	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def473	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def474	IV/Normal	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def475	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def476	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def477	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def478	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def479	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def480	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def481	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def482	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def483	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def484	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def485	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def486	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def487	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def488	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def489	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def490	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def491	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def492	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def493	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def494	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def495	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def496	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def497	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def498	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def499	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def500	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def501	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def502	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def503	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def504	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def505	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def506	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def507	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def508	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def509	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def510	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def511	I-II/Deficient with CNSHA-Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def512	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def513	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def514	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def515	Not reported/Unknown	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def516	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def517	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def518	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def519	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def520	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def521	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def522	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def523	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def524	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def525	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def526	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def527	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def528	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def529	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def530	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def531	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def532	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def533	Not reported/Unknown	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def534	II/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def535	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def536	Not reported/Unknown	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def537	III/Deficient	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def538	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def539	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def540	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def541	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def542	I/Deficient with CNSHA	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def543	V/Normal	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
 def544	rs12979860C	IFNL3	Position at NC_000019.10 (Homo sapiens chromosome 19, GRCh38.p2)	chr19
 def545	rs12979860T	IFNL3	Position at NC_000019.10 (Homo sapiens chromosome 19, GRCh38.p2)	chr19
 def546	*1	NUDT15	Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38.p7)	chr13

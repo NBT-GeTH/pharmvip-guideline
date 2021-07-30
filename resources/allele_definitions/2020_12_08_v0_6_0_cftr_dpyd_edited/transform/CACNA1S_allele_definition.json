@@ -13,7 +13,7 @@
           "end": "201060815",
           "rsid": "rs1800559",
           "allele": "C",
-          "is_ref": true
+          "is_ref": false
         },
         {
           "hgvs": "g.201091993G>A",
@@ -22,7 +22,7 @@
           "end": "201091993",
           "rsid": "rs772226819",
           "allele": "G",
-          "is_ref": true
+          "is_ref": false
         }
       ]
     },
@@ -38,7 +38,7 @@
           "end": "201060815",
           "rsid": "rs1800559",
           "allele": "C",
-          "is_ref": false
+          "is_ref": true
         },
         {
           "hgvs": "g.201091993G>A",
@@ -47,7 +47,7 @@
           "end": "201091993",
           "rsid": "rs772226819",
           "allele": "A",
-          "is_ref": true
+          "is_ref": false
         }
       ]
     },
@@ -63,7 +63,7 @@
           "end": "201060815",
           "rsid": "rs1800559",
           "allele": "T",
-          "is_ref": true
+          "is_ref": false
         },
         {
           "hgvs": "g.201091993G>A",
@@ -72,7 +72,7 @@
           "end": "201091993",
           "rsid": "rs772226819",
           "allele": "G",
-          "is_ref": false
+          "is_ref": true
         }
       ]
     }
