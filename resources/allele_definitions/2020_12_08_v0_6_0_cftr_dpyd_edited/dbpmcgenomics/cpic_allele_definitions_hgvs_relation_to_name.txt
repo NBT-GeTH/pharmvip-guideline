@@ -319,172 +319,172 @@ rel318	g.97579893G>C	c.1129-5923C>G
 rel319	g.97691776G>A	c.703C>T
 rel320	g.97699474T>C	c.557A>G
 rel321	g.97740415_97740418delATGA	c.295_298delTCAT
-rel322	g.154532046A>C	Bangkok Noi
-rel323	g.154532058_154532060delTTC	Brighton
-rel324	g.154532082G>A	Arakawa
-rel325	g.154532083G>A	Buenos Aires
-rel326	g.154532085C>A	Campinas
-rel327	g.154532086C>T	Fukaya
-rel328	g.154532203G>C	Split
-rel329	g.154532231T>G	Laibin
-rel330	g.154532245G>C	Neapolis
-rel331	g.154532257C>T	Kaiping, Anant, Dhon, Sapporo-like, Wosera
-rel332	g.154532258G>T/A	Kamiube, Keelung, Flores
-rel333	g.154532264C>T	Yunan
-rel334	g.154532265C>G	G6PDNice
-rel335	g.154532269C>A/G	Bangkok Noi, Cosenza, Canton, Taiwan-Hakka, Gifu-like, Agrigento-like
-rel336	g.154532278T>A	Amiens
-rel337	g.154532279C>G	Figuera da Foz
-rel338	g.154532389C>T	Andalus
-rel339	g.154532390G>A	Honiara, Hermoupolis, Union,Maewo, Chinese-2, Kalo
-rel340	g.154532392A>T	Harima
-rel341	g.154532403C>G	Cassano, Hermoupolis
-rel342	g.154532408T>C	S. Antioco
-rel343	g.154532411C>T	Santiago de Cuba, Morioka
-rel344	g.154532432G>A	Telti/Kobe
-rel345	g.154532434C>G	Pawnee
-rel346	g.154532439G>A	Mediterranean Haplotype
-rel347	g.154532458A>C	Sumare
-rel348	g.154532459C>T	Surabaya
-rel349	g.154532570G>T	Georgia
-rel350	g.154532590G>C	202G>A_376A>G_1264C>G
-rel351	g.154532608C>T	Tokyo, Fukushima
-rel352	g.154532623T>C	Munich
-rel353	g.154532625C>T/G	Japan, Shinagawa, Kawasaki
-rel354	g.154532626C>A	Riverside
-rel355	g.154532628G>C	Suwalki
-rel356	g.154532629G>A	Utrecht
-rel357	g.154532634T>G	Abeno
-rel358	g.154532639C>T	Clinic
-rel359	g.154532649G>T	Covao do Lobo
-rel360	g.154532661T>C	Anadia
-rel361	g.154532662C>T	Puerto Limon
-rel362	g.154532667G>A	Bari
-rel363	g.154532674C>G	Alhambra
-rel364	g.154532676C>T	Nashville, Anaheim, Portici
-rel365	g.154532677G>C	Wisconsin
-rel366	g.154532679A>G	Krakow
-rel367	g.154532688T>C	Praha
-rel368	g.154532692T>C	Hartford
-rel369	g.154532694C>T	Beverly Hills, Genova, Iwate, Niigata, Yamaguchi
-rel370	g.154532695G>A	Mt Sinai, Guadalajara
-rel371	g.154532698T>C	Iowa, Walter Reed, Springfield
-rel372	g.154532699G>C	Madrid
-rel373	g.154532700C>A	Lynwood
-rel374	g.154532701A>G	Tomah
-rel375	g.154532713A>G	Olomouc
-rel376	g.154532715A>G	Riley
-rel377	g.154532716T>C	Calvo Mackenna
-rel378	g.154532722C>T	Montpellier
-rel379	g.154532753_154532770delGGCCTTGCGCTCGTTCAG	Tondela, Loma Linda, Aachen, Tenri
-rel380	g.154532772G>A	Serres
-rel381	g.154532773C>T	Iwatsuki
-rel382	g.154532797G>A	Ierapetra
-rel383	g.154532802C>A	Partenope
-rel384	g.154532945C>G	Mira d'Aire
-rel385	g.154532956T>A	Cincinnati
-rel386	g.154532969G>A	Chinese-5
-rel387	g.154532987T>C	Torun
-rel388	g.154532989G>T	Fushan
-rel389	g.154532990C>T	Chatham
-rel390	g.154532991_154532993delGGT	Villeurbanne
-rel391	g.154533004C>T	Insuli
-rel392	g.154533015_154533038delGGGGTCGTCCAGGTACCCTTTGGT	G6PD A- 968C_376G, Nara, Manhattan, Rehevot, Farroupilha
-rel393	g.154533044C>T	Kalyan-Kerala, Jamnaga, Rohini
-rel394	g.154533064C>T	Ludhiana
-rel395	g.154533072C>G	Omiya
-rel396	g.154533077C>T	Seoul
-rel397	g.154533083C>A	West Virginia
-rel398	g.154533122C>T	Hechi, Ananindeua, Viangchan, Jammu
-rel399	g.154533586C>T	Montalbano
-rel400	g.154533587G>A	Osaka
-rel401	g.154533589A>G	Piotrkow
-rel402	g.154533591G>T	Papua
-rel403	g.154533592T>C	Mizushima
-rel404	g.154533596C>A/G	Seattle, Lodi, Modena, Ferrara II, Athens-like, Bajo Maumere
-rel405	g.154533605T>C/A	Haikou, Chinese-1
-rel406	g.154533607G>A	Wexham
-rel407	g.154533608A>G	La Jolla
-rel408	g.154533614G>A	Sugao
-rel409	g.154533615C>G	Bangkok
-rel410	g.154533619T>A	Lille
-rel411	g.154533620C>T	Cleveland Corum
-rel412	g.154533629C>G	Roubaix
-rel413	g.154533634C>T	Aveiro
-rel414	g.154534036G>C	Wayne
-rel415	g.154534076_154534081delAGTGCC	Stonybrook
-rel416	g.154534092T>C	Durham
-rel417	g.154534102G>A	Nanning
-rel418	g.154534110C>T	Asahikawa
-rel419	g.154534120_154534122delTGT	North Dallas
-rel420	g.154534125C>T/A	G6PD A- 680T_376G, Mexico City
-rel421	g.154534126G>A	Radlowo
-rel422	g.154534157A>C	Harilaou
-rel423	g.154534345C>A	Minnesota, Marion, Gastonia, LeJeune, Cincinnati
-rel424	g.154534348T>C	Sibari
-rel425	g.154534387T>C	Dagua
-rel426	g.154534389C>T/G	Santiago, Nilgiri
-rel427	g.154534390G>A	Vancouver, Coimbra Shunde
-rel428	g.154534409G>C	Pedoplis-Ckaro
-rel429	g.154534419_154534421delGAG	Tsukui, Mediterranean, Dallas, Panama‚ Sassari, Cagliari, Birmingham, Mediterranean Haplotype
-rel430	g.154534438G>A	Vancouver
-rel431	g.154534440T>A	Santa Maria, Malaga
-rel432	g.154534447T>A	Chikugo
-rel433	g.154534455T>C	Shinshu
-rel434	g.154534463G>C	Miaoli
-rel435	g.154534465A>G	Nankang
-rel436	g.154534468G>A	Volendam
-rel437	g.154534485C>T	Naone
-rel438	g.154534486G>A	Toledo
-rel439	g.154534489T>C	Taipei‚ Chinese-3
-rel440	g.154534494C>T	Plymouth
-rel441	g.154534495C>T	Mahidol
-rel442	g.154535176C>G	Gond
-rel443	g.154535180C>T	Shenzen
-rel444	g.154535187C>T	Ilesha
-rel445	g.154535190G>C	Acrokorinthos
-rel446	g.154535211C>T	Liuzhou
-rel447	g.154535244G>A	Belem
-rel448	g.154535247G>A	Valladolid
-rel449	g.154535249T>G	Cairo
-rel450	g.154535261C>A	Quing Yan
-rel451	g.154535269G>A	Crispim
-rel452	g.154535270A>C/G	Crispim, Vanua Lava, Salerno Pyrgos
-rel453	g.154535274C>A	Crispim
-rel454	g.154535277T>C	A- 202A_376G, 202G>A_376A>G_1264C>G, Sierra Leone, Acrokorinthos, Santa Maria, Ananindeua, G6PD A- 680T_376G, G6PD A- 968C_376G, A, Mt Sinai
-rel455	g.154535278C>A	Crispim
-rel456	g.154535301A>G	Bao Loc
-rel457	g.154535316C>T	Sao Borja
-rel458	g.154535330A>T	Hammersmith
-rel459	g.154535336G>C	Vancouver
-rel460	g.154535342C>T	Sierra Leone
-rel461	g.154535370_154535372delTCT	Urayasu
-rel462	g.154535379G>A	Guangzhou
-rel463	g.154535962C>T	Lagosanto
-rel464	g.154535963G>A	Ube Konan
-rel465	g.154535980A>G	Swansea
-rel466	g.154535995T>C	Murcia Oristano
-rel467	g.154535996A>G	Namouru
-rel468	g.154536002C>T	Asahi, Hechi, A- 202A_376G, 202G>A_376A>G_1264C>G
-rel469	g.154536008A>T	Songklanagarind
-rel470	g.154536019G>A/T	Amazonia, Musashino
-rel471	g.154536022_154536024delAGA	Amsterdam
-rel472	g.154536025A>G	Costanzo
-rel473	g.154536032C>T	Metaponto
-rel474	g.154536034C>T	Palestrina
-rel475	g.154536035G>A	Kamogawa
-rel476	g.154536045C>G	Kozukata
-rel477	g.154536151G>A	Kambos
-rel478	g.154536156A>G	Aures
-rel479	g.154536168G>C	Orissa
-rel480	g.154536169C>T	Rignano
-rel481	g.154546046A>G	Gidra
-rel482	g.154546051_154546053delGAT	Sunderland
-rel483	g.154546057T>C	Honiara
-rel484	g.154546061T>C	Gaohe
-rel485	g.154546116C>T	Lages
-rel486	g.154546122C>A	Sinnai
-rel487	g.154546131G>A	No name
+rel322	g.154532046A>C	I/Deficient with CNSHA
+rel323	g.154532058_154532060delTTC	I/Deficient with CNSHA
+rel324	g.154532082G>A	I/Deficient with CNSHA
+rel325	g.154532083G>A	I/Deficient with CNSHA
+rel326	g.154532085C>A	I/Deficient with CNSHA
+rel327	g.154532086C>T	I/Deficient with CNSHA
+rel328	g.154532203G>C	III/Deficient
+rel329	g.154532231T>G	Not reported/Unknown
+rel330	g.154532245G>C	III/Deficient
+rel331	g.154532257C>T	II/Deficient
+rel332	g.154532258G>T/A	III/Deficient, II/Deficient
+rel333	g.154532264C>T	Not reported/Unknown
+rel334	g.154532265C>G	III/Deficient
+rel335	g.154532269C>A/G	I/Deficient with CNSHA, II/Deficient, II/Deficient
+rel336	g.154532278T>A	I/Deficient with CNSHA
+rel337	g.154532279C>G	I/Deficient with CNSHA
+rel338	g.154532389C>T	II/Deficient
+rel339	g.154532390G>A	I/Deficient with CNSHA, II/Deficient, II/Deficient
+rel340	g.154532392A>T	I/Deficient with CNSHA
+rel341	g.154532403C>G	II/Deficient, II/Deficient
+rel342	g.154532408T>C	II/Deficient
+rel343	g.154532411C>T	I/Deficient with CNSHA
+rel344	g.154532432G>A	I/Deficient with CNSHA
+rel345	g.154532434C>G	II/Deficient
+rel346	g.154532439G>A	Not reported/Unknown
+rel347	g.154532458A>C	I/Deficient with CNSHA
+rel348	g.154532459C>T	II/Deficient
+rel349	g.154532570G>T	I/Deficient with CNSHA
+rel350	g.154532590G>C	I/Deficient with CNSHA
+rel351	g.154532608C>T	I-II/Deficient with CNSHA-Deficient
+rel352	g.154532623T>C	I/Deficient with CNSHA
+rel353	g.154532625C>T/G	I/Deficient with CNSHA, I/Deficient with CNSHA
+rel354	g.154532626C>A	I/Deficient with CNSHA
+rel355	g.154532628G>C	I/Deficient with CNSHA
+rel356	g.154532629G>A	I/Deficient with CNSHA
+rel357	g.154532634T>G	II/Deficient
+rel358	g.154532639C>T	I/Deficient with CNSHA
+rel359	g.154532649G>T	I/Deficient with CNSHA
+rel360	g.154532661T>C	II/Deficient
+rel361	g.154532662C>T	I/Deficient with CNSHA
+rel362	g.154532667G>A	I/Deficient with CNSHA
+rel363	g.154532674C>G	I/Deficient with CNSHA
+rel364	g.154532676C>T	I/Deficient with CNSHA
+rel365	g.154532677G>C	I/Deficient with CNSHA
+rel366	g.154532679A>G	I/Deficient with CNSHA
+rel367	g.154532688T>C	I/Deficient with CNSHA
+rel368	g.154532692T>C	I/Deficient with CNSHA
+rel369	g.154532694C>T	I/Deficient with CNSHA
+rel370	g.154532695G>A	I/Deficient with CNSHA, I/Deficient with CNSHA
+rel371	g.154532698T>C	I/Deficient with CNSHA
+rel372	g.154532699G>C	I/Deficient with CNSHA
+rel373	g.154532700C>A	I/Deficient with CNSHA
+rel374	g.154532701A>G	I/Deficient with CNSHA
+rel375	g.154532713A>G	I/Deficient with CNSHA
+rel376	g.154532715A>G	I/Deficient with CNSHA
+rel377	g.154532716T>C	I/Deficient with CNSHA
+rel378	g.154532722C>T	I/Deficient with CNSHA
+rel379	g.154532753_154532770delGGCCTTGCGCTCGTTCAG	I/Deficient with CNSHA, I/Deficient with CNSHA, I/Deficient with CNSHA, I/Deficient with CNSHA
+rel380	g.154532772G>A	I/Deficient with CNSHA
+rel381	g.154532773C>T	I/Deficient with CNSHA
+rel382	g.154532797G>A	II/Deficient
+rel383	g.154532802C>A	II/Deficient
+rel384	g.154532945C>G	IV/Normal
+rel385	g.154532956T>A	I/Deficient with CNSHA
+rel386	g.154532969G>A	III/Deficient
+rel387	g.154532987T>C	I/Deficient with CNSHA
+rel388	g.154532989G>T	II/Deficient
+rel389	g.154532990C>T	II/Deficient
+rel390	g.154532991_154532993delGGT	I/Deficient with CNSHA
+rel391	g.154533004C>T	IV/Normal
+rel392	g.154533015_154533038delGGGGTCGTCCAGGTACCCTTTGGT	III/Deficient, I/Deficient with CNSHA, I/Deficient with CNSHA, I/Deficient with CNSHA, II-III/Deficient
+rel393	g.154533044C>T	III/Deficient
+rel394	g.154533064C>T	II/Deficient
+rel395	g.154533072C>G	I/Deficient with CNSHA
+rel396	g.154533077C>T	II/Deficient
+rel397	g.154533083C>A	I/Deficient with CNSHA
+rel398	g.154533122C>T	II/Deficient, II/Deficient, II/Deficient
+rel399	g.154533586C>T	III/Deficient
+rel400	g.154533587G>A	II/Deficient
+rel401	g.154533589A>G	I/Deficient with CNSHA
+rel402	g.154533591G>T	Not reported/Unknown
+rel403	g.154533592T>C	II/Deficient
+rel404	g.154533596C>A/G	III/Deficient, III/Deficient
+rel405	g.154533605T>C/A	II/Deficient, II/Deficient
+rel406	g.154533607G>A	I/Deficient with CNSHA
+rel407	g.154533608A>G	I/Deficient with CNSHA
+rel408	g.154533614G>A	I/Deficient with CNSHA
+rel409	g.154533615C>G	I/Deficient with CNSHA
+rel410	g.154533619T>A	I/Deficient with CNSHA
+rel411	g.154533620C>T	I/Deficient with CNSHA
+rel412	g.154533629C>G	II/Deficient
+rel413	g.154533634C>T	I/Deficient with CNSHA
+rel414	g.154534036G>C	I/Deficient with CNSHA
+rel415	g.154534076_154534081delAGTGCC	I/Deficient with CNSHA
+rel416	g.154534092T>C	I/Deficient with CNSHA
+rel417	g.154534102G>A	III/Deficient
+rel418	g.154534110C>T	I/Deficient with CNSHA
+rel419	g.154534120_154534122delTGT	I/Deficient with CNSHA
+rel420	g.154534125C>T/A	III/Deficient, III/Deficient
+rel421	g.154534126G>A	II/Deficient
+rel422	g.154534157A>C	I/Deficient with CNSHA
+rel423	g.154534345C>A	I/Deficient with CNSHA, I/Deficient with CNSHA
+rel424	g.154534348T>C	III/Deficient
+rel425	g.154534387T>C	Not reported/Unknown
+rel426	g.154534389C>T/G	I/Deficient with CNSHA, II/Deficient
+rel427	g.154534390G>A	I/Deficient with CNSHA, II/Deficient
+rel428	g.154534409G>C	I/Deficient with CNSHA
+rel429	g.154534419_154534421delGAG	I/Deficient with CNSHA, II/Deficient, Not reported/Unknown
+rel430	g.154534438G>A	I/Deficient with CNSHA
+rel431	g.154534440T>A	II/Deficient, III/Deficient
+rel432	g.154534447T>A	I/Deficient with CNSHA
+rel433	g.154534455T>C	I/Deficient with CNSHA
+rel434	g.154534463G>C	II/Deficient
+rel435	g.154534465A>G	II/Deficient
+rel436	g.154534468G>A	I/Deficient with CNSHA
+rel437	g.154534485C>T	II/Deficient
+rel438	g.154534486G>A	II/Deficient
+rel439	g.154534489T>C	II/Deficient
+rel440	g.154534494C>T	I/Deficient with CNSHA
+rel441	g.154534495C>T	III/Deficient
+rel442	g.154535176C>G	Not reported/Unknown
+rel443	g.154535180C>T	II/Deficient
+rel444	g.154535187C>T	III/Deficient
+rel445	g.154535190G>C	II/Deficient
+rel446	g.154535211C>T	II/Deficient
+rel447	g.154535244G>A	II/Deficient
+rel448	g.154535247G>A	II/Deficient
+rel449	g.154535249T>G	Not reported/Unknown
+rel450	g.154535261C>A	III/Deficient
+rel451	g.154535269G>A	II/Deficient
+rel452	g.154535270A>C/G	II/Deficient, II/Deficient, III/Deficient
+rel453	g.154535274C>A	II/Deficient
+rel454	g.154535277T>C	III/Deficient, I/Deficient with CNSHA, Not reported/Unknown, II/Deficient, II/Deficient, II/Deficient, III/Deficient, III/Deficient, IV/Normal, I/Deficient with CNSHA
+rel455	g.154535278C>A	II/Deficient
+rel456	g.154535301A>G	II/Deficient
+rel457	g.154535316C>T	IV/Normal
+rel458	g.154535330A>T	III/Deficient
+rel459	g.154535336G>C	I/Deficient with CNSHA
+rel460	g.154535342C>T	Not reported/Unknown
+rel461	g.154535370_154535372delTCT	I/Deficient with CNSHA
+rel462	g.154535379G>A	III/Deficient
+rel463	g.154535962C>T	III/Deficient
+rel464	g.154535963G>A	III/Deficient
+rel465	g.154535980A>G	I/Deficient with CNSHA
+rel466	g.154535995T>C	III/Deficient
+rel467	g.154535996A>G	II/Deficient
+rel468	g.154536002C>T	III/Deficient, II/Deficient, III/Deficient, I/Deficient with CNSHA
+rel469	g.154536008A>T	II/Deficient
+rel470	g.154536019G>A/T	II/Deficient, III/Deficient
+rel471	g.154536022_154536024delAGA	I/Deficient with CNSHA
+rel472	g.154536025A>G	II/Deficient
+rel473	g.154536032C>T	III/Deficient
+rel474	g.154536034C>T	III/Deficient
+rel475	g.154536035G>A	II/Deficient
+rel476	g.154536045C>G	I/Deficient with CNSHA
+rel477	g.154536151G>A	III/Deficient
+rel478	g.154536156A>G	III/Deficient
+rel479	g.154536168G>C	III/Deficient
+rel480	g.154536169C>T	III/Deficient
+rel481	g.154546046A>G	Not reported/Unknown
+rel482	g.154546051_154546053delGAT	I/Deficient with CNSHA
+rel483	g.154546057T>C	I/Deficient with CNSHA
+rel484	g.154546061T>C	III/Deficient
+rel485	g.154546116C>T	III/Deficient
+rel486	g.154546122C>A	III/Deficient
+rel487	g.154546131G>A	Not reported/Unknown
 rel488	g.39248147C>T	rs12979860T
 rel489	g.48037748T>C	*10
 rel490	g.48037749G>C	*19
@@ -590,26 +590,27 @@ rel589	g.18133847C>A	*24
 rel590	g.18133884G>C	*23
 rel591	g.18133890C>T	*15
 rel592	g.18138969C>T; g.18138969C>G	*16, *22
-rel593	g.18138997C>T	*3A, *3B
-rel594	g.18139027C>G	*10
-rel595	g.18139689C>T	*11
-rel596	g.18139710G>A	*12
-rel597	g.18143597T>G	*19
-rel598	g.18143606T>G	*9
-rel599	g.18143613C>G	*28
-rel600	g.18143643A>C	*27
-rel601	g.18143724C>G	*2
-rel602	g.18147845C>T	*18
-rel603	g.18147851G>C	*21
-rel604	g.18147910A>G	*5
-rel605	g.18149004G>C	*17
-rel606	g.18149022C>T	*30
-rel607	g.18149045T>A	*13
-rel608	g.18149126A>G	*29
-rel609	g.18149127T>C	*14
-rel610	g.233757013T>G	*60
-rel611	g.233759924C>T	*80+*28, *80+*37
-rel612	g.233760233	*28, *36, *37, *80+*28, *80+*37
-rel613	g.233760498G>A	*6
-rel614	g.233760973C>A	*27
-rel615	g.31096368C>T	-1639A
+rel593	g.18138983G>A	*1S
+rel594	g.18138997C>T	*3A, *3B
+rel595	g.18139027C>G	*10
+rel596	g.18139689C>T	*11
+rel597	g.18139710G>A	*12
+rel598	g.18143597T>G	*19
+rel599	g.18143606T>G	*9
+rel600	g.18143613C>G	*28
+rel601	g.18143643A>C	*27
+rel602	g.18143724C>G	*2
+rel603	g.18147845C>T	*18
+rel604	g.18147851G>C	*21
+rel605	g.18147910A>G	*5
+rel606	g.18149004G>C	*17
+rel607	g.18149022C>T	*30
+rel608	g.18149045T>A	*13
+rel609	g.18149126A>G	*29
+rel610	g.18149127T>C	*14
+rel611	g.233757013T>G	*60
+rel612	g.233759924C>T	*80+*28, *80+*37
+rel613	g.233760233	*28, *36, *37, *80+*28, *80+*37
+rel614	g.233760498G>A	*6
+rel615	g.233760973C>A	*27
+rel616	g.31096368C>T	-1639A

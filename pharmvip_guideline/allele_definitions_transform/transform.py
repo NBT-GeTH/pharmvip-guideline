@@ -51,9 +51,9 @@ def get_allele_definition_haplotypes(allele_definition_df_raw):
                 variant["allele"] = allele[name_index][hgvs_index]
                 
                 if str(allele_raw[name_index][hgvs_index]) == "nan":
-                    variant["is_ref"] = False
-                else:
                     variant["is_ref"] = True
+                else:
+                    variant["is_ref"] = False
                 haplotype["variants"].append(variant)
             allele_definition_haplotypes.append(haplotype)
 

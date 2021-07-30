@@ -29,7 +29,7 @@ def create_hap_regex_ugt1a1(allele_matcher_variants, haplotype_variants):
             exit()
     assert len(hap1_regex) == len(hap2_regex) == (len(haplotype_variants))
     for i in range(len(haplotype_variants)):
-        if haplotype_variants[i]["is_ref"] == False:
+        if haplotype_variants[i]["is_ref"] == True:
             if haplotype_variants[i]["hgvs_type"] != "SNP":
                 hap1_regex[i] = "(.+)"
                 hap2_regex[i] = "(.+)"
@@ -200,7 +200,7 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                                             hap1_match_name_allele_invert.append(f"({allele_matcher['variants'][i]['allele2_convert']})")
                             assert len(hap1_match_name_allele_invert) == len(haplotype["variants"])
                             for x in range(len(haplotype["variants"])):
-                                if haplotype["variants"][x]["is_ref"] == False:
+                                if haplotype["variants"][x]["is_ref"] == True:
                                     if haplotype["variants"][x]["hgvs_type"] != "SNP":
                                         hap1_match_name_allele_invert[x] = "(.+)"
                                     else:
