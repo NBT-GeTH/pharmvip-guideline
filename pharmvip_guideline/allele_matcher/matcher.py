@@ -42,6 +42,15 @@ def create_hap_regex_ugt1a1(allele_matcher_variants, haplotype_variants):
                 hap2_regex[i] = "(.)"
     return f"^{'_'.join(hap1_regex)}$", f"^{'_'.join(hap2_regex)}$", f"{'_'.join(_hap1_regex).replace('(', '').replace(')', '').replace('.+', '.')}", f"{'_'.join(_hap2_regex).replace('(', '').replace(')', '').replace('.+', '.')}"
 
+def delete_or(match_pair, index):
+    for star_allele in match_pair:
+        star_allele_haplotype = match_pair[star_allele].split("_")
+        for i in range(len(star_allele_haplotype)):
+            if "|" in star_allele_haplotype[i]:
+                star_allele_haplotype[i] = star_allele_haplotype[i].split("|")[index]
+        match_pair[star_allele] = "_".join(star_allele_haplotype)
+    return match_pair
+
 def sort_diplotype(diplotype):
     for i in range(len(diplotype)):
         if "/" in diplotype[i]:
@@ -197,8 +206,12 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                                 del hap2_match_pair[name]
                 # print(f"hap1 match {hap1_match}")
                 # print(f"hap2 match {hap2_match}")
-                # print(hap1_match_pair)
-                # print(hap2_match_pair)
+                # print("hap1_match_pair", hap1_match_pair)
+                # print("hap1_match_pair", hap2_match_pair)
+                hap1_match_pair = delete_or(hap1_match_pair, 0)
+                hap2_match_pair = delete_or(hap2_match_pair, 1)
+                # print("hap1_match_pair_delete", hap1_match_pair)
+                # print("hap1_match_pair_delete", hap2_match_pair)
                 diplotype_ugt1a1 = []
                 if not hap1_match or not hap2_match:
                     diplotype_ugt1a1 = ["?/?"]
