@@ -50,6 +50,23 @@ def sort_diplotype(diplotype):
             diplotype[i] = f"{_diplotype_i[0]}/{_diplotype_i[1]}"
     return diplotype
 
+def sum_diplotype(diplotype):
+    _diplotype1 = []
+    _diplotype2 = []
+    for _diplotype in diplotype:
+        _diplotype = _diplotype.split("/")
+        _diplotype1.append(_diplotype[0].replace("*80+*28", "*28").replace("*80+*37", "*37"))
+        _diplotype2.append(_diplotype[1].replace("*80+*28", "*28").replace("*80+*37", "*37"))
+    _diplotype1 = list(set(_diplotype1))
+    _diplotype2 = list(set(_diplotype2))
+    if "*28" in _diplotype1 or "*37" in _diplotype1:
+        _diplotype1.append("*80")
+    if "*28" in _diplotype2 or "*37" in _diplotype2:
+        _diplotype2.append("*80")
+    _diplotype1.sort(key=natural_keys)
+    _diplotype2.sort(key=natural_keys)
+    return f"{'+'.join(_diplotype1)}/{'+'.join(_diplotype2)}"
+
 def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_file, outputs):
     print("begin matcher")
     # grob list name of transformed json format 
@@ -207,8 +224,8 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                                     diplotype_ugt1a1.append(f"{hap1_match_name}/{hap2_match_name}")
                     if not diplotype_ugt1a1:
                         diplotype_ugt1a1 = ["?/?"]
-                diplotype_ugt1a1 = sorted(sort_diplotype(diplotype_ugt1a1))
-                # print(diplotype_ugt1a1)
+                # diplotype_ugt1a1 = sorted(sort_diplotype(diplotype_ugt1a1))
+                # print("diplotype ugt1a1", diplotype_ugt1a1)
                 ##### start exception
                 if allele_matcher["gene_phases"] == ".":
                     allele_matcher["count_diplotype"] = 0
@@ -250,8 +267,11 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                         elif "|" in variant["gt_bases"]:
                             alleles = variant["gt_bases"].split("|")
 
-                        if variant["hgvs"] == "g.233757013T>G" and alleles[0] == "G":
-                            haplotypes0.append("*60")
+                        if variant["hgvs"] == "g.233757013T>G":
+                            if alleles[0] == "G":
+                                haplotypes0.append("*60")
+                            if alleles[1] == "G":
+                                haplotypes0.append("*60")
                         elif variant["hgvs"] == "g.233760233":
                             if alleles[0] == "CATAT":
                                 haplotypes0.append("*28")
@@ -259,24 +279,23 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                                 haplotypes0.append("*36")
                             elif alleles[0] == "CATATAT":
                                 haplotypes0.append("*37")
-                        elif variant["hgvs"] == "g.233760498G>A" and alleles[0] == "A":
-                            haplotypes0.append("*6")
-                        elif variant["hgvs"] == "g.233760973C>A" and alleles[0] == "A":
-                            haplotypes0.append("*27")
-                        
-                        if variant["hgvs"] == "g.233757013T>G" and alleles[1] == "G":
-                            haplotypes1.append("*60")
-                        elif variant["hgvs"] == "g.233760233":
                             if alleles[1] == "CATAT":
                                 haplotypes1.append("*28")
                             elif alleles[1] == "C":
                                 haplotypes1.append("*36")
                             elif alleles[1] == "CATATAT":
                                 haplotypes1.append("*37")
-                        elif variant["hgvs"] == "g.233760498G>A" and alleles[1] == "A":
-                            haplotypes1.append("*6")
-                        elif variant["hgvs"] == "g.233760973C>A" and alleles[1] == "A":
-                            haplotypes1.append("*27")
+                        elif variant["hgvs"] == "g.233760498G>A":
+                            if alleles[0] == "A":
+                                haplotypes0.append("*6")
+                            if alleles[1] == "A":
+                                haplotypes0.append("*6")
+                        elif variant["hgvs"] == "g.233760973C>A":
+                            if alleles[0] == "A":
+                                haplotypes0.append("*27")
+                            if alleles[1] == "A":
+                                haplotypes0.append("*27")
+                    
                     ##### count * alleles by groups
                     group_a = ["*28"]
                     group_b = ["*6", "*27", "*37"]
@@ -310,26 +329,14 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                     else:
                         guide_dip = "*1/*80"
                     ##### transform print dip for phased case
-                    print_dip_0 = copy.deepcopy(haplotypes0)
-                    if "*80" in print_dip_0:
-                        if "*28" not in print_dip_0 and "*37" not in print_dip_0:
-                            while "*80" in print_dip_0:
-                                print_dip_0.remove("*80")
-                    print_dip_1 = copy.deepcopy(haplotypes1)
-                    if "*80" in print_dip_1:
-                        if "*28" not in print_dip_1 and "*37" not in print_dip_1:
-                            while "*80" in print_dip_1:
-                                print_dip_1.remove("*80")
-                    ##### summary
-                    if not print_dip_0 or not print_dip_1:
+                    if not diplotype_ugt1a1:
                         allele_matcher["count_diplotype"] = 1
                         allele_matcher["guide_dip"] = ["?/?"]
                         allele_matcher["print_dip"] = ["?/?"]
                     else:
                         allele_matcher["count_diplotype"] = 1
                         allele_matcher["guide_dip"] = [guide_dip]
-                        # if  allele_matcher["print_dip"] != ["?/?"]:
-                        allele_matcher["print_dip"] = [f"{'+'.join(sorted(print_dip_0))}/{'+'.join(sorted(print_dip_1))}"]
+                        allele_matcher["print_dip"] = [sum_diplotype(diplotype_ugt1a1)]
                 elif str(allele_matcher["gene_phases"]) == "False" or str(allele_matcher["gene_phases"]) == "Combine":
                     ##### match haplotypes
                     haplotypes = []
