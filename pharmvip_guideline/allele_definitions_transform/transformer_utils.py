@@ -17,45 +17,48 @@ def match_gene(gene_cell):
         print(f"error match gene with: {str(gene_cell)}")
         exit()
 
-# def manual_customize(allele_definition_df, gene):
-#     '''
-#         this medthod intent to fix if there is something unapitiate in 
-#         allele defination table 
-#     '''
-#     # try to drop unnessesary tuple (there is space in cell befor acctual data)
-#     # if gene == "G6PD": 
-#     #     allele_definition_df.iloc[1, 0] = allele_definition_df.iloc[1, 1]
-#     #     allele_definition_df.iloc[2, 0] = allele_definition_df.iloc[2, 1]
-#     #     allele_definition_df.iloc[3, 0] = allele_definition_df.iloc[3, 1]
-#     #     allele_definition_df.iloc[4, 0] = allele_definition_df.iloc[4, 1]
-#     #     allele_definition_df.iloc[5, 0] = allele_definition_df.iloc[5, 1]
+def manual_customize(allele_definition_df, gene):
+    '''
+        this medthod intent to fix if there is something unapitiate in 
+        allele defination table 
+    '''
+    # try to drop unnessesary tuple (there is space in cell befor acctual data)
+    if gene == "G6PD": 
+        allele_definition_df.iloc[1, 0] = allele_definition_df.iloc[1, 1]
+        allele_definition_df.iloc[2, 0] = allele_definition_df.iloc[2, 1]
+        allele_definition_df.iloc[3, 0] = allele_definition_df.iloc[3, 1]
+        allele_definition_df.iloc[4, 0] = allele_definition_df.iloc[4, 1]
+        allele_definition_df.iloc[5, 0] = allele_definition_df.iloc[5, 1]
 
-#     #     allele_definition_df.drop([1], axis=1, inplace=True)
-#     #     allele_definition_df.columns = range(allele_definition_df.shape[1])
+        allele_definition_df.drop([1], axis=1, inplace=True)
+        allele_definition_df.columns = range(allele_definition_df.shape[1])
 
-#     #     return allele_definition_df
+        return allele_definition_df
         
-#     # something wrong with g.18138983G>A so we drop its allele defination
-#     # if gene == "TPMT":
-#     #     for column in range(allele_definition_df.shape[1]):
-#     #         if allele_definition_df.iloc[3, column] ==  "g.18138983G>A":
-#     #             allele_definition_df.drop(allele_definition_df.columns[[column]], axis=1, inplace=True)
-#     #     allele_definition_df.columns = range(allele_definition_df.shape[1])
+    # something wrong with g.18138983G>A so we drop its allele defination
+    if gene == "TPMT":
+        delete_column = []
+        for column in range(allele_definition_df.shape[1]):
+            if allele_definition_df.iloc[3, column] ==  "g.18138983G>A":
+                delete_column.append(column)
+        for column in delete_column:
+            allele_definition_df.drop(allele_definition_df.columns[[column]], axis=1, inplace=True)
+        allele_definition_df.columns = range(allele_definition_df.shape[1])
 
-#     #     return allele_definition_df
+        return allele_definition_df
 
-#     # some version have conflict in allele named 
-#     elif gene == "VKORC1":
-#         for row in range(allele_definition_df.shape[0]):
-#             if allele_definition_df.iloc[row, 0] ==  "rs9923231 reference (C)":
-#                 allele_definition_df.iloc[row, 0] = "-1639G"
-#             elif allele_definition_df.iloc[row, 0] ==  "rs9923231 variant (T)":
-#                 allele_definition_df.iloc[row, 0] = "-1639A"
+    # some version have conflict in allele named 
+    elif gene == "VKORC1":
+        for row in range(allele_definition_df.shape[0]):
+            if allele_definition_df.iloc[row, 0] ==  "rs9923231 reference (C)":
+                allele_definition_df.iloc[row, 0] = "-1639G"
+            elif allele_definition_df.iloc[row, 0] ==  "rs9923231 variant (T)":
+                allele_definition_df.iloc[row, 0] = "-1639A"
         
-#         return allele_definition_df
+        return allele_definition_df
 
-#     else:
-#         return allele_definition_df
+    else:
+        return allele_definition_df
 
 def automatic_customize(allele_definition_df):
     # sort from A-Z,a-z,0-9 in row 3 (Gene position)

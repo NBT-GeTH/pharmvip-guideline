@@ -124,15 +124,6 @@
           "is_ref": false
         },
         {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
-          "is_ref": false
-        },
-        {
           "hgvs": "g.18138997C>T",
           "hgvs_type": "SNP",
           "start": "18138997",
@@ -410,15 +401,6 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "A",
-          "is_ref": false
-        },
-        {
           "hgvs": "g.18138997C>T",
           "hgvs_type": "SNP",
           "start": "18138997",
@@ -693,15 +675,6 @@
           "end": "18138969",
           "rsid": "rs144041067",
           "allele": "C",
-          "is_ref": true
-        },
-        {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
           "is_ref": true
         },
         {
@@ -982,15 +955,6 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
-          "is_ref": true
-        },
-        {
           "hgvs": "g.18138997C>T",
           "hgvs_type": "SNP",
           "start": "18138997",
@@ -1265,15 +1229,6 @@
           "end": "18138969",
           "rsid": "rs144041067",
           "allele": "C",
-          "is_ref": true
-        },
-        {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
           "is_ref": true
         },
         {
@@ -1554,15 +1509,6 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
-          "is_ref": true
-        },
-        {
           "hgvs": "g.18138997C>T",
           "hgvs_type": "SNP",
           "start": "18138997",
@@ -1837,15 +1783,6 @@
           "end": "18138969",
           "rsid": "rs144041067",
           "allele": "C",
-          "is_ref": true
-        },
-        {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
           "is_ref": true
         },
         {
@@ -2126,15 +2063,6 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
-          "is_ref": true
-        },
-        {
           "hgvs": "g.18138997C>T",
           "hgvs_type": "SNP",
           "start": "18138997",
@@ -2409,15 +2337,6 @@
           "end": "18138969",
           "rsid": "rs144041067",
           "allele": "C",
-          "is_ref": true
-        },
-        {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
           "is_ref": true
         },
         {
@@ -2698,15 +2617,6 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
-          "is_ref": true
-        },
-        {
           "hgvs": "g.18138997C>T",
           "hgvs_type": "SNP",
           "start": "18138997",
@@ -2981,15 +2891,6 @@
           "end": "18138969",
           "rsid": "rs144041067",
           "allele": "C",
-          "is_ref": true
-        },
-        {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
           "is_ref": true
         },
         {
@@ -3270,15 +3171,6 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
-          "is_ref": true
-        },
-        {
           "hgvs": "g.18138997C>T",
           "hgvs_type": "SNP",
           "start": "18138997",
@@ -3553,15 +3445,6 @@
           "end": "18138969",
           "rsid": "rs144041067",
           "allele": "C",
-          "is_ref": true
-        },
-        {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
           "is_ref": true
         },
         {
@@ -3842,15 +3725,6 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
-          "is_ref": true
-        },
-        {
           "hgvs": "g.18138997C>T",
           "hgvs_type": "SNP",
           "start": "18138997",
@@ -4125,15 +3999,6 @@
           "end": "18138969",
           "rsid": "rs144041067",
           "allele": "C",
-          "is_ref": true
-        },
-        {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
           "is_ref": true
         },
         {
@@ -4414,15 +4279,6 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
-          "is_ref": true
-        },
-        {
           "hgvs": "g.18138997C>T",
           "hgvs_type": "SNP",
           "start": "18138997",
@@ -4697,15 +4553,6 @@
           "end": "18138969",
           "rsid": "rs144041067",
           "allele": "C",
-          "is_ref": true
-        },
-        {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
           "is_ref": true
         },
         {
@@ -4986,15 +4833,6 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
-          "is_ref": true
-        },
-        {
           "hgvs": "g.18138997C>T",
           "hgvs_type": "SNP",
           "start": "18138997",
@@ -5272,15 +5110,6 @@
           "is_ref": false
         },
         {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
-          "is_ref": true
-        },
-        {
           "hgvs": "g.18138997C>T",
           "hgvs_type": "SNP",
           "start": "18138997",
@@ -5555,15 +5384,6 @@
           "end": "18138969",
           "rsid": "rs144041067",
           "allele": "C",
-          "is_ref": true
-        },
-        {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
           "is_ref": true
         },
         {
@@ -5844,15 +5664,6 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
-          "is_ref": true
-        },
-        {
           "hgvs": "g.18138997C>T",
           "hgvs_type": "SNP",
           "start": "18138997",
@@ -6127,15 +5938,6 @@
           "end": "18138969",
           "rsid": "rs144041067",
           "allele": "C",
-          "is_ref": true
-        },
-        {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
           "is_ref": true
         },
         {
@@ -6416,15 +6218,6 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
-          "is_ref": true
-        },
-        {
           "hgvs": "g.18138997C>T",
           "hgvs_type": "SNP",
           "start": "18138997",
@@ -6699,15 +6492,6 @@
           "end": "18138969",
           "rsid": "rs144041067",
           "allele": "C",
-          "is_ref": true
-        },
-        {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
           "is_ref": true
         },
         {
@@ -6988,15 +6772,6 @@
           "is_ref": false
         },
         {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
-          "is_ref": true
-        },
-        {
           "hgvs": "g.18138997C>T",
           "hgvs_type": "SNP",
           "start": "18138997",
@@ -7271,15 +7046,6 @@
           "end": "18138969",
           "rsid": "rs144041067",
           "allele": "C",
-          "is_ref": true
-        },
-        {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
           "is_ref": true
         },
         {
@@ -7560,15 +7326,6 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
-          "is_ref": true
-        },
-        {
           "hgvs": "g.18138997C>T",
           "hgvs_type": "SNP",
           "start": "18138997",
@@ -7843,15 +7600,6 @@
           "end": "18138969",
           "rsid": "rs144041067",
           "allele": "C",
-          "is_ref": true
-        },
-        {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
           "is_ref": true
         },
         {
@@ -8132,15 +7880,6 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
-          "is_ref": true
-        },
-        {
           "hgvs": "g.18138997C>T",
           "hgvs_type": "SNP",
           "start": "18138997",
@@ -8415,15 +8154,6 @@
           "end": "18138969",
           "rsid": "rs144041067",
           "allele": "C",
-          "is_ref": true
-        },
-        {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
           "is_ref": true
         },
         {
@@ -8704,15 +8434,6 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
-          "is_ref": true
-        },
-        {
           "hgvs": "g.18138997C>T",
           "hgvs_type": "SNP",
           "start": "18138997",
@@ -8987,15 +8708,6 @@
           "end": "18138969",
           "rsid": "rs144041067",
           "allele": "C",
-          "is_ref": true
-        },
-        {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
           "is_ref": true
         },
         {
@@ -9276,15 +8988,6 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
-          "is_ref": true
-        },
-        {
           "hgvs": "g.18138997C>T",
           "hgvs_type": "SNP",
           "start": "18138997",
@@ -9562,15 +9265,6 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.18138983G>A",
-          "hgvs_type": "SNP",
-          "start": "18138983",
-          "end": "18138983",
-          "rsid": "rs2842934",
-          "allele": "G",
-          "is_ref": true
-        },
-        {
           "hgvs": "g.18138997C>T",
           "hgvs_type": "SNP",
           "start": "18138997",
@@ -9808,12 +9502,6 @@
       ]
     },
     {
-      "hgvs": "g.18138983G>A",
-      "name": [
-        "*1S"
-      ]
-    },
-    {
       "hgvs": "g.18138997C>T",
       "name": [
         "*3A",
@@ -9934,7 +9622,6 @@
         "g.18133884G>C",
         "g.18133890C>T",
         "g.18138969C>T; g.18138969C>G",
-        "g.18138983G>A",
         "g.18138997C>T",
         "g.18139027C>G",
         "g.18139689C>T",
@@ -9956,9 +9643,7 @@
     },
     {
       "name": "*1S",
-      "hgvs": [
-        "g.18138983G>A"
-      ]
+      "hgvs": []
     },
     {
       "name": "*2",

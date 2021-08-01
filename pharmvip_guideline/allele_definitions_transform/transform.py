@@ -162,7 +162,7 @@ def transform(allele_definitions, outputs):
         gene = match_gene(gene_cell)
 
         # clean table
-        # allele_definition_df = manual_customize(allele_definition_df, gene)
+        allele_definition_df = manual_customize(allele_definition_df, gene)
         allele_definition_df = automatic_customize(allele_definition_df)
 
         # create JSON OBJ
