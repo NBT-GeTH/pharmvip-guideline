@@ -170,3 +170,9 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+tests/query_testing/vcfs/NUDT15_dot.vcf
+tests/query_testing/vcfs/NUDT15_dot.vcf.gz
+tests/query_testing/vcfs/NUDT15_dot.vcf.gz.tbi
+tests/query_testing/vcfs/tester.vcf.gz.tbi
+tests/query_testing/vcfs/testest.vcf.gz.tbi
+tests/query_testing/vcfs/vcf_handle.sh
