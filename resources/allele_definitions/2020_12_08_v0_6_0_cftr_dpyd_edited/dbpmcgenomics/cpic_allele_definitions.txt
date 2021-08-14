@@ -514,7 +514,7 @@ def513	Surabaya	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38
 def514	Sumare	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
 def515	Mediterranean Haplotype	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
 def516	Pawnee	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
-def517	Telti/Kobe	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
+def517	Telti, Kobe	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
 def518	Santiago de Cuba, Morioka	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
 def519	S. Antioco	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX
 def520	Cassano	G6PD	Position at NC_000023.11 (Homo sapiens chromosome X, GRCh38.p2)	chrX

@@ -341,7 +341,7 @@ rel340	g.154532392A>T	Harima
 rel341	g.154532403C>G	Cassano, Hermoupolis
 rel342	g.154532408T>C	S. Antioco
 rel343	g.154532411C>T	Santiago de Cuba, Morioka
-rel344	g.154532432G>A	Telti/Kobe
+rel344	g.154532432G>A	Telti, Kobe
 rel345	g.154532434C>G	Pawnee
 rel346	g.154532439G>A	Mediterranean Haplotype
 rel347	g.154532458A>C	Sumare
