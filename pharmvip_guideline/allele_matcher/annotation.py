@@ -170,6 +170,7 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
         "cpi_sum_strength": [],
         "cpi_sum_recommendations": [],
         "cpi_sum_recommendations_full": [],
+        "cpi_sum_recommendations_full_figure": [],
         "cpi_sum_implications": [],
         "cpi_sum_phenotype": [],
         "cpi_sum_met_status_1": [],
@@ -225,6 +226,7 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                         summary_and_full_report["cpi_sum_strength"].append(annotations.get("Strength"))
                         summary_and_full_report["cpi_sum_recommendations"].append(annotations.get("SummaryRecommendations"))
                         summary_and_full_report["cpi_sum_recommendations_full"].append(annotations.get("Recommendations"))
+                        summary_and_full_report["cpi_sum_recommendations_full_figure"].append("")
                         summary_and_full_report["cpi_sum_implications"].append(annotations.get("Implications"))
                         summary_and_full_report["cpi_sum_phenotype"].append(annotations.get("Phenotype"))
                         summary_and_full_report["cpi_sum_met_status_1"].append(annotations.get("MetabolizerStatus"))
@@ -254,6 +256,7 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                         summary_and_full_report["cpi_sum_strength"].append("N/A")
                         summary_and_full_report["cpi_sum_recommendations"].append("<text>No Guideline.</text></br>")
                         summary_and_full_report["cpi_sum_recommendations_full"].append("<text>No Guideline.</text></br>")
+                        summary_and_full_report["cpi_sum_recommendations_full_figure"].append("")
                         summary_and_full_report["cpi_sum_implications"].append("")
                         summary_and_full_report["cpi_sum_phenotype"].append("")
                         summary_and_full_report["cpi_sum_met_status_1"].append("")
@@ -316,6 +319,7 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                         summary_and_full_report["cpi_sum_strength"].append(annotations.get("Strength"))
                         summary_and_full_report["cpi_sum_recommendations"].append(annotations.get("SummaryRecommendations"))
                         summary_and_full_report["cpi_sum_recommendations_full"].append(annotations.get("Recommendations"))
+                        summary_and_full_report["cpi_sum_recommendations_full_figure"].append("")
                         summary_and_full_report["cpi_sum_implications"].append(annotations.get("Implications"))
                         summary_and_full_report["cpi_sum_phenotype"].append(annotations.get("Phenotype"))
                         if annotations.get("MetabolizerStatus") == [] or len(annotations.get("MetabolizerStatus")) == 0:
@@ -352,6 +356,7 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                         summary_and_full_report["cpi_sum_strength"].append("N/A")
                         summary_and_full_report["cpi_sum_recommendations"].append("<text>No Guideline.</text></br>")
                         summary_and_full_report["cpi_sum_recommendations_full"].append("<text>No Guideline.</text></br>")
+                        summary_and_full_report["cpi_sum_recommendations_full_figure"].append("")
                         summary_and_full_report["cpi_sum_implications"].append("")
                         summary_and_full_report["cpi_sum_phenotype"].append("")
                         summary_and_full_report["cpi_sum_met_status_1"].append("")
@@ -389,7 +394,8 @@ def handle_summary_and_full_report_layout(summary_and_full_report, diplotypes):
     warfarin_genes = ["CYP2C9", "CYP4F2", "VKORC1"]
     warfarin_drug = "warfarin"
     warfarin_recommendations = '<text>See dosing guideline in the Guideline full report.</text></br>'
-    warfarin_recommendations_full = '<text>From genotype info, please follow the flow chart to determine the appropriate dosing recommendation for warfarin.<br/><br/><text><strong>Dosing recommendations for Warfarin dosing based on genotype for adult patients</strong></text><br/><br/><center><img src="https://s3.pgkb.org/attachment/CPIC_warfarin_2017_Fig_2.png" width="500px" height="329px"></center><br/><strong>Figure Legend:</strong><br/><sup>a</sup>“Dose clinically” means to dose without genetic information, which may include use of a clinical dosing algorithm or standard dose approach<br/><sup>b</sup>Data strongest for European and East Asian ancestry populations and consistent in other populations.<br/> <sup>c</sup>45-50% of individuals with self-reported African ancestry carry CYP2C9*5,*6,*8,*11, or rs12777823. IF CYP2C9*5, *6, *8, and *11 WERE NOT TESTED, DOSE WARFARIN CLINICALLY. Note: these data derive primarily from African Americans, who are largely from West Africa. It is unknown if the same associations are present for those from other parts of Africa.<br/><sup>d</sup>Most algorithms are developed for the target INR 2-3.<br/><sup>e</sup>Consider an alternative agent in individuals with genotypes associated with CYP2C9 poor metabolism (e.g., CYP2C9*3/*3, *2/*3, *3/*3) or both increased sensitivity (VKORC1 A/G or A/A) and CYP2C9 poor metabolism.<br/><sup>f</sup>See the EU-PACT trial for pharmacogenetics-based warfarin initiation (loading) dose algorithm [Article:<a href="https://www.pharmgkb.org/literature/15066830">24251363</a>] with the caveat that the loading dose PG algorithm has not been specifically tested or validated in populations of African ancestry.<br/><sup>g</sup>Larger dose reduction might be needed in variant homozygotes (i.e. 20-40%).<br/> <sup>h</sup>African American refers to individuals mainly originating from West Africa.<br/>For more information see: <a href="https://www.pharmgkb.org/guidelineAnnotation/PA166104949">https://www.pharmgkb.org/guidelineAnnotation/PA166104949</a></text></br>'
+    warfarin_recommendations_full = '<text>From genotype info, please follow the flow chart to determine the appropriate dosing recommendation for warfarin.<br/><br/><text><strong>Dosing recommendations for Warfarin dosing based on genotype for adult patients</strong></text><br/><br/><center><img src="https://s3.pgkb.org/attachment/CPIC_warfarin_2017_Fig_2.png" width="500px" height="329px"></center><br/></text></br>'
+    warfarin_recommendations_full_figure = '<text><strong>Figure Legend:</strong><br/><sup>a</sup>“Dose clinically” means to dose without genetic information, which may include use of a clinical dosing algorithm or standard dose approach<br/><sup>b</sup>Data strongest for European and East Asian ancestry populations and consistent in other populations.<br/> <sup>c</sup>45-50% of individuals with self-reported African ancestry carry CYP2C9*5,*6,*8,*11, or rs12777823. IF CYP2C9*5, *6, *8, and *11 WERE NOT TESTED, DOSE WARFARIN CLINICALLY. Note: these data derive primarily from African Americans, who are largely from West Africa. It is unknown if the same associations are present for those from other parts of Africa.<br/><sup>d</sup>Most algorithms are developed for the target INR 2-3.<br/><sup>e</sup>Consider an alternative agent in individuals with genotypes associated with CYP2C9 poor metabolism (e.g., CYP2C9*3/*3, *2/*3, *3/*3) or both increased sensitivity (VKORC1 A/G or A/A) and CYP2C9 poor metabolism.<br/><sup>f</sup>See the EU-PACT trial for pharmacogenetics-based warfarin initiation (loading) dose algorithm [Article:<a href="https://www.pharmgkb.org/literature/15066830">24251363</a>] with the caveat that the loading dose PG algorithm has not been specifically tested or validated in populations of African ancestry.<br/><sup>g</sup>Larger dose reduction might be needed in variant homozygotes (i.e. 20-40%).<br/> <sup>h</sup>African American refers to individuals mainly originating from West Africa.<br/>For more information see: <a href="https://www.pharmgkb.org/guidelineAnnotation/PA166104949">https://www.pharmgkb.org/guidelineAnnotation/PA166104949</a></text></br>'
     if str(diplotypes_new.loc[warfarin_genes[0], "print_dip"]).replace("[", "").replace("]", "").replace("'", "") != "No info" and str(diplotypes_new.loc[warfarin_genes[2], "print_dip"]).replace("[", "").replace("]", "").replace("'", "") != "No info":
         warfarin = pd.DataFrame({
             "cpi_sum_gene1": warfarin_genes[0],
@@ -403,6 +409,7 @@ def handle_summary_and_full_report_layout(summary_and_full_report, diplotypes):
             "cpi_sum_strength": "N/A",
             "cpi_sum_recommendations": warfarin_recommendations,
             "cpi_sum_recommendations_full": warfarin_recommendations_full,
+            "cpi_sum_recommendations_full_figure": warfarin_recommendations_full_figure,
             "cpi_sum_implications": "",
             "cpi_sum_phenotype": "",
             "cpi_sum_met_status_1": "",
@@ -431,6 +438,7 @@ def handle_summary_and_full_report_layout(summary_and_full_report, diplotypes):
             "cpi_sum_strength": "N/A",
             "cpi_sum_recommendations": "<text>No Guideline.</text></br>",
             "cpi_sum_recommendations_full": "<text>No Guideline.</text></br>",
+            "cpi_sum_recommendations_full_figure": "",
             "cpi_sum_implications": "",
             "cpi_sum_phenotype": "",
             "cpi_sum_met_status_1": "",
@@ -463,6 +471,7 @@ def handle_summary_and_full_report_layout(summary_and_full_report, diplotypes):
         "cpi_sum_strength": "N/A",
         "cpi_sum_recommendations": azathioprine_mercaptopurine_recommendations,
         "cpi_sum_recommendations_full": azathioprine_mercaptopurine_recommendations_full,
+        "cpi_sum_recommendations_full_figure": "",
         "cpi_sum_implications": "",
         "cpi_sum_phenotype": "",
         "cpi_sum_met_status_1": "",
@@ -523,6 +532,7 @@ def replace_na(df):
     df['cpi_sum_strength'] = df['cpi_sum_strength'].replace([''],'N/A')
     df['cpi_sum_recommendations'] = df['cpi_sum_recommendations'].replace([''],'N/A')
     df['cpi_sum_recommendations_full'] = df['cpi_sum_recommendations_full'].replace([''],'N/A')
+    # df['cpi_sum_recommendations_full_figure'] = df['cpi_sum_recommendations_full_figure'].replace([''],'N/A')
     df['cpi_sum_implications'] = df['cpi_sum_implications'].replace([''],'N/A')
     df['cpi_sum_phenotype'] = df['cpi_sum_phenotype'].replace([''],'N/A')
     df['cpi_sum_met_status_1'] = np.where((df.cpi_sum_gene1 != '') & (df.cpi_sum_met_status_1 == ''),'N/A',df.cpi_sum_met_status_1)
@@ -551,15 +561,15 @@ def to_txt(cpic_summary, output_path, user_id, project_id):
         if str(row['cpi_sum_act_score']) == "None":
             nl = "\n"
             if (index + 1) < pd.DataFrame(cpic_summary).shape[0]:
-                f.write(f"{user_id}\t{project_id}\t{row['cpi_sum_gene1']}\t{row['cpi_sum_gene2']}\t{row['cpi_sum_gene3']}\t{row['cpi_sum_dip_name1']}\t{row['cpi_sum_dip_name2']}\t{row['cpi_sum_dip_name3']}\t{row['cpi_sum_drug']}\t\t{row['cpi_sum_strength']}\t{row['cpi_sum_recommendations']}\t{row['cpi_sum_recommendations_full']}\t{row['cpi_sum_implications']}\t{row['cpi_sum_phenotype']}\t{row['cpi_sum_met_status_1'].replace(nl, '')}\t{row['cpi_sum_met_status_2'].replace(nl, '')}\t{row['cpi_sum_met_status_3'].replace(nl, '')}\t{row['cpi_sum_gen_1_missing']}\t{row['cpi_sum_gen_1_total']}\t{row['cpi_sum_gen_2_missing']}\t{row['cpi_sum_gen_2_total']}\t{row['cpi_sum_gen_3_missing']}\t{row['cpi_sum_gen_3_total']}\t{row['cpi_sum_hla_tool_1_guide']}\t{row['cpi_sum_hla_tool_2_guide']}\n")
+                f.write(f"{user_id}\t{project_id}\t{row['cpi_sum_gene1']}\t{row['cpi_sum_gene2']}\t{row['cpi_sum_gene3']}\t{row['cpi_sum_dip_name1']}\t{row['cpi_sum_dip_name2']}\t{row['cpi_sum_dip_name3']}\t{row['cpi_sum_drug']}\t\t{row['cpi_sum_strength']}\t{row['cpi_sum_recommendations']}\t{row['cpi_sum_recommendations_full']}\t{row['cpi_sum_recommendations_full_figure']}\t{row['cpi_sum_implications']}\t{row['cpi_sum_phenotype']}\t{row['cpi_sum_met_status_1'].replace(nl, '')}\t{row['cpi_sum_met_status_2'].replace(nl, '')}\t{row['cpi_sum_met_status_3'].replace(nl, '')}\t{row['cpi_sum_gen_1_missing']}\t{row['cpi_sum_gen_1_total']}\t{row['cpi_sum_gen_2_missing']}\t{row['cpi_sum_gen_2_total']}\t{row['cpi_sum_gen_3_missing']}\t{row['cpi_sum_gen_3_total']}\t{row['cpi_sum_hla_tool_1_guide']}\t{row['cpi_sum_hla_tool_2_guide']}\n")
             else:
-                f.write(f"{user_id}\t{project_id}\t{row['cpi_sum_gene1']}\t{row['cpi_sum_gene2']}\t{row['cpi_sum_gene3']}\t{row['cpi_sum_dip_name1']}\t{row['cpi_sum_dip_name2']}\t{row['cpi_sum_dip_name3']}\t{row['cpi_sum_drug']}\t\t{row['cpi_sum_strength']}\t{row['cpi_sum_recommendations']}\t{row['cpi_sum_recommendations_full']}\t{row['cpi_sum_implications']}\t{row['cpi_sum_phenotype']}\t{row['cpi_sum_met_status_1'].replace(nl, '')}\t{row['cpi_sum_met_status_2'].replace(nl, '')}\t{row['cpi_sum_met_status_3'].replace(nl, '')}\t{row['cpi_sum_gen_1_missing']}\t{row['cpi_sum_gen_1_total']}\t{row['cpi_sum_gen_2_missing']}\t{row['cpi_sum_gen_2_total']}\t{row['cpi_sum_gen_3_missing']}\t{row['cpi_sum_gen_3_total']}\t{row['cpi_sum_hla_tool_1_guide']}\t{row['cpi_sum_hla_tool_2_guide']}")
+                f.write(f"{user_id}\t{project_id}\t{row['cpi_sum_gene1']}\t{row['cpi_sum_gene2']}\t{row['cpi_sum_gene3']}\t{row['cpi_sum_dip_name1']}\t{row['cpi_sum_dip_name2']}\t{row['cpi_sum_dip_name3']}\t{row['cpi_sum_drug']}\t\t{row['cpi_sum_strength']}\t{row['cpi_sum_recommendations']}\t{row['cpi_sum_recommendations_full']}\t{row['cpi_sum_recommendations_full_figure']}\t{row['cpi_sum_implications']}\t{row['cpi_sum_phenotype']}\t{row['cpi_sum_met_status_1'].replace(nl, '')}\t{row['cpi_sum_met_status_2'].replace(nl, '')}\t{row['cpi_sum_met_status_3'].replace(nl, '')}\t{row['cpi_sum_gen_1_missing']}\t{row['cpi_sum_gen_1_total']}\t{row['cpi_sum_gen_2_missing']}\t{row['cpi_sum_gen_2_total']}\t{row['cpi_sum_gen_3_missing']}\t{row['cpi_sum_gen_3_total']}\t{row['cpi_sum_hla_tool_1_guide']}\t{row['cpi_sum_hla_tool_2_guide']}")
         else:
             nl = "\n"
             if (index + 1) < pd.DataFrame(cpic_summary).shape[0]:
-                f.write(f"{user_id}\t{project_id}\t{row['cpi_sum_gene1']}\t{row['cpi_sum_gene2']}\t{row['cpi_sum_gene3']}\t{row['cpi_sum_dip_name1']}\t{row['cpi_sum_dip_name2']}\t{row['cpi_sum_dip_name3']}\t{row['cpi_sum_drug']}\t{row['cpi_sum_act_score']}\t{row['cpi_sum_strength']}\t{row['cpi_sum_recommendations']}\t{row['cpi_sum_recommendations_full']}\t{row['cpi_sum_implications']}\t{row['cpi_sum_phenotype']}\t{row['cpi_sum_met_status_1'].replace(nl, '')}\t{row['cpi_sum_met_status_2'].replace(nl, '')}\t{row['cpi_sum_met_status_3'].replace(nl, '')}\t{row['cpi_sum_gen_1_missing']}\t{row['cpi_sum_gen_1_total']}\t{row['cpi_sum_gen_2_missing']}\t{row['cpi_sum_gen_2_total']}\t{row['cpi_sum_gen_3_missing']}\t{row['cpi_sum_gen_3_total']}\t{row['cpi_sum_hla_tool_1_guide']}\t{row['cpi_sum_hla_tool_2_guide']}\n")
+                f.write(f"{user_id}\t{project_id}\t{row['cpi_sum_gene1']}\t{row['cpi_sum_gene2']}\t{row['cpi_sum_gene3']}\t{row['cpi_sum_dip_name1']}\t{row['cpi_sum_dip_name2']}\t{row['cpi_sum_dip_name3']}\t{row['cpi_sum_drug']}\t{row['cpi_sum_act_score']}\t{row['cpi_sum_strength']}\t{row['cpi_sum_recommendations']}\t{row['cpi_sum_recommendations_full']}\t{row['cpi_sum_recommendations_full_figure']}\t{row['cpi_sum_implications']}\t{row['cpi_sum_phenotype']}\t{row['cpi_sum_met_status_1'].replace(nl, '')}\t{row['cpi_sum_met_status_2'].replace(nl, '')}\t{row['cpi_sum_met_status_3'].replace(nl, '')}\t{row['cpi_sum_gen_1_missing']}\t{row['cpi_sum_gen_1_total']}\t{row['cpi_sum_gen_2_missing']}\t{row['cpi_sum_gen_2_total']}\t{row['cpi_sum_gen_3_missing']}\t{row['cpi_sum_gen_3_total']}\t{row['cpi_sum_hla_tool_1_guide']}\t{row['cpi_sum_hla_tool_2_guide']}\n")
             else:
-                f.write(f"{user_id}\t{project_id}\t{row['cpi_sum_gene1']}\t{row['cpi_sum_gene2']}\t{row['cpi_sum_gene3']}\t{row['cpi_sum_dip_name1']}\t{row['cpi_sum_dip_name2']}\t{row['cpi_sum_dip_name3']}\t{row['cpi_sum_drug']}\t{row['cpi_sum_act_score']}\t{row['cpi_sum_strength']}\t{row['cpi_sum_recommendations']}\t{row['cpi_sum_recommendations_full']}\t{row['cpi_sum_implications']}\t{row['cpi_sum_phenotype']}\t{row['cpi_sum_met_status_1'].replace(nl, '')}\t{row['cpi_sum_met_status_2'].replace(nl, '')}\t{row['cpi_sum_met_status_3'].replace(nl, '')}\t{row['cpi_sum_gen_1_missing']}\t{row['cpi_sum_gen_1_total']}\t{row['cpi_sum_gen_2_missing']}\t{row['cpi_sum_gen_2_total']}\t{row['cpi_sum_gen_3_missing']}\t{row['cpi_sum_gen_3_total']}\t{row['cpi_sum_hla_tool_1_guide']}\t{row['cpi_sum_hla_tool_2_guide']}")
+                f.write(f"{user_id}\t{project_id}\t{row['cpi_sum_gene1']}\t{row['cpi_sum_gene2']}\t{row['cpi_sum_gene3']}\t{row['cpi_sum_dip_name1']}\t{row['cpi_sum_dip_name2']}\t{row['cpi_sum_dip_name3']}\t{row['cpi_sum_drug']}\t{row['cpi_sum_act_score']}\t{row['cpi_sum_strength']}\t{row['cpi_sum_recommendations']}\t{row['cpi_sum_recommendations_full']}\t{row['cpi_sum_recommendations_full_figure']}\t{row['cpi_sum_implications']}\t{row['cpi_sum_phenotype']}\t{row['cpi_sum_met_status_1'].replace(nl, '')}\t{row['cpi_sum_met_status_2'].replace(nl, '')}\t{row['cpi_sum_met_status_3'].replace(nl, '')}\t{row['cpi_sum_gen_1_missing']}\t{row['cpi_sum_gen_1_total']}\t{row['cpi_sum_gen_2_missing']}\t{row['cpi_sum_gen_2_total']}\t{row['cpi_sum_gen_3_missing']}\t{row['cpi_sum_gen_3_total']}\t{row['cpi_sum_hla_tool_1_guide']}\t{row['cpi_sum_hla_tool_2_guide']}")
     f.close()
 
     return
