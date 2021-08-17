@@ -46,7 +46,7 @@ def allele_definitions_hgvs_relation_to_name_text(allele_definitions_list, dbpmc
     for allele_definition in allele_definitions_list:
         allele_definition = json.load(open(allele_definition))
         for relation in allele_definition["hgvs_relation_to_name"]:
-            text += f"rel{rel_count}\t{relation['hgvs']}\t{', '.join(relation['name'])}\n"
+            text += f"rel{rel_count}\t{allele_definition['gene']}\t{relation['hgvs']}\t{', '.join(relation['name'])}\n"
             rel_count += 1
     f.write(text[:-1])
     f.close()
