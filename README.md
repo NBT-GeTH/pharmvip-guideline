@@ -35,8 +35,7 @@ pip install -e .
 ## Usage 
 
 We provide bash script to run package locate at `/resources/scripts/pharmvip_guideline_allele_matcher.sh`
-
-run by :
+edit file to set input path and run by :
 ```shell
 bash /resources/scripts/pharmvip_guideline_allele_matcher.sh
 ```
