@@ -55,8 +55,8 @@ pharmvip_guideline allele_matcher \
     --vcf_gz_file ${PATH_TO_INPUT_FILE} \
     --diplotype_cyp2d6 "resources/samples/blank/blank_diplotype_CYP2D6.tsv" \
     --diplotype_hla "resources/samples/blank/blank_diplotype_HLA.tsv" \
-    --outputs ${PATH_TO_INPUT_FILE} \
-    --dbpmcgenomics ${PATH_TO_INPUT_FILE}
+    --outputs ${PATH_TO_OUTPUT_FILE} \
+    --dbpmcgenomics ${PATH_TO_OUTPUT_FILE}
 ```
 
 
