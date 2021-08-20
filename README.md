@@ -40,8 +40,7 @@ edit file to set input path and run by :
 bash /resources/scripts/pharmvip_guideline_allele_matcher.sh
 ```
 
-### Optional
-The package can use on the CLI as:
+### Script fomat
 
 ```shell
 pharmvip_guideline allele_matcher \
@@ -57,5 +56,118 @@ pharmvip_guideline allele_matcher \
     --outputs ${PATH_TO_OUTPUT_FILE} \
     --dbpmcgenomics ${PATH_TO_OUTPUT_FILE}
 ```
+## Input requirement
+
+To ensure that this package process can run properly. The input file should be process as descript below.
+
+### Default input GVCF of PharmVIP 
+The GVCF should look like this:
+```
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	NA12878
+chr1	97077743	.	T	.	135.82	.	DP=36	GT:AD:DP:RGQ	0/0:36,0:36:99
+chr1	97077744	.	T	.	135.82	.	DP=36	GT:AD:DP:RGQ	0/0:36,0:36:99
+chr1	97077745	.	T	.	135.82	.	DP=36	GT:AD:DP:RGQ	0/0:36,0:36:99
+chr1	97077746	.	A	.	135.82	.	DP=36	GT:AD:DP:RGQ	0/0:36,0:36:99
+chr1	97077747	.	A	.	135.82	.	DP=36	GT:AD:DP:RGQ	0/0:36,0:36:99
+chr1	97077748	.	A	.	135.82	.	DP=36	GT:AD:DP:RGQ	0/0:36,0:36:99
+chr1	97077749	.	A	.	135.82	.	DP=36	GT:AD:DP:RGQ	0/0:36,0:36:99
+chr1	97077750	.	T	.	135.82	.	DP=36	GT:AD:DP:RGQ	0/0:36,0:36:99
+chr1	97077751	.	G	.	135.82	.	DP=36	GT:AD:DP:RGQ	0/0:36,0:36:99
+chr1	97077752	.	C	.	135.82	.	DP=36	GT:AD:DP:RGQ	0/0:36,0:36:99
+chr1	97077753	.	T	.	135.82	.	DP=36	GT:AD:DP:RGQ	0/0:36,0:36:99
+chr1	97077754	.	T	.	135.82	.	DP=36	GT:AD:DP:RGQ	0/0:36,0:36:99
+```
+
+### Input preprocessing
+
+Input preprocessing can be descript as follow :
+
+<!-- ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true) -->
+![alt text](https://github.com/NBT-GeTH/pharmvip-guideline/blob/master/resources/samples/vcf_processing.png )
+
+#### 1. Map to Reference Grch38
+```shell
+bwa mem -K 10000000 \
+       -M reference.fasta\
+        -R '@RG\\tID:input\\tLB:input\\tSM:input\\tPL:ILLUMINA' \
+        $read1 \
+        $read2 | samtools view -bS -@ ${task.cpus} -o input.bam
+```
+#### 2. Mark Duplicates
+```shell
+java -jar picard.jar MarkDuplicates \
+      I=input.bam \
+      O=marked_duplicates.bam \
+      M=marked_dup_metrics.txt
+```
+#### 3. Base Recalibration
+```shell
+gatk BaseRecalibrator \
+   -I input.bam \
+   -R reference.fasta \
+   --known-sites sites_of_variation.vcf \
+   --known-sites another/optional/setOfSitesToMask.vcf \
+   -O recal_data.table
+```
+```shell
+gatk PrintReads \
+	-R reference.fasta \
+   	-I input.bam \
+	-BQSR recal_data.table \
+	-o input.recal.bam
+```
+```shell
+samtools index input.recal.bam input.recal.bam.bai
+```    
+
+#### 4. Call Variants Per-Sample
+```shell
+gatk --java-options "-Xmx4g" HaplotypeCaller \
+-R reference.fasta \
+-I input.bam \
+-ERC GVCF \
+-variant_index_type LINEAR  \
+-variant_index_parameter 128000 \
+-o input.g.vcf
+```
+
+#### 5. Joint-Call Reference
+```shell
+gatk --java-options "-Xmx4g" GenotypeGVCFs \
+-R reference.fasta \
+--include-non-variant-sites true \
+--allow-old-rms-mapping-quality-annotation-data true \
+-V input.g.vcf.gz \
+-O input.vcf.gz \
+```
+
+#### 6. Consolidate GVCFs
+```shell
+gatk --java-options "-Xmx4g" CombineGVCFs \
+-R reference.fasta \
+--variant sample1.g.vcf.gz \
+--variant sample2.g.vcf.gz \
+-O combineCohort.g.vcf.gz
+```
+
+#### 7. Joint-Call Cohort
+```shell
+gatk --java-options "-Xmx4g" GenotypeGVCFs \
+-R reference.fasta \
+--include-non-variant-sites true \
+--allow-old-rms-mapping-quality-annotation-data true \
+-V combineCohort.g.vcf.gz \
+-O GenotypeCohort.vcf.gz
+```
+
+#### 8. Select 1 sample (GVCF)
+```shell
+gatk --java-options "-Xmx4g" SelectVariants \
+-V GenotypeCohort.vcf.gz \
+-sn sample1 \
+-O sample1.vcf.gz
+```
+
+
 
 
