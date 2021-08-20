@@ -179,6 +179,6 @@ the use of the platform is therefore solely at the user’s own risk and respons
 
 ## Contact
 
-   :world_map: [National Biobank of Thailand (NBT)](https://goo.gl/maps/PUMwh6WKUvGNJeym7)
-   :phone: Tel : 025647000 Ext. 71475
-   :email: nbt@nstda.or.th
+   :world_map: [National Biobank of Thailand (NBT)](https://goo.gl/maps/PUMwh6WKUvGNJeym7)<br />
+   :phone: Tel : 025647000 Ext. 71475<br />
+   :email: nbt@nstda.or.th<br />
