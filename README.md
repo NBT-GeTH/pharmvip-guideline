@@ -57,8 +57,8 @@ pharmvip_guideline allele_matcher \
 
 To ensure that the package run properly. The input file should be processed as described below.
 
-### Default input GVCF of PharmVIP 
-The GVCF should look like this:
+### Default input GVCF file for PharmVIP 
+The GVCF file should look like this:
 ```
 #CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	NA12878
 chr1	97077743	.	T	.	135.82	.	DP=36	GT:AD:DP:RGQ	0/0:36,0:36:99
@@ -77,12 +77,12 @@ chr1	97077754	.	T	.	135.82	.	DP=36	GT:AD:DP:RGQ	0/0:36,0:36:99
 
 ### Input preprocessing
 
-Input preprocessing can be descript as follow :
+The example workflow for data preprocessing to obtain the required GVCF input file is as follows :
 
 <!-- ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true) -->
 ![alt text](https://github.com/NBT-GeTH/pharmvip-guideline/blob/master/resources/samples/vcf_processing.png )
 
-#### 1. Map to Reference Grch38
+#### 1. Map FASTQ-reads to the GRCh38 reference genome
 ```shell
 bwa mem -K 10000000 \
        -M reference.fasta\
@@ -117,7 +117,7 @@ gatk PrintReads \
 samtools index input.recal.bam input.recal.bam.bai
 ```    
 
-#### 4. Call Variants Per-Sample
+#### 4. Variant Calling Per-Sample
 ```shell
 gatk --java-options "-Xmx4g" HaplotypeCaller \
 -R reference.fasta \
