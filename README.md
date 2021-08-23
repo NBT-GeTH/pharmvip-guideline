@@ -24,15 +24,15 @@ pip install -r requirements.txt
 
 This package can be installed as a python package by following the below instruction: 
 
-On the repository root directory run this commands to install pacakage.
+On the repository root directory, run this command to install the pacakage.
 ```shell
 pip install -e .
 ```
 
 ## Usage 
 
-We provide bash script to run package locate at `/resources/scripts/pharmvip_guideline_allele_matcher.sh`
-edit file to set input path and run by :
+We provide a bash script for running the package, which is located at `/resources/scripts/pharmvip_guideline_allele_matcher.sh`
+edit file to set the input path and run by :
 ```shell
 bash /resources/scripts/pharmvip_guideline_allele_matcher.sh
 ```
@@ -55,7 +55,7 @@ pharmvip_guideline allele_matcher \
 ```
 ## Input requirement
 
-To ensure that this package process can run properly. The input file should be process as descript below.
+To ensure that the package run properly. The input file should be processed as described below.
 
 ### Default input GVCF of PharmVIP 
 The GVCF should look like this:
