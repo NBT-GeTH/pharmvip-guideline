@@ -1,9 +1,7 @@
 # PharmVIP - Guideline Package
 
 PharmVIP (Pharmacogenomic Variant Analysis and Interpretation Platform) Guideline Package.
-This package offers allelic determination of 17 pharmacogenes from the Next-generation sequencing               
-(NGS) genotypic data and then reports the relevant Clinical Pharmacogenetics Implementation 
-Consortium (CPIC) drug guideline recommendations based on the predicted allele.
+This package offers allelic determination of 17 pharmacogenes from the Next-generation sequencing (NGS) genotypic data and then reports the relevant Clinical Pharmacogenetics Implementation Consortium (CPIC) drug guideline recommendations based on the predicted allele.
 
 
 ## Setup
