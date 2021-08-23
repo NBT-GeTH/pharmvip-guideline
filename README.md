@@ -1,9 +1,9 @@
 # PharmVIP - Guideline Package
 
 PharmVIP (Pharmacogenomic Variant Analysis and Interpretation Platform) Guideline Package.
-This package provides an implementation of the analysis and identification of variants 
-associated with gene which response to drugs and give drug guideline information base on 
-variants called.
+This package offers allelic determination of 17 pharmacogenes from the Next-generation sequencing               
+(NGS) genotypic data and then reports the relevant Clinical Pharmacogenetics Implementation 
+Consortium (CPIC) drug guideline recommendations based on the predicted allele.
 
 
 ## Setup
@@ -15,7 +15,7 @@ variants called.
 *   [cyvcf2 0.30.4](https://github.com/brentp/cyvcf2)
 
 You can set up Python virtual environment (you might need to install the
-`python3-venv` package first) with all needed dependencies inside the  repository using:
+`python3-venv` package first) with all needed dependencies inside the repository using:
 
 ```shell
 python3 -m venv pharmvip
@@ -23,9 +23,9 @@ source pharmvip/bin/activate
 pip install -r requirements.txt 
 ```
 
-### Install as python package
+### Install as a python package
 
-This package can install as a python package by follow : 
+This package can be installed as a python package by following the below instruction: 
 
 On the repository root directory run this commands to install pacakage.
 ```shell
