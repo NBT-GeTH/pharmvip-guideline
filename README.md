@@ -1,11 +1,8 @@
 # PharmVIP - Guideline Package
 
 PharmVIP (Pharmacogenomic Variant Analysis and Interpretation Platform) Guideline Package.
-This package provides an implementation of the analysis and identification of variants 
-associated with gene which response to drugs and give drug guideline information base on 
-variants called.
-
-
+This package offers allelic determination of 17 pharmacogenes from the Next-generation sequencing (NGS) genotypic data and then reports the 
+relevant Clinical Pharmacogenetics Implementation Consortium (CPIC) drug guideline recommendations based on the predicted allele.
 ## Setup
 
 ### Dependencies
@@ -15,7 +12,7 @@ variants called.
 *   [cyvcf2 0.30.4](https://github.com/brentp/cyvcf2)
 
 You can set up Python virtual environment (you might need to install the
-`python3-venv` package first) with all needed dependencies inside the  repository using:
+`python3-venv` package first) with all needed dependencies inside the repository using:
 
 ```shell
 python3 -m venv pharmvip
@@ -23,19 +20,19 @@ source pharmvip/bin/activate
 pip install -r requirements.txt 
 ```
 
-### Install as python package
+### Install as a python package
 
-This package can install as a python package by follow : 
+This package can be installed as a python package by following the below instruction: 
 
-On the repository root directory run this commands to install pacakage.
+On the repository root directory, run this command to install the pacakage.
 ```shell
 pip install -e .
 ```
 
 ## Usage 
 
-We provide bash script to run package locate at `/resources/scripts/pharmvip_guideline_allele_matcher.sh`
-edit file to set input path and run by :
+We provide a bash script for running the package, which is located at `/resources/scripts/pharmvip_guideline_allele_matcher.sh`
+edit file to set the input path and run by :
 ```shell
 bash /resources/scripts/pharmvip_guideline_allele_matcher.sh
 ```
@@ -58,10 +55,10 @@ pharmvip_guideline allele_matcher \
 ```
 ## Input requirement
 
-To ensure that this package process can run properly. The input file should be process as descript below.
+To ensure that the package run properly. The input file should be processed as described below.
 
-### Default input GVCF of PharmVIP 
-The GVCF should look like this:
+### Default input GVCF file for PharmVIP 
+The GVCF file should look like this:
 ```
 #CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	NA12878
 chr1	97077743	.	T	.	135.82	.	DP=36	GT:AD:DP:RGQ	0/0:36,0:36:99
@@ -80,12 +77,12 @@ chr1	97077754	.	T	.	135.82	.	DP=36	GT:AD:DP:RGQ	0/0:36,0:36:99
 
 ### Input preprocessing
 
-Input preprocessing can be descript as follow :
+The example workflow for data preprocessing to obtain the required GVCF input file is as follows :
 
 <!-- ![alt text](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true) -->
 ![alt text](https://github.com/NBT-GeTH/pharmvip-guideline/blob/master/resources/samples/vcf_processing.png )
 
-#### 1. Map to Reference Grch38
+#### 1. Map FASTQ-reads to the GRCh38 reference genome
 ```shell
 bwa mem -K 10000000 \
        -M reference.fasta\
@@ -120,7 +117,7 @@ gatk PrintReads \
 samtools index input.recal.bam input.recal.bam.bai
 ```    
 
-#### 4. Call Variants Per-Sample
+#### 4. Variant Calling Per-Sample
 ```shell
 gatk --java-options "-Xmx4g" HaplotypeCaller \
 -R reference.fasta \
