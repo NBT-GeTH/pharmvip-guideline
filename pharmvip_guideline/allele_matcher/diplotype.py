@@ -77,7 +77,7 @@ def read_diplotype(tsv):
                 "gt_bases": [],
                 "gt_phases": [],
                 "gene_phases": ".",
-                "count_diplotype": len(ast.literal_eval(df["guide_diplotype"][row])) if "/" in df["print_diplotype"][row] else 0,
+                "count_diplotype": len(list(set(ast.literal_eval(df["guide_diplotype"][row])))) if "/" in df["print_diplotype"][row] else 0,
                 "guide_dip": ["No info/No info"] if not ast.literal_eval(df["guide_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(ast.literal_eval(df["guide_diplotype"][row])))),
                 "print_dip": ["No info"] if not ast.literal_eval(df["print_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(ast.literal_eval(df["print_diplotype"][row])))),
                 "tool": handle_empty_hla_tools(df, row) if "tool" in df else ["N/A"]
