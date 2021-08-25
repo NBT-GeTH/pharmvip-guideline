@@ -7,7 +7,7 @@
 #zz
 .vscode
 znote
-resources/samples
+# resources/samples
 
 # Icon must end with two \r
 Icon
@@ -177,3 +177,4 @@ tests/query_testing/vcfs/tester.vcf.gz.tbi
 tests/query_testing/vcfs/testest.vcf.gz.tbi
 tests/query_testing/vcfs/vcf_handle.sh
 tests/unitest/matcher_debuger.py
+resources/samples/manual_testset
