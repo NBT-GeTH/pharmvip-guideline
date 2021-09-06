@@ -1,0 +1,3 @@
+sampleid	gene	tool_detail	guide_diplotype_detail	print_diplotype_detail	tool	guide_diplotype	print_diplotype
+blank	HLA-A	['ATHLATES', 'HLA-HD', 'KOURAMI']	['No info/No info', 'No info/No info', 'No info/No info']	['No info', 'No info', 'No info']	['ATHLATES,HLA-HD,KOURAMI']	['No info/No info']	['No info']
+blank	HLA-B	['ATHLATES', 'HLA-HD', 'KOURAMI']	['No info/No info', 'No info/No info', 'No info/No info']	['No info', 'No info', 'No info']	['ATHLATES,HLA-HD,KOURAMI']	['No info/No info']	['No info']
