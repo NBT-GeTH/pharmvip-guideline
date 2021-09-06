@@ -1,13 +1,15 @@
+# gg
+.out
+
+# zz
+.vscode
+znote
+
 ### macOS.gitignore
 # General
 .DS_Store
 .AppleDouble
 .LSOverride
-
-#zz
-.vscode
-znote
-# resources/samples
 
 # Icon must end with two \r
 Icon
