@@ -136,10 +136,7 @@ def parse_annotations(annotations, genes, annotations_short):
                 for gene in genes:
                     for m in met:
                         if gene in m:
-                            if sorted(genes) == ["CYP2C19", "CYP2D6"]:
-                                parsed.append(m.replace(f"{gene}:", f"For {gene}: "))
-                            else:
-                                parsed.append(m.replace(f"{gene}:", ""))
+                            parsed.append(m.replace(f"{gene}:", ""))
                 annotations["MetabolizerStatus"] = parsed
             else:
                 annotations["MetabolizerStatus"] = [annotations["MetabolizerStatus"].replace("<p>", "").replace("</p>", ""), ""]
