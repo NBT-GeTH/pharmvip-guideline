@@ -22,8 +22,8 @@ pharmvip_guideline allele_matcher \
     --ana_best_candidate true \
     --ana_genes_cyp2d6 true \
     --ana_options_hla true \
-    --vcf_gz_file "$SCRIPTPATH/../samples/HS01011/HS01011.vcf.gz" \
-    --diplotype_cyp2d6 "$SCRIPTPATH/../samples/HS01011/diplotype_CYP2D6.tsv" \
-    --diplotype_hla "$SCRIPTPATH/../samples/HS01011/diplotype_HLA.tsv" \
+    --vcf_gz_file "$SCRIPTPATH/../samples/NA12878_30x/NA12878_30x.vcf.gz" \
+    --diplotype_cyp2d6 "$SCRIPTPATH/../samples/NA12878_30x/NA12878_30x_diplotype_CYP2D6.tsv" \
+    --diplotype_hla "$SCRIPTPATH/../samples/NA12878_30x/NA12878_30x_diplotype_HLA.tsv" \
     --outputs "$SCRIPTPATH/../../.out" \
     --dbpmcgenomics "$SCRIPTPATH/../../.out"
