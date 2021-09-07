@@ -48,8 +48,8 @@ pharmvip_guideline allele_matcher \
     --ana_genes_cyp2d6 true \
     --ana_options_hla true \
     --vcf_gz_file ${PATH_TO_INPUT_FILE} \
-    --diplotype_cyp2d6 "$SCRIPTPATH/../samples/HS01011/diplotype_CYP2D6.tsv" \
-    --diplotype_hla "$SCRIPTPATH/../samples/HS01011/diplotype_HLA.tsv" \
+    --diplotype_cyp2d6 "$SCRIPTPATH/../samples/blank/diplotype_CYP2D6.tsv" \
+    --diplotype_hla "$SCRIPTPATH/../samples/blank/diplotype_HLA.tsv" \
     --outputs ${PATH_TO_OUTPUT_FILE} \
     --dbpmcgenomics ${PATH_TO_OUTPUT_FILE}
 ```
