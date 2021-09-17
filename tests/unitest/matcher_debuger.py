@@ -19,7 +19,7 @@ class args():
     ana_best_candidate = "true"
     
     vcf_gz_file = "/home/xixe/pharm/pharmvip-guideline/resources/samples/HS01002/HS01002_vcf_gz_file.vcf.gz"
-    outputs = "/home/xixe/tmp/optt"
+    outputs = "/tarafs/data/home/ktraipar/tmp/test_checker"
 
 
 
@@ -43,15 +43,15 @@ def matcher_tester(args):
 # black_list = {"HG01468_CPIC.vcf.gz","HS02011_final.vcf.gz"}
 
 # print(glob.glob(genomic_th))
-tttest = pack_path + '/../resources/samples/1000t/*.vcf.gz'
+tttest = pack_path + '/../resources/samples/manual_testset/*.vcf.gz'
 # testCYP2C9 = {"HG00288_CPIC.vcf.gz","HG00623_CPIC.vcf.gz","HG01089_CPIC.vcf.gz"}
-# testo = {"HG00288_CPIC.vcf.gz"}
+testo = {"WGSTH000180E_output-hc_filter.vcf.gz "}
 for inx,sample_path in enumerate(glob.glob(tttest)):
     
     file_name = os.path.basename(sample_path)
 
-    # if file_name  not in testo :
-    #     continue
+    if file_name  not in testo :
+        continue
     
     base = os.path.splitext(os.path.splitext(file_name)[0])[0]
 
