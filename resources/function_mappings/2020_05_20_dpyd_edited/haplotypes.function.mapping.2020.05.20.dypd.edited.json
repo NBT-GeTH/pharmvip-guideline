@@ -32,7 +32,8 @@
       "CYP2C19*32": "Uncertain function",
       "CYP2C19*33": "Uncertain function",
       "CYP2C19*34": "Uncertain function",
-      "CYP2C19*17": "Increased function"
+      "CYP2C19*17": "Increased function",
+      "CYP2C19*27": "N/A"
     }
   },
   "PA166176623": {
@@ -561,7 +562,8 @@
       "CYP2C19*7": "No function",
       "CYP2C19*8": "No function",
       "CYP2C19*4": "No function",
-      "CYP2C19*17": "Increased function"
+      "CYP2C19*17": "Increased function",
+      "CYP2C19*27": "N/A"
     }
   },
   "PA166104949": {},
@@ -862,7 +864,8 @@
       "CYP2C19*32": "Uncertain function",
       "CYP2C19*33": "Uncertain function",
       "CYP2C19*34": "Uncertain function",
-      "CYP2C19*17": "Increased function"
+      "CYP2C19*17": "Increased function",
+      "CYP2C19*27": "N/A"
     },
     "CYP2D6": {
       "Unknown": "Unknown",
@@ -1021,7 +1024,8 @@
       "CYP2C19*32": "Uncertain function",
       "CYP2C19*33": "Uncertain function",
       "CYP2C19*34": "Uncertain function",
-      "CYP2C19*17": "Increased function"
+      "CYP2C19*17": "Increased function",
+      "CYP2C19*27": "N/A"
     },
     "CYP2D6": {
       "CYP2D6*1": "Normal function",
@@ -1221,7 +1225,8 @@
       "CYP2C19*32": "Uncertain function",
       "CYP2C19*33": "Uncertain function",
       "CYP2C19*34": "Uncertain function",
-      "CYP2C19*17": "Increased function"
+      "CYP2C19*17": "Increased function",
+      "CYP2C19*27": "N/A"
     },
     "CYP2D6": {
       "Unknown": "Unknown",
@@ -1380,7 +1385,8 @@
       "CYP2C19*19": "Decreased function",
       "CYP2C19*25": "Decreased function",
       "CYP2C19*26": "Decreased function",
-      "CYP2C19*17": "Increased function"
+      "CYP2C19*17": "Increased function",
+      "CYP2C19*27": "N/A"
     },
     "CYP2D6": {
       "Unknown": "Unknown",
@@ -1709,7 +1715,8 @@
       "CYP2C19*32": "Uncertain function",
       "CYP2C19*33": "Uncertain function",
       "CYP2C19*34": "Uncertain function",
-      "CYP2C19*17": "Increased function"
+      "CYP2C19*17": "Increased function",
+      "CYP2C19*27": "N/A"
     },
     "CYP2D6": {
       "Unknown": "Unknown",
@@ -2481,7 +2488,8 @@
       "CYP2C19*32": "Uncertain function",
       "CYP2C19*33": "Uncertain function",
       "CYP2C19*34": "Uncertain function",
-      "CYP2C19*17": "Increased function"
+      "CYP2C19*17": "Increased function",
+      "CYP2C19*27": "N/A"
     }
   },
   "PA166127639": {
@@ -2517,7 +2525,8 @@
       "CYP2C19*19": "Decreased function",
       "CYP2C19*25": "Decreased function",
       "CYP2C19*26": "Decreased function",
-      "CYP2C19*17": "Increased function"
+      "CYP2C19*17": "Increased function",
+      "CYP2C19*27": "N/A"
     }
   },
   "PA166124619": {

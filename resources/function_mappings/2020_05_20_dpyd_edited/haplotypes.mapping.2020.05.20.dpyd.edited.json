@@ -34,7 +34,8 @@
     "*4": "CYP2C19*4",
     "Unknown": "Unknown",
     "*36": "CYP2C19*36",
-    "*37": "CYP2C19*37"
+    "*37": "CYP2C19*37",
+    "*27": "CYP2C19*27"
   },
   "CACNA1S": {
     "c.520C>T": "CACNA1Sc.520C>T",
@@ -684,7 +685,7 @@
     "Mahidol": "G6PD Mahidol",
     "Malaga": "G6PD Malaga",
     "Manhattan": "G6PD Manhattan",
-    "Mediterranean, Dallas, Panama, Sassari, Cagliari, Birmingham": "G6PD Mediterranean, Dallas, Panama' Sassari, Cagliari, Birmingham",
+    "Mediterranean, Dallas, Panama‚ Sassari, Cagliari, Birmingham": "G6PD Mediterranean, Dallas, Panama' Sassari, Cagliari, Birmingham",
     "Metaponto": "G6PD Metaponto",
     "A": "G6PD A",
     "Gidra": "G6PD Gidra",
