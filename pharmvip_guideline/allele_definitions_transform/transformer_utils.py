@@ -23,17 +23,17 @@ def manual_customize(allele_definition_df, gene):
         allele defination table 
     '''
     # try to drop unnessesary tuple (there is space in cell befor acctual data)
-    if gene == "G6PD": 
-        allele_definition_df.iloc[1, 0] = allele_definition_df.iloc[1, 1]
-        allele_definition_df.iloc[2, 0] = allele_definition_df.iloc[2, 1]
-        allele_definition_df.iloc[3, 0] = allele_definition_df.iloc[3, 1]
-        allele_definition_df.iloc[4, 0] = allele_definition_df.iloc[4, 1]
-        allele_definition_df.iloc[5, 0] = allele_definition_df.iloc[5, 1]
+    # if gene == "G6PD": 
+    #     allele_definition_df.iloc[1, 0] = allele_definition_df.iloc[1, 1]
+    #     allele_definition_df.iloc[2, 0] = allele_definition_df.iloc[2, 1]
+    #     allele_definition_df.iloc[3, 0] = allele_definition_df.iloc[3, 1]
+    #     allele_definition_df.iloc[4, 0] = allele_definition_df.iloc[4, 1]
+    #     allele_definition_df.iloc[5, 0] = allele_definition_df.iloc[5, 1]
 
-        allele_definition_df.drop([1], axis=1, inplace=True)
-        allele_definition_df.columns = range(allele_definition_df.shape[1])
+    #     allele_definition_df.drop([1], axis=1, inplace=True)
+    #     allele_definition_df.columns = range(allele_definition_df.shape[1])
 
-        return allele_definition_df
+    #     return allele_definition_df
         
     # something wrong with g.18138983G>A so we drop its allele defination
     if gene == "TPMT":
@@ -54,7 +54,6 @@ def manual_customize(allele_definition_df, gene):
                 allele_definition_df.iloc[row, 0] = "-1639G"
             elif allele_definition_df.iloc[row, 0] ==  "rs9923231 variant (T)":
                 allele_definition_df.iloc[row, 0] = "-1639A"
-        
         return allele_definition_df
 
     else:
