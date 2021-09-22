@@ -13,7 +13,19 @@ def diplotype_matched_text(ana_user_id, ana_id, diplotype_cpic, dbpmcgenomics):
         for i in range(len(row["print_dip"])):
             a_tag = ""
             if row["gene"] != "CYP2D6":
-                a_tag += f'<a href="/analysis/report_diplotype_details?pk={ana_id}&gene={row["gene"]}&matched_diplotypes={row["print_dip"][i] if row["print_dip"][i] == "No info" or row["print_dip"][i] == "?/?" else row["guide_dip"][i]}" target="_blank"><span style="font-size: 12px;">{row["print_dip"][i]}</span></a>'
+                if row["gene"] == "SLCO1B1" and (len(row["print_dip"]) > len(row["guide_dip"])):
+                    if row["print_dip"][i] == "rs4149056T/rs4149056T":
+                        a_tag += f'<a href="/analysis/report_diplotype_details?pk={ana_id}&gene={row["gene"]}&matched_diplotypes={row["print_dip"][i] if row["print_dip"][i] == "No info" or row["print_dip"][i] == "?/?" else "*1A/*1A"}" target="_blank"><span style="font-size: 12px;">{row["print_dip"][i]}</span></a>'
+                    elif row["print_dip"][i] == "rs4149056C/rs4149056C":
+                        a_tag += f'<a href="/analysis/report_diplotype_details?pk={ana_id}&gene={row["gene"]}&matched_diplotypes={row["print_dip"][i] if row["print_dip"][i] == "No info" or row["print_dip"][i] == "?/?" else "*5/*5"}" target="_blank"><span style="font-size: 12px;">{row["print_dip"][i]}</span></a>'
+                    elif row["print_dip"][i] == "rs4149056T/rs4149056C":
+                        a_tag += f'<a href="/analysis/report_diplotype_details?pk={ana_id}&gene={row["gene"]}&matched_diplotypes={row["print_dip"][i] if row["print_dip"][i] == "No info" or row["print_dip"][i] == "?/?" else "*1A/*5"}" target="_blank"><span style="font-size: 12px;">{row["print_dip"][i]}</span></a>'
+                    elif row["print_dip"][i] == "rs4149056C/rs4149056T":
+                        a_tag += f'<a href="/analysis/report_diplotype_details?pk={ana_id}&gene={row["gene"]}&matched_diplotypes={row["print_dip"][i] if row["print_dip"][i] == "No info" or row["print_dip"][i] == "?/?" else "*5/*1A"}" target="_blank"><span style="font-size: 12px;">{row["print_dip"][i]}</span></a>'
+                    else:
+                        a_tag += f'<a href="/analysis/report_diplotype_details?pk={ana_id}&gene={row["gene"]}&matched_diplotypes={row["print_dip"][i] if row["print_dip"][i] == "No info" or row["print_dip"][i] == "?/?" else row["print_dip"][i]}" target="_blank"><span style="font-size: 12px;">{row["print_dip"][i]}</span></a>'
+                else:
+                    a_tag += f'<a href="/analysis/report_diplotype_details?pk={ana_id}&gene={row["gene"]}&matched_diplotypes={row["print_dip"][i] if row["print_dip"][i] == "No info" or row["print_dip"][i] == "?/?" else row["guide_dip"][i]}" target="_blank"><span style="font-size: 12px;">{row["print_dip"][i]}</span></a>'
             else:
                 a_tag += f'{row["print_dip"][i]}'
             if i != int(len(row["print_dip"]) - 1):
