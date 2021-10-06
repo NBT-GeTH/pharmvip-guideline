@@ -253,6 +253,7 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                 else: # case which allele is del type but sample have no varint
                     # retrun sequence allele 
                     len_genome = (int(variant['end']) - int(variant['start']) + 1)
+                    error_in_range = 0
                     dp_in_range = [0] * len_genome
                     genotype_in_range = ["./."] * len_genome
                     for inx, in_range in enumerate(range(int(variant['start']), int(variant['end']) + 1)):
@@ -265,9 +266,13 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                                 dp_in_range[inx] = check_null_dp(genome.format("DP").tolist()[0][0]) if "DP" in genome.FORMAT else 0
                                 genotype_in_range[inx] = genome.gt_bases[0]
                             else:
-                                print(f"error in range with: {genome.var_type}, {genome.gt_bases[0]}")
-                                exit()
-                    v_vcf["dp"] = int(sum(dp_in_range) / len(dp_in_range))
+                                error_in_range = 1
+                                dp_in_range[inx] = 0
+                                genotype_in_range[inx] = "./."
+                    if error_in_range == 1:
+                        dp_in_range = [0]
+                        genotype_in_range = ["./."]
+                    v_vcf["dp"] = 0 if len(dp_in_range) == 1 and dp_in_range[0] == 0 else int(sum(dp_in_range) / len(dp_in_range))
                     v_vcf["gt_bases"] = extract_genotype_in_rage(allele_definition["gene"], genotype_in_range)
                     v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
                     v_vcf["allele1_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"][1:]) or re.match(r"^(\.+)$", v_vcf["allele2"][1:]) else v_vcf["allele1"][1:]
