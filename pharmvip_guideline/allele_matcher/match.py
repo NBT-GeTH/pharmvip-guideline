@@ -20,7 +20,7 @@ def create_hap_regex(variants):
         else:
             print(f"error create hap regex with: {variant['genotype_phases']}")
             exit()
-    return f"^{'_'.join(hap1_regex)}$", f"^{'_'.join(hap2_regex)}$"
+    return f"^{'_'.join(hap1_regex)}$".replace("*", "z"), f"^{'_'.join(hap2_regex)}$".replace("*", "z")
 
 def extract_iupac(name_haplotype):
     iupac = {
@@ -169,7 +169,7 @@ def handle_false_phase(allele_definition, allele_matcher) :
                                 hap1_match_name_allele_invert.append(f"({allele_matcher['variants'][i]['allele1_convert']})")
                             elif haplotype["variants"][i]["allele"] != allele_matcher["variants"][i]["allele2_convert"]:
                                 hap1_match_name_allele_invert.append(f"({allele_matcher['variants'][i]['allele2_convert']})")
-                    hap1_match_name_haplotype_invert_regex = f"^{'_'.join(hap1_match_name_allele_invert)}$"
+                    hap1_match_name_haplotype_invert_regex = f"^{'_'.join(hap1_match_name_allele_invert)}$".replace("*", "z")
                     print(f"{hap1_match_name}' haplotype regex: {hap1_match_name_haplotype_invert_regex}")
             
             for hap2_guide_dip in hap_match[inx + 1:]:
@@ -263,7 +263,7 @@ def handle_combine_phase(allele_definition, allele_matcher) :
                                 hap1_match_name_allele_invert.append(f"({allele_matcher['variants'][i]['allele2_convert']})")
                
                
-                hap1_match_name_haplotype_invert_regex = f"^{'_'.join(hap1_match_name_allele_invert)}$"
+                hap1_match_name_haplotype_invert_regex = f"^{'_'.join(hap1_match_name_allele_invert)}$".replace("*", "z")
                 for haplotype in allele_definition["haplotypes"]:
                     if haplotype["name"] in hap2_guide_dip:
                         hap2_match_name = haplotype["name"]
