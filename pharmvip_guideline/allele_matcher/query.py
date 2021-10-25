@@ -172,6 +172,25 @@ def sum_up_gene_phases(variants):
     elif True in gt_phases and False in gt_phases:
         return "Combine"
 
+def phase_checker(vcf_pro,matcer) :
+    if  vcf_pro.gt_phases :
+        iddd = matcer["sample_id"]
+        raise Exception(f"xxxxxxxxxxx{vcf_pro.gt_phases} Phases Detected in {iddd} at poss {vcf_pro.start} xxxxxxxxxxxxxxxxx")
+
+def count_call_variants(variants):
+    call_variants = 0
+    for variant in variants:
+        if variant["gt_phases"] != ".":
+            call_variants += 1
+    return call_variants
+
+def count_missing_call_variants(variants):
+    missing_call_variants = 0
+    for variant in variants:
+        if variant["gt_phases"] == ".":
+            missing_call_variants += 1
+    return missing_call_variants
+
 def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
     haplotype_template = allele_definition["haplotypes"][0]
     vcf = VCF(vcf_gz_file)
@@ -253,6 +272,7 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                 else: # case which allele is del type but sample have no varint
                     # retrun sequence allele 
                     len_genome = (int(variant['end']) - int(variant['start']) + 1)
+                    error_in_range = 0
                     dp_in_range = [0] * len_genome
                     genotype_in_range = ["./."] * len_genome
                     for inx, in_range in enumerate(range(int(variant['start']), int(variant['end']) + 1)):
@@ -261,13 +281,17 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                             # allele definition 1-based vs cyvcf2 0-based coordinate systems
                             if in_range != int(genome.start) + 1:
                                 continue
-                            if genome.var_type == "snp" or (genome.var_type != "snp" and (genome.genotypes[0][0] == 0 and genome.genotypes[0][1] == 0)) or re.match(r"^(\.+)\/(\.+)$", genome.gt_bases[0]):
+                            if (genome.var_type == "snp" and (genome.genotypes[0][0] == 0 and genome.genotypes[0][1] == 0)) or re.match(r"^(\.+)(\/|\|)(\.+)$", genome.gt_bases[0]):
                                 dp_in_range[inx] = check_null_dp(genome.format("DP").tolist()[0][0]) if "DP" in genome.FORMAT else 0
                                 genotype_in_range[inx] = genome.gt_bases[0]
                             else:
-                                print(f"error in range with: {genome.var_type}, {genome.gt_bases[0]}")
-                                exit()
-                    v_vcf["dp"] = int(sum(dp_in_range) / len(dp_in_range))
+                                error_in_range = 1
+                                dp_in_range[inx] = 0
+                                genotype_in_range[inx] = "./."
+                    if error_in_range == 1:
+                        dp_in_range = [0]
+                        genotype_in_range = ["./."]
+                    v_vcf["dp"] = 0 if len(dp_in_range) == 1 and dp_in_range[0] == 0 else int(sum(dp_in_range) / len(dp_in_range))
                     v_vcf["gt_bases"] = extract_genotype_in_rage(allele_definition["gene"], genotype_in_range)
                     v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
                     v_vcf["allele1_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"][1:]) or re.match(r"^(\.+)$", v_vcf["allele2"][1:]) else v_vcf["allele1"][1:]
@@ -281,8 +305,8 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
             print(f"error query region with: {variant['hgvs_type']}")
             exit()
 
-    allele_matcher["call_variants"]= call_variants
-    allele_matcher["missing_call_variants"] = total_call_variants - call_variants
+    allele_matcher["call_variants"]= count_call_variants(allele_matcher["variants"])
+    allele_matcher["missing_call_variants"] = count_missing_call_variants(allele_matcher["variants"])
     allele_matcher["total_variants"] = total_call_variants
     allele_matcher["gene_phases"] = sum_up_gene_phases(allele_matcher["variants"])
     
