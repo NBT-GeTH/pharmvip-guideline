@@ -2,7 +2,7 @@ import glob
 from pharmvip_guideline.utils.natural_sort import natural_keys
 import json
 from pharmvip_guideline.allele_matcher.query import query_region
-from pharmvip_guideline.allele_matcher.match import match_haplotypes, create_name_haplotype, extract_iupac
+from pharmvip_guideline.allele_matcher.match import match_haplotypes, create_name_haplotypes, extract_iupac
 from pharmvip_guideline.allele_matcher.candidate import find_best_candidate
 import re
 import copy
@@ -190,7 +190,7 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                 hap1_match = []
                 hap2_match = []
                 for haplotype in allele_definition["haplotypes"]:
-                    name_haplotype = create_name_haplotype(haplotype["variants"])
+                    name_haplotype = create_name_haplotypes(haplotype["variants"])
                     for _name_haplotype in name_haplotype:
                         hap1_regex, hap2_regex, hap1_haplotype, hap2_haplotype = create_hap_regex_ugt1a1(allele_matcher["variants"], haplotype["variants"])
                         # print(haplotype["name"], _name_haplotype)
