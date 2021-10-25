@@ -2,13 +2,6 @@
 
 clear
 
-# if [[ $(uname) == "Darwin" ]]; then
-#     source "/Users/csukrith/opt/anaconda3/etc/profile.d/conda.sh"
-# elif [[ $(uname) == "Linux" ]]; then
-#     source "/tarafs/biobank/data/modules/.local/easybuild/software/Miniconda3/4.7.12.1/etc/profile.d/conda.sh"
-# fi
-# conda activate "pharmvip-guideline"
-
 SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 if [ ! -d "$SCRIPTPATH/../../.out" ]; then
