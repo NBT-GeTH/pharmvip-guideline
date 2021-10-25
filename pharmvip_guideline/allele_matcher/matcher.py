@@ -102,8 +102,6 @@ def sum_diplotype(diplotype):
     return f"{'+'.join(_diplotype1)}/{'+'.join(_diplotype2)}"
 
 def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_file, outputs):
-    print("begin matcher")
-
     allele_definitions_list = []
     for allele_definition in glob.glob(allele_definitions + "/*.json"):
         allele_definitions_list.append(allele_definition)
@@ -115,7 +113,6 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
         if allele_definition["gene"] == "CYP2D6":
             continue
         else:
-
             allele_matcher = query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file)
             match_haplotypes(allele_definition, allele_matcher)
 

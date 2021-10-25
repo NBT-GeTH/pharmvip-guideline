@@ -18,20 +18,18 @@ class MyParser(argparse.ArgumentParser):
         sys.exit(2)
 
 def main():
-    # begin to setting things up
-    text1 = "This python script create to process on guide_line module.It have 2 fuctional which is\n"
-    text2 = "#1 allele_definitions_transform will convert those *.xls(those file store allele definitons) in to json file\n"
+    text1 = "This python script create to process on guideline module.It have 2 fuctional which is\n"
+    text2 = "#1 allele_definitions_transform will convert those *.xlsx(those file store allele definitons) in to json file\n"
     text3 = "#2 allele_matcher will matching genome from VCF with suitable drug guideline"
     dest_text = text1+text2+text3
     parser = MyParser(description=dest_text)
 
     subparsers = parser.add_subparsers(dest="subparser_name")
  
-    # add parser for using transform fucntion (initiate table n stuff)
     allele_definitions_transform_parser = subparsers.add_parser(name="allele_definitions_transform")
     allele_definitions_transform_parser.add_argument(
         "--allele_definitions",
-        help="use this option follow with $path to specific where those *xls which store allele definitions to be use in the process",
+        help="use this option follow with $path to specific where those *.xlsx which store allele definitions to be use in the process",
         required=False,
         default=defaults_allele_definitions_table
     )
@@ -48,7 +46,6 @@ def main():
         default=defaults_allele_definitions_dbpmcgenomics
     )
 
-    # add parser to use matcher (which will find guideline)
     allele_matcher_parser = subparsers.add_parser("allele_matcher")
     allele_matcher_parser.add_argument(
         "--allele_definitions",
