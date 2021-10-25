@@ -114,7 +114,7 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
             continue
         else:
             allele_matcher = query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file)
-            match_haplotypes(allele_definition, allele_matcher)
+            allele_matcher = match_haplotypes(allele_definition, allele_matcher)
 
             if ana_best_candidate == "true" and allele_matcher["count_diplotype"] > 1:
                 allele_matcher = find_best_candidate(allele_definition, allele_matcher)
