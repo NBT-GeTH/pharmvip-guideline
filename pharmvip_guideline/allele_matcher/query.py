@@ -10,6 +10,14 @@ def check_null_dp(dp):
     else:
         return 0
 
+def check_gt_format(gt):
+    '''
+    return True if it's correct gt format else False
+    '''
+    if re.match(r"^(.+)(\/|\|)(.+)$", gt):
+        return True
+    else:
+        return False
 
 def extract_genotype(gene, call_genotype):
     '''
@@ -164,16 +172,7 @@ def sum_up_gene_phases(variants):
     elif True in gt_phases and False in gt_phases:
         return "Combine"
 
-def phase_checker(vcf_pro,matcer) :
-    if  vcf_pro.gt_phases :
-        iddd = matcer["sample_id"]
-        raise Exception(f"xxxxxxxxxxx{vcf_pro.gt_phases} Phases Detected in {iddd} at poss {vcf_pro.start} xxxxxxxxxxxxxxxxx")
-
-
 def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
-    '''
-    for those allele search for genome in vcf sample and store it int json format
-    '''
     haplotype_template = allele_definition["haplotypes"][0]
     vcf = VCF(vcf_gz_file)
     allele_matcher = {}
@@ -187,7 +186,6 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
     allele_matcher["variants"] = []
 
     for variant in haplotype_template["variants"]:
-        # init variant json form
         v_vcf = {}
         v_vcf["hgvs"] = variant["hgvs"]
         v_vcf["hgvs_type"] = variant["hgvs_type"]
@@ -206,48 +204,50 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
         if variant["hgvs_type"] == "SNP" or variant["hgvs_type"] == "INS" or variant["hgvs_type"] == "CNV":
             region = f"{haplotype_template['chromosome']}:{variant['start']}-{variant['start']}"
             done_region = []
+
             for genome in vcf(region):
 
                 # allele definition 1-based vs cyvcf2 0-based coordinate systems
                 if int(variant["start"]) != int(genome.start) + 1:
                     continue
+
                 if int(genome.start) + 1 not in done_region:
                     done_region.append(int(genome.start) + 1)
                     call_variants += 1
                 else:
                     continue
                 
-                # phase_checker(genome, allele_matcher)
                 v_vcf["dp"] = check_null_dp(genome.format("DP").tolist()[0][0]) if "DP" in genome.FORMAT else 0
-                v_vcf["gt_bases"] = f"{genome.gt_bases[0]}|{genome.gt_bases[0]}" if allele_definition["gene"] == "G6PD" and "/" not in genome.gt_bases[0] and "|" not in genome.gt_bases[0] else genome.gt_bases[0] # some case got only one base ?
+                v_vcf["gt_bases"] = f"{genome.gt_bases[0]}|{genome.gt_bases[0]}" if allele_definition["gene"] == "G6PD" and not check_gt_format(genome.gt_bases[0]) else genome.gt_bases[0]
                 v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
                 v_vcf["allele1_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele1"])
                 v_vcf["allele2_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele2"])
                 v_vcf["gt_phases"] = sum_up_gt_phases(genome.gt_phases[0], v_vcf["allele1"], v_vcf["allele2"])
             allele_matcher["variants"].append(v_vcf)
 
-        elif variant["hgvs_type"] == "DEL":######***************
+        elif variant["hgvs_type"] == "DEL":
             region = f"{haplotype_template['chromosome']}:{int(variant['start']) - 1}-{int(variant['start']) - 1}"
             done_region = []
 
             for genome in vcf(region):
+
                 # allele definition 1-based vs cyvcf2 0-based coordinate systems
                 if int(variant["start"]) - 1 != int(genome.start) + 1:
                     continue
+
                 if int(genome.start) + 1 not in done_region:
-                        done_region.append(int(genome.start) + 1)
-                        call_variants += 1
+                    done_region.append(int(genome.start) + 1)
+                    call_variants += 1
                 else:
                     continue
                 
-                # phase_checker(genome, allele_matcher)
                 if genome.var_type == "indel" and genome.is_deletion == True:
                     #CASE in which DEL type and cyvcf found Deletion type in genome we we return as base start from allele which not deleted
                     v_vcf["dp"] = check_null_dp(genome.format("DP").tolist()[0][0]) if "DP" in genome.FORMAT else 0
-                    v_vcf["gt_bases"] = f"{genome.gt_bases[0]}|{genome.gt_bases[0]}" if allele_definition["gene"] == "G6PD" and "/" not in genome.gt_bases[0] and "|" not in genome.gt_bases[0] else genome.gt_bases[0]
+                    v_vcf["gt_bases"] = f"{genome.gt_bases[0]}|{genome.gt_bases[0]}" if allele_definition["gene"] == "G6PD" and not check_gt_format(genome.gt_bases[0]) else genome.gt_bases[0]
                     v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
                     v_vcf["allele1_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele1"])
-                    v_vcf["allele2_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele1"])
+                    v_vcf["allele2_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele2"])
                     v_vcf["gt_phases"] = sum_up_gt_phases(genome.gt_phases[0], v_vcf["allele1"], v_vcf["allele2"])
 
                 else: # case which allele is del type but sample have no varint
