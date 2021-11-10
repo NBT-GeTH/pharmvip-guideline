@@ -37,7 +37,11 @@ edit file to set the input path and run by :
 bash /resources/scripts/pharmvip_guideline_allele_matcher.sh
 ```
 
-### Script fomat
+### Input format
+- VCF file format 
+To ensure that the package run properly. The input file should be processed as described in [wiki](https://github.com/NBT-GeTH/pharmvip-guideline/wiki/Requirements-for-submitted-VCF-files)  
+
+### Script format
 
 ```shell
 pharmvip_guideline allele_matcher \
