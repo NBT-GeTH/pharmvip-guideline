@@ -11,6 +11,8 @@ from pharmvip_guideline.allele_matcher.diplotype import create_diplotype_cpic, r
 from cyvcf2 import VCF
 from pharmvip_guideline.allele_matcher.diplotype_dbpmcgenomics import diplotype_dbpmcgenomics
 from pharmvip_guideline.allele_matcher.annotation import *
+from pharmvip_guideline.allele_matcher.annotation2 import *
+
 
 class  MyParser(argparse.ArgumentParser):
     def  error(self, message):
@@ -168,7 +170,8 @@ def main():
             diplotype_cpic = diplotype_cpic.append(diplotype_hla)
             diplotype_cpic = diplotype_cpic.sort_values(by=["gene"])
             diplotype_cpic = diplotype_cpic.reset_index(drop=True)
-
+            
+            annotation2(args.clinical_guideline_annotations, args.function_mappings, diplotype_cpic, f"{args.clinical_guideline_annotations}/annotations_short/guideline_add_short.xlsx")
             summary_and_full_report = annotation(args.clinical_guideline_annotations, args.function_mappings, diplotype_cpic, f"{args.clinical_guideline_annotations}/annotations_short/guideline_add_short.xlsx")
             summary_and_full_report = handle_summary_and_full_report_layout(summary_and_full_report, diplotype_cpic)
             summary_and_full_report = drop_columns(summary_and_full_report, args.ana_options_cpic, args.ana_options_hla, args.ana_genes_cyp2d6)
@@ -187,6 +190,7 @@ def main():
             summary_and_full_report = replace_na(summary_and_full_report)
             summary_and_full_report = replace_matabolizer(summary_and_full_report)
             to_txt(summary_and_full_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id)
+
         else:
             print(f"error with ana_options: {args.ana_options_cpic}, {args.ana_genes_cyp2d6}, {args.ana_options_hla}")
             exit()

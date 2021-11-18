@@ -394,6 +394,7 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype, ann
     
     return pd.DataFrame(summary_and_full_report)
 
+
 def handle_summary_and_full_report_layout(summary_and_full_report, diplotypes):
     diplotypes_new = diplotypes.set_index("gene")
     
