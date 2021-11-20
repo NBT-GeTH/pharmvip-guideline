@@ -1,3 +1,6 @@
+### user.gitignore
+.out
+
 ### macOS.gitignore
 # General
 .DS_Store
@@ -165,3 +168,14 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+<<<<<<< HEAD
+=======
+tests/query_testing/vcfs/NUDT15_dot.vcf
+tests/query_testing/vcfs/NUDT15_dot.vcf.gz
+tests/query_testing/vcfs/NUDT15_dot.vcf.gz.tbi
+tests/query_testing/vcfs/tester.vcf.gz.tbi
+tests/query_testing/vcfs/testest.vcf.gz.tbi
+tests/query_testing/vcfs/vcf_handle.sh
+tests/unitest/matcher_debuger.py
+resources/samples/manual_testset
+>>>>>>> fd4398b6279a38ce3ec24a0c4e98f9971976bd5c

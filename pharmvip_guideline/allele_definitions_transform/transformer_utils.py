@@ -172,7 +172,11 @@ def match_hgvs(hgvs_cell):
     for cell in hgvs_cell:
         match_snp = re.match(r"^g\.((\d+)([A-Z]>([A-Z]|[A-Z](\/[A-Z])*)))*$", str(cell))
         match_ins = re.match(r"^g\.(\d+)_?(\d*)ins.+$", str(cell)) #^g\.(\d+)_?(\d*)ins[A-Z]+\/ins[A-Z]+$
+<<<<<<< HEAD
         match_del = re.match(r"^g\.(\d+)_?(\d*)del.*$", str(cell)) #^g\.(\d+)_?(\d*)del[A-Z]+$
+=======
+        match_del = re.match(r"^g\.(\d+)_?(\d*)del.+$", str(cell)) #^g\.(\d+)_?(\d*)del[A-Z]+$
+>>>>>>> fd4398b6279a38ce3ec24a0c4e98f9971976bd5c
         match_cnv = re.match(r"^g\.(\d+)", str(cell))
         if match_snp:
             """
@@ -238,6 +242,10 @@ def match_hgvs(hgvs_cell):
 
     return hgvs_cell, hgvs_type, start, end
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> fd4398b6279a38ce3ec24a0c4e98f9971976bd5c
 def findall_rsid(rsid_cell):
     '''
     return RSID list from each allele

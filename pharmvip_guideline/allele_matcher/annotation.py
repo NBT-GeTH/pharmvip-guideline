@@ -76,10 +76,14 @@ def function_mappings_diplotype_by_guideline_id(clinical_guideline_annotations, 
                         diplotype["allele1"] = former_allele1
                         diplotype["function1"] = ""
                     else:
+<<<<<<< HEAD
                         try:
                             altered_allele1 = haplotype_mapping[gene][former_allele1]
                         except:
                             altered_allele1 = "N/A"
+=======
+                        altered_allele1 = haplotype_mapping[gene][former_allele1]
+>>>>>>> fd4398b6279a38ce3ec24a0c4e98f9971976bd5c
                         diplotype["allele1"] = altered_allele1
                         diplotype["function1"] = haplotype_function_mapping[guideline_id][gene].get(altered_allele1, "")
                 if former_allele2 is not np.nan:
@@ -90,10 +94,14 @@ def function_mappings_diplotype_by_guideline_id(clinical_guideline_annotations, 
                         diplotype["allele2"] = former_allele2
                         diplotype["function2"] = ""
                     else:
+<<<<<<< HEAD
                         try:
                             altered_allele2 = haplotype_mapping[gene][former_allele2]
                         except:
                             altered_allele2 = "N/A"
+=======
+                        altered_allele2 = haplotype_mapping[gene][former_allele2]
+>>>>>>> fd4398b6279a38ce3ec24a0c4e98f9971976bd5c
                         diplotype["allele2"] = altered_allele2
                         diplotype["function2"] = haplotype_function_mapping[guideline_id][gene].get(altered_allele2, "")
 
