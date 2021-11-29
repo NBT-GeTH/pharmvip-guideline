@@ -1,1 +1,60 @@
-[{"id": 1200310, "guidelineid": 100409, "drugid": "RxNorm:1243041", "implications": {"CFTR": "An individual diagnosed with cystic fibrosis (CF) and CFTR variants listed in the FDA-approved drug label as being responsive to ivacaftor"}, "drugrecommendation": "Use ivacaftor according to the product label", "classification": "Moderate", "phenotypes": {"CFTR": "ivacaftor responsive in CF patients"}, "activityscore": {"CFTR": "n/a"}, "allelestatus": {}, "lookupkey": {"CFTR": "ivacaftor responsive in CF patients"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "ivacaftor"}, "guideline": {"name": "CFTR and Ivacaftor"}}, {"id": 1200309, "guidelineid": 100409, "drugid": "RxNorm:1243041", "implications": {"CFTR": "An individual diagnosed with cystic fibrosis (CF) and negative for a CFTR variant listed in the FDA-approved drug label as being responsive to ivacaftor."}, "drugrecommendation": "Ivacaftor is not recommended", "classification": "Moderate", "phenotypes": {"CFTR": "ivacaftor non-responsive in CF patients"}, "activityscore": {"CFTR": "n/a"}, "allelestatus": {}, "lookupkey": {"CFTR": "ivacaftor non-responsive in CF patients"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "ivacaftor"}, "guideline": {"name": "CFTR and Ivacaftor"}}]
+[
+    {
+        "activityscore": {
+            "CFTR": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "n/a",
+        "drug": {
+            "name": "ivacaftor"
+        },
+        "drugid": "RxNorm:1243041",
+        "drugrecommendation": "Use ivacaftor according to the product label",
+        "guideline": {
+            "name": "CFTR and Ivacaftor"
+        },
+        "guidelineid": 100409,
+        "id": 1352108,
+        "implications": {
+            "CFTR": "An individual diagnosed with cystic fibrosis (CF) and CFTR variants listed in the FDA-approved drug label as being responsive to ivacaftor"
+        },
+        "lookupkey": {
+            "CFTR": "ivacaftor responsive in CF patients"
+        },
+        "phenotypes": {
+            "CFTR": "ivacaftor responsive in CF patients"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CFTR": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "n/a",
+        "drug": {
+            "name": "ivacaftor"
+        },
+        "drugid": "RxNorm:1243041",
+        "drugrecommendation": "Ivacaftor is not recommended",
+        "guideline": {
+            "name": "CFTR and Ivacaftor"
+        },
+        "guidelineid": 100409,
+        "id": 1352107,
+        "implications": {
+            "CFTR": "An individual diagnosed with cystic fibrosis (CF) and negative for a CFTR variant listed in the FDA-approved drug label as being responsive to ivacaftor."
+        },
+        "lookupkey": {
+            "CFTR": "ivacaftor non-responsive in CF patients"
+        },
+        "phenotypes": {
+            "CFTR": "ivacaftor non-responsive in CF patients"
+        },
+        "population": "general",
+        "version": 1
+    }
+]

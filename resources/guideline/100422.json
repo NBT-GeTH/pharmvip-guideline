@@ -1,1 +1,56 @@
-[{"id": 1199175, "guidelineid": 100422, "drugid": "RxNorm:519", "implications": {"HLA-B": "Significantly increased risk of allopurinol-induced SCAR"}, "drugrecommendation": "Allopurinol is contraindicated", "classification": "Strong", "phenotypes": {}, "activityscore": {}, "allelestatus": {"HLA-B": "HLA-B*58:01 positive"}, "lookupkey": {"HLA-B": "*58:01 positive"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "allopurinol"}, "guideline": {"name": "HLA-B and Allopurinol"}}, {"id": 1199174, "guidelineid": 100422, "drugid": "RxNorm:519", "implications": {"HLA-B": "Low or reduced risk of allopurinol-induced SCAR"}, "drugrecommendation": "Use allopurinol per standard dosing guidelines", "classification": "Strong", "phenotypes": {}, "activityscore": {}, "allelestatus": {"HLA-B": "HLA-B*58:01 negative"}, "lookupkey": {"HLA-B": "*58:01 negative"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "allopurinol"}, "guideline": {"name": "HLA-B and Allopurinol"}}]
+[
+    {
+        "activityscore": {},
+        "allelestatus": {
+            "HLA-B": "HLA-B*58:01 positive"
+        },
+        "classification": "Strong",
+        "comments": "n/a",
+        "drug": {
+            "name": "allopurinol"
+        },
+        "drugid": "RxNorm:519",
+        "drugrecommendation": "Allopurinol is contraindicated",
+        "guideline": {
+            "name": "HLA-B and Allopurinol"
+        },
+        "guidelineid": 100422,
+        "id": 1350973,
+        "implications": {
+            "HLA-B": "Significantly increased risk of allopurinol-induced SCAR"
+        },
+        "lookupkey": {
+            "HLA-B": "*58:01 positive"
+        },
+        "phenotypes": {},
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {
+            "HLA-B": "HLA-B*58:01 negative"
+        },
+        "classification": "Strong",
+        "comments": "n/a",
+        "drug": {
+            "name": "allopurinol"
+        },
+        "drugid": "RxNorm:519",
+        "drugrecommendation": "Use allopurinol per standard dosing guidelines",
+        "guideline": {
+            "name": "HLA-B and Allopurinol"
+        },
+        "guidelineid": 100422,
+        "id": 1350972,
+        "implications": {
+            "HLA-B": "Low or reduced risk of allopurinol-induced SCAR"
+        },
+        "lookupkey": {
+            "HLA-B": "*58:01 negative"
+        },
+        "phenotypes": {},
+        "population": "general",
+        "version": 1
+    }
+]

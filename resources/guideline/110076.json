@@ -1,1 +1,930 @@
-[{"id": 1199829, "guidelineid": 110076, "drugid": "RxNorm:816346", "implications": {"CYP2C19": "Decreased plasma concentrations of PPIs compared to CYP2C19 NMs; increased risk of therapeutic failure"}, "drugrecommendation": "Increase starting daily dose by 100%. Daily dose may be given in divided doses. Monitor for efficacy.", "classification": "Optional", "phenotypes": {"CYP2C19": "Ultrarapid Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Ultrarapid Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "dexlansoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1199830, "guidelineid": 110076, "drugid": "RxNorm:816346", "implications": {"CYP2C19": "Decreased plasma concentrations of PPIs compared to CYP2C19 NMs; increased risk of therapeutic failure"}, "drugrecommendation": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses.\nMonitor for efficacy.", "classification": "Optional", "phenotypes": {"CYP2C19": "Rapid Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Rapid Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "dexlansoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1199831, "guidelineid": 110076, "drugid": "RxNorm:816346", "implications": {"CYP2C19": "Normal PPI metabolism; may be at increased risk of therapeutic failure compared to CYP2C19 IMs and PMs"}, "drugrecommendation": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses.\nMonitor for efficacy.", "classification": "Optional", "phenotypes": {"CYP2C19": "Normal Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Normal Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "dexlansoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1199832, "guidelineid": 110076, "drugid": "RxNorm:816346", "implications": {"CYP2C19": "Likely increased plasma concentration of PPI compared to CYP2C19 NMs; likely increased chance of efficacy and potentially toxicity"}, "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.", "classification": "Optional", "phenotypes": {"CYP2C19": "Likely Intermediate Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Likely Intermediate Metabolizer"}, "population": "general", "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.", "version": 1, "drug": {"name": "dexlansoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1199833, "guidelineid": 110076, "drugid": "RxNorm:816346", "implications": {"CYP2C19": "Increased plasma concentration of PPI compared to CYP2C19 NMs; increased chance of efficacy and potentially toxicity"}, "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.", "classification": "Optional", "phenotypes": {"CYP2C19": "Intermediate Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Intermediate Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "dexlansoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1199834, "guidelineid": 110076, "drugid": "RxNorm:816346", "implications": {"CYP2C19": "Likely increased plasma concentration of PPI compared to CYP2C19 NMs; likely increased chance of efficacy and potentially toxicity"}, "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.", "classification": "Optional", "phenotypes": {"CYP2C19": "Likely Poor Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Likely Poor Metabolizer"}, "population": "general", "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.", "version": 1, "drug": {"name": "dexlansoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1199835, "guidelineid": 110076, "drugid": "RxNorm:816346", "implications": {"CYP2C19": "Increased plasma concentration of PPI compared to CYP2C19 NMs; increased chance of efficacy and potentially toxicity"}, "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.", "classification": "Optional", "phenotypes": {"CYP2C19": "Poor Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Poor Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "dexlansoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1199836, "guidelineid": 110076, "drugid": "RxNorm:816346", "implications": {"CYP2C19": "n/a"}, "drugrecommendation": "No recommendation", "classification": "No Recommendation", "phenotypes": {"CYP2C19": "Indeterminate"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Indeterminate"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "dexlansoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200377, "guidelineid": 110076, "drugid": "RxNorm:7646", "implications": {"CYP2C19": "Likely increased plasma concentration of PPI compared to CYP2C19 NMs; likely increased chance of efficacy and potentially toxicity"}, "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.", "classification": "Optional", "phenotypes": {"CYP2C19": "Likely Intermediate Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Likely Intermediate Metabolizer"}, "population": "general", "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.", "version": 1, "drug": {"name": "omeprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200374, "guidelineid": 110076, "drugid": "RxNorm:7646", "implications": {"CYP2C19": "Decreased plasma concentrations of PPIs compared to CYP2C19 NMs; increased risk of therapeutic failure"}, "drugrecommendation": "Increase starting daily dose by 100%. Daily dose may be given in divided doses. Monitor for efficacy.", "classification": "Optional", "phenotypes": {"CYP2C19": "Ultrarapid Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Ultrarapid Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "omeprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200375, "guidelineid": 110076, "drugid": "RxNorm:7646", "implications": {"CYP2C19": "Decreased plasma concentrations of PPIs compared to CYP2C19 NMs; increased risk of therapeutic failure"}, "drugrecommendation": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses.\nMonitor for efficacy.", "classification": "Moderate", "phenotypes": {"CYP2C19": "Rapid Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Rapid Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "omeprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200376, "guidelineid": 110076, "drugid": "RxNorm:7646", "implications": {"CYP2C19": "Normal PPI metabolism; may be at increased risk of therapeutic failure compared to CYP2C19 IMs and PMs"}, "drugrecommendation": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses.\nMonitor for efficacy.", "classification": "Moderate", "phenotypes": {"CYP2C19": "Normal Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Normal Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "omeprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200378, "guidelineid": 110076, "drugid": "RxNorm:7646", "implications": {"CYP2C19": "Increased plasma concentration of PPI compared to CYP2C19 NMs; increased chance of efficacy and potentially toxicity"}, "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.", "classification": "Optional", "phenotypes": {"CYP2C19": "Intermediate Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Intermediate Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "omeprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200379, "guidelineid": 110076, "drugid": "RxNorm:7646", "implications": {"CYP2C19": "Likely increased plasma concentration of PPI compared to CYP2C19 NMs; likely increased chance of efficacy and potentially toxicity"}, "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.", "classification": "Moderate", "phenotypes": {"CYP2C19": "Likely Poor Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Likely Poor Metabolizer"}, "population": "general", "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.", "version": 1, "drug": {"name": "omeprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200380, "guidelineid": 110076, "drugid": "RxNorm:7646", "implications": {"CYP2C19": "Increased plasma concentration of PPI compared to CYP2C19 NMs; increased chance of efficacy and potentially toxicity"}, "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.", "classification": "Moderate", "phenotypes": {"CYP2C19": "Poor Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Poor Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "omeprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200381, "guidelineid": 110076, "drugid": "RxNorm:7646", "implications": {"CYP2C19": "n/a"}, "drugrecommendation": "No recommendation", "classification": "No Recommendation", "phenotypes": {"CYP2C19": "Indeterminate"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Indeterminate"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "omeprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200382, "guidelineid": 110076, "drugid": "RxNorm:17128", "implications": {"CYP2C19": "Decreased plasma concentrations of PPIs compared to CYP2C19 NMs; increased risk of therapeutic failure"}, "drugrecommendation": "Increase starting daily dose by 100%. Daily dose may be given in divided doses. Monitor for efficacy.", "classification": "Optional", "phenotypes": {"CYP2C19": "Ultrarapid Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Ultrarapid Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "lansoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200383, "guidelineid": 110076, "drugid": "RxNorm:17128", "implications": {"CYP2C19": "Decreased plasma concentrations of PPIs compared to CYP2C19 NMs; increased risk of therapeutic failure"}, "drugrecommendation": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses.\nMonitor for efficacy.", "classification": "Moderate", "phenotypes": {"CYP2C19": "Rapid Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Rapid Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "lansoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200384, "guidelineid": 110076, "drugid": "RxNorm:17128", "implications": {"CYP2C19": "Normal PPI metabolism; may be at increased risk of therapeutic failure compared to CYP2C19 IMs and PMs"}, "drugrecommendation": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses.\nMonitor for efficacy.", "classification": "Moderate", "phenotypes": {"CYP2C19": "Normal Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Normal Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "lansoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200385, "guidelineid": 110076, "drugid": "RxNorm:17128", "implications": {"CYP2C19": "Likely increased plasma concentration of PPI compared to CYP2C19 NMs; likely increased chance of efficacy and potentially toxicity"}, "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.", "classification": "Optional", "phenotypes": {"CYP2C19": "Likely Intermediate Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Likely Intermediate Metabolizer"}, "population": "general", "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.", "version": 1, "drug": {"name": "lansoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200386, "guidelineid": 110076, "drugid": "RxNorm:17128", "implications": {"CYP2C19": "Increased plasma concentration of PPI compared to CYP2C19 NMs; increased chance of efficacy and potentially toxicity"}, "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.", "classification": "Optional", "phenotypes": {"CYP2C19": "Intermediate Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Intermediate Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "lansoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200387, "guidelineid": 110076, "drugid": "RxNorm:17128", "implications": {"CYP2C19": "Likely increased plasma concentration of PPI compared to CYP2C19 NMs; likely increased chance of efficacy and potentially toxicity"}, "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.", "classification": "Moderate", "phenotypes": {"CYP2C19": "Likely Poor Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Likely Poor Metabolizer"}, "population": "general", "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.", "version": 1, "drug": {"name": "lansoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200388, "guidelineid": 110076, "drugid": "RxNorm:17128", "implications": {"CYP2C19": "Increased plasma concentration of PPI compared to CYP2C19 NMs; increased chance of efficacy and potentially toxicity"}, "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.", "classification": "Moderate", "phenotypes": {"CYP2C19": "Poor Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Poor Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "lansoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200389, "guidelineid": 110076, "drugid": "RxNorm:17128", "implications": {"CYP2C19": "n/a"}, "drugrecommendation": "No recommendation", "classification": "No Recommendation", "phenotypes": {"CYP2C19": "Indeterminate"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Indeterminate"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "lansoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200390, "guidelineid": 110076, "drugid": "RxNorm:40790", "implications": {"CYP2C19": "Decreased plasma concentrations of PPIs compared to CYP2C19 NMs; increased risk of therapeutic failure"}, "drugrecommendation": "Increase starting daily dose by 100%. Daily dose may be given in divided doses. Monitor for efficacy.", "classification": "Optional", "phenotypes": {"CYP2C19": "Ultrarapid Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Ultrarapid Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "pantoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200391, "guidelineid": 110076, "drugid": "RxNorm:40790", "implications": {"CYP2C19": "Decreased plasma concentrations of PPIs compared to CYP2C19 NMs; increased risk of therapeutic failure"}, "drugrecommendation": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses.\nMonitor for efficacy.", "classification": "Moderate", "phenotypes": {"CYP2C19": "Rapid Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Rapid Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "pantoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200392, "guidelineid": 110076, "drugid": "RxNorm:40790", "implications": {"CYP2C19": "Normal PPI metabolism; may be at increased risk of therapeutic failure compared to CYP2C19 IMs and PMs"}, "drugrecommendation": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses.\nMonitor for efficacy.", "classification": "Moderate", "phenotypes": {"CYP2C19": "Normal Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Normal Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "pantoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200393, "guidelineid": 110076, "drugid": "RxNorm:40790", "implications": {"CYP2C19": "Likely increased plasma concentration of PPI compared to CYP2C19 NMs; likely increased chance of efficacy and potentially toxicity"}, "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.", "classification": "Optional", "phenotypes": {"CYP2C19": "Likely Intermediate Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Likely Intermediate Metabolizer"}, "population": "general", "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.", "version": 1, "drug": {"name": "pantoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200394, "guidelineid": 110076, "drugid": "RxNorm:40790", "implications": {"CYP2C19": "Increased plasma concentration of PPI compared to CYP2C19 NMs; increased chance of efficacy and potentially toxicity"}, "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.", "classification": "Optional", "phenotypes": {"CYP2C19": "Intermediate Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Intermediate Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "pantoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200395, "guidelineid": 110076, "drugid": "RxNorm:40790", "implications": {"CYP2C19": "Likely increased plasma concentration of PPI compared to CYP2C19 NMs; likely increased chance of efficacy and potentially toxicity"}, "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.", "classification": "Moderate", "phenotypes": {"CYP2C19": "Likely Poor Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Likely Poor Metabolizer"}, "population": "general", "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.", "version": 1, "drug": {"name": "pantoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200396, "guidelineid": 110076, "drugid": "RxNorm:40790", "implications": {"CYP2C19": "Increased plasma concentration of PPI compared to CYP2C19 NMs; increased chance of efficacy and potentially toxicity"}, "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.", "classification": "Moderate", "phenotypes": {"CYP2C19": "Poor Metabolizer"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Poor Metabolizer"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "pantoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}, {"id": 1200397, "guidelineid": 110076, "drugid": "RxNorm:40790", "implications": {"CYP2C19": "n/a"}, "drugrecommendation": "No recommendation", "classification": "No Recommendation", "phenotypes": {"CYP2C19": "Indeterminate"}, "activityscore": {"CYP2C19": "n/a"}, "allelestatus": {}, "lookupkey": {"CYP2C19": "Indeterminate"}, "population": "general", "comments": "n/a", "version": 1, "drug": {"name": "pantoprazole"}, "guideline": {"name": "CYP2C19 and Proton Pump Inhibitors"}}]
+[
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "n/a",
+        "drug": {
+            "name": "dexlansoprazole"
+        },
+        "drugid": "RxNorm:816346",
+        "drugrecommendation": "Increase starting daily dose by 100%. Daily dose may be given in divided doses. Monitor for efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1351627,
+        "implications": {
+            "CYP2C19": "Decreased plasma concentrations of PPIs compared to CYP2C19 NMs; increased risk of therapeutic failure"
+        },
+        "lookupkey": {
+            "CYP2C19": "Ultrarapid Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "n/a",
+        "drug": {
+            "name": "dexlansoprazole"
+        },
+        "drugid": "RxNorm:816346",
+        "drugrecommendation": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses.\nMonitor for efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1351628,
+        "implications": {
+            "CYP2C19": "Decreased plasma concentrations of PPIs compared to CYP2C19 NMs; increased risk of therapeutic failure"
+        },
+        "lookupkey": {
+            "CYP2C19": "Rapid Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Rapid Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "n/a",
+        "drug": {
+            "name": "dexlansoprazole"
+        },
+        "drugid": "RxNorm:816346",
+        "drugrecommendation": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses.\nMonitor for efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1351629,
+        "implications": {
+            "CYP2C19": "Normal PPI metabolism; may be at increased risk of therapeutic failure compared to CYP2C19 IMs and PMs"
+        },
+        "lookupkey": {
+            "CYP2C19": "Normal Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.",
+        "drug": {
+            "name": "dexlansoprazole"
+        },
+        "drugid": "RxNorm:816346",
+        "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1351630,
+        "implications": {
+            "CYP2C19": "Likely increased plasma concentration of PPI compared to CYP2C19 NMs; likely increased chance of efficacy and potentially toxicity"
+        },
+        "lookupkey": {
+            "CYP2C19": "Likely Intermediate Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Likely Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "n/a",
+        "drug": {
+            "name": "dexlansoprazole"
+        },
+        "drugid": "RxNorm:816346",
+        "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1351631,
+        "implications": {
+            "CYP2C19": "Increased plasma concentration of PPI compared to CYP2C19 NMs; increased chance of efficacy and potentially toxicity"
+        },
+        "lookupkey": {
+            "CYP2C19": "Intermediate Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.",
+        "drug": {
+            "name": "dexlansoprazole"
+        },
+        "drugid": "RxNorm:816346",
+        "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1351632,
+        "implications": {
+            "CYP2C19": "Likely increased plasma concentration of PPI compared to CYP2C19 NMs; likely increased chance of efficacy and potentially toxicity"
+        },
+        "lookupkey": {
+            "CYP2C19": "Likely Poor Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Likely Poor Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "n/a",
+        "drug": {
+            "name": "dexlansoprazole"
+        },
+        "drugid": "RxNorm:816346",
+        "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1351633,
+        "implications": {
+            "CYP2C19": "Increased plasma concentration of PPI compared to CYP2C19 NMs; increased chance of efficacy and potentially toxicity"
+        },
+        "lookupkey": {
+            "CYP2C19": "Poor Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": "n/a",
+        "drug": {
+            "name": "dexlansoprazole"
+        },
+        "drugid": "RxNorm:816346",
+        "drugrecommendation": "No recommendation",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1351634,
+        "implications": {
+            "CYP2C19": "n/a"
+        },
+        "lookupkey": {
+            "CYP2C19": "Indeterminate"
+        },
+        "phenotypes": {
+            "CYP2C19": "Indeterminate"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.",
+        "drug": {
+            "name": "omeprazole"
+        },
+        "drugid": "RxNorm:7646",
+        "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352175,
+        "implications": {
+            "CYP2C19": "Likely increased plasma concentration of PPI compared to CYP2C19 NMs; likely increased chance of efficacy and potentially toxicity"
+        },
+        "lookupkey": {
+            "CYP2C19": "Likely Intermediate Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Likely Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "n/a",
+        "drug": {
+            "name": "omeprazole"
+        },
+        "drugid": "RxNorm:7646",
+        "drugrecommendation": "Increase starting daily dose by 100%. Daily dose may be given in divided doses. Monitor for efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352172,
+        "implications": {
+            "CYP2C19": "Decreased plasma concentrations of PPIs compared to CYP2C19 NMs; increased risk of therapeutic failure"
+        },
+        "lookupkey": {
+            "CYP2C19": "Ultrarapid Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "n/a",
+        "drug": {
+            "name": "omeprazole"
+        },
+        "drugid": "RxNorm:7646",
+        "drugrecommendation": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses.\nMonitor for efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352173,
+        "implications": {
+            "CYP2C19": "Decreased plasma concentrations of PPIs compared to CYP2C19 NMs; increased risk of therapeutic failure"
+        },
+        "lookupkey": {
+            "CYP2C19": "Rapid Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Rapid Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "n/a",
+        "drug": {
+            "name": "omeprazole"
+        },
+        "drugid": "RxNorm:7646",
+        "drugrecommendation": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses.\nMonitor for efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352174,
+        "implications": {
+            "CYP2C19": "Normal PPI metabolism; may be at increased risk of therapeutic failure compared to CYP2C19 IMs and PMs"
+        },
+        "lookupkey": {
+            "CYP2C19": "Normal Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "n/a",
+        "drug": {
+            "name": "omeprazole"
+        },
+        "drugid": "RxNorm:7646",
+        "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352176,
+        "implications": {
+            "CYP2C19": "Increased plasma concentration of PPI compared to CYP2C19 NMs; increased chance of efficacy and potentially toxicity"
+        },
+        "lookupkey": {
+            "CYP2C19": "Intermediate Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.",
+        "drug": {
+            "name": "omeprazole"
+        },
+        "drugid": "RxNorm:7646",
+        "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352177,
+        "implications": {
+            "CYP2C19": "Likely increased plasma concentration of PPI compared to CYP2C19 NMs; likely increased chance of efficacy and potentially toxicity"
+        },
+        "lookupkey": {
+            "CYP2C19": "Likely Poor Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Likely Poor Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "n/a",
+        "drug": {
+            "name": "omeprazole"
+        },
+        "drugid": "RxNorm:7646",
+        "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352178,
+        "implications": {
+            "CYP2C19": "Increased plasma concentration of PPI compared to CYP2C19 NMs; increased chance of efficacy and potentially toxicity"
+        },
+        "lookupkey": {
+            "CYP2C19": "Poor Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": "n/a",
+        "drug": {
+            "name": "omeprazole"
+        },
+        "drugid": "RxNorm:7646",
+        "drugrecommendation": "No recommendation",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352179,
+        "implications": {
+            "CYP2C19": "n/a"
+        },
+        "lookupkey": {
+            "CYP2C19": "Indeterminate"
+        },
+        "phenotypes": {
+            "CYP2C19": "Indeterminate"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "n/a",
+        "drug": {
+            "name": "lansoprazole"
+        },
+        "drugid": "RxNorm:17128",
+        "drugrecommendation": "Increase starting daily dose by 100%. Daily dose may be given in divided doses. Monitor for efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352180,
+        "implications": {
+            "CYP2C19": "Decreased plasma concentrations of PPIs compared to CYP2C19 NMs; increased risk of therapeutic failure"
+        },
+        "lookupkey": {
+            "CYP2C19": "Ultrarapid Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "n/a",
+        "drug": {
+            "name": "lansoprazole"
+        },
+        "drugid": "RxNorm:17128",
+        "drugrecommendation": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses.\nMonitor for efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352181,
+        "implications": {
+            "CYP2C19": "Decreased plasma concentrations of PPIs compared to CYP2C19 NMs; increased risk of therapeutic failure"
+        },
+        "lookupkey": {
+            "CYP2C19": "Rapid Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Rapid Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "n/a",
+        "drug": {
+            "name": "lansoprazole"
+        },
+        "drugid": "RxNorm:17128",
+        "drugrecommendation": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses.\nMonitor for efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352182,
+        "implications": {
+            "CYP2C19": "Normal PPI metabolism; may be at increased risk of therapeutic failure compared to CYP2C19 IMs and PMs"
+        },
+        "lookupkey": {
+            "CYP2C19": "Normal Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.",
+        "drug": {
+            "name": "lansoprazole"
+        },
+        "drugid": "RxNorm:17128",
+        "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352183,
+        "implications": {
+            "CYP2C19": "Likely increased plasma concentration of PPI compared to CYP2C19 NMs; likely increased chance of efficacy and potentially toxicity"
+        },
+        "lookupkey": {
+            "CYP2C19": "Likely Intermediate Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Likely Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "n/a",
+        "drug": {
+            "name": "lansoprazole"
+        },
+        "drugid": "RxNorm:17128",
+        "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352184,
+        "implications": {
+            "CYP2C19": "Increased plasma concentration of PPI compared to CYP2C19 NMs; increased chance of efficacy and potentially toxicity"
+        },
+        "lookupkey": {
+            "CYP2C19": "Intermediate Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.",
+        "drug": {
+            "name": "lansoprazole"
+        },
+        "drugid": "RxNorm:17128",
+        "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352185,
+        "implications": {
+            "CYP2C19": "Likely increased plasma concentration of PPI compared to CYP2C19 NMs; likely increased chance of efficacy and potentially toxicity"
+        },
+        "lookupkey": {
+            "CYP2C19": "Likely Poor Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Likely Poor Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "n/a",
+        "drug": {
+            "name": "lansoprazole"
+        },
+        "drugid": "RxNorm:17128",
+        "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352186,
+        "implications": {
+            "CYP2C19": "Increased plasma concentration of PPI compared to CYP2C19 NMs; increased chance of efficacy and potentially toxicity"
+        },
+        "lookupkey": {
+            "CYP2C19": "Poor Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": "n/a",
+        "drug": {
+            "name": "lansoprazole"
+        },
+        "drugid": "RxNorm:17128",
+        "drugrecommendation": "No recommendation",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352187,
+        "implications": {
+            "CYP2C19": "n/a"
+        },
+        "lookupkey": {
+            "CYP2C19": "Indeterminate"
+        },
+        "phenotypes": {
+            "CYP2C19": "Indeterminate"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "n/a",
+        "drug": {
+            "name": "pantoprazole"
+        },
+        "drugid": "RxNorm:40790",
+        "drugrecommendation": "Increase starting daily dose by 100%. Daily dose may be given in divided doses. Monitor for efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352188,
+        "implications": {
+            "CYP2C19": "Decreased plasma concentrations of PPIs compared to CYP2C19 NMs; increased risk of therapeutic failure"
+        },
+        "lookupkey": {
+            "CYP2C19": "Ultrarapid Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "n/a",
+        "drug": {
+            "name": "pantoprazole"
+        },
+        "drugid": "RxNorm:40790",
+        "drugrecommendation": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses.\nMonitor for efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352189,
+        "implications": {
+            "CYP2C19": "Decreased plasma concentrations of PPIs compared to CYP2C19 NMs; increased risk of therapeutic failure"
+        },
+        "lookupkey": {
+            "CYP2C19": "Rapid Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Rapid Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "n/a",
+        "drug": {
+            "name": "pantoprazole"
+        },
+        "drugid": "RxNorm:40790",
+        "drugrecommendation": "Initiate standard starting daily dose. Consider increasing dose by 50-100% for the treatment of H. pylori infection and erosive esophagitis. Daily dose may be given in divided doses.\nMonitor for efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352190,
+        "implications": {
+            "CYP2C19": "Normal PPI metabolism; may be at increased risk of therapeutic failure compared to CYP2C19 IMs and PMs"
+        },
+        "lookupkey": {
+            "CYP2C19": "Normal Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.",
+        "drug": {
+            "name": "pantoprazole"
+        },
+        "drugid": "RxNorm:40790",
+        "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352191,
+        "implications": {
+            "CYP2C19": "Likely increased plasma concentration of PPI compared to CYP2C19 NMs; likely increased chance of efficacy and potentially toxicity"
+        },
+        "lookupkey": {
+            "CYP2C19": "Likely Intermediate Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Likely Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "n/a",
+        "drug": {
+            "name": "pantoprazole"
+        },
+        "drugid": "RxNorm:40790",
+        "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352192,
+        "implications": {
+            "CYP2C19": "Increased plasma concentration of PPI compared to CYP2C19 NMs; increased chance of efficacy and potentially toxicity"
+        },
+        "lookupkey": {
+            "CYP2C19": "Intermediate Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.",
+        "drug": {
+            "name": "pantoprazole"
+        },
+        "drugid": "RxNorm:40790",
+        "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352193,
+        "implications": {
+            "CYP2C19": "Likely increased plasma concentration of PPI compared to CYP2C19 NMs; likely increased chance of efficacy and potentially toxicity"
+        },
+        "lookupkey": {
+            "CYP2C19": "Likely Poor Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Likely Poor Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "n/a",
+        "drug": {
+            "name": "pantoprazole"
+        },
+        "drugid": "RxNorm:40790",
+        "drugrecommendation": "Initiate standard starting daily dose. For chronic therapy (>12 weeks) and efficacy achieved, consider 50% reduction in daily dose and monitor for continued efficacy.",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352194,
+        "implications": {
+            "CYP2C19": "Increased plasma concentration of PPI compared to CYP2C19 NMs; increased chance of efficacy and potentially toxicity"
+        },
+        "lookupkey": {
+            "CYP2C19": "Poor Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2C19": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {
+            "CYP2C19": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": "n/a",
+        "drug": {
+            "name": "pantoprazole"
+        },
+        "drugid": "RxNorm:40790",
+        "drugrecommendation": "No recommendation",
+        "guideline": {
+            "name": "CYP2C19 and Proton Pump Inhibitors"
+        },
+        "guidelineid": 110076,
+        "id": 1352195,
+        "implications": {
+            "CYP2C19": "n/a"
+        },
+        "lookupkey": {
+            "CYP2C19": "Indeterminate"
+        },
+        "phenotypes": {
+            "CYP2C19": "Indeterminate"
+        },
+        "population": "general",
+        "version": 1
+    }
+]

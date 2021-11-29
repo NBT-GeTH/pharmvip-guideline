@@ -1,1 +1,569 @@
-[{"id": 1199176, "guidelineid": 826283, "drugid": "RxNorm:641", "implications": {"MT-RNR1": "Very high risk of developing hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Avoid aminoglycoside anitbiotics unless the high risk of permanent hearing loss is outweighed by the severity of infection and lack of safe or effective alternative therapies.", "classification": "Strong", "phenotypes": {"MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "If no effective alternative to an aminoglycoside antibiotic is available, evaluate for hearing loss frequently during therapy and ensure that all appropriate precautions are utilized (e.g., lowest possible dose and duration, utilization of therapeutic drug monitoring, hydration, renal function monitoring).", "version": 1, "drug": {"name": "amikacin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199177, "guidelineid": 826283, "drugid": "RxNorm:641", "implications": {"MT-RNR1": "Normal risk of developing hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.", "classification": "Strong", "phenotypes": {"MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.", "version": 1, "drug": {"name": "amikacin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199178, "guidelineid": 826283, "drugid": "RxNorm:641", "implications": {"MT-RNR1": "Weak or no evidence for an increased risk of MT-RNR1 associated hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.", "classification": "Optional", "phenotypes": {"MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.", "version": 1, "drug": {"name": "amikacin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199179, "guidelineid": 826283, "drugid": "ATC:D06AX07", "implications": {"MT-RNR1": "Very high risk of developing hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Avoid aminoglycoside anitbiotics unless the high risk of permanent hearing loss is outweighed by the severity of infection and lack of safe or effective alternative therapies.", "classification": "Strong", "phenotypes": {"MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "If no effective alternative to an aminoglycoside antibiotic is available, evaluate for hearing loss frequently during therapy and ensure that all appropriate precautions are utilized (e.g., lowest possible dose and duration, utilization of therapeutic drug monitoring, hydration, renal function monitoring).", "version": 1, "drug": {"name": "gentamicin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199180, "guidelineid": 826283, "drugid": "ATC:D06AX07", "implications": {"MT-RNR1": "Normal risk of developing hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.", "classification": "Strong", "phenotypes": {"MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.", "version": 1, "drug": {"name": "gentamicin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199181, "guidelineid": 826283, "drugid": "ATC:D06AX07", "implications": {"MT-RNR1": "Weak or no evidence for an increased risk of MT-RNR1 associated hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.", "classification": "Optional", "phenotypes": {"MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.", "version": 1, "drug": {"name": "gentamicin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199182, "guidelineid": 826283, "drugid": "RxNorm:6099", "implications": {"MT-RNR1": "Very high risk of developing hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Avoid aminoglycoside anitbiotics unless the high risk of permanent hearing loss is outweighed by the severity of infection and lack of safe or effective alternative therapies.", "classification": "Strong", "phenotypes": {"MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "If no effective alternative to an aminoglycoside antibiotic is available, evaluate for hearing loss frequently during therapy and ensure that all appropriate precautions are utilized (e.g., lowest possible dose and duration, utilization of therapeutic drug monitoring, hydration, renal function monitoring).", "version": 1, "drug": {"name": "kanamycin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199183, "guidelineid": 826283, "drugid": "RxNorm:6099", "implications": {"MT-RNR1": "Normal risk of developing hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.", "classification": "Strong", "phenotypes": {"MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.", "version": 1, "drug": {"name": "kanamycin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199184, "guidelineid": 826283, "drugid": "RxNorm:6099", "implications": {"MT-RNR1": "Weak or no evidence for an increased risk of MT-RNR1 associated hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.", "classification": "Optional", "phenotypes": {"MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.", "version": 1, "drug": {"name": "kanamycin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199185, "guidelineid": 826283, "drugid": "RxNorm:7934", "implications": {"MT-RNR1": "Very high risk of developing hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Avoid aminoglycoside anitbiotics unless the high risk of permanent hearing loss is outweighed by the severity of infection and lack of safe or effective alternative therapies.", "classification": "Strong", "phenotypes": {"MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "If no effective alternative to an aminoglycoside antibiotic is available, evaluate for hearing loss frequently during therapy and ensure that all appropriate precautions are utilized (e.g., lowest possible dose and duration, utilization of therapeutic drug monitoring, hydration, renal function monitoring).", "version": 1, "drug": {"name": "paromomycin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199186, "guidelineid": 826283, "drugid": "RxNorm:7934", "implications": {"MT-RNR1": "Normal risk of developing hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.", "classification": "Strong", "phenotypes": {"MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.", "version": 1, "drug": {"name": "paromomycin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199187, "guidelineid": 826283, "drugid": "RxNorm:7934", "implications": {"MT-RNR1": "Weak or no evidence for an increased risk of MT-RNR1 associated hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.", "classification": "Optional", "phenotypes": {"MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.", "version": 1, "drug": {"name": "paromomycin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199188, "guidelineid": 826283, "drugid": "RxNorm:2049549", "implications": {"MT-RNR1": "Very high risk of developing hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Avoid aminoglycoside anitbiotics unless the high risk of permanent hearing loss is outweighed by the severity of infection and lack of safe or effective alternative therapies.", "classification": "Strong", "phenotypes": {"MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "If no effective alternative to an aminoglycoside antibiotic is available, evaluate for hearing loss frequently during therapy and ensure that all appropriate precautions are utilized (e.g., lowest possible dose and duration, utilization of therapeutic drug monitoring, hydration, renal function monitoring).", "version": 1, "drug": {"name": "plazomicin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199189, "guidelineid": 826283, "drugid": "RxNorm:2049549", "implications": {"MT-RNR1": "Normal risk of developing hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.", "classification": "Strong", "phenotypes": {"MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.", "version": 1, "drug": {"name": "plazomicin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199190, "guidelineid": 826283, "drugid": "RxNorm:2049549", "implications": {"MT-RNR1": "Weak or no evidence for an increased risk of MT-RNR1 associated hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.", "classification": "Optional", "phenotypes": {"MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.", "version": 1, "drug": {"name": "plazomicin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199191, "guidelineid": 826283, "drugid": "RxNorm:10109", "implications": {"MT-RNR1": "Very high risk of developing hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Avoid aminoglycoside anitbiotics unless the high risk of permanent hearing loss is outweighed by the severity of infection and lack of safe or effective alternative therapies.", "classification": "Strong", "phenotypes": {"MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "If no effective alternative to an aminoglycoside antibiotic is available, evaluate for hearing loss frequently during therapy and ensure that all appropriate precautions are utilized (e.g., lowest possible dose and duration, utilization of therapeutic drug monitoring, hydration, renal function monitoring).", "version": 1, "drug": {"name": "streptomycin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199192, "guidelineid": 826283, "drugid": "RxNorm:10109", "implications": {"MT-RNR1": "Normal risk of developing hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.", "classification": "Strong", "phenotypes": {"MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.", "version": 1, "drug": {"name": "streptomycin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199193, "guidelineid": 826283, "drugid": "RxNorm:10109", "implications": {"MT-RNR1": "Weak or no evidence for an increased risk of MT-RNR1 associated hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.", "classification": "Optional", "phenotypes": {"MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.", "version": 1, "drug": {"name": "streptomycin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199194, "guidelineid": 826283, "drugid": "RxNorm:10627", "implications": {"MT-RNR1": "Very high risk of developing hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Avoid aminoglycoside anitbiotics unless the high risk of permanent hearing loss is outweighed by the severity of infection and lack of safe or effective alternative therapies.", "classification": "Strong", "phenotypes": {"MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "If no effective alternative to an aminoglycoside antibiotic is available, evaluate for hearing loss frequently during therapy and ensure that all appropriate precautions are utilized (e.g., lowest possible dose and duration, utilization of therapeutic drug monitoring, hydration, renal function monitoring).", "version": 1, "drug": {"name": "tobramycin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199195, "guidelineid": 826283, "drugid": "RxNorm:10627", "implications": {"MT-RNR1": "Normal risk of developing hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.", "classification": "Strong", "phenotypes": {"MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.", "version": 1, "drug": {"name": "tobramycin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}, {"id": 1199196, "guidelineid": 826283, "drugid": "RxNorm:10627", "implications": {"MT-RNR1": "Weak or no evidence for an increased risk of MT-RNR1 associated hearing loss if administered an aminoglycoside antibiotic."}, "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.", "classification": "Optional", "phenotypes": {"MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"}, "activityscore": {}, "allelestatus": {}, "lookupkey": {"MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"}, "population": "general", "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.", "version": 1, "drug": {"name": "tobramycin"}, "guideline": {"name": "MT-RNR1 and Aminoglycosides"}}]
+[
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "If no effective alternative to an aminoglycoside antibiotic is available, evaluate for hearing loss frequently during therapy and ensure that all appropriate precautions are utilized (e.g., lowest possible dose and duration, utilization of therapeutic drug monitoring, hydration, renal function monitoring).",
+        "drug": {
+            "name": "amikacin"
+        },
+        "drugid": "RxNorm:641",
+        "drugrecommendation": "Avoid aminoglycoside anitbiotics unless the high risk of permanent hearing loss is outweighed by the severity of infection and lack of safe or effective alternative therapies.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350974,
+        "implications": {
+            "MT-RNR1": "Very high risk of developing hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.",
+        "drug": {
+            "name": "amikacin"
+        },
+        "drugid": "RxNorm:641",
+        "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350975,
+        "implications": {
+            "MT-RNR1": "Normal risk of developing hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.",
+        "drug": {
+            "name": "amikacin"
+        },
+        "drugid": "RxNorm:641",
+        "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350976,
+        "implications": {
+            "MT-RNR1": "Weak or no evidence for an increased risk of MT-RNR1 associated hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "If no effective alternative to an aminoglycoside antibiotic is available, evaluate for hearing loss frequently during therapy and ensure that all appropriate precautions are utilized (e.g., lowest possible dose and duration, utilization of therapeutic drug monitoring, hydration, renal function monitoring).",
+        "drug": {
+            "name": "gentamicin"
+        },
+        "drugid": "ATC:D06AX07",
+        "drugrecommendation": "Avoid aminoglycoside anitbiotics unless the high risk of permanent hearing loss is outweighed by the severity of infection and lack of safe or effective alternative therapies.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350977,
+        "implications": {
+            "MT-RNR1": "Very high risk of developing hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.",
+        "drug": {
+            "name": "gentamicin"
+        },
+        "drugid": "ATC:D06AX07",
+        "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350978,
+        "implications": {
+            "MT-RNR1": "Normal risk of developing hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.",
+        "drug": {
+            "name": "gentamicin"
+        },
+        "drugid": "ATC:D06AX07",
+        "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350979,
+        "implications": {
+            "MT-RNR1": "Weak or no evidence for an increased risk of MT-RNR1 associated hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "If no effective alternative to an aminoglycoside antibiotic is available, evaluate for hearing loss frequently during therapy and ensure that all appropriate precautions are utilized (e.g., lowest possible dose and duration, utilization of therapeutic drug monitoring, hydration, renal function monitoring).",
+        "drug": {
+            "name": "kanamycin"
+        },
+        "drugid": "RxNorm:6099",
+        "drugrecommendation": "Avoid aminoglycoside anitbiotics unless the high risk of permanent hearing loss is outweighed by the severity of infection and lack of safe or effective alternative therapies.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350980,
+        "implications": {
+            "MT-RNR1": "Very high risk of developing hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.",
+        "drug": {
+            "name": "kanamycin"
+        },
+        "drugid": "RxNorm:6099",
+        "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350981,
+        "implications": {
+            "MT-RNR1": "Normal risk of developing hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.",
+        "drug": {
+            "name": "kanamycin"
+        },
+        "drugid": "RxNorm:6099",
+        "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350982,
+        "implications": {
+            "MT-RNR1": "Weak or no evidence for an increased risk of MT-RNR1 associated hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "If no effective alternative to an aminoglycoside antibiotic is available, evaluate for hearing loss frequently during therapy and ensure that all appropriate precautions are utilized (e.g., lowest possible dose and duration, utilization of therapeutic drug monitoring, hydration, renal function monitoring).",
+        "drug": {
+            "name": "paromomycin"
+        },
+        "drugid": "RxNorm:7934",
+        "drugrecommendation": "Avoid aminoglycoside anitbiotics unless the high risk of permanent hearing loss is outweighed by the severity of infection and lack of safe or effective alternative therapies.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350983,
+        "implications": {
+            "MT-RNR1": "Very high risk of developing hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.",
+        "drug": {
+            "name": "paromomycin"
+        },
+        "drugid": "RxNorm:7934",
+        "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350984,
+        "implications": {
+            "MT-RNR1": "Normal risk of developing hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.",
+        "drug": {
+            "name": "paromomycin"
+        },
+        "drugid": "RxNorm:7934",
+        "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350985,
+        "implications": {
+            "MT-RNR1": "Weak or no evidence for an increased risk of MT-RNR1 associated hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "If no effective alternative to an aminoglycoside antibiotic is available, evaluate for hearing loss frequently during therapy and ensure that all appropriate precautions are utilized (e.g., lowest possible dose and duration, utilization of therapeutic drug monitoring, hydration, renal function monitoring).",
+        "drug": {
+            "name": "plazomicin"
+        },
+        "drugid": "RxNorm:2049549",
+        "drugrecommendation": "Avoid aminoglycoside anitbiotics unless the high risk of permanent hearing loss is outweighed by the severity of infection and lack of safe or effective alternative therapies.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350986,
+        "implications": {
+            "MT-RNR1": "Very high risk of developing hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.",
+        "drug": {
+            "name": "plazomicin"
+        },
+        "drugid": "RxNorm:2049549",
+        "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350987,
+        "implications": {
+            "MT-RNR1": "Normal risk of developing hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.",
+        "drug": {
+            "name": "plazomicin"
+        },
+        "drugid": "RxNorm:2049549",
+        "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350988,
+        "implications": {
+            "MT-RNR1": "Weak or no evidence for an increased risk of MT-RNR1 associated hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "If no effective alternative to an aminoglycoside antibiotic is available, evaluate for hearing loss frequently during therapy and ensure that all appropriate precautions are utilized (e.g., lowest possible dose and duration, utilization of therapeutic drug monitoring, hydration, renal function monitoring).",
+        "drug": {
+            "name": "streptomycin"
+        },
+        "drugid": "RxNorm:10109",
+        "drugrecommendation": "Avoid aminoglycoside anitbiotics unless the high risk of permanent hearing loss is outweighed by the severity of infection and lack of safe or effective alternative therapies.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350989,
+        "implications": {
+            "MT-RNR1": "Very high risk of developing hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.",
+        "drug": {
+            "name": "streptomycin"
+        },
+        "drugid": "RxNorm:10109",
+        "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350990,
+        "implications": {
+            "MT-RNR1": "Normal risk of developing hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.",
+        "drug": {
+            "name": "streptomycin"
+        },
+        "drugid": "RxNorm:10109",
+        "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350991,
+        "implications": {
+            "MT-RNR1": "Weak or no evidence for an increased risk of MT-RNR1 associated hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "If no effective alternative to an aminoglycoside antibiotic is available, evaluate for hearing loss frequently during therapy and ensure that all appropriate precautions are utilized (e.g., lowest possible dose and duration, utilization of therapeutic drug monitoring, hydration, renal function monitoring).",
+        "drug": {
+            "name": "tobramycin"
+        },
+        "drugid": "RxNorm:10627",
+        "drugrecommendation": "Avoid aminoglycoside anitbiotics unless the high risk of permanent hearing loss is outweighed by the severity of infection and lack of safe or effective alternative therapies.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350992,
+        "implications": {
+            "MT-RNR1": "Very high risk of developing hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "increased risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.",
+        "drug": {
+            "name": "tobramycin"
+        },
+        "drugid": "RxNorm:10627",
+        "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350993,
+        "implications": {
+            "MT-RNR1": "Normal risk of developing hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "normal risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": {},
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "Individuals without MT-RNR1 aminoglycoside-induced hearing loss increased risk variants are still at risk of aminoglycoside-associated hearing loss, especially with high drug levels or prolonged courses.",
+        "drug": {
+            "name": "tobramycin"
+        },
+        "drugid": "RxNorm:10627",
+        "drugrecommendation": "Use aminoglycoside antibiotics at standard doses for the shortest feasible course with therapeutic dose monitoring. Evaluate regularly for hearing loss in line with local guidance.",
+        "guideline": {
+            "name": "MT-RNR1 and Aminoglycosides"
+        },
+        "guidelineid": 826283,
+        "id": 1350994,
+        "implications": {
+            "MT-RNR1": "Weak or no evidence for an increased risk of MT-RNR1 associated hearing loss if administered an aminoglycoside antibiotic."
+        },
+        "lookupkey": {
+            "MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"
+        },
+        "phenotypes": {
+            "MT-RNR1": "uncertain risk of aminoglycoside-induced hearing loss"
+        },
+        "population": "general",
+        "version": 1
+    }
+]
