@@ -31,11 +31,16 @@ def annotation2(clinical_guideline_annotations, function_mappings, diplotype, an
         gene_set = guideline_relation[guide_line_id]["gene_set"]
         guideline_path = f"{guideline_path_store}/{guide_line_id}.json"
         guideline = pd.read_json(guideline_path)
-        if not(guide_line_id == '100428'):
+
+        # for test 
+        if not(guide_line_id == '100414'):
             continue
+        
         lookup_key = find_looup_key(gene_set,diplotype)
 
-        # target_guide = guideline.loc[guideline['lookupkey'] == lookup_key]
+        target_guide = guideline.loc[guideline['lookupkey'] == lookup_key]
+        for i in target_guide.iterrows():
+            print(i)
         report_element = {   
             "guideline_id": guide_line_id,
             "cpi_sum_gene": guideline_relation[guide_line_id]["gene_set"],
@@ -59,8 +64,10 @@ def  find_looup_key(gene_set,diplotype):
     lookupkey = {}
     for gene in gene_set:
         target_row = diplotype.loc[diplotype['gene'] == gene]
-        key_resualt = target_row.iloc[0][["lookupkey"]]
-        lookupkey.update([key_resualt])
+        key_resualt = target_row.iloc[0][["lookupkey"]][0]
+        for key in key_resualt:
+            lookupkey[key] = key_resualt[key]
+        # lookupkey.update([key_resualt])
     return lookupkey
 
 def  add_lookup_key_col(df:pd.DataFrame):
@@ -70,6 +77,7 @@ def  add_lookup_key_col(df:pd.DataFrame):
         gene = i["gene"]
         guide_dip = i["guide_dip"][0]
         mapper_path = f"{mapper_path_stroe}/{gene}_mapper.json"
+        
         try:
             mapper = pd.read_json(mapper_path)
         except:
@@ -77,6 +85,7 @@ def  add_lookup_key_col(df:pd.DataFrame):
             continue
 
         lookup_key = mapper.loc[mapper['diplotype'] == guide_dip]
+
         if not lookup_key.empty:
             lookup_key_list.append(lookup_key.iloc[0]["lookupkey"])
         else :
@@ -88,4 +97,3 @@ def  add_lookup_key_col(df:pd.DataFrame):
         # lookup_key = {'CYP2D6': '1.25'}
         # target_guide = df.loc[df['lookupkey'] == lookup_key]
     df["lookupkey"] = lookup_key_list
-# def find_looup_key(gene_set,diplotype):

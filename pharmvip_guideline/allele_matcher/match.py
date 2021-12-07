@@ -20,7 +20,8 @@ def create_hap_regex(variants):
         else:
             print(f"error create hap regex with: {variant['genotype_phases']}")
             exit()
-    return f"^{'_'.join(hap1_regex)}$".replace("*", "z"), f"^{'_'.join(hap2_regex)}$".replace("*", "z")
+    res_rex = f"^{'_'.join(hap1_regex)}$".replace("*", "z"), f"^{'_'.join(hap2_regex)}$".replace("*", "z")
+    return res_rex
 
 def extract_iupac(name_haplotype):
     iupac = {
