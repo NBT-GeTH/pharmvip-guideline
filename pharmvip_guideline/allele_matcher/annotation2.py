@@ -17,17 +17,17 @@ def annotation2(clinical_guideline_annotations, function_mappings, diplotype, an
                     "cpi_sum_dip_name3",
                     "cpi_sum_drug",
                     "cpi_sum_population",
-                    "cpi_sum_act_score",
+                    "cpi_sum_act_score1",
                     "cpi_sum_act_score2",
                     "cpi_sum_strength",
                     "cpi_sum_recommendations",
                     "cpi_sum_recommendations_full",
                     "cpi_sum_recommendations_full_figure",
                     "cpi_sum_comments",
-                    "cpi_sum_implications",
-                    "cpi_sum_implications_2",
-                    "cpi_sum_phenotype",
-                    "cpi_sum_phenotype_2",
+                    "cpi_sum_implications1",
+                    "cpi_sum_implications2",
+                    "cpi_sum_phenotype1",
+                    "cpi_sum_phenotype2",
                     "cpi_sum_met_status_1",
                     "cpi_sum_met_status_2",
                     "cpi_sum_met_status_3",
@@ -113,17 +113,17 @@ def annotation2(clinical_guideline_annotations, function_mappings, diplotype, an
                         "cpi_sum_dip_name3": cpi_sum_dip_name3,
                         "cpi_sum_drug": ','.join(drug_set[inx]),
                         "cpi_sum_population": val["population"],
-                        "cpi_sum_act_score": act_score1,
+                        "cpi_sum_act_score1": act_score1,
                         "cpi_sum_act_score2": act_score2,
                         "cpi_sum_strength": val['classification'],
                         "cpi_sum_recommendations": recomnet_out,
                         "cpi_sum_recommendations_full": recomnet_out,
                         "cpi_sum_recommendations_full_figure": '',
                         "cpi_sum_comments": cpi_sum_comments,
-                        "cpi_sum_implications": implications1,
-                        "cpi_sum_implications_2" : implications2,
-                        "cpi_sum_phenotype": phenotypes1,
-                        "cpi_sum_phenotype_2": phenotypes2,
+                        "cpi_sum_implications1": implications1,
+                        "cpi_sum_implications2" : implications2,
+                        "cpi_sum_phenotype1": phenotypes1,
+                        "cpi_sum_phenotype2": phenotypes2,
                         "cpi_sum_met_status_1": '',
                         "cpi_sum_met_status_2": '',
                         "cpi_sum_met_status_3": '',
@@ -138,11 +138,11 @@ def annotation2(clinical_guideline_annotations, function_mappings, diplotype, an
                     }
                     summary_and_full_report = summary_and_full_report.append(report_element,ignore_index=True)
 
-    writer = pd.ExcelWriter('comparing.xlsx', engine='xlsxwriter')
-    summary_and_full_report.to_excel(writer,index=None)
-    writer.save()
+    # writer = pd.ExcelWriter('comparing.xlsx', engine='xlsxwriter')
+    # summary_and_full_report.to_excel(writer,index=None)
+    # writer.save()
 
-    return 0
+    return summary_and_full_report
 
 def  find_looup_key(gene_set,diplotype):
     lookupkey_set =  []

@@ -561,22 +561,26 @@ def replace_matabolizer(df):
     df['cpi_sum_met_status_3'] = df['cpi_sum_met_status_3'].replace(['Ultrarapid Metabolizer'],'Ultra Rapid Metabolizer')
     return df
 
-def to_txt(cpic_summary, output_path, user_id, project_id):
+def to_txt(cpic_summary:pd.DataFrame, output_path, user_id, project_id):
     f = open(f"{output_path}/cpic_summary.txt", "w")
+    cpic_summary.insert(0,'project_id',project_id)
 
-    for index, row in pd.DataFrame(cpic_summary).iterrows():
-        if str(row['cpi_sum_act_score']) == "None":
-            nl = "\n"
-            if (index + 1) < pd.DataFrame(cpic_summary).shape[0]:
-                f.write(f"{user_id}\t{project_id}\t{row['cpi_sum_gene1']}\t{row['cpi_sum_gene2']}\t{row['cpi_sum_gene3']}\t{row['cpi_sum_dip_name1']}\t{row['cpi_sum_dip_name2']}\t{row['cpi_sum_dip_name3']}\t{row['cpi_sum_drug']}\t\t{row['cpi_sum_strength']}\t{row['cpi_sum_recommendations']}\t{row['cpi_sum_recommendations_full']}\t{row['cpi_sum_recommendations_full_figure']}\t{row['cpi_sum_implications']}\t{row['cpi_sum_phenotype']}\t{row['cpi_sum_met_status_1'].replace(nl, '')}\t{row['cpi_sum_met_status_2'].replace(nl, '')}\t{row['cpi_sum_met_status_3'].replace(nl, '')}\t{row['cpi_sum_gen_1_missing']}\t{row['cpi_sum_gen_1_total']}\t{row['cpi_sum_gen_2_missing']}\t{row['cpi_sum_gen_2_total']}\t{row['cpi_sum_gen_3_missing']}\t{row['cpi_sum_gen_3_total']}\t{row['cpi_sum_hla_tool_1_guide']}\t{row['cpi_sum_hla_tool_2_guide']}\n")
-            else:
-                f.write(f"{user_id}\t{project_id}\t{row['cpi_sum_gene1']}\t{row['cpi_sum_gene2']}\t{row['cpi_sum_gene3']}\t{row['cpi_sum_dip_name1']}\t{row['cpi_sum_dip_name2']}\t{row['cpi_sum_dip_name3']}\t{row['cpi_sum_drug']}\t\t{row['cpi_sum_strength']}\t{row['cpi_sum_recommendations']}\t{row['cpi_sum_recommendations_full']}\t{row['cpi_sum_recommendations_full_figure']}\t{row['cpi_sum_implications']}\t{row['cpi_sum_phenotype']}\t{row['cpi_sum_met_status_1'].replace(nl, '')}\t{row['cpi_sum_met_status_2'].replace(nl, '')}\t{row['cpi_sum_met_status_3'].replace(nl, '')}\t{row['cpi_sum_gen_1_missing']}\t{row['cpi_sum_gen_1_total']}\t{row['cpi_sum_gen_2_missing']}\t{row['cpi_sum_gen_2_total']}\t{row['cpi_sum_gen_3_missing']}\t{row['cpi_sum_gen_3_total']}\t{row['cpi_sum_hla_tool_1_guide']}\t{row['cpi_sum_hla_tool_2_guide']}")
-        else:
-            nl = "\n"
-            if (index + 1) < pd.DataFrame(cpic_summary).shape[0]:
-                f.write(f"{user_id}\t{project_id}\t{row['cpi_sum_gene1']}\t{row['cpi_sum_gene2']}\t{row['cpi_sum_gene3']}\t{row['cpi_sum_dip_name1']}\t{row['cpi_sum_dip_name2']}\t{row['cpi_sum_dip_name3']}\t{row['cpi_sum_drug']}\t{row['cpi_sum_act_score']}\t{row['cpi_sum_strength']}\t{row['cpi_sum_recommendations']}\t{row['cpi_sum_recommendations_full']}\t{row['cpi_sum_recommendations_full_figure']}\t{row['cpi_sum_implications']}\t{row['cpi_sum_phenotype']}\t{row['cpi_sum_met_status_1'].replace(nl, '')}\t{row['cpi_sum_met_status_2'].replace(nl, '')}\t{row['cpi_sum_met_status_3'].replace(nl, '')}\t{row['cpi_sum_gen_1_missing']}\t{row['cpi_sum_gen_1_total']}\t{row['cpi_sum_gen_2_missing']}\t{row['cpi_sum_gen_2_total']}\t{row['cpi_sum_gen_3_missing']}\t{row['cpi_sum_gen_3_total']}\t{row['cpi_sum_hla_tool_1_guide']}\t{row['cpi_sum_hla_tool_2_guide']}\n")
-            else:
-                f.write(f"{user_id}\t{project_id}\t{row['cpi_sum_gene1']}\t{row['cpi_sum_gene2']}\t{row['cpi_sum_gene3']}\t{row['cpi_sum_dip_name1']}\t{row['cpi_sum_dip_name2']}\t{row['cpi_sum_dip_name3']}\t{row['cpi_sum_drug']}\t{row['cpi_sum_act_score']}\t{row['cpi_sum_strength']}\t{row['cpi_sum_recommendations']}\t{row['cpi_sum_recommendations_full']}\t{row['cpi_sum_recommendations_full_figure']}\t{row['cpi_sum_implications']}\t{row['cpi_sum_phenotype']}\t{row['cpi_sum_met_status_1'].replace(nl, '')}\t{row['cpi_sum_met_status_2'].replace(nl, '')}\t{row['cpi_sum_met_status_3'].replace(nl, '')}\t{row['cpi_sum_gen_1_missing']}\t{row['cpi_sum_gen_1_total']}\t{row['cpi_sum_gen_2_missing']}\t{row['cpi_sum_gen_2_total']}\t{row['cpi_sum_gen_3_missing']}\t{row['cpi_sum_gen_3_total']}\t{row['cpi_sum_hla_tool_1_guide']}\t{row['cpi_sum_hla_tool_2_guide']}")
-    f.close()
+    cpic_summary.insert(0,'user_id',user_id)
+    
+    cpic_summary.to_csv(f"{output_path}/cpic_summary.txt",index=False,sep='\t',header=False)
+    # for index, row in pd.DataFrame(cpic_summary).iterrows():
+    #     if str(row['cpi_sum_act_score']) == "None":
+    #         nl = "\n"
+    #         if (index + 1) < pd.DataFrame(cpic_summary).shape[0]:
+    #             f.write(f"{user_id}\t{project_id}\t{row['cpi_sum_gene1']}\t{row['cpi_sum_gene2']}\t{row['cpi_sum_gene3']}\t{row['cpi_sum_dip_name1']}\t{row['cpi_sum_dip_name2']}\t{row['cpi_sum_dip_name3']}\t{row['cpi_sum_drug']}\t\t{row['cpi_sum_strength']}\t{row['cpi_sum_recommendations']}\t{row['cpi_sum_recommendations_full']}\t{row['cpi_sum_recommendations_full_figure']}\t{row['cpi_sum_implications']}\t{row['cpi_sum_phenotype']}\t{row['cpi_sum_met_status_1'].replace(nl, '')}\t{row['cpi_sum_met_status_2'].replace(nl, '')}\t{row['cpi_sum_met_status_3'].replace(nl, '')}\t{row['cpi_sum_gen_1_missing']}\t{row['cpi_sum_gen_1_total']}\t{row['cpi_sum_gen_2_missing']}\t{row['cpi_sum_gen_2_total']}\t{row['cpi_sum_gen_3_missing']}\t{row['cpi_sum_gen_3_total']}\t{row['cpi_sum_hla_tool_1_guide']}\t{row['cpi_sum_hla_tool_2_guide']}\n")
+    #         else:
+    #             f.write(f"{user_id}\t{project_id}\t{row['cpi_sum_gene1']}\t{row['cpi_sum_gene2']}\t{row['cpi_sum_gene3']}\t{row['cpi_sum_dip_name1']}\t{row['cpi_sum_dip_name2']}\t{row['cpi_sum_dip_name3']}\t{row['cpi_sum_drug']}\t\t{row['cpi_sum_strength']}\t{row['cpi_sum_recommendations']}\t{row['cpi_sum_recommendations_full']}\t{row['cpi_sum_recommendations_full_figure']}\t{row['cpi_sum_implications']}\t{row['cpi_sum_phenotype']}\t{row['cpi_sum_met_status_1'].replace(nl, '')}\t{row['cpi_sum_met_status_2'].replace(nl, '')}\t{row['cpi_sum_met_status_3'].replace(nl, '')}\t{row['cpi_sum_gen_1_missing']}\t{row['cpi_sum_gen_1_total']}\t{row['cpi_sum_gen_2_missing']}\t{row['cpi_sum_gen_2_total']}\t{row['cpi_sum_gen_3_missing']}\t{row['cpi_sum_gen_3_total']}\t{row['cpi_sum_hla_tool_1_guide']}\t{row['cpi_sum_hla_tool_2_guide']}")
+    #     else:
+    #         nl = "\n"
+    #         if (index + 1) < pd.DataFrame(cpic_summary).shape[0]:
+    #             f.write(f"{user_id}\t{project_id}\t{row['cpi_sum_gene1']}\t{row['cpi_sum_gene2']}\t{row['cpi_sum_gene3']}\t{row['cpi_sum_dip_name1']}\t{row['cpi_sum_dip_name2']}\t{row['cpi_sum_dip_name3']}\t{row['cpi_sum_drug']}\t{row['cpi_sum_act_score']}\t{row['cpi_sum_strength']}\t{row['cpi_sum_recommendations']}\t{row['cpi_sum_recommendations_full']}\t{row['cpi_sum_recommendations_full_figure']}\t{row['cpi_sum_implications']}\t{row['cpi_sum_phenotype']}\t{row['cpi_sum_met_status_1'].replace(nl, '')}\t{row['cpi_sum_met_status_2'].replace(nl, '')}\t{row['cpi_sum_met_status_3'].replace(nl, '')}\t{row['cpi_sum_gen_1_missing']}\t{row['cpi_sum_gen_1_total']}\t{row['cpi_sum_gen_2_missing']}\t{row['cpi_sum_gen_2_total']}\t{row['cpi_sum_gen_3_missing']}\t{row['cpi_sum_gen_3_total']}\t{row['cpi_sum_hla_tool_1_guide']}\t{row['cpi_sum_hla_tool_2_guide']}\n")
+    #         else:
+    #             f.write(f"{user_id}\t{project_id}\t{row['cpi_sum_gene1']}\t{row['cpi_sum_gene2']}\t{row['cpi_sum_gene3']}\t{row['cpi_sum_dip_name1']}\t{row['cpi_sum_dip_name2']}\t{row['cpi_sum_dip_name3']}\t{row['cpi_sum_drug']}\t{row['cpi_sum_act_score']}\t{row['cpi_sum_strength']}\t{row['cpi_sum_recommendations']}\t{row['cpi_sum_recommendations_full']}\t{row['cpi_sum_recommendations_full_figure']}\t{row['cpi_sum_implications']}\t{row['cpi_sum_phenotype']}\t{row['cpi_sum_met_status_1'].replace(nl, '')}\t{row['cpi_sum_met_status_2'].replace(nl, '')}\t{row['cpi_sum_met_status_3'].replace(nl, '')}\t{row['cpi_sum_gen_1_missing']}\t{row['cpi_sum_gen_1_total']}\t{row['cpi_sum_gen_2_missing']}\t{row['cpi_sum_gen_2_total']}\t{row['cpi_sum_gen_3_missing']}\t{row['cpi_sum_gen_3_total']}\t{row['cpi_sum_hla_tool_1_guide']}\t{row['cpi_sum_hla_tool_2_guide']}")
+    # f.close()
 
     return
