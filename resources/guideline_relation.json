@@ -2,13 +2,13 @@
     "826283": {
         "id": 826283,
         "drug_set": [
-            "gentamicin",
-            "kanamycin",
             "tobramycin",
-            "paromomycin",
+            "amikacin",
             "streptomycin",
             "plazomicin",
-            "amikacin"
+            "gentamicin",
+            "kanamycin",
+            "paromomycin"
         ],
         "gene": [
             [
@@ -74,23 +74,23 @@
     "100412": {
         "id": 100412,
         "drug_set": [
-            "phenytoin",
-            "fosphenytoin"
+            "fosphenytoin",
+            "phenytoin"
         ],
         "gene": [
             [
-                "HLA-B",
-                "CYP2C9"
+                "CYP2C9",
+                "HLA-B"
             ]
         ]
     },
     "100413": {
         "id": 100413,
         "drug_set": [
+            "citalopram",
             "paroxetine",
             "escitalopram",
             "fluvoxamine",
-            "citalopram",
             "sertraline"
         ],
         "gene": [
@@ -105,18 +105,18 @@
     "100414": {
         "id": 100414,
         "drug_set": [
-            "trimipramine",
-            "desipramine",
             "doxepin",
             "imipramine",
-            "nortriptyline",
+            "amitriptyline",
             "clomipramine",
-            "amitriptyline"
+            "nortriptyline",
+            "trimipramine",
+            "desipramine"
         ],
         "gene": [
             [
-                "CYP2D6",
-                "CYP2C19"
+                "CYP2C19",
+                "CYP2D6"
             ],
             [
                 "CYP2D6"
@@ -150,8 +150,8 @@
     "100417": {
         "id": 100417,
         "drug_set": [
-            "ondansetron",
-            "tropisetron"
+            "tropisetron",
+            "ondansetron"
         ],
         "gene": [
             [
@@ -246,17 +246,17 @@
         "id": 100427,
         "drug_set": [
             "isoflurane",
-            "methoxyflurane",
             "sevoflurane",
+            "enflurane",
+            "halothane",
             "desflurane",
             "succinylcholine",
-            "enflurane",
-            "halothane"
+            "methoxyflurane"
         ],
         "gene": [
             [
-                "RYR1",
-                "CACNA1S"
+                "CACNA1S",
+                "RYR1"
             ]
         ]
     },
@@ -269,8 +269,8 @@
         ],
         "gene": [
             [
-                "TPMT",
-                "NUDT15"
+                "NUDT15",
+                "TPMT"
             ]
         ]
     },
@@ -288,13 +288,13 @@
     "110058": {
         "id": 110058,
         "drug_set": [
-            "piroxicam",
-            "meloxicam",
-            "ibuprofen",
             "tenoxicam",
-            "flurbiprofen",
+            "ibuprofen",
             "celecoxib",
-            "lornoxicam"
+            "lornoxicam",
+            "flurbiprofen",
+            "meloxicam",
+            "piroxicam"
         ],
         "gene": [
             [
@@ -307,8 +307,8 @@
         "drug_set": [
             "lansoprazole",
             "omeprazole",
-            "dexlansoprazole",
-            "pantoprazole"
+            "pantoprazole",
+            "dexlansoprazole"
         ],
         "gene": [
             [
