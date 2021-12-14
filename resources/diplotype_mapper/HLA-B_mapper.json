@@ -1,0 +1,128 @@
+[
+    {
+        "genesymbol": "HLA-B",
+        "diplotype": "*15:02 negative",
+        "function1": null,
+        "function2": null,
+        "activityvalue1": null,
+        "activityvalue2": null,
+        "totalactivityscore": null,
+        "description": null,
+        "diplotypekey": {
+            "HLA-B": {
+                "*15:02 negative": 1
+            }
+        },
+        "generesult": "*15:02 negative",
+        "ehrpriority": "Routine/Low-Risk",
+        "consultationtext": "The HLA-B*15:02 allele, which is associated with severe cutaneous adverse reactions among patients taking certain aromatic anticonvulsants, was not detected in this patient. No change in therapy is warranted based on these results. It should be noted that a negative HLA-B*15:02 result does not absolutely rule out the possibility of an adverse drug reaction. Please consult a clinical pharmacist for more information.",
+        "lookupkey": {
+            "HLA-B": "*15:02 negative"
+        }
+    },
+    {
+        "genesymbol": "HLA-B",
+        "diplotype": "*15:02 positive",
+        "function1": null,
+        "function2": null,
+        "activityvalue1": null,
+        "activityvalue2": null,
+        "totalactivityscore": null,
+        "description": null,
+        "diplotypekey": {
+            "HLA-B": {
+                "*15:02 positive": 1
+            }
+        },
+        "generesult": "*15:02 positive",
+        "ehrpriority": "Priority/High-Risk",
+        "consultationtext": "This result signifies that the patient has one or two copies of HLA-B*15:02. Patients with this genotype are at increased risk of severe cutaneous adverse reactions, including Stevens-Johnson syndrome/toxic epidermal necrolysis (SJS/TEN), with certain aromatic anticonvulsants (e.g., carbamazepine, oxcarbazepine, phenytoin/fosphenytoin). Alternative therapy may be warranted. Please consult a clinical pharmacist for more information.",
+        "lookupkey": {
+            "HLA-B": "*15:02 positive"
+        }
+    },
+    {
+        "genesymbol": "HLA-B",
+        "diplotype": "*57:01 negative",
+        "function1": null,
+        "function2": null,
+        "activityvalue1": null,
+        "activityvalue2": null,
+        "totalactivityscore": null,
+        "description": null,
+        "diplotypekey": {
+            "HLA-B": {
+                "*57:01 negative": 1
+            }
+        },
+        "generesult": "*57:01 negative",
+        "ehrpriority": "Normal/Routine/Low Risk",
+        "consultationtext": "The HLA-B*57:01 allele, associated with abacavir hypersensitivity, was not detected in this patient. The patient may be prescribed abacavir. Please refer to the hospital formulary guidelines for specific dosing information. It should be noted that a negative HLA-B*57:01 result does not absolutely rule out the possibility of some form of abacavir hypersensitivity. Administration of abacavir therapy requires close observation including immediate discontinuation of therapy should any signs or symptoms of hypersensitivity develop.",
+        "lookupkey": {
+            "HLA-B": "*57:01 negative"
+        }
+    },
+    {
+        "genesymbol": "HLA-B",
+        "diplotype": "*57:01 positive",
+        "function1": null,
+        "function2": null,
+        "activityvalue1": null,
+        "activityvalue2": null,
+        "totalactivityscore": null,
+        "description": null,
+        "diplotypekey": {
+            "HLA-B": {
+                "*57:01 positive": 1
+            }
+        },
+        "generesult": "*57:01 positive",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "The HLA-B*57:01 allele, associated with abacavir hypersensitivity, was detected in this patient. HLA-B*5701 positive patients should NOT be prescribed abacavir.",
+        "lookupkey": {
+            "HLA-B": "*57:01 positive"
+        }
+    },
+    {
+        "genesymbol": "HLA-B",
+        "diplotype": "*58:01 negative",
+        "function1": null,
+        "function2": null,
+        "activityvalue1": null,
+        "activityvalue2": null,
+        "totalactivityscore": null,
+        "description": null,
+        "diplotypekey": {
+            "HLA-B": {
+                "*58:01 negative": 1
+            }
+        },
+        "generesult": "*58:01 negative",
+        "ehrpriority": "Normal/Routine/Low Risk",
+        "consultationtext": "The HLA-B*58:01 allele, associated with allopurinol hypersensitivity, was not detected in this patient. Allopurinol can be used per standard dosing guidelines. Patients should be monitored closely for any signs of sensitivity reactions, especially those patients receiving allopurinol (of >300 mg/day), concomitant medications (i.e. thiazide diuretics or penicillin/cephalosporin) or with medical conditions (i.e. chronic kidney disease) that increase the non-genetic risk for allopurinol-related hypersensitivity reactions.",
+        "lookupkey": {
+            "HLA-B": "*58:01 negative"
+        }
+    },
+    {
+        "genesymbol": "HLA-B",
+        "diplotype": "*58:01 positive",
+        "function1": null,
+        "function2": null,
+        "activityvalue1": null,
+        "activityvalue2": null,
+        "totalactivityscore": null,
+        "description": null,
+        "diplotypekey": {
+            "HLA-B": {
+                "*58:01 positive": 1
+            }
+        },
+        "generesult": "*58:01 positive",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "The HLA-B*58:01 allele, associated with allopurinol hypersensitivity, was detected in this patient. Allopurinol is contraindicated.",
+        "lookupkey": {
+            "HLA-B": "*58:01 positive"
+        }
+    }
+]

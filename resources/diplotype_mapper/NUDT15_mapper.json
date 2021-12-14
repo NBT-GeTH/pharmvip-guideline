@@ -1,1 +1,983 @@
-[{"genesymbol": "NUDT15", "diplotype": "*1/*1", "description": "An individual carrying two normal function alleles", "lookupkey": {"NUDT15": "Normal Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*1/*2", "description": "An individual carrying one normal function allele and one no function allele", "lookupkey": {"NUDT15": "Intermediate Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*1/*3", "description": "An individual carrying one normal function allele and one no function allele", "lookupkey": {"NUDT15": "Intermediate Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*1/*9", "description": "An individual carrying one normal function allele and one no function allele", "lookupkey": {"NUDT15": "Intermediate Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*2/*2", "description": "An individual carrying two no function alleles", "lookupkey": {"NUDT15": "Poor Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*3/*3", "description": "An individual carrying two no function alleles", "lookupkey": {"NUDT15": "Poor Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*9/*9", "description": "An individual carrying two no function alleles", "lookupkey": {"NUDT15": "Poor Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*2/*3", "description": "An individual carrying two no function alleles", "lookupkey": {"NUDT15": "Poor Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*2/*9", "description": "An individual carrying two no function alleles", "lookupkey": {"NUDT15": "Poor Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*3/*9", "description": "An individual carrying two no function alleles", "lookupkey": {"NUDT15": "Poor Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*1/*4", "description": "An individual carrying one normal function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Indeterminate"}}, {"genesymbol": "NUDT15", "diplotype": "*1/*5", "description": "An individual carrying one normal function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Indeterminate"}}, {"genesymbol": "NUDT15", "diplotype": "*1/*6", "description": "An individual carrying one normal function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Indeterminate"}}, {"genesymbol": "NUDT15", "diplotype": "*1/*7", "description": "An individual carrying one normal function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Indeterminate"}}, {"genesymbol": "NUDT15", "diplotype": "*1/*8", "description": "An individual carrying one normal function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Indeterminate"}}, {"genesymbol": "NUDT15", "diplotype": "*2/*4", "description": "An individual carrying one no function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Possible Intermediate Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*2/*5", "description": "An individual carrying one no function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Possible Intermediate Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*2/*6", "description": "An individual carrying one no function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Possible Intermediate Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*2/*7", "description": "An individual carrying one no function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Possible Intermediate Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*2/*8", "description": "An individual carrying one no function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Possible Intermediate Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*3/*4", "description": "An individual carrying one no function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Possible Intermediate Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*3/*5", "description": "An individual carrying one no function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Possible Intermediate Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*3/*6", "description": "An individual carrying one no function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Possible Intermediate Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*3/*7", "description": "An individual carrying one no function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Possible Intermediate Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*3/*8", "description": "An individual carrying one no function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Possible Intermediate Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*4/*9", "description": "An individual carrying one no function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Possible Intermediate Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*5/*9", "description": "An individual carrying one no function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Possible Intermediate Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*6/*9", "description": "An individual carrying one no function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Possible Intermediate Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*7/*9", "description": "An individual carrying one no function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Possible Intermediate Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*8/*9", "description": "An individual carrying one no function allele and one uncertain function allele", "lookupkey": {"NUDT15": "Possible Intermediate Metabolizer"}}, {"genesymbol": "NUDT15", "diplotype": "*4/*4", "description": "An individual carrying two uncertain function alleles", "lookupkey": {"NUDT15": "Indeterminate"}}, {"genesymbol": "NUDT15", "diplotype": "*5/*5", "description": "An individual carrying two uncertain function alleles", "lookupkey": {"NUDT15": "Indeterminate"}}, {"genesymbol": "NUDT15", "diplotype": "*6/*6", "description": "An individual carrying two uncertain function alleles", "lookupkey": {"NUDT15": "Indeterminate"}}, {"genesymbol": "NUDT15", "diplotype": "*7/*7", "description": "An individual carrying two uncertain function alleles", "lookupkey": {"NUDT15": "Indeterminate"}}, {"genesymbol": "NUDT15", "diplotype": "*8/*8", "description": "An individual carrying two uncertain function alleles", "lookupkey": {"NUDT15": "Indeterminate"}}, {"genesymbol": "NUDT15", "diplotype": "*4/*5", "description": "An individual carrying two uncertain function alleles", "lookupkey": {"NUDT15": "Indeterminate"}}, {"genesymbol": "NUDT15", "diplotype": "*4/*6", "description": "An individual carrying two uncertain function alleles", "lookupkey": {"NUDT15": "Indeterminate"}}, {"genesymbol": "NUDT15", "diplotype": "*4/*7", "description": "An individual carrying two uncertain function alleles", "lookupkey": {"NUDT15": "Indeterminate"}}, {"genesymbol": "NUDT15", "diplotype": "*4/*8", "description": "An individual carrying two uncertain function alleles", "lookupkey": {"NUDT15": "Indeterminate"}}, {"genesymbol": "NUDT15", "diplotype": "*5/*6", "description": "An individual carrying two uncertain function alleles", "lookupkey": {"NUDT15": "Indeterminate"}}, {"genesymbol": "NUDT15", "diplotype": "*5/*7", "description": "An individual carrying two uncertain function alleles", "lookupkey": {"NUDT15": "Indeterminate"}}, {"genesymbol": "NUDT15", "diplotype": "*5/*8", "description": "An individual carrying two uncertain function alleles", "lookupkey": {"NUDT15": "Indeterminate"}}, {"genesymbol": "NUDT15", "diplotype": "*6/*7", "description": "An individual carrying two uncertain function alleles", "lookupkey": {"NUDT15": "Indeterminate"}}, {"genesymbol": "NUDT15", "diplotype": "*6/*8", "description": "An individual carrying two uncertain function alleles", "lookupkey": {"NUDT15": "Indeterminate"}}, {"genesymbol": "NUDT15", "diplotype": "*7/*8", "description": "An individual carrying two uncertain function alleles", "lookupkey": {"NUDT15": "Indeterminate"}}]
+[
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*1/*1",
+        "function1": "Normal Function",
+        "function2": "Normal Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two normal function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*1": 2
+            }
+        },
+        "generesult": "Normal Metabolizer",
+        "ehrpriority": "Normal/Routine/Low Risk",
+        "consultationtext": "This result signifies that the patient has two copies of a normal function allele. Based on the genotype result this patient is predicted to be a NUDT15 normal metabolizer. There is no reason to selectively adjust the dose of most medications that are metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Normal Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*1/*2",
+        "function1": "Normal Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one normal function allele and one no function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*1": 1,
+                "*2": 1
+            }
+        },
+        "generesult": "Intermediate Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has one copy of a normal function allele and one copy of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 intermediate metabolizer. This patient may be at risk for an adverse reactions to medications that are metabolized by NUDT15 (eg thiopurines). To avoid an untoward drug response, dose adjustments or alternative therapeutic agents may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Intermediate Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*1/*3",
+        "function1": "Normal Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one normal function allele and one no function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*1": 1,
+                "*3": 1
+            }
+        },
+        "generesult": "Intermediate Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has one copy of a normal function allele and one copy of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 intermediate metabolizer. This patient may be at risk for an adverse reactions to medications that are metabolized by NUDT15 (eg thiopurines). To avoid an untoward drug response, dose adjustments or alternative therapeutic agents may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Intermediate Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*1/*9",
+        "function1": "Normal Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one normal function allele and one no function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*1": 1,
+                "*9": 1
+            }
+        },
+        "generesult": "Intermediate Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has one copy of a normal function allele and one copy of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 intermediate metabolizer. This patient may be at risk for an adverse reactions to medications that are metabolized by NUDT15 (eg thiopurines). To avoid an untoward drug response, dose adjustments or alternative therapeutic agents may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Intermediate Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*2/*2",
+        "function1": "No Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two no function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*2": 2
+            }
+        },
+        "generesult": "Poor Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has two copies of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 poor metabolizer. This patient may be at a high risk for an adverse reactions to medications that are metabolized by NUDT15 (eg. thiopurines). To avoid an untoward drug response, dose adjustments or or alternative therapy may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Poor Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*3/*3",
+        "function1": "No Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two no function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*3": 2
+            }
+        },
+        "generesult": "Poor Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has two copies of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 poor metabolizer. This patient may be at a high risk for an adverse reactions to medications that are metabolized by NUDT15 (eg. thiopurines). To avoid an untoward drug response, dose adjustments or or alternative therapy may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Poor Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*9/*9",
+        "function1": "No Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two no function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*9": 2
+            }
+        },
+        "generesult": "Poor Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has two copies of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 poor metabolizer. This patient may be at a high risk for an adverse reactions to medications that are metabolized by NUDT15 (eg. thiopurines). To avoid an untoward drug response, dose adjustments or or alternative therapy may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Poor Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*2/*3",
+        "function1": "No Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two no function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*2": 1,
+                "*3": 1
+            }
+        },
+        "generesult": "Poor Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has two copies of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 poor metabolizer. This patient may be at a high risk for an adverse reactions to medications that are metabolized by NUDT15 (eg. thiopurines). To avoid an untoward drug response, dose adjustments or or alternative therapy may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Poor Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*2/*9",
+        "function1": "No Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two no function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*2": 1,
+                "*9": 1
+            }
+        },
+        "generesult": "Poor Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has two copies of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 poor metabolizer. This patient may be at a high risk for an adverse reactions to medications that are metabolized by NUDT15 (eg. thiopurines). To avoid an untoward drug response, dose adjustments or or alternative therapy may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Poor Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*3/*9",
+        "function1": "No Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two no function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*3": 1,
+                "*9": 1
+            }
+        },
+        "generesult": "Poor Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has two copies of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 poor metabolizer. This patient may be at a high risk for an adverse reactions to medications that are metabolized by NUDT15 (eg. thiopurines). To avoid an untoward drug response, dose adjustments or or alternative therapy may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Poor Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*1/*4",
+        "function1": "Uncertain Function",
+        "function2": "Normal Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one normal function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*1": 1,
+                "*4": 1
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*1/*5",
+        "function1": "Uncertain Function",
+        "function2": "Normal Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one normal function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*1": 1,
+                "*5": 1
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*1/*6",
+        "function1": "Uncertain Function",
+        "function2": "Normal Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one normal function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*1": 1,
+                "*6": 1
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*1/*7",
+        "function1": "Uncertain Function",
+        "function2": "Normal Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one normal function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*1": 1,
+                "*7": 1
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*1/*8",
+        "function1": "Uncertain Function",
+        "function2": "Normal Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one normal function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*1": 1,
+                "*8": 1
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*2/*4",
+        "function1": "Uncertain Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one no function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*2": 1,
+                "*4": 1
+            }
+        },
+        "generesult": "Possible Intermediate Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has one copy of an uncertain function allele and one copy of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 possible intermediate metabolizer. This patient may be at risk for an adverse reactions to medications that are metabolized by NUDT15 (eg thiopurines). To avoid an untoward drug response, dose adjustments or alternative therapeutic agents may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Possible Intermediate Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*2/*5",
+        "function1": "Uncertain Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one no function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*2": 1,
+                "*5": 1
+            }
+        },
+        "generesult": "Possible Intermediate Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has one copy of an uncertain function allele and one copy of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 possible intermediate metabolizer. This patient may be at risk for an adverse reactions to medications that are metabolized by NUDT15 (eg thiopurines). To avoid an untoward drug response, dose adjustments or alternative therapeutic agents may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Possible Intermediate Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*2/*6",
+        "function1": "Uncertain Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one no function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*2": 1,
+                "*6": 1
+            }
+        },
+        "generesult": "Possible Intermediate Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has one copy of an uncertain function allele and one copy of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 possible intermediate metabolizer. This patient may be at risk for an adverse reactions to medications that are metabolized by NUDT15 (eg thiopurines). To avoid an untoward drug response, dose adjustments or alternative therapeutic agents may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Possible Intermediate Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*2/*7",
+        "function1": "Uncertain Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one no function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*2": 1,
+                "*7": 1
+            }
+        },
+        "generesult": "Possible Intermediate Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has one copy of an uncertain function allele and one copy of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 possible intermediate metabolizer. This patient may be at risk for an adverse reactions to medications that are metabolized by NUDT15 (eg thiopurines). To avoid an untoward drug response, dose adjustments or alternative therapeutic agents may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Possible Intermediate Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*2/*8",
+        "function1": "Uncertain Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one no function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*2": 1,
+                "*8": 1
+            }
+        },
+        "generesult": "Possible Intermediate Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has one copy of an uncertain function allele and one copy of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 possible intermediate metabolizer. This patient may be at risk for an adverse reactions to medications that are metabolized by NUDT15 (eg thiopurines). To avoid an untoward drug response, dose adjustments or alternative therapeutic agents may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Possible Intermediate Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*3/*4",
+        "function1": "Uncertain Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one no function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*3": 1,
+                "*4": 1
+            }
+        },
+        "generesult": "Possible Intermediate Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has one copy of an uncertain function allele and one copy of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 possible intermediate metabolizer. This patient may be at risk for an adverse reactions to medications that are metabolized by NUDT15 (eg thiopurines). To avoid an untoward drug response, dose adjustments or alternative therapeutic agents may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Possible Intermediate Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*3/*5",
+        "function1": "Uncertain Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one no function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*3": 1,
+                "*5": 1
+            }
+        },
+        "generesult": "Possible Intermediate Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has one copy of an uncertain function allele and one copy of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 possible intermediate metabolizer. This patient may be at risk for an adverse reactions to medications that are metabolized by NUDT15 (eg thiopurines). To avoid an untoward drug response, dose adjustments or alternative therapeutic agents may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Possible Intermediate Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*3/*6",
+        "function1": "Uncertain Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one no function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*3": 1,
+                "*6": 1
+            }
+        },
+        "generesult": "Possible Intermediate Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has one copy of an uncertain function allele and one copy of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 possible intermediate metabolizer. This patient may be at risk for an adverse reactions to medications that are metabolized by NUDT15 (eg thiopurines). To avoid an untoward drug response, dose adjustments or alternative therapeutic agents may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Possible Intermediate Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*3/*7",
+        "function1": "Uncertain Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one no function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*3": 1,
+                "*7": 1
+            }
+        },
+        "generesult": "Possible Intermediate Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has one copy of an uncertain function allele and one copy of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 possible intermediate metabolizer. This patient may be at risk for an adverse reactions to medications that are metabolized by NUDT15 (eg thiopurines). To avoid an untoward drug response, dose adjustments or alternative therapeutic agents may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Possible Intermediate Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*3/*8",
+        "function1": "Uncertain Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one no function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*3": 1,
+                "*8": 1
+            }
+        },
+        "generesult": "Possible Intermediate Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has one copy of an uncertain function allele and one copy of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 possible intermediate metabolizer. This patient may be at risk for an adverse reactions to medications that are metabolized by NUDT15 (eg thiopurines). To avoid an untoward drug response, dose adjustments or alternative therapeutic agents may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Possible Intermediate Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*4/*9",
+        "function1": "Uncertain Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one no function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*4": 1,
+                "*9": 1
+            }
+        },
+        "generesult": "Possible Intermediate Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has one copy of an uncertain function allele and one copy of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 possible intermediate metabolizer. This patient may be at risk for an adverse reactions to medications that are metabolized by NUDT15 (eg thiopurines). To avoid an untoward drug response, dose adjustments or alternative therapeutic agents may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Possible Intermediate Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*5/*9",
+        "function1": "Uncertain Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one no function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*5": 1,
+                "*9": 1
+            }
+        },
+        "generesult": "Possible Intermediate Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has one copy of an uncertain function allele and one copy of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 possible intermediate metabolizer. This patient may be at risk for an adverse reactions to medications that are metabolized by NUDT15 (eg thiopurines). To avoid an untoward drug response, dose adjustments or alternative therapeutic agents may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Possible Intermediate Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*6/*9",
+        "function1": "Uncertain Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one no function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*6": 1,
+                "*9": 1
+            }
+        },
+        "generesult": "Possible Intermediate Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has one copy of an uncertain function allele and one copy of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 possible intermediate metabolizer. This patient may be at risk for an adverse reactions to medications that are metabolized by NUDT15 (eg thiopurines). To avoid an untoward drug response, dose adjustments or alternative therapeutic agents may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Possible Intermediate Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*7/*9",
+        "function1": "Uncertain Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one no function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*7": 1,
+                "*9": 1
+            }
+        },
+        "generesult": "Possible Intermediate Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has one copy of an uncertain function allele and one copy of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 possible intermediate metabolizer. This patient may be at risk for an adverse reactions to medications that are metabolized by NUDT15 (eg thiopurines). To avoid an untoward drug response, dose adjustments or alternative therapeutic agents may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Possible Intermediate Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*8/*9",
+        "function1": "Uncertain Function",
+        "function2": "No Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying one no function allele and one uncertain function allele",
+        "diplotypekey": {
+            "NUDT15": {
+                "*8": 1,
+                "*9": 1
+            }
+        },
+        "generesult": "Possible Intermediate Metabolizer",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has one copy of an uncertain function allele and one copy of a no function allele. Based on the genotype result this patient is predicted to be a NUDT15 possible intermediate metabolizer. This patient may be at risk for an adverse reactions to medications that are metabolized by NUDT15 (eg thiopurines). To avoid an untoward drug response, dose adjustments or alternative therapeutic agents may be necessary for medications metabolized by NUDT15. Please consult a clinical pharmacist for more information about how NUDT15 metabolic status influences drug selection and dosing.",
+        "lookupkey": {
+            "NUDT15": "Possible Intermediate Metabolizer"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*4/*4",
+        "function1": "Uncertain Function",
+        "function2": "Uncertain Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two uncertain function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*4": 2
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*5/*5",
+        "function1": "Uncertain Function",
+        "function2": "Uncertain Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two uncertain function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*5": 2
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*6/*6",
+        "function1": "Uncertain Function",
+        "function2": "Uncertain Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two uncertain function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*6": 2
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*7/*7",
+        "function1": "Uncertain Function",
+        "function2": "Uncertain Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two uncertain function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*7": 2
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*8/*8",
+        "function1": "Uncertain Function",
+        "function2": "Uncertain Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two uncertain function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*8": 2
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*4/*5",
+        "function1": "Uncertain Function",
+        "function2": "Uncertain Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two uncertain function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*4": 1,
+                "*5": 1
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*4/*6",
+        "function1": "Uncertain Function",
+        "function2": "Uncertain Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two uncertain function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*4": 1,
+                "*6": 1
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*4/*7",
+        "function1": "Uncertain Function",
+        "function2": "Uncertain Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two uncertain function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*4": 1,
+                "*7": 1
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*4/*8",
+        "function1": "Uncertain Function",
+        "function2": "Uncertain Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two uncertain function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*4": 1,
+                "*8": 1
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*5/*6",
+        "function1": "Uncertain Function",
+        "function2": "Uncertain Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two uncertain function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*5": 1,
+                "*6": 1
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*5/*7",
+        "function1": "Uncertain Function",
+        "function2": "Uncertain Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two uncertain function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*5": 1,
+                "*7": 1
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*5/*8",
+        "function1": "Uncertain Function",
+        "function2": "Uncertain Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two uncertain function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*5": 1,
+                "*8": 1
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*6/*7",
+        "function1": "Uncertain Function",
+        "function2": "Uncertain Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two uncertain function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*6": 1,
+                "*7": 1
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*6/*8",
+        "function1": "Uncertain Function",
+        "function2": "Uncertain Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two uncertain function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*6": 1,
+                "*8": 1
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    },
+    {
+        "genesymbol": "NUDT15",
+        "diplotype": "*7/*8",
+        "function1": "Uncertain Function",
+        "function2": "Uncertain Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual carrying two uncertain function alleles",
+        "diplotypekey": {
+            "NUDT15": {
+                "*7": 1,
+                "*8": 1
+            }
+        },
+        "generesult": "Indeterminate",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that the patient has an allele combination with uncertain and/or unknown function alleles. The expected phenotype for this patient cannot be determined currently based on the NUDT15 diplotype result. If thiopurines are required and NUDT15 status is unknown, monitor closely for toxicity. Please consult a clinical pharmacist for more specific information about how NUDT15 function influences drug dosing.",
+        "lookupkey": {
+            "NUDT15": "Indeterminate"
+        }
+    }
+]

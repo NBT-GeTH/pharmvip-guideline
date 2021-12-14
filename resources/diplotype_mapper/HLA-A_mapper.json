@@ -1,0 +1,44 @@
+[
+    {
+        "genesymbol": "HLA-A",
+        "diplotype": "*31:01 negative",
+        "function1": null,
+        "function2": null,
+        "activityvalue1": null,
+        "activityvalue2": null,
+        "totalactivityscore": null,
+        "description": null,
+        "diplotypekey": {
+            "HLA-A": {
+                "*31:01 negative": 1
+            }
+        },
+        "generesult": "*31:01 negative",
+        "ehrpriority": "Routine/Low-Risk",
+        "consultationtext": "The HLA-A*31:01 allele, which is associated with severe cutaneous adverse reactions among patients taking certain aromatic anticonvulsants, was not detected in this patient. No change in therapy is warranted based on these results. It should be noted that a negative HLA-A*31:01 result does not absolutely rule out the possibility of an adverse drug reaction. Please consult a clinical pharmacist for more information.",
+        "lookupkey": {
+            "HLA-A": "*31:01 negative"
+        }
+    },
+    {
+        "genesymbol": "HLA-A",
+        "diplotype": "*31:01 positive",
+        "function1": null,
+        "function2": null,
+        "activityvalue1": null,
+        "activityvalue2": null,
+        "totalactivityscore": null,
+        "description": null,
+        "diplotypekey": {
+            "HLA-A": {
+                "*31:01 positive": 1
+            }
+        },
+        "generesult": "*31:01 positive",
+        "ehrpriority": "Priority/High-Risk",
+        "consultationtext": "This result signifies that the patient has one or two copies of HLA-A*31:01. Patients with this genotype are at increased risk of severe cutaneous adverse reactions, including Stevens-Johnson syndrome/toxic epidermal necrolysis (SJS/TEN), drug reaction with eosinophilia and systemic symptoms (DRESS), and maculopapular exanthema (MPE), with certain aromatic anticonvulsants (e.g., carbamazepine). Alternative therapy may be warranted. Please consult a clinical pharmacist for more information.",
+        "lookupkey": {
+            "HLA-A": "*31:01 positive"
+        }
+    }
+]

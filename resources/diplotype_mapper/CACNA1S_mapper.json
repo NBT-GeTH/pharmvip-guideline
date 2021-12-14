@@ -1,1 +1,131 @@
-[{"genesymbol": "CACNA1S", "diplotype": "c.3257G>A/c.3257G>A", "description": "An individual homozygous or compound heterozygous for a CACNA1S Malignant hyperthermia-causative variant as designated by the EMHG", "lookupkey": {"CACNA1S": "Malignant Hyperthermia Susceptibility"}}, {"genesymbol": "CACNA1S", "diplotype": "c.520C>T/c.520C>T", "description": "An individual homozygous or compound heterozygous for a CACNA1S Malignant hyperthermia-causative variant as designated by the EMHG", "lookupkey": {"CACNA1S": "Malignant Hyperthermia Susceptibility"}}, {"genesymbol": "CACNA1S", "diplotype": "c.520C>T/c.3257G>A", "description": "An individual homozygous or compound heterozygous for a CACNA1S Malignant hyperthermia-causative variant as designated by the EMHG", "lookupkey": {"CACNA1S": "Malignant Hyperthermia Susceptibility"}}, {"genesymbol": "CACNA1S", "diplotype": "c.520C>T/Reference", "description": "An individual heterozygous for a CACNA1S Malignant hyperthermia-causative variant as designated by the EMHG", "lookupkey": {"CACNA1S": "Malignant Hyperthermia Susceptibility"}}, {"genesymbol": "CACNA1S", "diplotype": "c.3257G>A/Reference", "description": "An individual heterozygous for a CACNA1S Malignant hyperthermia-causative variant as designated by the EMHG", "lookupkey": {"CACNA1S": "Malignant Hyperthermia Susceptibility"}}, {"genesymbol": "CACNA1S", "diplotype": "Reference/Reference", "description": "An individual negative for a CACNA1S malignant hyperthermia\u2013causative variant as designated by the EMHG", "lookupkey": {"CACNA1S": "Uncertain Susceptibility"}}]
+[
+    {
+        "genesymbol": "CACNA1S",
+        "diplotype": "c.3257G>A/c.3257G>A",
+        "function1": "Malignant hyperthermia associated",
+        "function2": "Malignant hyperthermia associated",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual homozygous or compound heterozygous for a CACNA1S Malignant hyperthermia-causative variant as designated by the EMHG",
+        "diplotypekey": {
+            "CACNA1S": {
+                "c.3257G>A": 2
+            }
+        },
+        "generesult": "Malignant Hyperthermia Susceptibility",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that this patient has one copy of a variant [variant] associated with malignant hyperthermia susceptibility. Halogenated volatile anesthetics or depolarizing muscle relaxants are relatively contraindicated in persons with MHS. They should not be used, except in extraordinary circumstances where the benefits outweigh the risks. Please consult a MHS specialist or contact MHAUS (https://www.mhaus.org/healthcare-professionals/) for further information.",
+        "lookupkey": {
+            "CACNA1S": "Malignant Hyperthermia Susceptibility"
+        }
+    },
+    {
+        "genesymbol": "CACNA1S",
+        "diplotype": "c.520C>T/c.520C>T",
+        "function1": "Malignant hyperthermia associated",
+        "function2": "Malignant hyperthermia associated",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual homozygous or compound heterozygous for a CACNA1S Malignant hyperthermia-causative variant as designated by the EMHG",
+        "diplotypekey": {
+            "CACNA1S": {
+                "c.520C>T": 2
+            }
+        },
+        "generesult": "Malignant Hyperthermia Susceptibility",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that this patient has one copy of a variant [variant] associated with malignant hyperthermia susceptibility. Halogenated volatile anesthetics or depolarizing muscle relaxants are relatively contraindicated in persons with MHS. They should not be used, except in extraordinary circumstances where the benefits outweigh the risks. Please consult a MHS specialist or contact MHAUS (https://www.mhaus.org/healthcare-professionals/) for further information.",
+        "lookupkey": {
+            "CACNA1S": "Malignant Hyperthermia Susceptibility"
+        }
+    },
+    {
+        "genesymbol": "CACNA1S",
+        "diplotype": "c.520C>T/c.3257G>A",
+        "function1": "Malignant hyperthermia associated",
+        "function2": "Malignant hyperthermia associated",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual homozygous or compound heterozygous for a CACNA1S Malignant hyperthermia-causative variant as designated by the EMHG",
+        "diplotypekey": {
+            "CACNA1S": {
+                "c.520C>T": 1,
+                "c.3257G>A": 1
+            }
+        },
+        "generesult": "Malignant Hyperthermia Susceptibility",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that this patient has one copy of a variant [variant] associated with malignant hyperthermia susceptibility. Halogenated volatile anesthetics or depolarizing muscle relaxants are relatively contraindicated in persons with MHS. They should not be used, except in extraordinary circumstances where the benefits outweigh the risks. Please consult a MHS specialist or contact MHAUS (https://www.mhaus.org/healthcare-professionals/) for further information.",
+        "lookupkey": {
+            "CACNA1S": "Malignant Hyperthermia Susceptibility"
+        }
+    },
+    {
+        "genesymbol": "CACNA1S",
+        "diplotype": "c.520C>T/Reference",
+        "function1": "Malignant hyperthermia associated",
+        "function2": "Normal Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual heterozygous for a CACNA1S Malignant hyperthermia-causative variant as designated by the EMHG",
+        "diplotypekey": {
+            "CACNA1S": {
+                "c.520C>T": 1,
+                "Reference": 1
+            }
+        },
+        "generesult": "Malignant Hyperthermia Susceptibility",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that this patient has one copy of a variant [variant] associated with malignant hyperthermia susceptibility. Halogenated volatile anesthetics or depolarizing muscle relaxants are relatively contraindicated in persons with MHS. They should not be used, except in extraordinary circumstances where the benefits outweigh the risks. Please consult a MHS specialist or contact MHAUS (https://www.mhaus.org/healthcare-professionals/) for further information.",
+        "lookupkey": {
+            "CACNA1S": "Malignant Hyperthermia Susceptibility"
+        }
+    },
+    {
+        "genesymbol": "CACNA1S",
+        "diplotype": "c.3257G>A/Reference",
+        "function1": "Malignant hyperthermia associated",
+        "function2": "Normal Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual heterozygous for a CACNA1S Malignant hyperthermia-causative variant as designated by the EMHG",
+        "diplotypekey": {
+            "CACNA1S": {
+                "Reference": 1,
+                "c.3257G>A": 1
+            }
+        },
+        "generesult": "Malignant Hyperthermia Susceptibility",
+        "ehrpriority": "Abnormal/Priority/High Risk",
+        "consultationtext": "This result signifies that this patient has one copy of a variant [variant] associated with malignant hyperthermia susceptibility. Halogenated volatile anesthetics or depolarizing muscle relaxants are relatively contraindicated in persons with MHS. They should not be used, except in extraordinary circumstances where the benefits outweigh the risks. Please consult a MHS specialist or contact MHAUS (https://www.mhaus.org/healthcare-professionals/) for further information.",
+        "lookupkey": {
+            "CACNA1S": "Malignant Hyperthermia Susceptibility"
+        }
+    },
+    {
+        "genesymbol": "CACNA1S",
+        "diplotype": "Reference/Reference",
+        "function1": "Normal Function",
+        "function2": "Normal Function",
+        "activityvalue1": "n/a",
+        "activityvalue2": "n/a",
+        "totalactivityscore": "n/a",
+        "description": "An individual negative for a CACNA1S malignant hyperthermia\u2013causative variant as designated by the EMHG",
+        "diplotypekey": {
+            "CACNA1S": {
+                "Reference": 2
+            }
+        },
+        "generesult": "Uncertain Susceptibility",
+        "ehrpriority": "Normal Risk",
+        "consultationtext": "Variation in RYR1 and/or CACNA1S genes is associated with increased risk of Malignant hyperthermia after administration of depolarizing muscle relaxants and potent volatile anesthetics. Although listed causative CACNA1S variants were NOT detected in this patient, it should be noted that this finding does not absolutely rule out the possibility of malignant hyperthermia. These results should be interpreted in the context of other genetic and clinical findings, family history and other laboratory data.",
+        "lookupkey": {
+            "CACNA1S": "Uncertain Susceptibility"
+        }
+    }
+]
