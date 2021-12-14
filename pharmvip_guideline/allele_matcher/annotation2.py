@@ -46,6 +46,8 @@ def annotation2(clinical_guideline_annotations, function_mappings, diplotype, an
     #     gene = "DPYD"
     #     if gene in guideline_relation[guide_line]["gene_set"]:
     #         print(guideline_relation[guide_line])``
+    # gene_set = [["CYP2C9", "CYP2D6"],["CYP2D6"]]
+    # lookup_keys = find_looup_key(gene_set,diplotype)
     guideline_path_store = "/tarafs/data/home/ktraipar/pharmvip/pharmvip-guideline/resources/guideline"
     for guide_line_id in guideline_relation:
         gene_set = guideline_relation[guide_line_id]["gene"]
@@ -82,7 +84,7 @@ def annotation2(clinical_guideline_annotations, function_mappings, diplotype, an
                 target_dip2 = diplotype.loc[diplotype["gene"] == gene[1]]
                 target_dip3 = diplotype.loc[diplotype["gene"] == gene[2]]
                 
-                cpi_sum_dip_name1 = '' if target_dip1.empty else target_dip1.iloc[0][["print_dip"]][0][0]
+                cpi_sum_dip_name1 = '' if target_dip1.empty else target_dip1.iloc[0][["print_dip"]][0][0]   
                 cpi_sum_dip_name2 = '' if target_dip2.empty else target_dip2.iloc[0][["print_dip"]][0][0]
                 cpi_sum_dip_name3 = '' if target_dip3.empty else target_dip3.iloc[0][["print_dip"]][0][0]
                 cpi_sum_gen_1_missing = '' if target_dip1.empty else target_dip1.iloc[0][["missing_call_variants"]][0]
@@ -138,26 +140,57 @@ def annotation2(clinical_guideline_annotations, function_mappings, diplotype, an
                     }
                     summary_and_full_report = summary_and_full_report.append(report_element,ignore_index=True)
 
-    # writer = pd.ExcelWriter('comparing.xlsx', engine='xlsxwriter')
-    # summary_and_full_report.to_excel(writer,index=None)
-    # writer.save()
+    writer = pd.ExcelWriter('comparing.xlsx', engine='xlsxwriter')
+    summary_and_full_report.to_excel(writer,index=None)
+    writer.save()
 
     return summary_and_full_report
 
+def combo(array,total,ix):
+    lenn = len(array)
+    sett = []
+    for i in array[ix]:
+        total_temp = total|i
+        if ix + 1 >= lenn :
+            sett.append(total_temp)
+        else: 
+            #  = copy.deepcopy(total)
+            sett = sett + combo(array,total_temp,ix+1)
+    return sett
+
 def  find_looup_key(gene_set,diplotype):
-    lookupkey_set =  []
+    all_possible =  []
     for genes in gene_set:
-        lookupkey = {}
+        all_lookup_key = []
         for gene in genes:
+            lookupkey_set = []
             target_row = diplotype.loc[diplotype['gene'] == gene]
             if target_row.empty:
-                key_resualt = {}
+                pass
             else:
-                key_resualt = target_row.iloc[0][["lookupkey"]][0]
-                for key in key_resualt:
-                    lookupkey[key] = key_resualt[key]
-        lookupkey_set.append(lookupkey)
-    return lookupkey_set
+                lookupkey_set = target_row.iloc[0]["lookupkey"]
+                all_lookup_key.append(lookupkey_set)
+            
+        # total_set = [[1,2,3],[1],[1,2]]
+        if (all_lookup_key):
+            total = {}
+            ix = 0
+            sett = combo(all_lookup_key,total,ix)
+            all_possible = all_possible + sett
+            # print(sett)
+            print("done")
+
+        # lookupkey = {}
+        # for gene in genes:
+        #     target_row = diplotype.loc[diplotype['gene'] == gene]
+        #     if target_row.empty:
+        #         key_resualt = {}
+        #     else:
+        #         key_resualt = target_row.iloc[0][["lookupkey"]][0]
+        #         for key in key_resualt:
+        #             lookupkey[key] = key_resualt[key]
+        # lookupkey_set.append(lookupkey)
+    return all_possible
 
 def  add_lookup_key_col(df:pd.DataFrame):
     mapper_path_stroe = "/tarafs/data/home/ktraipar/pharmvip/pharmvip-guideline/resources/diplotype_mapper"

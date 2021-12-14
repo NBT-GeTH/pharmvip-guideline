@@ -8,7 +8,7 @@ diplotype_cyp2d6_path = sample_path + 'NA12878_30x/NA12878_30x_diplotype_CYP2D6.
 diplotype_hla_path = sample_path + 'NA12878_30x/NA12878_30x_diplotype_HLA.tsv'
 outpath = sample_path + '/../../.out'
 para_paser = ['allele_matcher',"--ana_user_id",'1','--ana_id',
-    '1','--ana_options_cpic','true','--ana_best_candidate','true',
+    '1','--ana_options_cpic','true','--ana_best_candidate','false',
     '--ana_genes_cyp2d6','true','--ana_options_hla','true',
     '--vcf_gz_file',vcf_path,
     '--diplotype_cyp2d6',diplotype_cyp2d6_path,
