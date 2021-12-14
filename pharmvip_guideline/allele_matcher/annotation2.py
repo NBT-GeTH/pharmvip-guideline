@@ -197,7 +197,7 @@ def  add_lookup_key_col(df:pd.DataFrame):
     lookup_key_list = []
     for inx,i in df.iterrows() :
         gene = i["gene"]
-        guide_dip = i["guide_dip"][0]
+        guide_dip = i["guide_dip"]
         mapper_path = f"{mapper_path_stroe}/{gene}_mapper.json"
         
         try:
@@ -205,14 +205,15 @@ def  add_lookup_key_col(df:pd.DataFrame):
         except:
             lookup_key_list.append({})
             continue
+        lookup_ket_stack = []
+        for diplotype in guide_dip:
+            lookup_key = mapper.loc[mapper['diplotype'] == diplotype]
 
-        lookup_key = mapper.loc[mapper['diplotype'] == guide_dip]
-
-        if not lookup_key.empty:
-            lookup_key_list.append(lookup_key.iloc[0]["lookupkey"])
-        else :
-            lookup_key_list.append({})
-
+            if not lookup_key.empty:
+                lookup_ket_stack.append(lookup_key.iloc[0]["lookupkey"])
+            else :
+                lookup_ket_stack.append({})
+        lookup_key_list.append(lookup_ket_stack)
         # lookup_key_list.append(lookup_key.iloc[0]["lookupkey"])
 
         # df = pd.read_json(gid_path)
