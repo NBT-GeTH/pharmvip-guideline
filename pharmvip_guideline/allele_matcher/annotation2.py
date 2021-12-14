@@ -66,7 +66,9 @@ def annotation2(clinical_guideline_annotations, function_mappings, diplotype, an
             else:
                 row_set = []
                 drug_set = []
-                target_guide = guideline.loc[guideline['lookupkey'] == lookup_key]
+                key_map = lookup_key['key']
+                inx_map = lookup_key['inx']
+                target_guide = guideline.loc[guideline['lookupkey'] == key_map]
                 for inx,val in target_guide.iterrows():
                     drug = val['drug']['name']
                     val = val.drop(['drug', 'drugid','id']).to_dict()
@@ -78,21 +80,21 @@ def annotation2(clinical_guideline_annotations, function_mappings, diplotype, an
                         drug_set.append([drug])
 
                 gene = ['','','']
-                for inx,val in enumerate(list(lookup_key)):
+                for inx,val in enumerate(list(key_map)):
                     gene[inx] = val 
                 target_dip1 = diplotype.loc[diplotype["gene"] == gene[0]]
                 target_dip2 = diplotype.loc[diplotype["gene"] == gene[1]]
                 target_dip3 = diplotype.loc[diplotype["gene"] == gene[2]]
                 
-                cpi_sum_dip_name1 = '' if target_dip1.empty else target_dip1.iloc[0][["print_dip"]][0][0]   
-                cpi_sum_dip_name2 = '' if target_dip2.empty else target_dip2.iloc[0][["print_dip"]][0][0]
-                cpi_sum_dip_name3 = '' if target_dip3.empty else target_dip3.iloc[0][["print_dip"]][0][0]
-                cpi_sum_gen_1_missing = '' if target_dip1.empty else target_dip1.iloc[0][["missing_call_variants"]][0]
-                cpi_sum_gen_2_missing = '' if target_dip2.empty else target_dip2.iloc[0][["missing_call_variants"]][0]
-                cpi_sum_gen_3_missing = '' if target_dip3.empty else target_dip3.iloc[0][["missing_call_variants"]][0]
-                cpi_sum_gen_1_total = '' if target_dip1.empty else target_dip1.iloc[0][["total_variants"]][0]
-                cpi_sum_gen_2_total = '' if target_dip2.empty else target_dip2.iloc[0][["total_variants"]][0]
-                cpi_sum_gen_3_total = '' if target_dip3.empty else target_dip3.iloc[0][["total_variants"]][0]
+                cpi_sum_dip_name1 = '' if target_dip1.empty else target_dip1.iloc[0]["print_dip"][inx_map]
+                cpi_sum_dip_name2 = '' if target_dip2.empty else target_dip2.iloc[0]["print_dip"][inx_map]
+                cpi_sum_dip_name3 = '' if target_dip3.empty else target_dip3.iloc[0]["print_dip"][inx_map]
+                cpi_sum_gen_1_missing = '' if target_dip1.empty else target_dip1.iloc[0]["missing_call_variants"]
+                cpi_sum_gen_2_missing = '' if target_dip2.empty else target_dip2.iloc[0]["missing_call_variants"]
+                cpi_sum_gen_3_missing = '' if target_dip3.empty else target_dip3.iloc[0]["missing_call_variants"]
+                cpi_sum_gen_1_total = '' if target_dip1.empty else target_dip1.iloc[0]["total_variants"]
+                cpi_sum_gen_2_total = '' if target_dip2.empty else target_dip2.iloc[0]["total_variants"]
+                cpi_sum_gen_3_total = '' if target_dip3.empty else target_dip3.iloc[0]["total_variants"]
 
 
                 for inx,val in enumerate(row_set):
@@ -195,9 +197,9 @@ def  find_looup_key(gene_set,diplotype):
 def  add_lookup_key_col(df:pd.DataFrame):
     mapper_path_stroe = "/tarafs/data/home/ktraipar/pharmvip/pharmvip-guideline/resources/diplotype_mapper"
     lookup_key_list = []
-    for inx,i in df.iterrows() :
-        gene = i["gene"]
-        guide_dip = i["guide_dip"]
+    for inx,obj in df.iterrows() :
+        gene = obj["gene"]
+        guide_dip = obj["guide_dip"]
         mapper_path = f"{mapper_path_stroe}/{gene}_mapper.json"
         
         try:
@@ -205,15 +207,25 @@ def  add_lookup_key_col(df:pd.DataFrame):
         except:
             lookup_key_list.append({})
             continue
-        lookup_ket_stack = []
-        for diplotype in guide_dip:
+        lookup_key_stack = []
+        for ix,diplotype in enumerate(guide_dip):
             lookup_key = mapper.loc[mapper['diplotype'] == diplotype]
-
+            templat = {}
             if not lookup_key.empty:
-                lookup_ket_stack.append(lookup_key.iloc[0]["lookupkey"])
+                lookup_key = lookup_key.iloc[0]["lookupkey"]
+                templat = {
+                    "inx" : ix,
+                    "key" : lookup_key
+                }
+                # lookup_key_stack.append()
             else :
-                lookup_ket_stack.append({})
-        lookup_key_list.append(lookup_ket_stack)
+                templat = {
+                    "inx" : ix,
+                    "key" : {}
+                }
+                # lookup_key_stack.append({})
+            lookup_key_stack.append(templat)
+        lookup_key_list.append(lookup_key_stack)
         # lookup_key_list.append(lookup_key.iloc[0]["lookupkey"])
 
         # df = pd.read_json(gid_path)
