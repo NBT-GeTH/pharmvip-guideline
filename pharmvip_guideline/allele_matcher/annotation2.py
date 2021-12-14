@@ -42,12 +42,6 @@ def annotation2(clinical_guideline_annotations, function_mappings, diplotype, an
                 ]
         )
 
-    # for guide_line in guideline_relation:
-    #     gene = "DPYD"
-    #     if gene in guideline_relation[guide_line]["gene_set"]:
-    #         print(guideline_relation[guide_line])``
-    # gene_set = [["CYP2C9", "CYP2D6"],["CYP2D6"]]
-    # lookup_keys = find_looup_key(gene_set,diplotype)
     guideline_path_store = "/tarafs/data/home/ktraipar/pharmvip/pharmvip-guideline/resources/guideline"
     for guide_line_id in guideline_relation:
         gene_set = guideline_relation[guide_line_id]["gene"]
@@ -59,10 +53,9 @@ def annotation2(clinical_guideline_annotations, function_mappings, diplotype, an
         #     continue
         
         lookup_keys = find_looup_key(gene_set,diplotype)
-        print(lookup_keys)
         for lookup_key in lookup_keys:
             if not lookup_key:
-                print("lol")
+                pass
             else:
                 row_set = []
                 drug_set = []
@@ -156,7 +149,6 @@ def combo(array,total,ix):
         if ix + 1 >= lenn :
             sett.append(total_temp)
         else: 
-            #  = copy.deepcopy(total)
             sett = sett + combo(array,total_temp,ix+1)
     return sett
 
@@ -173,25 +165,11 @@ def  find_looup_key(gene_set,diplotype):
                 lookupkey_set = target_row.iloc[0]["lookupkey"]
                 all_lookup_key.append(lookupkey_set)
             
-        # total_set = [[1,2,3],[1],[1,2]]
         if (all_lookup_key):
             total = {}
             ix = 0
             sett = combo(all_lookup_key,total,ix)
             all_possible = all_possible + sett
-            # print(sett)
-            print("done")
-
-        # lookupkey = {}
-        # for gene in genes:
-        #     target_row = diplotype.loc[diplotype['gene'] == gene]
-        #     if target_row.empty:
-        #         key_resualt = {}
-        #     else:
-        #         key_resualt = target_row.iloc[0][["lookupkey"]][0]
-        #         for key in key_resualt:
-        #             lookupkey[key] = key_resualt[key]
-        # lookupkey_set.append(lookupkey)
     return all_possible
 
 def  add_lookup_key_col(df:pd.DataFrame):
