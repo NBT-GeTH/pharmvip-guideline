@@ -36,6 +36,8 @@ def create_diplotype_cpic(outputs):
 def sort_diplotype(dip):
     if dip == ["No info"]:
         return dip
+    elif True in ["HLA" in i for i in dip]:
+        return dip
 
     dip_new = []
     if len(dip) == 1 and "," in dip[0]:
