@@ -26,7 +26,7 @@ def create_diplotype_cpic(outputs):
                 "count_diplotype": allele_matcher["count_diplotype"],
                 "guide_dip": allele_matcher["guide_dip"],
                 "print_dip": allele_matcher["print_dip"],
-                "tool": "N/A"
+                "tool": ["N/A"]
             },
             ignore_index=True
         )
