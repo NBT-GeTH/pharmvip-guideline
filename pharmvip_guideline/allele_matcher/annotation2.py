@@ -88,7 +88,10 @@ def annotation2(clinical_guideline_annotations, function_mappings, diplotype, an
                 cpi_sum_gen_1_total = '' if target_dip1.empty else target_dip1.iloc[0]["total_variants"]
                 cpi_sum_gen_2_total = '' if target_dip2.empty else target_dip2.iloc[0]["total_variants"]
                 cpi_sum_gen_3_total = '' if target_dip3.empty else target_dip3.iloc[0]["total_variants"]
-
+                tool1 = '' if target_dip1.empty else target_dip1.iloc[0]["tool"]
+                tool2 = '' if target_dip2.empty else target_dip2.iloc[0]["tool"]
+                tool1 = '' if 'N/A' in tool1 else tool1
+                tool2 = '' if 'N/A' in tool2 else tool2
 
                 for inx,val in enumerate(row_set):
                     act_score1 = val['activityscore'][gene[0]] if gene[0] in val['activityscore'] and val['activityscore'][gene[0]] != "n/a" else ''
@@ -130,17 +133,18 @@ def annotation2(clinical_guideline_annotations, function_mappings, diplotype, an
                         "cpi_sum_gen_2_total": cpi_sum_gen_2_total,
                         "cpi_sum_gen_3_missing": cpi_sum_gen_3_missing,
                         "cpi_sum_gen_3_total": cpi_sum_gen_3_total,
-                        "cpi_sum_hla_tool_1_guide": '',
-                        "cpi_sum_hla_tool_2_guide": ''
+                        "cpi_sum_hla_tool_1_guide": tool1,
+                        "cpi_sum_hla_tool_2_guide": tool2
                     }
                     summary_and_full_report = summary_and_full_report.append(report_element,ignore_index=True)
 
-    writer = pd.ExcelWriter('comparing.xlsx', engine='xlsxwriter')
-    summary_and_full_report.to_excel(writer,index=None)
-    writer.save()
+        writer = pd.ExcelWriter('comparing.xlsx', engine='xlsxwriter')
+        summary_and_full_report.to_excel(writer,index=None)
+        writer.save()
 
     return summary_and_full_report
 
+## find combination from array [[],[],..]
 def combo(array,total,ix):
     lenn = len(array)
     sett = []
