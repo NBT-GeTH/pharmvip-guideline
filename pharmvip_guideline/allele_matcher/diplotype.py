@@ -33,11 +33,11 @@ def create_diplotype_cpic(outputs):
     
     return diplotype_cpic
 
-def sort_diplotype(dip):
+def sort_diplotype(gene, dip):
     if dip == ["No info"]:
         return dip
-    # elif True in ["HLA" in i for i in dip]:
-    #     return dip
+    elif "HLA" in gene:
+        return dip
 
     dip_new = []
     if len(dip) == 1 and "," in dip[0]:
@@ -69,8 +69,8 @@ def read_diplotype(tsv):
     df = pd.read_csv(tsv, sep="\t")
     for row in range(df.shape[0]):
         assert len(ast.literal_eval(df["guide_diplotype"][row])) == len(ast.literal_eval(df["print_diplotype"][row]))
-        guide_dip = ["No info/No info"] if not ast.literal_eval(df["guide_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(ast.literal_eval(df["guide_diplotype"][row]))))
-        print_dip = ["No info"] if not ast.literal_eval(df["print_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(ast.literal_eval(df["print_diplotype"][row]))))
+        guide_dip = ["No info/No info"] if not ast.literal_eval(df["guide_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(df["gene"][row], ast.literal_eval(df["guide_diplotype"][row]))))
+        print_dip = ["No info"] if not ast.literal_eval(df["print_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(df["gene"][row], ast.literal_eval(df["print_diplotype"][row]))))
         diplotype = diplotype.append(
             {
                 "sample_id": df["sampleid"][row],
