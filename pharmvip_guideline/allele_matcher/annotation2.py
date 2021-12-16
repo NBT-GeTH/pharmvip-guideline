@@ -2,11 +2,11 @@ import json
 from numpy import empty
 import pandas as pd
 from pandas.core.frame import DataFrame
-def annotation2(clinical_guideline_annotations, function_mappings, diplotype, annotations_short):
-    guideline_relation_path = "/tarafs/data/home/ktraipar/pharmvip/pharmvip-guideline/resources/guideline_relation.json"
+def annotation2(clinical_guideline_annotations, function_mappings, diplotype):
+    guideline_relation_path = f'{clinical_guideline_annotations}/guideline_relation.json'
     with open(guideline_relation_path) as guideline_relation_file:
         guideline_relation = json.load(guideline_relation_file)
-    add_lookup_key_col(diplotype)
+    add_lookup_key_col(diplotype,function_mappings)
     summary_and_full_report = pd.DataFrame(columns=
         [
                     "cpi_sum_gene1",
@@ -42,7 +42,7 @@ def annotation2(clinical_guideline_annotations, function_mappings, diplotype, an
                 ]
         )
 
-    guideline_path_store = "/tarafs/data/home/ktraipar/pharmvip/pharmvip-guideline/resources/guideline"
+    guideline_path_store = f"{clinical_guideline_annotations}/guideline"
     for guide_line_id in guideline_relation:
         gene_set = guideline_relation[guide_line_id]["gene"]
         guideline_path = f"{guideline_path_store}/{guide_line_id}.json"
@@ -176,10 +176,10 @@ def  find_looup_key(gene_set,diplotype):
             all_possible = all_possible + sett
     return all_possible
 
-def  add_lookup_key_col(df:pd.DataFrame):
-    mapper_path_stroe = "/tarafs/data/home/ktraipar/pharmvip/pharmvip-guideline/resources/diplotype_mapper"
+def  add_lookup_key_col(diplotype:pd.DataFrame,function_mappings):
+    mapper_path_stroe = f"{function_mappings}/diplotype_mapper"
     lookup_key_list = []
-    for inx,obj in df.iterrows() :
+    for inx,obj in diplotype.iterrows() :
         gene = obj["gene"]
         guide_dip = obj["guide_dip"]
         mapper_path = f"{mapper_path_stroe}/{gene}_mapper.json"
@@ -213,4 +213,12 @@ def  add_lookup_key_col(df:pd.DataFrame):
         # df = pd.read_json(gid_path)
         # lookup_key = {'CYP2D6': '1.25'}
         # target_guide = df.loc[df['lookupkey'] == lookup_key]
-    df["lookupkey"] = lookup_key_list
+    diplotype["lookupkey"] = lookup_key_list
+
+def to_txt(cpic_summary:pd.DataFrame, output_path, user_id, project_id):
+    f = open(f"{output_path}/cpic_summary.txt", "w")
+    cpic_summary.insert(0,'project_id',project_id)
+
+    cpic_summary.insert(0,'user_id',user_id)
+    
+    cpic_summary.to_csv(f"{output_path}/cpic_summary.txt",index=False,sep='\t',header=False)
