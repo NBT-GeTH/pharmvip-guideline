@@ -11,8 +11,6 @@ from pharmvip_guideline.allele_matcher.diplotype import create_diplotype_cpic, r
 from cyvcf2 import VCF
 from pharmvip_guideline.allele_matcher.diplotype_dbpmcgenomics import diplotype_dbpmcgenomics
 from pharmvip_guideline.allele_matcher.annotation import *
-from pharmvip_guideline.allele_matcher.annotation2 import *
-
 
 class  MyParser(argparse.ArgumentParser):
     def  error(self, message):
@@ -169,10 +167,10 @@ def main():
             diplotype_cpic = diplotype_cpic.sort_values(by=["gene"])
             diplotype_cpic = diplotype_cpic.reset_index(drop=True)
             
-            summary_and_full_report = annotation2(args.clinical_guideline_annotations, args.function_mappings, diplotype_cpic)
+            summary_and_full_report = annotation(args.clinical_guideline_annotations, args.function_mappings, diplotype_cpic)
             summary_and_full_report = summary_and_full_report.sort_values(by=['cpi_sum_gene1', 'cpi_sum_gene2', 'cpi_sum_gene3', 'cpi_sum_drug'])
             summary_and_full_report = summary_and_full_report.reset_index(drop = True)
-            annotation2.to_txt(summary_and_full_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id)
+            to_txt(summary_and_full_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id)
        
         elif args.ana_options_cpic == "false" and args.ana_options_hla == "true":
             diplotype_hla = read_diplotype(args.diplotype_hla)
@@ -180,8 +178,6 @@ def main():
             summary_and_full_report = annotation(args.clinical_guideline_annotations, args.function_mappings, diplotype_hla, f"{args.clinical_guideline_annotations}/annotations_short/guideline_add_short.xlsx")
             summary_and_full_report = summary_and_full_report.sort_values(by=['cpi_sum_gene1', 'cpi_sum_gene2', 'cpi_sum_gene3', 'cpi_sum_drug'])
             summary_and_full_report = summary_and_full_report.reset_index(drop = True)
-            summary_and_full_report = replace_na(summary_and_full_report)
-            summary_and_full_report = replace_matabolizer(summary_and_full_report)
             to_txt(summary_and_full_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id)
 
         else:
