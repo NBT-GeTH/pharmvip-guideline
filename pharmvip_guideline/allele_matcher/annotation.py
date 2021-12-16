@@ -178,10 +178,10 @@ def  find_looup_key(gene_set,diplotype):
             all_possible = all_possible + sett
     return all_possible
 
-def  add_lookup_key_col(diplotype:pd.DataFrame,function_mappings):
+def  add_lookup_key_col(df:pd.DataFrame,function_mappings):
     mapper_path_stroe = f"{function_mappings}/diplotype_mapper"
     lookup_key_list = []
-    for inx,obj in diplotype.iterrows() :
+    for inx,obj in df.iterrows() :
         gene = obj["gene"]
         guide_dip = obj["guide_dip"]
         mapper_path = f"{mapper_path_stroe}/{gene}_mapper.json"
@@ -215,7 +215,7 @@ def  add_lookup_key_col(diplotype:pd.DataFrame,function_mappings):
         # df = pd.read_json(gid_path)
         # lookup_key = {'CYP2D6': '1.25'}
         # target_guide = df.loc[df['lookupkey'] == lookup_key]
-    diplotype["lookupkey"] = lookup_key_list
+    df["lookupkey"] = lookup_key_list
 
 def to_txt(cpic_summary:pd.DataFrame, output_path, user_id, project_id):
     f = open(f"{output_path}/cpic_summary.txt", "w")
