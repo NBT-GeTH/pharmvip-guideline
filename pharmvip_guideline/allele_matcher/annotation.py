@@ -1,5 +1,5 @@
 import json
-from numpy import empty
+# from numpy import empty
 import pandas as pd
 from pandas.core.frame import DataFrame
 
@@ -51,9 +51,11 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype):
         guideline = pd.read_json(guideline_path)
 
         # for test 
-        # if not(guide_line_id == '100414'):
-        #     continue
-        
+        # hla_set = ['100412','100421','100422','100423']
+        test_set = ['100423']
+        if not(guide_line_id in test_set):
+            continue
+       
         lookup_keys = find_looup_key(gene_set,diplotype)
         for lookup_key in lookup_keys:
             if not lookup_key:
@@ -61,9 +63,17 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype):
             else:
                 row_set = []
                 drug_set = []
-                key_map = lookup_key['key']
-                inx_map = lookup_key['inx']
+                key_map = {}
+                inx_map = []
+                row_map = []
+                for i in lookup_key:
+                    key_map = key_map| i['key']
+                    inx_map.append(i['inx'])
+                    row_map.append(i['row'])
+                # inx_map = lookup_key['inx']
                 target_guide = guideline.loc[guideline['lookupkey'] == key_map]
+                if target_guide.empty:
+                    continue
                 for inx,val in target_guide.iterrows():
                     drug = val['drug']['name']
                     val = val.drop(['drug', 'drugid','id']).to_dict()
@@ -80,18 +90,23 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype):
                 target_dip1 = diplotype.loc[diplotype["gene"] == gene[0]]
                 target_dip2 = diplotype.loc[diplotype["gene"] == gene[1]]
                 target_dip3 = diplotype.loc[diplotype["gene"] == gene[2]]
+
+                target_dip1 = target_dip1 if target_dip1.empty else target_dip1.loc[row_map[0]]
+                target_dip2 = target_dip2 if target_dip2.empty else target_dip2.loc[row_map[1]]
+                target_dip3 = target_dip3 if target_dip3.empty else target_dip3.loc[row_map[2]]
+
                 
-                cpi_sum_dip_name1 = '' if target_dip1.empty else target_dip1.iloc[0]["print_dip"][inx_map]
-                cpi_sum_dip_name2 = '' if target_dip2.empty else target_dip2.iloc[0]["print_dip"][inx_map]
-                cpi_sum_dip_name3 = '' if target_dip3.empty else target_dip3.iloc[0]["print_dip"][inx_map]
-                cpi_sum_gen_1_missing = '' if target_dip1.empty else target_dip1.iloc[0]["missing_call_variants"]
-                cpi_sum_gen_2_missing = '' if target_dip2.empty else target_dip2.iloc[0]["missing_call_variants"]
-                cpi_sum_gen_3_missing = '' if target_dip3.empty else target_dip3.iloc[0]["missing_call_variants"]
-                cpi_sum_gen_1_total = '' if target_dip1.empty else target_dip1.iloc[0]["total_variants"]
-                cpi_sum_gen_2_total = '' if target_dip2.empty else target_dip2.iloc[0]["total_variants"]
-                cpi_sum_gen_3_total = '' if target_dip3.empty else target_dip3.iloc[0]["total_variants"]
-                tool1 = '' if target_dip1.empty else target_dip1.iloc[0]["tool"]
-                tool2 = '' if target_dip2.empty else target_dip2.iloc[0]["tool"]
+                cpi_sum_dip_name1 = '' if target_dip1.empty else target_dip1["print_dip"][inx_map[0]]
+                cpi_sum_dip_name2 = '' if target_dip2.empty else target_dip2["print_dip"][inx_map[1]]
+                cpi_sum_dip_name3 = '' if target_dip3.empty else target_dip3["print_dip"][inx_map[2]]
+                cpi_sum_gen_1_missing = '' if target_dip1.empty else target_dip1["missing_call_variants"]
+                cpi_sum_gen_2_missing = '' if target_dip2.empty else target_dip2["missing_call_variants"]
+                cpi_sum_gen_3_missing = '' if target_dip3.empty else target_dip3["missing_call_variants"]
+                cpi_sum_gen_1_total = '' if target_dip1.empty else target_dip1["total_variants"]
+                cpi_sum_gen_2_total = '' if target_dip2.empty else target_dip2["total_variants"]
+                cpi_sum_gen_3_total = '' if target_dip3.empty else target_dip3["total_variants"]
+                tool1 = '' if target_dip1.empty else target_dip1["tool"]
+                tool2 = '' if target_dip2.empty else target_dip2["tool"]
                 tool1 = '' if 'N/A' in tool1 else tool1
                 tool2 = '' if 'N/A' in tool2 else tool2
 
@@ -138,20 +153,24 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype):
                         "cpi_sum_hla_tool_1_guide": tool1,
                         "cpi_sum_hla_tool_2_guide": tool2
                     }
+                    # check_dup(summary_and_full_report,report_element)
                     summary_and_full_report = summary_and_full_report.append(report_element,ignore_index=True)
 
-        writer = pd.ExcelWriter('comparing.xlsx', engine='xlsxwriter')
-        summary_and_full_report.to_excel(writer,index=None)
-        writer.save()
+    # writer = pd.ExcelWriter('comparing.xlsx', engine='xlsxwriter')
+    # summary_and_full_report.to_excel(writer,index=None)
+    # writer.save()
 
     return summary_and_full_report
+
+def check_dup(full:pd,newer):
+    print("done")
 
 ## find combination from array [[],[],..]
 def combo(array,total,ix):
     lenn = len(array)
     sett = []
     for i in array[ix]:
-        total_temp = total|i
+        total_temp = total + [i]
         if ix + 1 >= lenn :
             sett.append(total_temp)
         else: 
@@ -168,11 +187,14 @@ def  find_looup_key(gene_set,diplotype):
             if target_row.empty:
                 pass
             else:
-                lookupkey_set = target_row.iloc[0]["lookupkey"]
+                for inx,val in target_row.iterrows():
+                    lookupkey_set = lookupkey_set + val['lookupkey']
+                    print("done")
+                # lookupkey_set = target_row.iloc[0]["lookupkey"]
                 all_lookup_key.append(lookupkey_set)
             
         if (all_lookup_key):
-            total = {}
+            total = []
             ix = 0
             sett = combo(all_lookup_key,total,ix)
             all_possible = all_possible + sett
@@ -198,12 +220,14 @@ def  add_lookup_key_col(df:pd.DataFrame,function_mappings):
             if not lookup_key.empty:
                 lookup_key = lookup_key.iloc[0]["lookupkey"]
                 templat = {
+                    'row' : inx,
                     "inx" : ix,
                     "key" : lookup_key
                 }
                 # lookup_key_stack.append()
             else :
                 templat = {
+                    'row' : inx,
                     "inx" : ix,
                     "key" : {}
                 }
