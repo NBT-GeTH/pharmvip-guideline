@@ -1,74 +1,122 @@
 [
     {
-        "activityscore": "{'UGT1A1': 'n/a'}",
-        "allelestatus": "{}",
+        "activityscore": {
+            "UGT1A1": "n/a"
+        },
+        "allelestatus": {},
         "classification": "No Recommendation",
         "comments": "UGT1A1*80 is in very high linkage disequilibrium with *28 and *37. In the rare event that *80 is detected but *28 and *37 are not, there are not enough clinical data to predict metabolizer status with certainty. However, if only *80 is interrogated and the patient is heterozygous or homozygous for *80, an intermediate or poor metabolizer phenotype may be inferred, respectively.",
-        "drug": "{'name': 'atazanavir'}",
+        "drug": {
+            "name": "atazanavir"
+        },
         "drugid": "RxNorm:343047",
         "drugrecommendation": "No recommendation",
         "drugrecommendation_short": "No recommendation",
-        "guideline": "{'name': 'UGT1A1 and Atazanavir'}",
-        "guidelineid": 100429,
-        "id": 1351204,
-        "implications": "{'UGT1A1': 'n/a'}",
-        "lookupkey": "{'UGT1A1': 'Indeterminate'}",
-        "phenotypes": "{'UGT1A1': 'Indeterminate'}",
+        "guideline": {
+            "name": "UGT1A1 and Atazanavir"
+        },
+        "guidelineid": "100429",
+        "id": "1351204",
+        "implications": {
+            "UGT1A1": "n/a"
+        },
+        "lookupkey": {
+            "UGT1A1": "Indeterminate"
+        },
+        "phenotypes": {
+            "UGT1A1": "Indeterminate"
+        },
         "population": "general",
-        "version": 1
+        "version": "1"
     },
     {
-        "activityscore": "{'UGT1A1': 'n/a'}",
-        "allelestatus": "{}",
+        "activityscore": {
+            "UGT1A1": "n/a"
+        },
+        "allelestatus": {},
         "classification": "Strong",
         "comments": "All studies correlating UGT1A1 genotypes with atazanavir adverse events have involved ritonavir boosting. However, concentration-time profiles are equivalent when boosted with either cobicistat or ritonavir (PMID 23532097), and bilirubin-related adverse events including discontinuation of atazanavir occur in a similar percentage of patients prescribed atazanavir with cobicistat or ritonavir (PMID 23532097). Associations between UGT1A1 genotype, bilirubin elevations, and atazanavir/r discontinuation therefore almost certainly translate to atazanavir/cobicistat.",
-        "drug": "{'name': 'atazanavir'}",
+        "drug": {
+            "name": "atazanavir"
+        },
         "drugid": "RxNorm:343047",
         "drugrecommendation": "Consider an alternative agent particularly where jaundice would be of concern to the patient. If atazanavir is to be prescribed, there is a high likelihood of developing jaundice that will result in atazanavir discontinuation (at least 20% and as high as 60%).",
         "drugrecommendation_short": "Consider an alternative agent particularly where jaundice would be of concern to the patient.",
-        "guideline": "{'name': 'UGT1A1 and Atazanavir'}",
-        "guidelineid": 100429,
-        "id": 1351203,
-        "implications": "{'UGT1A1': 'Markedly decreased UGT1A1 activity; high likelihood of bilirubin-related discontinuation of atazanavir.'}",
-        "lookupkey": "{'UGT1A1': 'Poor Metabolizer'}",
-        "phenotypes": "{'UGT1A1': 'Poor Metabolizer'}",
+        "guideline": {
+            "name": "UGT1A1 and Atazanavir"
+        },
+        "guidelineid": "100429",
+        "id": "1351203",
+        "implications": {
+            "UGT1A1": "Markedly decreased UGT1A1 activity; high likelihood of bilirubin-related discontinuation of atazanavir."
+        },
+        "lookupkey": {
+            "UGT1A1": "Poor Metabolizer"
+        },
+        "phenotypes": {
+            "UGT1A1": "Poor Metabolizer"
+        },
         "population": "general",
-        "version": 1
+        "version": "1"
     },
     {
-        "activityscore": "{'UGT1A1': 'n/a'}",
-        "allelestatus": "{}",
+        "activityscore": {
+            "UGT1A1": "n/a"
+        },
+        "allelestatus": {},
         "classification": "Strong",
         "comments": "All studies correlating UGT1A1 genotypes with atazanavir adverse events have involved ritonavir boosting. However, concentration-time profiles are equivalent when boosted with either cobicistat or ritonavir (PMID 23532097), and bilirubin-related adverse events including discontinuation of atazanavir occur in a similar percentage of patients prescribed atazanavir with cobicistat or ritonavir (PMID 23532097). Associations between UGT1A1 genotype, bilirubin elevations, and atazanavir/r discontinuation therefore almost certainly translate to atazanavir/cobicistat.",
-        "drug": "{'name': 'atazanavir'}",
+        "drug": {
+            "name": "atazanavir"
+        },
         "drugid": "RxNorm:343047",
         "drugrecommendation": "There is no need to avoid prescribing of atazanavir based on UGT1A1 genetic test result. Inform the patient that some patients stop atazanavir because of jaundice (yellow eyes and skin), but that this patient\u2019s genotype makes this unlikely (less than about a 1 in 20 chance of stopping atazanavir because of jaundice).",
         "drugrecommendation_short": "There is no need to avoid prescribing of atazanavir based on UGT1A1 genetic test result.",
-        "guideline": "{'name': 'UGT1A1 and Atazanavir'}",
-        "guidelineid": 100429,
-        "id": 1351202,
-        "implications": "{'UGT1A1': 'Somewhat decreased UGT1A1 activity; low likelihood of bilirubin-related discontinuation of atazanavir.'}",
-        "lookupkey": "{'UGT1A1': 'Intermediate Metabolizer'}",
-        "phenotypes": "{'UGT1A1': 'Intermediate Metabolizer'}",
+        "guideline": {
+            "name": "UGT1A1 and Atazanavir"
+        },
+        "guidelineid": "100429",
+        "id": "1351202",
+        "implications": {
+            "UGT1A1": "Somewhat decreased UGT1A1 activity; low likelihood of bilirubin-related discontinuation of atazanavir."
+        },
+        "lookupkey": {
+            "UGT1A1": "Intermediate Metabolizer"
+        },
+        "phenotypes": {
+            "UGT1A1": "Intermediate Metabolizer"
+        },
         "population": "general",
-        "version": 1
+        "version": "1"
     },
     {
-        "activityscore": "{'UGT1A1': 'n/a'}",
-        "allelestatus": "{}",
+        "activityscore": {
+            "UGT1A1": "n/a"
+        },
+        "allelestatus": {},
         "classification": "Strong",
         "comments": "All studies correlating UGT1A1 genotypes with atazanavir adverse events have involved ritonavir boosting. However, concentration-time profiles are equivalent when boosted with either cobicistat or ritonavir (PMID 23532097), and bilirubin-related adverse events including discontinuation of atazanavir occur in a similar percentage of patients prescribed atazanavir with cobicistat or ritonavir (PMID 23532097). Associations between UGT1A1 genotype, bilirubin elevations, and atazanavir/r discontinuation therefore almost certainly translate to atazanavir/cobicistat. \"reference\" function refers to the UGT1A1 allele to which other alleles are compared.",
-        "drug": "{'name': 'atazanavir'}",
+        "drug": {
+            "name": "atazanavir"
+        },
         "drugid": "RxNorm:343047",
         "drugrecommendation": "There is no need to avoid prescribing of atazanavir based on UGT1A1 genetic test result. Inform the patient that some patients stop atazanavir because of jaundice (yellow eyes and skin), but that this patient\u2019s genotype makes this unlikely (less than about a 1 in 20 chance of stopping atazanavir because of jaundice).",
         "drugrecommendation_short": "There is no need to avoid prescribing of atazanavir based on UGT1A1 genetic test result.",
-        "guideline": "{'name': 'UGT1A1 and Atazanavir'}",
-        "guidelineid": 100429,
-        "id": 1351201,
-        "implications": "{'UGT1A1': 'Reference UGT1A1 activity; very low likelihood of bilirubin-related discontinuation of atazanavir.'}",
-        "lookupkey": "{'UGT1A1': 'Normal Metabolizer'}",
-        "phenotypes": "{'UGT1A1': 'Normal Metabolizer'}",
+        "guideline": {
+            "name": "UGT1A1 and Atazanavir"
+        },
+        "guidelineid": "100429",
+        "id": "1351201",
+        "implications": {
+            "UGT1A1": "Reference UGT1A1 activity; very low likelihood of bilirubin-related discontinuation of atazanavir."
+        },
+        "lookupkey": {
+            "UGT1A1": "Normal Metabolizer"
+        },
+        "phenotypes": {
+            "UGT1A1": "Normal Metabolizer"
+        },
         "population": "general",
-        "version": 1
+        "version": "1"
     }
 ]
