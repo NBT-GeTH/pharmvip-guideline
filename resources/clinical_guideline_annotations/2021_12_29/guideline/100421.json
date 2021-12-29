@@ -1,0 +1,38 @@
+[
+    {
+        "activityscore": "{}",
+        "allelestatus": "{'HLA-B': 'HLA-B*57:01 positive'}",
+        "classification": "Strong",
+        "comments": null,
+        "drug": "{'name': 'abacavir'}",
+        "drugid": "RxNorm:190521",
+        "drugrecommendation": "Abacavir is not recommended",
+        "drugrecommendation_short": "Abacavir is not recommended",
+        "guideline": "{'name': 'HLA-B and Abacavir'}",
+        "guidelineid": 100421,
+        "id": 1350971,
+        "implications": "{'HLA-B': 'Significantly increased risk of abacavir hypersensitivity'}",
+        "lookupkey": "{'HLA-B': '*57:01 positive'}",
+        "phenotypes": "{}",
+        "population": "general",
+        "version": 1
+    },
+    {
+        "activityscore": "{}",
+        "allelestatus": "{'HLA-B': 'HLA-B*57:01 negative'}",
+        "classification": "Strong",
+        "comments": null,
+        "drug": "{'name': 'abacavir'}",
+        "drugid": "RxNorm:190521",
+        "drugrecommendation": "Use abacavir per standard dosing guidelines",
+        "drugrecommendation_short": "Use abacavir per standard dosing guidelines",
+        "guideline": "{'name': 'HLA-B and Abacavir'}",
+        "guidelineid": 100421,
+        "id": 1350970,
+        "implications": "{'HLA-B': 'Low or reduced risk of abacavir hypersensitivity'}",
+        "lookupkey": "{'HLA-B': '*57:01 negative'}",
+        "phenotypes": "{}",
+        "population": "general",
+        "version": 1
+    }
+]
