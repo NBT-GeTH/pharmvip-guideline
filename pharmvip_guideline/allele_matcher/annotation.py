@@ -52,9 +52,9 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype):
 
         # for test 
         # hla_set = ['100412','100421','100422','100423']
-        test_set = ['100423']
-        if not(guide_line_id in test_set):
-            continue
+        # test_set = ['100423']
+        # if not(guide_line_id in test_set):
+        #     continue
        
         lookup_keys = find_looup_key(gene_set,diplotype)
         for lookup_key in lookup_keys:
@@ -114,7 +114,9 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype):
                     act_score1 = val['activityscore'][gene[0]] if gene[0] in val['activityscore'] and val['activityscore'][gene[0]] != "n/a" else ''
                     act_score2 = val['activityscore'][gene[1]] if gene[1] in val['activityscore'] and val['activityscore'][gene[1]] != "n/a" else ''
                     recomnet = val['drugrecommendation']
+                    rec_short = val['drugrecommendation_short']
                     recomnet_out = f'<text>{recomnet}</text><br/>'
+                    rec_short_out = f'<text>{rec_short}</text><br/>'
                     implications1 = val['implications'][gene[0]] if gene[0] in val['implications'] else ''
                     implications2 = val['implications'][gene[1]] if gene[1] in val['implications'] else ''
                     phenotypes1 = val['phenotypes'][gene[0]] if gene[0] in val['phenotypes'] else ''
@@ -133,7 +135,7 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype):
                         "cpi_sum_act_score1": act_score1,
                         "cpi_sum_act_score2": act_score2,
                         "cpi_sum_strength": val['classification'],
-                        "cpi_sum_recommendations": recomnet_out,
+                        "cpi_sum_recommendations": rec_short_out,
                         "cpi_sum_recommendations_full": recomnet_out,
                         "cpi_sum_recommendations_full_figure": '',
                         "cpi_sum_comments": cpi_sum_comments,
@@ -153,17 +155,14 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype):
                         "cpi_sum_hla_tool_1_guide": tool1,
                         "cpi_sum_hla_tool_2_guide": tool2
                     }
-                    # check_dup(summary_and_full_report,report_element)
                     summary_and_full_report = summary_and_full_report.append(report_element,ignore_index=True)
 
-    # writer = pd.ExcelWriter('comparing.xlsx', engine='xlsxwriter')
-    # summary_and_full_report.to_excel(writer,index=None)
-    # writer.save()
+    writer = pd.ExcelWriter('comparing.xlsx', engine='xlsxwriter')
+    summary_and_full_report.to_excel(writer,index=None)
+    writer.save()
 
     return summary_and_full_report
 
-def check_dup(full:pd,newer):
-    print("done")
 
 ## find combination from array [[],[],..]
 def combo(array,total,ix):
@@ -177,6 +176,7 @@ def combo(array,total,ix):
             sett = sett + combo(array,total_temp,ix+1)
     return sett
 
+
 def  find_looup_key(gene_set,diplotype):
     all_possible =  []
     for genes in gene_set:
@@ -189,8 +189,6 @@ def  find_looup_key(gene_set,diplotype):
             else:
                 for inx,val in target_row.iterrows():
                     lookupkey_set = lookupkey_set + val['lookupkey']
-                    print("done")
-                # lookupkey_set = target_row.iloc[0]["lookupkey"]
                 all_lookup_key.append(lookupkey_set)
             
         if (all_lookup_key):
@@ -200,6 +198,7 @@ def  find_looup_key(gene_set,diplotype):
             all_possible = all_possible + sett
     return all_possible
 
+
 def  add_lookup_key_col(df:pd.DataFrame,function_mappings):
     mapper_path_stroe = f"{function_mappings}/diplotype_mapper"
     lookup_key_list = []
@@ -207,7 +206,6 @@ def  add_lookup_key_col(df:pd.DataFrame,function_mappings):
         gene = obj["gene"]
         guide_dip = obj["guide_dip"]
         mapper_path = f"{mapper_path_stroe}/{gene}_mapper.json"
-        
         try:
             mapper = pd.read_json(mapper_path)
         except:
@@ -224,27 +222,20 @@ def  add_lookup_key_col(df:pd.DataFrame,function_mappings):
                     "inx" : ix,
                     "key" : lookup_key
                 }
-                # lookup_key_stack.append()
             else :
                 templat = {
                     'row' : inx,
                     "inx" : ix,
                     "key" : {}
                 }
-                # lookup_key_stack.append({})
             lookup_key_stack.append(templat)
         lookup_key_list.append(lookup_key_stack)
-        # lookup_key_list.append(lookup_key.iloc[0]["lookupkey"])
 
-        # df = pd.read_json(gid_path)
-        # lookup_key = {'CYP2D6': '1.25'}
-        # target_guide = df.loc[df['lookupkey'] == lookup_key]
     df["lookupkey"] = lookup_key_list
+
 
 def to_txt(cpic_summary:pd.DataFrame, output_path, user_id, project_id):
     f = open(f"{output_path}/cpic_summary.txt", "w")
     cpic_summary.insert(0,'project_id',project_id)
-
     cpic_summary.insert(0,'user_id',user_id)
-    
     cpic_summary.to_csv(f"{output_path}/cpic_summary.txt",index=False,sep='\t',header=False)

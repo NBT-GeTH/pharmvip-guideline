@@ -9,7 +9,7 @@ defaults_allele_definitions_dbpmcgenomics = os.path.join(os.path.join(os.path.di
 function_mappings_version = "2021_11_03"
 defaults_function_mappings = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "function_mappings", function_mappings_version)
 
-clinical_guideline_annotations_version = "2021_11_03"
+clinical_guideline_annotations_version = "2021_12_29"
 defaults_clinical_guideline_annotations = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "clinical_guideline_annotations", clinical_guideline_annotations_version)
 
 pack_path = os.path.join(os.path.dirname(__file__))
