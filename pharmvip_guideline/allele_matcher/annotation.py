@@ -333,8 +333,8 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                             summary_and_full_report["cpi_sum_met_status_2"].append("")
                             summary_and_full_report["cpi_sum_met_status_3"].append("")
                         else:
-                            summary_and_full_report["cpi_sum_met_status_1"].append(annotations.get("MetabolizerStatus")[0])
-                            summary_and_full_report["cpi_sum_met_status_2"].append(annotations.get("MetabolizerStatus")[1])
+                            summary_and_full_report["cpi_sum_met_status_1"].append(annotations.get("MetabolizerStatus")[0].split("<em>")[0])
+                            summary_and_full_report["cpi_sum_met_status_2"].append(annotations.get("MetabolizerStatus")[1].split("<em>")[0])
                             summary_and_full_report["cpi_sum_met_status_3"].append("")
                         summary_and_full_report["cpi_sum_gen_1_missing"].append(diplotype["missing_call_variants"][diplotype["gene"] == gene1].tolist()[0])
                         summary_and_full_report["cpi_sum_gen_1_total"].append(diplotype["total_variants"][diplotype["gene"] == gene1].tolist()[0])
