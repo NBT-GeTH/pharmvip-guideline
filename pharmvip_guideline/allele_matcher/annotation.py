@@ -52,14 +52,15 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype):
 
         # for test 
         # hla_set = ['100412','100421','100422','100423']
-        # test_set = ['100423']
-        # if not(guide_line_id in test_set):
-        #     continue
+        test_set = ['100428']
+        if not(guide_line_id in test_set):
+            continue
        
         lookup_keys = find_looup_key(gene_set,diplotype)
         for lookup_key in lookup_keys:
             if not lookup_key:
                 pass
+
             else:
                 row_set = []
                 drug_set = []
@@ -73,6 +74,7 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype):
                 # inx_map = lookup_key['inx']
                 target_guide = guideline.loc[guideline['lookupkey'] == key_map]
                 if target_guide.empty:
+                    # not_found_guide(summary_and_full_report=summary_and_full_report)
                     continue
                 for inx,val in target_guide.iterrows():
                     drug = val['drug']['name']
@@ -90,12 +92,9 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype):
                 target_dip1 = diplotype.loc[diplotype["gene"] == gene[0]]
                 target_dip2 = diplotype.loc[diplotype["gene"] == gene[1]]
                 target_dip3 = diplotype.loc[diplotype["gene"] == gene[2]]
-
                 target_dip1 = target_dip1 if target_dip1.empty else target_dip1.loc[row_map[0]]
                 target_dip2 = target_dip2 if target_dip2.empty else target_dip2.loc[row_map[1]]
                 target_dip3 = target_dip3 if target_dip3.empty else target_dip3.loc[row_map[2]]
-
-                
                 cpi_sum_dip_name1 = '' if target_dip1.empty else target_dip1["print_dip"][inx_map[0]]
                 cpi_sum_dip_name2 = '' if target_dip2.empty else target_dip2["print_dip"][inx_map[1]]
                 cpi_sum_dip_name3 = '' if target_dip3.empty else target_dip3["print_dip"][inx_map[2]]
@@ -156,16 +155,134 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype):
                         "cpi_sum_hla_tool_2_guide": tool2
                     }
                     summary_and_full_report = summary_and_full_report.append(report_element,ignore_index=True)
-
+    summary_and_full_report = handle_warfarin(summary_and_full_report, diplotype)
     writer = pd.ExcelWriter('comparing.xlsx', engine='xlsxwriter')
     summary_and_full_report.to_excel(writer,index=None)
     writer.save()
+    
+    return summary_and_full_report
+
+# def  not_found_guide(summary_and_full_report):
+#     warfarin = pd.DataFrame({
+#             "cpi_sum_gene1": warfarin_genes[0],
+#             "cpi_sum_gene2": warfarin_genes[1],
+#             "cpi_sum_gene3": warfarin_genes[2],
+#             "cpi_sum_dip_name1": str(diplotypes_new.loc[warfarin_genes[0], "print_dip"]).replace("[", "").replace("]", "").replace("'", ""),
+#             "cpi_sum_dip_name2": str(diplotypes_new.loc[warfarin_genes[1], "print_dip"]).replace("[", "").replace("]", "").replace("'", ""),
+#             "cpi_sum_dip_name3": str(diplotypes_new.loc[warfarin_genes[2], "print_dip"]).replace("[", "").replace   ("]", "").replace("'", ""),
+#             "cpi_sum_drug": warfarin_drug,
+#             "cpi_sum_population" : '',
+#             "cpi_sum_act_score1" : '',
+#             "cpi_sum_act_score2" : '',
+#             "cpi_sum_strength": "N/A",
+#             "cpi_sum_recommendations": "<text>No Guideline.</text></br>",
+#             "cpi_sum_recommendations_full": "<text>No Guideline.</text></br>",
+#             "cpi_sum_recommendations_full_figure": "",
+#             "cpi_sum_comments" : '',
+#             "cpi_sum_implications1" : '',
+#             "cpi_sum_implications2" : '',
+#             "cpi_sum_phenotype1" : '',
+#             "cpi_sum_phenotype2" : '',
+#             "cpi_sum_met_status_1": "",
+#             "cpi_sum_met_status_2": "",
+#             "cpi_sum_met_status_3": "",
+#             "cpi_sum_gen_1_missing": diplotypes_new.loc[warfarin_genes[0], "missing_call_variants"],
+#             "cpi_sum_gen_1_total": diplotypes_new.loc[warfarin_genes[0], "total_variants"],
+#             "cpi_sum_gen_2_missing": diplotypes_new.loc[warfarin_genes[1], "missing_call_variants"],
+#             "cpi_sum_gen_2_total": diplotypes_new.loc[warfarin_genes[1], "total_variants"],     
+#             "cpi_sum_gen_3_missing": diplotypes_new.loc[warfarin_genes[2], "missing_call_variants"],
+#             "cpi_sum_gen_3_total": diplotypes_new.loc[warfarin_genes[2], "total_variants"],
+#             "cpi_sum_hla_tool_1_guide": "",
+#             "cpi_sum_hla_tool_2_guide": "", },
+#             index=["0"])
+#     summary_and_full_report = pd.concat([summary_and_full_report, warfarin]).reset_index(drop=True)
+
+
+#     return summary_and_full_report
+
+
+def  handle_warfarin(summary_and_full_report, diplotypes):
+    diplotypes_new = diplotypes.set_index("gene")
+    
+    warfarin_genes = ["CYP2C9", "CYP4F2", "VKORC1"]
+    warfarin_drug = "warfarin"
+    warfarin_recommendations = '<text>See dosing guideline in the Guideline full report.</text></br>'
+    warfarin_recommendations_full = '<text>From genotype info, please follow the flow chart to determine the appropriate dosing recommendation for warfarin.<br/><br/><text><strong>Dosing recommendations for Warfarin dosing based on genotype for adult patients</strong></text><br/><br/><center><img src="https://s3.pgkb.org/attachment/CPIC_warfarin_2017_Fig_2.png" width="500px" height="329px"></center><br/></text></br>'
+    warfarin_recommendations_full_figure = '<text><strong>Figure Legend:</strong><br/><sup>a</sup>“Dose clinically” means to dose without genetic information, which may include use of a clinical dosing algorithm or standard dose approach<br/><sup>b</sup>Data strongest for European and East Asian ancestry populations and consistent in other populations.<br/> <sup>c</sup>45-50% of individuals with self-reported African ancestry carry CYP2C9*5,*6,*8,*11, or rs12777823. IF CYP2C9*5, *6, *8, and *11 WERE NOT TESTED, DOSE WARFARIN CLINICALLY. Note: these data derive primarily from African Americans, who are largely from West Africa. It is unknown if the same associations are present for those from other parts of Africa.<br/><sup>d</sup>Most algorithms are developed for the target INR 2-3.<br/><sup>e</sup>Consider an alternative agent in individuals with genotypes associated with CYP2C9 poor metabolism (e.g., CYP2C9*3/*3, *2/*3, *3/*3) or both increased sensitivity (VKORC1 A/G or A/A) and CYP2C9 poor metabolism.<br/><sup>f</sup>See the EU-PACT trial for pharmacogenetics-based warfarin initiation (loading) dose algorithm [Article:<a href="https://www.pharmgkb.org/literature/15066830">24251363</a>] with the caveat that the loading dose PG algorithm has not been specifically tested or validated in populations of African ancestry.<br/><sup>g</sup>Larger dose reduction might be needed in variant homozygotes (i.e. 20-40%).<br/> <sup>h</sup>African American refers to individuals mainly originating from West Africa.<br/>For more information see: <a href="https://www.pharmgkb.org/guidelineAnnotation/PA166104949">https://www.pharmgkb.org/guidelineAnnotation/PA166104949</a></text></br>'
+    check_gnen = str(diplotypes_new.loc[warfarin_genes[0], "print_dip"]).replace("[", "").replace("]", "").replace("'", "") != "No info" and str(diplotypes_new.loc[warfarin_genes[2], "print_dip"]).replace("[", "").replace("]", "").replace("'", "") != "No info"
+    if check_gnen:
+        warfarin = pd.DataFrame({
+            "cpi_sum_gene1": warfarin_genes[0],
+            "cpi_sum_gene2": warfarin_genes[1],
+            "cpi_sum_gene3": warfarin_genes[2],
+            "cpi_sum_dip_name1": str(diplotypes_new.loc[warfarin_genes[0], "print_dip"]).replace("[", "").replace("]", "").replace("'", ""),
+            "cpi_sum_dip_name2": str(diplotypes_new.loc[warfarin_genes[1], "print_dip"]).replace("[", "").replace("]", "").replace("'", ""),
+            "cpi_sum_dip_name3": str(diplotypes_new.loc[warfarin_genes[2], "print_dip"]).replace("[", "").replace("]", "").replace("'", ""),
+            "cpi_sum_drug": warfarin_drug,
+            "cpi_sum_act_score": "",
+            "cpi_sum_strength": "N/A",
+            "cpi_sum_recommendations": warfarin_recommendations,
+            "cpi_sum_recommendations_full": warfarin_recommendations_full,
+            "cpi_sum_recommendations_full_figure": warfarin_recommendations_full_figure,
+            "cpi_sum_comments" : '',
+            "cpi_sum_implications1" : '',
+            "cpi_sum_implications2" : '',
+            "cpi_sum_phenotype1" : '',
+            "cpi_sum_phenotype2" : '',
+            "cpi_sum_met_status_1": "",
+            "cpi_sum_met_status_2": "",
+            "cpi_sum_met_status_3": "",
+            "cpi_sum_gen_1_missing": diplotypes_new.loc[warfarin_genes[0], "missing_call_variants"],
+            "cpi_sum_gen_1_total": diplotypes_new.loc[warfarin_genes[0], "total_variants"],
+            "cpi_sum_gen_2_missing": diplotypes_new.loc[warfarin_genes[1], "missing_call_variants"],
+            "cpi_sum_gen_2_total": diplotypes_new.loc[warfarin_genes[1], "total_variants"],     
+            "cpi_sum_gen_3_missing": diplotypes_new.loc[warfarin_genes[2], "missing_call_variants"],
+            "cpi_sum_gen_3_total": diplotypes_new.loc[warfarin_genes[2], "total_variants"],
+            "cpi_sum_hla_tool_1_guide": "",
+            "cpi_sum_hla_tool_2_guide": "", },
+            index=["0"])
+        summary_and_full_report = pd.concat([summary_and_full_report, warfarin]).reset_index(drop=True)
+    else:
+        warfarin = pd.DataFrame({
+            "cpi_sum_gene1": warfarin_genes[0],
+            "cpi_sum_gene2": warfarin_genes[1],
+            "cpi_sum_gene3": warfarin_genes[2],
+            "cpi_sum_dip_name1": str(diplotypes_new.loc[warfarin_genes[0], "print_dip"]).replace("[", "").replace("]", "").replace("'", ""),
+            "cpi_sum_dip_name2": str(diplotypes_new.loc[warfarin_genes[1], "print_dip"]).replace("[", "").replace("]", "").replace("'", ""),
+            "cpi_sum_dip_name3": str(diplotypes_new.loc[warfarin_genes[2], "print_dip"]).replace("[", "").replace   ("]", "").replace("'", ""),
+            "cpi_sum_drug": warfarin_drug,
+            "cpi_sum_population" : '',
+            "cpi_sum_act_score1" : '',
+            "cpi_sum_act_score2" : '',
+            "cpi_sum_strength": "N/A",
+            "cpi_sum_recommendations": "<text>No Guideline.</text></br>",
+            "cpi_sum_recommendations_full": "<text>No Guideline.</text></br>",
+            "cpi_sum_recommendations_full_figure": "",
+            "cpi_sum_comments" : '',
+            "cpi_sum_implications1" : '',
+            "cpi_sum_implications2" : '',
+            "cpi_sum_phenotype1" : '',
+            "cpi_sum_phenotype2" : '',
+            "cpi_sum_met_status_1": "",
+            "cpi_sum_met_status_2": "",
+            "cpi_sum_met_status_3": "",
+            "cpi_sum_gen_1_missing": diplotypes_new.loc[warfarin_genes[0], "missing_call_variants"],
+            "cpi_sum_gen_1_total": diplotypes_new.loc[warfarin_genes[0], "total_variants"],
+            "cpi_sum_gen_2_missing": diplotypes_new.loc[warfarin_genes[1], "missing_call_variants"],
+            "cpi_sum_gen_2_total": diplotypes_new.loc[warfarin_genes[1], "total_variants"],     
+            "cpi_sum_gen_3_missing": diplotypes_new.loc[warfarin_genes[2], "missing_call_variants"],
+            "cpi_sum_gen_3_total": diplotypes_new.loc[warfarin_genes[2], "total_variants"],
+            "cpi_sum_hla_tool_1_guide": "",
+            "cpi_sum_hla_tool_2_guide": "", },
+            index=["0"])
+        summary_and_full_report = pd.concat([summary_and_full_report, warfarin]).reset_index(drop=True)
+
 
     return summary_and_full_report
 
 
 ## find combination from array [[],[],..]
-def combo(array,total,ix):
+def  combo(array,total,ix):
     lenn = len(array)
     sett = []
     for i in array[ix]:
@@ -234,7 +351,7 @@ def  add_lookup_key_col(df:pd.DataFrame,function_mappings):
     df["lookupkey"] = lookup_key_list
 
 
-def to_txt(cpic_summary:pd.DataFrame, output_path, user_id, project_id):
+def  to_txt(cpic_summary:pd.DataFrame, output_path, user_id, project_id):
     f = open(f"{output_path}/cpic_summary.txt", "w")
     cpic_summary.insert(0,'project_id',project_id)
     cpic_summary.insert(0,'user_id',user_id)

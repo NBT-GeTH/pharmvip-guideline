@@ -1,0 +1,115 @@
+{
+  "gene": "CYP4F2",
+  "haplotypes": [
+    {
+      "name": "*1",
+      "position": "Position at NC_000019.10 (Homo sapiens chromosome 19, GRCh38.p13)",
+      "chromosome": "chr19",
+      "variants": [
+        {
+          "hgvs": "g.15879621C>T",
+          "hgvs_type": "SNP",
+          "start": "15879621",
+          "end": "15879621",
+          "rsid": "rs2108622",
+          "allele": "C",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.15897578A>C",
+          "hgvs_type": "SNP",
+          "start": "15897578",
+          "end": "15897578",
+          "rsid": "rs3093105",
+          "allele": "A",
+          "is_ref": false
+        }
+      ]
+    },
+    {
+      "name": "*2",
+      "position": "Position at NC_000019.10 (Homo sapiens chromosome 19, GRCh38.p13)",
+      "chromosome": "chr19",
+      "variants": [
+        {
+          "hgvs": "g.15879621C>T",
+          "hgvs_type": "SNP",
+          "start": "15879621",
+          "end": "15879621",
+          "rsid": "rs2108622",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.15897578A>C",
+          "hgvs_type": "SNP",
+          "start": "15897578",
+          "end": "15897578",
+          "rsid": "rs3093105",
+          "allele": "C",
+          "is_ref": false
+        }
+      ]
+    },
+    {
+      "name": "*3",
+      "position": "Position at NC_000019.10 (Homo sapiens chromosome 19, GRCh38.p13)",
+      "chromosome": "chr19",
+      "variants": [
+        {
+          "hgvs": "g.15879621C>T",
+          "hgvs_type": "SNP",
+          "start": "15879621",
+          "end": "15879621",
+          "rsid": "rs2108622",
+          "allele": "T",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.15897578A>C",
+          "hgvs_type": "SNP",
+          "start": "15897578",
+          "end": "15897578",
+          "rsid": "rs3093105",
+          "allele": "A",
+          "is_ref": true
+        }
+      ]
+    }
+  ],
+  "hgvs_relation_to_name": [
+    {
+      "hgvs": "g.15879621C>T",
+      "name": [
+        "*3"
+      ]
+    },
+    {
+      "hgvs": "g.15897578A>C",
+      "name": [
+        "*2"
+      ]
+    }
+  ],
+  "name_relation_to_hgvs": [
+    {
+      "name": "*1",
+      "hgvs": [
+        "g.15879621C>T",
+        "g.15897578A>C"
+      ]
+    },
+    {
+      "name": "*2",
+      "hgvs": [
+        "g.15897578A>C"
+      ]
+    },
+    {
+      "name": "*3",
+      "hgvs": [
+        "g.15879621C>T"
+      ]
+    }
+  ]
+}
