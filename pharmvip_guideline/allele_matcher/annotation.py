@@ -155,7 +155,7 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype):
                         "cpi_sum_hla_tool_2_guide": tool2
                     }
                     summary_and_full_report = summary_and_full_report.append(report_element,ignore_index=True)
-    summary_and_full_report = handle_warfarin(summary_and_full_report, diplotype)
+    # summary_and_full_report = handle_warfarin(summary_and_full_report, diplotype)
     writer = pd.ExcelWriter('comparing.xlsx', engine='xlsxwriter')
     summary_and_full_report.to_excel(writer,index=None)
     writer.save()
