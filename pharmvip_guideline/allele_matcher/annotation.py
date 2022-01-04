@@ -3,6 +3,33 @@ import json
 import pandas as pd
 from pandas.core.frame import DataFrame
 
+class InfoConstruction :
+    # gene = ['','','']
+    def __init__(self,diplotype,key_map,row_map,inx_map) -> None:
+        self.gene = ['','','']
+        self.key_map = key_map
+        for inx,val in enumerate(list(key_map)):
+            self.gene[inx] = val 
+        target_dip1 = diplotype.loc[diplotype["gene"] == self.gene[0]]
+        target_dip2 = diplotype.loc[diplotype["gene"] == self.gene[1]]
+        target_dip3 = diplotype.loc[diplotype["gene"] == self.gene[2]]
+        target_dip1 = target_dip1 if target_dip1.empty else target_dip1.loc[row_map[0]]
+        target_dip2 = target_dip2 if target_dip2.empty else target_dip2.loc[row_map[1]]
+        target_dip3 = target_dip3 if target_dip3.empty else target_dip3.loc[row_map[2]]
+        self.cpi_sum_dip_name1 = '' if target_dip1.empty else target_dip1["print_dip"][inx_map[0]]
+        self.cpi_sum_dip_name2 = '' if target_dip2.empty else target_dip2["print_dip"][inx_map[1]]
+        self.cpi_sum_dip_name3 = '' if target_dip3.empty else target_dip3["print_dip"][inx_map[2]]
+        self.cpi_sum_gen_1_missing = '' if target_dip1.empty else target_dip1["missing_call_variants"]
+        self.cpi_sum_gen_2_missing = '' if target_dip2.empty else target_dip2["missing_call_variants"]
+        self.cpi_sum_gen_3_missing = '' if target_dip3.empty else target_dip3["missing_call_variants"]
+        self.cpi_sum_gen_1_total = '' if target_dip1.empty else target_dip1["total_variants"]
+        self.cpi_sum_gen_2_total = '' if target_dip2.empty else target_dip2["total_variants"]
+        self.cpi_sum_gen_3_total = '' if target_dip3.empty else target_dip3["total_variants"]
+        self.tool1 = '' if target_dip1.empty else target_dip1["tool"]
+        self.tool2 = '' if target_dip2.empty else target_dip2["tool"]
+        self.tool1 = '' if 'N/A' in self.tool1 else self.tool1
+        self.tool2 = '' if 'N/A' in self.tool2 else self.tool2
+
 
 def annotation(clinical_guideline_annotations, function_mappings, diplotype):
     guideline_relation_path = f'{clinical_guideline_annotations}/guideline_relation.json'
@@ -55,6 +82,9 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype):
         test_set = ['100428']
         if not(guide_line_id in test_set):
             continue
+        # skip = ['826283']
+        # if (guide_line_id in skip):
+        #     continue
        
         lookup_keys = find_looup_key(gene_set,diplotype)
         for lookup_key in lookup_keys:
@@ -67,68 +97,53 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype):
                 key_map = {}
                 inx_map = []
                 row_map = []
-                for i in lookup_key:
+                for i in lookup_key: # more than one gene dependent
                     key_map = key_map| i['key']
                     inx_map.append(i['inx'])
                     row_map.append(i['row'])
                 # inx_map = lookup_key['inx']
+                guidline_info = InfoConstruction(
+                    diplotype=diplotype, 
+                    key_map=key_map, 
+                    row_map=row_map, 
+                    inx_map=inx_map)
+
                 target_guide = guideline.loc[guideline['lookupkey'] == key_map]
+
                 if target_guide.empty:
-                    # not_found_guide(summary_and_full_report=summary_and_full_report)
+                    # not_found_guide(summary_and_full_report=summary_and_full_report,guidline_info=guidline_info,diplotype=diplotype)
                     continue
-                for inx,val in target_guide.iterrows():
-                    drug = val['drug']['name']
-                    val = val.drop(['drug', 'drugid','id']).to_dict()
-                    if val in row_set:
-                        inx = row_set.index(val)
-                        drug_set[inx].append(drug)
-                    else:
-                        row_set.append(val)
-                        drug_set.append([drug])
-
-                gene = ['','','']
-                for inx,val in enumerate(list(key_map)):
-                    gene[inx] = val 
-                target_dip1 = diplotype.loc[diplotype["gene"] == gene[0]]
-                target_dip2 = diplotype.loc[diplotype["gene"] == gene[1]]
-                target_dip3 = diplotype.loc[diplotype["gene"] == gene[2]]
-                target_dip1 = target_dip1 if target_dip1.empty else target_dip1.loc[row_map[0]]
-                target_dip2 = target_dip2 if target_dip2.empty else target_dip2.loc[row_map[1]]
-                target_dip3 = target_dip3 if target_dip3.empty else target_dip3.loc[row_map[2]]
-                cpi_sum_dip_name1 = '' if target_dip1.empty else target_dip1["print_dip"][inx_map[0]]
-                cpi_sum_dip_name2 = '' if target_dip2.empty else target_dip2["print_dip"][inx_map[1]]
-                cpi_sum_dip_name3 = '' if target_dip3.empty else target_dip3["print_dip"][inx_map[2]]
-                cpi_sum_gen_1_missing = '' if target_dip1.empty else target_dip1["missing_call_variants"]
-                cpi_sum_gen_2_missing = '' if target_dip2.empty else target_dip2["missing_call_variants"]
-                cpi_sum_gen_3_missing = '' if target_dip3.empty else target_dip3["missing_call_variants"]
-                cpi_sum_gen_1_total = '' if target_dip1.empty else target_dip1["total_variants"]
-                cpi_sum_gen_2_total = '' if target_dip2.empty else target_dip2["total_variants"]
-                cpi_sum_gen_3_total = '' if target_dip3.empty else target_dip3["total_variants"]
-                tool1 = '' if target_dip1.empty else target_dip1["tool"]
-                tool2 = '' if target_dip2.empty else target_dip2["tool"]
-                tool1 = '' if 'N/A' in tool1 else tool1
-                tool2 = '' if 'N/A' in tool2 else tool2
-
+                else :
+                    for inx,val in target_guide.iterrows():
+                        drug = val['drug']['name']
+                        val = val.drop(['drug', 'drugid','id']).to_dict()
+                        if val in row_set:
+                            inx = row_set.index(val)
+                            drug_set[inx].append(drug)
+                        else:
+                            row_set.append(val)
+                            drug_set.append([drug])
+                
                 for inx,val in enumerate(row_set):
-                    act_score1 = val['activityscore'][gene[0]] if gene[0] in val['activityscore'] and val['activityscore'][gene[0]] != "n/a" else ''
-                    act_score2 = val['activityscore'][gene[1]] if gene[1] in val['activityscore'] and val['activityscore'][gene[1]] != "n/a" else ''
+                    act_score1 = val['activityscore'][guidline_info.gene[0]] if guidline_info.gene[0] in val['activityscore'] and val['activityscore'][guidline_info.gene[0]] != "n/a" else ''
+                    act_score2 = val['activityscore'][guidline_info.gene[1]] if guidline_info.gene[1] in val['activityscore'] and val['activityscore'][guidline_info.gene[1]] != "n/a" else ''
                     recomnet = val['drugrecommendation']
                     rec_short = val['drugrecommendation_short']
                     recomnet_out = f'<text>{recomnet}</text><br/>'
                     rec_short_out = f'<text>{rec_short}</text><br/>'
-                    implications1 = val['implications'][gene[0]] if gene[0] in val['implications'] else ''
-                    implications2 = val['implications'][gene[1]] if gene[1] in val['implications'] else ''
-                    phenotypes1 = val['phenotypes'][gene[0]] if gene[0] in val['phenotypes'] else ''
-                    phenotypes2 = val['phenotypes'][gene[1]] if gene[1] in val['phenotypes'] else ''
+                    implications1 = val['implications'][guidline_info.gene[0]] if guidline_info.gene[0] in val['implications'] else ''
+                    implications2 = val['implications'][guidline_info.gene[1]] if guidline_info.gene[1] in val['implications'] else ''
+                    phenotypes1 = val['phenotypes'][guidline_info.gene[0]] if guidline_info.gene[0] in val['phenotypes'] else ''
+                    phenotypes2 = val['phenotypes'][guidline_info.gene[1]] if guidline_info.gene[1] in val['phenotypes'] else ''
                     cpi_sum_comments = '' if val['comments'] == "n/a" else val['comments']
                     
                     report_element = {
-                        "cpi_sum_gene1": gene[0],
-                        "cpi_sum_gene2": gene[1],
-                        "cpi_sum_gene3": gene[2],
-                        "cpi_sum_dip_name1": cpi_sum_dip_name1,
-                        "cpi_sum_dip_name2": cpi_sum_dip_name2,
-                        "cpi_sum_dip_name3": cpi_sum_dip_name3,
+                        "cpi_sum_gene1": guidline_info.gene[0],
+                        "cpi_sum_gene2": guidline_info.gene[1],
+                        "cpi_sum_gene3": guidline_info.gene[2],
+                        "cpi_sum_dip_name1": guidline_info.cpi_sum_dip_name1,
+                        "cpi_sum_dip_name2": guidline_info.cpi_sum_dip_name2,
+                        "cpi_sum_dip_name3": guidline_info.cpi_sum_dip_name3,
                         "cpi_sum_drug": ','.join(drug_set[inx]),
                         "cpi_sum_population": val["population"],
                         "cpi_sum_act_score1": act_score1,
@@ -145,60 +160,64 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype):
                         "cpi_sum_met_status_1": '',
                         "cpi_sum_met_status_2": '',
                         "cpi_sum_met_status_3": '',
-                        "cpi_sum_gen_1_missing": cpi_sum_gen_1_missing,
-                        "cpi_sum_gen_1_total": cpi_sum_gen_1_total,
-                        "cpi_sum_gen_2_missing": cpi_sum_gen_2_missing,
-                        "cpi_sum_gen_2_total": cpi_sum_gen_2_total,
-                        "cpi_sum_gen_3_missing": cpi_sum_gen_3_missing,
-                        "cpi_sum_gen_3_total": cpi_sum_gen_3_total,
-                        "cpi_sum_hla_tool_1_guide": tool1,
-                        "cpi_sum_hla_tool_2_guide": tool2
+                        "cpi_sum_gen_1_missing": guidline_info.cpi_sum_gen_1_missing,
+                        "cpi_sum_gen_1_total": guidline_info.cpi_sum_gen_1_total,
+                        "cpi_sum_gen_2_missing": guidline_info.cpi_sum_gen_2_missing,
+                        "cpi_sum_gen_2_total": guidline_info.cpi_sum_gen_2_total,
+                        "cpi_sum_gen_3_missing": guidline_info.cpi_sum_gen_3_missing,
+                        "cpi_sum_gen_3_total": guidline_info.cpi_sum_gen_3_total,
+                        "cpi_sum_hla_tool_1_guide": guidline_info.tool1,
+                        "cpi_sum_hla_tool_2_guide": guidline_info.tool2
                     }
                     summary_and_full_report = summary_and_full_report.append(report_element,ignore_index=True)
+        print("check")
     # summary_and_full_report = handle_warfarin(summary_and_full_report, diplotype)
-    writer = pd.ExcelWriter('comparing.xlsx', engine='xlsxwriter')
-    summary_and_full_report.to_excel(writer,index=None)
-    writer.save()
+    # writer = pd.ExcelWriter('comparing.xlsx', engine='xlsxwriter')
+    # summary_and_full_report.to_excel(writer,index=None)
+    # writer.save()
     
     return summary_and_full_report
 
-# def  not_found_guide(summary_and_full_report):
-#     warfarin = pd.DataFrame({
-#             "cpi_sum_gene1": warfarin_genes[0],
-#             "cpi_sum_gene2": warfarin_genes[1],
-#             "cpi_sum_gene3": warfarin_genes[2],
-#             "cpi_sum_dip_name1": str(diplotypes_new.loc[warfarin_genes[0], "print_dip"]).replace("[", "").replace("]", "").replace("'", ""),
-#             "cpi_sum_dip_name2": str(diplotypes_new.loc[warfarin_genes[1], "print_dip"]).replace("[", "").replace("]", "").replace("'", ""),
-#             "cpi_sum_dip_name3": str(diplotypes_new.loc[warfarin_genes[2], "print_dip"]).replace("[", "").replace   ("]", "").replace("'", ""),
-#             "cpi_sum_drug": warfarin_drug,
-#             "cpi_sum_population" : '',
-#             "cpi_sum_act_score1" : '',
-#             "cpi_sum_act_score2" : '',
-#             "cpi_sum_strength": "N/A",
-#             "cpi_sum_recommendations": "<text>No Guideline.</text></br>",
-#             "cpi_sum_recommendations_full": "<text>No Guideline.</text></br>",
-#             "cpi_sum_recommendations_full_figure": "",
-#             "cpi_sum_comments" : '',
-#             "cpi_sum_implications1" : '',
-#             "cpi_sum_implications2" : '',
-#             "cpi_sum_phenotype1" : '',
-#             "cpi_sum_phenotype2" : '',
-#             "cpi_sum_met_status_1": "",
-#             "cpi_sum_met_status_2": "",
-#             "cpi_sum_met_status_3": "",
-#             "cpi_sum_gen_1_missing": diplotypes_new.loc[warfarin_genes[0], "missing_call_variants"],
-#             "cpi_sum_gen_1_total": diplotypes_new.loc[warfarin_genes[0], "total_variants"],
-#             "cpi_sum_gen_2_missing": diplotypes_new.loc[warfarin_genes[1], "missing_call_variants"],
-#             "cpi_sum_gen_2_total": diplotypes_new.loc[warfarin_genes[1], "total_variants"],     
-#             "cpi_sum_gen_3_missing": diplotypes_new.loc[warfarin_genes[2], "missing_call_variants"],
-#             "cpi_sum_gen_3_total": diplotypes_new.loc[warfarin_genes[2], "total_variants"],
-#             "cpi_sum_hla_tool_1_guide": "",
-#             "cpi_sum_hla_tool_2_guide": "", },
-#             index=["0"])
-#     summary_and_full_report = pd.concat([summary_and_full_report, warfarin]).reset_index(drop=True)
 
 
-#     return summary_and_full_report
+def  not_found_guide(summary_and_full_report:DataFrame,guidline_info:InfoConstruction,diplotype):
+    # diplotype1 = 
+    warfarin = pd.DataFrame({
+            "cpi_sum_gene1": guidline_info.gene[0],
+            "cpi_sum_gene2": guidline_info.gene[1],
+            "cpi_sum_gene3": guidline_info.gene[2],
+            "cpi_sum_dip_name1": guidline_info.cpi_sum_dip_name1,
+            "cpi_sum_dip_name2": guidline_info.cpi_sum_dip_name2,
+            "cpi_sum_dip_name3": guidline_info.cpi_sum_dip_name3,
+            "cpi_sum_drug": warfarin_drug,
+            "cpi_sum_population" : '',
+            "cpi_sum_act_score1" : '',
+            "cpi_sum_act_score2" : '',
+            "cpi_sum_strength": "N/A",
+            "cpi_sum_recommendations": "<text>No Guideline.</text></br>",
+            "cpi_sum_recommendations_full": "<text>No Guideline.</text></br>",
+            "cpi_sum_recommendations_full_figure": "",
+            "cpi_sum_comments" : '',
+            "cpi_sum_implications1" : '',
+            "cpi_sum_implications2" : '',
+            "cpi_sum_phenotype1" : '',
+            "cpi_sum_phenotype2" : '',
+            "cpi_sum_met_status_1": "",
+            "cpi_sum_met_status_2": "",
+            "cpi_sum_met_status_3": "",
+            "cpi_sum_gen_1_missing": guidline_info.cpi_sum_gen_1_missing,
+            "cpi_sum_gen_1_total": guidline_info.cpi_sum_gen_1_total,
+            "cpi_sum_gen_2_missing": guidline_info.cpi_sum_gen_2_missing,
+            "cpi_sum_gen_2_total": guidline_info.cpi_sum_gen_2_total,
+            "cpi_sum_gen_3_missing": guidline_info.cpi_sum_gen_3_missing,
+            "cpi_sum_gen_3_total": guidline_info.cpi_sum_gen_3_total,
+            "cpi_sum_hla_tool_1_guide": guidline_info.tool1,
+            "cpi_sum_hla_tool_2_guide": guidline_info.tool2 },
+            index=["0"])
+    summary_and_full_report = pd.concat([summary_and_full_report, warfarin]).reset_index(drop=True)
+
+
+    return summary_and_full_report
 
 
 def  handle_warfarin(summary_and_full_report, diplotypes):
@@ -343,7 +362,7 @@ def  add_lookup_key_col(df:pd.DataFrame,function_mappings):
                 templat = {
                     'row' : inx,
                     "inx" : ix,
-                    "key" : {}
+                    "key" : {gene : ''}
                 }
             lookup_key_stack.append(templat)
         lookup_key_list.append(lookup_key_stack)
