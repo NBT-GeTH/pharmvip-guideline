@@ -79,9 +79,9 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype):
 
         # for test 
         # hla_set = ['100412','100421','100422','100423']
-        test_set = ['100428']
-        if not(guide_line_id in test_set):
-            continue
+        # test_set = ['100428']
+        # if not(guide_line_id in test_set):
+        #     continue
         # skip = ['826283']
         # if (guide_line_id in skip):
         #     continue
@@ -111,7 +111,7 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype):
                 target_guide = guideline.loc[guideline['lookupkey'] == key_map]
 
                 if target_guide.empty:
-                    # not_found_guide(summary_and_full_report=summary_and_full_report,guidline_info=guidline_info,diplotype=diplotype)
+                    summary_and_full_report = not_found_guide(summary_and_full_report=summary_and_full_report,guidline_info=guidline_info,diplotype=diplotype,relaional=guideline_relation[guide_line_id])
                     continue
                 else :
                     for inx,val in target_guide.iterrows():
@@ -170,26 +170,33 @@ def annotation(clinical_guideline_annotations, function_mappings, diplotype):
                         "cpi_sum_hla_tool_2_guide": guidline_info.tool2
                     }
                     summary_and_full_report = summary_and_full_report.append(report_element,ignore_index=True)
-        print("check")
-    # summary_and_full_report = handle_warfarin(summary_and_full_report, diplotype)
-    # writer = pd.ExcelWriter('comparing.xlsx', engine='xlsxwriter')
-    # summary_and_full_report.to_excel(writer,index=None)
-    # writer.save()
+        # print("check")
+    summary_and_full_report = handle_warfarin(summary_and_full_report, diplotype)
+    writer = pd.ExcelWriter('comparing.xlsx', engine='xlsxwriter')
+    summary_and_full_report.to_excel(writer,index=None)
+    writer.save()
     
     return summary_and_full_report
 
 
 
-def  not_found_guide(summary_and_full_report:DataFrame,guidline_info:InfoConstruction,diplotype):
+def  not_found_guide(summary_and_full_report:DataFrame,guidline_info:InfoConstruction,diplotype,relaional):
     # diplotype1 = 
-    warfarin = pd.DataFrame({
+    gene_map = [i for i in guidline_info.key_map]
+    for i in relaional['gene_and_drug']:
+        if i['key'] == gene_map:
+            drug_set = i['drug_set']
+            drug_set = ','.join(drug_set)
+
+            # print("lol")
+    temp = {
             "cpi_sum_gene1": guidline_info.gene[0],
             "cpi_sum_gene2": guidline_info.gene[1],
             "cpi_sum_gene3": guidline_info.gene[2],
             "cpi_sum_dip_name1": guidline_info.cpi_sum_dip_name1,
             "cpi_sum_dip_name2": guidline_info.cpi_sum_dip_name2,
             "cpi_sum_dip_name3": guidline_info.cpi_sum_dip_name3,
-            "cpi_sum_drug": warfarin_drug,
+            "cpi_sum_drug": drug_set,
             "cpi_sum_population" : '',
             "cpi_sum_act_score1" : '',
             "cpi_sum_act_score2" : '',
@@ -212,9 +219,9 @@ def  not_found_guide(summary_and_full_report:DataFrame,guidline_info:InfoConstru
             "cpi_sum_gen_3_missing": guidline_info.cpi_sum_gen_3_missing,
             "cpi_sum_gen_3_total": guidline_info.cpi_sum_gen_3_total,
             "cpi_sum_hla_tool_1_guide": guidline_info.tool1,
-            "cpi_sum_hla_tool_2_guide": guidline_info.tool2 },
-            index=["0"])
-    summary_and_full_report = pd.concat([summary_and_full_report, warfarin]).reset_index(drop=True)
+            "cpi_sum_hla_tool_2_guide": guidline_info.tool2 }
+
+    summary_and_full_report = summary_and_full_report.append(temp,ignore_index=True)
 
 
     return summary_and_full_report
