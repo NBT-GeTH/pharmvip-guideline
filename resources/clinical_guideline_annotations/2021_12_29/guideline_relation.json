@@ -14,6 +14,22 @@
             [
                 "MT-RNR1"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "MT-RNR1"
+                ],
+                "drug_set": [
+                    "tobramycin",
+                    "amikacin",
+                    "streptomycin",
+                    "plazomicin",
+                    "gentamicin",
+                    "kanamycin",
+                    "paromomycin"
+                ]
+            }
         ]
     },
     "104243": {
@@ -25,6 +41,16 @@
             [
                 "CYP2D6"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2D6"
+                ],
+                "drug_set": [
+                    "atomoxetine"
+                ]
+            }
         ]
     },
     "104245": {
@@ -36,6 +62,16 @@
             [
                 "CYP2B6"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2B6"
+                ],
+                "drug_set": [
+                    "efavirenz"
+                ]
+            }
         ]
     },
     "100409": {
@@ -47,6 +83,16 @@
             [
                 "CFTR"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CFTR"
+                ],
+                "drug_set": [
+                    "ivacaftor"
+                ]
+            }
         ]
     },
     "100410": {
@@ -58,6 +104,16 @@
             [
                 "CYP2C19"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2C19"
+                ],
+                "drug_set": [
+                    "voriconazole"
+                ]
+            }
         ]
     },
     "100411": {
@@ -69,6 +125,16 @@
             [
                 "CYP2C19"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2C19"
+                ],
+                "drug_set": [
+                    "clopidogrel"
+                ]
+            }
         ]
     },
     "100412": {
@@ -82,6 +148,18 @@
                 "CYP2C9",
                 "HLA-B"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2C9",
+                    "HLA-B"
+                ],
+                "drug_set": [
+                    "fosphenytoin",
+                    "phenytoin"
+                ]
+            }
         ]
     },
     "100413": {
@@ -100,6 +178,36 @@
             [
                 "CYP2D6"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2C19"
+                ],
+                "drug_set": [
+                    "citalopram",
+                    "escitalopram",
+                    "sertraline"
+                ]
+            },
+            {
+                "key": [
+                    "CYP2D6"
+                ],
+                "drug_set": [
+                    "paroxetine",
+                    "paroxetine",
+                    "fluvoxamine"
+                ]
+            },
+            {
+                "key": [
+                    "CYP2D6"
+                ],
+                "drug_set": [
+                    "fluvoxamine"
+                ]
+            }
         ]
     },
     "100414": {
@@ -121,6 +229,39 @@
             [
                 "CYP2D6"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2C19",
+                    "CYP2D6"
+                ],
+                "drug_set": [
+                    "doxepin",
+                    "imipramine",
+                    "amitriptyline",
+                    "clomipramine",
+                    "trimipramine"
+                ]
+            },
+            {
+                "key": [
+                    "CYP2D6"
+                ],
+                "drug_set": [
+                    "nortriptyline",
+                    "nortriptyline",
+                    "desipramine"
+                ]
+            },
+            {
+                "key": [
+                    "CYP2D6"
+                ],
+                "drug_set": [
+                    "desipramine"
+                ]
+            }
         ]
     },
     "100415": {
@@ -132,6 +273,16 @@
             [
                 "CYP2D6"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2D6"
+                ],
+                "drug_set": [
+                    "tamoxifen"
+                ]
+            }
         ]
     },
     "100416": {
@@ -145,6 +296,18 @@
             [
                 "CYP2D6"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2D6"
+                ],
+                "drug_set": [
+                    "codeine",
+                    "tramadol",
+                    "hydrocodone"
+                ]
+            }
         ]
     },
     "100417": {
@@ -157,6 +320,17 @@
             [
                 "CYP2D6"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2D6"
+                ],
+                "drug_set": [
+                    "tropisetron",
+                    "ondansetron"
+                ]
+            }
         ]
     },
     "100418": {
@@ -168,6 +342,16 @@
             [
                 "CYP3A5"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP3A5"
+                ],
+                "drug_set": [
+                    "tacrolimus"
+                ]
+            }
         ]
     },
     "100419": {
@@ -180,6 +364,17 @@
             [
                 "DPYD"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "DPYD"
+                ],
+                "drug_set": [
+                    "fluorouracil",
+                    "capecitabine"
+                ]
+            }
         ]
     },
     "100420": {
@@ -191,6 +386,16 @@
             [
                 "G6PD"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "G6PD"
+                ],
+                "drug_set": [
+                    "rasburicase"
+                ]
+            }
         ]
     },
     "100421": {
@@ -202,6 +407,16 @@
             [
                 "HLA-B"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "HLA-B"
+                ],
+                "drug_set": [
+                    "abacavir"
+                ]
+            }
         ]
     },
     "100422": {
@@ -213,6 +428,16 @@
             [
                 "HLA-B"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "HLA-B"
+                ],
+                "drug_set": [
+                    "allopurinol"
+                ]
+            }
         ]
     },
     "100423": {
@@ -229,6 +454,26 @@
             [
                 "HLA-B"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "HLA-A",
+                    "HLA-B"
+                ],
+                "drug_set": [
+                    "carbamazepine"
+                ]
+            },
+            {
+                "key": [
+                    "HLA-B"
+                ],
+                "drug_set": [
+                    "oxcarbazepine",
+                    "oxcarbazepine"
+                ]
+            }
         ]
     },
     "100426": {
@@ -240,6 +485,16 @@
             [
                 "SLCO1B1"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "SLCO1B1"
+                ],
+                "drug_set": [
+                    "simvastatin"
+                ]
+            }
         ]
     },
     "100427": {
@@ -258,6 +513,23 @@
                 "CACNA1S",
                 "RYR1"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CACNA1S",
+                    "RYR1"
+                ],
+                "drug_set": [
+                    "isoflurane",
+                    "sevoflurane",
+                    "enflurane",
+                    "halothane",
+                    "desflurane",
+                    "succinylcholine",
+                    "methoxyflurane"
+                ]
+            }
         ]
     },
     "100428": {
@@ -272,6 +544,19 @@
                 "NUDT15",
                 "TPMT"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "NUDT15",
+                    "TPMT"
+                ],
+                "drug_set": [
+                    "azathioprine",
+                    "mercaptopurine",
+                    "thioguanine"
+                ]
+            }
         ]
     },
     "100429": {
@@ -283,6 +568,16 @@
             [
                 "UGT1A1"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "UGT1A1"
+                ],
+                "drug_set": [
+                    "atazanavir"
+                ]
+            }
         ]
     },
     "110058": {
@@ -300,6 +595,22 @@
             [
                 "CYP2C9"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2C9"
+                ],
+                "drug_set": [
+                    "tenoxicam",
+                    "ibuprofen",
+                    "celecoxib",
+                    "lornoxicam",
+                    "flurbiprofen",
+                    "meloxicam",
+                    "piroxicam"
+                ]
+            }
         ]
     },
     "110076": {
@@ -314,6 +625,19 @@
             [
                 "CYP2C19"
             ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2C19"
+                ],
+                "drug_set": [
+                    "lansoprazole",
+                    "omeprazole",
+                    "pantoprazole",
+                    "dexlansoprazole"
+                ]
+            }
         ]
     }
 }
