@@ -506,8 +506,8 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
             print_dip = sort_diplotype(print_dip)
             guide_dip = sort_diplotype(guide_dip)
             print_dip,guide_dip = zip(*sorted(set(zip(print_dip, guide_dip))))
-            allele_matcher["guide_dip"] = list(print_dip)
-            allele_matcher["print_dip"] = list(guide_dip)
+            allele_matcher["guide_dip"] = list(guide_dip)
+            allele_matcher["print_dip"] = list(print_dip)
             
             with open(outputs + f"/{allele_definition['gene']}_allele_matcher.json", "w") as outfile:  
                 json.dump(allele_matcher, outfile, indent=2)
