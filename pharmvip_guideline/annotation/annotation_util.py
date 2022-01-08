@@ -1,13 +1,18 @@
-import json
-# from numpy import empty
 import pandas as pd
-from pandas.core.frame import DataFrame
 
 class InfoConstruction :
-    # gene = ['','','']
-    def __init__(self,diplotype,key_map,row_map,inx_map) -> None:
+    def __init__(self,diplotype:pd.DataFrame,lookup_key) -> None:
         self.gene = ['','','']
+        key_map = {}
+        inx_map = []
+        row_map = []
+
+        for i in lookup_key: # more than one gene dependent
+            key_map = key_map| i['key']
+            inx_map.append(i['inx'])
+            row_map.append(i['row'])
         self.key_map = key_map
+        
         for inx,val in enumerate(list(key_map)):
             self.gene[inx] = val 
         target_dip1 = diplotype.loc[diplotype["gene"] == self.gene[0]]
@@ -30,165 +35,26 @@ class InfoConstruction :
         self.tool1 = '' if 'N/A' in self.tool1 else self.tool1
         self.tool2 = '' if 'N/A' in self.tool2 else self.tool2
 
+def  generate_report_set(target_guide:pd.DataFrame):
+    report_set = []
+    drug_set = []
+    for inx,val in target_guide.iterrows():
+        drug = val['drug']['name']
+        val = val.drop(['drug', 'drugid','id']).to_dict()
+        if val in report_set:
+            inx = report_set.index(val)
+            drug_set[inx].append(drug)
+        else:
+            report_set.append(val)
+            drug_set.append([drug])
+    return report_set,drug_set
 
-def annotation(clinical_guideline_annotations, function_mappings, diplotype):
-    guideline_relation_path = f'{clinical_guideline_annotations}/guideline_relation.json'
-    with open(guideline_relation_path) as guideline_relation_file:
-        guideline_relation = json.load(guideline_relation_file)
-    add_lookup_key_col(diplotype,function_mappings)
-    summary_and_full_report = pd.DataFrame(columns=
-        [
-                    "cpi_sum_gene1",
-                    "cpi_sum_gene2",
-                    "cpi_sum_gene3",
-                    "cpi_sum_dip_name1",
-                    "cpi_sum_dip_name2",
-                    "cpi_sum_dip_name3",
-                    "cpi_sum_drug",
-                    "cpi_sum_population",
-                    "cpi_sum_act_score1",
-                    "cpi_sum_act_score2",
-                    "cpi_sum_strength",
-                    "cpi_sum_recommendations",
-                    "cpi_sum_recommendations_full",
-                    "cpi_sum_recommendations_full_figure",
-                    "cpi_sum_comments",
-                    "cpi_sum_implications1",
-                    "cpi_sum_implications2",
-                    "cpi_sum_phenotype1",
-                    "cpi_sum_phenotype2",
-                    "cpi_sum_met_status_1",
-                    "cpi_sum_met_status_2",
-                    "cpi_sum_met_status_3",
-                    "cpi_sum_gen_1_missing",
-                    "cpi_sum_gen_1_total",
-                    "cpi_sum_gen_2_missing",
-                    "cpi_sum_gen_2_total",
-                    "cpi_sum_gen_3_missing",
-                    "cpi_sum_gen_3_total",
-                    "cpi_sum_hla_tool_1_guide",
-                    "cpi_sum_hla_tool_2_guide"
-                ]
-        )
-
-    guideline_path_store = f"{clinical_guideline_annotations}/guideline"
-    for guide_line_id in guideline_relation:
-        gene_set = guideline_relation[guide_line_id]["gene"]
-        guideline_path = f"{guideline_path_store}/{guide_line_id}.json"
-        guideline = pd.read_json(guideline_path)
-
-        # for test 
-        # hla_set = ['100412','100421','100422','100423']
-        # test_set = ['100428']
-        # if not(guide_line_id in test_set):
-        #     continue
-        # skip = ['826283']
-        # if (guide_line_id in skip):
-        #     continue
-       
-        lookup_keys = find_looup_key(gene_set,diplotype)
-        for lookup_key in lookup_keys:
-            if not lookup_key:
-                pass
-
-            else:
-                row_set = []
-                drug_set = []
-                key_map = {}
-                inx_map = []
-                row_map = []
-                for i in lookup_key: # more than one gene dependent
-                    key_map = key_map| i['key']
-                    inx_map.append(i['inx'])
-                    row_map.append(i['row'])
-                # inx_map = lookup_key['inx']
-                guidline_info = InfoConstruction(
-                    diplotype=diplotype, 
-                    key_map=key_map, 
-                    row_map=row_map, 
-                    inx_map=inx_map)
-
-                target_guide = guideline.loc[guideline['lookupkey'] == key_map]
-
-                if target_guide.empty:
-                    summary_and_full_report = not_found_guide(summary_and_full_report=summary_and_full_report,guidline_info=guidline_info,diplotype=diplotype,relaional=guideline_relation[guide_line_id])
-                    continue
-                else :
-                    for inx,val in target_guide.iterrows():
-                        drug = val['drug']['name']
-                        val = val.drop(['drug', 'drugid','id']).to_dict()
-                        if val in row_set:
-                            inx = row_set.index(val)
-                            drug_set[inx].append(drug)
-                        else:
-                            row_set.append(val)
-                            drug_set.append([drug])
-                
-                for inx,val in enumerate(row_set):
-                    act_score1 = val['activityscore'][guidline_info.gene[0]] if guidline_info.gene[0] in val['activityscore'] and val['activityscore'][guidline_info.gene[0]] != "n/a" else ''
-                    act_score2 = val['activityscore'][guidline_info.gene[1]] if guidline_info.gene[1] in val['activityscore'] and val['activityscore'][guidline_info.gene[1]] != "n/a" else ''
-                    recomnet = val['drugrecommendation']
-                    rec_short = val['drugrecommendation_short']
-                    recomnet_out = f'<text>{recomnet}</text><br/>'
-                    rec_short_out = f'<text>{rec_short}</text><br/>'
-                    implications1 = val['implications'][guidline_info.gene[0]] if guidline_info.gene[0] in val['implications'] else ''
-                    implications2 = val['implications'][guidline_info.gene[1]] if guidline_info.gene[1] in val['implications'] else ''
-                    phenotypes1 = val['phenotypes'][guidline_info.gene[0]] if guidline_info.gene[0] in val['phenotypes'] else ''
-                    phenotypes2 = val['phenotypes'][guidline_info.gene[1]] if guidline_info.gene[1] in val['phenotypes'] else ''
-                    cpi_sum_comments = '' if val['comments'] == "n/a" else val['comments']
-                    
-                    report_element = {
-                        "cpi_sum_gene1": guidline_info.gene[0],
-                        "cpi_sum_gene2": guidline_info.gene[1],
-                        "cpi_sum_gene3": guidline_info.gene[2],
-                        "cpi_sum_dip_name1": guidline_info.cpi_sum_dip_name1,
-                        "cpi_sum_dip_name2": guidline_info.cpi_sum_dip_name2,
-                        "cpi_sum_dip_name3": guidline_info.cpi_sum_dip_name3,
-                        "cpi_sum_drug": ','.join(drug_set[inx]),
-                        "cpi_sum_population": val["population"],
-                        "cpi_sum_act_score1": act_score1,
-                        "cpi_sum_act_score2": act_score2,
-                        "cpi_sum_strength": val['classification'],
-                        "cpi_sum_recommendations": rec_short_out,
-                        "cpi_sum_recommendations_full": recomnet_out,
-                        "cpi_sum_recommendations_full_figure": '',
-                        "cpi_sum_comments": cpi_sum_comments,
-                        "cpi_sum_implications1": implications1,
-                        "cpi_sum_implications2" : implications2,
-                        "cpi_sum_phenotype1": phenotypes1,
-                        "cpi_sum_phenotype2": phenotypes2,
-                        "cpi_sum_met_status_1": '',
-                        "cpi_sum_met_status_2": '',
-                        "cpi_sum_met_status_3": '',
-                        "cpi_sum_gen_1_missing": guidline_info.cpi_sum_gen_1_missing,
-                        "cpi_sum_gen_1_total": guidline_info.cpi_sum_gen_1_total,
-                        "cpi_sum_gen_2_missing": guidline_info.cpi_sum_gen_2_missing,
-                        "cpi_sum_gen_2_total": guidline_info.cpi_sum_gen_2_total,
-                        "cpi_sum_gen_3_missing": guidline_info.cpi_sum_gen_3_missing,
-                        "cpi_sum_gen_3_total": guidline_info.cpi_sum_gen_3_total,
-                        "cpi_sum_hla_tool_1_guide": guidline_info.tool1,
-                        "cpi_sum_hla_tool_2_guide": guidline_info.tool2
-                    }
-                    summary_and_full_report = summary_and_full_report.append(report_element,ignore_index=True)
-        # print("check")
-    summary_and_full_report = handle_warfarin(summary_and_full_report, diplotype)
-    writer = pd.ExcelWriter('comparing.xlsx', engine='xlsxwriter')
-    summary_and_full_report.to_excel(writer,index=None)
-    writer.save()
-    
-    return summary_and_full_report
-
-
-
-def  not_found_guide(summary_and_full_report:DataFrame,guidline_info:InfoConstruction,diplotype,relaional):
-    # diplotype1 = 
+def  not_found_guide(summary_and_full_report:pd.DataFrame,guidline_info:InfoConstruction,diplotype,relaional):
     gene_map = [i for i in guidline_info.key_map]
     for i in relaional['gene_and_drug']:
         if i['key'] == gene_map:
             drug_set = i['drug_set']
             drug_set = ','.join(drug_set)
-
-            # print("lol")
     temp = {
             "cpi_sum_gene1": guidline_info.gene[0],
             "cpi_sum_gene2": guidline_info.gene[1],
@@ -222,14 +88,10 @@ def  not_found_guide(summary_and_full_report:DataFrame,guidline_info:InfoConstru
             "cpi_sum_hla_tool_2_guide": guidline_info.tool2 }
 
     summary_and_full_report = summary_and_full_report.append(temp,ignore_index=True)
-
-
     return summary_and_full_report
 
-
-def  handle_warfarin(summary_and_full_report, diplotypes):
+def  handle_warfarin(summary_and_full_report, diplotypes:pd.DataFrame):
     diplotypes_new = diplotypes.set_index("gene")
-    
     warfarin_genes = ["CYP2C9", "CYP4F2", "VKORC1"]
     warfarin_drug = "warfarin"
     warfarin_recommendations = '<text>See dosing guideline in the Guideline full report.</text></br>'
@@ -306,9 +168,8 @@ def  handle_warfarin(summary_and_full_report, diplotypes):
 
     return summary_and_full_report
 
-
 ## find combination from array [[],[],..]
-def  combo(array,total,ix):
+def  combination_generator(array,total,ix):
     lenn = len(array)
     sett = []
     for i in array[ix]:
@@ -316,11 +177,11 @@ def  combo(array,total,ix):
         if ix + 1 >= lenn :
             sett.append(total_temp)
         else: 
-            sett = sett + combo(array,total_temp,ix+1)
+            sett = sett + combination_generator(array,total_temp,ix+1)
     return sett
 
 
-def  find_looup_key(gene_set,diplotype):
+def  generate_possible_lookupkey(gene_set,diplotype:pd.DataFrame):
     all_possible =  []
     for genes in gene_set:
         all_lookup_key = []
@@ -337,15 +198,15 @@ def  find_looup_key(gene_set,diplotype):
         if (all_lookup_key):
             total = []
             ix = 0
-            sett = combo(all_lookup_key,total,ix)
+            sett = combination_generator(all_lookup_key,total,ix)
             all_possible = all_possible + sett
     return all_possible
 
 
-def  add_lookup_key_col(df:pd.DataFrame,function_mappings):
-    mapper_path_stroe = f"{function_mappings}/diplotype_mapper"
+def  add_lookup_key_col(diplotype_df:pd.DataFrame,function_mappings_path:str):
+    mapper_path_stroe = f"{function_mappings_path}/diplotype_mapper"
     lookup_key_list = []
-    for inx,obj in df.iterrows() :
+    for inx,obj in diplotype_df.iterrows() :
         gene = obj["gene"]
         guide_dip = obj["guide_dip"]
         mapper_path = f"{mapper_path_stroe}/{gene}_mapper.json"
@@ -354,6 +215,7 @@ def  add_lookup_key_col(df:pd.DataFrame,function_mappings):
         except:
             lookup_key_list.append({})
             continue
+
         lookup_key_stack = []
         for ix,diplotype in enumerate(guide_dip):
             lookup_key = mapper.loc[mapper['diplotype'] == diplotype]
@@ -374,10 +236,10 @@ def  add_lookup_key_col(df:pd.DataFrame,function_mappings):
             lookup_key_stack.append(templat)
         lookup_key_list.append(lookup_key_stack)
 
-    df["lookupkey"] = lookup_key_list
+    diplotype_df["lookupkey"] = lookup_key_list
+    ## end of function
 
-
-def  to_txt(cpic_summary:pd.DataFrame, output_path, user_id, project_id):
+def  export_guideline_report(cpic_summary:pd.DataFrame, output_path, user_id, project_id):
     f = open(f"{output_path}/cpic_summary.txt", "w")
     cpic_summary.insert(0,'project_id',project_id)
     cpic_summary.insert(0,'user_id',user_id)

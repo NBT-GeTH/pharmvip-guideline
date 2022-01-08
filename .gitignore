@@ -182,3 +182,5 @@ tests/unitest/matcher_debuger.py
 resources/samples/manual_testset
 resources/samples/NA12878_30x/NA12878_30x.vcf
 resources/samples/HS10227/
+resources/samples/
+
