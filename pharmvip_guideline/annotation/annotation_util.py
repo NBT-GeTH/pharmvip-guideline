@@ -49,12 +49,14 @@ def  generate_report_set(target_guide:pd.DataFrame):
             drug_set.append([drug])
     return report_set,drug_set
 
+
 def  not_found_guide(summary_and_full_report:pd.DataFrame,guidline_info:InfoConstruction,diplotype,relaional):
     gene_map = [i for i in guidline_info.key_map]
     for i in relaional['gene_and_drug']:
         if i['key'] == gene_map:
             drug_set = i['drug_set']
             drug_set = ','.join(drug_set)
+
     temp = {
             "cpi_sum_gene1": guidline_info.gene[0],
             "cpi_sum_gene2": guidline_info.gene[1],
@@ -89,6 +91,7 @@ def  not_found_guide(summary_and_full_report:pd.DataFrame,guidline_info:InfoCons
 
     summary_and_full_report = summary_and_full_report.append(temp,ignore_index=True)
     return summary_and_full_report
+
 
 def  handle_warfarin(summary_and_full_report, diplotypes:pd.DataFrame):
     diplotypes_new = diplotypes.set_index("gene")
@@ -164,20 +167,19 @@ def  handle_warfarin(summary_and_full_report, diplotypes:pd.DataFrame):
             "cpi_sum_hla_tool_2_guide": "", },
             index=["0"])
         summary_and_full_report = pd.concat([summary_and_full_report, warfarin]).reset_index(drop=True)
-
-
     return summary_and_full_report
 
+
 ## find combination from array [[],[],..]
-def  combination_generator(array,total,ix):
+def  combination_generator(array:list,total:list=[],inx:int=0):
     lenn = len(array)
     sett = []
-    for i in array[ix]:
+    for i in array[inx]:
         total_temp = total + [i]
-        if ix + 1 >= lenn :
+        if inx + 1 >= lenn :
             sett.append(total_temp)
         else: 
-            sett = sett + combination_generator(array,total_temp,ix+1)
+            sett = sett + combination_generator(array,total_temp,inx+1)
     return sett
 
 
@@ -196,9 +198,7 @@ def  generate_possible_lookupkey(gene_set,diplotype:pd.DataFrame):
                 all_lookup_key.append(lookupkey_set)
             
         if (all_lookup_key):
-            total = []
-            ix = 0
-            sett = combination_generator(all_lookup_key,total,ix)
+            sett = combination_generator(all_lookup_key)
             all_possible = all_possible + sett
     return all_possible
 
