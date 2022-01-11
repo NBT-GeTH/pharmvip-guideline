@@ -6,6 +6,16 @@ from pharmvip_guideline.allele_matcher.match import match_haplotypes
 from pharmvip_guideline.allele_matcher.candidate import find_best_candidate
 from pharmvip_guideline.allele_matcher.exception import gene_exceptions
 
+
+def sort_diplotype(diplotype):
+    for i in range(len(diplotype)):
+        if "/" in diplotype[i]:
+            _diplotype_i = diplotype[i].split('/')
+            _diplotype_i.sort(key=natural_keys)
+            diplotype[i] = f"{_diplotype_i[0]}/{_diplotype_i[1]}"
+    return diplotype
+
+
 def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_file, outputs):
     allele_definitions_list = []
     for allele_definition in glob.glob(allele_definitions + "/*.json"):
@@ -25,6 +35,13 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate, vcf_gz_
                 allele_matcher = find_best_candidate(allele_definition, allele_matcher)
             
             allele_matcher = gene_exceptions(allele_definition, allele_matcher)
+            print_dip = allele_matcher["print_dip"]
+            guide_dip = allele_matcher["guide_dip"]
+            print_dip = sort_diplotype(print_dip)
+            guide_dip = sort_diplotype(guide_dip)
+            print_dip,guide_dip = zip(*sorted(set(zip(print_dip, guide_dip))))
+            allele_matcher["guide_dip"] = list(guide_dip)
+            allele_matcher["print_dip"] = list(print_dip)
             
             with open(outputs + f"/{allele_definition['gene']}_allele_matcher.json", "w") as outfile:  
                 json.dump(allele_matcher, outfile, indent=2)
