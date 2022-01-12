@@ -1,0 +1,837 @@
+{
+  "gene": "CYP3A5",
+  "haplotypes": [
+    {
+      "name": "*1",
+      "position": "Position at NC_000007.14 (Homo sapiens chromosome 7, GRCh38)",
+      "chromosome": "chr7",
+      "variants": [
+        {
+          "hgvs": "g.99676198G>A",
+          "hgvs_type": "SNP",
+          "start": "99676198",
+          "end": "99676198",
+          "rsid": "rs55817950",
+          "allele": "G",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.99672916T>C",
+          "hgvs_type": "SNP",
+          "start": "99672916",
+          "end": "99672916",
+          "rsid": "rs776746",
+          "allele": "T",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.99666950A>G",
+          "hgvs_type": "SNP",
+          "start": "99666950",
+          "end": "99666950",
+          "rsid": "rs55965422",
+          "allele": "A",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.99665237T>C",
+          "hgvs_type": "SNP",
+          "start": "99665237",
+          "end": "99665237",
+          "rsid": "rs56411402",
+          "allele": "T",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.99665212C>T",
+          "hgvs_type": "SNP",
+          "start": "99665212",
+          "end": "99665212",
+          "rsid": "rs10264272",
+          "allele": "C",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.99660516C>T",
+          "hgvs_type": "SNP",
+          "start": "99660516",
+          "end": "99660516",
+          "rsid": "rs28383479",
+          "allele": "C",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.99652771dup",
+          "hgvs_type": "CNV",
+          "start": "99652771",
+          "end": "99652771",
+          "rsid": "rs41303343",
+          "allele": "A",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.99652613G>T",
+          "hgvs_type": "SNP",
+          "start": "99652613",
+          "end": "99652613",
+          "rsid": "rs28365083",
+          "allele": "G",
+          "is_ref": false
+        }
+      ]
+    },
+    {
+      "name": "*2",
+      "position": "Position at NC_000007.14 (Homo sapiens chromosome 7, GRCh38)",
+      "chromosome": "chr7",
+      "variants": [
+        {
+          "hgvs": "g.99676198G>A",
+          "hgvs_type": "SNP",
+          "start": "99676198",
+          "end": "99676198",
+          "rsid": "rs55817950",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99672916T>C",
+          "hgvs_type": "SNP",
+          "start": "99672916",
+          "end": "99672916",
+          "rsid": "rs776746",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99666950A>G",
+          "hgvs_type": "SNP",
+          "start": "99666950",
+          "end": "99666950",
+          "rsid": "rs55965422",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99665237T>C",
+          "hgvs_type": "SNP",
+          "start": "99665237",
+          "end": "99665237",
+          "rsid": "rs56411402",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99665212C>T",
+          "hgvs_type": "SNP",
+          "start": "99665212",
+          "end": "99665212",
+          "rsid": "rs10264272",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99660516C>T",
+          "hgvs_type": "SNP",
+          "start": "99660516",
+          "end": "99660516",
+          "rsid": "rs28383479",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99652771dup",
+          "hgvs_type": "CNV",
+          "start": "99652771",
+          "end": "99652771",
+          "rsid": "rs41303343",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99652613G>T",
+          "hgvs_type": "SNP",
+          "start": "99652613",
+          "end": "99652613",
+          "rsid": "rs28365083",
+          "allele": "T",
+          "is_ref": false
+        }
+      ]
+    },
+    {
+      "name": "*4",
+      "position": "Position at NC_000007.14 (Homo sapiens chromosome 7, GRCh38)",
+      "chromosome": "chr7",
+      "variants": [
+        {
+          "hgvs": "g.99676198G>A",
+          "hgvs_type": "SNP",
+          "start": "99676198",
+          "end": "99676198",
+          "rsid": "rs55817950",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99672916T>C",
+          "hgvs_type": "SNP",
+          "start": "99672916",
+          "end": "99672916",
+          "rsid": "rs776746",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99666950A>G",
+          "hgvs_type": "SNP",
+          "start": "99666950",
+          "end": "99666950",
+          "rsid": "rs55965422",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99665237T>C",
+          "hgvs_type": "SNP",
+          "start": "99665237",
+          "end": "99665237",
+          "rsid": "rs56411402",
+          "allele": "C",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.99665212C>T",
+          "hgvs_type": "SNP",
+          "start": "99665212",
+          "end": "99665212",
+          "rsid": "rs10264272",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99660516C>T",
+          "hgvs_type": "SNP",
+          "start": "99660516",
+          "end": "99660516",
+          "rsid": "rs28383479",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99652771dup",
+          "hgvs_type": "CNV",
+          "start": "99652771",
+          "end": "99652771",
+          "rsid": "rs41303343",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99652613G>T",
+          "hgvs_type": "SNP",
+          "start": "99652613",
+          "end": "99652613",
+          "rsid": "rs28365083",
+          "allele": "G",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*5",
+      "position": "Position at NC_000007.14 (Homo sapiens chromosome 7, GRCh38)",
+      "chromosome": "chr7",
+      "variants": [
+        {
+          "hgvs": "g.99676198G>A",
+          "hgvs_type": "SNP",
+          "start": "99676198",
+          "end": "99676198",
+          "rsid": "rs55817950",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99672916T>C",
+          "hgvs_type": "SNP",
+          "start": "99672916",
+          "end": "99672916",
+          "rsid": "rs776746",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99666950A>G",
+          "hgvs_type": "SNP",
+          "start": "99666950",
+          "end": "99666950",
+          "rsid": "rs55965422",
+          "allele": "G",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.99665237T>C",
+          "hgvs_type": "SNP",
+          "start": "99665237",
+          "end": "99665237",
+          "rsid": "rs56411402",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99665212C>T",
+          "hgvs_type": "SNP",
+          "start": "99665212",
+          "end": "99665212",
+          "rsid": "rs10264272",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99660516C>T",
+          "hgvs_type": "SNP",
+          "start": "99660516",
+          "end": "99660516",
+          "rsid": "rs28383479",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99652771dup",
+          "hgvs_type": "CNV",
+          "start": "99652771",
+          "end": "99652771",
+          "rsid": "rs41303343",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99652613G>T",
+          "hgvs_type": "SNP",
+          "start": "99652613",
+          "end": "99652613",
+          "rsid": "rs28365083",
+          "allele": "G",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*6",
+      "position": "Position at NC_000007.14 (Homo sapiens chromosome 7, GRCh38)",
+      "chromosome": "chr7",
+      "variants": [
+        {
+          "hgvs": "g.99676198G>A",
+          "hgvs_type": "SNP",
+          "start": "99676198",
+          "end": "99676198",
+          "rsid": "rs55817950",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99672916T>C",
+          "hgvs_type": "SNP",
+          "start": "99672916",
+          "end": "99672916",
+          "rsid": "rs776746",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99666950A>G",
+          "hgvs_type": "SNP",
+          "start": "99666950",
+          "end": "99666950",
+          "rsid": "rs55965422",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99665237T>C",
+          "hgvs_type": "SNP",
+          "start": "99665237",
+          "end": "99665237",
+          "rsid": "rs56411402",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99665212C>T",
+          "hgvs_type": "SNP",
+          "start": "99665212",
+          "end": "99665212",
+          "rsid": "rs10264272",
+          "allele": "T",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.99660516C>T",
+          "hgvs_type": "SNP",
+          "start": "99660516",
+          "end": "99660516",
+          "rsid": "rs28383479",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99652771dup",
+          "hgvs_type": "CNV",
+          "start": "99652771",
+          "end": "99652771",
+          "rsid": "rs41303343",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99652613G>T",
+          "hgvs_type": "SNP",
+          "start": "99652613",
+          "end": "99652613",
+          "rsid": "rs28365083",
+          "allele": "G",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*7",
+      "position": "Position at NC_000007.14 (Homo sapiens chromosome 7, GRCh38)",
+      "chromosome": "chr7",
+      "variants": [
+        {
+          "hgvs": "g.99676198G>A",
+          "hgvs_type": "SNP",
+          "start": "99676198",
+          "end": "99676198",
+          "rsid": "rs55817950",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99672916T>C",
+          "hgvs_type": "SNP",
+          "start": "99672916",
+          "end": "99672916",
+          "rsid": "rs776746",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99666950A>G",
+          "hgvs_type": "SNP",
+          "start": "99666950",
+          "end": "99666950",
+          "rsid": "rs55965422",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99665237T>C",
+          "hgvs_type": "SNP",
+          "start": "99665237",
+          "end": "99665237",
+          "rsid": "rs56411402",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99665212C>T",
+          "hgvs_type": "SNP",
+          "start": "99665212",
+          "end": "99665212",
+          "rsid": "rs10264272",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99660516C>T",
+          "hgvs_type": "SNP",
+          "start": "99660516",
+          "end": "99660516",
+          "rsid": "rs28383479",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99652771dup",
+          "hgvs_type": "CNV",
+          "start": "99652771",
+          "end": "99652771",
+          "rsid": "rs41303343",
+          "allele": "AA",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.99652613G>T",
+          "hgvs_type": "SNP",
+          "start": "99652613",
+          "end": "99652613",
+          "rsid": "rs28365083",
+          "allele": "G",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*9",
+      "position": "Position at NC_000007.14 (Homo sapiens chromosome 7, GRCh38)",
+      "chromosome": "chr7",
+      "variants": [
+        {
+          "hgvs": "g.99676198G>A",
+          "hgvs_type": "SNP",
+          "start": "99676198",
+          "end": "99676198",
+          "rsid": "rs55817950",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99672916T>C",
+          "hgvs_type": "SNP",
+          "start": "99672916",
+          "end": "99672916",
+          "rsid": "rs776746",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99666950A>G",
+          "hgvs_type": "SNP",
+          "start": "99666950",
+          "end": "99666950",
+          "rsid": "rs55965422",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99665237T>C",
+          "hgvs_type": "SNP",
+          "start": "99665237",
+          "end": "99665237",
+          "rsid": "rs56411402",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99665212C>T",
+          "hgvs_type": "SNP",
+          "start": "99665212",
+          "end": "99665212",
+          "rsid": "rs10264272",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99660516C>T",
+          "hgvs_type": "SNP",
+          "start": "99660516",
+          "end": "99660516",
+          "rsid": "rs28383479",
+          "allele": "T",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.99652771dup",
+          "hgvs_type": "CNV",
+          "start": "99652771",
+          "end": "99652771",
+          "rsid": "rs41303343",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99652613G>T",
+          "hgvs_type": "SNP",
+          "start": "99652613",
+          "end": "99652613",
+          "rsid": "rs28365083",
+          "allele": "G",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*3",
+      "position": "Position at NC_000007.14 (Homo sapiens chromosome 7, GRCh38)",
+      "chromosome": "chr7",
+      "variants": [
+        {
+          "hgvs": "g.99676198G>A",
+          "hgvs_type": "SNP",
+          "start": "99676198",
+          "end": "99676198",
+          "rsid": "rs55817950",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99672916T>C",
+          "hgvs_type": "SNP",
+          "start": "99672916",
+          "end": "99672916",
+          "rsid": "rs776746",
+          "allele": "C",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.99666950A>G",
+          "hgvs_type": "SNP",
+          "start": "99666950",
+          "end": "99666950",
+          "rsid": "rs55965422",
+          "allele": "R",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.99665237T>C",
+          "hgvs_type": "SNP",
+          "start": "99665237",
+          "end": "99665237",
+          "rsid": "rs56411402",
+          "allele": "Y",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.99665212C>T",
+          "hgvs_type": "SNP",
+          "start": "99665212",
+          "end": "99665212",
+          "rsid": "rs10264272",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99660516C>T",
+          "hgvs_type": "SNP",
+          "start": "99660516",
+          "end": "99660516",
+          "rsid": "rs28383479",
+          "allele": "Y",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.99652771dup",
+          "hgvs_type": "CNV",
+          "start": "99652771",
+          "end": "99652771",
+          "rsid": "rs41303343",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99652613G>T",
+          "hgvs_type": "SNP",
+          "start": "99652613",
+          "end": "99652613",
+          "rsid": "rs28365083",
+          "allele": "K",
+          "is_ref": false
+        }
+      ]
+    },
+    {
+      "name": "*8",
+      "position": "Position at NC_000007.14 (Homo sapiens chromosome 7, GRCh38)",
+      "chromosome": "chr7",
+      "variants": [
+        {
+          "hgvs": "g.99676198G>A",
+          "hgvs_type": "SNP",
+          "start": "99676198",
+          "end": "99676198",
+          "rsid": "rs55817950",
+          "allele": "A",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.99672916T>C",
+          "hgvs_type": "SNP",
+          "start": "99672916",
+          "end": "99672916",
+          "rsid": "rs776746",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99666950A>G",
+          "hgvs_type": "SNP",
+          "start": "99666950",
+          "end": "99666950",
+          "rsid": "rs55965422",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99665237T>C",
+          "hgvs_type": "SNP",
+          "start": "99665237",
+          "end": "99665237",
+          "rsid": "rs56411402",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99665212C>T",
+          "hgvs_type": "SNP",
+          "start": "99665212",
+          "end": "99665212",
+          "rsid": "rs10264272",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99660516C>T",
+          "hgvs_type": "SNP",
+          "start": "99660516",
+          "end": "99660516",
+          "rsid": "rs28383479",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99652771dup",
+          "hgvs_type": "CNV",
+          "start": "99652771",
+          "end": "99652771",
+          "rsid": "rs41303343",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.99652613G>T",
+          "hgvs_type": "SNP",
+          "start": "99652613",
+          "end": "99652613",
+          "rsid": "rs28365083",
+          "allele": "G",
+          "is_ref": true
+        }
+      ]
+    }
+  ],
+  "hgvs_relation_to_name": [
+    {
+      "hgvs": "g.99676198G>A",
+      "name": [
+        "*8"
+      ]
+    },
+    {
+      "hgvs": "g.99672916T>C",
+      "name": [
+        "*3"
+      ]
+    },
+    {
+      "hgvs": "g.99666950A>G",
+      "name": [
+        "*5",
+        "*3"
+      ]
+    },
+    {
+      "hgvs": "g.99665237T>C",
+      "name": [
+        "*4",
+        "*3"
+      ]
+    },
+    {
+      "hgvs": "g.99665212C>T",
+      "name": [
+        "*6"
+      ]
+    },
+    {
+      "hgvs": "g.99660516C>T",
+      "name": [
+        "*9",
+        "*3"
+      ]
+    },
+    {
+      "hgvs": "g.99652771dup",
+      "name": [
+        "*7"
+      ]
+    },
+    {
+      "hgvs": "g.99652613G>T",
+      "name": [
+        "*2",
+        "*3"
+      ]
+    }
+  ],
+  "name_relation_to_hgvs": [
+    {
+      "name": "*1",
+      "hgvs": [
+        "g.99676198G>A",
+        "g.99672916T>C",
+        "g.99666950A>G",
+        "g.99665237T>C",
+        "g.99665212C>T",
+        "g.99660516C>T",
+        "g.99652771dup",
+        "g.99652613G>T"
+      ]
+    },
+    {
+      "name": "*2",
+      "hgvs": [
+        "g.99652613G>T"
+      ]
+    },
+    {
+      "name": "*4",
+      "hgvs": [
+        "g.99665237T>C"
+      ]
+    },
+    {
+      "name": "*5",
+      "hgvs": [
+        "g.99666950A>G"
+      ]
+    },
+    {
+      "name": "*6",
+      "hgvs": [
+        "g.99665212C>T"
+      ]
+    },
+    {
+      "name": "*7",
+      "hgvs": [
+        "g.99652771dup"
+      ]
+    },
+    {
+      "name": "*9",
+      "hgvs": [
+        "g.99660516C>T"
+      ]
+    },
+    {
+      "name": "*3",
+      "hgvs": [
+        "g.99672916T>C",
+        "g.99666950A>G",
+        "g.99665237T>C",
+        "g.99660516C>T",
+        "g.99652613G>T"
+      ]
+    },
+    {
+      "name": "*8",
+      "hgvs": [
+        "g.99676198G>A"
+      ]
+    }
+  ]
+}

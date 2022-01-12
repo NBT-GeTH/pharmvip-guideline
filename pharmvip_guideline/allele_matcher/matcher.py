@@ -7,7 +7,7 @@ from pharmvip_guideline.allele_matcher.candidate import find_best_candidate
 from pharmvip_guideline.allele_matcher.exception import gene_exceptions
 
 
-def sort_diplotype(diplotype):
+def sort_diplotype(diplotype:list[str]):
     for i in range(len(diplotype)):
         if "/" in diplotype[i]:
             _diplotype_i = diplotype[i].split('/')
