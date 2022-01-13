@@ -3,18 +3,6 @@ import copy
 from pharmvip_guideline.annotation.annotation_util import *
 
 class TestAnnotation(unittest.TestCase):
-    # def __init__(self, methodName: str) -> None:
-    #     super().__init__(methodName=methodName)
-
-    # def test_annotation_util(self):
-    #     arr = [[1,2,3],[4,5]]
-    #     result = combination_generator(arr)
-    #     expected = [[1,4],[1,5],[2,4],[2,5],[3,4],[3,5]]
-    #     self.assertEqual(result,expected)
-    #     arr = [[1,2],[3,4]]
-    #     result = combination_generator(arr)
-    #     expected = [[1,3],[1,4],[2,3],[2,4]]
-    #     self.assertEqual(result,expected)
 
     def test_annotation_util(self):
         arr = [
