@@ -11,7 +11,6 @@ class Test_cyp2d6_handler(unittest.TestCase):
             {'inp' : '*5x2', 'expected_opt' : ('*5', '2')},
             {'inp' : '*6', 'expected_opt' : ('*6', '')}
         ]
-            
         for sub_test in test_set:
             with self.subTest(sub_test=sub_test):
                 acct = extract_copy(sub_test['inp'])
