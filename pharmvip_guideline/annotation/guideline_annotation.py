@@ -1,6 +1,7 @@
 import json
 import pandas as pd
 from pharmvip_guideline.annotation.annotation_util import *
+from pharmvip_guideline.annotation.hla_handler import hla_subjection
 from pharmvip_guideline.utils.print import write_exel
 
 def annotate(clinical_guideline_annotations, function_mappings, diplotype):
@@ -58,6 +59,8 @@ def annotate(clinical_guideline_annotations, function_mappings, diplotype):
                 target_guide = guideline.loc[guideline['lookupkey'] == guidline_info.key_map]
 
                 if target_guide.empty:
+                    hla_checker =  hla_subjection(lookup_key,guide_line_id)
+                    if  not(hla_checker): continue
                     summary_and_full_report = not_found_guide(summary_and_full_report=summary_and_full_report,guidline_info=guidline_info,diplotype=diplotype,relaional=guideline_relation[guide_line_id])
                     continue
                 else :
@@ -110,6 +113,7 @@ def annotate(clinical_guideline_annotations, function_mappings, diplotype):
                     }
                     summary_and_full_report = summary_and_full_report.append(report_template,ignore_index=True)
     summary_and_full_report = handle_warfarin(summary_and_full_report, diplotype)
-    # write_exel(summary_and_full_report)
+    write_exel(summary_and_full_report)
 
     return summary_and_full_report
+

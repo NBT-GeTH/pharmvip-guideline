@@ -193,7 +193,7 @@ def  generate_possible_lookupkey(gene_set,diplotype:pd.DataFrame):
             if target_row.empty:
                 pass
             else:
-                for inx,val in target_row.iterrows():
+                for _,val in target_row.iterrows():
                     lookupkey_set = lookupkey_set + val['lookupkey']
                 all_lookup_key.append(lookupkey_set)
             
