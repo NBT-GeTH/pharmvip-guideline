@@ -44,11 +44,11 @@ def sort_diplotype(gene, dip):
         for _dip in dip[0].split(","):
             _dip = _dip.replace(" ", "")
             _dip_new = sorted(_dip.split("/"))
-            dip_new.append(f"{_dip_new[0]}/{_dip_new[1]}")
+            dip_new.append(f"{_dip_new[0]}/{_dip_new[1]}" if "/" in _dip else f"{_dip_new[0]}/{_dip_new[0]}")
     else:
         for _dip in dip:
             _dip_new = sorted(_dip.split("/"))
-            dip_new.append(f"{_dip_new[0]}/{_dip_new[1]}")
+            dip_new.append(f"{_dip_new[0]}/{_dip_new[1]}" if "/" in _dip else f"{_dip_new[0]}/{_dip_new[0]}" if gene != "CYP2D6" else _dip_new[0])
     return dip_new
 
 def duplicate_tool(diplotype):
