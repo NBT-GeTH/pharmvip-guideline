@@ -143,6 +143,8 @@ def read_hla(tsv):
                         #     ignore_index=True
                         # )
         else :
+            guide_dip = guide_dip[0].split(',')
+            print_dip = print_dip[0].split(',')
             temp = {
                     "sample_id": val["sampleid"],
                     "gene": val["gene"],
