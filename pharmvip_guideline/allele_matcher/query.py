@@ -83,7 +83,7 @@ def convert_del(ref, allele):
         """
         return "del" + ref[1:]
 
-def convert_allele(hgvs_type, variant_type, is_del, ref, allele):
+def convert_allele(hgvs_type, variant_type, is_del, ref, allele, genotypes):
     """
     convert allele from vcf format to allele definition format
     """
@@ -97,8 +97,11 @@ def convert_allele(hgvs_type, variant_type, is_del, ref, allele):
         elif variant_type == "indel" and is_del == True:
             return convert_del(ref, allele)
         else:
-            print(f"error convert snp, cnv allele with: {variant_type}")
-            exit()
+            if genotypes[0][0] == 0 and genotypes[0][1] == 0:
+                return allele
+            else:
+                print(f"error convert snp, cnv allele with: {variant_type}")
+                exit()
     elif hgvs_type == "INS":
         if variant_type == "snp" or variant_type == ".":
             return allele
@@ -109,8 +112,11 @@ def convert_allele(hgvs_type, variant_type, is_del, ref, allele):
         elif variant_type == "indel" and is_del == True:
             return convert_del(ref, allele)
         else:
-            print(f"error convert ins allele with: {variant_type}")
-            exit()
+            if genotypes[0][0] == 0 and genotypes[0][1] == 0:
+                return allele
+            else:
+                print(f"error convert ins allele with: {variant_type}")
+                exit()
     elif hgvs_type == "DEL":
         if variant_type == "snp" or variant_type == ".":
             return allele
@@ -121,8 +127,11 @@ def convert_allele(hgvs_type, variant_type, is_del, ref, allele):
         elif variant_type == "indel" and is_del == True:
             return convert_del(ref, allele)
         else:
-            print(f"error convert del allele with: {variant_type}")
-            exit()
+            if genotypes[0][0] == 0 and genotypes[0][1] == 0:
+                return allele
+            else:
+                print(f"error convert del allele with: {variant_type}")
+                exit()
     elif hgvs_type == "CNV":
         return allele
     else:
@@ -226,8 +235,8 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                 v_vcf["dp"] = check_null_dp(genome.format("DP").tolist()[0][0]) if "DP" in genome.FORMAT else 0
                 v_vcf["gt_bases"] = f"{genome.gt_bases[0]}|{genome.gt_bases[0]}" if allele_definition["gene"] == "G6PD" and not check_gt_format(genome.gt_bases[0]) else genome.gt_bases[0]
                 v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
-                v_vcf["allele1_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele1"])
-                v_vcf["allele2_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele2"])
+                v_vcf["allele1_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele1"], genome.genotypes)
+                v_vcf["allele2_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele2"], genome.genotypes)
                 v_vcf["gt_phases"] = sum_up_gt_phases(genome.gt_phases[0], v_vcf["allele1"], v_vcf["allele2"])
             allele_matcher["variants"].append(v_vcf)
         elif variant["hgvs_type"] == "DEL":
@@ -248,8 +257,8 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                     v_vcf["dp"] = check_null_dp(genome.format("DP").tolist()[0][0]) if "DP" in genome.FORMAT else 0
                     v_vcf["gt_bases"] = f"{genome.gt_bases[0]}|{genome.gt_bases[0]}" if allele_definition["gene"] == "G6PD" and not check_gt_format(genome.gt_bases[0]) else genome.gt_bases[0]
                     v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
-                    v_vcf["allele1_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele1"])
-                    v_vcf["allele2_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele2"])
+                    v_vcf["allele1_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele1"], genome.genotypes)
+                    v_vcf["allele2_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele2"], genome.genotypes)
                     v_vcf["gt_phases"] = sum_up_gt_phases(genome.gt_phases[0], v_vcf["allele1"], v_vcf["allele2"])
                 else:
                     len_genome = (int(variant['end']) - int(variant['start']) + 1)
