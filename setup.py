@@ -36,10 +36,13 @@ setuptools.setup(
         f"resources.function_mappings.{function_mappings_version}": [
             "*"
         ],
+        f"resources.function_mappings.{function_mappings_version}.diplotype_mapper": [
+            "*"
+        ],
         f"resources.clinical_guideline_annotations.{clinical_guideline_annotations_version}": [
             "*"
         ],
-        f"resources.clinical_guideline_annotations.{clinical_guideline_annotations_version}.annotations_short": [
+        f"resources.clinical_guideline_annotations.{clinical_guideline_annotations_version}.guideline": [
             "*"
         ]
     },
