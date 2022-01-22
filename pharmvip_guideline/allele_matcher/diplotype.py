@@ -114,7 +114,7 @@ def read_hla(tsv):
                 num_allele = len(targ_guide_dip)
                 for inx in range(num_allele):
                     actual_guide = [targ_guide_dip[inx]]
-                    searching = [i['guide_dip'] == actual_guide for i in temp_data] if bool(temp_data) else False
+                    searching = [i['guide_dip'] == actual_guide for i in temp_data] if bool(temp_data) else [False]
                     if True in searching:
                         inxx = searching.index(True)
                         current = temp_data[inx]['tool']
