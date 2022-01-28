@@ -93,14 +93,12 @@ def read_diplotype(tsv):
 
     return diplotype
 
+
 def read_hla(tsv):
     diplotype = pd.DataFrame(columns=["sample_id", "gene", "missing_call_variants", "total_variants", "dp", "gt_bases", "gt_phases", "gene_phases", "count_diplotype", "guide_dip", "print_dip", "tool"])
     df = pd.read_csv(tsv, sep="\t")
     temp_data = []
     for inx,val in df.iterrows():
-        # assert len(ast.literal_eval(df["guide_diplotype"][row])) == len(ast.literal_eval(df["print_diplotype"][row]))
-        # guide_dip = ["No info/No info"] if not ast.literal_eval(df["guide_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(df["gene"][row], ast.literal_eval(df["guide_diplotype"][row]))))
-        # print_dip = ["No info"] if not ast.literal_eval(df["print_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(df["gene"][row], ast.literal_eval(df["print_diplotype"][row]))))
         guide_dip = ast.literal_eval(val['guide_diplotype'])
         print_dip = ast.literal_eval(val['print_diplotype'])
         tool = ast.literal_eval(val['tool'])
@@ -142,6 +140,7 @@ def read_hla(tsv):
                         #     ,
                         #     ignore_index=True
                         # )
+
         else :
             guide_dip = guide_dip[0].split(',')
             print_dip = print_dip[0].split(',')
@@ -160,12 +159,8 @@ def read_hla(tsv):
                     "tool": tool
                     }
             temp_data.append(temp)
-            # diplotype = diplotype.append(
-            #         ,
-            #         ignore_index=True
-            #     )
+
     for data in temp_data:
         diplotype = diplotype.append(data,ignore_index=True)
-    # diplotype = duplicate_tool(diplotype)
 
     return diplotype
