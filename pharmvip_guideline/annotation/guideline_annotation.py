@@ -21,6 +21,7 @@ def annotate(clinical_guideline_annotations, function_mappings, diplotype):
                     "cpi_sum_population",
                     "cpi_sum_act_score1",
                     "cpi_sum_act_score2",
+                    "cpi_sum_act_score3",
                     "cpi_sum_strength",
                     "cpi_sum_recommendations",
                     "cpi_sum_recommendations_full",
@@ -28,7 +29,9 @@ def annotate(clinical_guideline_annotations, function_mappings, diplotype):
                     "cpi_sum_comments",
                     "cpi_sum_implications1",
                     "cpi_sum_implications2",
+                    "cpi_sum_implications3",
                     "cpi_sum_phenotype1",
+                    "cpi_sum_phenotype2",
                     "cpi_sum_phenotype2",
                     "cpi_sum_met_status_1",
                     "cpi_sum_met_status_2",
@@ -69,14 +72,17 @@ def annotate(clinical_guideline_annotations, function_mappings, diplotype):
                 for inx,val in enumerate(report_set):
                     act_score1 = val['activityscore'][guidline_info.gene[0]] if guidline_info.gene[0] in val['activityscore'] and val['activityscore'][guidline_info.gene[0]] != "n/a" else ''
                     act_score2 = val['activityscore'][guidline_info.gene[1]] if guidline_info.gene[1] in val['activityscore'] and val['activityscore'][guidline_info.gene[1]] != "n/a" else ''
+                    act_score3 = val['activityscore'][guidline_info.gene[2]] if guidline_info.gene[2] in val['activityscore'] and val['activityscore'][guidline_info.gene[2]] != "n/a" else ''
+                    implications1 = val['implications'][guidline_info.gene[0]] if guidline_info.gene[0] in val['implications'] else ''
+                    implications2 = val['implications'][guidline_info.gene[1]] if guidline_info.gene[1] in val['implications'] else ''
+                    implications3 = val['implications'][guidline_info.gene[2]] if guidline_info.gene[2] in val['implications'] else ''
+                    phenotypes1 = val['phenotypes'][guidline_info.gene[0]] if guidline_info.gene[0] in val['phenotypes'] else ''
+                    phenotypes2 = val['phenotypes'][guidline_info.gene[1]] if guidline_info.gene[1] in val['phenotypes'] else ''
+                    phenotypes3 = val['phenotypes'][guidline_info.gene[2]] if guidline_info.gene[2] in val['phenotypes'] else ''
                     recomnet = val['drugrecommendation']
                     rec_short = val['drugrecommendation_short']
                     recomnet_out = f'<text>{recomnet}</text><br/>'
                     rec_short_out = f'<text>{rec_short}</text><br/>'
-                    implications1 = val['implications'][guidline_info.gene[0]] if guidline_info.gene[0] in val['implications'] else ''
-                    implications2 = val['implications'][guidline_info.gene[1]] if guidline_info.gene[1] in val['implications'] else ''
-                    phenotypes1 = val['phenotypes'][guidline_info.gene[0]] if guidline_info.gene[0] in val['phenotypes'] else ''
-                    phenotypes2 = val['phenotypes'][guidline_info.gene[1]] if guidline_info.gene[1] in val['phenotypes'] else ''
                     cpi_sum_comments = '' if val['comments'] == "n/a" else val['comments']
                     
                     report_template = {
@@ -90,6 +96,7 @@ def annotate(clinical_guideline_annotations, function_mappings, diplotype):
                         "cpi_sum_population": val["population"],
                         "cpi_sum_act_score1": act_score1,
                         "cpi_sum_act_score2": act_score2,
+                        "cpi_sum_act_score3": act_score3,
                         "cpi_sum_strength": val['classification'],
                         "cpi_sum_recommendations": rec_short_out,
                         "cpi_sum_recommendations_full": recomnet_out,
@@ -97,8 +104,10 @@ def annotate(clinical_guideline_annotations, function_mappings, diplotype):
                         "cpi_sum_comments": cpi_sum_comments,
                         "cpi_sum_implications1": implications1,
                         "cpi_sum_implications2" : implications2,
+                        "cpi_sum_implications3" : implications3,
                         "cpi_sum_phenotype1": phenotypes1,
                         "cpi_sum_phenotype2": phenotypes2,
+                        "cpi_sum_phenotype3": phenotypes3,
                         "cpi_sum_met_status_1": '',
                         "cpi_sum_met_status_2": '',
                         "cpi_sum_met_status_3": '',
