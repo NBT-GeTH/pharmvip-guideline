@@ -114,9 +114,9 @@ def read_hla(tsv):
                     actual_guide = [targ_guide_dip[inx]]
                     searching = [i['guide_dip'] == actual_guide for i in temp_data] if bool(temp_data) else [False]
                     if True in searching:
-                        inxx = searching.index(True)
-                        current = temp_data[inx]['tool']
-                        temp_data[inx]['tool'] = current + targ_tool
+                        search_inxx = searching.index(True)
+                        current = temp_data[search_inxx]['tool']
+                        temp_data[search_inxx]['tool'] = current + targ_tool
                         
                     else:
                         actual_print =[ targ_print_dip[inx]]
