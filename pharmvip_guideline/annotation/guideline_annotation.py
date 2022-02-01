@@ -32,7 +32,7 @@ def annotate(clinical_guideline_annotations, function_mappings, diplotype):
                     "cpi_sum_implications3",
                     "cpi_sum_phenotype1",
                     "cpi_sum_phenotype2",
-                    "cpi_sum_phenotype2",
+                    "cpi_sum_phenotype3",
                     "cpi_sum_met_status_1",
                     "cpi_sum_met_status_2",
                     "cpi_sum_met_status_3",
