@@ -245,4 +245,8 @@ def  export_guideline_report(cpic_summary:pd.DataFrame, output_path, user_id, pr
     f = open(f"{output_path}/cpic_summary.txt", "w")
     cpic_summary.insert(0,'project_id',project_id)
     cpic_summary.insert(0,'user_id',user_id)
-    cpic_summary.to_csv(f"{output_path}/cpic_summary.txt",index=False,sep='\t',header=False)
+    out_file = f"{output_path}/cpic_summary.txt"
+#     cpic_summary.to_csv(f"{output_path}/cpic_summary.txt",index=False,sep='\t',header=False)
+    writer = cpic_summary.to_csv(None,index=False,sep='\t',header=False)
+    open(out_file, 'w').write(writer[:-1])
+    
