@@ -181,3 +181,4 @@ resources/samples/NA12878_30x/NA12878_30x.vcf
 resources/samples/HS10227/
 resources/samples/
 .vscode/launch.json
+tests/unitest/overall_debugger.py
