@@ -11,6 +11,7 @@ def annotate(clinical_guideline_annotations, function_mappings, diplotype):
     add_lookup_key_col(diplotype,function_mappings)
     summary_and_full_report = pd.DataFrame(columns=
         [
+                    "sample_id",
                     "cpi_sum_gene1",
                     "cpi_sum_gene2",
                     "cpi_sum_gene3",
@@ -86,6 +87,7 @@ def annotate(clinical_guideline_annotations, function_mappings, diplotype):
                     cpi_sum_comments = '' if val['comments'] == "n/a" else val['comments']
                     
                     report_template = {
+                        "sample_id": guidline_info.sample_id,
                         "cpi_sum_gene1": guidline_info.gene[0],
                         "cpi_sum_gene2": guidline_info.gene[1],
                         "cpi_sum_gene3": guidline_info.gene[2],

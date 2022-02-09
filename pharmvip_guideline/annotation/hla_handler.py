@@ -26,6 +26,7 @@ def  hla_subjection(target:list[dict], guideID):
     info = {}
     for i in target:
         info = info | i ['key']
+    # if not('HLA-A' in info) or not('HLA-B' in info) : return statment
     group = ['100412','100421','100422']
     if guideID in group : statment = hla_ingroup(guideID,info)
     elif guideID == '100423': statment = hla_specific(info)
