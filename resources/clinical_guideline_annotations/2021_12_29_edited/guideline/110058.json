@@ -1,0 +1,1262 @@
+[
+    {
+        "activityscore": {
+            "CYP2C9": "0.5"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": null,
+        "drug": {
+            "name": "meloxicam"
+        },
+        "drugid": "RxNorm:41493",
+        "drugrecommendation": "Choose an alternative therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo or choose an NSAID metabolized by CYP2C9 but with a shorter half-life (see CPIC THERAPEUTIC RECOMMENDATIONS FOR CELECOXIB, FLURBIPROFEN, LORNOXICAM, AND IBUPROFEN BASED ON CYP2C9 PHENOTYPE).",
+        "drugrecommendation_short": "Choose an alternative therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo or choose an NSAID metabolized by CYP2C9 but with a shorter half-life.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1352112",
+        "implications": {
+            "CYP2C9": "Significantly reduced metabolism and prolonged half-life; higher plasma concentrations may increase probability and/or severity of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "0.5"
+        },
+        "phenotypes": {
+            "CYP2C9": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "0.0"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": null,
+        "drug": {
+            "name": "meloxicam"
+        },
+        "drugid": "RxNorm:41493",
+        "drugrecommendation": "Choose an alternative therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo or choose an NSAID metabolized by CYP2C9 but with a shorter half-life (see CPIC THERAPEUTIC RECOMMENDATIONS FOR CELECOXIB, FLURBIPROFEN, LORNOXICAM, AND IBUPROFEN BASED ON CYP2C9 PHENOTYPE).",
+        "drugrecommendation_short": "Choose an alternative therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo or choose an NSAID metabolized by CYP2C9 but with a shorter half-life.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1352113",
+        "implications": {
+            "CYP2C9": "Significantly reduced metabolism and prolonged half-life; higher plasma concentrations may increase probability and/or severity of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "0"
+        },
+        "phenotypes": {
+            "CYP2C9": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "1.0"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "Alternative therapies not primarily metabolized by CYP2C9 include aspirin, ketorolac, naproxen and sulindac. Selection of therapy will depend on individual patient treatment goals and risks for toxicity.",
+        "drug": {
+            "name": "piroxicam"
+        },
+        "drugid": "RxNorm:8356",
+        "drugrecommendation": "Choose an alternative therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo or choose an NSAID metabolized by CYP2C9 but with a shorter half-life (see CPIC THERAPEUTIC RECOMMENDATIONS FOR CELECOXIB, FLURBIPROFEN, LORNOXICAM, AND IBUPROFEN BASED ON CYP2C9 PHENOTYPE).",
+        "drugrecommendation_short": "Choose an alternative therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo or choose an NSAID metabolized by CYP2C9 but with a shorter half-life.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1352348",
+        "implications": {
+            "CYP2C9": "Moderately reduced metabolism; higher plasma concentrations may increase probability of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "1"
+        },
+        "phenotypes": {
+            "CYP2C9": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "0.5"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "Alternative therapies not primarily metabolized by CYP2C9 include aspirin, ketorolac, naproxen and sulindac. Selection of therapy will depend on individual patient treatment goals and risks for toxicity.",
+        "drug": {
+            "name": "piroxicam"
+        },
+        "drugid": "RxNorm:8356",
+        "drugrecommendation": "Choose an alternative therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo or choose an NSAID metabolized by CYP2C9 but with a shorter half-life (see CPIC THERAPEUTIC RECOMMENDATIONS FOR CELECOXIB, FLURBIPROFEN, LORNOXICAM, AND IBUPROFEN BASED ON CYP2C9 PHENOTYPE).",
+        "drugrecommendation_short": "Choose an alternative therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo or choose an NSAID metabolized by CYP2C9 but with a shorter half-life.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1352349",
+        "implications": {
+            "CYP2C9": "Significantly reduced metabolism and prolonged half-life; higher plasma concentrations may increase probability and/or severity of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "0.5"
+        },
+        "phenotypes": {
+            "CYP2C9": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "0.0"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "Alternative therapies not primarily metabolized by CYP2C9 include aspirin, ketorolac, naproxen and sulindac. Selection of therapy will depend on individual patient treatment goals and risks for toxicity.",
+        "drug": {
+            "name": "piroxicam"
+        },
+        "drugid": "RxNorm:8356",
+        "drugrecommendation": "Choose an alternative therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo or choose an NSAID metabolized by CYP2C9 but with a shorter half-life (see CPIC THERAPEUTIC RECOMMENDATIONS FOR CELECOXIB, FLURBIPROFEN, LORNOXICAM, AND IBUPROFEN BASED ON CYP2C9 PHENOTYPE).",
+        "drugrecommendation_short": "Choose an alternative therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo or choose an NSAID metabolized by CYP2C9 but with a shorter half-life.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1352350",
+        "implications": {
+            "CYP2C9": "Significantly reduced metabolism and prolonged half-life; higher plasma concentrations may increase probability and/or severity of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "0"
+        },
+        "phenotypes": {
+            "CYP2C9": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "1.0"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "Alternative therapies not primarily metabolized by CYP2C9 include aspirin, ketorolac, naproxen and sulindac. Selection of therapy will depend on individual patient treatment goals and risks for toxicity.",
+        "drug": {
+            "name": "tenoxicam"
+        },
+        "drugid": "RxNorm:37790",
+        "drugrecommendation": "Choose an alternative therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo or choose an NSAID metabolized by CYP2C9 but with a shorter half-life (see CPIC THERAPEUTIC RECOMMENDATIONS FOR CELECOXIB, FLURBIPROFEN, LORNOXICAM, AND IBUPROFEN BASED ON CYP2C9 PHENOTYPE).",
+        "drugrecommendation_short": "Choose an alternative therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo or choose an NSAID metabolized by CYP2C9 but with a shorter half-life.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1352400",
+        "implications": {
+            "CYP2C9": "Moderately reduced metabolism; higher plasma concentrations may increase probability of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "1"
+        },
+        "phenotypes": {
+            "CYP2C9": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "0.5"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "Alternative therapies not primarily metabolized by CYP2C9 include aspirin, ketorolac, naproxen and sulindac. Selection of therapy will depend on individual patient treatment goals and risks for toxicity.",
+        "drug": {
+            "name": "tenoxicam"
+        },
+        "drugid": "RxNorm:37790",
+        "drugrecommendation": "Choose an alternative therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo or choose an NSAID metabolized by CYP2C9 but with a shorter half-life (see CPIC THERAPEUTIC RECOMMENDATIONS FOR CELECOXIB, FLURBIPROFEN, LORNOXICAM, AND IBUPROFEN BASED ON CYP2C9 PHENOTYPE).",
+        "drugrecommendation_short": "Choose an alternative therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo or choose an NSAID metabolized by CYP2C9 but with a shorter half-life.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1352401",
+        "implications": {
+            "CYP2C9": "Significantly reduced metabolism and prolonged half-life; higher plasma concentrations may increase probability and/or severity of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "0.5"
+        },
+        "phenotypes": {
+            "CYP2C9": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "0.0"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": "Alternative therapies not primarily metabolized by CYP2C9 include aspirin, ketorolac, naproxen and sulindac. Selection of therapy will depend on individual patient treatment goals and risks for toxicity.",
+        "drug": {
+            "name": "tenoxicam"
+        },
+        "drugid": "RxNorm:37790",
+        "drugrecommendation": "Choose an alternative therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo or choose an NSAID metabolized by CYP2C9 but with a shorter half-life (see CPIC THERAPEUTIC RECOMMENDATIONS FOR CELECOXIB, FLURBIPROFEN, LORNOXICAM, AND IBUPROFEN BASED ON CYP2C9 PHENOTYPE).",
+        "drugrecommendation_short": "Choose an alternative therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo or choose an NSAID metabolized by CYP2C9 but with a shorter half-life.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1352402",
+        "implications": {
+            "CYP2C9": "Significantly reduced metabolism and prolonged half-life; higher plasma concentrations may increase probability and/or severity of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "0"
+        },
+        "phenotypes": {
+            "CYP2C9": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "0.5"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "Alternative therapies not primarily metabolized by CYP2C9 include aspirin, ketorolac, naproxen and sulindac. Selection of therapy will depend on individual patient treatment goals and risks for toxicity.",
+        "drug": {
+            "name": "celecoxib"
+        },
+        "drugid": "RxNorm:140587",
+        "drugrecommendation": "Initiate therapy with 25-50% of the lowest recommended starting dose. Titrate dose upward to clinical effect or 25-50% of the maximum recommended dose with caution. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals. Upward dose titration should not occur until after steady state is reached (at least 8 days for celecoxib after first dose in PMs). Carefully monitor adverse events such as blood pressure and kidney function during course of therapy. Alternatively, consider an alternate therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo.",
+        "drugrecommendation_short": "Initiate therapy with 25-50% of the lowest recommended starting dose. Titrate dose upward to clinical effect or 25-50% of the maximum recommended dose with caution. Alternatively, consider an alternate therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351311",
+        "implications": {
+            "CYP2C9": "Significantly reduced metabolism and prolonged half-life; higher plasma concentrations may increase probability and/or severity of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "0.5"
+        },
+        "phenotypes": {
+            "CYP2C9": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "0.0"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "Alternative therapies not primarily metabolized by CYP2C9 include aspirin, ketorolac, naproxen and sulindac. Selection of therapy will depend on individual patient treatment goals and risks for toxicity.",
+        "drug": {
+            "name": "celecoxib"
+        },
+        "drugid": "RxNorm:140587",
+        "drugrecommendation": "Initiate therapy with 25-50% of the lowest recommended starting dose. Titrate dose upward to clinical effect or 25-50% of the maximum recommended dose with caution. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals. Upward dose titration should not occur until after steady state is reached (at least 8 days for celecoxib after first dose in PMs). Carefully monitor adverse events such as blood pressure and kidney function during course of therapy. Alternatively, consider an alternate therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo.",
+        "drugrecommendation_short": "Initiate therapy with 25-50% of the lowest recommended starting dose. Titrate dose upward to clinical effect or 25-50% of the maximum recommended dose with caution. Alternatively, consider an alternate therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351312",
+        "implications": {
+            "CYP2C9": "Significantly reduced metabolism and prolonged half-life; higher plasma concentrations may increase probability and/or severity of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "0"
+        },
+        "phenotypes": {
+            "CYP2C9": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "0.5"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "Alternative therapies not primarily metabolized by CYP2C9 include aspirin, ketorolac, naproxen and sulindac. Selection of therapy will depend on individual patient treatment goals and risks for toxicity.",
+        "drug": {
+            "name": "flurbiprofen"
+        },
+        "drugid": "RxNorm:4502",
+        "drugrecommendation": "Initiate therapy with 25-50% of the lowest recommended starting dose. Titrate dose upward to clinical effect or 25-50% of the maximum recommended dose with caution. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals. Upward dose titration should not occur until after steady state is reached (at least 8 days for celecoxib after first dose in PMs). Carefully monitor adverse events such as blood pressure and kidney function during course of therapy. Alternatively, consider an alternate therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo.",
+        "drugrecommendation_short": "Initiate therapy with 25-50% of the lowest recommended starting dose. Titrate dose upward to clinical effect or 25-50% of the maximum recommended dose with caution. Alternatively, consider an alternate therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351317",
+        "implications": {
+            "CYP2C9": "Significantly reduced metabolism and prolonged half-life; higher plasma concentrations may increase probability and/or severity of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "0.5"
+        },
+        "phenotypes": {
+            "CYP2C9": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "0.0"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "Alternative therapies not primarily metabolized by CYP2C9 include aspirin, ketorolac, naproxen and sulindac. Selection of therapy will depend on individual patient treatment goals and risks for toxicity.",
+        "drug": {
+            "name": "flurbiprofen"
+        },
+        "drugid": "RxNorm:4502",
+        "drugrecommendation": "Initiate therapy with 25-50% of the lowest recommended starting dose. Titrate dose upward to clinical effect or 25-50% of the maximum recommended dose with caution. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals. Upward dose titration should not occur until after steady state is reached (at least 8 days for celecoxib after first dose in PMs). Carefully monitor adverse events such as blood pressure and kidney function during course of therapy. Alternatively, consider an alternate therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo.",
+        "drugrecommendation_short": "Initiate therapy with 25-50% of the lowest recommended starting dose. Titrate dose upward to clinical effect or 25-50% of the maximum recommended dose with caution. Alternatively, consider an alternate therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351318",
+        "implications": {
+            "CYP2C9": "Significantly reduced metabolism and prolonged half-life; higher plasma concentrations may increase probability and/or severity of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "0"
+        },
+        "phenotypes": {
+            "CYP2C9": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "0.5"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "Alternative therapies not primarily metabolized by CYP2C9 include aspirin, ketorolac, naproxen and sulindac. Selection of therapy will depend on individual patient treatment goals and risks for toxicity.",
+        "drug": {
+            "name": "ibuprofen"
+        },
+        "drugid": "RxNorm:5640",
+        "drugrecommendation": "Initiate therapy with 25-50% of the lowest recommended starting dose. Titrate dose upward to clinical effect or 25-50% of the maximum recommended dose with caution. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals. Upward dose titration should not occur until after steady state is reached (at least 8 days for celecoxib after first dose in PMs). Carefully monitor adverse events such as blood pressure and kidney function during course of therapy. Alternatively, consider an alternate therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo.",
+        "drugrecommendation_short": "Initiate therapy with 25-50% of the lowest recommended starting dose. Titrate dose upward to clinical effect or 25-50% of the maximum recommended dose with caution. Alternatively, consider an alternate therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351323",
+        "implications": {
+            "CYP2C9": "Significantly reduced metabolism and prolonged half-life; higher plasma concentrations may increase probability and/or severity of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "0.5"
+        },
+        "phenotypes": {
+            "CYP2C9": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "0.0"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "Alternative therapies not primarily metabolized by CYP2C9 include aspirin, ketorolac, naproxen and sulindac. Selection of therapy will depend on individual patient treatment goals and risks for toxicity.",
+        "drug": {
+            "name": "ibuprofen"
+        },
+        "drugid": "RxNorm:5640",
+        "drugrecommendation": "Initiate therapy with 25-50% of the lowest recommended starting dose. Titrate dose upward to clinical effect or 25-50% of the maximum recommended dose with caution. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals. Upward dose titration should not occur until after steady state is reached (at least 8 days for celecoxib after first dose in PMs). Carefully monitor adverse events such as blood pressure and kidney function during course of therapy. Alternatively, consider an alternate therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo.",
+        "drugrecommendation_short": "Initiate therapy with 25-50% of the lowest recommended starting dose. Titrate dose upward to clinical effect or 25-50% of the maximum recommended dose with caution. Alternatively, consider an alternate therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351324",
+        "implications": {
+            "CYP2C9": "Significantly reduced metabolism and prolonged half-life; higher plasma concentrations may increase probability and/or severity of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "0"
+        },
+        "phenotypes": {
+            "CYP2C9": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "0.5"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "Alternative therapies not primarily metabolized by CYP2C9 include aspirin, ketorolac, naproxen and sulindac. Selection of therapy will depend on individual patient treatment goals and risks for toxicity.",
+        "drug": {
+            "name": "lornoxicam"
+        },
+        "drugid": "RxNorm:20890",
+        "drugrecommendation": "Initiate therapy with 25-50% of the lowest recommended starting dose. Titrate dose upward to clinical effect or 25-50% of the maximum recommended dose with caution. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals. Upward dose titration should not occur until after steady state is reached (at least 8 days for celecoxib after first dose in PMs). Carefully monitor adverse events such as blood pressure and kidney function during course of therapy. Alternatively, consider an alternate therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo.",
+        "drugrecommendation_short": "Initiate therapy with 25-50% of the lowest recommended starting dose. Titrate dose upward to clinical effect or 25-50% of the maximum recommended dose with caution. Alternatively, consider an alternate therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351329",
+        "implications": {
+            "CYP2C9": "Significantly reduced metabolism and prolonged half-life; higher plasma concentrations may increase probability and/or severity of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "0.5"
+        },
+        "phenotypes": {
+            "CYP2C9": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "0.0"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "Alternative therapies not primarily metabolized by CYP2C9 include aspirin, ketorolac, naproxen and sulindac. Selection of therapy will depend on individual patient treatment goals and risks for toxicity.",
+        "drug": {
+            "name": "lornoxicam"
+        },
+        "drugid": "RxNorm:20890",
+        "drugrecommendation": "Initiate therapy with 25-50% of the lowest recommended starting dose. Titrate dose upward to clinical effect or 25-50% of the maximum recommended dose with caution. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals. Upward dose titration should not occur until after steady state is reached (at least 8 days for celecoxib after first dose in PMs). Carefully monitor adverse events such as blood pressure and kidney function during course of therapy. Alternatively, consider an alternate therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo.",
+        "drugrecommendation_short": "Initiate therapy with 25-50% of the lowest recommended starting dose. Titrate dose upward to clinical effect or 25-50% of the maximum recommended dose with caution. Alternatively, consider an alternate therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351330",
+        "implications": {
+            "CYP2C9": "Significantly reduced metabolism and prolonged half-life; higher plasma concentrations may increase probability and/or severity of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "0"
+        },
+        "phenotypes": {
+            "CYP2C9": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "1.0"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "IMs might have a higher than normal risk of adverse events especially in individuals with other factors affecting clearance of these drugs such as hepatic impairment or advanced age. Alternative therapies not primarily metabolized by CYP2C9 include aspirin, ketorolac, naproxen and sulindac. Selection of therapy will depend on individual patient treatment goals and risks for toxicity.",
+        "drug": {
+            "name": "meloxicam"
+        },
+        "drugid": "RxNorm:41493",
+        "drugrecommendation": "Initiate therapy with 50% of the lowest recommended starting dose. Titrate dose upward to clinical effect or 50% of the maximum recommended dose with caution. In accordance with the meloxicam prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals. Upward dose titration should not occur until after steady state is reached (at least 7 days). Carefully monitor adverse events such as blood pressure and kidney function during course of therapy. Alternatively, consider alternative therapy. Choose an alternative therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo or choose an NSAID metabolized by CYP2C9 but with a shorter half-life (see CPIC THERAPEUTIC RECOMMENDATIONS FOR CELECOXIB, FLURBIPROFEN, LORNOXICAM, AND IBUPROFEN BASED ON CYP2C9 PHENOTYPE).",
+        "drugrecommendation_short": "Initiate therapy with 50% of the lowest recommended starting dose. Titrate dose upward to clinical effect or 50% of the maximum recommended dose with caution. Alternatively, consider alternative therapy. Choose an alternative therapy not metabolized by CYP2C9 or not significantly impacted by CYP2C9 genetic variants in vivo or choose an NSAID metabolized by CYP2C9 but with a shorter half-life.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1352111",
+        "implications": {
+            "CYP2C9": "Moderately reduced metabolism; higher plasma concentrations may increase probability of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "1"
+        },
+        "phenotypes": {
+            "CYP2C9": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "1.0"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "IMs might have a higher than normal risk of adverse events especially in individuals with other factors affecting clearance of these drugs such as hepatic impairment or advanced age. Further caution should be taken with ibuprofen use in individuals carrying the CYP2C9*2 allele as it is in linkage disequilibrium with CYP2C8*3 and ibuprofen is also metabolized by CYP2C8.",
+        "drug": {
+            "name": "celecoxib"
+        },
+        "drugid": "RxNorm:140587",
+        "drugrecommendation": "Initiate therapy with lowest recommended starting dose. Titrate dose upward to clinical effect or maximum recommended dose with caution. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals. Carefully monitor adverse events such as blood pressure and kidney function during course of therapy.",
+        "drugrecommendation_short": "Initiate therapy with lowest recommended starting dose. Titrate dose upward to clinical effect or maximum recommended dose with caution. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals. Carefully monitor adverse events such as blood pressure and kidney function during course of therapy.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351310",
+        "implications": {
+            "CYP2C9": "Moderately reduced metabolism; higher plasma concentrations may increase probability of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "1"
+        },
+        "phenotypes": {
+            "CYP2C9": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "1.0"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "IMs might have a higher than normal risk of adverse events especially in individuals with other factors affecting clearance of these drugs such as hepatic impairment or advanced age. Further caution should be taken with ibuprofen use in individuals carrying the CYP2C9*2 allele as it is in linkage disequilibrium with CYP2C8*3 and ibuprofen is also metabolized by CYP2C8.",
+        "drug": {
+            "name": "flurbiprofen"
+        },
+        "drugid": "RxNorm:4502",
+        "drugrecommendation": "Initiate therapy with lowest recommended starting dose. Titrate dose upward to clinical effect or maximum recommended dose with caution. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals. Carefully monitor adverse events such as blood pressure and kidney function during course of therapy.",
+        "drugrecommendation_short": "Initiate therapy with lowest recommended starting dose. Titrate dose upward to clinical effect or maximum recommended dose with caution. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals. Carefully monitor adverse events such as blood pressure and kidney function during course of therapy.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351316",
+        "implications": {
+            "CYP2C9": "Moderately reduced metabolism; higher plasma concentrations may increase probability of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "1"
+        },
+        "phenotypes": {
+            "CYP2C9": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "1.0"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "IMs might have a higher than normal risk of adverse events especially in individuals with other factors affecting clearance of these drugs such as hepatic impairment or advanced age. Further caution should be taken with ibuprofen use in individuals carrying the CYP2C9*2 allele as it is in linkage disequilibrium with CYP2C8*3 and ibuprofen is also metabolized by CYP2C8.",
+        "drug": {
+            "name": "ibuprofen"
+        },
+        "drugid": "RxNorm:5640",
+        "drugrecommendation": "Initiate therapy with lowest recommended starting dose. Titrate dose upward to clinical effect or maximum recommended dose with caution. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals. Carefully monitor adverse events such as blood pressure and kidney function during course of therapy.",
+        "drugrecommendation_short": "Initiate therapy with lowest recommended starting dose. Titrate dose upward to clinical effect or maximum recommended dose with caution. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals. Carefully monitor adverse events such as blood pressure and kidney function during course of therapy.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351322",
+        "implications": {
+            "CYP2C9": "Moderately reduced metabolism; higher plasma concentrations may increase probability of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "1"
+        },
+        "phenotypes": {
+            "CYP2C9": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "1.0"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "IMs might have a higher than normal risk of adverse events especially in individuals with other factors affecting clearance of these drugs such as hepatic impairment or advanced age. Further caution should be taken with ibuprofen use in individuals carrying the CYP2C9*2 allele as it is in linkage disequilibrium with CYP2C8*3 and ibuprofen is also metabolized by CYP2C8.",
+        "drug": {
+            "name": "lornoxicam"
+        },
+        "drugid": "RxNorm:20890",
+        "drugrecommendation": "Initiate therapy with lowest recommended starting dose. Titrate dose upward to clinical effect or maximum recommended dose with caution. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals. Carefully monitor adverse events such as blood pressure and kidney function during course of therapy.",
+        "drugrecommendation_short": "Initiate therapy with lowest recommended starting dose. Titrate dose upward to clinical effect or maximum recommended dose with caution. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals. Carefully monitor adverse events such as blood pressure and kidney function during course of therapy.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351328",
+        "implications": {
+            "CYP2C9": "Moderately reduced metabolism; higher plasma concentrations may increase probability of toxicities"
+        },
+        "lookupkey": {
+            "CYP2C9": "1"
+        },
+        "phenotypes": {
+            "CYP2C9": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "1.5"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "IMs might have a higher than normal risk of adverse events especially in individuals with other factors affecting clearance of these drugs such as hepatic impairment or advanced age.",
+        "drug": {
+            "name": "meloxicam"
+        },
+        "drugid": "RxNorm:41493",
+        "drugrecommendation": "Initiate therapy with recommended starting dose. In accordance with the meloxicam prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "drugrecommendation_short": "Initiate therapy with recommended starting dose. In accordance with the meloxicam prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1352110",
+        "implications": {
+            "CYP2C9": "Mildly reduced metabolism"
+        },
+        "lookupkey": {
+            "CYP2C9": "1.5"
+        },
+        "phenotypes": {
+            "CYP2C9": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "1.5"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "IMs might have a higher than normal risk of adverse events especially in individuals with other factors affecting clearance of these drugs such as hepatic impairment or advanced age. Further caution should be taken with ibuprofen use in individuals carrying the CYP2C9*2 allele as it is in linkage disequilibrium with CYP2C8*3 and ibuprofen is also metabolized by CYP2C8.",
+        "drug": {
+            "name": "lornoxicam"
+        },
+        "drugid": "RxNorm:20890",
+        "drugrecommendation": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "drugrecommendation_short": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351327",
+        "implications": {
+            "CYP2C9": "Mildly reduced metabolism"
+        },
+        "lookupkey": {
+            "CYP2C9": "1.5"
+        },
+        "phenotypes": {
+            "CYP2C9": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "2.0"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "celecoxib"
+        },
+        "drugid": "RxNorm:140587",
+        "drugrecommendation": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "drugrecommendation_short": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351308",
+        "implications": {
+            "CYP2C9": "Normal metabolism"
+        },
+        "lookupkey": {
+            "CYP2C9": "2"
+        },
+        "phenotypes": {
+            "CYP2C9": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "1.5"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "IMs might have a higher than normal risk of adverse events especially in individuals with other factors affecting clearance of these drugs such as hepatic impairment or advanced age. Further caution should be taken with ibuprofen use in individuals carrying the CYP2C9*2 allele as it is in linkage disequilibrium with CYP2C8*3 and ibuprofen is also metabolized by CYP2C8.",
+        "drug": {
+            "name": "celecoxib"
+        },
+        "drugid": "RxNorm:140587",
+        "drugrecommendation": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "drugrecommendation_short": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351309",
+        "implications": {
+            "CYP2C9": "Mildly reduced metabolism"
+        },
+        "lookupkey": {
+            "CYP2C9": "1.5"
+        },
+        "phenotypes": {
+            "CYP2C9": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "2.0"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "flurbiprofen"
+        },
+        "drugid": "RxNorm:4502",
+        "drugrecommendation": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "drugrecommendation_short": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351314",
+        "implications": {
+            "CYP2C9": "Normal metabolism"
+        },
+        "lookupkey": {
+            "CYP2C9": "2"
+        },
+        "phenotypes": {
+            "CYP2C9": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "1.5"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "IMs might have a higher than normal risk of adverse events especially in individuals with other factors affecting clearance of these drugs such as hepatic impairment or advanced age. Further caution should be taken with ibuprofen use in individuals carrying the CYP2C9*2 allele as it is in linkage disequilibrium with CYP2C8*3 and ibuprofen is also metabolized by CYP2C8.",
+        "drug": {
+            "name": "flurbiprofen"
+        },
+        "drugid": "RxNorm:4502",
+        "drugrecommendation": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "drugrecommendation_short": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351315",
+        "implications": {
+            "CYP2C9": "Mildly reduced metabolism"
+        },
+        "lookupkey": {
+            "CYP2C9": "1.5"
+        },
+        "phenotypes": {
+            "CYP2C9": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "2.0"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "ibuprofen"
+        },
+        "drugid": "RxNorm:5640",
+        "drugrecommendation": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "drugrecommendation_short": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351320",
+        "implications": {
+            "CYP2C9": "Normal metabolism"
+        },
+        "lookupkey": {
+            "CYP2C9": "2"
+        },
+        "phenotypes": {
+            "CYP2C9": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "1.5"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "IMs might have a higher than normal risk of adverse events especially in individuals with other factors affecting clearance of these drugs such as hepatic impairment or advanced age. Further caution should be taken with ibuprofen use in individuals carrying the CYP2C9*2 allele as it is in linkage disequilibrium with CYP2C8*3 and ibuprofen is also metabolized by CYP2C8.",
+        "drug": {
+            "name": "ibuprofen"
+        },
+        "drugid": "RxNorm:5640",
+        "drugrecommendation": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "drugrecommendation_short": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351321",
+        "implications": {
+            "CYP2C9": "Mildly reduced metabolism"
+        },
+        "lookupkey": {
+            "CYP2C9": "1.5"
+        },
+        "phenotypes": {
+            "CYP2C9": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "2.0"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "lornoxicam"
+        },
+        "drugid": "RxNorm:20890",
+        "drugrecommendation": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "drugrecommendation_short": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351326",
+        "implications": {
+            "CYP2C9": "Normal metabolism"
+        },
+        "lookupkey": {
+            "CYP2C9": "2"
+        },
+        "phenotypes": {
+            "CYP2C9": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "2.0"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "meloxicam"
+        },
+        "drugid": "RxNorm:41493",
+        "drugrecommendation": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "drugrecommendation_short": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1352109",
+        "implications": {
+            "CYP2C9": "Normal metabolism"
+        },
+        "lookupkey": {
+            "CYP2C9": "2"
+        },
+        "phenotypes": {
+            "CYP2C9": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "2.0"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "piroxicam"
+        },
+        "drugid": "RxNorm:8356",
+        "drugrecommendation": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "drugrecommendation_short": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1352346",
+        "implications": {
+            "CYP2C9": "Normal metabolism"
+        },
+        "lookupkey": {
+            "CYP2C9": "2"
+        },
+        "phenotypes": {
+            "CYP2C9": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "1.5"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "IMs might have a higher than normal risk of adverse events especially in individuals with other factors affecting clearance of these drugs such as hepatic impairment or advanced age.",
+        "drug": {
+            "name": "piroxicam"
+        },
+        "drugid": "RxNorm:8356",
+        "drugrecommendation": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "drugrecommendation_short": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1352347",
+        "implications": {
+            "CYP2C9": "Mildly reduced metabolism"
+        },
+        "lookupkey": {
+            "CYP2C9": "1.5"
+        },
+        "phenotypes": {
+            "CYP2C9": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "2.0"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "tenoxicam"
+        },
+        "drugid": "RxNorm:37790",
+        "drugrecommendation": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "drugrecommendation_short": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1352398",
+        "implications": {
+            "CYP2C9": "Normal metabolism"
+        },
+        "lookupkey": {
+            "CYP2C9": "2"
+        },
+        "phenotypes": {
+            "CYP2C9": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "1.5"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "IMs might have a higher than normal risk of adverse events especially in individuals with other factors affecting clearance of these drugs such as hepatic impairment or advanced age.",
+        "drug": {
+            "name": "tenoxicam"
+        },
+        "drugid": "RxNorm:37790",
+        "drugrecommendation": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "drugrecommendation_short": "Initiate therapy with recommended starting dose. In accordance with the prescribing information, use the lowest effective dosage for shortest duration consistent with individual patient treatment goals.",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1352399",
+        "implications": {
+            "CYP2C9": "Mildly reduced metabolism"
+        },
+        "lookupkey": {
+            "CYP2C9": "1.5"
+        },
+        "phenotypes": {
+            "CYP2C9": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "celecoxib"
+        },
+        "drugid": "RxNorm:140587",
+        "drugrecommendation": "No recommendation",
+        "drugrecommendation_short": "No recommendation",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351313",
+        "implications": {
+            "CYP2C9": "n/a"
+        },
+        "lookupkey": {
+            "CYP2C9": "n/a"
+        },
+        "phenotypes": {
+            "CYP2C9": "Indeterminate"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "flurbiprofen"
+        },
+        "drugid": "RxNorm:4502",
+        "drugrecommendation": "No recommendation",
+        "drugrecommendation_short": "No recommendation",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351319",
+        "implications": {
+            "CYP2C9": "n/a"
+        },
+        "lookupkey": {
+            "CYP2C9": "n/a"
+        },
+        "phenotypes": {
+            "CYP2C9": "Indeterminate"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "ibuprofen"
+        },
+        "drugid": "RxNorm:5640",
+        "drugrecommendation": "No recommendation",
+        "drugrecommendation_short": "No recommendation",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351325",
+        "implications": {
+            "CYP2C9": "n/a"
+        },
+        "lookupkey": {
+            "CYP2C9": "n/a"
+        },
+        "phenotypes": {
+            "CYP2C9": "Indeterminate"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "lornoxicam"
+        },
+        "drugid": "RxNorm:20890",
+        "drugrecommendation": "No recommendation",
+        "drugrecommendation_short": "No recommendation",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1351331",
+        "implications": {
+            "CYP2C9": "n/a"
+        },
+        "lookupkey": {
+            "CYP2C9": "n/a"
+        },
+        "phenotypes": {
+            "CYP2C9": "Indeterminate"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "meloxicam"
+        },
+        "drugid": "RxNorm:41493",
+        "drugrecommendation": "No recommendation",
+        "drugrecommendation_short": "No recommendation",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1352114",
+        "implications": {
+            "CYP2C9": "n/a"
+        },
+        "lookupkey": {
+            "CYP2C9": "n/a"
+        },
+        "phenotypes": {
+            "CYP2C9": "Indeterminate"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "tenoxicam"
+        },
+        "drugid": "RxNorm:37790",
+        "drugrecommendation": "No recommendation",
+        "drugrecommendation_short": "No recommendation",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1352403",
+        "implications": {
+            "CYP2C9": "n/a"
+        },
+        "lookupkey": {
+            "CYP2C9": "n/a"
+        },
+        "phenotypes": {
+            "CYP2C9": "Indeterminate"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2C9": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "piroxicam"
+        },
+        "drugid": "RxNorm:8356",
+        "drugrecommendation": "No recommendation",
+        "drugrecommendation_short": "No recommendation",
+        "guideline": {
+            "name": "CYP2C9 and NSAIDs"
+        },
+        "guidelineid": "110058",
+        "id": "1352351",
+        "implications": {
+            "CYP2C9": "n/a"
+        },
+        "lookupkey": {
+            "CYP2C9": "n/a"
+        },
+        "phenotypes": {
+            "CYP2C9": "Indeterminate"
+        },
+        "population": "general",
+        "version": "1"
+    }
+]

@@ -1,0 +1,212 @@
+[
+    {
+        "activityscore": {
+            "SLCO1B1": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "simvastatin"
+        },
+        "drugid": "RxNorm:36567",
+        "drugrecommendation": "No recommendation",
+        "drugrecommendation_short": "No recommendation",
+        "guideline": {
+            "name": "SLCO1B1 and Simvastatin"
+        },
+        "guidelineid": "100426",
+        "id": "1352364",
+        "implications": {
+            "SLCO1B1": "n/a"
+        },
+        "lookupkey": {
+            "SLCO1B1": "possible increased function"
+        },
+        "phenotypes": {
+            "SLCO1B1": "possible increased function"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "SLCO1B1": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "In all cases, the potential for drug-drug interactions should be evaluated before initiating a prescription. The US Food and Drug Administration recommends against 80 mg (unless already tolerated for 12 months).",
+        "drug": {
+            "name": "simvastatin"
+        },
+        "drugid": "RxNorm:36567",
+        "drugrecommendation": "Prescribe desired starting dose and adjust doses of simvastatin based on disease-specific guidelines",
+        "drugrecommendation_short": "Prescribe desired starting dose and adjust doses of simvastatin based on disease-specific guidelines",
+        "guideline": {
+            "name": "SLCO1B1 and Simvastatin"
+        },
+        "guidelineid": "100426",
+        "id": "1352365",
+        "implications": {
+            "SLCO1B1": "Normal myopathy risk"
+        },
+        "lookupkey": {
+            "SLCO1B1": "Normal function"
+        },
+        "phenotypes": {
+            "SLCO1B1": "Normal function"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "SLCO1B1": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "In all cases, the potential for drug-drug interactions should be evaluated prior to initiating a prescription.",
+        "drug": {
+            "name": "simvastatin"
+        },
+        "drugid": "RxNorm:36567",
+        "drugrecommendation": "Prescribe a lower dose or consider an alternative statin (e.g., pravastatin or rosuvastatin); consider routine creatine kinase surveillance.",
+        "drugrecommendation_short": "Prescribe a lower dose or consider an alternative statin (e.g., pravastatin or rosuvastatin); consider routine creatine kinase surveillance.",
+        "guideline": {
+            "name": "SLCO1B1 and Simvastatin"
+        },
+        "guidelineid": "100426",
+        "id": "1352366",
+        "implications": {
+            "SLCO1B1": "Intermediate myopathy risk"
+        },
+        "lookupkey": {
+            "SLCO1B1": "possible decreased function"
+        },
+        "phenotypes": {
+            "SLCO1B1": "possible decreased function"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "SLCO1B1": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "In all cases, the potential for drug-drug interactions should be evaluated prior to initiating a prescription.",
+        "drug": {
+            "name": "simvastatin"
+        },
+        "drugid": "RxNorm:36567",
+        "drugrecommendation": "Prescribe a lower dose or consider an alternative statin (e.g., pravastatin or rosuvastatin); consider routine creatine kinase surveillance.",
+        "drugrecommendation_short": "Prescribe a lower dose or consider an alternative statin (e.g., pravastatin or rosuvastatin); consider routine creatine kinase surveillance.",
+        "guideline": {
+            "name": "SLCO1B1 and Simvastatin"
+        },
+        "guidelineid": "100426",
+        "id": "1352367",
+        "implications": {
+            "SLCO1B1": "Intermediate myopathy risk"
+        },
+        "lookupkey": {
+            "SLCO1B1": "Decreased function"
+        },
+        "phenotypes": {
+            "SLCO1B1": "Decreased function"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "SLCO1B1": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "In all cases, the potential for drug-drug interactions should be evaluated prior to initiating a prescription.",
+        "drug": {
+            "name": "simvastatin"
+        },
+        "drugid": "RxNorm:36567",
+        "drugrecommendation": "Prescribe a lower dose or consider an alternative statin (e.g., pravastatin or rosuvastatin); consider routine creatine kinase surveillance.",
+        "drugrecommendation_short": "Prescribe a lower dose or consider an alternative statin (e.g., pravastatin or rosuvastatin); consider routine creatine kinase surveillance.",
+        "guideline": {
+            "name": "SLCO1B1 and Simvastatin"
+        },
+        "guidelineid": "100426",
+        "id": "1352368",
+        "implications": {
+            "SLCO1B1": "High myopathy risk"
+        },
+        "lookupkey": {
+            "SLCO1B1": "possible poor function"
+        },
+        "phenotypes": {
+            "SLCO1B1": "possible poor function"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "SLCO1B1": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "In all cases, the potential for drug-drug interactions should be evaluated prior to initiating a prescription.",
+        "drug": {
+            "name": "simvastatin"
+        },
+        "drugid": "RxNorm:36567",
+        "drugrecommendation": "Prescribe a lower dose or consider an alternative statin (e.g., pravastatin or rosuvastatin); consider routine creatine kinase surveillance.",
+        "drugrecommendation_short": "Prescribe a lower dose or consider an alternative statin (e.g., pravastatin or rosuvastatin); consider routine creatine kinase surveillance.",
+        "guideline": {
+            "name": "SLCO1B1 and Simvastatin"
+        },
+        "guidelineid": "100426",
+        "id": "1352369",
+        "implications": {
+            "SLCO1B1": "High myopathy risk"
+        },
+        "lookupkey": {
+            "SLCO1B1": "Poor function"
+        },
+        "phenotypes": {
+            "SLCO1B1": "Poor function"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "SLCO1B1": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "simvastatin"
+        },
+        "drugid": "RxNorm:36567",
+        "drugrecommendation": "No recommendation",
+        "drugrecommendation_short": "No recommendation",
+        "guideline": {
+            "name": "SLCO1B1 and Simvastatin"
+        },
+        "guidelineid": "100426",
+        "id": "1352370",
+        "implications": {
+            "SLCO1B1": "n/a"
+        },
+        "lookupkey": {
+            "SLCO1B1": "Indeterminate"
+        },
+        "phenotypes": {
+            "SLCO1B1": "Indeterminate"
+        },
+        "population": "general",
+        "version": "1"
+    }
+]
