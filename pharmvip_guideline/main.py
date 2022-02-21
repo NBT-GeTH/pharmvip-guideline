@@ -10,7 +10,7 @@ from pharmvip_guideline.allele_matcher.diplotype import create_diplotype_cpic, r
 from cyvcf2 import VCF
 from pharmvip_guideline.allele_matcher.diplotype_dbpmcgenomics import diplotype_dbpmcgenomics
 from pharmvip_guideline.annotation.guideline_annotation import *
-from pharmvip.guideline.annotation.report_handle import replace_blank
+from pharmvip_guideline.annotation.report_handle import replace_blank
 
 class MyParser(argparse.ArgumentParser):
     def error(self, message):
