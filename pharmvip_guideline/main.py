@@ -10,52 +10,13 @@ from pharmvip_guideline.allele_matcher.diplotype import create_diplotype_cpic, r
 from cyvcf2 import VCF
 from pharmvip_guideline.allele_matcher.diplotype_dbpmcgenomics import diplotype_dbpmcgenomics
 from pharmvip_guideline.annotation.guideline_annotation import *
-import numpy as np
+from pharmvip.guideline.annotation.report_handle import replace_blank
 
 class MyParser(argparse.ArgumentParser):
     def error(self, message):
         sys.stderr.write(f"error: {message}\n")
         self.print_help()
         sys.exit(2)
-
-def replace_blank(df):
-    # df = df.fillna('N/A')
-
-    # df['cpi_sum_gene1'] = df['cpi_sum_gene1'].replace([''],'N/A')
-    # df['cpi_sum_gene2'] = df['cpi_sum_gene2'].replace([''],'N/A')
-    # df['cpi_sum_gene3'] = df['cpi_sum_gene3'].replace([''],'N/A')
-    # df['cpi_sum_dip_name1'] = df['cpi_sum_dip_name1'].replace([''],'N/A')
-    # df['cpi_sum_dip_name2'] = df['cpi_sum_dip_name2'].replace([''],'N/A')
-    # df['cpi_sum_dip_name3'] = df['cpi_sum_dip_name3'].replace([''],'N/A')
-    # df['cpi_sum_drug'] = df['cpi_sum_drug'].replace([''],'N/A')
-    # df['cpi_sum_population'] = df['cpi_sum_population'].replace([''],'N/A')
-    # df['cpi_sum_act_score1'] = df['cpi_sum_act_score1'].replace([''],'N/A')
-    # df['cpi_sum_act_score2'] = df['cpi_sum_act_score2'].replace([''],'N/A')
-    # df['cpi_sum_act_score3'] = df['cpi_sum_act_score3'].replace([''],'N/A')
-    df['cpi_sum_strength'] = df['cpi_sum_strength'].replace([''],'N/A')
-    df['cpi_sum_recommendations'] = df['cpi_sum_recommendations'].replace([''],'N/A')
-    df['cpi_sum_recommendations_full'] = df['cpi_sum_recommendations_full'].replace([''],'N/A')
-    # df['cpi_sum_recommendations_full_figure'] = df['cpi_sum_recommendations_full_figure'].replace([''],'N/A')
-    # df['cpi_sum_comments'] = df['cpi_sum_comments'].replace([''],'N/A')
-    df['cpi_sum_implications1'] = np.where((df.cpi_sum_gene1 != '') & (df.cpi_sum_implications1 == ''),'N/A',df.cpi_sum_implications1)
-    df['cpi_sum_implications2'] = np.where((df.cpi_sum_gene2 != '') & (df.cpi_sum_implications2 == ''),'N/A',df.cpi_sum_implications2)
-    df['cpi_sum_implications3'] = np.where((df.cpi_sum_gene3 != '') & (df.cpi_sum_implications3 == ''),'N/A',df.cpi_sum_implications3)
-    df['cpi_sum_phenotype1'] = np.where((df.cpi_sum_gene1 != '') & (df.cpi_sum_phenotype1 == ''),'N/A',df.cpi_sum_phenotype1)
-    df['cpi_sum_phenotype2'] = np.where((df.cpi_sum_gene2 != '') & (df.cpi_sum_phenotype2 == ''),'N/A',df.cpi_sum_phenotype2)
-    df['cpi_sum_phenotype3'] = np.where((df.cpi_sum_gene3 != '') & (df.cpi_sum_phenotype3 == ''),'N/A',df.cpi_sum_phenotype3)
-    df['cpi_sum_met_status_1'] = np.where((df.cpi_sum_gene1 != '') & (df.cpi_sum_met_status_1 == ''),'N/A',df.cpi_sum_met_status_1)
-    df['cpi_sum_met_status_2'] = np.where((df.cpi_sum_gene2 != '') & (df.cpi_sum_met_status_2 == ''),'N/A',df.cpi_sum_met_status_2)
-    df['cpi_sum_met_status_3'] = np.where((df.cpi_sum_gene3 != '') & (df.cpi_sum_met_status_3 == ''),'N/A',df.cpi_sum_met_status_3)
-    # df['cpi_sum_gen_1_missing'] = df['cpi_sum_gen_1_missing'].replace([''],'N/A')
-    # df['cpi_sum_gen_1_total'] = df['cpi_sum_gen_1_total'].replace([''],'N/A')
-    # df['cpi_sum_gen_2_missing'] = df['cpi_sum_gen_2_missing'].replace([''],'N/A')
-    # df['cpi_sum_gen_2_total'] = df['cpi_sum_gen_2_total'].replace([''],'N/A')
-    # df['cpi_sum_gen_3_missing'] = df['cpi_sum_gen_3_missing'].replace([''],'N/A')
-    # df['cpi_sum_gen_3_total'] = df['cpi_sum_gen_3_total'].replace([''],'N/A')
-    # df['cpi_sum_hla_tool_1_guide'] = df['cpi_sum_hla_tool_1_guide'].replace([''],'N/A')
-    # df['cpi_sum_hla_tool_2_guide'] = df['cpi_sum_hla_tool_2_guide'].replace([''],'N/A')
-    
-    return df
 
 def main():
     text1 = "This python script create to process on guideline module.It have 2 fuctional which is\n"
