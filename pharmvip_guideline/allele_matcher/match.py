@@ -1,4 +1,5 @@
 import re
+import copy
 
 def create_hap_regex(variants):
     hap1_regex = []
@@ -41,24 +42,39 @@ def extract_iupac(name_haplotypes):
         "N": ["A", "C", "G", "T"],
         "-": ["del"]
     }
-    for name_haplotype in name_haplotypes:
-        _name_haplotypes = name_haplotypes
-        for iupac_code in iupac:
-            if iupac_code != "A" and iupac_code != "C" and iupac_code != "G" and iupac_code != "T":
-                if iupac_code in name_haplotype:
-                    __name_haplotypes = []
-                    for iupac_code_base in iupac[iupac_code]:
-                        for name_allele in _name_haplotypes:
-                            __name_haplotypes.append(name_allele.replace(iupac_code, iupac_code_base))
-                    _name_haplotypes = __name_haplotypes
-        name_haplotypes = _name_haplotypes
-    return name_haplotypes
+
+    alleles_haplotypes = name_haplotypes.split("_")
+    alleles_haplotypes_extract_iupac = []
+    for i in range(len(alleles_haplotypes)):
+        if alleles_haplotypes[i] in iupac and len(iupac[alleles_haplotypes[i]]) > 1:
+            if not alleles_haplotypes_extract_iupac:
+                _ = []
+                for iupac_allele in iupac[alleles_haplotypes[i]]:
+                    alleles_haplotypes_copy = copy.deepcopy(alleles_haplotypes)
+                    alleles_haplotypes_copy[i] = iupac_allele
+                    _.append(alleles_haplotypes_copy)
+                alleles_haplotypes_extract_iupac = _
+            else:
+                _ = []
+                for j in range(len(alleles_haplotypes_extract_iupac)):
+                    for iupac_allele in iupac[alleles_haplotypes[i]]:
+                        alleles_haplotypes_extract_iupac_copy = copy.deepcopy(alleles_haplotypes_extract_iupac[j])
+                        alleles_haplotypes_extract_iupac_copy[i] = iupac_allele
+                        _.append(alleles_haplotypes_extract_iupac_copy)
+                alleles_haplotypes_extract_iupac = _
+
+    if not alleles_haplotypes_extract_iupac:
+        return ["_".join(alleles_haplotypes)]
+    else:
+        for i in range(len(alleles_haplotypes_extract_iupac)):
+            alleles_haplotypes_extract_iupac[i] = "_".join(alleles_haplotypes_extract_iupac[i])
+        return alleles_haplotypes_extract_iupac
 
 def create_name_haplotypes(variants):
     name_allele = []
     for variant in variants:
         name_allele.append(variant["allele"])
-    return extract_iupac([f"{'_'.join(name_allele)}"])
+    return extract_iupac(f"{'_'.join(name_allele)}")
 
 def handle_missing_phase(allele_definition, allele_matcher) :
     guide_dip = None
@@ -207,7 +223,7 @@ def handle_false_phase(allele_definition, allele_matcher) :
                         hap2_match_name_allele = []
                         for variant in haplotype["variants"]:
                             hap2_match_name_allele.append(variant["allele"])
-                        hap2_match_name_haplotypes = extract_iupac([f"{'_'.join(hap2_match_name_allele)}"])
+                        hap2_match_name_haplotypes = extract_iupac(f"{'_'.join(hap2_match_name_allele)}")
                         for hap2_match_name_haplotype in hap2_match_name_haplotypes:
                             if re.match(hap1_match_name_haplotype_invert_regex, hap2_match_name_haplotype):
                                 if f"{hap2_match_name}/{hap1_match_name}" not in guide_dip:
@@ -291,7 +307,7 @@ def handle_combine_phase(allele_definition, allele_matcher) :
                         hap2_match_name_allele = []
                         for variant in haplotype["variants"]:
                             hap2_match_name_allele.append(variant["allele"])
-                        hap2_match_name_haplotypes = extract_iupac([f"{'_'.join(hap2_match_name_allele)}"])
+                        hap2_match_name_haplotypes = extract_iupac(f"{'_'.join(hap2_match_name_allele)}")
                         for hap2_match_name_haplotype in hap2_match_name_haplotypes:
                             if re.match(hap1_match_name_haplotype_invert_regex, hap2_match_name_haplotype):
                                 if f"{hap2_match_name}/{hap1_match_name}" not in guide_dip:

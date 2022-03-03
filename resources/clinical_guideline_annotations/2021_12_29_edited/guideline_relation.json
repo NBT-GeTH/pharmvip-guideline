@@ -1,0 +1,642 @@
+{
+    "826283": {
+        "id": 826283,
+        "drug_set": [
+            "tobramycin",
+            "amikacin",
+            "streptomycin",
+            "plazomicin",
+            "gentamicin",
+            "kanamycin",
+            "paromomycin"
+        ],
+        "gene": [
+            [
+                "MT-RNR1"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "MT-RNR1"
+                ],
+                "drug_set": [
+                    "tobramycin",
+                    "amikacin",
+                    "streptomycin",
+                    "plazomicin",
+                    "gentamicin",
+                    "kanamycin",
+                    "paromomycin"
+                ]
+            }
+        ]
+    },
+    "104243": {
+        "id": 104243,
+        "drug_set": [
+            "atomoxetine"
+        ],
+        "gene": [
+            [
+                "CYP2D6"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2D6"
+                ],
+                "drug_set": [
+                    "atomoxetine"
+                ]
+            }
+        ]
+    },
+    "104245": {
+        "id": 104245,
+        "drug_set": [
+            "efavirenz"
+        ],
+        "gene": [
+            [
+                "CYP2B6"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2B6"
+                ],
+                "drug_set": [
+                    "efavirenz"
+                ]
+            }
+        ]
+    },
+    "100409": {
+        "id": 100409,
+        "drug_set": [
+            "ivacaftor"
+        ],
+        "gene": [
+            [
+                "CFTR"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CFTR"
+                ],
+                "drug_set": [
+                    "ivacaftor"
+                ]
+            }
+        ]
+    },
+    "100410": {
+        "id": 100410,
+        "drug_set": [
+            "voriconazole"
+        ],
+        "gene": [
+            [
+                "CYP2C19"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2C19"
+                ],
+                "drug_set": [
+                    "voriconazole"
+                ]
+            }
+        ]
+    },
+    "100411": {
+        "id": 100411,
+        "drug_set": [
+            "clopidogrel"
+        ],
+        "gene": [
+            [
+                "CYP2C19"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2C19"
+                ],
+                "drug_set": [
+                    "clopidogrel"
+                ]
+            }
+        ]
+    },
+    "100412": {
+        "id": 100412,
+        "drug_set": [
+            "fosphenytoin",
+            "phenytoin"
+        ],
+        "gene": [
+            [
+                "CYP2C9",
+                "HLA-B"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2C9",
+                    "HLA-B"
+                ],
+                "drug_set": [
+                    "fosphenytoin",
+                    "phenytoin"
+                ]
+            }
+        ]
+    },
+    "100413": {
+        "id": 100413,
+        "drug_set": [
+            "citalopram",
+            "paroxetine",
+            "escitalopram",
+            "fluvoxamine",
+            "sertraline"
+        ],
+        "gene": [
+            [
+                "CYP2C19"
+            ],
+            [
+                "CYP2D6"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2C19"
+                ],
+                "drug_set": [
+                    "citalopram",
+                    "escitalopram",
+                    "sertraline"
+                ]
+            },
+            {
+                "key": [
+                    "CYP2D6"
+                ],
+                "drug_set": [
+                    "paroxetine",
+                    "paroxetine",
+                    "fluvoxamine"
+                ]
+            },
+            {
+                "key": [
+                    "CYP2D6"
+                ],
+                "drug_set": [
+                    "fluvoxamine"
+                ]
+            }
+        ]
+    },
+    "100414": {
+        "id": 100414,
+        "drug_set": [
+            "doxepin",
+            "imipramine",
+            "amitriptyline",
+            "clomipramine",
+            "nortriptyline",
+            "trimipramine",
+            "desipramine"
+        ],
+        "gene": [
+            [
+                "CYP2C19",
+                "CYP2D6"
+            ],
+            [
+                "CYP2D6"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2C19",
+                    "CYP2D6"
+                ],
+                "drug_set": [
+                    "doxepin",
+                    "imipramine",
+                    "amitriptyline",
+                    "clomipramine",
+                    "trimipramine"
+                ]
+            },
+            {
+                "key": [
+                    "CYP2D6"
+                ],
+                "drug_set": [
+                    "nortriptyline",
+                    "nortriptyline",
+                    "desipramine"
+                ]
+            },
+            {
+                "key": [
+                    "CYP2D6"
+                ],
+                "drug_set": [
+                    "desipramine"
+                ]
+            }
+        ]
+    },
+    "100415": {
+        "id": 100415,
+        "drug_set": [
+            "tamoxifen"
+        ],
+        "gene": [
+            [
+                "CYP2D6"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2D6"
+                ],
+                "drug_set": [
+                    "tamoxifen"
+                ]
+            }
+        ]
+    },
+    "100416": {
+        "id": 100416,
+        "drug_set": [
+            "codeine",
+            "tramadol",
+            "hydrocodone"
+        ],
+        "gene": [
+            [
+                "CYP2D6"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2D6"
+                ],
+                "drug_set": [
+                    "codeine",
+                    "tramadol",
+                    "hydrocodone"
+                ]
+            }
+        ]
+    },
+    "100417": {
+        "id": 100417,
+        "drug_set": [
+            "tropisetron",
+            "ondansetron"
+        ],
+        "gene": [
+            [
+                "CYP2D6"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2D6"
+                ],
+                "drug_set": [
+                    "tropisetron",
+                    "ondansetron"
+                ]
+            }
+        ]
+    },
+    "100418": {
+        "id": 100418,
+        "drug_set": [
+            "tacrolimus"
+        ],
+        "gene": [
+            [
+                "CYP3A5"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP3A5"
+                ],
+                "drug_set": [
+                    "tacrolimus"
+                ]
+            }
+        ]
+    },
+    "100419": {
+        "id": 100419,
+        "drug_set": [
+            "fluorouracil",
+            "capecitabine"
+        ],
+        "gene": [
+            [
+                "DPYD"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "DPYD"
+                ],
+                "drug_set": [
+                    "fluorouracil",
+                    "capecitabine"
+                ]
+            }
+        ]
+    },
+    "100420": {
+        "id": 100420,
+        "drug_set": [
+            "rasburicase"
+        ],
+        "gene": [
+            [
+                "G6PD"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "G6PD"
+                ],
+                "drug_set": [
+                    "rasburicase"
+                ]
+            }
+        ]
+    },
+    "100421": {
+        "id": 100421,
+        "drug_set": [
+            "abacavir"
+        ],
+        "gene": [
+            [
+                "HLA-B"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "HLA-B"
+                ],
+                "drug_set": [
+                    "abacavir"
+                ]
+            }
+        ]
+    },
+    "100422": {
+        "id": 100422,
+        "drug_set": [
+            "allopurinol"
+        ],
+        "gene": [
+            [
+                "HLA-B"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "HLA-B"
+                ],
+                "drug_set": [
+                    "allopurinol"
+                ]
+            }
+        ]
+    },
+    "100423": {
+        "id": 100423,
+        "drug_set": [
+            "carbamazepine",
+            "oxcarbazepine"
+        ],
+        "gene": [
+            [
+                "HLA-A",
+                "HLA-B"
+            ],
+            [
+                "HLA-B"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "HLA-A",
+                    "HLA-B"
+                ],
+                "drug_set": [
+                    "carbamazepine"
+                ]
+            },
+            {
+                "key": [
+                    "HLA-B"
+                ],
+                "drug_set": [
+                    "oxcarbazepine"
+                ]
+            }
+        ]
+    },
+    "100426": {
+        "id": 100426,
+        "drug_set": [
+            "simvastatin"
+        ],
+        "gene": [
+            [
+                "SLCO1B1"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "SLCO1B1"
+                ],
+                "drug_set": [
+                    "simvastatin"
+                ]
+            }
+        ]
+    },
+    "100427": {
+        "id": 100427,
+        "drug_set": [
+            "isoflurane",
+            "sevoflurane",
+            "enflurane",
+            "halothane",
+            "desflurane",
+            "succinylcholine",
+            "methoxyflurane"
+        ],
+        "gene": [
+            [
+                "CACNA1S",
+                "RYR1"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CACNA1S",
+                    "RYR1"
+                ],
+                "drug_set": [
+                    "isoflurane",
+                    "sevoflurane",
+                    "enflurane",
+                    "halothane",
+                    "desflurane",
+                    "succinylcholine",
+                    "methoxyflurane"
+                ]
+            }
+        ]
+    },
+    "100428": {
+        "id": 100428,
+        "drug_set": [
+            "azathioprine",
+            "mercaptopurine",
+            "thioguanine"
+        ],
+        "gene": [
+            [
+                "NUDT15",
+                "TPMT"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "NUDT15",
+                    "TPMT"
+                ],
+                "drug_set": [
+                    "azathioprine",
+                    "mercaptopurine",
+                    "thioguanine"
+                ]
+            }
+        ]
+    },
+    "100429": {
+        "id": 100429,
+        "drug_set": [
+            "atazanavir"
+        ],
+        "gene": [
+            [
+                "UGT1A1"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "UGT1A1"
+                ],
+                "drug_set": [
+                    "atazanavir"
+                ]
+            }
+        ]
+    },
+    "110058": {
+        "id": 110058,
+        "drug_set": [
+            "tenoxicam",
+            "ibuprofen",
+            "celecoxib",
+            "lornoxicam",
+            "flurbiprofen",
+            "meloxicam",
+            "piroxicam"
+        ],
+        "gene": [
+            [
+                "CYP2C9"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2C9"
+                ],
+                "drug_set": [
+                    "tenoxicam",
+                    "ibuprofen",
+                    "celecoxib",
+                    "lornoxicam",
+                    "flurbiprofen",
+                    "meloxicam",
+                    "piroxicam"
+                ]
+            }
+        ]
+    },
+    "110076": {
+        "id": 110076,
+        "drug_set": [
+            "lansoprazole",
+            "omeprazole",
+            "pantoprazole",
+            "dexlansoprazole"
+        ],
+        "gene": [
+            [
+                "CYP2C19"
+            ]
+        ],
+        "gene_and_drug": [
+            {
+                "key": [
+                    "CYP2C19"
+                ],
+                "drug_set": [
+                    "lansoprazole",
+                    "omeprazole",
+                    "pantoprazole",
+                    "dexlansoprazole"
+                ]
+            }
+        ]
+    }
+}

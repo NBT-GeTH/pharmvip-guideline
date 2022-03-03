@@ -13,8 +13,13 @@ def test_create_hap_regex():
     assert actual == expect
 
 def test_extract_iupac():
-    assert extract_iupac("A_del_T_CG_A") == "A_del_T_CG_A"
-    assert extract_iupac("A_del_T_CG_N") == ['A', '_', 'd', 'e', 'l', '_', 'T', '_', 'C', 'G', '_', 'A', 'A', '_', 'd', 'e', 'l', '_', 'T', '_', 'C', 'G', '_', 'C', 'A', '_', 'd', 'e', 'l', '_', 'T', '_', 'C', 'G', '_', 'G', 'A', '_', 'd', 'e', 'l', '_', 'T', '_', 'C', 'G', '_', 'T']
+    assert extract_iupac("A_del_T_CG_A") == ['A_del_T_CG_A']
+    assert extract_iupac("G_C_R") == ['G_C_A', 'G_C_G']
+    assert extract_iupac("G_C_R_Y") == ['G_C_A_C', 'G_C_A_T', 'G_C_G_C', 'G_C_G_T']
+    assert extract_iupac("G_C_R_Y_C_Y") == ['G_C_A_C_C_C', 'G_C_A_C_C_T', 'G_C_A_T_C_C', 'G_C_A_T_C_T', 'G_C_G_C_C_C', 'G_C_G_C_C_T', 'G_C_G_T_C_C', 'G_C_G_T_C_T']
+    assert extract_iupac("G_C_R_Y_C_Y_A_K") == ['G_C_A_C_C_C_A_G', 'G_C_A_C_C_C_A_T', 'G_C_A_C_C_T_A_G', 'G_C_A_C_C_T_A_T', 'G_C_A_T_C_C_A_G', 'G_C_A_T_C_C_A_T', 'G_C_A_T_C_T_A_G', 'G_C_A_T_C_T_A_T', 'G_C_G_C_C_C_A_G', 'G_C_G_C_C_C_A_T', 'G_C_G_C_C_T_A_G', 'G_C_G_C_C_T_A_T', 'G_C_G_T_C_C_A_G', 'G_C_G_T_C_C_A_T', 'G_C_G_T_C_T_A_G', 'G_C_G_T_C_T_A_T']
+    assert extract_iupac("A_N") == ['A_A', 'A_C', 'A_G', 'A_T']
+    assert extract_iupac("N") == ['A', 'C', 'G', 'T']
 
 def test_create_name_haplotypes():
     actual = create_name_haplotypes([

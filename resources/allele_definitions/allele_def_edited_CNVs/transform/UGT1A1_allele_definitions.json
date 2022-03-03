@@ -1,0 +1,485 @@
+{
+  "gene": "UGT1A1",
+  "haplotypes": [
+    {
+      "name": "*1",
+      "position": "Position at NC_000002.12 (Homo sapiens chromosome 2, GRCh38)",
+      "chromosome": "chr2",
+      "variants": [
+        {
+          "hgvs": "g.233759924C>T",
+          "hgvs_type": "SNP",
+          "start": "233759924",
+          "end": "233759924",
+          "rsid": "rs887829",
+          "allele": "C",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.233760233",
+          "hgvs_type": "CNV",
+          "start": "233760233",
+          "end": "233760233",
+          "rsid": "rs3064744",
+          "allele": "CAT",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.233760498G>A",
+          "hgvs_type": "SNP",
+          "start": "233760498",
+          "end": "233760498",
+          "rsid": "rs4148323",
+          "allele": "G",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.233760973C>A",
+          "hgvs_type": "SNP",
+          "start": "233760973",
+          "end": "233760973",
+          "rsid": "rs35350960",
+          "allele": "C",
+          "is_ref": false
+        }
+      ]
+    },
+    {
+      "name": "*6",
+      "position": "Position at NC_000002.12 (Homo sapiens chromosome 2, GRCh38)",
+      "chromosome": "chr2",
+      "variants": [
+        {
+          "hgvs": "g.233759924C>T",
+          "hgvs_type": "SNP",
+          "start": "233759924",
+          "end": "233759924",
+          "rsid": "rs887829",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.233760233",
+          "hgvs_type": "CNV",
+          "start": "233760233",
+          "end": "233760233",
+          "rsid": "rs3064744",
+          "allele": "CAT",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.233760498G>A",
+          "hgvs_type": "SNP",
+          "start": "233760498",
+          "end": "233760498",
+          "rsid": "rs4148323",
+          "allele": "A",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.233760973C>A",
+          "hgvs_type": "SNP",
+          "start": "233760973",
+          "end": "233760973",
+          "rsid": "rs35350960",
+          "allele": "C",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*28",
+      "position": "Position at NC_000002.12 (Homo sapiens chromosome 2, GRCh38)",
+      "chromosome": "chr2",
+      "variants": [
+        {
+          "hgvs": "g.233759924C>T",
+          "hgvs_type": "SNP",
+          "start": "233759924",
+          "end": "233759924",
+          "rsid": "rs887829",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.233760233",
+          "hgvs_type": "CNV",
+          "start": "233760233",
+          "end": "233760233",
+          "rsid": "rs3064744",
+          "allele": "CATAT",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.233760498G>A",
+          "hgvs_type": "SNP",
+          "start": "233760498",
+          "end": "233760498",
+          "rsid": "rs4148323",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.233760973C>A",
+          "hgvs_type": "SNP",
+          "start": "233760973",
+          "end": "233760973",
+          "rsid": "rs35350960",
+          "allele": "C",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*36",
+      "position": "Position at NC_000002.12 (Homo sapiens chromosome 2, GRCh38)",
+      "chromosome": "chr2",
+      "variants": [
+        {
+          "hgvs": "g.233759924C>T",
+          "hgvs_type": "SNP",
+          "start": "233759924",
+          "end": "233759924",
+          "rsid": "rs887829",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.233760233",
+          "hgvs_type": "CNV",
+          "start": "233760233",
+          "end": "233760233",
+          "rsid": "rs3064744",
+          "allele": "C",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.233760498G>A",
+          "hgvs_type": "SNP",
+          "start": "233760498",
+          "end": "233760498",
+          "rsid": "rs4148323",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.233760973C>A",
+          "hgvs_type": "SNP",
+          "start": "233760973",
+          "end": "233760973",
+          "rsid": "rs35350960",
+          "allele": "C",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*37",
+      "position": "Position at NC_000002.12 (Homo sapiens chromosome 2, GRCh38)",
+      "chromosome": "chr2",
+      "variants": [
+        {
+          "hgvs": "g.233759924C>T",
+          "hgvs_type": "SNP",
+          "start": "233759924",
+          "end": "233759924",
+          "rsid": "rs887829",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.233760233",
+          "hgvs_type": "CNV",
+          "start": "233760233",
+          "end": "233760233",
+          "rsid": "rs3064744",
+          "allele": "CATATAT",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.233760498G>A",
+          "hgvs_type": "SNP",
+          "start": "233760498",
+          "end": "233760498",
+          "rsid": "rs4148323",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.233760973C>A",
+          "hgvs_type": "SNP",
+          "start": "233760973",
+          "end": "233760973",
+          "rsid": "rs35350960",
+          "allele": "C",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*80",
+      "position": "Position at NC_000002.12 (Homo sapiens chromosome 2, GRCh38)",
+      "chromosome": "chr2",
+      "variants": [
+        {
+          "hgvs": "g.233759924C>T",
+          "hgvs_type": "SNP",
+          "start": "233759924",
+          "end": "233759924",
+          "rsid": "rs887829",
+          "allele": "T",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.233760233",
+          "hgvs_type": "CNV",
+          "start": "233760233",
+          "end": "233760233",
+          "rsid": "rs3064744",
+          "allele": "CAT",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.233760498G>A",
+          "hgvs_type": "SNP",
+          "start": "233760498",
+          "end": "233760498",
+          "rsid": "rs4148323",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.233760973C>A",
+          "hgvs_type": "SNP",
+          "start": "233760973",
+          "end": "233760973",
+          "rsid": "rs35350960",
+          "allele": "C",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*80+*28",
+      "position": "Position at NC_000002.12 (Homo sapiens chromosome 2, GRCh38)",
+      "chromosome": "chr2",
+      "variants": [
+        {
+          "hgvs": "g.233759924C>T",
+          "hgvs_type": "SNP",
+          "start": "233759924",
+          "end": "233759924",
+          "rsid": "rs887829",
+          "allele": "T",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.233760233",
+          "hgvs_type": "CNV",
+          "start": "233760233",
+          "end": "233760233",
+          "rsid": "rs3064744",
+          "allele": "CATAT",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.233760498G>A",
+          "hgvs_type": "SNP",
+          "start": "233760498",
+          "end": "233760498",
+          "rsid": "rs4148323",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.233760973C>A",
+          "hgvs_type": "SNP",
+          "start": "233760973",
+          "end": "233760973",
+          "rsid": "rs35350960",
+          "allele": "C",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*80+*37",
+      "position": "Position at NC_000002.12 (Homo sapiens chromosome 2, GRCh38)",
+      "chromosome": "chr2",
+      "variants": [
+        {
+          "hgvs": "g.233759924C>T",
+          "hgvs_type": "SNP",
+          "start": "233759924",
+          "end": "233759924",
+          "rsid": "rs887829",
+          "allele": "T",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.233760233",
+          "hgvs_type": "CNV",
+          "start": "233760233",
+          "end": "233760233",
+          "rsid": "rs3064744",
+          "allele": "CATATAT",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.233760498G>A",
+          "hgvs_type": "SNP",
+          "start": "233760498",
+          "end": "233760498",
+          "rsid": "rs4148323",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.233760973C>A",
+          "hgvs_type": "SNP",
+          "start": "233760973",
+          "end": "233760973",
+          "rsid": "rs35350960",
+          "allele": "C",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*27",
+      "position": "Position at NC_000002.12 (Homo sapiens chromosome 2, GRCh38)",
+      "chromosome": "chr2",
+      "variants": [
+        {
+          "hgvs": "g.233759924C>T",
+          "hgvs_type": "SNP",
+          "start": "233759924",
+          "end": "233759924",
+          "rsid": "rs887829",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.233760233",
+          "hgvs_type": "CNV",
+          "start": "233760233",
+          "end": "233760233",
+          "rsid": "rs3064744",
+          "allele": "CAT",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.233760498G>A",
+          "hgvs_type": "SNP",
+          "start": "233760498",
+          "end": "233760498",
+          "rsid": "rs4148323",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.233760973C>A",
+          "hgvs_type": "SNP",
+          "start": "233760973",
+          "end": "233760973",
+          "rsid": "rs35350960",
+          "allele": "A",
+          "is_ref": false
+        }
+      ]
+    }
+  ],
+  "hgvs_relation_to_name": [
+    {
+      "hgvs": "g.233759924C>T",
+      "name": [
+        "*80",
+        "*80+*28",
+        "*80+*37"
+      ]
+    },
+    {
+      "hgvs": "g.233760233",
+      "name": [
+        "*28",
+        "*36",
+        "*37",
+        "*80+*28",
+        "*80+*37"
+      ]
+    },
+    {
+      "hgvs": "g.233760498G>A",
+      "name": [
+        "*6"
+      ]
+    },
+    {
+      "hgvs": "g.233760973C>A",
+      "name": [
+        "*27"
+      ]
+    }
+  ],
+  "name_relation_to_hgvs": [
+    {
+      "name": "*1",
+      "hgvs": [
+        "g.233759924C>T",
+        "g.233760233",
+        "g.233760498G>A",
+        "g.233760973C>A"
+      ]
+    },
+    {
+      "name": "*6",
+      "hgvs": [
+        "g.233760498G>A"
+      ]
+    },
+    {
+      "name": "*28",
+      "hgvs": [
+        "g.233760233"
+      ]
+    },
+    {
+      "name": "*36",
+      "hgvs": [
+        "g.233760233"
+      ]
+    },
+    {
+      "name": "*37",
+      "hgvs": [
+        "g.233760233"
+      ]
+    },
+    {
+      "name": "*80",
+      "hgvs": [
+        "g.233759924C>T"
+      ]
+    },
+    {
+      "name": "*80+*28",
+      "hgvs": [
+        "g.233759924C>T",
+        "g.233760233"
+      ]
+    },
+    {
+      "name": "*80+*37",
+      "hgvs": [
+        "g.233759924C>T",
+        "g.233760233"
+      ]
+    },
+    {
+      "name": "*27",
+      "hgvs": [
+        "g.233760973C>A"
+      ]
+    }
+  ]
+}

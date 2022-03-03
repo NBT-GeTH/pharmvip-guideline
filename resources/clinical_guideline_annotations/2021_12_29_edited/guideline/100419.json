@@ -1,0 +1,302 @@
+[
+    {
+        "activityscore": {
+            "DPYD": "2.0"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "fluorouracil"
+        },
+        "drugid": "RxNorm:4492",
+        "drugrecommendation": "Based on genotype, there is no indication to change dose or therapy. Use label-recommended dosage and administration.",
+        "drugrecommendation_short": "Based on genotype, there is no indication to change dose or therapy. Use label-recommended dosage and administration.",
+        "guideline": {
+            "name": "DPYD and Fluoropyrimidines"
+        },
+        "guidelineid": "100419",
+        "id": "1351847",
+        "implications": {
+            "DPYD": "Normal DPD activity and \"normal\" risk for fluoropyrimidine toxicity"
+        },
+        "lookupkey": {
+            "DPYD": "2"
+        },
+        "phenotypes": {
+            "DPYD": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "DPYD": "1.5"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "Increase the dose in patients experiencing no or clinically tolerable toxicity in the first two cycles to maintain efficacy; decrease the dose in patients who do not tolerate the starting dose to minimize toxicities.",
+        "drug": {
+            "name": "fluorouracil"
+        },
+        "drugid": "RxNorm:4492",
+        "drugrecommendation": "Reduce starting dose by 50% followed by titration of dose based on toxicity or therapeutic drug monitoring (if available).",
+        "drugrecommendation_short": "Reduce starting dose by 50% followed by titration of dose based on toxicity or therapeutic drug monitoring (if available).",
+        "guideline": {
+            "name": "DPYD and Fluoropyrimidines"
+        },
+        "guidelineid": "100419",
+        "id": "1351848",
+        "implications": {
+            "DPYD": "Decreased DPD activity (leukocyte DPD activity at 30% to 70% that of the normal population) and increased risk for severe or even fatal drug toxicity when treated with fluoropyrimidine drugs"
+        },
+        "lookupkey": {
+            "DPYD": "1.5"
+        },
+        "phenotypes": {
+            "DPYD": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "DPYD": "1.0"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "Increase the dose in patients experiencing no or clinically tolerable toxicity in the first two cycles to maintain efficacy; decrease the dose in patients who do not tolerate the starting dose to minimize toxicities.",
+        "drug": {
+            "name": "fluorouracil"
+        },
+        "drugid": "RxNorm:4492",
+        "drugrecommendation": "Reduce starting dose by 50% followed by titration of dose based on toxicity or therapeutic drug monitoring (if available).",
+        "drugrecommendation_short": "Reduce starting dose by 50% followed by titration of dose based on toxicity or therapeutic drug monitoring (if available).",
+        "guideline": {
+            "name": "DPYD and Fluoropyrimidines"
+        },
+        "guidelineid": "100419",
+        "id": "1351849",
+        "implications": {
+            "DPYD": "Decreased DPD activity (leukocyte DPD activity at 30% to 70% that of the normal population) and increased risk for severe or even fatal drug toxicity when treated with fluoropyrimidine drugs"
+        },
+        "lookupkey": {
+            "DPYD": "1"
+        },
+        "phenotypes": {
+            "DPYD": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "DPYD": "0.5"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "If available, a phenotyping test (see main text for further details) should be considered to estimate the starting dose. In absence of phenotyping data, a dose of <25% of the normal starting dose is estimated assuming additive effects of alleles on 5-FU clearance. Therapeutic drug monitoring should be done at the earliest time point possible (e.g., minimum time point in steady state) in order to immediately discontinue therapy if the drug level is too high.",
+        "drug": {
+            "name": "fluorouracil"
+        },
+        "drugid": "RxNorm:4492",
+        "drugrecommendation": "Avoid use of 5-fluorouracil or 5-fluorouracil prodrug-based regimens. In the event, based on clinical advice, alternative agents are not considered a suitable therapeutic option, 5-fluorouracil should be administered at a strongly reduced dose with early therapeutic drug monitoring.",
+        "drugrecommendation_short": "Avoid use of 5-fluorouracil or 5-fluorouracil prodrug-based regimens. In the event, based on clinical advice, alternative agents are not considered a suitable therapeutic option, 5-fluorouracil should be administered at a strongly reduced dose with early therapeutic drug monitoring.",
+        "guideline": {
+            "name": "DPYD and Fluoropyrimidines"
+        },
+        "guidelineid": "100419",
+        "id": "1351850",
+        "implications": {
+            "DPYD": "Complete DPD deficiency and increased risk for severe or even fatal drug toxicity when treated with fluoropyrimidine drugs."
+        },
+        "lookupkey": {
+            "DPYD": "0.5"
+        },
+        "phenotypes": {
+            "DPYD": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "DPYD": "0.0"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "fluorouracil"
+        },
+        "drugid": "RxNorm:4492",
+        "drugrecommendation": "Avoid use of 5-fluorouracil or 5-fluorouracil prodrug-based regimens.",
+        "drugrecommendation_short": "Avoid use of 5-fluorouracil or 5-fluorouracil prodrug-based regimens.",
+        "guideline": {
+            "name": "DPYD and Fluoropyrimidines"
+        },
+        "guidelineid": "100419",
+        "id": "1351851",
+        "implications": {
+            "DPYD": "Complete DPD deficiency and increased risk for severe or even fatal drug toxicity when treated with fluoropyrimidine drugs."
+        },
+        "lookupkey": {
+            "DPYD": "0"
+        },
+        "phenotypes": {
+            "DPYD": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "DPYD": "2.0"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "capecitabine"
+        },
+        "drugid": "RxNorm:194000",
+        "drugrecommendation": "Based on genotype, there is no indication to change dose or therapy. Use label-recommended dosage and administration.",
+        "drugrecommendation_short": "Based on genotype, there is no indication to change dose or therapy. Use label-recommended dosage and administration.",
+        "guideline": {
+            "name": "DPYD and Fluoropyrimidines"
+        },
+        "guidelineid": "100419",
+        "id": "1351852",
+        "implications": {
+            "DPYD": "Normal DPD activity and \"normal\" risk for fluoropyrimidine toxicity"
+        },
+        "lookupkey": {
+            "DPYD": "2"
+        },
+        "phenotypes": {
+            "DPYD": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "DPYD": "1.5"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "Increase the dose in patients experiencing no or clinically tolerable toxicity in the first two cycles to maintain efficacy; decrease the dose in patients who do not tolerate the starting dose to minimize toxicities.",
+        "drug": {
+            "name": "capecitabine"
+        },
+        "drugid": "RxNorm:194000",
+        "drugrecommendation": "Reduce starting dose by 50% followed by titration of dose based on toxicity or therapeutic drug monitoring (if available).",
+        "drugrecommendation_short": "Reduce starting dose by 50% followed by titration of dose based on toxicity or therapeutic drug monitoring (if available).",
+        "guideline": {
+            "name": "DPYD and Fluoropyrimidines"
+        },
+        "guidelineid": "100419",
+        "id": "1351853",
+        "implications": {
+            "DPYD": "Decreased DPD activity (leukocyte DPD activity at 30% to 70% that of the normal population) and increased risk for severe or even fatal drug toxicity when treated with fluoropyrimidine drugs"
+        },
+        "lookupkey": {
+            "DPYD": "1.5"
+        },
+        "phenotypes": {
+            "DPYD": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "DPYD": "1.0"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "Increase the dose in patients experiencing no or clinically tolerable toxicity in the first two cycles to maintain efficacy; decrease the dose in patients who do not tolerate the starting dose to minimize toxicities.",
+        "drug": {
+            "name": "capecitabine"
+        },
+        "drugid": "RxNorm:194000",
+        "drugrecommendation": "Reduce starting dose by 50% followed by titration of dose based on toxicity or therapeutic drug monitoring (if available).",
+        "drugrecommendation_short": "Reduce starting dose by 50% followed by titration of dose based on toxicity or therapeutic drug monitoring (if available).",
+        "guideline": {
+            "name": "DPYD and Fluoropyrimidines"
+        },
+        "guidelineid": "100419",
+        "id": "1351854",
+        "implications": {
+            "DPYD": "Decreased DPD activity (leukocyte DPD activity at 30% to 70% that of the normal population) and increased risk for severe or even fatal drug toxicity when treated with fluoropyrimidine drugs"
+        },
+        "lookupkey": {
+            "DPYD": "1"
+        },
+        "phenotypes": {
+            "DPYD": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "DPYD": "0.5"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "If available, a phenotyping test (see main text for further details) should be considered to estimate the starting dose. In absence of phenotyping data, a dose of <25% of the normal starting dose is estimated assuming additive effects of alleles on 5-FU clearance. Therapeutic drug monitoring should be done at the earliest time point possible (e.g., minimum time point in steady state) in order to immediately discontinue therapy if the drug level is too high.",
+        "drug": {
+            "name": "capecitabine"
+        },
+        "drugid": "RxNorm:194000",
+        "drugrecommendation": "Avoid use of 5-fluorouracil or 5-fluorouracil prodrug-based regimens. In the event, based on clinical advice, alternative agents are not considered a suitable therapeutic option, 5-fluorouracil should be administered at a strongly reduced dose with early therapeutic drug monitoring.",
+        "drugrecommendation_short": "Avoid use of 5-fluorouracil or 5-fluorouracil prodrug-based regimens. In the event, based on clinical advice, alternative agents are not considered a suitable therapeutic option, 5-fluorouracil should be administered at a strongly reduced dose with early therapeutic drug monitoring.",
+        "guideline": {
+            "name": "DPYD and Fluoropyrimidines"
+        },
+        "guidelineid": "100419",
+        "id": "1351855",
+        "implications": {
+            "DPYD": "Complete DPD deficiency and increased risk for severe or even fatal drug toxicity when treated with fluoropyrimidine drugs."
+        },
+        "lookupkey": {
+            "DPYD": "0.5"
+        },
+        "phenotypes": {
+            "DPYD": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "DPYD": "0.0"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "capecitabine"
+        },
+        "drugid": "RxNorm:194000",
+        "drugrecommendation": "Avoid use of 5-fluorouracil or 5-fluorouracil prodrug-based regimens.",
+        "drugrecommendation_short": "Avoid use of 5-fluorouracil or 5-fluorouracil prodrug-based regimens.",
+        "guideline": {
+            "name": "DPYD and Fluoropyrimidines"
+        },
+        "guidelineid": "100419",
+        "id": "1351856",
+        "implications": {
+            "DPYD": "Complete DPD deficiency and increased risk for severe or even fatal drug toxicity when treated with fluoropyrimidine drugs."
+        },
+        "lookupkey": {
+            "DPYD": "0"
+        },
+        "phenotypes": {
+            "DPYD": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    }
+]

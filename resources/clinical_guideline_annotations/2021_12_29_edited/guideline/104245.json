@@ -1,0 +1,182 @@
+[
+    {
+        "activityscore": {
+            "CYP2B6": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "efavirenz"
+        },
+        "drugid": "RxNorm:195085",
+        "drugrecommendation": "No recommendation",
+        "drugrecommendation_short": "No recommendation",
+        "guideline": {
+            "name": "CYP2B6 and efavirenz"
+        },
+        "guidelineid": "104245",
+        "id": "1351846",
+        "implications": {
+            "CYP2B6": "n/a"
+        },
+        "lookupkey": {
+            "CYP2B6": "Indeterminate"
+        },
+        "phenotypes": {
+            "CYP2B6": "Indeterminate"
+        },
+        "population": "child >40kg_adult",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2B6": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "If therapeutic drug monitoring is available and a decreased efavirenz dose is prescribed, consider obtaining steady-state plasma efavirenz concentrations to ensure concentrations are in the suggested therapeutic range (~1 to 4 \u03bcg/mL). To prescribe efavirenz at a decreased dose of 400 mg/day or 200 mg/day in a multidrug regimen may require prescribing more than one pill once daily. If so, the provider should weigh the potential benefit of reduced dose against the potential detrimental impact of increased pill number.",
+        "drug": {
+            "name": "efavirenz"
+        },
+        "drugid": "RxNorm:195085",
+        "drugrecommendation": "Consider initiating efavirenz with decreased dose of 400 or 200 mg/day",
+        "drugrecommendation_short": "Consider initiating efavirenz with decreased dose of 400 or 200 mg/day",
+        "guideline": {
+            "name": "CYP2B6 and efavirenz"
+        },
+        "guidelineid": "104245",
+        "id": "1351845",
+        "implications": {
+            "CYP2B6": "Higher dose-adjusted trough concentrations of efavirenz compared with normal metabolizers; significantly increased risk of CNS adverse events and treatment discontinuation"
+        },
+        "lookupkey": {
+            "CYP2B6": "Poor Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2B6": "Poor Metabolizer"
+        },
+        "population": "child >40kg_adult",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2B6": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "If therapeutic drug monitoring is available and a decreased efavirenz dose is prescribed, consider obtaining steady-state plasma efavirenz concentrations to ensure concentrations are in the suggested therapeutic range (~1 to 4 \u03bcg/mL). To prescribe efavirenz at a decreased dose of 400 mg/day or 200 mg/day in a multidrug regimen may require prescribing more than one pill once daily. If so, the provider should weigh the potential benefit of reduced dose against the potential detrimental impact of increased pill number.",
+        "drug": {
+            "name": "efavirenz"
+        },
+        "drugid": "RxNorm:195085",
+        "drugrecommendation": "Consider initiating efavirenz with decreased dose of 400 mg/day",
+        "drugrecommendation_short": "Consider initiating efavirenz with decreased dose of 400 mg/day",
+        "guideline": {
+            "name": "CYP2B6 and efavirenz"
+        },
+        "guidelineid": "104245",
+        "id": "1351844",
+        "implications": {
+            "CYP2B6": "Higher dose-adjusted trough concentrations of efavirenz compared with normal metabolizers; increased risk of CNS adverse events"
+        },
+        "lookupkey": {
+            "CYP2B6": "Intermediate Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2B6": "Intermediate Metabolizer"
+        },
+        "population": "child >40kg_adult",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2B6": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "The ENCORE study showed that in treatment-na\u00efve patients randomized to initiate efavirenz-based regimens (combined with tenofovir and emtricitabine), 400 mg/day was non-inferior to 600 mg/day regardless of CYP2B6 genotype (PMID 24522178).",
+        "drug": {
+            "name": "efavirenz"
+        },
+        "drugid": "RxNorm:195085",
+        "drugrecommendation": "Initiate efavirenz with standard dosing (600 mg/day)",
+        "drugrecommendation_short": "Initiate efavirenz with standard dosing (600 mg/day)",
+        "guideline": {
+            "name": "CYP2B6 and efavirenz"
+        },
+        "guidelineid": "104245",
+        "id": "1351843",
+        "implications": {
+            "CYP2B6": "Normal efavirenz metabolism"
+        },
+        "lookupkey": {
+            "CYP2B6": "Normal Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2B6": "Normal Metabolizer"
+        },
+        "population": "child >40kg_adult",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2B6": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "efavirenz"
+        },
+        "drugid": "RxNorm:195085",
+        "drugrecommendation": "Initiate efavirenz with standard dosing (600 mg/day)",
+        "drugrecommendation_short": "Initiate efavirenz with standard dosing (600 mg/day)",
+        "guideline": {
+            "name": "CYP2B6 and efavirenz"
+        },
+        "guidelineid": "104245",
+        "id": "1351842",
+        "implications": {
+            "CYP2B6": "Slightly lower dose-adjusted trough concentrations of efavirenz compared with normal metabolizers"
+        },
+        "lookupkey": {
+            "CYP2B6": "Rapid Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2B6": "Rapid Metabolizer"
+        },
+        "population": "child >40kg_adult",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2B6": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "efavirenz"
+        },
+        "drugid": "RxNorm:195085",
+        "drugrecommendation": "Initiate efavirenz with standard dosing (600 mg/day)",
+        "drugrecommendation_short": "Initiate efavirenz with standard dosing (600 mg/day)",
+        "guideline": {
+            "name": "CYP2B6 and efavirenz"
+        },
+        "guidelineid": "104245",
+        "id": "1351841",
+        "implications": {
+            "CYP2B6": "Slightly lower dose-adjusted trough concentrations of efavirenz compared with normal metabolizers"
+        },
+        "lookupkey": {
+            "CYP2B6": "Ultrarapid Metabolizer"
+        },
+        "phenotypes": {
+            "CYP2B6": "Ultrarapid Metabolizer"
+        },
+        "population": "child >40kg_adult",
+        "version": "1"
+    }
+]

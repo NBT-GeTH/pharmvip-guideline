@@ -1,0 +1,122 @@
+[
+    {
+        "activityscore": {
+            "G6PD": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "rasburicase"
+        },
+        "drugid": "RxNorm:283821",
+        "drugrecommendation": "No recommendation",
+        "drugrecommendation_short": "No recommendation",
+        "guideline": {
+            "name": "G6PD and Rasburicase"
+        },
+        "guidelineid": "100420",
+        "id": "1352355",
+        "implications": {
+            "G6PD": "n/a"
+        },
+        "lookupkey": {
+            "G6PD": "Indeterminate"
+        },
+        "phenotypes": {
+            "G6PD": "Indeterminate"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "G6PD": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "Allopurinol is associated with severe cutaneous reactions in the rare carriers of the HLA-B*58:01 allele.",
+        "drug": {
+            "name": "rasburicase"
+        },
+        "drugid": "RxNorm:283821",
+        "drugrecommendation": "Rasburicase is contraindicated; alternatives include allopurinol.",
+        "drugrecommendation_short": "Rasburicase is contraindicated; alternatives include allopurinol.",
+        "guideline": {
+            "name": "G6PD and Rasburicase"
+        },
+        "guidelineid": "100420",
+        "id": "1352354",
+        "implications": {
+            "G6PD": "At risk of acute hemolytic anemia"
+        },
+        "lookupkey": {
+            "G6PD": "Deficient"
+        },
+        "phenotypes": {
+            "G6PD": "Deficient"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "G6PD": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": "Allopurinol is associated with severe cutaneous reactions in the rare carriers of the HLA-B*58:01 allele.",
+        "drug": {
+            "name": "rasburicase"
+        },
+        "drugid": "RxNorm:283821",
+        "drugrecommendation": "To ascertain that G6PD status is normal, enzyme activity must be measured; alternatives include allopurinol.",
+        "drugrecommendation_short": "To ascertain that G6PD status is normal, enzyme activity must be measured; alternatives include allopurinol.",
+        "guideline": {
+            "name": "G6PD and Rasburicase"
+        },
+        "guidelineid": "100420",
+        "id": "1352353",
+        "implications": {
+            "G6PD": "Unknown risk of hemolytic anemia"
+        },
+        "lookupkey": {
+            "G6PD": "Variable"
+        },
+        "phenotypes": {
+            "G6PD": "Variable"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "G6PD": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": "A negative or inconclusive genetic test cannot be assumed to indicate normal G6PD phenotype; an enzyme actiity test is needed to assign G6PD phenotype in such cases.",
+        "drug": {
+            "name": "rasburicase"
+        },
+        "drugid": "RxNorm:283821",
+        "drugrecommendation": "No reason to withhold rasburicase based on G6PD status.",
+        "drugrecommendation_short": "No reason to withhold rasburicase based on G6PD status.",
+        "guideline": {
+            "name": "G6PD and Rasburicase"
+        },
+        "guidelineid": "100420",
+        "id": "1352352",
+        "implications": {
+            "G6PD": "Low or reduced risk of hemolytic anemia"
+        },
+        "lookupkey": {
+            "G6PD": "Normal"
+        },
+        "phenotypes": {
+            "G6PD": "Normal"
+        },
+        "population": "general",
+        "version": "1"
+    }
+]
