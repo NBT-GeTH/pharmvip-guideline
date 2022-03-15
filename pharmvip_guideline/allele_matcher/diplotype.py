@@ -88,3 +88,74 @@ def read_diplotype(tsv):
     diplotype = duplicate_tool(diplotype)
 
     return diplotype
+
+def read_hla(tsv):
+    diplotype = pd.DataFrame(columns=["sample_id", "gene", "missing_call_variants", "total_variants", "dp", "gt_bases", "gt_phases", "gene_phases", "count_diplotype", "guide_dip", "print_dip", "tool"])
+    df = pd.read_csv(tsv, sep="\t")
+    temp_data = []
+    for inx,val in df.iterrows():
+        guide_dip = ast.literal_eval(val['guide_diplotype'])
+        print_dip = ast.literal_eval(val['print_diplotype'])
+        tool = ast.literal_eval(val['tool'])
+        lenner = len(tool)
+        
+        if lenner > 1 :
+            for i in range(lenner):
+                targ_guide_dip = guide_dip[i].split(',')
+                targ_print_dip = print_dip[i].split(',')
+                targ_tool = tool[i].split(',')
+                num_allele = len(targ_guide_dip)
+                for inx in range(num_allele):
+                    actual_guide = [targ_guide_dip[inx]]
+                    searching = [i['guide_dip'] == actual_guide for i in temp_data] if bool(temp_data) else [False]
+                    if True in searching:
+                        search_inxx = searching.index(True)
+                        current = temp_data[search_inxx]['tool']
+                        temp_data[search_inxx]['tool'] = current + targ_tool
+                        
+                    else:
+                        actual_print =[ targ_print_dip[inx]]
+                        # num = len(set(actual_guide))
+                        temp = {
+                                "sample_id": val["sampleid"],
+                                "gene": val["gene"],
+                                "missing_call_variants": 0,
+                                "total_variants": 0,
+                                "dp": [],
+                                "gt_bases": [],
+                                "gt_phases": [],
+                                "gene_phases": ".",
+                                "count_diplotype": 1,
+                                "guide_dip": actual_guide,
+                                "print_dip": actual_print,
+                                "tool": targ_tool
+                            }
+                        temp_data.append(temp)
+                        # diplotype = diplotype.append(
+                        #     ,
+                        #     ignore_index=True
+                        # )
+
+        else :
+            guide_dip = guide_dip[0].split(',')
+            print_dip = print_dip[0].split(',')
+            temp = {
+                    "sample_id": val["sampleid"],
+                    "gene": val["gene"],
+                    "missing_call_variants": 0,
+                    "total_variants": 0,
+                    "dp": [],
+                    "gt_bases": [],
+                    "gt_phases": [],
+                    "gene_phases": ".",
+                    "count_diplotype": len(guide_dip),
+                    "guide_dip": guide_dip,
+                    "print_dip": print_dip,
+                    "tool": tool
+                    }
+            temp_data.append(temp)
+
+    for data in temp_data:
+        diplotype = diplotype.append(data,ignore_index=True)
+
+    return diplotype

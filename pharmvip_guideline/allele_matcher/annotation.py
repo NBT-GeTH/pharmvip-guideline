@@ -62,8 +62,8 @@ def function_mappings_diplotype_by_guideline_id(clinical_guideline_annotations, 
         if len(diplotype_by_gene) == 0:
             continue
         
-        for gene, diplotypes in diplotype_by_gene.items():
-            for diplotype in diplotypes:
+        for gene, dipts in diplotype_by_gene.items():
+            for inx, diplotype in enumerate(dipts):
                 former_allele1 = diplotype.get("allele1")
                 former_allele2 = diplotype.get("allele2")
                 altered_allele1 = np.nan
@@ -72,6 +72,7 @@ def function_mappings_diplotype_by_guideline_id(clinical_guideline_annotations, 
                     if gene == "HLA-A" or gene == "HLA-B":
                         diplotype["allele1"] = former_allele1
                         diplotype["function1"] = haplotype_function_mapping[guideline_id][gene].get(former_allele1, "")
+                        diplotype["HLAs_index"] = inx
                     elif former_allele1 == "?" or former_allele1 == "No info":
                         diplotype["allele1"] = former_allele1
                         diplotype["function1"] = ""
@@ -96,6 +97,10 @@ def function_mappings_diplotype_by_guideline_id(clinical_guideline_annotations, 
                             altered_allele2 = "N/A"
                         diplotype["allele2"] = altered_allele2
                         diplotype["function2"] = haplotype_function_mapping[guideline_id][gene].get(altered_allele2, "")
+
+            if gene == "HLA-A" or gene == "HLA-B":
+                null_filter = [x for x in dipts if not (x['function2'] == '' and x['function1'] == '')]
+                diplotype_by_gene[gene] = null_filter
 
     return diplotype_by_guideline_id
 
@@ -211,6 +216,12 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
 
                     guideline_id_record = clinical_guideline_annotations[guideline_id]["annotation_by_diplotype"].query("(Function1 == @function1) & (Function2 == @function2)")
                     
+                    mis_n_tal = 0
+                    if "HLA" in gene: 
+                        hla_index = __diplotype_by_gene['HLAs_index']
+                        i = hla_index
+                        mis_n_tal1 = hla_index
+
                     annotation_id = None
                     if not guideline_id_record.empty:
                         annotation_id =  guideline_id_record["GuidelineAnnotationId"].values[0]
@@ -218,6 +229,8 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                     guideline_annotations = clinical_guideline_annotations[guideline_id]["guideline_annotations"]
                     dosing_recommend_record = guideline_annotations.loc[guideline_annotations["GuidelineAnnotationId"] == annotation_id]
                     
+
+
                     if not dosing_recommend_record.empty:
                         annotations = dosing_recommend_record.to_dict("records")[0]
                         parse_annotations(annotations, [gene], annotations_short)
@@ -268,8 +281,8 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                         summary_and_full_report["cpi_sum_met_status_1"].append("")
                         summary_and_full_report["cpi_sum_met_status_2"].append("")
                         summary_and_full_report["cpi_sum_met_status_3"].append("")
-                        summary_and_full_report["cpi_sum_gen_1_missing"].append(diplotype["missing_call_variants"][diplotype["gene"] == gene].tolist()[0])
-                        summary_and_full_report["cpi_sum_gen_1_total"].append(diplotype["total_variants"][diplotype["gene"] == gene].tolist()[0])
+                        summary_and_full_report["cpi_sum_gen_1_missing"].append(diplotype["missing_call_variants"][diplotype["gene"] == gene].tolist()[hla_index])
+                        summary_and_full_report["cpi_sum_gen_1_total"].append(diplotype["total_variants"][diplotype["gene"] == gene].tolist()[hla_index])
                         summary_and_full_report["cpi_sum_gen_2_missing"].append("")
                         summary_and_full_report["cpi_sum_gen_2_total"].append("")      
                         summary_and_full_report["cpi_sum_gen_3_missing"].append("")
@@ -281,6 +294,7 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                             summary_and_full_report["cpi_sum_hla_tool_1_guide"].append("")
                             summary_and_full_report["cpi_sum_hla_tool_2_guide"].append("")
                     i += 1
+
         elif len(diplotype_by_gene.keys()) == 2:
             genes = list(diplotype_by_gene.keys())
             gene1 = genes[0]
@@ -304,6 +318,16 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
 
                     guideline_id_record = clinical_guideline_annotations[guideline_id]["annotation_by_diplotype"].query("(Function1 == @function1) & (Function2 == @function2) & (Function3 == @function3) & (Function4 == @function4)")
                     
+                    mis_n_tal1 = mis_n_tal2 = 0
+                    if "HLA" in gene1: 
+                        hla_index = diplotype_list1[i]['HLAs_index']
+                        i = hla_index
+                        mis_n_tal1 = hla_index
+                    if "HLA" in gene2:
+                        hla_index = diplotype_list2[j]['HLAs_index']
+                        j = hla_index
+                        mis_n_tal2 = hla_index
+
                     annotation_id = None
                     if not guideline_id_record.empty:
                         annotation_id =  guideline_id_record["GuidelineAnnotationId"].values[0]
@@ -336,10 +360,10 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                             summary_and_full_report["cpi_sum_met_status_1"].append(annotations.get("MetabolizerStatus")[0].split("<em>")[0])
                             summary_and_full_report["cpi_sum_met_status_2"].append(annotations.get("MetabolizerStatus")[1].split("<em>")[0])
                             summary_and_full_report["cpi_sum_met_status_3"].append("")
-                        summary_and_full_report["cpi_sum_gen_1_missing"].append(diplotype["missing_call_variants"][diplotype["gene"] == gene1].tolist()[0])
-                        summary_and_full_report["cpi_sum_gen_1_total"].append(diplotype["total_variants"][diplotype["gene"] == gene1].tolist()[0])
-                        summary_and_full_report["cpi_sum_gen_2_missing"].append(diplotype["missing_call_variants"][diplotype["gene"] == gene2].tolist()[0])
-                        summary_and_full_report["cpi_sum_gen_2_total"].append(diplotype["total_variants"][diplotype["gene"] == gene2].tolist()[0])
+                        summary_and_full_report["cpi_sum_gen_1_missing"].append(diplotype["missing_call_variants"][diplotype["gene"] == gene1].tolist()[mis_n_tal1])
+                        summary_and_full_report["cpi_sum_gen_1_total"].append(diplotype["total_variants"][diplotype["gene"] == gene1].tolist()[mis_n_tal1])
+                        summary_and_full_report["cpi_sum_gen_2_missing"].append(diplotype["missing_call_variants"][diplotype["gene"] == gene2].tolist()[mis_n_tal2])
+                        summary_and_full_report["cpi_sum_gen_2_total"].append(diplotype["total_variants"][diplotype["gene"] == gene2].tolist()[mis_n_tal2])
                         summary_and_full_report["cpi_sum_gen_3_missing"].append("")
                         summary_and_full_report["cpi_sum_gen_3_total"].append("")
                         if gene1 == "HLA-A" or gene1 == "HLA-B":
@@ -368,10 +392,10 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                         summary_and_full_report["cpi_sum_met_status_1"].append("")
                         summary_and_full_report["cpi_sum_met_status_2"].append("")
                         summary_and_full_report["cpi_sum_met_status_3"].append("")
-                        summary_and_full_report["cpi_sum_gen_1_missing"].append(diplotype["missing_call_variants"][diplotype["gene"] == gene1].tolist()[0])
-                        summary_and_full_report["cpi_sum_gen_1_total"].append(diplotype["total_variants"][diplotype["gene"] == gene1].tolist()[0])
-                        summary_and_full_report["cpi_sum_gen_2_missing"].append(diplotype["missing_call_variants"][diplotype["gene"] == gene2].tolist()[0])
-                        summary_and_full_report["cpi_sum_gen_2_total"].append(diplotype["total_variants"][diplotype["gene"] == gene2].tolist()[0])
+                        summary_and_full_report["cpi_sum_gen_1_missing"].append(diplotype["missing_call_variants"][diplotype["gene"] == gene1].tolist()[mis_n_tal1])
+                        summary_and_full_report["cpi_sum_gen_1_total"].append(diplotype["total_variants"][diplotype["gene"] == gene1].tolist()[mis_n_tal1])
+                        summary_and_full_report["cpi_sum_gen_2_missing"].append(diplotype["missing_call_variants"][diplotype["gene"] == gene2].tolist()[mis_n_tal2])
+                        summary_and_full_report["cpi_sum_gen_2_total"].append(diplotype["total_variants"][diplotype["gene"] == gene2].tolist()[mis_n_tal2])
                         summary_and_full_report["cpi_sum_gen_3_missing"].append("")
                         summary_and_full_report["cpi_sum_gen_3_total"].append("")
                         if gene1 == "HLA-A" or gene1 == "HLA-B":

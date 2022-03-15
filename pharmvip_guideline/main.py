@@ -7,7 +7,7 @@ from pharmvip_guideline import *
 from pharmvip_guideline.allele_definitions_transform.transform import transform
 from pharmvip_guideline.allele_definitions_transform.transform_dbpmcgenomics import transform_dbpmcgenomics
 from pharmvip_guideline.allele_matcher.matcher import matcher
-from pharmvip_guideline.allele_matcher.diplotype import create_diplotype_cpic, read_diplotype
+from pharmvip_guideline.allele_matcher.diplotype import create_diplotype_cpic, read_diplotype, read_hla
 from cyvcf2 import VCF
 from pharmvip_guideline.allele_matcher.diplotype_dbpmcgenomics import diplotype_dbpmcgenomics
 from pharmvip_guideline.allele_matcher.annotation import *
@@ -162,7 +162,7 @@ def main():
 
             diplotype_dbpmcgenomics(args.ana_user_id, args.ana_id, diplotype_cpic, diplotype_cyp2d6, args.dbpmcgenomics)
 
-            diplotype_hla = read_diplotype(args.diplotype_hla)
+            diplotype_hla = read_hla(args.diplotype_hla)
 
             diplotype_cpic = diplotype_cpic.append(diplotype_cyp2d6)
             diplotype_cpic = diplotype_cpic.append(diplotype_hla)

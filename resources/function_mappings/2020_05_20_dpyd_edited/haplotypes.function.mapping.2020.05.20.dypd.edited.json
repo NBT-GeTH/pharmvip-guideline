@@ -38,8 +38,8 @@
   },
   "PA166176623": {
     "HLA-B": {
-      "Other": "Absence",
-      "HLA-B*15:02:01": "Presence"
+      "HLA-B*15:02:01_negative": "Absence",
+      "HLA-B*15:02:01_positive": "Presence"
     }
   },
   "PA166180457": {
@@ -178,8 +178,8 @@
   "PA166104933": {},
   "PA166104997": {
     "HLA-B": {
-      "HLA-B*57:01:01": "Presence",
-      "Other": "Absence"
+      "HLA-B*57:01:01_positive": "Presence",
+      "HLA-B*57:01:01_negative": "Absence"
     }
   },
   "PA166161955": {
@@ -576,12 +576,12 @@
   "PA166104965": {},
   "PA166105008": {
     "HLA-A": {
-      "Other": "Absence",
-      "HLA-A*31:01:02": "Presence"
+      "HLA-A*31:01:02_negative": "Absence",
+      "HLA-A*31:01:02_positive": "Presence"
     },
     "HLA-B": {
-      "Other": "Absence",
-      "HLA-B*15:02:01": "Presence"
+      "HLA-B*15:02:01_negative": "Absence",
+      "HLA-B*15:02:01_positive": "Presence"
     }
   },
   "PA166104996": {
@@ -1636,8 +1636,8 @@
   },
   "PA166105003": {
     "HLA-B": {
-      "Other": "Absence",
-      "HLA-B*58:01": "Presence"
+      "HLA-B*58:01_negative": "Absence",
+      "HLA-B*58:01_positive": "Presence"
     }
   },
   "PA166105005": {
@@ -2082,8 +2082,8 @@
       "CYP2C9*3": "Decreased function"
     },
     "HLA-B": {
-      "Other": "Absence",
-      "HLA-B*15:02:01": "Presence"
+      "HLA-B*15:02:01_negative": "Absence",
+      "HLA-B*15:02:01_positive": "Presence"
     }
   },
   "PA166161954": {
