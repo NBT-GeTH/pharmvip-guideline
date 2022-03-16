@@ -139,21 +139,24 @@ def read_hla(tsv):
         else :
             guide_dip = guide_dip[0].split(',')
             print_dip = print_dip[0].split(',')
-            temp = {
-                    "sample_id": val["sampleid"],
-                    "gene": val["gene"],
-                    "missing_call_variants": 0,
-                    "total_variants": 0,
-                    "dp": [],
-                    "gt_bases": [],
-                    "gt_phases": [],
-                    "gene_phases": ".",
-                    "count_diplotype": len(guide_dip),
-                    "guide_dip": guide_dip,
-                    "print_dip": print_dip,
-                    "tool": tool
-                    }
-            temp_data.append(temp)
+            for printd,guided in zip(guide_dip,print_dip):
+                printd = printd.split(',')
+                guided = guided.split(',')
+                temp = {
+                        "sample_id": val["sampleid"],
+                        "gene": val["gene"],
+                        "missing_call_variants": 0,
+                        "total_variants": 0,
+                        "dp": [],
+                        "gt_bases": [],
+                        "gt_phases": [],
+                        "gene_phases": ".",
+                        "count_diplotype": len(guided),
+                        "guide_dip": guided,
+                        "print_dip": printd,
+                        "tool": tool
+                        }
+                temp_data.append(temp)
 
     for data in temp_data:
         diplotype = diplotype.append(data,ignore_index=True)
