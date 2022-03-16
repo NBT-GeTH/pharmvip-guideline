@@ -139,6 +139,7 @@ def read_hla(tsv):
         else :
             guide_dip = guide_dip[0].split(',')
             print_dip = print_dip[0].split(',')
+            targ_tool = tool[0].split(',')
             for guided,printd in zip(guide_dip,print_dip):
                 printd = printd.split(',')
                 guided = guided.split(',')
@@ -154,7 +155,7 @@ def read_hla(tsv):
                         "count_diplotype": len(guided),
                         "guide_dip": guided,
                         "print_dip": printd,
-                        "tool": tool
+                        "tool": targ_tool
                         }
                 temp_data.append(temp)
 
