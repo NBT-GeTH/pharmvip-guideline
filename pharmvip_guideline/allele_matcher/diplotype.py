@@ -139,7 +139,7 @@ def read_hla(tsv):
         else :
             guide_dip = guide_dip[0].split(',')
             print_dip = print_dip[0].split(',')
-            for printd,guided in zip(guide_dip,print_dip):
+            for guided,printd in zip(guide_dip,print_dip):
                 printd = printd.split(',')
                 guided = guided.split(',')
                 temp = {
