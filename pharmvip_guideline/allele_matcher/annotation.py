@@ -237,7 +237,7 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                         summary_and_full_report["cpi_sum_gene1"].append(gene)
                         summary_and_full_report["cpi_sum_gene2"].append("")
                         summary_and_full_report["cpi_sum_gene3"].append("")
-                        summary_and_full_report["cpi_sum_dip_name1"].append(_diplotype.loc[gene, "print_dip"][i])
+                        summary_and_full_report["cpi_sum_dip_name1"].append(to_string(_diplotype.loc[gene, "print_dip"][i]))
                         summary_and_full_report["cpi_sum_dip_name2"].append("")
                         summary_and_full_report["cpi_sum_dip_name3"].append("")
                         summary_and_full_report["cpi_sum_drug"].append(str(clinical_guideline_annotations[guideline_id]["drug_names"].split("_")).replace("[", "").replace("]", "").replace("'", ""))
@@ -267,7 +267,7 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                         summary_and_full_report["cpi_sum_gene1"].append(gene)
                         summary_and_full_report["cpi_sum_gene2"].append("")
                         summary_and_full_report["cpi_sum_gene3"].append("")
-                        summary_and_full_report["cpi_sum_dip_name1"].append(_diplotype.loc[gene, "print_dip"][i])
+                        summary_and_full_report["cpi_sum_dip_name1"].append(to_string(_diplotype.loc[gene, "print_dip"][i]))
                         summary_and_full_report["cpi_sum_dip_name2"].append("")
                         summary_and_full_report["cpi_sum_dip_name3"].append("")
                         summary_and_full_report["cpi_sum_drug"].append(str(clinical_guideline_annotations[guideline_id]["drug_names"].split("_")).replace("[", "").replace("]", "").replace("'", ""))
@@ -341,8 +341,8 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                         summary_and_full_report["cpi_sum_gene1"].append(gene1)
                         summary_and_full_report["cpi_sum_gene2"].append(gene2)
                         summary_and_full_report["cpi_sum_gene3"].append("")
-                        summary_and_full_report["cpi_sum_dip_name1"].append(_diplotype.loc[gene1, "print_dip"][i])
-                        summary_and_full_report["cpi_sum_dip_name2"].append(_diplotype.loc[gene2, "print_dip"][j])
+                        summary_and_full_report["cpi_sum_dip_name1"].append(to_string(_diplotype.loc[gene1, "print_dip"][i]))
+                        summary_and_full_report["cpi_sum_dip_name2"].append(to_string(_diplotype.loc[gene2, "print_dip"][j]))
                         summary_and_full_report["cpi_sum_dip_name3"].append("")
                         summary_and_full_report["cpi_sum_drug"].append(str(clinical_guideline_annotations[guideline_id]["drug_names"].split("_")).replace("[", "").replace("]", "").replace("'", ""))
                         summary_and_full_report["cpi_sum_act_score"].append(annotations.get("ActivityScore") if annotations.get("ActivityScore") != None else "")
@@ -378,8 +378,8 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                         summary_and_full_report["cpi_sum_gene1"].append(gene1)
                         summary_and_full_report["cpi_sum_gene2"].append(gene2)
                         summary_and_full_report["cpi_sum_gene3"].append("")
-                        summary_and_full_report["cpi_sum_dip_name1"].append(_diplotype.loc[gene1, "print_dip"][i])
-                        summary_and_full_report["cpi_sum_dip_name2"].append(_diplotype.loc[gene2, "print_dip"][j])
+                        summary_and_full_report["cpi_sum_dip_name1"].append(to_string(_diplotype.loc[gene1, "print_dip"][i]))
+                        summary_and_full_report["cpi_sum_dip_name2"].append(to_string(_diplotype.loc[gene2, "print_dip"][j]))
                         summary_and_full_report["cpi_sum_dip_name3"].append("")
                         summary_and_full_report["cpi_sum_drug"].append(str(clinical_guideline_annotations[guideline_id]['drug_names'].split("_")).replace("[", "").replace("]", "").replace("'", ""))
                         summary_and_full_report["cpi_sum_act_score"].append("")
@@ -410,6 +410,11 @@ def annotate(clinical_guideline_annotations, function_mappings_diplotype, diplot
                             summary_and_full_report["cpi_sum_hla_tool_2_guide"].append("")
 
     return summary_and_full_report
+
+def  to_string(diplo):
+    if type(diplo) == list :
+        diplo = ','.join(diplo)
+    return diplo
 
 def  tools_picker(diplo:pd.DataFrame,gene,inx):
     optt = diplo.loc[gene, "tool"]
