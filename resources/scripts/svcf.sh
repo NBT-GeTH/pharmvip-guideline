@@ -8,5 +8,7 @@
 # module load intel                   #load module ที่ต้องการใช้งาน ตัวอย่างนี้คือ intel
 # module load python
 # python  pass_finder_rs72549303.py                 #สั่งรัน program/executable code ของท่าน
-path="/tarafs/biobank/data/home/ktraipar/sequence/sample/SRR769545_rs72549303.vcf"
+# path="/tarafs/biobank/data/home/ktraipar/sequence/sample/SRR769545_rs72549303.vcf"
+path="/tarafs/biobank/data/home/ktraipar/1000genome/HG02012_hg38.vcf"
 bash vcf_handle.sh -i $path
+echo "done"
