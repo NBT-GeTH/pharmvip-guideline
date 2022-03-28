@@ -183,3 +183,4 @@ resources/samples/
 .vscode/launch.json
 tests/unitest/overall_debugger.py
 tests/overall_debugger.py
+.vscode/
