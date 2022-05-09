@@ -1,6 +1,6 @@
 import os
 current_version = "2020_12_08_v0_6_0_cftr_dpyd_edited"
-trial_version = "allele_def_CPIC_v1.10_VNTR"
+trial_version = "allele_def_CPIC_v1_10_VNTR"
 allele_definitions_table_version = trial_version
 defaults_allele_definitions_table = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", allele_definitions_table_version, "table")
 defaults_allele_definitions_transform = os.path.join(os.path.join(os.path.dirname(__file__), ".."), "resources", "allele_definitions", allele_definitions_table_version, "transform")

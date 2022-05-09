@@ -5,23 +5,24 @@ def create_hap_regex(variants):
     hap1_regex = []
     hap2_regex = []
     for variant in variants:
-        variant['allele1_convert'] = variant['allele1_convert'].replace("(", "\(").replace(")", "\)")
-        variant['allele2_convert'] = variant['allele2_convert'].replace("(", "\(").replace(")", "\)")
-        if variant["gt_phases"] == ".":
-            if variant["hgvs_type"] != "SNP":
+        _variant = copy.deepcopy(variant)
+        _variant['allele1_convert'] = _variant['allele1_convert'].replace("(", "\(").replace(")", "\)")
+        _variant['allele2_convert'] = _variant['allele2_convert'].replace("(", "\(").replace(")", "\)")
+        if _variant["gt_phases"] == ".":
+            if _variant["hgvs_type"] != "SNP":
                 hap1_regex.append(f"(.+)")
                 hap2_regex.append(f"(.+)")
             else:
                 hap1_regex.append(f"(.)")
                 hap2_regex.append(f"(.)")
-        elif variant["gt_phases"] == True:
-            hap1_regex.append(f"({variant['allele1_convert']})")
-            hap2_regex.append(f"({variant['allele2_convert']})")
-        elif variant["gt_phases"] == False:
-            hap1_regex.append(f"({variant['allele1_convert']}|{variant['allele2_convert']})")
-            hap2_regex.append(f"({variant['allele1_convert']}|{variant['allele2_convert']})")
+        elif _variant["gt_phases"] == True:
+            hap1_regex.append(f"({_variant['allele1_convert']})")
+            hap2_regex.append(f"({_variant['allele2_convert']})")
+        elif _variant["gt_phases"] == False:
+            hap1_regex.append(f"({_variant['allele1_convert']}|{_variant['allele2_convert']})")
+            hap2_regex.append(f"({_variant['allele1_convert']}|{_variant['allele2_convert']})")
         else:
-            print(f"error create hap regex with: {variant['genotype_phases']}")
+            print(f"error create hap regex with: {_variant['genotype_phases']}")
             exit()
     return f"^{'_'.join(hap1_regex)}$".replace("*", "Z"), f"^{'_'.join(hap2_regex)}$".replace("*", "Z")
 
