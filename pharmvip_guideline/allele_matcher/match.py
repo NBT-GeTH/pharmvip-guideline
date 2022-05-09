@@ -5,6 +5,8 @@ def create_hap_regex(variants):
     hap1_regex = []
     hap2_regex = []
     for variant in variants:
+        variant['allele1_convert'] = variant['allele1_convert'].replace("(", "\(").replace(")", "\)")
+        variant['allele2_convert'] = variant['allele2_convert'].replace("(", "\(").replace(")", "\)")
         if variant["gt_phases"] == ".":
             if variant["hgvs_type"] != "SNP":
                 hap1_regex.append(f"(.+)")
@@ -94,19 +96,26 @@ def handle_missing_phase(allele_definition, allele_matcher) :
 
 def handle_true_phase(allele_definition, allele_matcher) :
     hap1_regex, hap2_regex = create_hap_regex(allele_matcher["variants"])
-
+    print("=" * 100)
     hap1_match = []
     hap2_match = []
     for haplotype in allele_definition["haplotypes"]:
         name_haplotypes = create_name_haplotypes(haplotype["variants"])
         for name_haplotype in name_haplotypes:
+            print(name_haplotype)
             if re.match(hap1_regex, name_haplotype):
+                print("\t", hap1_regex, "match")
                 if haplotype["name"] not in hap1_match:
                     hap1_match.append(haplotype["name"])
+            else:
+                print("\t", hap1_regex, "not match")
             if re.match(hap2_regex, name_haplotype):
+                print("\t", hap2_regex, "match")
                 if haplotype["name"] not in hap2_match:
                     hap2_match.append(haplotype["name"])
-
+            else:
+                print("\t", hap2_regex, "not match")
+    print("=" * 100)
     guide_dip = []
     print_dip = []
     if not hap1_match and not hap2_match:
