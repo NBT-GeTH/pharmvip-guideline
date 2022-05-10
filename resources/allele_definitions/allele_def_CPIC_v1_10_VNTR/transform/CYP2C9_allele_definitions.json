@@ -106,12 +106,12 @@
           "is_ref": false
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": false
         },
         {
@@ -707,12 +707,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -1308,12 +1308,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -1909,12 +1909,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -2510,12 +2510,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -3111,12 +3111,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -3712,12 +3712,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -4313,12 +4313,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -4914,12 +4914,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -5515,12 +5515,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -6116,12 +6116,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -6717,12 +6717,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -7318,12 +7318,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -7919,12 +7919,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -8520,12 +8520,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -9121,12 +9121,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -9722,12 +9722,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -10323,12 +10323,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -10924,12 +10924,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -11525,12 +11525,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -12126,12 +12126,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "delAGAAATGGAA",
+          "allele": "delAATGGAAAGA",
           "is_ref": false
         },
         {
@@ -12727,12 +12727,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -13328,12 +13328,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -13929,12 +13929,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -14530,12 +14530,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -15131,12 +15131,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -15732,12 +15732,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -16333,12 +16333,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -16934,12 +16934,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -17535,12 +17535,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -18136,12 +18136,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -18737,12 +18737,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -19338,12 +19338,12 @@
           "is_ref": false
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -19939,12 +19939,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -20540,12 +20540,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -21141,12 +21141,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -21742,12 +21742,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -22343,12 +22343,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -22944,12 +22944,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -23545,12 +23545,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -24146,12 +24146,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -24747,12 +24747,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -25348,12 +25348,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -25949,12 +25949,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -26550,12 +26550,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -27151,12 +27151,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -27752,12 +27752,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -28353,12 +28353,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -28954,12 +28954,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -29555,12 +29555,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -30156,12 +30156,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -30757,12 +30757,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -31358,12 +31358,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -31959,12 +31959,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -32560,12 +32560,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -33161,12 +33161,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -33762,12 +33762,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -34363,12 +34363,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -34964,12 +34964,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -35565,12 +35565,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -36166,12 +36166,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -36767,12 +36767,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -37368,12 +37368,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -37969,12 +37969,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -38570,12 +38570,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -39171,12 +39171,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -39772,12 +39772,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -40373,12 +40373,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -40974,12 +40974,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -41575,12 +41575,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -42176,12 +42176,12 @@
           "is_ref": true
         },
         {
-          "hgvs": "g.94942213_94942222del",
+          "hgvs": "g.94942206_94942215delAATGGAAAGA",
           "hgvs_type": "DEL",
-          "start": "94942213",
-          "end": "94942222",
+          "start": "94942206",
+          "end": "94942215",
           "rsid": "rs1304490498",
-          "allele": "AGAAATGGAA",
+          "allele": "AATGGAAAGA",
           "is_ref": true
         },
         {
@@ -42741,7 +42741,7 @@
       ]
     },
     {
-      "hgvs": "g.94942213_94942222del",
+      "hgvs": "g.94942206_94942215delAATGGAAAGA",
       "name": [
         "*25"
       ]
@@ -43095,7 +43095,7 @@
         "g.94941976G>C",
         "g.94941982G>T",
         "g.94942018T>C",
-        "g.94942213_94942222del",
+        "g.94942206_94942215delAATGGAAAGA",
         "g.94942216A>G",
         "g.94942230C>T",
         "g.94942231G>A",
@@ -43270,7 +43270,7 @@
     {
       "name": "*25",
       "hgvs": [
-        "g.94942213_94942222del"
+        "g.94942206_94942215delAATGGAAAGA"
       ]
     },
     {

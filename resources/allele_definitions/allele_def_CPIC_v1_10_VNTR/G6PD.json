@@ -96,13 +96,13 @@
             {
                 "alleledefinitionid": 778666,
                 "locationid": 778498,
-                "variantallele": "GAT",
+                "variantallele": "ATG",
                 "version": 1,
                 "sequence_location": {
                     "id": 778498,
                     "version": 14,
                     "name": "c.103_105delATC",
-                    "chromosomelocation": "g.154546051_154546053delGAT",
+                    "chromosomelocation": "g.154546046_154546048delATG",
                     "genelocation": "g.6520_6522delATC",
                     "proteinlocation": "p.I35del",
                     "genesymbol": "G6PD",
@@ -3120,13 +3120,13 @@
             {
                 "alleledefinitionid": 778678,
                 "locationid": 778498,
-                "variantallele": "delGAT",
+                "variantallele": "delATG",
                 "version": 1,
                 "sequence_location": {
                     "id": 778498,
                     "version": 14,
                     "name": "c.103_105delATC",
-                    "chromosomelocation": "g.154546051_154546053delGAT",
+                    "chromosomelocation": "g.154546046_154546048delATG",
                     "genelocation": "g.6520_6522delATC",
                     "proteinlocation": "p.I35del",
                     "genesymbol": "G6PD",

@@ -198,13 +198,13 @@
             {
                 "alleledefinitionid": 777668,
                 "locationid": 948023,
-                "variantallele": "AGAAATGGAA",
+                "variantallele": "AATGGAAAGA",
                 "version": 1,
                 "sequence_location": {
                     "id": 948023,
                     "version": 6,
                     "name": "3531delAGAAATGGAA",
-                    "chromosomelocation": "g.94942213_94942222del",
+                    "chromosomelocation": "g.94942206_94942215delAATGGAAAGA",
                     "genelocation": "g.9056_9065del",
                     "proteinlocation": "p.K118fs",
                     "genesymbol": "CYP2C9",
@@ -1693,13 +1693,13 @@
             {
                 "alleledefinitionid": 777716,
                 "locationid": 948023,
-                "variantallele": "delAGAAATGGAA",
+                "variantallele": "delAATGGAAAGA",
                 "version": 1,
                 "sequence_location": {
                     "id": 948023,
                     "version": 6,
                     "name": "3531delAGAAATGGAA",
-                    "chromosomelocation": "g.94942213_94942222del",
+                    "chromosomelocation": "g.94942206_94942215delAATGGAAAGA",
                     "genelocation": "g.9056_9065del",
                     "proteinlocation": "p.K118fs",
                     "genesymbol": "CYP2C9",
