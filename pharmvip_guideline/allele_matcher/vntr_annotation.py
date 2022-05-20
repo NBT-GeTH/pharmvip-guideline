@@ -64,9 +64,9 @@ def  copy_calculator(ref_vcf:str, genotype_vcf,ref_seq, ref_copy):
 def  vcf_vntr_transformer(vcf, ref_allele, pos):
     ref_vcf, genotype_vcf, dp = extract_vcf(vcf, pos)
     if genotype_vcf == './.' or genotype_vcf == '.|.':
-        return genotype_vcf
+        return genotype_vcf, dp
     elif genotype_vcf == '':
-        return './.'
+        return './.', dp
     ref_seq, ref_copy = extract_ref_allele(ref_allele)
     vntr_vcf = copy_calculator(ref_vcf, genotype_vcf,ref_seq, ref_copy)
     return vntr_vcf, dp
