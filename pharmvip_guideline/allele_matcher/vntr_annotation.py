@@ -71,23 +71,3 @@ def  vcf_vntr_transformer(vcf, ref_allele, pos):
     vntr_vcf = copy_calculator(ref_vcf, genotype_vcf,ref_seq, ref_copy)
     return vntr_vcf, dp
 
-# path = 'HS01009_cut_at.vcf.gz'
-# path = 'HS01009_cut_at_6copy.vcf.gz'
-# path = 'HS01009_cut_at_miss.vcf.gz'
-# path = 'HS01009_cut_at_null.vcf.gz'
-# path = 'HS10227_final.vcf.gz'
-# path = '/tarafs/biobank/data/home/pkaewpro/popgen/ver38/vcf_CPIC_949/HS01024_final.vcf.gz'
-# # path = 'NA12878_30x.vcf.gz'
-# # path = '/tarafs/data/home/ktraipar/pharmvip/pharmvip-guideline/tests/query_testing/vcfs/tester.vcf.gz'
-# vcf = VCF(path)
-# # pos = 'chr2:233760233-233760233'
-# # ref_allele = 'AT(7)'
-# pos = 'chr13:48037782-48037782'
-# ref_allele = 'GGAGTC(3)'
-# vntr_vcf = vcf_vntr_transformer(vcf, ref_allele, pos)
-# print(vntr_vcf)
-# print('done')
-
-
-# CGCGTCCTCCCGCGCGCTATGACGGCCAGCGCACAGCCGCGCGGGCGGCGG
-# CCAGGAGTCGGAGTCGGAGTCGTGGTGACCAGCTGCAAGCATCCGCGTTGCGTCCTCCTGGGGAAGAGGAAAGGCTC
