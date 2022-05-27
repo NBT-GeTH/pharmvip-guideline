@@ -122,7 +122,7 @@ def annotate(clinical_guideline_annotations, function_mappings, diplotype):
                     }
                     summary_and_full_report = summary_and_full_report.append(report_template,ignore_index=True)
     summary_and_full_report = handle_warfarin(summary_and_full_report, diplotype)
-    write_exel(summary_and_full_report)
+    # write_exel(summary_and_full_report)
 
     return summary_and_full_report
 
