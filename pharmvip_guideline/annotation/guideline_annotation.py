@@ -8,6 +8,9 @@ def annotate(clinical_guideline_annotations, function_mappings, diplotype):
     guideline_relation_path = f'{clinical_guideline_annotations}/guideline_relation.json'
     with open(guideline_relation_path) as guideline_relation_file:
         guideline_relation = json.load(guideline_relation_file)
+    guideline__hla_relation_path = f'{clinical_guideline_annotations}/guideline_hla_relation.json'
+    with open(guideline__hla_relation_path) as guideline_hla_relation_file:
+        guideline_hla_relation = json.load(guideline_hla_relation_file)
     add_lookup_key_col(diplotype,function_mappings)
     summary_and_full_report = pd.DataFrame(columns=
         [
@@ -62,7 +65,7 @@ def annotate(clinical_guideline_annotations, function_mappings, diplotype):
                 target_guide = guideline.loc[guideline['lookupkey'] == guidline_info.key_map]
 
                 if target_guide.empty:
-                    hla_checker =  hla_subjection(lookup_key,guide_line_id)
+                    hla_checker =  hla_subjection(lookup_key,guide_line_id,guideline_hla_relation)
                     if  not(hla_checker): continue
                     summary_and_full_report = not_found_guide(summary_and_full_report=summary_and_full_report,guidline_info=guidline_info,diplotype=diplotype,relaional=guideline_relation[guide_line_id])
                     continue
