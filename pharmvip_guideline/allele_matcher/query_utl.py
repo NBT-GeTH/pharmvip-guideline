@@ -46,8 +46,8 @@ def extract_genotype_in_rage(gene, genotype_in_range):
     """
     return genotype sequence as .ACTG|.ACTG
     """
-    allele1 = "."
-    allele2 = "."
+    allele1 = ""
+    allele2 = ""
     for genotype in genotype_in_range:
         a1, a2 = extract_genotype(gene, genotype)
         allele1 += a1

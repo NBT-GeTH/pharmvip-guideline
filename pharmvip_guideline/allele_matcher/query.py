@@ -87,19 +87,19 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                     v_vcf["allele2_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele2"], genome.genotypes)
                     v_vcf["gt_phases"] = sum_up_gt_phases(genome.gt_phases[0], v_vcf["allele1"], v_vcf["allele2"])
                 else:
-                    len_genome = (int(variant['end']) - int(variant['start']) + 1)
+                    len_genome = len([x for x in range(int(variant['start']) - 1, int(variant['end']) + 1)])
                     error_in_range = 0
                     dp_in_range = [0] * len_genome
                     genotype_in_range = ["./."] * len_genome
 
-                    for inx, in_range in enumerate(range(int(variant['start']), int(variant['end']) + 1)):
+                    for inx, in_range in enumerate([x for x in range(int(variant['start']) - 1, int(variant['end']) + 1)]):
                         region = f"{ref_haplotype['chromosome']}:{in_range}-{in_range}"
 
                         for genome in vcf(region):
                             # allele definition 1-based vs cyvcf2 0-based coordinate systems
                             if in_range != int(genome.start) + 1:
                                 continue
-                            if (genome.var_type == "snp" and (genome.genotypes[0][0] == 0 and genome.genotypes[0][1] == 0)) or re.match(r"^(\.+)(\/|\|)(\.+)$", genome.gt_bases[0]):
+                            if (genome.var_type == "unknown" and re.match(r"^([ATCG]{1})(\/|\|)([ATCG]{1})$", genome.gt_bases[0])) or genome.var_type == "snp" or re.match(r"^(\.+)(\/|\|)(\.+)$", genome.gt_bases[0]):
                                 dp_in_range[inx] = check_null_dp(genome.format("DP").tolist()[0][0]) if "DP" in genome.FORMAT else 0
                                 genotype_in_range[inx] = genome.gt_bases[0]
                             else:
