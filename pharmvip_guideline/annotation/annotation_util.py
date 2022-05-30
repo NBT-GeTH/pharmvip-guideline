@@ -52,12 +52,12 @@ def  generate_report_set(target_guide:pd.DataFrame):
     return report_set,drug_set
 
 
-def  not_found_guide(summary_and_full_report:pd.DataFrame,guidline_info:InfoConstruction,diplotype,relaional):
-    gene_map = [i for i in guidline_info.key_map]
-    for i in relaional['gene_and_drug']:
-        if i['key'] == gene_map:
-            drug_set = i['drug_set']
-            drug_set = ','.join(drug_set)
+def  not_found_guide(summary_and_full_report:pd.DataFrame,guidline_info:InfoConstruction,diplotype,drug_set):
+    # gene_map = [i for i in guidline_info.key_map]
+    # for i in relaional['gene_and_drug']:
+    #     if i['key'] == gene_map:
+    #         drug_set = i['drug_set']
+    drug_set = ','.join(drug_set)
 
     temp = {
             "cpi_sum_gene1": guidline_info.gene[0],
@@ -198,9 +198,8 @@ def  combination_generator(array:list,total:list=[],inx:int=0):
 
 def  generate_possible_lookupkey(gene_set,diplotype:pd.DataFrame):
     all_possible =  []
-    for genes in gene_set:
-        all_lookup_key = []
-        for gene in genes:
+    all_lookup_key = []
+    for gene in gene_set:
             lookupkey_set = []
             target_row = diplotype.loc[diplotype['gene'] == gene]
             if target_row.empty:
@@ -209,10 +208,11 @@ def  generate_possible_lookupkey(gene_set,diplotype:pd.DataFrame):
                 for _,val in target_row.iterrows():
                     lookupkey_set = lookupkey_set + val['lookupkey']
                 all_lookup_key.append(lookupkey_set)
-            
-        if (all_lookup_key):
-            sett = combination_generator(all_lookup_key)
-            all_possible = all_possible + sett
+
+    if (all_lookup_key):
+        sett = combination_generator(all_lookup_key)
+        all_possible = all_possible + sett
+
     return all_possible
 
 

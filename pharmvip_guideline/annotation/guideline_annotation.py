@@ -5,7 +5,7 @@ from pharmvip_guideline.annotation.hla_handler import hla_subjection
 from pharmvip_guideline.utils.print import write_exel
 
 def annotate(clinical_guideline_annotations, function_mappings, diplotype):
-    guideline_relation_path = f'{clinical_guideline_annotations}/guideline_relation.json'
+    guideline_relation_path = f'{clinical_guideline_annotations}/guideline_relation_n.json'
     with open(guideline_relation_path) as guideline_relation_file:
         guideline_relation = json.load(guideline_relation_file)
     guideline__hla_relation_path = f'{clinical_guideline_annotations}/guideline_hla_relation.json'
@@ -52,12 +52,25 @@ def annotate(clinical_guideline_annotations, function_mappings, diplotype):
 
     guideline_path_store = f"{clinical_guideline_annotations}/guideline"
     for guide_line_id in guideline_relation:
-        gene_set = guideline_relation[guide_line_id]["gene"]
-        guideline_path = f"{guideline_path_store}/{guide_line_id}.json"
-        guideline = pd.read_json(guideline_path)
-        lookup_keys = generate_possible_lookupkey(gene_set,diplotype)
+        # gene_set = guideline_relation[guide_line_id]["gene"]
+        for key_gene in guideline_relation[guide_line_id]:
+            gene_set = key_gene['key_gene']
+            drug_set = key_gene['drug_set']
+            guideline_path = f"{guideline_path_store}/{guide_line_id}.json"
+            guideline = pd.read_json(guideline_path)
+            lookup_keys = generate_possible_lookupkey(gene_set,diplotype)
+            summary_and_full_report = fill_data(guide_line_id=guide_line_id, lookup_keys=lookup_keys,
+                guideline_hla_relation=guideline_hla_relation,diplotype=diplotype,
+                guideline=guideline, summary_and_full_report=summary_and_full_report,drug_relation_set=drug_set)
         
-        for lookup_key in lookup_keys:
+        
+    summary_and_full_report = handle_warfarin(summary_and_full_report, diplotype)
+    # write_exel(summary_and_full_report)
+
+    return summary_and_full_report
+
+def  fill_data(guide_line_id, lookup_keys, guideline_hla_relation,diplotype:pd.DataFrame,guideline, summary_and_full_report,drug_relation_set):
+    for lookup_key in lookup_keys:
             if not lookup_key:
                 pass
             else:
@@ -67,7 +80,7 @@ def annotate(clinical_guideline_annotations, function_mappings, diplotype):
                 if target_guide.empty:
                     hla_checker =  hla_subjection(lookup_key,guide_line_id,guideline_hla_relation)
                     if  not(hla_checker): continue
-                    summary_and_full_report = not_found_guide(summary_and_full_report=summary_and_full_report,guidline_info=guidline_info,diplotype=diplotype,relaional=guideline_relation[guide_line_id])
+                    summary_and_full_report = not_found_guide(summary_and_full_report=summary_and_full_report,guidline_info=guidline_info,diplotype=diplotype,drug_set=drug_relation_set)
                     continue
                 else :
                     report_set, drug_set = generate_report_set(target_guide=target_guide)
@@ -124,8 +137,4 @@ def annotate(clinical_guideline_annotations, function_mappings, diplotype):
                         "cpi_sum_hla_tool_2_guide": guidline_info.tool2
                     }
                     summary_and_full_report = summary_and_full_report.append(report_template,ignore_index=True)
-    summary_and_full_report = handle_warfarin(summary_and_full_report, diplotype)
-    # write_exel(summary_and_full_report)
-
     return summary_and_full_report
-
