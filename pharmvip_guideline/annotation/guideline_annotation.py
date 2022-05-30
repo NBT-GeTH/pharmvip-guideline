@@ -5,7 +5,7 @@ from pharmvip_guideline.annotation.hla_handler import hla_subjection
 from pharmvip_guideline.utils.print import write_exel
 
 def annotate(clinical_guideline_annotations, function_mappings, diplotype):
-    guideline_relation_path = f'{clinical_guideline_annotations}/guideline_relation_n.json'
+    guideline_relation_path = f'{clinical_guideline_annotations}/guideline_relation.json'
     with open(guideline_relation_path) as guideline_relation_file:
         guideline_relation = json.load(guideline_relation_file)
     guideline__hla_relation_path = f'{clinical_guideline_annotations}/guideline_hla_relation.json'
