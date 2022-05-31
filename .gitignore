@@ -1,5 +1,7 @@
 ### user.gitignore
+.in
 .out
+comparing.xlsx
 
 ### macOS.gitignore
 # General
