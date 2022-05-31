@@ -32,9 +32,7 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate:str, vcf
     for allele_definition in allele_definitions_list:
         allele_definition = json.load(open(allele_definition))
 
-        if allele_definition["gene"] == "CYP2D6" or allele_definition["gene"] == "G6PD":
-        # if allele_definition["gene"] == "CYP2D6":
-            
+        if allele_definition["gene"] == "CYP2D6":
             continue
         else:
             allele_matcher = query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file)
