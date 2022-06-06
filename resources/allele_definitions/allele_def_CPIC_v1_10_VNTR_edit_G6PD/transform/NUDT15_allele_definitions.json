@@ -1,0 +1,3451 @@
+{
+  "gene": "NUDT15",
+  "haplotypes": [
+    {
+      "name": "*1",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "T",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(3)",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "G",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "del",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "C",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "G",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "A",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "G",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "C",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "A",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "del",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "G",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "C",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "C",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "G",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "T",
+          "is_ref": false
+        }
+      ]
+    },
+    {
+      "name": "*12",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(3)",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "G",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "T",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*2",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(4)",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "T",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "T",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*3",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(3)",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "T",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "T",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*5",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(3)",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "A",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "T",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*6",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(4)",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "T",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*7",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(3)",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "C",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "T",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*8",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(3)",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "T",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*9",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(2)",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "T",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*10",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "C",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(3)",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "T",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*11",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(3)",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "A",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "T",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*13",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(3)",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "insG",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "T",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*14",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(3)",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "GCGG",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "T",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*15",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(3)",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "A",
+          "is_ref": false
+        }
+      ]
+    },
+    {
+      "name": "*17",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(3)",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "T",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "T",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*18",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(3)",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "delA",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "T",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*19",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "C",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(3)",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "T",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*20",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(3)",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "G",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "T",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*16",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(3)",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "T",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "T",
+          "is_ref": true
+        }
+      ]
+    },
+    {
+      "name": "*4",
+      "position": "Position at NC_000013.11 (Homo sapiens chromosome 13, GRCh38)",
+      "chromosome": "chr13",
+      "variants": [
+        {
+          "hgvs": "g.48037748T>C",
+          "hgvs_type": "SNP",
+          "start": "48037748",
+          "end": "48037748",
+          "rsid": "rs769369441",
+          "allele": "T",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037749G>C",
+          "hgvs_type": "SNP",
+          "start": "48037749",
+          "end": "48037749",
+          "rsid": null,
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037782",
+          "hgvs_type": "CNV",
+          "start": "48037782",
+          "end": "48037782",
+          "rsid": "rs746071566",
+          "allele": "GGAGTC(3)",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037798G>A",
+          "hgvs_type": "SNP",
+          "start": "48037798",
+          "end": "48037798",
+          "rsid": "rs186364861",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037825_48037826insGCGG",
+          "hgvs_type": "INS",
+          "start": "48037825",
+          "end": "48037826",
+          "rsid": "rs777311140",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037834C>T",
+          "hgvs_type": "SNP",
+          "start": "48037834",
+          "end": "48037834",
+          "rsid": "rs1202487323",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037847G>C",
+          "hgvs_type": "SNP",
+          "start": "48037847",
+          "end": "48037847",
+          "rsid": "rs766023281",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037849A>G",
+          "hgvs_type": "SNP",
+          "start": "48037849",
+          "end": "48037849",
+          "rsid": null,
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037885G>A",
+          "hgvs_type": "SNP",
+          "start": "48037885",
+          "end": "48037885",
+          "rsid": "rs1950545307",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48037902C>G",
+          "hgvs_type": "SNP",
+          "start": "48037902",
+          "end": "48037902",
+          "rsid": "rs149436418",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48040978delA",
+          "hgvs_type": "DEL",
+          "start": "48040978",
+          "end": "48040978",
+          "rsid": "rs1457579126",
+          "allele": "A",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041103insG",
+          "hgvs_type": "INS",
+          "start": "48041103",
+          "end": "",
+          "rsid": "rs761191455",
+          "allele": "del",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48041113G>T",
+          "hgvs_type": "SNP",
+          "start": "48041113",
+          "end": "48041113",
+          "rsid": "rs1368252918",
+          "allele": "G",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045690C>G",
+          "hgvs_type": "SNP",
+          "start": "48045690",
+          "end": "48045690",
+          "rsid": "rs768324690",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045719C>T",
+          "hgvs_type": "SNP",
+          "start": "48045719",
+          "end": "48045719",
+          "rsid": "rs116855232",
+          "allele": "C",
+          "is_ref": true
+        },
+        {
+          "hgvs": "g.48045720G>A",
+          "hgvs_type": "SNP",
+          "start": "48045720",
+          "end": "48045720",
+          "rsid": "rs147390019",
+          "allele": "A",
+          "is_ref": false
+        },
+        {
+          "hgvs": "g.48045771T>A",
+          "hgvs_type": "SNP",
+          "start": "48045771",
+          "end": "48045771",
+          "rsid": "rs139551410",
+          "allele": "T",
+          "is_ref": true
+        }
+      ]
+    }
+  ],
+  "hgvs_relation_to_name": [
+    {
+      "hgvs": "g.48037748T>C",
+      "name": [
+        "*10"
+      ]
+    },
+    {
+      "hgvs": "g.48037749G>C",
+      "name": [
+        "*19"
+      ]
+    },
+    {
+      "hgvs": "g.48037782",
+      "name": [
+        "*2",
+        "*6",
+        "*9"
+      ]
+    },
+    {
+      "hgvs": "g.48037798G>A",
+      "name": [
+        "*5"
+      ]
+    },
+    {
+      "hgvs": "g.48037825_48037826insGCGG",
+      "name": [
+        "*14"
+      ]
+    },
+    {
+      "hgvs": "g.48037834C>T",
+      "name": [
+        "*16"
+      ]
+    },
+    {
+      "hgvs": "g.48037847G>C",
+      "name": [
+        "*7"
+      ]
+    },
+    {
+      "hgvs": "g.48037849A>G",
+      "name": [
+        "*8"
+      ]
+    },
+    {
+      "hgvs": "g.48037885G>A",
+      "name": [
+        "*11"
+      ]
+    },
+    {
+      "hgvs": "g.48037902C>G",
+      "name": [
+        "*12"
+      ]
+    },
+    {
+      "hgvs": "g.48040978delA",
+      "name": [
+        "*18"
+      ]
+    },
+    {
+      "hgvs": "g.48041103insG",
+      "name": [
+        "*13"
+      ]
+    },
+    {
+      "hgvs": "g.48041113G>T",
+      "name": [
+        "*17"
+      ]
+    },
+    {
+      "hgvs": "g.48045690C>G",
+      "name": [
+        "*20"
+      ]
+    },
+    {
+      "hgvs": "g.48045719C>T",
+      "name": [
+        "*2",
+        "*3"
+      ]
+    },
+    {
+      "hgvs": "g.48045720G>A",
+      "name": [
+        "*4"
+      ]
+    },
+    {
+      "hgvs": "g.48045771T>A",
+      "name": [
+        "*15"
+      ]
+    }
+  ],
+  "name_relation_to_hgvs": [
+    {
+      "name": "*1",
+      "hgvs": [
+        "g.48037748T>C",
+        "g.48037749G>C",
+        "g.48037782",
+        "g.48037798G>A",
+        "g.48037825_48037826insGCGG",
+        "g.48037834C>T",
+        "g.48037847G>C",
+        "g.48037849A>G",
+        "g.48037885G>A",
+        "g.48037902C>G",
+        "g.48040978delA",
+        "g.48041103insG",
+        "g.48041113G>T",
+        "g.48045690C>G",
+        "g.48045719C>T",
+        "g.48045720G>A",
+        "g.48045771T>A"
+      ]
+    },
+    {
+      "name": "*12",
+      "hgvs": [
+        "g.48037902C>G"
+      ]
+    },
+    {
+      "name": "*2",
+      "hgvs": [
+        "g.48037782",
+        "g.48045719C>T"
+      ]
+    },
+    {
+      "name": "*3",
+      "hgvs": [
+        "g.48045719C>T"
+      ]
+    },
+    {
+      "name": "*5",
+      "hgvs": [
+        "g.48037798G>A"
+      ]
+    },
+    {
+      "name": "*6",
+      "hgvs": [
+        "g.48037782"
+      ]
+    },
+    {
+      "name": "*7",
+      "hgvs": [
+        "g.48037847G>C"
+      ]
+    },
+    {
+      "name": "*8",
+      "hgvs": [
+        "g.48037849A>G"
+      ]
+    },
+    {
+      "name": "*9",
+      "hgvs": [
+        "g.48037782"
+      ]
+    },
+    {
+      "name": "*10",
+      "hgvs": [
+        "g.48037748T>C"
+      ]
+    },
+    {
+      "name": "*11",
+      "hgvs": [
+        "g.48037885G>A"
+      ]
+    },
+    {
+      "name": "*13",
+      "hgvs": [
+        "g.48041103insG"
+      ]
+    },
+    {
+      "name": "*14",
+      "hgvs": [
+        "g.48037825_48037826insGCGG"
+      ]
+    },
+    {
+      "name": "*15",
+      "hgvs": [
+        "g.48045771T>A"
+      ]
+    },
+    {
+      "name": "*17",
+      "hgvs": [
+        "g.48041113G>T"
+      ]
+    },
+    {
+      "name": "*18",
+      "hgvs": [
+        "g.48040978delA"
+      ]
+    },
+    {
+      "name": "*19",
+      "hgvs": [
+        "g.48037749G>C"
+      ]
+    },
+    {
+      "name": "*20",
+      "hgvs": [
+        "g.48045690C>G"
+      ]
+    },
+    {
+      "name": "*16",
+      "hgvs": [
+        "g.48037834C>T"
+      ]
+    },
+    {
+      "name": "*4",
+      "hgvs": [
+        "g.48045720G>A"
+      ]
+    }
+  ]
+}
