@@ -57,7 +57,7 @@ def  not_found_guide(summary_and_full_report:pd.DataFrame,guidline_info:InfoCons
     # for i in relaional['gene_and_drug']:
     #     if i['key'] == gene_map:
     #         drug_set = i['drug_set']
-    drug_set = ','.join(drug_set)
+    drug_set = ', '.join(drug_set)
 
     temp = {
             "cpi_sum_gene1": guidline_info.gene[0],

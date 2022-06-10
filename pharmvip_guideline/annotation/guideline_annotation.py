@@ -100,7 +100,10 @@ def  fill_data(guide_line_id, lookup_keys, guideline_hla_relation,diplotype:pd.D
                     recomnet_out = f'<text>{recomnet}</text><br/>'
                     rec_short_out = f'<text>{rec_short}</text><br/>'
                     cpi_sum_comments = '' if val['comments'] == "n/a" else val['comments']
-                    
+                    drug_summer = drug_set[inx]
+                    drug_summer.sort()
+                    drug_summer = ', '.join(drug_summer)
+
                     report_template = {
                         "cpi_sum_gene1": guidline_info.gene[0],
                         "cpi_sum_gene2": guidline_info.gene[1],
@@ -108,7 +111,7 @@ def  fill_data(guide_line_id, lookup_keys, guideline_hla_relation,diplotype:pd.D
                         "cpi_sum_dip_name1": guidline_info.cpi_sum_dip_name1,
                         "cpi_sum_dip_name2": guidline_info.cpi_sum_dip_name2,
                         "cpi_sum_dip_name3": guidline_info.cpi_sum_dip_name3,
-                        "cpi_sum_drug": ','.join(drug_set[inx]),
+                        "cpi_sum_drug": drug_summer,
                         "cpi_sum_population": val["population"],
                         "cpi_sum_act_score1": act_score1,
                         "cpi_sum_act_score2": act_score2,
