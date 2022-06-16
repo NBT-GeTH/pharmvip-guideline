@@ -182,3 +182,4 @@ tests/unitest/matcher_debuger.py
 resources/samples/manual_testset
 resources/samples/
 
+z_dev/*
