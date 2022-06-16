@@ -101,7 +101,7 @@ def  not_found_guide(summary_and_full_report:pd.DataFrame,guidline_info:InfoCons
 
 
 def  handle_warfarin(summary_and_full_report, diplotypes:pd.DataFrame):
-    # diplotypes_new = diplotypes.set_index("gene")
+    diplotypes_new = diplotypes.set_index("gene")
     warfarin_genes = ["CYP2C9", "CYP4F2", "VKORC1"]
     warfarin_drug = "warfarin"
     warfarin_recommendations = '<text>See dosing guideline in the Guideline full report.</text></br>'
