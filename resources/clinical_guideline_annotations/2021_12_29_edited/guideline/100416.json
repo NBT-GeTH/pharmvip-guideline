@@ -1,0 +1,1982 @@
+[
+    {
+        "activityscore": {
+            "CYP2D6": "2.5"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "drugrecommendation_short": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351573",
+        "implications": {
+            "CYP2D6": "Increased formation of morphine leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "2.5"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "3"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "drugrecommendation_short": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351574",
+        "implications": {
+            "CYP2D6": "Increased formation of morphine leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "3"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "3.5"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "drugrecommendation_short": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351575",
+        "implications": {
+            "CYP2D6": "Increased formation of morphine leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "3.5"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "4"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "drugrecommendation_short": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351576",
+        "implications": {
+            "CYP2D6": "Increased formation of morphine leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "4"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22653"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "drugrecommendation_short": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351577",
+        "implications": {
+            "CYP2D6": "Increased formation of morphine leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22653"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22653.25"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "drugrecommendation_short": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351578",
+        "implications": {
+            "CYP2D6": "Increased formation of morphine leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22653.25"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22653.5"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "drugrecommendation_short": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351579",
+        "implications": {
+            "CYP2D6": "Increased formation of morphine leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22653.5"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22654"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "drugrecommendation_short": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351580",
+        "implications": {
+            "CYP2D6": "Increased formation of morphine leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22654"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22654.5"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "drugrecommendation_short": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351581",
+        "implications": {
+            "CYP2D6": "Increased formation of morphine leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22654.5"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22655"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "drugrecommendation_short": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351582",
+        "implications": {
+            "CYP2D6": "Increased formation of morphine leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22655"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22656"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "drugrecommendation_short": "Avoid codeine use because of potential for serious toxicity. If opioid use is warranted, consider a non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351583",
+        "implications": {
+            "CYP2D6": "Increased formation of morphine leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22656"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "1"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Use codeine label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider a non-tramadol opioid.",
+        "drugrecommendation_short": "Use codeine label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider a non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351566",
+        "implications": {
+            "CYP2D6": "Reduced morphine formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "1"
+        },
+        "phenotypes": {
+            "CYP2D6": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "1.25"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Use codeine label recommended age- or weight-specific dosing.",
+        "drugrecommendation_short": "Use codeine label recommended age- or weight-specific dosing.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351567",
+        "implications": {
+            "CYP2D6": "Expected morphine formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "1.25"
+        },
+        "phenotypes": {
+            "CYP2D6": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "1.5"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Use codeine label recommended age- or weight-specific dosing.",
+        "drugrecommendation_short": "Use codeine label recommended age- or weight-specific dosing.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351568",
+        "implications": {
+            "CYP2D6": "Expected morphine formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "1.5"
+        },
+        "phenotypes": {
+            "CYP2D6": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "1.75"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Use codeine label recommended age- or weight-specific dosing.",
+        "drugrecommendation_short": "Use codeine label recommended age- or weight-specific dosing.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351569",
+        "implications": {
+            "CYP2D6": "Expected morphine formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "1.75"
+        },
+        "phenotypes": {
+            "CYP2D6": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "2"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Use codeine label recommended age- or weight-specific dosing.",
+        "drugrecommendation_short": "Use codeine label recommended age- or weight-specific dosing.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351570",
+        "implications": {
+            "CYP2D6": "Expected morphine formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "2"
+        },
+        "phenotypes": {
+            "CYP2D6": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "2.25"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Use codeine label recommended age- or weight-specific dosing.",
+        "drugrecommendation_short": "Use codeine label recommended age- or weight-specific dosing.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351571",
+        "implications": {
+            "CYP2D6": "Expected morphine formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "2.25"
+        },
+        "phenotypes": {
+            "CYP2D6": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "0"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Avoid codeine use because of possibility of diminished analgesia. If opioid use is warranted, consider a non-tramadol opioid.",
+        "drugrecommendation_short": "Avoid codeine use because of possibility of diminished analgesia. If opioid use is warranted, consider a non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351572",
+        "implications": {
+            "CYP2D6": "Greatly reduced morphine formation leading to diminished analgesia."
+        },
+        "lookupkey": {
+            "CYP2D6": "0"
+        },
+        "phenotypes": {
+            "CYP2D6": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "No recommendation",
+        "drugrecommendation_short": "No recommendation",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351562",
+        "implications": {
+            "CYP2D6": "n/a"
+        },
+        "lookupkey": {
+            "CYP2D6": "n/a"
+        },
+        "phenotypes": {
+            "CYP2D6": "Indeterminate"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "0.25"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Use codeine label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider a non-tramadol opioid.",
+        "drugrecommendation_short": "Use codeine label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider a non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351563",
+        "implications": {
+            "CYP2D6": "Reduced morphine formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "0.25"
+        },
+        "phenotypes": {
+            "CYP2D6": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "0.5"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Use codeine label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider a non-tramadol opioid.",
+        "drugrecommendation_short": "Use codeine label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider a non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351564",
+        "implications": {
+            "CYP2D6": "Reduced morphine formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "0.5"
+        },
+        "phenotypes": {
+            "CYP2D6": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "0.75"
+        },
+        "allelestatus": {},
+        "classification": "Moderate",
+        "comments": null,
+        "drug": {
+            "name": "codeine"
+        },
+        "drugid": "RxNorm:2670",
+        "drugrecommendation": "Use codeine label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider a non-tramadol opioid.",
+        "drugrecommendation_short": "Use codeine label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider a non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351565",
+        "implications": {
+            "CYP2D6": "Reduced morphine formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "0.75"
+        },
+        "phenotypes": {
+            "CYP2D6": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22654.5"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "drugrecommendation_short": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351898",
+        "implications": {
+            "CYP2D6": "Minimal evidence for pharmacokinetic or clinical effect."
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22654.5"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22655"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "drugrecommendation_short": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351899",
+        "implications": {
+            "CYP2D6": "Minimal evidence for pharmacokinetic or clinical effect."
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22655"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22656"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "drugrecommendation_short": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351900",
+        "implications": {
+            "CYP2D6": "Minimal evidence for pharmacokinetic or clinical effect."
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22656"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "No recommendation",
+        "drugrecommendation_short": "No recommendation",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351879",
+        "implications": {
+            "CYP2D6": "n/a"
+        },
+        "lookupkey": {
+            "CYP2D6": "n/a"
+        },
+        "phenotypes": {
+            "CYP2D6": "Indeterminate"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "0.25"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "Use hydrocodone label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider non-codeine or non-tramadol opioid.",
+        "drugrecommendation_short": "Use hydrocodone label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider non-codeine or non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351880",
+        "implications": {
+            "CYP2D6": "Minimal evidence for pharmacokinetic or clinical effect."
+        },
+        "lookupkey": {
+            "CYP2D6": "0.25"
+        },
+        "phenotypes": {
+            "CYP2D6": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "0.5"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "Use hydrocodone label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider non-codeine or non-tramadol opioid.",
+        "drugrecommendation_short": "Use hydrocodone label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider non-codeine or non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351881",
+        "implications": {
+            "CYP2D6": "Minimal evidence for pharmacokinetic or clinical effect."
+        },
+        "lookupkey": {
+            "CYP2D6": "0.5"
+        },
+        "phenotypes": {
+            "CYP2D6": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "0.75"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "Use hydrocodone label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider non-codeine or non-tramadol opioid.",
+        "drugrecommendation_short": "Use hydrocodone label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider non-codeine or non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351882",
+        "implications": {
+            "CYP2D6": "Minimal evidence for pharmacokinetic or clinical effect."
+        },
+        "lookupkey": {
+            "CYP2D6": "0.75"
+        },
+        "phenotypes": {
+            "CYP2D6": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "1"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "Use hydrocodone label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider non-codeine or non-tramadol opioid.",
+        "drugrecommendation_short": "Use hydrocodone label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider non-codeine or non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351883",
+        "implications": {
+            "CYP2D6": "Minimal evidence for pharmacokinetic or clinical effect."
+        },
+        "lookupkey": {
+            "CYP2D6": "1"
+        },
+        "phenotypes": {
+            "CYP2D6": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "1.25"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "Use hydrocodone label recommended age- or weight-specific dosing.",
+        "drugrecommendation_short": "Use hydrocodone label recommended age- or weight-specific dosing.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351884",
+        "implications": {
+            "CYP2D6": "Normal hydromorphone formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "1.25"
+        },
+        "phenotypes": {
+            "CYP2D6": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "1.5"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "Use hydrocodone label recommended age- or weight-specific dosing.",
+        "drugrecommendation_short": "Use hydrocodone label recommended age- or weight-specific dosing.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351885",
+        "implications": {
+            "CYP2D6": "Normal hydromorphone formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "1.5"
+        },
+        "phenotypes": {
+            "CYP2D6": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "1.75"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "Use hydrocodone label recommended age- or weight-specific dosing.",
+        "drugrecommendation_short": "Use hydrocodone label recommended age- or weight-specific dosing.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351886",
+        "implications": {
+            "CYP2D6": "Normal hydromorphone formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "1.75"
+        },
+        "phenotypes": {
+            "CYP2D6": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "2"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "Use hydrocodone label recommended age- or weight-specific dosing.",
+        "drugrecommendation_short": "Use hydrocodone label recommended age- or weight-specific dosing.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351887",
+        "implications": {
+            "CYP2D6": "Normal hydromorphone formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "2"
+        },
+        "phenotypes": {
+            "CYP2D6": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "2.25"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "Use hydrocodone label recommended age- or weight-specific dosing.",
+        "drugrecommendation_short": "Use hydrocodone label recommended age- or weight-specific dosing.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351888",
+        "implications": {
+            "CYP2D6": "Normal hydromorphone formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "2.25"
+        },
+        "phenotypes": {
+            "CYP2D6": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "0"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "Use hydrocodone label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider non-codeine and non-tramadol opioid.",
+        "drugrecommendation_short": "Use hydrocodone label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider non-codeine and non-tramadol opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351889",
+        "implications": {
+            "CYP2D6": "Decreased metabolism of hydrocodone to active metabolite, hydromorphone, but there is insufficient evidence to determine if these effects on pharmacokinetics translate into decreased analgesia or side effects."
+        },
+        "lookupkey": {
+            "CYP2D6": "0"
+        },
+        "phenotypes": {
+            "CYP2D6": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "2.5"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "drugrecommendation_short": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351890",
+        "implications": {
+            "CYP2D6": "Minimal evidence for pharmacokinetic or clinical effect."
+        },
+        "lookupkey": {
+            "CYP2D6": "2.5"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "3"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "drugrecommendation_short": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351891",
+        "implications": {
+            "CYP2D6": "Minimal evidence for pharmacokinetic or clinical effect."
+        },
+        "lookupkey": {
+            "CYP2D6": "3"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "3.5"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "drugrecommendation_short": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351892",
+        "implications": {
+            "CYP2D6": "Minimal evidence for pharmacokinetic or clinical effect."
+        },
+        "lookupkey": {
+            "CYP2D6": "3.5"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "4"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "drugrecommendation_short": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351893",
+        "implications": {
+            "CYP2D6": "Minimal evidence for pharmacokinetic or clinical effect."
+        },
+        "lookupkey": {
+            "CYP2D6": "4"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22653"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "drugrecommendation_short": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351894",
+        "implications": {
+            "CYP2D6": "Minimal evidence for pharmacokinetic or clinical effect."
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22653"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22653.25"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "drugrecommendation_short": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351895",
+        "implications": {
+            "CYP2D6": "Minimal evidence for pharmacokinetic or clinical effect."
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22653.25"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22653.5"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "drugrecommendation_short": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351896",
+        "implications": {
+            "CYP2D6": "Minimal evidence for pharmacokinetic or clinical effect."
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22653.5"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22654"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "hydrocodone"
+        },
+        "drugid": "RxNorm:5489",
+        "drugrecommendation": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "drugrecommendation_short": "No recommendation for hydrocodone therapy because of minimal evidence regarding adverse events or analgesia.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1351897",
+        "implications": {
+            "CYP2D6": "Minimal evidence for pharmacokinetic or clinical effect."
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22654"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "2.5"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "drugrecommendation_short": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352450",
+        "implications": {
+            "CYP2D6": "Increased formation of O-desmethyltramadol (active metabolite) leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "2.5"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "3"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "drugrecommendation_short": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352451",
+        "implications": {
+            "CYP2D6": "Increased formation of O-desmethyltramadol (active metabolite) leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "3"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "3.5"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "drugrecommendation_short": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352452",
+        "implications": {
+            "CYP2D6": "Increased formation of O-desmethyltramadol (active metabolite) leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "3.5"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "4"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "drugrecommendation_short": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352453",
+        "implications": {
+            "CYP2D6": "Increased formation of O-desmethyltramadol (active metabolite) leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "4"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22653"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "drugrecommendation_short": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352454",
+        "implications": {
+            "CYP2D6": "Increased formation of O-desmethyltramadol (active metabolite) leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22653"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22653.25"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "drugrecommendation_short": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352455",
+        "implications": {
+            "CYP2D6": "Increased formation of O-desmethyltramadol (active metabolite) leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22653.25"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22653.5"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "drugrecommendation_short": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352456",
+        "implications": {
+            "CYP2D6": "Increased formation of O-desmethyltramadol (active metabolite) leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22653.5"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "2.25"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Use tramadol label recommended age- or weight-specific dosing.",
+        "drugrecommendation_short": "Use tramadol label recommended age- or weight-specific dosing.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352448",
+        "implications": {
+            "CYP2D6": "Expected O-desmethyltramadol (active metabolite) formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "2.25"
+        },
+        "phenotypes": {
+            "CYP2D6": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "0"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Avoid tramadol use because of possibility of diminished analgesia. If opioid use is warranted, consider a non-codeine opioid.",
+        "drugrecommendation_short": "Avoid tramadol use because of possibility of diminished analgesia. If opioid use is warranted, consider a non-codeine opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352449",
+        "implications": {
+            "CYP2D6": "Greatly reduced O-desmethyltramadol (active metabolite) formation leading to diminished analgesia."
+        },
+        "lookupkey": {
+            "CYP2D6": "0"
+        },
+        "phenotypes": {
+            "CYP2D6": "Poor Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "n/a"
+        },
+        "allelestatus": {},
+        "classification": "No Recommendation",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "No recommendation",
+        "drugrecommendation_short": "No recommendation",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352439",
+        "implications": {
+            "CYP2D6": "n/a"
+        },
+        "lookupkey": {
+            "CYP2D6": "n/a"
+        },
+        "phenotypes": {
+            "CYP2D6": "Indeterminate"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "0.25"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Use tramadol label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider non-codeine opioid.",
+        "drugrecommendation_short": "Use tramadol label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider non-codeine opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352440",
+        "implications": {
+            "CYP2D6": "Reduced O-desmethyltramadol (active metabolite) formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "0.25"
+        },
+        "phenotypes": {
+            "CYP2D6": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "0.5"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Use tramadol label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider non-codeine opioid.",
+        "drugrecommendation_short": "Use tramadol label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider non-codeine opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352441",
+        "implications": {
+            "CYP2D6": "Reduced O-desmethyltramadol (active metabolite) formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "0.5"
+        },
+        "phenotypes": {
+            "CYP2D6": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "0.75"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Use tramadol label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider non-codeine opioid.",
+        "drugrecommendation_short": "Use tramadol label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider non-codeine opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352442",
+        "implications": {
+            "CYP2D6": "Reduced O-desmethyltramadol (active metabolite) formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "0.75"
+        },
+        "phenotypes": {
+            "CYP2D6": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "1"
+        },
+        "allelestatus": {},
+        "classification": "Optional",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Use tramadol label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider non-codeine opioid.",
+        "drugrecommendation_short": "Use tramadol label recommended age- or weight-specific dosing. If no response and opioid use is warranted, consider non-codeine opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352443",
+        "implications": {
+            "CYP2D6": "Reduced O-desmethyltramadol (active metabolite) formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "1"
+        },
+        "phenotypes": {
+            "CYP2D6": "Intermediate Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "1.25"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Use tramadol label recommended age- or weight-specific dosing.",
+        "drugrecommendation_short": "Use tramadol label recommended age- or weight-specific dosing.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352444",
+        "implications": {
+            "CYP2D6": "Expected O-desmethyltramadol (active metabolite) formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "1.25"
+        },
+        "phenotypes": {
+            "CYP2D6": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "1.5"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Use tramadol label recommended age- or weight-specific dosing.",
+        "drugrecommendation_short": "Use tramadol label recommended age- or weight-specific dosing.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352445",
+        "implications": {
+            "CYP2D6": "Expected O-desmethyltramadol (active metabolite) formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "1.5"
+        },
+        "phenotypes": {
+            "CYP2D6": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "1.75"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Use tramadol label recommended age- or weight-specific dosing.",
+        "drugrecommendation_short": "Use tramadol label recommended age- or weight-specific dosing.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352446",
+        "implications": {
+            "CYP2D6": "Expected O-desmethyltramadol (active metabolite) formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "1.75"
+        },
+        "phenotypes": {
+            "CYP2D6": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "2"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Use tramadol label recommended age- or weight-specific dosing.",
+        "drugrecommendation_short": "Use tramadol label recommended age- or weight-specific dosing.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352447",
+        "implications": {
+            "CYP2D6": "Expected O-desmethyltramadol (active metabolite) formation"
+        },
+        "lookupkey": {
+            "CYP2D6": "2"
+        },
+        "phenotypes": {
+            "CYP2D6": "Normal Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22654"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "drugrecommendation_short": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352457",
+        "implications": {
+            "CYP2D6": "Increased formation of O-desmethyltramadol (active metabolite) leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22654"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22654.5"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "drugrecommendation_short": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352458",
+        "implications": {
+            "CYP2D6": "Increased formation of O-desmethyltramadol (active metabolite) leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22654.5"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22655"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "drugrecommendation_short": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352459",
+        "implications": {
+            "CYP2D6": "Increased formation of O-desmethyltramadol (active metabolite) leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22655"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    },
+    {
+        "activityscore": {
+            "CYP2D6": "\u22656"
+        },
+        "allelestatus": {},
+        "classification": "Strong",
+        "comments": null,
+        "drug": {
+            "name": "tramadol"
+        },
+        "drugid": "RxNorm:10689",
+        "drugrecommendation": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "drugrecommendation_short": "Avoid tramadol use because of potential for toxicity. If opioid use is warranted, consider a non-codeine opioid.",
+        "guideline": {
+            "name": "CYP2D6, OPRM1, COMT, and Opioids"
+        },
+        "guidelineid": "100416",
+        "id": "1352460",
+        "implications": {
+            "CYP2D6": "Increased formation of O-desmethyltramadol (active metabolite) leading to higher risk of toxicity"
+        },
+        "lookupkey": {
+            "CYP2D6": "\u22656"
+        },
+        "phenotypes": {
+            "CYP2D6": "Ultrarapid Metabolizer"
+        },
+        "population": "general",
+        "version": "1"
+    }
+]

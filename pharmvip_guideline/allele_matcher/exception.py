@@ -4,7 +4,7 @@ def cftr_exception(allele_definition, allele_matcher):
     ref_haplotype = f"{allele_definition['haplotypes'][0]['name']}"
     for i in range(len(allele_matcher["print_dip"])):
         if allele_matcher["print_dip"][i] != "No info" and allele_matcher["print_dip"][i] != "?/?":
-            if allele_matcher["print_dip"][i] == ref_haplotype:
+            if allele_matcher["print_dip"][i] == f"{ref_haplotype}/{ref_haplotype}":
                 allele_matcher["print_dip"][i] = "No CPIC variants found"
             elif allele_matcher["print_dip"][i].split("/")[0] == ref_haplotype or allele_matcher["print_dip"][i].split("/")[1] == ref_haplotype:
                 allele_matcher["print_dip"][i] = f"{allele_matcher['print_dip'][i].split('/')[1]} (heterozygous)" if allele_matcher["print_dip"][i].split("/")[0] == ref_haplotype else f"{allele_matcher['print_dip'][i].split('/')[0]} (heterozygous)"

@@ -1,0 +1,2105 @@
+[
+    {
+        "id": 779148,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "Reference",
+        "pharmvarid": null,
+        "reference": true,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779104,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779104,
+                    "version": 14,
+                    "name": "c.103T>C",
+                    "chromosomelocation": "g.38440802T>C",
+                    "genelocation": "g.12103T>C",
+                    "proteinlocation": "p.C35R",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922747",
+                    "position": 38440802
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779105,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779105,
+                    "version": 14,
+                    "name": "c.130C>T",
+                    "chromosomelocation": "g.38440829C>T",
+                    "genelocation": "g.12130C>T",
+                    "proteinlocation": "p.R44C",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922748",
+                    "position": 38440829
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779106,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779106,
+                    "version": 14,
+                    "name": "c.487C>T",
+                    "chromosomelocation": "g.38444211C>T",
+                    "genelocation": "g.15512C>T",
+                    "proteinlocation": "p.R163C",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192161",
+                    "position": 38444211
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779107,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779107,
+                    "version": 14,
+                    "name": "c.488G>T",
+                    "chromosomelocation": "g.38444212G>T",
+                    "genelocation": "g.15513G>T",
+                    "proteinlocation": "p.R163L",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922753",
+                    "position": 38444212
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779108,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779108,
+                    "version": 14,
+                    "name": "c.742G>C; c.742G>A",
+                    "chromosomelocation": "g.38446710G>C; g.38446710G>A",
+                    "genelocation": "g.18011G>C; g.18011G>A",
+                    "proteinlocation": "p.G248R",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs1801086",
+                    "position": 38446710
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779109,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779109,
+                    "version": 14,
+                    "name": "c.982C>T",
+                    "chromosomelocation": "g.38448673C>T",
+                    "genelocation": "g.19974C>T",
+                    "proteinlocation": "p.R328W",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922762",
+                    "position": 38448673
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779110,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779110,
+                    "version": 14,
+                    "name": "c.1021G>A; c.1021G>C",
+                    "chromosomelocation": "g.38448712G>A; g.38448712G>C",
+                    "genelocation": "g.20013G>A; g.20013G>C",
+                    "proteinlocation": "p.G341R",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs121918592",
+                    "position": 38448712
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779111,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779111,
+                    "version": 14,
+                    "name": "c.1201C>T",
+                    "chromosomelocation": "g.38451842C>T",
+                    "genelocation": "g.23143C>T",
+                    "proteinlocation": "p.R401C",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922764",
+                    "position": 38451842
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779112,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779112,
+                    "version": 14,
+                    "name": "c.1209C>G",
+                    "chromosomelocation": "g.38451850C>G",
+                    "genelocation": "g.23151C>G",
+                    "proteinlocation": "p.I403M",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192116",
+                    "position": 38451850
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779113,
+                "variantallele": "A",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779113,
+                    "version": 14,
+                    "name": "c.1565A>C",
+                    "chromosomelocation": "g.38455359A>C",
+                    "genelocation": "g.26660A>C",
+                    "proteinlocation": "p.Y522S",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192162",
+                    "position": 38455359
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779114,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779114,
+                    "version": 14,
+                    "name": "c.1589G>A",
+                    "chromosomelocation": "g.38455463G>A",
+                    "genelocation": "g.26764G>A",
+                    "proteinlocation": "p.R530H",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs111888148",
+                    "position": 38455463
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779115,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779115,
+                    "version": 14,
+                    "name": "c.1597C>T",
+                    "chromosomelocation": "g.38455471C>T",
+                    "genelocation": "g.26772C>T",
+                    "proteinlocation": "p.R533C",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922768",
+                    "position": 38455471
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779116,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779116,
+                    "version": 14,
+                    "name": "c.1598G>A",
+                    "chromosomelocation": "g.38455472G>A",
+                    "genelocation": "g.26773G>A",
+                    "proteinlocation": "p.R533H",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs144336148",
+                    "position": 38455472
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779117,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779117,
+                    "version": 14,
+                    "name": "c.1654C>T",
+                    "chromosomelocation": "g.38455528C>T",
+                    "genelocation": "g.26829C>T",
+                    "proteinlocation": "p.R552W",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922770",
+                    "position": 38455528
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779118,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779118,
+                    "version": 14,
+                    "name": "c.1840C>T",
+                    "chromosomelocation": "g.38457545C>T",
+                    "genelocation": "g.28846C>T",
+                    "proteinlocation": "p.R614C",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192172",
+                    "position": 38457545
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779119,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779119,
+                    "version": 14,
+                    "name": "c.1841G>T",
+                    "chromosomelocation": "g.38457546G>T",
+                    "genelocation": "g.28847G>T",
+                    "proteinlocation": "p.R614L",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922772",
+                    "position": 38457546
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779120,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779120,
+                    "version": 14,
+                    "name": "c.6487C>T",
+                    "chromosomelocation": "g.38494564C>T",
+                    "genelocation": "g.65865C>T",
+                    "proteinlocation": "p.R2163C",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192175",
+                    "position": 38494564
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779121,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779121,
+                    "version": 14,
+                    "name": "c.6488G>A",
+                    "chromosomelocation": "g.38494565G>A",
+                    "genelocation": "g.65866G>A",
+                    "proteinlocation": "p.R2163H",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192163",
+                    "position": 38494565
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779122,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779122,
+                    "version": 14,
+                    "name": "c.6502G>A",
+                    "chromosomelocation": "g.38494579G>A",
+                    "genelocation": "g.65880G>A",
+                    "proteinlocation": "p.V2168M",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192176",
+                    "position": 38494579
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779123,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779123,
+                    "version": 14,
+                    "name": "c.6617C>G; c.6617C>T",
+                    "chromosomelocation": "g.38496283C>G; g.38496283C>T",
+                    "genelocation": "g.67584C>G; g.67584C>T",
+                    "proteinlocation": "p.T2206R; p.T2206M",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192177",
+                    "position": 38496283
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779124,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779124,
+                    "version": 14,
+                    "name": "c.7007G>A",
+                    "chromosomelocation": "g.38499223G>A",
+                    "genelocation": "g.70524G>A",
+                    "proteinlocation": "p.R2336H",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs112563513",
+                    "position": 38499223
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779125,
+                "variantallele": "GGA",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779125,
+                    "version": 14,
+                    "name": "7042_7044delGAG",
+                    "chromosomelocation": "g.38499645_38499647delGGA",
+                    "genelocation": "g.70947_70949delGAG",
+                    "proteinlocation": "p.E2348del",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs121918596",
+                    "position": 38499646
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779126,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779126,
+                    "version": 14,
+                    "name": "c.7048G>A",
+                    "chromosomelocation": "g.38499655G>A",
+                    "genelocation": "g.70956G>A",
+                    "proteinlocation": "p.A2350T",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922802",
+                    "position": 38499655
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779127,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779127,
+                    "version": 14,
+                    "name": "c.7063C>T",
+                    "chromosomelocation": "g.38499670C>T",
+                    "genelocation": "g.70971C>T",
+                    "proteinlocation": "p.R2355W",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922803",
+                    "position": 38499670
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779128,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779128,
+                    "version": 14,
+                    "name": "c.7124G>C",
+                    "chromosomelocation": "g.38499731G>C",
+                    "genelocation": "g.71032G>C",
+                    "proteinlocation": "p.G2375A",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922807",
+                    "position": 38499731
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779129,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779129,
+                    "version": 14,
+                    "name": "c.7282G>A",
+                    "chromosomelocation": "g.38499975G>A",
+                    "genelocation": "g.71276G>A",
+                    "proteinlocation": "p.A2428T",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922809",
+                    "position": 38499975
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779130,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779130,
+                    "version": 14,
+                    "name": "c.7300G>A",
+                    "chromosomelocation": "g.38499993G>A",
+                    "genelocation": "g.71294G>A",
+                    "proteinlocation": "p.G2434R",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs121918593",
+                    "position": 38499993
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779131,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779131,
+                    "version": 14,
+                    "name": "c.7304G>A",
+                    "chromosomelocation": "g.38499997G>A",
+                    "genelocation": "g.71298G>A",
+                    "proteinlocation": "p.R2435H",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs28933396",
+                    "position": 38499997
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779132,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779132,
+                    "version": 14,
+                    "name": "c.7354C>T",
+                    "chromosomelocation": "g.38500636C>T",
+                    "genelocation": "g.71937C>T",
+                    "proteinlocation": "p.R2452W",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192124",
+                    "position": 38500636
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779133,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779133,
+                    "version": 14,
+                    "name": "c.7360C>T",
+                    "chromosomelocation": "g.38500642C>T",
+                    "genelocation": "g.71943C>T",
+                    "proteinlocation": "p.R2454C",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922816",
+                    "position": 38500642
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779134,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779134,
+                    "version": 14,
+                    "name": "c.7361G>A",
+                    "chromosomelocation": "g.38500643G>A",
+                    "genelocation": "g.71944G>A",
+                    "proteinlocation": "p.R2454H",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192122",
+                    "position": 38500643
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779135,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779135,
+                    "version": 14,
+                    "name": "c.7372C>T",
+                    "chromosomelocation": "g.38500654C>T",
+                    "genelocation": "g.71955C>T",
+                    "proteinlocation": "p.R2458C",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs28933397",
+                    "position": 38500654
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779136,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779136,
+                    "version": 14,
+                    "name": "c.7373G>A",
+                    "chromosomelocation": "g.38500655G>A",
+                    "genelocation": "g.71956G>A",
+                    "proteinlocation": "p.R2458H",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs121918594",
+                    "position": 38500655
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779137,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779137,
+                    "version": 14,
+                    "name": "c.7522C>T; c.7522C>G",
+                    "chromosomelocation": "g.38500898C>T; g.38500898C>G",
+                    "genelocation": "g.72199C>T; g.72199C>G",
+                    "proteinlocation": "p.R2508C; p.R2508G",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192178",
+                    "position": 38500898
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779138,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779138,
+                    "version": 14,
+                    "name": "c.7523G>A",
+                    "chromosomelocation": "g.38500899G>A",
+                    "genelocation": "g.72200G>A",
+                    "proteinlocation": "p.R2508H",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922818",
+                    "position": 38500899
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779139,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779139,
+                    "version": 14,
+                    "name": "c.9310G>A",
+                    "chromosomelocation": "g.38512321G>A",
+                    "genelocation": "g.83622G>A",
+                    "proteinlocation": "p.E3104K",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922832",
+                    "position": 38512321
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779140,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779140,
+                    "version": 14,
+                    "name": "c.11969G>T",
+                    "chromosomelocation": "g.38543832G>T",
+                    "genelocation": "g.115133G>T",
+                    "proteinlocation": "p.G3990V",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922843",
+                    "position": 38543832
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779141,
+                "variantallele": "A",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779141,
+                    "version": 14,
+                    "name": "c.14387A>G",
+                    "chromosomelocation": "g.38580004A>G",
+                    "genelocation": "g.151305A>G",
+                    "proteinlocation": "p.Y4796C",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192167",
+                    "position": 38580004
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779142,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779142,
+                    "version": 14,
+                    "name": "c.14477C>T",
+                    "chromosomelocation": "g.38580094C>T",
+                    "genelocation": "g.151395C>T",
+                    "proteinlocation": "p.T4826I",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs121918595",
+                    "position": 38580094
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779143,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779143,
+                    "version": 14,
+                    "name": "c.14497C>T",
+                    "chromosomelocation": "g.38580114C>T",
+                    "genelocation": "g.151415C>T",
+                    "proteinlocation": "p.H4833Y",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922876",
+                    "position": 38580114
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779144,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779144,
+                    "version": 14,
+                    "name": "c.14512C>G",
+                    "chromosomelocation": "g.38580370C>G",
+                    "genelocation": "g.151671C>G",
+                    "proteinlocation": "p.L4838V",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922878",
+                    "position": 38580370
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779145,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779145,
+                    "version": 14,
+                    "name": "c.14545G>A",
+                    "chromosomelocation": "g.38580403G>A",
+                    "genelocation": "g.151704G>A",
+                    "proteinlocation": "p.V4849I",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192168",
+                    "position": 38580403
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779146,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779146,
+                    "version": 14,
+                    "name": "c.14582G>A",
+                    "chromosomelocation": "g.38580440G>A",
+                    "genelocation": "g.151741G>A",
+                    "proteinlocation": "p.R4861H",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs63749869",
+                    "position": 38580440
+                }
+            },
+            {
+                "alleledefinitionid": 779148,
+                "locationid": 779147,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779147,
+                    "version": 14,
+                    "name": "c.14693T>C",
+                    "chromosomelocation": "g.38584989T>C",
+                    "genelocation": "g.156290T>C",
+                    "proteinlocation": "p.I4898T",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192170",
+                    "position": 38584989
+                }
+            }
+        ]
+    },
+    {
+        "id": 779150,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.103T>C",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779150,
+                "locationid": 779104,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779104,
+                    "version": 14,
+                    "name": "c.103T>C",
+                    "chromosomelocation": "g.38440802T>C",
+                    "genelocation": "g.12103T>C",
+                    "proteinlocation": "p.C35R",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922747",
+                    "position": 38440802
+                }
+            }
+        ]
+    },
+    {
+        "id": 779152,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.130C>T",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779152,
+                "locationid": 779105,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779105,
+                    "version": 14,
+                    "name": "c.130C>T",
+                    "chromosomelocation": "g.38440829C>T",
+                    "genelocation": "g.12130C>T",
+                    "proteinlocation": "p.R44C",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922748",
+                    "position": 38440829
+                }
+            }
+        ]
+    },
+    {
+        "id": 779154,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.487C>T",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779154,
+                "locationid": 779106,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779106,
+                    "version": 14,
+                    "name": "c.487C>T",
+                    "chromosomelocation": "g.38444211C>T",
+                    "genelocation": "g.15512C>T",
+                    "proteinlocation": "p.R163C",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192161",
+                    "position": 38444211
+                }
+            }
+        ]
+    },
+    {
+        "id": 779158,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.742G>C",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779158,
+                "locationid": 779108,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779108,
+                    "version": 14,
+                    "name": "c.742G>C; c.742G>A",
+                    "chromosomelocation": "g.38446710G>C; g.38446710G>A",
+                    "genelocation": "g.18011G>C; g.18011G>A",
+                    "proteinlocation": "p.G248R",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs1801086",
+                    "position": 38446710
+                }
+            }
+        ]
+    },
+    {
+        "id": 779160,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.742G>A",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779160,
+                "locationid": 779108,
+                "variantallele": "A",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779108,
+                    "version": 14,
+                    "name": "c.742G>C; c.742G>A",
+                    "chromosomelocation": "g.38446710G>C; g.38446710G>A",
+                    "genelocation": "g.18011G>C; g.18011G>A",
+                    "proteinlocation": "p.G248R",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs1801086",
+                    "position": 38446710
+                }
+            }
+        ]
+    },
+    {
+        "id": 779162,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.982C>T",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779162,
+                "locationid": 779109,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779109,
+                    "version": 14,
+                    "name": "c.982C>T",
+                    "chromosomelocation": "g.38448673C>T",
+                    "genelocation": "g.19974C>T",
+                    "proteinlocation": "p.R328W",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922762",
+                    "position": 38448673
+                }
+            }
+        ]
+    },
+    {
+        "id": 779164,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.1021G>A",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779164,
+                "locationid": 779110,
+                "variantallele": "A",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779110,
+                    "version": 14,
+                    "name": "c.1021G>A; c.1021G>C",
+                    "chromosomelocation": "g.38448712G>A; g.38448712G>C",
+                    "genelocation": "g.20013G>A; g.20013G>C",
+                    "proteinlocation": "p.G341R",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs121918592",
+                    "position": 38448712
+                }
+            }
+        ]
+    },
+    {
+        "id": 779166,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.1021G>C",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779166,
+                "locationid": 779110,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779110,
+                    "version": 14,
+                    "name": "c.1021G>A; c.1021G>C",
+                    "chromosomelocation": "g.38448712G>A; g.38448712G>C",
+                    "genelocation": "g.20013G>A; g.20013G>C",
+                    "proteinlocation": "p.G341R",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs121918592",
+                    "position": 38448712
+                }
+            }
+        ]
+    },
+    {
+        "id": 779168,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.1201C>T",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779168,
+                "locationid": 779111,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779111,
+                    "version": 14,
+                    "name": "c.1201C>T",
+                    "chromosomelocation": "g.38451842C>T",
+                    "genelocation": "g.23143C>T",
+                    "proteinlocation": "p.R401C",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922764",
+                    "position": 38451842
+                }
+            }
+        ]
+    },
+    {
+        "id": 779170,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.1209C>G",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779170,
+                "locationid": 779112,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779112,
+                    "version": 14,
+                    "name": "c.1209C>G",
+                    "chromosomelocation": "g.38451850C>G",
+                    "genelocation": "g.23151C>G",
+                    "proteinlocation": "p.I403M",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192116",
+                    "position": 38451850
+                }
+            }
+        ]
+    },
+    {
+        "id": 779172,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.1565A>C",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779172,
+                "locationid": 779113,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779113,
+                    "version": 14,
+                    "name": "c.1565A>C",
+                    "chromosomelocation": "g.38455359A>C",
+                    "genelocation": "g.26660A>C",
+                    "proteinlocation": "p.Y522S",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192162",
+                    "position": 38455359
+                }
+            }
+        ]
+    },
+    {
+        "id": 779174,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.1589G>A",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779174,
+                "locationid": 779114,
+                "variantallele": "A",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779114,
+                    "version": 14,
+                    "name": "c.1589G>A",
+                    "chromosomelocation": "g.38455463G>A",
+                    "genelocation": "g.26764G>A",
+                    "proteinlocation": "p.R530H",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs111888148",
+                    "position": 38455463
+                }
+            }
+        ]
+    },
+    {
+        "id": 779176,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.1597C>T",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779176,
+                "locationid": 779115,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779115,
+                    "version": 14,
+                    "name": "c.1597C>T",
+                    "chromosomelocation": "g.38455471C>T",
+                    "genelocation": "g.26772C>T",
+                    "proteinlocation": "p.R533C",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922768",
+                    "position": 38455471
+                }
+            }
+        ]
+    },
+    {
+        "id": 779180,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.1654C>T",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779180,
+                "locationid": 779117,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779117,
+                    "version": 14,
+                    "name": "c.1654C>T",
+                    "chromosomelocation": "g.38455528C>T",
+                    "genelocation": "g.26829C>T",
+                    "proteinlocation": "p.R552W",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922770",
+                    "position": 38455528
+                }
+            }
+        ]
+    },
+    {
+        "id": 779182,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.1840C>T",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779182,
+                "locationid": 779118,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779118,
+                    "version": 14,
+                    "name": "c.1840C>T",
+                    "chromosomelocation": "g.38457545C>T",
+                    "genelocation": "g.28846C>T",
+                    "proteinlocation": "p.R614C",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192172",
+                    "position": 38457545
+                }
+            }
+        ]
+    },
+    {
+        "id": 779184,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.1841G>T",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779184,
+                "locationid": 779119,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779119,
+                    "version": 14,
+                    "name": "c.1841G>T",
+                    "chromosomelocation": "g.38457546G>T",
+                    "genelocation": "g.28847G>T",
+                    "proteinlocation": "p.R614L",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922772",
+                    "position": 38457546
+                }
+            }
+        ]
+    },
+    {
+        "id": 779186,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.6487C>T",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779186,
+                "locationid": 779120,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779120,
+                    "version": 14,
+                    "name": "c.6487C>T",
+                    "chromosomelocation": "g.38494564C>T",
+                    "genelocation": "g.65865C>T",
+                    "proteinlocation": "p.R2163C",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192175",
+                    "position": 38494564
+                }
+            }
+        ]
+    },
+    {
+        "id": 779188,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.6488G>A",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779188,
+                "locationid": 779121,
+                "variantallele": "A",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779121,
+                    "version": 14,
+                    "name": "c.6488G>A",
+                    "chromosomelocation": "g.38494565G>A",
+                    "genelocation": "g.65866G>A",
+                    "proteinlocation": "p.R2163H",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192163",
+                    "position": 38494565
+                }
+            }
+        ]
+    },
+    {
+        "id": 779190,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.6502G>A",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779190,
+                "locationid": 779122,
+                "variantallele": "A",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779122,
+                    "version": 14,
+                    "name": "c.6502G>A",
+                    "chromosomelocation": "g.38494579G>A",
+                    "genelocation": "g.65880G>A",
+                    "proteinlocation": "p.V2168M",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192176",
+                    "position": 38494579
+                }
+            }
+        ]
+    },
+    {
+        "id": 779192,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.6617C>G",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779192,
+                "locationid": 779123,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779123,
+                    "version": 14,
+                    "name": "c.6617C>G; c.6617C>T",
+                    "chromosomelocation": "g.38496283C>G; g.38496283C>T",
+                    "genelocation": "g.67584C>G; g.67584C>T",
+                    "proteinlocation": "p.T2206R; p.T2206M",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192177",
+                    "position": 38496283
+                }
+            }
+        ]
+    },
+    {
+        "id": 779194,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.6617C>T",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779194,
+                "locationid": 779123,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779123,
+                    "version": 14,
+                    "name": "c.6617C>G; c.6617C>T",
+                    "chromosomelocation": "g.38496283C>G; g.38496283C>T",
+                    "genelocation": "g.67584C>G; g.67584C>T",
+                    "proteinlocation": "p.T2206R; p.T2206M",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192177",
+                    "position": 38496283
+                }
+            }
+        ]
+    },
+    {
+        "id": 779196,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.7007G>A",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779196,
+                "locationid": 779124,
+                "variantallele": "A",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779124,
+                    "version": 14,
+                    "name": "c.7007G>A",
+                    "chromosomelocation": "g.38499223G>A",
+                    "genelocation": "g.70524G>A",
+                    "proteinlocation": "p.R2336H",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs112563513",
+                    "position": 38499223
+                }
+            }
+        ]
+    },
+    {
+        "id": 779198,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.7042_7044delGAG",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779198,
+                "locationid": 779125,
+                "variantallele": "delGGA",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779125,
+                    "version": 14,
+                    "name": "7042_7044delGAG",
+                    "chromosomelocation": "g.38499645_38499647delGGA",
+                    "genelocation": "g.70947_70949delGAG",
+                    "proteinlocation": "p.E2348del",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs121918596",
+                    "position": 38499646
+                }
+            }
+        ]
+    },
+    {
+        "id": 779200,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.7048G>A",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779200,
+                "locationid": 779126,
+                "variantallele": "A",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779126,
+                    "version": 14,
+                    "name": "c.7048G>A",
+                    "chromosomelocation": "g.38499655G>A",
+                    "genelocation": "g.70956G>A",
+                    "proteinlocation": "p.A2350T",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922802",
+                    "position": 38499655
+                }
+            }
+        ]
+    },
+    {
+        "id": 779202,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.7063C>T",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779202,
+                "locationid": 779127,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779127,
+                    "version": 14,
+                    "name": "c.7063C>T",
+                    "chromosomelocation": "g.38499670C>T",
+                    "genelocation": "g.70971C>T",
+                    "proteinlocation": "p.R2355W",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922803",
+                    "position": 38499670
+                }
+            }
+        ]
+    },
+    {
+        "id": 779204,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.7124G>C",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779204,
+                "locationid": 779128,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779128,
+                    "version": 14,
+                    "name": "c.7124G>C",
+                    "chromosomelocation": "g.38499731G>C",
+                    "genelocation": "g.71032G>C",
+                    "proteinlocation": "p.G2375A",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922807",
+                    "position": 38499731
+                }
+            }
+        ]
+    },
+    {
+        "id": 779206,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.7282G>A",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779206,
+                "locationid": 779129,
+                "variantallele": "A",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779129,
+                    "version": 14,
+                    "name": "c.7282G>A",
+                    "chromosomelocation": "g.38499975G>A",
+                    "genelocation": "g.71276G>A",
+                    "proteinlocation": "p.A2428T",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922809",
+                    "position": 38499975
+                }
+            }
+        ]
+    },
+    {
+        "id": 779210,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.7304G>A",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779210,
+                "locationid": 779131,
+                "variantallele": "A",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779131,
+                    "version": 14,
+                    "name": "c.7304G>A",
+                    "chromosomelocation": "g.38499997G>A",
+                    "genelocation": "g.71298G>A",
+                    "proteinlocation": "p.R2435H",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs28933396",
+                    "position": 38499997
+                }
+            }
+        ]
+    },
+    {
+        "id": 779212,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.7354C>T",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779212,
+                "locationid": 779132,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779132,
+                    "version": 14,
+                    "name": "c.7354C>T",
+                    "chromosomelocation": "g.38500636C>T",
+                    "genelocation": "g.71937C>T",
+                    "proteinlocation": "p.R2452W",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192124",
+                    "position": 38500636
+                }
+            }
+        ]
+    },
+    {
+        "id": 779214,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.7360C>T",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779214,
+                "locationid": 779133,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779133,
+                    "version": 14,
+                    "name": "c.7360C>T",
+                    "chromosomelocation": "g.38500642C>T",
+                    "genelocation": "g.71943C>T",
+                    "proteinlocation": "p.R2454C",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922816",
+                    "position": 38500642
+                }
+            }
+        ]
+    },
+    {
+        "id": 779216,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.7361G>A",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779216,
+                "locationid": 779134,
+                "variantallele": "A",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779134,
+                    "version": 14,
+                    "name": "c.7361G>A",
+                    "chromosomelocation": "g.38500643G>A",
+                    "genelocation": "g.71944G>A",
+                    "proteinlocation": "p.R2454H",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192122",
+                    "position": 38500643
+                }
+            }
+        ]
+    },
+    {
+        "id": 779218,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.7372C>T",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779218,
+                "locationid": 779135,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779135,
+                    "version": 14,
+                    "name": "c.7372C>T",
+                    "chromosomelocation": "g.38500654C>T",
+                    "genelocation": "g.71955C>T",
+                    "proteinlocation": "p.R2458C",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs28933397",
+                    "position": 38500654
+                }
+            }
+        ]
+    },
+    {
+        "id": 779220,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.7373G>A",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779220,
+                "locationid": 779136,
+                "variantallele": "A",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779136,
+                    "version": 14,
+                    "name": "c.7373G>A",
+                    "chromosomelocation": "g.38500655G>A",
+                    "genelocation": "g.71956G>A",
+                    "proteinlocation": "p.R2458H",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs121918594",
+                    "position": 38500655
+                }
+            }
+        ]
+    },
+    {
+        "id": 779222,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.7522C>T",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779222,
+                "locationid": 779137,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779137,
+                    "version": 14,
+                    "name": "c.7522C>T; c.7522C>G",
+                    "chromosomelocation": "g.38500898C>T; g.38500898C>G",
+                    "genelocation": "g.72199C>T; g.72199C>G",
+                    "proteinlocation": "p.R2508C; p.R2508G",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192178",
+                    "position": 38500898
+                }
+            }
+        ]
+    },
+    {
+        "id": 779224,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.7522C>G",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779224,
+                "locationid": 779137,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779137,
+                    "version": 14,
+                    "name": "c.7522C>T; c.7522C>G",
+                    "chromosomelocation": "g.38500898C>T; g.38500898C>G",
+                    "genelocation": "g.72199C>T; g.72199C>G",
+                    "proteinlocation": "p.R2508C; p.R2508G",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192178",
+                    "position": 38500898
+                }
+            }
+        ]
+    },
+    {
+        "id": 779226,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.7523G>A",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779226,
+                "locationid": 779138,
+                "variantallele": "A",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779138,
+                    "version": 14,
+                    "name": "c.7523G>A",
+                    "chromosomelocation": "g.38500899G>A",
+                    "genelocation": "g.72200G>A",
+                    "proteinlocation": "p.R2508H",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922818",
+                    "position": 38500899
+                }
+            }
+        ]
+    },
+    {
+        "id": 779228,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.9310G>A",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779228,
+                "locationid": 779139,
+                "variantallele": "A",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779139,
+                    "version": 14,
+                    "name": "c.9310G>A",
+                    "chromosomelocation": "g.38512321G>A",
+                    "genelocation": "g.83622G>A",
+                    "proteinlocation": "p.E3104K",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922832",
+                    "position": 38512321
+                }
+            }
+        ]
+    },
+    {
+        "id": 779230,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.11969G>T",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779230,
+                "locationid": 779140,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779140,
+                    "version": 14,
+                    "name": "c.11969G>T",
+                    "chromosomelocation": "g.38543832G>T",
+                    "genelocation": "g.115133G>T",
+                    "proteinlocation": "p.G3990V",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922843",
+                    "position": 38543832
+                }
+            }
+        ]
+    },
+    {
+        "id": 779232,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.14387A>G",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779232,
+                "locationid": 779141,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779141,
+                    "version": 14,
+                    "name": "c.14387A>G",
+                    "chromosomelocation": "g.38580004A>G",
+                    "genelocation": "g.151305A>G",
+                    "proteinlocation": "p.Y4796C",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192167",
+                    "position": 38580004
+                }
+            }
+        ]
+    },
+    {
+        "id": 779234,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.14477C>T",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779234,
+                "locationid": 779142,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779142,
+                    "version": 14,
+                    "name": "c.14477C>T",
+                    "chromosomelocation": "g.38580094C>T",
+                    "genelocation": "g.151395C>T",
+                    "proteinlocation": "p.T4826I",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs121918595",
+                    "position": 38580094
+                }
+            }
+        ]
+    },
+    {
+        "id": 779236,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.14497C>T",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779236,
+                "locationid": 779143,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779143,
+                    "version": 14,
+                    "name": "c.14497C>T",
+                    "chromosomelocation": "g.38580114C>T",
+                    "genelocation": "g.151415C>T",
+                    "proteinlocation": "p.H4833Y",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922876",
+                    "position": 38580114
+                }
+            }
+        ]
+    },
+    {
+        "id": 779240,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.14545G>A",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779240,
+                "locationid": 779145,
+                "variantallele": "A",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779145,
+                    "version": 14,
+                    "name": "c.14545G>A",
+                    "chromosomelocation": "g.38580403G>A",
+                    "genelocation": "g.151704G>A",
+                    "proteinlocation": "p.V4849I",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192168",
+                    "position": 38580403
+                }
+            }
+        ]
+    },
+    {
+        "id": 779242,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.14582G>A",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779242,
+                "locationid": 779146,
+                "variantallele": "A",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779146,
+                    "version": 14,
+                    "name": "c.14582G>A",
+                    "chromosomelocation": "g.38580440G>A",
+                    "genelocation": "g.151741G>A",
+                    "proteinlocation": "p.R4861H",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs63749869",
+                    "position": 38580440
+                }
+            }
+        ]
+    },
+    {
+        "id": 779244,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.14693T>C",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779244,
+                "locationid": 779147,
+                "variantallele": "C",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779147,
+                    "version": 14,
+                    "name": "c.14693T>C",
+                    "chromosomelocation": "g.38584989T>C",
+                    "genelocation": "g.156290T>C",
+                    "proteinlocation": "p.I4898T",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs118192170",
+                    "position": 38584989
+                }
+            }
+        ]
+    },
+    {
+        "id": 779156,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.488G>T",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779156,
+                "locationid": 779107,
+                "variantallele": "T",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779107,
+                    "version": 14,
+                    "name": "c.488G>T",
+                    "chromosomelocation": "g.38444212G>T",
+                    "genelocation": "g.15513G>T",
+                    "proteinlocation": "p.R163L",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922753",
+                    "position": 38444212
+                }
+            }
+        ]
+    },
+    {
+        "id": 779178,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.1598G>A",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779178,
+                "locationid": 779116,
+                "variantallele": "A",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779116,
+                    "version": 14,
+                    "name": "c.1598G>A",
+                    "chromosomelocation": "g.38455472G>A",
+                    "genelocation": "g.26773G>A",
+                    "proteinlocation": "p.R533H",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs144336148",
+                    "position": 38455472
+                }
+            }
+        ]
+    },
+    {
+        "id": 779208,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.7300G>A",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779208,
+                "locationid": 779130,
+                "variantallele": "A",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779130,
+                    "version": 14,
+                    "name": "c.7300G>A",
+                    "chromosomelocation": "g.38499993G>A",
+                    "genelocation": "g.71294G>A",
+                    "proteinlocation": "p.G2434R",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs121918593",
+                    "position": 38499993
+                }
+            }
+        ]
+    },
+    {
+        "id": 779238,
+        "version": 13,
+        "genesymbol": "RYR1",
+        "name": "c.14512C>G",
+        "pharmvarid": null,
+        "reference": false,
+        "structuralvariation": false,
+        "allele_location_value": [
+            {
+                "alleledefinitionid": 779238,
+                "locationid": 779144,
+                "variantallele": "G",
+                "version": 1,
+                "sequence_location": {
+                    "id": 779144,
+                    "version": 14,
+                    "name": "c.14512C>G",
+                    "chromosomelocation": "g.38580370C>G",
+                    "genelocation": "g.151671C>G",
+                    "proteinlocation": "p.L4838V",
+                    "genesymbol": "RYR1",
+                    "dbsnpid": "rs193922878",
+                    "position": 38580370
+                }
+            }
+        ]
+    }
+]

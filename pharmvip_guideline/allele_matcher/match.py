@@ -1,24 +1,28 @@
 import re
+import copy
 
 def create_hap_regex(variants):
     hap1_regex = []
     hap2_regex = []
     for variant in variants:
-        if variant["gt_phases"] == ".":
-            if variant["hgvs_type"] != "SNP":
+        _variant = copy.deepcopy(variant)
+        _variant['allele1_convert'] = _variant['allele1_convert'].replace("(", "\(").replace(")", "\)")
+        _variant['allele2_convert'] = _variant['allele2_convert'].replace("(", "\(").replace(")", "\)")
+        if _variant["gt_phases"] == ".":
+            if _variant["hgvs_type"] != "SNP":
                 hap1_regex.append(f"(.+)")
                 hap2_regex.append(f"(.+)")
             else:
                 hap1_regex.append(f"(.)")
                 hap2_regex.append(f"(.)")
-        elif variant["gt_phases"] == True:
-            hap1_regex.append(f"({variant['allele1_convert']})")
-            hap2_regex.append(f"({variant['allele2_convert']})")
-        elif variant["gt_phases"] == False:
-            hap1_regex.append(f"({variant['allele1_convert']}|{variant['allele2_convert']})")
-            hap2_regex.append(f"({variant['allele1_convert']}|{variant['allele2_convert']})")
+        elif _variant["gt_phases"] == True:
+            hap1_regex.append(f"({_variant['allele1_convert']})")
+            hap2_regex.append(f"({_variant['allele2_convert']})")
+        elif _variant["gt_phases"] == False:
+            hap1_regex.append(f"({_variant['allele1_convert']}|{_variant['allele2_convert']})")
+            hap2_regex.append(f"({_variant['allele1_convert']}|{_variant['allele2_convert']})")
         else:
-            print(f"error create hap regex with: {variant['genotype_phases']}")
+            print(f"error create hap regex with: {_variant['genotype_phases']}")
             exit()
     return f"^{'_'.join(hap1_regex)}$".replace("*", "Z"), f"^{'_'.join(hap2_regex)}$".replace("*", "Z")
 
@@ -41,24 +45,57 @@ def extract_iupac(name_haplotypes):
         "N": ["A", "C", "G", "T"],
         "-": ["del"]
     }
-    for name_haplotype in name_haplotypes:
-        _name_haplotypes = name_haplotypes
-        for iupac_code in iupac:
-            if iupac_code != "A" and iupac_code != "C" and iupac_code != "G" and iupac_code != "T":
-                if iupac_code in name_haplotype:
-                    __name_haplotypes = []
-                    for iupac_code_base in iupac[iupac_code]:
-                        for name_allele in _name_haplotypes:
-                            __name_haplotypes.append(name_allele.replace(iupac_code, iupac_code_base))
-                    _name_haplotypes = __name_haplotypes
-        name_haplotypes = _name_haplotypes
-    return name_haplotypes
+
+    alleles_haplotypes = name_haplotypes.split("_")
+    alleles_haplotypes_extract_iupac = []
+    for i in range(len(alleles_haplotypes)):
+        if alleles_haplotypes[i] in iupac and len(iupac[alleles_haplotypes[i]]) > 1:
+            if not alleles_haplotypes_extract_iupac:
+                _ = []
+                for iupac_allele in iupac[alleles_haplotypes[i]]:
+                    alleles_haplotypes_copy = copy.deepcopy(alleles_haplotypes)
+                    alleles_haplotypes_copy[i] = iupac_allele
+                    _.append(alleles_haplotypes_copy)
+                alleles_haplotypes_extract_iupac = _
+            else:
+                _ = []
+                for j in range(len(alleles_haplotypes_extract_iupac)):
+                    for iupac_allele in iupac[alleles_haplotypes[i]]:
+                        alleles_haplotypes_extract_iupac_copy = copy.deepcopy(alleles_haplotypes_extract_iupac[j])
+                        alleles_haplotypes_extract_iupac_copy[i] = iupac_allele
+                        _.append(alleles_haplotypes_extract_iupac_copy)
+                alleles_haplotypes_extract_iupac = _
+
+    if not alleles_haplotypes_extract_iupac:
+        return ["_".join(alleles_haplotypes)]
+    else:
+        for i in range(len(alleles_haplotypes_extract_iupac)):
+            alleles_haplotypes_extract_iupac[i] = "_".join(alleles_haplotypes_extract_iupac[i])
+        return alleles_haplotypes_extract_iupac
 
 def create_name_haplotypes(variants):
     name_allele = []
     for variant in variants:
         name_allele.append(variant["allele"])
-    return extract_iupac([f"{'_'.join(name_allele)}"])
+    return extract_iupac(f"{'_'.join(name_allele)}")
+
+def  match_candidate(haplotype:dict, allele_matcher:dict, hap1_var, hap2_var):
+    check_ref = [i['is_ref'] for i in haplotype['variants']]
+    name = haplotype['name']
+    if True in check_ref:
+        hap_can_regx = []
+        for i, bol in enumerate(check_ref):
+            if not(bol):
+                gt = haplotype['variants'][i]['allele']
+                gt = f'({gt})'
+            else:
+                gt = '(.)'
+            hap_can_regx.append(gt) 
+        hap_can_regx = '_'.join(hap_can_regx)
+        if re.match(hap_can_regx,hap1_var):
+            allele_matcher.setdefault('hap1_can',[]).append(name)
+        if re.match(hap_can_regx,hap2_var):
+            allele_matcher.setdefault('hap2_can',[]).append(name)
 
 def handle_missing_phase(allele_definition, allele_matcher) :
     guide_dip = None
@@ -79,10 +116,16 @@ def handle_missing_phase(allele_definition, allele_matcher) :
 def handle_true_phase(allele_definition, allele_matcher) :
     hap1_regex, hap2_regex = create_hap_regex(allele_matcher["variants"])
 
+    hap1_var = [i['allele1_convert'] for i in allele_matcher["variants"]]
+    hap2_var = [i['allele2_convert'] for i in allele_matcher["variants"]]
+    hap1_var = '_'.join(hap1_var)
+    hap2_var = '_'.join(hap2_var)
+
     hap1_match = []
     hap2_match = []
     for haplotype in allele_definition["haplotypes"]:
         name_haplotypes = create_name_haplotypes(haplotype["variants"])
+        match_candidate(haplotype, allele_matcher, hap1_var, hap2_var)
         for name_haplotype in name_haplotypes:
             if re.match(hap1_regex, name_haplotype):
                 if haplotype["name"] not in hap1_match:
@@ -90,7 +133,7 @@ def handle_true_phase(allele_definition, allele_matcher) :
             if re.match(hap2_regex, name_haplotype):
                 if haplotype["name"] not in hap2_match:
                     hap2_match.append(haplotype["name"])
-
+    
     guide_dip = []
     print_dip = []
     if not hap1_match and not hap2_match:
@@ -158,12 +201,19 @@ def handle_true_phase(allele_definition, allele_matcher) :
 
 def handle_false_phase(allele_definition, allele_matcher) :
     hap1_regex, hap2_regex = create_hap_regex(allele_matcher["variants"])
+
+    hap1_var = [i['allele1_convert'] for i in allele_matcher["variants"]]
+    hap2_var = [i['allele2_convert'] for i in allele_matcher["variants"]]
+    hap1_var = '_'.join(hap1_var)
+    hap2_var = '_'.join(hap2_var)
+
     assert hap1_regex == hap2_regex
     hap_regex = hap1_regex = hap2_regex
 
     hap_match = []
     for haplotype in allele_definition["haplotypes"]:
         name_haplotypes = create_name_haplotypes(haplotype["variants"])
+        match_candidate(haplotype, allele_matcher, hap1_var, hap2_var)
         for name_haplotype in name_haplotypes:
             if re.match(hap_regex, name_haplotype):
                 if haplotype["name"] not in hap_match:
@@ -188,16 +238,19 @@ def handle_false_phase(allele_definition, allele_matcher) :
                     hap1_match_name = haplotype["name"]
                     hap1_match_name_allele_invert = []
                     for i in range(len(haplotype["variants"])):
-                        if re.match(r"^(\.+)$", allele_matcher["variants"][i]["allele1_convert"]) or re.match(r"^(\.+)$", allele_matcher["variants"][i]["allele2_convert"]):
-                            if allele_matcher["variants"][i]["hgvs_type"] != "SNP":
+                        _allele_matcher = copy.deepcopy(allele_matcher)
+                        _allele_matcher["variants"][i]["allele1_convert"] = _allele_matcher["variants"][i]["allele1_convert"].replace("(", "\(").replace(")", "\)")
+                        _allele_matcher["variants"][i]["allele2_convert"] = _allele_matcher["variants"][i]["allele2_convert"].replace("(", "\(").replace(")", "\)")
+                        if re.match(r"^(\.+)$", _allele_matcher["variants"][i]["allele1_convert"]) or re.match(r"^(\.+)$", _allele_matcher["variants"][i]["allele2_convert"]):
+                            if _allele_matcher["variants"][i]["hgvs_type"] != "SNP":
                                 hap1_match_name_allele_invert.append("(.+)")
                             else:
                                 hap1_match_name_allele_invert.append("(.)")
                         else:
-                            if haplotype["variants"][i]["allele"] != allele_matcher["variants"][i]["allele1_convert"]:
-                                hap1_match_name_allele_invert.append(f"({allele_matcher['variants'][i]['allele1_convert']})")
-                            elif haplotype["variants"][i]["allele"] != allele_matcher["variants"][i]["allele2_convert"]:
-                                hap1_match_name_allele_invert.append(f"({allele_matcher['variants'][i]['allele2_convert']})")
+                            if haplotype["variants"][i]["allele"].replace("(", "\(").replace(")", "\)") != _allele_matcher["variants"][i]["allele1_convert"]:
+                                hap1_match_name_allele_invert.append(f"({_allele_matcher['variants'][i]['allele1_convert']})")
+                            elif haplotype["variants"][i]["allele"].replace("(", "\(").replace(")", "\)") != _allele_matcher["variants"][i]["allele2_convert"]:
+                                hap1_match_name_allele_invert.append(f"({_allele_matcher['variants'][i]['allele2_convert']})")
                     hap1_match_name_haplotype_invert_regex = f"^{'_'.join(hap1_match_name_allele_invert)}$".replace("*", "Z")
             
             for hap2_guide_dip in hap_match[inx + 1:]:
@@ -207,7 +260,7 @@ def handle_false_phase(allele_definition, allele_matcher) :
                         hap2_match_name_allele = []
                         for variant in haplotype["variants"]:
                             hap2_match_name_allele.append(variant["allele"])
-                        hap2_match_name_haplotypes = extract_iupac([f"{'_'.join(hap2_match_name_allele)}"])
+                        hap2_match_name_haplotypes = extract_iupac(f"{'_'.join(hap2_match_name_allele)}")
                         for hap2_match_name_haplotype in hap2_match_name_haplotypes:
                             if re.match(hap1_match_name_haplotype_invert_regex, hap2_match_name_haplotype):
                                 if f"{hap2_match_name}/{hap1_match_name}" not in guide_dip:
@@ -236,10 +289,16 @@ def handle_false_phase(allele_definition, allele_matcher) :
 def handle_combine_phase(allele_definition, allele_matcher) :
     hap1_regex, hap2_regex = create_hap_regex(allele_matcher["variants"])
 
+    hap1_var = [i['allele1_convert'] for i in allele_matcher["variants"]]
+    hap2_var = [i['allele2_convert'] for i in allele_matcher["variants"]]
+    hap1_var = '_'.join(hap1_var)
+    hap2_var = '_'.join(hap2_var)
+
     hap1_match = []
     hap2_match = []
     for haplotype in allele_definition["haplotypes"]:
         name_haplotypes = create_name_haplotypes(haplotype["variants"])
+        match_candidate(haplotype, allele_matcher, hap1_var, hap2_var)
         for name_haplotype in name_haplotypes:
             if re.match(hap1_regex, name_haplotype):
                 if haplotype["name"] not in hap1_match:
@@ -270,19 +329,22 @@ def handle_combine_phase(allele_definition, allele_matcher) :
                 hap1_match_name = haplotype["name"]
                 hap1_match_name_allele_invert = []
                 for i in range(len(haplotype["variants"])):
-                    if re.match(r"^(\.+)$", allele_matcher["variants"][i]["allele1_convert"]) or re.match(r"^(\.+)$", allele_matcher["variants"][i]["allele2_convert"]):
-                        if allele_matcher["variants"][i]["hgvs_type"] != "SNP":
+                    _allele_matcher = copy.deepcopy(allele_matcher)
+                    _allele_matcher["variants"][i]["allele1_convert"] = _allele_matcher["variants"][i]["allele1_convert"].replace("(", "\(").replace(")", "\)")
+                    _allele_matcher["variants"][i]["allele2_convert"] = _allele_matcher["variants"][i]["allele2_convert"].replace("(", "\(").replace(")", "\)")
+                    if re.match(r"^(\.+)$", _allele_matcher["variants"][i]["allele1_convert"]) or re.match(r"^(\.+)$", _allele_matcher["variants"][i]["allele2_convert"]):
+                        if _allele_matcher["variants"][i]["hgvs_type"] != "SNP":
                             hap1_match_name_allele_invert.append("(.+)")
                         else:
                             hap1_match_name_allele_invert.append("(.)")
                     else:
-                        if allele_matcher["variants"][i]["allele1_convert"] == allele_matcher["variants"][i]["allele2_convert"]:
-                            hap1_match_name_allele_invert.append(f"({allele_matcher['variants'][i]['allele1_convert']})")
+                        if _allele_matcher["variants"][i]["allele1_convert"] == _allele_matcher["variants"][i]["allele2_convert"]:
+                            hap1_match_name_allele_invert.append(f"({_allele_matcher['variants'][i]['allele1_convert']})")
                         else:
-                            if haplotype["variants"][i]["allele"] != allele_matcher["variants"][i]["allele1_convert"]:
-                                hap1_match_name_allele_invert.append(f"({allele_matcher['variants'][i]['allele1_convert']})")
-                            elif haplotype["variants"][i]["allele"] != allele_matcher["variants"][i]["allele2_convert"]:
-                                hap1_match_name_allele_invert.append(f"({allele_matcher['variants'][i]['allele2_convert']})")
+                            if haplotype["variants"][i]["allele"].replace("(", "\(").replace(")", "\)") != _allele_matcher["variants"][i]["allele1_convert"]:
+                                hap1_match_name_allele_invert.append(f"({_allele_matcher['variants'][i]['allele1_convert']})")
+                            elif haplotype["variants"][i]["allele"].replace("(", "\(").replace(")", "\)") != _allele_matcher["variants"][i]["allele2_convert"]:
+                                hap1_match_name_allele_invert.append(f"({_allele_matcher['variants'][i]['allele2_convert']})")
                 hap1_match_name_haplotype_invert_regex = f"^{'_'.join(hap1_match_name_allele_invert)}$".replace("*", "Z")
                 
                 for haplotype in allele_definition["haplotypes"]:
@@ -291,7 +353,7 @@ def handle_combine_phase(allele_definition, allele_matcher) :
                         hap2_match_name_allele = []
                         for variant in haplotype["variants"]:
                             hap2_match_name_allele.append(variant["allele"])
-                        hap2_match_name_haplotypes = extract_iupac([f"{'_'.join(hap2_match_name_allele)}"])
+                        hap2_match_name_haplotypes = extract_iupac(f"{'_'.join(hap2_match_name_allele)}")
                         for hap2_match_name_haplotype in hap2_match_name_haplotypes:
                             if re.match(hap1_match_name_haplotype_invert_regex, hap2_match_name_haplotype):
                                 if f"{hap2_match_name}/{hap1_match_name}" not in guide_dip:
