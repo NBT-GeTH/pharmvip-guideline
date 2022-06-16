@@ -182,3 +182,4 @@ resources/samples/HS10227/
 resources/samples/
 .vscode/launch.json
 tests/unitest/overall_debugger.py
+z_dev/*
