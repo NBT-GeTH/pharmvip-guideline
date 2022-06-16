@@ -1,5 +1,5 @@
-import re
 
+import re
 def check_null_dp(dp): 
     """
     return dp else 0
@@ -25,7 +25,7 @@ def extract_genotype(gene, call_genotype):
     if "," not in call_genotype:
         if gene == "G6PD" and not check_gt_format(call_genotype):
             call_genotype = f"{call_genotype}|{call_genotype}"
-   
+
         match = re.match(r"^(\.+|.+)(\/|\|)(\.+|.+)$", call_genotype)
         if match:
             """
@@ -46,8 +46,8 @@ def extract_genotype_in_rage(gene, genotype_in_range):
     """
     return genotype sequence as .ACTG|.ACTG
     """
-    allele1 = ""
-    allele2 = ""
+    allele1 = "."
+    allele2 = "."
     for genotype in genotype_in_range:
         a1, a2 = extract_genotype(gene, genotype)
         allele1 += a1
@@ -82,7 +82,7 @@ def convert_del(ref, allele):
         """
         return "del" + ref[1:]
 
-def convert_allele(hgvs_type, variant_type, is_del, ref, allele, genotypes):
+def convert_allele(hgvs_type, variant_type, is_del, ref, allele, genotypes, samp_inx=0):
     """
     convert allele from vcf format to allele definition format
     """
@@ -96,7 +96,7 @@ def convert_allele(hgvs_type, variant_type, is_del, ref, allele, genotypes):
         elif variant_type == "indel" and is_del == True:
             return convert_del(ref, allele)
         else:
-            if genotypes[0][0] == 0 and genotypes[0][1] == 0:
+            if genotypes[samp_inx][0] == 0 and genotypes[samp_inx][1] == 0:
                 return allele
             else:
                 print(f"error convert snp, cnv allele with: {variant_type}")
@@ -111,7 +111,7 @@ def convert_allele(hgvs_type, variant_type, is_del, ref, allele, genotypes):
         elif variant_type == "indel" and is_del == True:
             return convert_del(ref, allele)
         else:
-            if genotypes[0][0] == 0 and genotypes[0][1] == 0:
+            if genotypes[samp_inx][0] == 0 and genotypes[samp_inx][1] == 0:
                 return allele
             else:
                 print(f"error convert ins allele with: {variant_type}")
@@ -126,7 +126,7 @@ def convert_allele(hgvs_type, variant_type, is_del, ref, allele, genotypes):
         elif variant_type == "indel" and is_del == True:
             return convert_del(ref, allele)
         else:
-            if genotypes[0][0] == 0 and genotypes[0][1] == 0:
+            if genotypes[samp_inx][0] == 0 and genotypes[samp_inx][1] == 0:
                 return allele
             else:
                 print(f"error convert del allele with: {variant_type}")
@@ -136,6 +136,7 @@ def convert_allele(hgvs_type, variant_type, is_del, ref, allele, genotypes):
     else:
         print(f"error convert allele with: {hgvs_type}")
         exit()
+
 
 def sum_up_gt_phases(gt_phases, allele1, allele2):
     """
