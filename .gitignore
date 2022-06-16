@@ -186,3 +186,4 @@ resources/samples/
 tests/unitest/overall_debugger.py
 tests/overall_debugger.py
 .vscode/
+z_dev/*
