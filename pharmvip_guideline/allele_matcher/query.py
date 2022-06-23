@@ -52,7 +52,7 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                 v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
                 v_vcf["allele1_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele1"], genome.genotypes)
                 v_vcf["allele2_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele2"], genome.genotypes)
-                v_vcf["gt_phases"] = sum_up_gt_phases(genome.gt_phases[0], v_vcf["allele1"], v_vcf["allele2"])
+                v_vcf["gt_phases"] = sum_up_gt_phases(genome.gt_phases[0], v_vcf["allele1_convert"], v_vcf["allele2_convert"])
             allele_matcher["variants"].append(v_vcf)
         elif variant["hgvs_type"] == "CNV":
             region = f"{ref_haplotype['chromosome']}:{variant['start']}-{variant['start']}"
@@ -63,7 +63,7 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
             v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
             v_vcf["allele1_convert"] = v_vcf["allele1"]
             v_vcf["allele2_convert"] = v_vcf["allele2"]
-            v_vcf["gt_phases"] = sum_up_gt_phases(True if "|" in v_vcf["gt_bases"] else False, v_vcf["allele1"], v_vcf["allele2"])
+            v_vcf["gt_phases"] = sum_up_gt_phases(True if "|" in v_vcf["gt_bases"] else False, v_vcf["allele1_convert"], v_vcf["allele2_convert"])
             allele_matcher["variants"].append(v_vcf)
         elif variant["hgvs_type"] == "DEL":
             region = f"{ref_haplotype['chromosome']}:{int(variant['start']) - 1}-{int(variant['start']) - 1}"
@@ -85,7 +85,7 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                     v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
                     v_vcf["allele1_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele1"], genome.genotypes)
                     v_vcf["allele2_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) else convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, v_vcf["allele2"], genome.genotypes)
-                    v_vcf["gt_phases"] = sum_up_gt_phases(genome.gt_phases[0], v_vcf["allele1"], v_vcf["allele2"])
+                    v_vcf["gt_phases"] = sum_up_gt_phases(genome.gt_phases[0], v_vcf["allele1_convert"], v_vcf["allele2_convert"])
                 else:
                     len_genome = len([x for x in range(int(variant['start']) - 1, int(variant['end']) + 1)])
                     error_in_range = 0
@@ -116,7 +116,7 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                     v_vcf["allele1"], v_vcf["allele2"] = extract_genotype(allele_definition["gene"], v_vcf["gt_bases"])
                     v_vcf["allele1_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"][1:]) or re.match(r"^(\.+)$", v_vcf["allele2"][1:]) else v_vcf["allele1"][1:]
                     v_vcf["allele2_convert"] = "." if re.match(r"^(\.+)$", v_vcf["allele1"][1:]) or re.match(r"^(\.+)$", v_vcf["allele2"][1:]) else v_vcf["allele2"][1:]
-                    v_vcf["gt_phases"] = sum_up_gt_phases(genome.gt_phases[0], v_vcf["allele1"], v_vcf["allele2"])
+                    v_vcf["gt_phases"] = sum_up_gt_phases(genome.gt_phases[0], v_vcf["allele1_convert"], v_vcf["allele2_convert"])
             
             allele_matcher["variants"].append(v_vcf)
         else:
