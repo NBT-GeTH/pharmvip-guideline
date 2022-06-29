@@ -141,3 +141,118 @@ def  fill_data(guide_line_id, lookup_keys, guideline_hla_relation,diplotype:pd.D
                     }
                     summary_and_full_report = summary_and_full_report.append(report_template,ignore_index=True)
     return summary_and_full_report
+
+
+def  merger(entity) :
+    entity = list(filter(lambda a: a != '', entity))
+    return ','.join(entity)
+
+
+def  generate_summary_short_report(summary:pd.DataFrame):
+    gene_list = summary.apply(lambda x: merger([x.cpi_sum_gene1,x.cpi_sum_gene2,x.cpi_sum_gene3]), axis=1)
+    dip_name_list  = summary.apply(lambda x: merger([x.cpi_sum_dip_name1,x.cpi_sum_dip_name2,x.cpi_sum_dip_name3]), axis=1)
+    drug_list = summary['cpi_sum_drug'].to_list()
+    stren_list = summary['cpi_sum_strength'].to_list()
+    rec_list = summary['cpi_sum_recommendations'].to_list()
+    rev_lister = ['<text>','</text>','<br/>']
+    for i,rec in enumerate(rec_list):
+        for rev in rev_lister:
+            rec = rec.replace(rev,'')
+        rec_list[i] = rec
+    poper_list = summary['cpi_sum_population'].to_list()
+    phen_list = summary.apply(lambda x: merger([x.cpi_sum_phenotype1,x.cpi_sum_phenotype2,x.cpi_sum_phenotype3]), axis=1)
+
+    reconstructor = {
+        'cpi_sum_gene' : gene_list,
+        'cpi_sum_dip_name' : dip_name_list,
+        'cpi_sum_drug' : drug_list,
+        'cpi_sum_population' : poper_list,
+        'cpi_sum_strength' : stren_list,
+        'cpi_sum_recommendations' : rec_list,
+        'cpi_sum_phenotype' : phen_list
+        
+    }
+    short_summer = pd.DataFrame(reconstructor)
+    drug_qurer = list(short_summer['cpi_sum_drug'].unique())
+    inx_counter = []
+    for druger in drug_qurer :
+        druger_target = short_summer.loc[short_summer['cpi_sum_drug'] == druger]
+        dipper = list(druger_target['cpi_sum_dip_name'].unique())
+        for dip in dipper:
+            dip_target = druger_target.loc[druger_target['cpi_sum_dip_name'] == dip]
+            if len(dip_target) < 2 : continue
+
+            popper = list(dip_target['cpi_sum_population'])
+            # popper = [i.capitalize() for i in popper]
+            popper = ', '.join(popper)
+            stren = []
+            rec = []
+            phen = []
+
+            if len(dip_target['cpi_sum_strength'].unique()) > 1 :
+                stren_flag = True
+            else : 
+                stren_flag = False
+                text = dip_target.iloc[0]['cpi_sum_strength']
+                stren = f'{popper} : {text}'
+            
+            if len(dip_target['cpi_sum_recommendations'].unique()) > 1 :
+                rec_flag = True
+            else : 
+                rec_flag = False
+                text = dip_target.iloc[0]['cpi_sum_recommendations']
+                rec = f'{popper} : {text}'
+            
+            if len(dip_target['cpi_sum_phenotype'].unique()) > 1 :
+                phen_flag = True
+            else : 
+                phen_flag = False
+                text = dip_target.iloc[0]['cpi_sum_phenotype']
+                phen = f'{popper} : {text}'
+
+
+            
+            for i,row in dip_target.iterrows():
+                inx_counter.append(i)
+                pop = row['cpi_sum_population']
+
+                # pop = pop.capitalize()
+                if stren_flag : 
+                    text = row['cpi_sum_strength']
+                    text = f'{pop} : {text}'
+                    stren.append(text)
+
+                if rec_flag : 
+                    text = row['cpi_sum_strength']
+                    text = f'{pop} : {text}'
+                    rec.append(text)
+                
+                if phen_flag : 
+                    text = row['cpi_sum_strength']
+                    text = f'{pop} : {text}'
+                    phen.append(text)
+            
+            if type(stren) != str : stren = ', '.join(stren)
+            if type(rec) != str : rec = ', '.join(rec)
+            if type(phen) != str : phen = ', '.join(phen)
+
+            reconstructor = {
+                'cpi_sum_gene' : dip_target.iloc[0]['cpi_sum_gene'],
+                'cpi_sum_dip_name' : dip_target.iloc[0]['cpi_sum_dip_name'],
+                'cpi_sum_drug' : dip_target.iloc[0]['cpi_sum_dip_name'],
+                'cpi_sum_population' : '',
+                'cpi_sum_strength' : stren,
+                'cpi_sum_recommendations' : rec,
+                'cpi_sum_phenotype' : phen
+            }
+            short_summer.loc[len(short_summer.index)] = reconstructor
+
+
+                
+
+    short_summer = short_summer.drop(columns=['cpi_sum_population'])
+    short_summer = short_summer.drop(inx_counter)
+    return short_summer
+    # print('donde')
+
+        

@@ -252,12 +252,15 @@ def  add_lookup_key_col(diplotype_df:pd.DataFrame,function_mappings_path:str):
     diplotype_df["lookupkey"] = lookup_key_list
     ## end of function
 
-def  export_guideline_report(cpic_summary:pd.DataFrame, output_path, user_id, project_id):
-    f = open(f"{output_path}/cpic_summary.txt", "w")
+def  export_guideline_report(cpic_summary:pd.DataFrame, output_path, user_id, project_id,file_name):
+    # f = open(f"{output_path}/{file_name}.txt", "w")
     cpic_summary.insert(0,'project_id',project_id)
     cpic_summary.insert(0,'user_id',user_id)
-    out_file = f"{output_path}/cpic_summary.txt"
+    out_file = f"{output_path}/{file_name}.txt"
+    with open(out_file , 'w') as f:
+        writer = cpic_summary.to_csv(None,index=False,sep='\t',header=False)
+        f.write(writer[:-1])
 #     cpic_summary.to_csv(f"{output_path}/cpic_summary.txt",index=False,sep='\t',header=False)
-    writer = cpic_summary.to_csv(None,index=False,sep='\t',header=False)
-    open(out_file, 'w').write(writer[:-1])
+    # writer = cpic_summary.to_csv(None,index=False,sep='\t',header=False)
+    # open(out_file, 'w').write(writer[:-1])
     
