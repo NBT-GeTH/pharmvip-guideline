@@ -163,8 +163,8 @@ def main():
             summary_and_full_report = summary_and_full_report.reset_index(drop = True)
             summary_and_full_report = replace_blank(summary_and_full_report)
             summary_short_report = generate_summary_short_report(summary_and_full_report)
-            export_guideline_report(summary_and_full_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id,file_name='cpic_summary')
-            export_guideline_report(summary_short_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id,file_name='cpic_short_summary')
+            export_guideline_report(summary_and_full_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id,file_name='cpic_report')
+            export_guideline_report(summary_short_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id,file_name='cpic_summary')
 
         elif args.ana_options_cpic == "false" and args.ana_options_hla == "true":
             diplotype_hla = read_diplotype(args.diplotype_hla)
@@ -174,8 +174,8 @@ def main():
             summary_and_full_report = summary_and_full_report.reset_index(drop = True)
             summary_and_full_report = replace_blank(summary_and_full_report)
             summary_short_report = generate_summary_short_report(summary_and_full_report)
-            export_guideline_report(summary_and_full_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id,file_name='cpic_summary')
-            export_guideline_report(summary_short_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id,file_name='cpic_short_summary')
+            export_guideline_report(summary_and_full_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id,file_name='cpic_report')
+            export_guideline_report(summary_short_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id,file_name='cpic_summary')
         else:
             print(f"error with ana_options: {args.ana_options_cpic}, {args.ana_genes_cyp2d6}, {args.ana_options_hla}")
             exit()
