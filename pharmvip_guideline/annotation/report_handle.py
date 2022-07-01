@@ -37,4 +37,8 @@ def replace_blank(df):
     # df['cpi_sum_hla_tool_1_guide'] = df['cpi_sum_hla_tool_1_guide'].replace([''],'N/A')
     # df['cpi_sum_hla_tool_2_guide'] = df['cpi_sum_hla_tool_2_guide'].replace([''],'N/A')
     
+    df["cpi_sum_implications1"].replace({"n/a": "N/A"}, inplace=True)
+    df["cpi_sum_implications2"].replace({"n/a": "N/A"}, inplace=True)
+    df["cpi_sum_implications3"].replace({"n/a": "N/A"}, inplace=True)
+    
     return df
