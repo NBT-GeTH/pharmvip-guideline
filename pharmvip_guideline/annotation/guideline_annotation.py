@@ -28,7 +28,7 @@ def annotate(clinical_guideline_annotations, function_mappings, diplotype):
                     "cpi_sum_strength",
                     "cpi_sum_recommendations",
                     "cpi_sum_recommendations_full",
-                    "cpi_sum_recommendations_full_figure",
+                    # "cpi_sum_recommendations_full_figure",
                     "cpi_sum_comments",
                     "cpi_sum_implications1",
                     "cpi_sum_implications2",
@@ -119,7 +119,7 @@ def  fill_data(guide_line_id, lookup_keys, guideline_hla_relation,diplotype:pd.D
                         "cpi_sum_strength": val['classification'],
                         "cpi_sum_recommendations": rec_short_out,
                         "cpi_sum_recommendations_full": recomnet_out,
-                        "cpi_sum_recommendations_full_figure": '',
+                        # "cpi_sum_recommendations_full_figure": '',
                         "cpi_sum_comments": cpi_sum_comments,
                         "cpi_sum_implications1": implications1,
                         "cpi_sum_implications2" : implications2,
@@ -154,16 +154,20 @@ def  generate_summary_short_report(summary:pd.DataFrame):
     drug_list = summary['cpi_sum_drug'].to_list()
     stren_list = summary['cpi_sum_strength'].to_list()
     rec_list = summary['cpi_sum_recommendations'].to_list()
-    rev_lister = ['<text>','</text>','<br/>']
+    rev_lister = ['<text>','</text>','<br/>','</br>']
     for i,rec in enumerate(rec_list):
         for rev in rev_lister:
             rec = rec.replace(rev,'')
         rec_list[i] = rec
     poper_list = summary['cpi_sum_population'].to_list()
+    poper_list = [f"{poper[0].upper()}{poper[1:]}" if poper else poper for poper in poper_list]
     phen_list = summary.apply(lambda x: merger([x.cpi_sum_phenotype1,x.cpi_sum_phenotype2,x.cpi_sum_phenotype3]), axis=1)
 
     reconstructor = {
-        'cpi_sum_gene' : gene_list,
+        # 'cpi_sum_gene' : gene_list,
+        'cpi_sum_gene1' : summary.cpi_sum_gene1,
+        'cpi_sum_gene2' : summary.cpi_sum_gene2,
+        'cpi_sum_gene3' : summary.cpi_sum_gene3,
         'cpi_sum_dip_name' : dip_name_list,
         'cpi_sum_drug' : drug_list,
         'cpi_sum_population' : poper_list,
@@ -237,7 +241,10 @@ def  generate_summary_short_report(summary:pd.DataFrame):
             if type(phen) != str : phen = ', '.join(phen)
 
             reconstructor = {
-                'cpi_sum_gene' : dip_target.iloc[0]['cpi_sum_gene'],
+                # 'cpi_sum_gene' : dip_target.iloc[0]['cpi_sum_gene'],
+                'cpi_sum_gene1' : dip_target.iloc[0]['cpi_sum_gene1'],
+                'cpi_sum_gene2' : dip_target.iloc[0]['cpi_sum_gene2'],
+                'cpi_sum_gene3' : dip_target.iloc[0]['cpi_sum_gene3'],
                 'cpi_sum_dip_name' : dip_target.iloc[0]['cpi_sum_dip_name'],
                 'cpi_sum_drug' : dip_target.iloc[0]['cpi_sum_dip_name'],
                 'cpi_sum_population' : '',
