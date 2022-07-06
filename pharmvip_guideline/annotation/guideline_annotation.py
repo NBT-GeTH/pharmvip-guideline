@@ -264,7 +264,8 @@ def  generate_summary_short_report(summary:pd.DataFrame):
     short_summer = short_summer.drop(columns=['cpi_sum_population'])
     short_summer = short_summer.drop(inx_counter)
     short_summer = short_summer.sort_values(by=["cpi_sum_gene1", "cpi_sum_gene2", "cpi_sum_gene3", "cpi_sum_drug"])
-    short_summer["cpi_sum_strength"] = short_summer["cpi_sum_strength"].apply(lambda x: x.replace("Strong", '<span style="color:red;">Strong</span>'))
+    short_summer["cpi_sum_strength"] = short_summer["cpi_sum_strength"].apply(lambda x: x.replace("Strong", "<span style=\'color:red;\'>Strong</span>"))
+    # short_summer["cpi_sum_strength"] = short_summer["cpi_sum_strength"].str.replace('Strong', "<span style=\'color:red;\'>Strong</span>")
     return short_summer
     # print('donde')
 
