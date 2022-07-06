@@ -1,4 +1,5 @@
 import json
+from numpy import short
 import pandas as pd
 from pharmvip_guideline.annotation.annotation_util import *
 from pharmvip_guideline.annotation.hla_handler import hla_subjection
@@ -145,7 +146,7 @@ def  fill_data(guide_line_id, lookup_keys, guideline_hla_relation,diplotype:pd.D
 
 def  merger(entity) :
     entity = list(filter(lambda a: a != '', entity))
-    return ','.join(entity)
+    return ', <br/>'.join(entity)
 
 
 def  generate_summary_short_report(summary:pd.DataFrame):
@@ -184,7 +185,10 @@ def  generate_summary_short_report(summary:pd.DataFrame):
         dipper = list(druger_target['cpi_sum_dip_name'].unique())
         for dip in dipper:
             dip_target = druger_target.loc[druger_target['cpi_sum_dip_name'] == dip]
-            if len(dip_target) < 2 : continue
+            if len(dip_target) < 2 : 
+                poper = dip_target.iloc[0]['cpi_sum_population']
+                if poper == 'General' :
+                    continue
 
             popper = list(dip_target['cpi_sum_population'])
             # popper = [i.capitalize() for i in popper]
@@ -246,7 +250,7 @@ def  generate_summary_short_report(summary:pd.DataFrame):
                 'cpi_sum_gene2' : dip_target.iloc[0]['cpi_sum_gene2'],
                 'cpi_sum_gene3' : dip_target.iloc[0]['cpi_sum_gene3'],
                 'cpi_sum_dip_name' : dip_target.iloc[0]['cpi_sum_dip_name'],
-                'cpi_sum_drug' : dip_target.iloc[0]['cpi_sum_dip_name'],
+                'cpi_sum_drug' : dip_target.iloc[0]['cpi_sum_drug'],
                 'cpi_sum_population' : '',
                 'cpi_sum_strength' : stren,
                 'cpi_sum_recommendations' : rec,
@@ -259,6 +263,8 @@ def  generate_summary_short_report(summary:pd.DataFrame):
 
     short_summer = short_summer.drop(columns=['cpi_sum_population'])
     short_summer = short_summer.drop(inx_counter)
+    short_summer = short_summer.sort_values(by=["cpi_sum_gene1", "cpi_sum_gene2", "cpi_sum_gene3", "cpi_sum_drug"])
+    short_summer["cpi_sum_strength"] = short_summer["cpi_sum_strength"].apply(lambda x: x.replace("Strong", '<span style="color:red;">Strong</span>'))
     return short_summer
     # print('donde')
 
