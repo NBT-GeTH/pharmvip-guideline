@@ -231,12 +231,12 @@ def  generate_summary_short_report(summary:pd.DataFrame):
                     stren.append(text)
 
                 if rec_flag : 
-                    text = row['cpi_sum_strength']
+                    text = row['cpi_sum_recommendations']
                     text = f'{pop} : {text}'
                     rec.append(text)
                 
                 if phen_flag : 
-                    text = row['cpi_sum_strength']
+                    text = row['cpi_sum_phenotype']
                     text = f'{pop} : {text}'
                     phen.append(text)
             
