@@ -48,7 +48,7 @@
         "guidelineid": "100418",
         "id": "1352374",
         "implications": {
-            "CYP3A5": "Higher (\"normal\") dose-adjusted trough concentrations of tacrolimus and increased chance of achieving target tacrolimus concentrations."
+            "CYP3A5": "Higher (normal) dose-adjusted trough concentrations of tacrolimus and increased chance of achieving target tacrolimus concentrations."
         },
         "lookupkey": {
             "CYP3A5": "Poor Metabolizer"

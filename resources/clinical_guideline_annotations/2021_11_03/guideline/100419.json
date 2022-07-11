@@ -17,7 +17,7 @@
         "guidelineid": 100419,
         "id": 1351847,
         "implications": {
-            "DPYD": "Normal DPD activity and \"normal\" risk for fluoropyrimidine toxicity"
+            "DPYD": "Normal DPD activity and normal risk for fluoropyrimidine toxicity"
         },
         "lookupkey": {
             "DPYD": "2"
@@ -162,7 +162,7 @@
         "guidelineid": 100419,
         "id": 1351852,
         "implications": {
-            "DPYD": "Normal DPD activity and \"normal\" risk for fluoropyrimidine toxicity"
+            "DPYD": "Normal DPD activity and normal risk for fluoropyrimidine toxicity"
         },
         "lookupkey": {
             "DPYD": "2"

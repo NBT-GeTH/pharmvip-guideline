@@ -92,7 +92,7 @@
         },
         "allelestatus": {},
         "classification": "Optional",
-        "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.",
+        "comments": "The strength of recommendation for likely phenotypes are the same as their respective confirmed phenotypes. Likely indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding likely phenotype.",
         "drug": {
             "name": "dexlansoprazole"
         },
@@ -150,7 +150,7 @@
         },
         "allelestatus": {},
         "classification": "Optional",
-        "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.",
+        "comments": "The strength of recommendation for likely phenotypes are the same as their respective confirmed phenotypes. Likely indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding likely phenotype.",
         "drug": {
             "name": "dexlansoprazole"
         },
@@ -237,7 +237,7 @@
         },
         "allelestatus": {},
         "classification": "Optional",
-        "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.",
+        "comments": "The strength of recommendation for likely phenotypes are the same as their respective confirmed phenotypes. Likely indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding likely phenotype.",
         "drug": {
             "name": "omeprazole"
         },
@@ -382,7 +382,7 @@
         },
         "allelestatus": {},
         "classification": "Moderate",
-        "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.",
+        "comments": "The strength of recommendation for likely phenotypes are the same as their respective confirmed phenotypes. Likely indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding likely phenotype.",
         "drug": {
             "name": "omeprazole"
         },
@@ -556,7 +556,7 @@
         },
         "allelestatus": {},
         "classification": "Optional",
-        "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.",
+        "comments": "The strength of recommendation for likely phenotypes are the same as their respective confirmed phenotypes. Likely indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding likely phenotype.",
         "drug": {
             "name": "lansoprazole"
         },
@@ -614,7 +614,7 @@
         },
         "allelestatus": {},
         "classification": "Moderate",
-        "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.",
+        "comments": "The strength of recommendation for likely phenotypes are the same as their respective confirmed phenotypes. Likely indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding likely phenotype.",
         "drug": {
             "name": "lansoprazole"
         },
@@ -788,7 +788,7 @@
         },
         "allelestatus": {},
         "classification": "Optional",
-        "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.",
+        "comments": "The strength of recommendation for likely phenotypes are the same as their respective confirmed phenotypes. Likely indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding likely phenotype.",
         "drug": {
             "name": "pantoprazole"
         },
@@ -846,7 +846,7 @@
         },
         "allelestatus": {},
         "classification": "Moderate",
-        "comments": "The strength of recommendation for \"likely\" phenotypes are the same as their respective confirmed phenotypes. \"Likely\" indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding \"likely\" phenotype.",
+        "comments": "The strength of recommendation for likely phenotypes are the same as their respective confirmed phenotypes. Likely indicates the uncertainty in the phenotype assignment, but it is reasonable to apply the recommendation for the confirmed phenotype to the corresponding likely phenotype.",
         "drug": {
             "name": "pantoprazole"
         },
