@@ -34,6 +34,10 @@ class InfoConstruction :
         self.tool2 = '' if target_dip2.empty else target_dip2["tool"]
         self.tool1 = '' if 'N/A' in self.tool1 else self.tool1
         self.tool2 = '' if 'N/A' in self.tool2 else self.tool2
+        self.tool1 = ','.join(self.tool1)
+        self.tool2 = ','.join(self.tool2)
+        self.tool1 = self.tool1.split(',')
+        self.tool2 = self.tool2.split(',')
         self.tool1 = ', '.join(self.tool1)
         self.tool2 = ', '.join(self.tool2)
 
