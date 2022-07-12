@@ -10,6 +10,14 @@ def cftr_exception(allele_definition, allele_matcher):
                 allele_matcher["print_dip"][i] = f"{allele_matcher['print_dip'][i].split('/')[1]} (heterozygous)" if allele_matcher["print_dip"][i].split("/")[0] == ref_haplotype else f"{allele_matcher['print_dip'][i].split('/')[0]} (heterozygous)"
     return allele_matcher
 
+def g6pd_exception(allele_matcher):
+    if allele_matcher["gender"] == "M":
+        new_print_dip = list()
+        for print_dip in allele_matcher["print_dip"]:
+            new_print_dip.append(print_dip.split("/")[0])
+        allele_matcher["print_dip"] = new_print_dip
+    return allele_matcher
+
 def slco1b1_exception(allele_matcher):
     if allele_matcher["guide_dip"] == ["?/?"] and allele_matcher["print_dip"] == ["?/?"]:
         for variant in allele_matcher["variants"]:
@@ -54,6 +62,8 @@ def slco1b1_exception(allele_matcher):
 def gene_exceptions(allele_definition, allele_matcher):
     if allele_definition["gene"] == "CFTR":
         allele_matcher = cftr_exception(allele_definition, allele_matcher)
+    elif allele_definition["gene"] == "G6PD":
+        allele_matcher = g6pd_exception(allele_matcher)
     elif allele_definition["gene"] == "SLCO1B1":
         allele_matcher = slco1b1_exception(allele_matcher)
 

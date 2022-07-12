@@ -17,6 +17,8 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
     allele_matcher["chromosome"] = ref_haplotype["chromosome"]
     allele_matcher["variants"] = []
 
+    gender = set()
+
     for variant in ref_haplotype["variants"]:
         v_vcf = {}
         v_vcf["hgvs"] = variant["hgvs"]
@@ -46,6 +48,9 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                     done_region.append(int(genome.start) + 1)
                 else:
                     continue
+
+                if allele_matcher["gene"] == "G6PD":
+                    gender.add("F" if len(genome.genotypes[0]) == 3 else "M" if len(genome.genotypes[0]) == 2 else "")
                 
                 v_vcf["dp"] = check_null_dp(genome.format("DP").tolist()[0][0]) if "DP" in genome.FORMAT else 0
                 v_vcf["gt_bases"] = f"{genome.gt_bases[0]}|{genome.gt_bases[0]}" if allele_definition["gene"] == "G6PD" and not check_gt_format(genome.gt_bases[0]) else genome.gt_bases[0]
@@ -56,6 +61,21 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
             allele_matcher["variants"].append(v_vcf)
         elif variant["hgvs_type"] == "CNV":
             region = f"{ref_haplotype['chromosome']}:{variant['start']}-{variant['start']}"
+            done_region = []
+
+            for genome in vcf(region):
+                # allele definition 1-based vs cyvcf2 0-based coordinate systems
+                if int(variant["start"]) - 1 != int(genome.start) + 1:
+                    continue
+
+                if int(genome.start) + 1 not in done_region:
+                    done_region.append(int(genome.start) + 1)
+                else:
+                    continue
+                
+                if allele_matcher["gene"] == "G6PD":
+                    gender.add("F" if len(genome.genotypes[0]) == 3 else "M" if len(genome.genotypes[0]) == 2 else "")
+
             vntr_vcf, dp  = vcf_vntr_transformer(vcf, variant["allele"], region)
               
             v_vcf["dp"] = dp
@@ -79,6 +99,9 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                 else:
                     continue
                 
+                if allele_matcher["gene"] == "G6PD":
+                    gender.add("F" if len(genome.genotypes[0]) == 3 else "M" if len(genome.genotypes[0]) == 2 else "")
+
                 if genome.var_type == "indel" and genome.is_deletion == True:
                     v_vcf["dp"] = check_null_dp(genome.format("DP").tolist()[0][0]) if "DP" in genome.FORMAT else 0
                     v_vcf["gt_bases"] = f"{genome.gt_bases[0]}|{genome.gt_bases[0]}" if allele_definition["gene"] == "G6PD" and not check_gt_format(genome.gt_bases[0]) else genome.gt_bases[0]
@@ -99,6 +122,10 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
                             # allele definition 1-based vs cyvcf2 0-based coordinate systems
                             if in_range != int(genome.start) + 1:
                                 continue
+
+                            if allele_matcher["gene"] == "G6PD":
+                                gender.add("F" if len(genome.genotypes[0]) == 3 else "M" if len(genome.genotypes[0]) == 2 else "")
+
                             if (genome.var_type == "unknown" and re.match(r"^([ATCG]{1})(\/|\|)*([ATCG]{1})*$", genome.gt_bases[0])) or genome.var_type == "snp" or re.match(r"^(\.+)(\/|\|)*(\.+)*$", genome.gt_bases[0]):
                                 dp_in_range[inx] = check_null_dp(genome.format("DP").tolist()[0][0]) if "DP" in genome.FORMAT else 0
                                 genotype_in_range[inx] = genome.gt_bases[0] if re.match(r"^(.+)(\/|\|)(.+)$", genome.gt_bases[0]) else f"{genome.gt_bases[0]}/{genome.gt_bases[0]}"
@@ -122,7 +149,8 @@ def query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file):
         else:
             print(f"error query region with: {variant['hgvs_type']}")
             exit()
-
+    
+    allele_matcher["gender"] = list(gender)[0] if len(gender) == 1 else ""
     allele_matcher["call_variants"]= count_call_variants(allele_matcher["variants"])
     allele_matcher["missing_call_variants"] = count_missing_call_variants(allele_matcher["variants"])
     allele_matcher["total_variants"] = total_call_variants
