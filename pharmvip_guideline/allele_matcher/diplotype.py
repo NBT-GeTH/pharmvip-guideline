@@ -102,7 +102,7 @@ def fix_hla_tool(tool):
 def read_hla(tsv):
     diplotype = pd.DataFrame(columns=["sample_id", "gene", "missing_call_variants", "total_variants", "dp", "gt_bases", "gt_phases", "gene_phases", "count_diplotype", "guide_dip", "print_dip", "tool"])
     df = pd.read_csv(tsv, sep="\t")
-    df["tool"] = df["tool"].apply(lambda x: fix_hla_tool(x))
+    # df["tool"] = df["tool"].apply(lambda x: fix_hla_tool(x))
     temp_data = []
     for inx,val in df.iterrows():
         guide_dip = ast.literal_eval(val['guide_diplotype'])
