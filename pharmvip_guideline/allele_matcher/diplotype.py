@@ -69,8 +69,8 @@ def read_diplotype(tsv):
     df = pd.read_csv(tsv, sep="\t")
     for row in range(df.shape[0]):
         assert len(ast.literal_eval(df["guide_diplotype"][row])) == len(ast.literal_eval(df["print_diplotype"][row]))
-        guide_dip = ["No info/No info"] if not ast.literal_eval(df["guide_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(df["gene"][row], ast.literal_eval(df["guide_diplotype"][row]))))
-        print_dip = ["No info"] if not ast.literal_eval(df["print_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(df["gene"][row], ast.literal_eval(df["print_diplotype"][row]))))
+        guide_dip = ["None"] if not ast.literal_eval(df["guide_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(df["gene"][row], ast.literal_eval(df["guide_diplotype"][row]))))
+        print_dip = ["None"] if not ast.literal_eval(df["print_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(df["gene"][row], ast.literal_eval(df["print_diplotype"][row]))))
         diplotype = diplotype.append(
             {
                 "sample_id": df["sampleid"][row],
@@ -83,7 +83,7 @@ def read_diplotype(tsv):
                 "gene_phases": ".",
                 "count_diplotype": len(list(set(ast.literal_eval(df["guide_diplotype"][row])))) if "/" in df["print_diplotype"][row] else 0,
                 "guide_dip": guide_dip,
-                "print_dip": print_dip,
+                "print_dip": print_dip if print_dip != ["None"] else ["N/A"],
                 "tool": handle_empty_hla_tools(df, row) if "tool" in df else ["N/A"]
             },
             ignore_index=True
