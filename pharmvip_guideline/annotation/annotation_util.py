@@ -232,6 +232,11 @@ def  add_lookup_key_col(diplotype_df:pd.DataFrame,function_mappings_path:str):
         lookup_key_stack = []
         for ix,diplotype in enumerate(guide_dip):
             lookup_key = mapper.loc[mapper['diplotype'] == diplotype]
+            if lookup_key.empty :
+                hap1,hap2 = diplotype.split('/')
+                diplotype = f'{hap2}/{hap1}'
+                lookup_key = mapper.loc[mapper['diplotype'] == diplotype]
+                
             templat = {}
             if not lookup_key.empty:
                 lookup_key = lookup_key.iloc[0]["lookupkey"]
