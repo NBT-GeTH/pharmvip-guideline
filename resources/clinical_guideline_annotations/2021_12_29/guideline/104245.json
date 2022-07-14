@@ -4,14 +4,14 @@
             "CYP2B6": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": null,
         "drug": {
             "name": "efavirenz"
         },
         "drugid": "RxNorm:195085",
-        "drugrecommendation": "No recommendation",
-        "drugrecommendation_short": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
+        "drugrecommendation_short": "No Recommendation.",
         "guideline": {
             "name": "CYP2B6 and efavirenz"
         },

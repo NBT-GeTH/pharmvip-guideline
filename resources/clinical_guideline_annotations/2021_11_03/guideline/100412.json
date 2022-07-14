@@ -177,7 +177,7 @@
             "name": "phenytoin"
         },
         "drugid": "RxNorm:8183",
-        "drugrecommendation": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
         "guideline": {
             "name": "CYP2C9, HLA-B and Phenytoin"
         },
@@ -342,7 +342,7 @@
             "name": "fosphenytoin"
         },
         "drugid": "RxNorm:72236",
-        "drugrecommendation": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
         "guideline": {
             "name": "CYP2C9, HLA-B and Phenytoin"
         },
@@ -606,7 +606,7 @@
             "name": "phenytoin"
         },
         "drugid": "RxNorm:8183",
-        "drugrecommendation": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
         "guideline": {
             "name": "CYP2C9, HLA-B and Phenytoin"
         },
@@ -870,7 +870,7 @@
             "name": "phenytoin"
         },
         "drugid": "RxNorm:8183",
-        "drugrecommendation": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
         "guideline": {
             "name": "CYP2C9, HLA-B and Phenytoin"
         },
@@ -1266,7 +1266,7 @@
             "name": "phenytoin"
         },
         "drugid": "RxNorm:8183",
-        "drugrecommendation": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
         "guideline": {
             "name": "CYP2C9, HLA-B and Phenytoin"
         },
@@ -1530,7 +1530,7 @@
             "name": "fosphenytoin"
         },
         "drugid": "RxNorm:72236",
-        "drugrecommendation": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
         "guideline": {
             "name": "CYP2C9, HLA-B and Phenytoin"
         },
@@ -1959,7 +1959,7 @@
             "name": "fosphenytoin"
         },
         "drugid": "RxNorm:72236",
-        "drugrecommendation": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
         "guideline": {
             "name": "CYP2C9, HLA-B and Phenytoin"
         },
@@ -2223,7 +2223,7 @@
             "name": "fosphenytoin"
         },
         "drugid": "RxNorm:72236",
-        "drugrecommendation": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
         "guideline": {
             "name": "CYP2C9, HLA-B and Phenytoin"
         },

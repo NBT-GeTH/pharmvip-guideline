@@ -207,13 +207,13 @@
             "CYP2D6": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "ondansetron"
         },
         "drugid": "RxNorm:26225",
-        "drugrecommendation": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
         "guideline": {
             "name": "CYP2D6 and Ondansetron and Tropisetron"
         },
@@ -497,7 +497,7 @@
             "CYP2D6": "1.0"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": "Drug-drug interactions and other patient characteristics (e.g., age, renal function, and liver function) should be considered when selecting alternative therapy.",
         "drug": {
             "name": "ondansetron"
@@ -526,7 +526,7 @@
             "CYP2D6": "0.75"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": "Drug-drug interactions and other patient characteristics (e.g., age, renal function, and liver function) should be considered when selecting alternative therapy.",
         "drug": {
             "name": "ondansetron"
@@ -555,7 +555,7 @@
             "CYP2D6": "0.5"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": "Drug-drug interactions and other patient characteristics (e.g., age, renal function, and liver function) should be considered when selecting alternative therapy.",
         "drug": {
             "name": "ondansetron"
@@ -584,7 +584,7 @@
             "CYP2D6": "0.25"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": "Drug-drug interactions and other patient characteristics (e.g., age, renal function, and liver function) should be considered when selecting alternative therapy.",
         "drug": {
             "name": "ondansetron"
@@ -613,7 +613,7 @@
             "CYP2D6": "0.0"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": "Drug-drug interactions and other patient characteristics (e.g., age, renal function, and liver function) should be considered when selecting alternative therapy.",
         "drug": {
             "name": "ondansetron"
@@ -1106,7 +1106,7 @@
             "CYP2D6": "1.0"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": "Drug-drug interactions and other patient characteristics (e.g., age, renal function, and liver function) should be considered when selecting alternative therapy.",
         "drug": {
             "name": "tropisetron"
@@ -1135,7 +1135,7 @@
             "CYP2D6": "0.75"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": "Drug-drug interactions and other patient characteristics (e.g., age, renal function, and liver function) should be considered when selecting alternative therapy.",
         "drug": {
             "name": "tropisetron"
@@ -1164,7 +1164,7 @@
             "CYP2D6": "0.5"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": "Drug-drug interactions and other patient characteristics (e.g., age, renal function, and liver function) should be considered when selecting alternative therapy.",
         "drug": {
             "name": "tropisetron"
@@ -1193,7 +1193,7 @@
             "CYP2D6": "0.25"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": "Drug-drug interactions and other patient characteristics (e.g., age, renal function, and liver function) should be considered when selecting alternative therapy.",
         "drug": {
             "name": "tropisetron"
@@ -1222,7 +1222,7 @@
             "CYP2D6": "0.0"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": "Drug-drug interactions and other patient characteristics (e.g., age, renal function, and liver function) should be considered when selecting alternative therapy.",
         "drug": {
             "name": "tropisetron"
@@ -1251,13 +1251,13 @@
             "CYP2D6": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "tropisetron"
         },
         "drugid": "RxNorm:27392",
-        "drugrecommendation": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
         "guideline": {
             "name": "CYP2D6 and Ondansetron and Tropisetron"
         },

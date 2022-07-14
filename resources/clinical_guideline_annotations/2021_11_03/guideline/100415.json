@@ -613,13 +613,13 @@
             "CYP2D6": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "tamoxifen"
         },
         "drugid": "RxNorm:10324",
-        "drugrecommendation": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
         "guideline": {
             "name": "CYP2D6 and Tamoxifen"
         },

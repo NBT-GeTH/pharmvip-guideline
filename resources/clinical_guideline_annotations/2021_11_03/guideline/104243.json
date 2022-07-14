@@ -613,13 +613,13 @@
             "CYP2D6": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "atomoxetine"
         },
         "drugid": "RxNorm:38400",
-        "drugrecommendation": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
         "guideline": {
             "name": "CYP2D6 and Atomoxetine"
         },
@@ -1251,13 +1251,13 @@
             "CYP2D6": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "atomoxetine"
         },
         "drugid": "RxNorm:38400",
-        "drugrecommendation": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
         "guideline": {
             "name": "CYP2D6 and Atomoxetine"
         },

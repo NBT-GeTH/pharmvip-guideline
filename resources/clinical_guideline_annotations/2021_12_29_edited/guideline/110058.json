@@ -1054,14 +1054,14 @@
             "CYP2C9": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": null,
         "drug": {
             "name": "celecoxib"
         },
         "drugid": "RxNorm:140587",
-        "drugrecommendation": "No recommendation",
-        "drugrecommendation_short": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
+        "drugrecommendation_short": "No Recommendation.",
         "guideline": {
             "name": "CYP2C9 and NSAIDs"
         },
@@ -1084,14 +1084,14 @@
             "CYP2C9": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": null,
         "drug": {
             "name": "flurbiprofen"
         },
         "drugid": "RxNorm:4502",
-        "drugrecommendation": "No recommendation",
-        "drugrecommendation_short": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
+        "drugrecommendation_short": "No Recommendation.",
         "guideline": {
             "name": "CYP2C9 and NSAIDs"
         },
@@ -1114,14 +1114,14 @@
             "CYP2C9": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": null,
         "drug": {
             "name": "ibuprofen"
         },
         "drugid": "RxNorm:5640",
-        "drugrecommendation": "No recommendation",
-        "drugrecommendation_short": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
+        "drugrecommendation_short": "No Recommendation.",
         "guideline": {
             "name": "CYP2C9 and NSAIDs"
         },
@@ -1144,14 +1144,14 @@
             "CYP2C9": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": null,
         "drug": {
             "name": "lornoxicam"
         },
         "drugid": "RxNorm:20890",
-        "drugrecommendation": "No recommendation",
-        "drugrecommendation_short": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
+        "drugrecommendation_short": "No Recommendation.",
         "guideline": {
             "name": "CYP2C9 and NSAIDs"
         },
@@ -1174,14 +1174,14 @@
             "CYP2C9": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": null,
         "drug": {
             "name": "meloxicam"
         },
         "drugid": "RxNorm:41493",
-        "drugrecommendation": "No recommendation",
-        "drugrecommendation_short": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
+        "drugrecommendation_short": "No Recommendation.",
         "guideline": {
             "name": "CYP2C9 and NSAIDs"
         },
@@ -1204,14 +1204,14 @@
             "CYP2C9": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": null,
         "drug": {
             "name": "tenoxicam"
         },
         "drugid": "RxNorm:37790",
-        "drugrecommendation": "No recommendation",
-        "drugrecommendation_short": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
+        "drugrecommendation_short": "No Recommendation.",
         "guideline": {
             "name": "CYP2C9 and NSAIDs"
         },
@@ -1234,14 +1234,14 @@
             "CYP2C9": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation",
+        "classification": "No Recommendation.",
         "comments": null,
         "drug": {
             "name": "piroxicam"
         },
         "drugid": "RxNorm:8356",
-        "drugrecommendation": "No recommendation",
-        "drugrecommendation_short": "No recommendation",
+        "drugrecommendation": "No Recommendation.",
+        "drugrecommendation_short": "No Recommendation.",
         "guideline": {
             "name": "CYP2C9 and NSAIDs"
         },
