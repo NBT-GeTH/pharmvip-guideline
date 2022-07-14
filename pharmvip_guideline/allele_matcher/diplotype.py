@@ -74,7 +74,7 @@ def read_diplotype(tsv):
         guide_dip = ["No info/No info"] if not ast.literal_eval(df["guide_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(df["gene"][row], ast.literal_eval(df["guide_diplotype"][row]))))
         print_dip = ["No info"] if not ast.literal_eval(df["print_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(df["gene"][row], ast.literal_eval(df["print_diplotype"][row]))))
         for i,dip in enumerate(guide_dip):
-            if guide_dip != ["None"]:
+            if (guide_dip[i].upper() != "NONE") or (guide_dip[i].upper() != "N/A"):
                 match = re.match("^\*\d{1,3}(.{1}\d{1,3})?\/\*\d{1,3}(.{1}\d{1,3})?$",guide_dip[i])
                 if not(match) :
                     # print_dip[i] = 'Unknow'
