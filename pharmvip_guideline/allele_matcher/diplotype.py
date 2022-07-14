@@ -1,8 +1,10 @@
 import glob
+import math
 from pharmvip_guideline.utils.natural_sort import natural_keys
 import pandas as pd
 import json
 import ast
+import re
 
 def create_diplotype_cpic(outputs):
     allele_matcher_list = []
@@ -71,6 +73,13 @@ def read_diplotype(tsv):
         assert len(ast.literal_eval(df["guide_diplotype"][row])) == len(ast.literal_eval(df["print_diplotype"][row]))
         guide_dip = ["No info/No info"] if not ast.literal_eval(df["guide_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(df["gene"][row], ast.literal_eval(df["guide_diplotype"][row]))))
         print_dip = ["No info"] if not ast.literal_eval(df["print_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(df["gene"][row], ast.literal_eval(df["print_diplotype"][row]))))
+        for i,dip in enumerate(guide_dip):
+            if (guide_dip[i].upper() != "NONE") or (guide_dip[i].upper() != "N/A"):
+                match = re.match("^\*\d{1,3}(.{1}\d{1,3})?\/\*\d{1,3}(.{1}\d{1,3})?$",guide_dip[i])
+                if not(match) :
+                    # print_dip[i] = 'Unknow'
+                    guide_dip[i] = 'Unknow'
+
         diplotype = diplotype.append(
             {
                 "sample_id": df["sampleid"][row],

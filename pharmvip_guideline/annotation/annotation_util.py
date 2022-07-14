@@ -250,11 +250,19 @@ def  add_lookup_key_col(diplotype_df:pd.DataFrame,function_mappings_path:str):
                     "key" : lookup_key
                 }
             else :
-                templat = {
-                    'row' : inx,
-                    "inx" : ix,
-                    "key" : {gene : "No Result"}
-                }
+                if diplotype == "Unknow" :
+                    templat = {
+                        'row' : inx,
+                        "inx" : ix,
+                        "key" : {gene : " "}
+                    }
+                else :
+                    templat = {
+                        'row' : inx,
+                        "inx" : ix,
+                        "key" : {gene : "No Result"}
+                    }
+                    
             lookup_key_stack.append(templat)
         lookup_key_list.append(lookup_key_stack)
 
