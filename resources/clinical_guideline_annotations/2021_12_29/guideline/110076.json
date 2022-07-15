@@ -844,14 +844,14 @@
             "CYP2C19": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": null,
         "drug": {
             "name": "dexlansoprazole"
         },
         "drugid": "RxNorm:816346",
-        "drugrecommendation": "No Recommendation.",
-        "drugrecommendation_short": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
+        "drugrecommendation_short": "No recommendation.",
         "guideline": {
             "name": "CYP2C19 and Proton Pump Inhibitors"
         },
@@ -874,14 +874,14 @@
             "CYP2C19": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": null,
         "drug": {
             "name": "omeprazole"
         },
         "drugid": "RxNorm:7646",
-        "drugrecommendation": "No Recommendation.",
-        "drugrecommendation_short": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
+        "drugrecommendation_short": "No recommendation.",
         "guideline": {
             "name": "CYP2C19 and Proton Pump Inhibitors"
         },
@@ -904,14 +904,14 @@
             "CYP2C19": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": null,
         "drug": {
             "name": "lansoprazole"
         },
         "drugid": "RxNorm:17128",
-        "drugrecommendation": "No Recommendation.",
-        "drugrecommendation_short": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
+        "drugrecommendation_short": "No recommendation.",
         "guideline": {
             "name": "CYP2C19 and Proton Pump Inhibitors"
         },
@@ -934,14 +934,14 @@
             "CYP2C19": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": null,
         "drug": {
             "name": "pantoprazole"
         },
         "drugid": "RxNorm:40790",
-        "drugrecommendation": "No Recommendation.",
-        "drugrecommendation_short": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
+        "drugrecommendation_short": "No recommendation.",
         "guideline": {
             "name": "CYP2C19 and Proton Pump Inhibitors"
         },

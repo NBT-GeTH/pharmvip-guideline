@@ -207,13 +207,13 @@
             "CYP2C19": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "clopidogrel"
         },
         "drugid": "RxNorm:32968",
-        "drugrecommendation": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
         "guideline": {
             "name": "CYP2C19 and Clopidogrel"
         },

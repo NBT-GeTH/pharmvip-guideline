@@ -4,14 +4,14 @@
             "G6PD": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": null,
         "drug": {
             "name": "rasburicase"
         },
         "drugid": "RxNorm:283821",
-        "drugrecommendation": "No Recommendation.",
-        "drugrecommendation_short": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
+        "drugrecommendation_short": "No recommendation.",
         "guideline": {
             "name": "G6PD and Rasburicase"
         },

@@ -526,13 +526,13 @@
             "CYP2D6": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "codeine"
         },
         "drugid": "RxNorm:2670",
-        "drugrecommendation": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
         "guideline": {
             "name": "CYP2D6, OPRM1, COMT, and Opioids"
         },
@@ -642,7 +642,7 @@
             "CYP2D6": "\u22654.5"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "hydrocodone"
@@ -671,7 +671,7 @@
             "CYP2D6": "\u22655"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "hydrocodone"
@@ -700,7 +700,7 @@
             "CYP2D6": "\u22656"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "hydrocodone"
@@ -729,13 +729,13 @@
             "CYP2D6": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "hydrocodone"
         },
         "drugid": "RxNorm:5489",
-        "drugrecommendation": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
         "guideline": {
             "name": "CYP2D6, OPRM1, COMT, and Opioids"
         },
@@ -1048,7 +1048,7 @@
             "CYP2D6": "2.5"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "hydrocodone"
@@ -1077,7 +1077,7 @@
             "CYP2D6": "3"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "hydrocodone"
@@ -1106,7 +1106,7 @@
             "CYP2D6": "3.5"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "hydrocodone"
@@ -1135,7 +1135,7 @@
             "CYP2D6": "4"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "hydrocodone"
@@ -1164,7 +1164,7 @@
             "CYP2D6": "\u22653"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "hydrocodone"
@@ -1193,7 +1193,7 @@
             "CYP2D6": "\u22653.25"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "hydrocodone"
@@ -1222,7 +1222,7 @@
             "CYP2D6": "\u22653.5"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "hydrocodone"
@@ -1251,7 +1251,7 @@
             "CYP2D6": "\u22654"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "hydrocodone"
@@ -1541,13 +1541,13 @@
             "CYP2D6": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "tramadol"
         },
         "drugid": "RxNorm:10689",
-        "drugrecommendation": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
         "guideline": {
             "name": "CYP2D6, OPRM1, COMT, and Opioids"
         },

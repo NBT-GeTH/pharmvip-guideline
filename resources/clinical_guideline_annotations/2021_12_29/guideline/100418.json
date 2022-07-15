@@ -4,14 +4,14 @@
             "CYP3A5": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": null,
         "drug": {
             "name": "tacrolimus"
         },
         "drugid": "RxNorm:42316",
-        "drugrecommendation": "No Recommendation.",
-        "drugrecommendation_short": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
+        "drugrecommendation_short": "No recommendation.",
         "guideline": {
             "name": "CYP3A5 and Tacrolimus"
         },

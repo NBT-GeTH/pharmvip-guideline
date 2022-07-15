@@ -4,14 +4,14 @@
             "SLCO1B1": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": null,
         "drug": {
             "name": "simvastatin"
         },
         "drugid": "RxNorm:36567",
-        "drugrecommendation": "No Recommendation.",
-        "drugrecommendation_short": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
+        "drugrecommendation_short": "No recommendation.",
         "guideline": {
             "name": "SLCO1B1 and Simvastatin"
         },
@@ -184,14 +184,14 @@
             "SLCO1B1": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": null,
         "drug": {
             "name": "simvastatin"
         },
         "drugid": "RxNorm:36567",
-        "drugrecommendation": "No Recommendation.",
-        "drugrecommendation_short": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
+        "drugrecommendation_short": "No recommendation.",
         "guideline": {
             "name": "SLCO1B1 and Simvastatin"
         },
