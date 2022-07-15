@@ -69,12 +69,13 @@ def handle_empty_hla_tools(df, row):
 def read_diplotype(tsv):
     diplotype = pd.DataFrame(columns=["sample_id", "gene", "missing_call_variants", "total_variants", "dp", "gt_bases", "gt_phases", "gene_phases", "count_diplotype", "guide_dip", "print_dip", "tool"])
     df = pd.read_csv(tsv, sep="\t")
+    check_set = ["NONE", "N/A"]
     for row in range(df.shape[0]):
         assert len(ast.literal_eval(df["guide_diplotype"][row])) == len(ast.literal_eval(df["print_diplotype"][row]))
         guide_dip = ["No info/No info"] if not ast.literal_eval(df["guide_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(df["gene"][row], ast.literal_eval(df["guide_diplotype"][row]))))
         print_dip = ["No info"] if not ast.literal_eval(df["print_diplotype"][row]) else list(dict.fromkeys(sort_diplotype(df["gene"][row], ast.literal_eval(df["print_diplotype"][row]))))
         for i,dip in enumerate(guide_dip):
-            if (guide_dip[i].upper() != "NONE") or (guide_dip[i].upper() != "N/A"):
+            if not(guide_dip[i].upper() in check_set):
                 match = re.match("^\*\d{1,3}(.{1}\d{1,3})?\/\*\d{1,3}(.{1}\d{1,3})?$",guide_dip[i])
                 if not(match) :
                     # print_dip[i] = 'Unknow'
