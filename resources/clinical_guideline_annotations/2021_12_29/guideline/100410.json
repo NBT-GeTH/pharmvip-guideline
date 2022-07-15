@@ -198,14 +198,14 @@
     {
         "activityscore": {},
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": null,
         "drug": {
             "name": "voriconazole"
         },
         "drugid": "RxNorm:121243",
-        "drugrecommendation": "No Recommendation.",
-        "drugrecommendation_short": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
+        "drugrecommendation_short": "No recommendation.",
         "guideline": {
             "name": "CYP2C19 and Voriconazole"
         },
@@ -422,14 +422,14 @@
     {
         "activityscore": {},
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": null,
         "drug": {
             "name": "voriconazole"
         },
         "drugid": "RxNorm:121243",
-        "drugrecommendation": "No Recommendation.",
-        "drugrecommendation_short": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
+        "drugrecommendation_short": "No recommendation.",
         "guideline": {
             "name": "CYP2C19 and Voriconazole"
         },

@@ -124,14 +124,14 @@
             "CYP2C19": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": null,
         "drug": {
             "name": "citalopram"
         },
         "drugid": "RxNorm:2556",
-        "drugrecommendation": "No Recommendation.",
-        "drugrecommendation_short": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
+        "drugrecommendation_short": "No recommendation.",
         "guideline": {
             "name": "CYP2D6, CYP2C19 and Selective Serotonin Reuptake Inhibitors"
         },
@@ -484,14 +484,14 @@
             "CYP2C19": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": null,
         "drug": {
             "name": "escitalopram"
         },
         "drugid": "RxNorm:321988",
-        "drugrecommendation": "No Recommendation.",
-        "drugrecommendation_short": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
+        "drugrecommendation_short": "No recommendation.",
         "guideline": {
             "name": "CYP2D6, CYP2C19 and Selective Serotonin Reuptake Inhibitors"
         },
@@ -634,7 +634,7 @@
             "CYP2D6": "3.0"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "Data are lacking describing the effect of CYP2D6 ultrarapid metabolism on fluvoxamine therapy; therefore no dosing recommendations are provided for fluvoxamine use for of CYP2D6 ultrarapid metabolizers. It may be reasonable, though, to select an alternative SSRI not extensively metabolized by CYP2D6 due to the lack of data describing how CYP2D6 ultrarapid metabolizer status influences fluvoxamine therapy.",
         "drug": {
             "name": "fluvoxamine"
@@ -664,7 +664,7 @@
             "CYP2D6": "2.5"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "Data are lacking describing the effect of CYP2D6 ultrarapid metabolism on fluvoxamine therapy; therefore no dosing recommendations are provided for fluvoxamine use for of CYP2D6 ultrarapid metabolizers. It may be reasonable, though, to select an alternative SSRI not extensively metabolized by CYP2D6 due to the lack of data describing how CYP2D6 ultrarapid metabolizer status influences fluvoxamine therapy.",
         "drug": {
             "name": "fluvoxamine"
@@ -784,7 +784,7 @@
             "CYP2D6": "\u22656"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "Data are lacking describing the effect of CYP2D6 ultrarapid metabolism on fluvoxamine therapy; therefore no dosing recommendations are provided for fluvoxamine use for of CYP2D6 ultrarapid metabolizers. It may be reasonable, though, to select an alternative SSRI not extensively metabolized by CYP2D6 due to the lack of data describing how CYP2D6 ultrarapid metabolizer status influences fluvoxamine therapy.",
         "drug": {
             "name": "fluvoxamine"
@@ -814,7 +814,7 @@
             "CYP2D6": "\u22655"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "Data are lacking describing the effect of CYP2D6 ultrarapid metabolism on fluvoxamine therapy; therefore no dosing recommendations are provided for fluvoxamine use for of CYP2D6 ultrarapid metabolizers. It may be reasonable, though, to select an alternative SSRI not extensively metabolized by CYP2D6 due to the lack of data describing how CYP2D6 ultrarapid metabolizer status influences fluvoxamine therapy.",
         "drug": {
             "name": "fluvoxamine"
@@ -844,7 +844,7 @@
             "CYP2D6": "\u22654.5"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "Data are lacking describing the effect of CYP2D6 ultrarapid metabolism on fluvoxamine therapy; therefore no dosing recommendations are provided for fluvoxamine use for of CYP2D6 ultrarapid metabolizers. It may be reasonable, though, to select an alternative SSRI not extensively metabolized by CYP2D6 due to the lack of data describing how CYP2D6 ultrarapid metabolizer status influences fluvoxamine therapy.",
         "drug": {
             "name": "fluvoxamine"
@@ -874,7 +874,7 @@
             "CYP2D6": "\u22654"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "Data are lacking describing the effect of CYP2D6 ultrarapid metabolism on fluvoxamine therapy; therefore no dosing recommendations are provided for fluvoxamine use for of CYP2D6 ultrarapid metabolizers. It may be reasonable, though, to select an alternative SSRI not extensively metabolized by CYP2D6 due to the lack of data describing how CYP2D6 ultrarapid metabolizer status influences fluvoxamine therapy.",
         "drug": {
             "name": "fluvoxamine"
@@ -904,7 +904,7 @@
             "CYP2D6": "\u22653.5"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "Data are lacking describing the effect of CYP2D6 ultrarapid metabolism on fluvoxamine therapy; therefore no dosing recommendations are provided for fluvoxamine use for of CYP2D6 ultrarapid metabolizers. It may be reasonable, though, to select an alternative SSRI not extensively metabolized by CYP2D6 due to the lack of data describing how CYP2D6 ultrarapid metabolizer status influences fluvoxamine therapy.",
         "drug": {
             "name": "fluvoxamine"
@@ -934,7 +934,7 @@
             "CYP2D6": "\u22653.25"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "Data are lacking describing the effect of CYP2D6 ultrarapid metabolism on fluvoxamine therapy; therefore no dosing recommendations are provided for fluvoxamine use for of CYP2D6 ultrarapid metabolizers. It may be reasonable, though, to select an alternative SSRI not extensively metabolized by CYP2D6 due to the lack of data describing how CYP2D6 ultrarapid metabolizer status influences fluvoxamine therapy.",
         "drug": {
             "name": "fluvoxamine"
@@ -964,7 +964,7 @@
             "CYP2D6": "\u22653"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "Data are lacking describing the effect of CYP2D6 ultrarapid metabolism on fluvoxamine therapy; therefore no dosing recommendations are provided for fluvoxamine use for of CYP2D6 ultrarapid metabolizers. It may be reasonable, though, to select an alternative SSRI not extensively metabolized by CYP2D6 due to the lack of data describing how CYP2D6 ultrarapid metabolizer status influences fluvoxamine therapy.",
         "drug": {
             "name": "fluvoxamine"
@@ -994,7 +994,7 @@
             "CYP2D6": "4.0"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "Data are lacking describing the effect of CYP2D6 ultrarapid metabolism on fluvoxamine therapy; therefore no dosing recommendations are provided for fluvoxamine use for of CYP2D6 ultrarapid metabolizers. It may be reasonable, though, to select an alternative SSRI not extensively metabolized by CYP2D6 due to the lack of data describing how CYP2D6 ultrarapid metabolizer status influences fluvoxamine therapy.",
         "drug": {
             "name": "fluvoxamine"
@@ -1024,7 +1024,7 @@
             "CYP2D6": "3.5"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "Data are lacking describing the effect of CYP2D6 ultrarapid metabolism on fluvoxamine therapy; therefore no dosing recommendations are provided for fluvoxamine use for of CYP2D6 ultrarapid metabolizers. It may be reasonable, though, to select an alternative SSRI not extensively metabolized by CYP2D6 due to the lack of data describing how CYP2D6 ultrarapid metabolizer status influences fluvoxamine therapy.",
         "drug": {
             "name": "fluvoxamine"
@@ -1114,14 +1114,14 @@
             "CYP2D6": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": null,
         "drug": {
             "name": "fluvoxamine"
         },
         "drugid": "RxNorm:42355",
-        "drugrecommendation": "No Recommendation.",
-        "drugrecommendation_short": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
+        "drugrecommendation_short": "No recommendation.",
         "guideline": {
             "name": "CYP2D6, CYP2C19 and Selective Serotonin Reuptake Inhibitors"
         },
@@ -1774,14 +1774,14 @@
             "CYP2D6": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": null,
         "drug": {
             "name": "paroxetine"
         },
         "drugid": "RxNorm:32937",
-        "drugrecommendation": "No Recommendation.",
-        "drugrecommendation_short": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
+        "drugrecommendation_short": "No recommendation.",
         "guideline": {
             "name": "CYP2D6, CYP2C19 and Selective Serotonin Reuptake Inhibitors"
         },
@@ -2014,14 +2014,14 @@
             "CYP2C19": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": null,
         "drug": {
             "name": "sertraline"
         },
         "drugid": "RxNorm:36437",
-        "drugrecommendation": "No Recommendation.",
-        "drugrecommendation_short": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
+        "drugrecommendation_short": "No recommendation.",
         "guideline": {
             "name": "CYP2D6, CYP2C19 and Selective Serotonin Reuptake Inhibitors"
         },

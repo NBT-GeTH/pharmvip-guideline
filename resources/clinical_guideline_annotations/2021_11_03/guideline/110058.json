@@ -178,13 +178,13 @@
             "CYP2C9": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "celecoxib"
         },
         "drugid": "RxNorm:140587",
-        "drugrecommendation": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
         "guideline": {
             "name": "CYP2C9 and NSAIDs"
         },
@@ -352,13 +352,13 @@
             "CYP2C9": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "flurbiprofen"
         },
         "drugid": "RxNorm:4502",
-        "drugrecommendation": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
         "guideline": {
             "name": "CYP2C9 and NSAIDs"
         },
@@ -526,13 +526,13 @@
             "CYP2C9": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "ibuprofen"
         },
         "drugid": "RxNorm:5640",
-        "drugrecommendation": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
         "guideline": {
             "name": "CYP2C9 and NSAIDs"
         },
@@ -671,13 +671,13 @@
             "CYP2C9": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "lornoxicam"
         },
         "drugid": "RxNorm:20890",
-        "drugrecommendation": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
         "guideline": {
             "name": "CYP2C9 and NSAIDs"
         },
@@ -845,13 +845,13 @@
             "CYP2C9": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "meloxicam"
         },
         "drugid": "RxNorm:41493",
-        "drugrecommendation": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
         "guideline": {
             "name": "CYP2C9 and NSAIDs"
         },
@@ -874,13 +874,13 @@
             "CYP2C9": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "tenoxicam"
         },
         "drugid": "RxNorm:37790",
-        "drugrecommendation": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
         "guideline": {
             "name": "CYP2C9 and NSAIDs"
         },
@@ -1048,13 +1048,13 @@
             "CYP2C9": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "n/a",
         "drug": {
             "name": "piroxicam"
         },
         "drugid": "RxNorm:8356",
-        "drugrecommendation": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
         "guideline": {
             "name": "CYP2C9 and NSAIDs"
         },

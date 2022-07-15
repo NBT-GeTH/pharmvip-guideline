@@ -4,14 +4,14 @@
             "UGT1A1": "n/a"
         },
         "allelestatus": {},
-        "classification": "No Recommendation.",
+        "classification": "No recommendation.",
         "comments": "UGT1A1*80 is in very high linkage disequilibrium with *28 and *37. In the rare event that *80 is detected but *28 and *37 are not, there are not enough clinical data to predict metabolizer status with certainty. However, if only *80 is interrogated and the patient is heterozygous or homozygous for *80, an intermediate or poor metabolizer phenotype may be inferred, respectively.",
         "drug": {
             "name": "atazanavir"
         },
         "drugid": "RxNorm:343047",
-        "drugrecommendation": "No Recommendation.",
-        "drugrecommendation_short": "No Recommendation.",
+        "drugrecommendation": "No recommendation.",
+        "drugrecommendation_short": "No recommendation.",
         "guideline": {
             "name": "UGT1A1 and Atazanavir"
         },
