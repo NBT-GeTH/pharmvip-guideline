@@ -63,9 +63,7 @@ def annotate(clinical_guideline_annotations, function_mappings, diplotype):
             summary_and_full_report = fill_data(guide_line_id=guide_line_id, lookup_keys=lookup_keys,
                 guideline_hla_relation=guideline_hla_relation,diplotype=diplotype,
                 guideline=guideline, summary_and_full_report=summary_and_full_report,drug_relation_set=drug_set)
-        
-        
-    summary_and_full_report = handle_warfarin(summary_and_full_report, diplotype)
+
     # write_exel(summary_and_full_report)
 
     return summary_and_full_report
