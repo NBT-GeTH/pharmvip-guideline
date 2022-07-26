@@ -32,12 +32,6 @@ def main():
         "--allele_definitions",
         help="use this option follow with $path to specific where those *.xlsx which store allele definitions to be use in the process",
         required=False,
-        default=defaults_allele_definitions_table
-    )
-    allele_definitions_transform_parser.add_argument(
-        "--outputs",
-        help="use this option follow with $path to specific where json of allele definition from the process should be",
-        required=False,
         default=defaults_allele_definitions_transform
     )
     allele_definitions_transform_parser.add_argument(
@@ -118,13 +112,8 @@ def main():
     if args.subparser_name == "allele_definitions_transform":
         allele_definitions_transform_start_time = time.time()
 
-        transform(
-            args.allele_definitions,
-            args.outputs
-        )
-
         transform_dbpmcgenomics(
-            args.outputs,
+            args.allele_definitions,
             args.dbpmcgenomics
         )
 
