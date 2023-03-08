@@ -61,10 +61,12 @@ def slco1b1_exception(allele_matcher):
 
 def gene_exceptions(allele_definition, allele_matcher):
     if allele_definition["gene"] == "CFTR":
-        allele_matcher = cftr_exception(allele_definition, allele_matcher)
+        pass
+        # allele_matcher = cftr_exception(allele_definition, allele_matcher)
     elif allele_definition["gene"] == "G6PD":
         allele_matcher = g6pd_exception(allele_matcher)
     elif allele_definition["gene"] == "SLCO1B1":
-        allele_matcher = slco1b1_exception(allele_matcher)
+        pass
+        # allele_matcher = slco1b1_exception(allele_matcher)
 
     return allele_matcher
