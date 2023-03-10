@@ -57,3 +57,5 @@ setuptools.setup(
         ]
     }
 )
+# buid .tar.gz command
+# python setup.py sdist bdist_wheel 
