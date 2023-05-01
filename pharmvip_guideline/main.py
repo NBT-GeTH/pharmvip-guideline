@@ -106,6 +106,12 @@ def main():
         help="file path to write text version of result files",
         required=True
     )
+    allele_matcher_parser.add_argument(
+        "--db_option",
+        help="define option to generate databases format",
+        required=False,
+        default="sqltxt"
+    )
 
     args = parser.parse_args()
 
@@ -138,37 +144,42 @@ def main():
             diplotype_cyp2d6 = read_diplotype(args.diplotype_cyp2d6)
             diplotype_cyp2d6["sample_id"] = VCF(args.vcf_gz_file).samples[0]
 
-            diplotype_dbpmcgenomics(args.ana_user_id, args.ana_id, diplotype_cpic, diplotype_cyp2d6, args.dbpmcgenomics)
+            if "sqltxt" in args.db_option : diplotype_dbpmcgenomics(args.ana_user_id, args.ana_id, diplotype_cpic, diplotype_cyp2d6, args.dbpmcgenomics)
 
             diplotype_hla = read_hla(args.diplotype_hla)
-
-            diplotype_cpic = diplotype_cpic.append(diplotype_cyp2d6)
-            diplotype_cpic = diplotype_cpic.append(diplotype_hla)
-            diplotype_cpic = diplotype_cpic.sort_values(by=["gene"])
-            diplotype_cpic = diplotype_cpic.reset_index(drop=True)
+            diplotype_data = diplotype_cpic.append(diplotype_cyp2d6)
+            diplotype_data = diplotype_data.append(diplotype_hla)
+            diplotype_data = diplotype_data.sort_values(by=["gene"])
+            diplotype_data = diplotype_data.reset_index(drop=True)
             
-            summary_and_full_report = annotate(args.clinical_guideline_annotations, args.function_mappings, diplotype_cpic)
-            summary_and_full_report = handle_warfarin(summary_and_full_report, diplotype_cpic)
-            summary_and_full_report = summary_and_full_report.sort_values(by=['cpi_sum_gene1', 'cpi_sum_gene2', 'cpi_sum_gene3', 'cpi_sum_drug'])
-            summary_and_full_report = summary_and_full_report.reset_index(drop = True)
-            summary_and_full_report = replace_blank(summary_and_full_report)
-            summary_short_report = generate_summary_short_report(summary_and_full_report)
-            export_guideline_report(summary_and_full_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id,file_name='cpic_report')
-            export_guideline_report(summary_short_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id,file_name='cpic_summary')
+            # summary_and_full_report = annotate(args.clinical_guideline_annotations, args.function_mappings, diplotype_data)
+            # summary_and_full_report = handle_warfarin(summary_and_full_report, diplotype_cpic)
+            # summary_and_full_report = summary_and_full_report.sort_values(by=['cpi_sum_gene1', 'cpi_sum_gene2', 'cpi_sum_gene3', 'cpi_sum_drug'])
+            # summary_and_full_report = summary_and_full_report.reset_index(drop = True)
+            # summary_and_full_report = replace_blank(summary_and_full_report)
+            # summary_short_report = generate_summary_short_report(summary_and_full_report)
+            # export_guideline_report(summary_and_full_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id,file_name='cpic_report')
+            # export_guideline_report(summary_short_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id,file_name='cpic_summary')
 
         elif args.ana_options_cpic == "false" and args.ana_options_hla == "true":
-            diplotype_hla = read_hla(args.diplotype_hla)
+            diplotype_data = read_hla(args.diplotype_hla)
 
-            summary_and_full_report = annotate(args.clinical_guideline_annotations, args.function_mappings, diplotype_hla)
-            summary_and_full_report = summary_and_full_report.sort_values(by=['cpi_sum_gene1', 'cpi_sum_gene2', 'cpi_sum_gene3', 'cpi_sum_drug'])
-            summary_and_full_report = summary_and_full_report.reset_index(drop = True)
-            summary_and_full_report = replace_blank(summary_and_full_report)
-            summary_short_report = generate_summary_short_report(summary_and_full_report)
-            export_guideline_report(summary_and_full_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id,file_name='cpic_report')
-            export_guideline_report(summary_short_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id,file_name='cpic_summary')
+            # summary_and_full_report = annotate(args.clinical_guideline_annotations, args.function_mappings, diplotype_data)
+            
         else:
             print(f"error with ana_options: {args.ana_options_cpic}, {args.ana_genes_cyp2d6}, {args.ana_options_hla}")
             exit()
+
+        summary_and_full_report = annotate(args.clinical_guideline_annotations, args.function_mappings, diplotype_data)
+        summary_and_full_report = summary_and_full_report.sort_values(by=['cpi_sum_gene1', 'cpi_sum_gene2', 'cpi_sum_gene3', 'cpi_sum_drug'])
+        summary_and_full_report = summary_and_full_report.reset_index(drop = True)
+        summary_and_full_report = replace_blank(summary_and_full_report)
+        summary_short_report = generate_summary_short_report(summary_and_full_report)
+        export_guideline_report(summary_and_full_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id,file_name='cpic_report')
+        export_guideline_report(summary_short_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id,file_name='cpic_summary')
+
+        if "sqltxt" in args.db_option : pass
+
 
         print(f"run pharmvip_guideline allele_matcher successfully in {time.time() - allele_matcher_start_time:.2f} seconds")
     else:
