@@ -8,7 +8,7 @@ from pharmvip_guideline.allele_definitions_transform.transform_dbpmcgenomics imp
 from pharmvip_guideline.allele_matcher.matcher import matcher
 from pharmvip_guideline.allele_matcher.diplotype import create_diplotype_cpic, read_diplotype, read_hla
 from cyvcf2 import VCF
-from pharmvip_guideline.allele_matcher.diplotype_dbpmcgenomics import diplotype_dbpmcgenomics
+from pharmvip_guideline.data_migration.diplotype_dbpmcgenomics import diplotype_dbpmcgenomics
 from pharmvip_guideline.annotation.guideline_annotation import *
 from pharmvip_guideline.annotation.report_handle import replace_blank
 
@@ -108,7 +108,7 @@ def main():
     )
     allele_matcher_parser.add_argument(
         "--db_option",
-        help="define option to generate databases format",
+        help="define option to generate databases format : sqltxt|json ",
         required=False,
         default="sqltxt"
     )
@@ -144,7 +144,8 @@ def main():
             diplotype_cyp2d6 = read_diplotype(args.diplotype_cyp2d6)
             diplotype_cyp2d6["sample_id"] = VCF(args.vcf_gz_file).samples[0]
 
-            if "sqltxt" in args.db_option : diplotype_dbpmcgenomics(args.ana_user_id, args.ana_id, diplotype_cpic, diplotype_cyp2d6, args.dbpmcgenomics)
+            if "sqltxt" in args.db_option : 
+                diplotype_dbpmcgenomics(args.ana_user_id, args.ana_id, diplotype_cpic, diplotype_cyp2d6, args.dbpmcgenomics)
 
             diplotype_hla = read_hla(args.diplotype_hla)
             diplotype_data = diplotype_cpic.append(diplotype_cyp2d6)
@@ -178,7 +179,8 @@ def main():
         export_guideline_report(summary_and_full_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id,file_name='cpic_report')
         export_guideline_report(summary_short_report, args.dbpmcgenomics, args.ana_user_id, args.ana_id,file_name='cpic_summary')
 
-        if "sqltxt" in args.db_option : pass
+        if "sqltxt" in args.db_option : 
+            pass
 
 
         print(f"run pharmvip_guideline allele_matcher successfully in {time.time() - allele_matcher_start_time:.2f} seconds")
