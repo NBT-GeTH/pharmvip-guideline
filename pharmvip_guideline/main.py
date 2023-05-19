@@ -9,6 +9,7 @@ from pharmvip_guideline.allele_matcher.matcher import matcher
 from pharmvip_guideline.allele_matcher.diplotype import create_diplotype_cpic, read_diplotype, read_hla
 from cyvcf2 import VCF
 from pharmvip_guideline.data_migration.diplotype_dbpmcgenomics import diplotype_dbpmcgenomics
+from pharmvip_guideline.data_migration.mongo_jsonor import create_json_file
 from pharmvip_guideline.annotation.guideline_annotation import *
 from pharmvip_guideline.annotation.report_handle import replace_blank
 
@@ -146,6 +147,8 @@ def main():
 
             if "sqltxt" in args.db_option : 
                 diplotype_dbpmcgenomics(args.ana_user_id, args.ana_id, diplotype_cpic, diplotype_cyp2d6, args.dbpmcgenomics)
+            if "json" in args.db_option : 
+                create_json_file(args.ana_user_id, args.ana_id, diplotype_cpic, diplotype_cyp2d6, args.dbpmcgenomics)
 
             diplotype_hla = read_hla(args.diplotype_hla)
             diplotype_data = diplotype_cpic.append(diplotype_cyp2d6)
