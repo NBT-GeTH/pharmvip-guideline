@@ -5,6 +5,7 @@ from pharmvip_guideline.allele_matcher.query import query_region
 from pharmvip_guideline.allele_matcher.match import match_haplotypes
 from pharmvip_guideline.allele_matcher.candidate import find_best_candidate
 from pharmvip_guideline.allele_matcher.exception import gene_exceptions
+from pharmvip_guideline.allele_matcher.dpyd_handler import match_dpyd
 
 
 def  sort_diplotype_allele(diplotype:list[str]):
@@ -34,6 +35,12 @@ def matcher(allele_definitions, ana_user_id, ana_id, ana_best_candidate:str, vcf
 
         if allele_definition["gene"] == "CYP2D6":
             continue
+        
+        if allele_definition["gene"] == "DPYD":
+            allele_matcher = query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file)
+            allele_matcher = match_dpyd(allele_definition, allele_matcher)
+            with open(outputs + f"/{allele_definition['gene']}_allele_matcher.json", "w") as outfile:  
+                json.dump(allele_matcher, outfile, indent=2)
         else:
             allele_matcher = query_region(allele_definition, ana_user_id, ana_id, vcf_gz_file)
             allele_matcher = match_haplotypes(allele_definition, allele_matcher)
