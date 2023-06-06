@@ -25,9 +25,9 @@ def create_diplotype_cpic(outputs):
                 "gt_bases": [variant["gt_bases"] for variant in allele_matcher["variants"]],
                 "gt_phases": [variant["gt_phases"] for variant in allele_matcher["variants"]],
                 "gene_phases": allele_matcher["gene_phases"],
-                "count_diplotype": allele_matcher["count_diplotype"],
-                "guide_dip": allele_matcher["guide_dip"],
-                "print_dip": allele_matcher["print_dip"],
+                "count_diplotype": allele_matcher["count_diplotype"] if "count_diplotype" in allele_matcher else "N/A"  ,
+                "guide_dip": allele_matcher["guide_dip"] if "guide_dip" in allele_matcher else "N/A",
+                "print_dip": allele_matcher["print_dip"] if "print_dip" in allele_matcher else "N/A",
                 "tool": ["N/A"]
             },
             ignore_index=True
