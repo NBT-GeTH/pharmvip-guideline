@@ -12,7 +12,7 @@ def diplotype_matched_text(ana_user_id, ana_id, diplotype_cpic, dbpmcgenomics):
     for index, row in diplotype_cpic.iterrows():
         for i in range(len(row["print_dip"])):
             a_tag = ""
-            if row["gene"] != "CYP2D6":
+            if row["gene"] != "CYP2D6" and row["gene"] != "DPYD":
                 # a_tag += f'<a href="/analysis/report_diplotype_details?pk={ana_id}&gene={row["gene"]}&matched_diplotypes={row["guide_dip"][i]}" target="_blank"><span style="font-size: 12px;">{row["guide_dip"][i]}</span></a>' #errr
 
                 if row["gene"] == "SLCO1B1" and (len(row["print_dip"]) > len(row["guide_dip"])):
