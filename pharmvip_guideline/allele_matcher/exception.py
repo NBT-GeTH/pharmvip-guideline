@@ -24,7 +24,7 @@ def slco1b1_exception(allele_matcher):
             if variant["rsid"] == "rs4149056":
                 if re.match(r'^(T)(\/|\|)(T)$', variant["gt_bases"]):
                     allele_matcher["count_diplotype"] = 1
-                    allele_matcher["guide_dip"] = ["*1A/*1A"]
+                    allele_matcher["guide_dip"] = ["*1/*1"]
                     allele_matcher["print_dip"] = ["rs4149056T/rs4149056T"]
                 elif re.match(r'^(C)(\/|\|)(C)$', variant["gt_bases"]):
                     allele_matcher["count_diplotype"] = 1
@@ -32,18 +32,18 @@ def slco1b1_exception(allele_matcher):
                     allele_matcher["print_dip"] = ["rs4149056C/rs4149056C"]
                 elif re.match(r'^(T)(\/|\|)(C)$', variant["gt_bases"]):
                     allele_matcher["count_diplotype"] = 1
-                    allele_matcher["guide_dip"] = ["*1A/*5"]
+                    allele_matcher["guide_dip"] = ["*1/*5"]
                     allele_matcher["print_dip"] = ["rs4149056T/rs4149056C"]
                 elif re.match(r'^(C)(\/|\|)(T)$', variant["gt_bases"]):
                     allele_matcher["count_diplotype"] = 1
-                    allele_matcher["guide_dip"] = ["*5/*1A"]
+                    allele_matcher["guide_dip"] = ["*5/*1"]
                     allele_matcher["print_dip"] = ["rs4149056C/rs4149056T"]
     else:
         for variant in allele_matcher["variants"]:
             if variant["rsid"] == "rs4149056":
                 if re.match(r'^(T)(\/|\|)(T)$', variant["gt_bases"]):
                     allele_matcher["count_diplotype"] += 1
-                    allele_matcher["guide_dip"].append("*1A/*1A")
+                    allele_matcher["guide_dip"].append("*1/*1")
                     allele_matcher["print_dip"].append("rs4149056T/rs4149056T")
                 elif re.match(r'^(C)(\/|\|)(C)$', variant["gt_bases"]):
                     allele_matcher["count_diplotype"] += 1
@@ -51,22 +51,22 @@ def slco1b1_exception(allele_matcher):
                     allele_matcher["print_dip"].append("rs4149056C/rs4149056C")
                 elif re.match(r'^(T)(\/|\|)(C)$', variant["gt_bases"]):
                     allele_matcher["count_diplotype"] += 1
-                    allele_matcher["guide_dip"].append("*1A/*5")
+                    allele_matcher["guide_dip"].append("*1/*5")
                     allele_matcher["print_dip"].append("rs4149056T/rs4149056C")
                 elif re.match(r'^(C)(\/|\|)(T)$', variant["gt_bases"]):
                     allele_matcher["count_diplotype"] += 1
-                    allele_matcher["guide_dip"].append("*5/*1A")
+                    allele_matcher["guide_dip"].append("*5/*1")
                     allele_matcher["print_dip"].append("rs4149056C/rs4149056T")
     return allele_matcher
 
 def gene_exceptions(allele_definition, allele_matcher):
     if allele_definition["gene"] == "CFTR":
         pass
-        # allele_matcher = cftr_exception(allele_definition, allele_matcher)
+        allele_matcher = cftr_exception(allele_definition, allele_matcher)
     elif allele_definition["gene"] == "G6PD":
         allele_matcher = g6pd_exception(allele_matcher)
     elif allele_definition["gene"] == "SLCO1B1":
         pass
-        # allele_matcher = slco1b1_exception(allele_matcher)
+        allele_matcher = slco1b1_exception(allele_matcher)
 
     return allele_matcher
