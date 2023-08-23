@@ -16,35 +16,12 @@ setuptools.setup(
     packages=setuptools.find_packages(),
     package_data = {
         "resources": [
-            "*"
-        ],
-        "resources.allele_definitions": [
-            "*"
-        ],
-        f"resources.allele_definitions.{allele_definitions_table_version}": [
-            "*"
-        ],
-        f"resources.allele_definitions.{allele_definitions_table_version}.table": [
-            "*"
-        ],
-        f"resources.allele_definitions.{allele_definitions_table_version}.transform": [
-            "*"
-        ],
-        f"resources.allele_definitions.{allele_definitions_table_version}.dbpmcgenomics": [
-            "*"
-        ],
-        f"resources.function_mappings.{function_mappings_version}": [
-            "*"
-        ],
-        f"resources.function_mappings.{function_mappings_version}.diplotype_mapper": [
-            "*"
-        ],
-        f"resources.clinical_guideline_annotations.{clinical_guideline_annotations_version}": [
-            "*"
-        ],
-        f"resources.clinical_guideline_annotations.{clinical_guideline_annotations_version}.guideline": [
-            "*"
-        ]
+            f"allele_definitions/{allele_definitions_table_version}/transform/*", 
+            f"allele_definitions/{allele_definitions_table_version}/dbpmcgenomics/*", 
+            f"function_mappings/{function_mappings_version}/diplotype_mapper/*", 
+            f"clinical_guideline_annotations/{clinical_guideline_annotations_version}/*", 
+            f"clinical_guideline_annotations/{clinical_guideline_annotations_version}/guideline/*", 
+            "dpyd_resource/*.json"],
     },
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -59,3 +36,4 @@ setuptools.setup(
 )
 # buid .tar.gz command
 # python setup.py sdist bdist_wheel 
+# pip install -e .
