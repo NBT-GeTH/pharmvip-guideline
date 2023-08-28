@@ -13,28 +13,35 @@ class InfoConstruction :
             row_map.append(i['row'])
         self.key_map = key_map
         
-        for inx,val in enumerate(list(key_map)):
-            self.gene[inx] = val 
-        target_dip1 = diplotype.loc[diplotype["gene"] == self.gene[0]]
-        target_dip2 = diplotype.loc[diplotype["gene"] == self.gene[1]]
-        target_dip3 = diplotype.loc[diplotype["gene"] == self.gene[2]]
-        target_dip1 = target_dip1 if target_dip1.empty else target_dip1.loc[row_map[0]]
-        target_dip2 = target_dip2 if target_dip2.empty else target_dip2.loc[row_map[1]]
-        target_dip3 = target_dip3 if target_dip3.empty else target_dip3.loc[row_map[2]]
-        # self.cpi_sum_dip_name1 = '' if target_dip1.empty else target_dip1["print_dip"][inx_map[0]]
-        # self.cpi_sum_dip_name2 = '' if target_dip2.empty else target_dip2["print_dip"][inx_map[1]]
-        # self.cpi_sum_dip_name3 = '' if target_dip3.empty else target_dip3["print_dip"][inx_map[2]]
-        self.cpi_sum_dip_name1 = '' if target_dip1.empty else target_dip1["guide_dip"][inx_map[0]]
-        self.cpi_sum_dip_name2 = '' if target_dip2.empty else target_dip2["guide_dip"][inx_map[1]]
-        self.cpi_sum_dip_name3 = '' if target_dip3.empty else target_dip3["guide_dip"][inx_map[2]]
-        self.cpi_sum_gen_1_missing = '' if target_dip1.empty else target_dip1["missing_call_variants"]
-        self.cpi_sum_gen_2_missing = '' if target_dip2.empty else target_dip2["missing_call_variants"]
-        self.cpi_sum_gen_3_missing = '' if target_dip3.empty else target_dip3["missing_call_variants"]
-        self.cpi_sum_gen_1_total = '' if target_dip1.empty else target_dip1["total_variants"]
-        self.cpi_sum_gen_2_total = '' if target_dip2.empty else target_dip2["total_variants"]
-        self.cpi_sum_gen_3_total = '' if target_dip3.empty else target_dip3["total_variants"]
-        self.tool1 = '' if target_dip1.empty else target_dip1["tool"]
-        self.tool2 = '' if target_dip2.empty else target_dip2["tool"]
+        for inx,gene in enumerate(list(key_map)):
+            self.gene[inx] = gene 
+        target_dip_data_list = []
+        sum_dip_list = []
+        for i in range(3):
+            gene = self.gene[i]
+            target_dip_finer = diplotype.loc[diplotype["gene"] == gene]
+            target_dip_finer = target_dip_finer if target_dip_finer.empty else target_dip_finer.loc[row_map[i]]
+            target_dip_data_list.append(target_dip_finer)
+
+            if gene == "DPYD" :
+                sum_dip = '' if target_dip_finer.empty else target_dip_finer["guide_dip"][inx_map[i]]
+            else :
+                sum_dip = '' if target_dip_finer.empty else target_dip_finer["print_dip"][inx_map[i]]
+            sum_dip_list.append(sum_dip)
+
+        self.cpi_sum_dip_name1 = sum_dip_list[0]
+        self.cpi_sum_dip_name2 = sum_dip_list[1]
+        self.cpi_sum_dip_name3 = sum_dip_list[2]
+
+        self.cpi_sum_gen_1_missing = '' if target_dip_data_list[0].empty else target_dip_data_list[0]["missing_call_variants"]
+        self.cpi_sum_gen_2_missing = '' if target_dip_data_list[1].empty else target_dip_data_list[1]["missing_call_variants"]
+        self.cpi_sum_gen_3_missing = '' if target_dip_data_list[2].empty else target_dip_data_list[2]["missing_call_variants"]
+        self.cpi_sum_gen_1_total = '' if target_dip_data_list[0].empty else target_dip_data_list[0]["total_variants"]
+        self.cpi_sum_gen_2_total = '' if target_dip_data_list[1].empty else target_dip_data_list[1]["total_variants"]
+        self.cpi_sum_gen_3_total = '' if target_dip_data_list[2].empty else target_dip_data_list[2]["total_variants"]
+
+        self.tool1 = '' if target_dip_data_list[0].empty else target_dip_data_list[0]["tool"]
+        self.tool2 = '' if target_dip_data_list[1].empty else target_dip_data_list[1]["tool"]
         self.tool1 = '' if 'N/A' in self.tool1 else self.tool1
         self.tool2 = '' if 'N/A' in self.tool2 else self.tool2
         self.tool1 = ','.join(self.tool1)
