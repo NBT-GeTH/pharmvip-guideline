@@ -149,4 +149,6 @@ def match_dpyd(allele_definition, allele_matcher):
         else :
             allele_matcher['print_dip'], allele_matcher['guide_dip'] = dpyd_unphased_handler(hap1_MatchedList, hap2_MatchedList,dpyd_allele_order_list=dpyd_allele_order_list)
             pass
+        allele_matcher["count_diplotype"] = allele_matcher['guide_dip']
+
         return allele_matcher
