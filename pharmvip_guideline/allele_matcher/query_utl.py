@@ -186,3 +186,14 @@ def sum_up_gene_phases(variants):
         return False
     elif True in gt_phases and False in gt_phases:
         return "Combine"
+    
+
+def snp_converter(v_vcf, genome,allele):
+    if v_vcf['hgvs'] == 'g.154532990C>T':
+        return allele[0]
+    converted = '.'
+    if re.match(r"^(\.+)$", v_vcf["allele1"]) or re.match(r"^(\.+)$", v_vcf["allele2"]) : 
+        pass
+    else : 
+        converted = convert_allele(v_vcf["hgvs_type"], genome.var_type, genome.is_deletion, genome.REF, allele, genome.genotypes)
+    return converted  
